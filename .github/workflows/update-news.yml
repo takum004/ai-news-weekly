@@ -1,0 +1,37 @@
+name: Update AI News Weekly
+
+on:
+  schedule:
+    # 毎週水曜日と土曜日の朝9時（日本時間）に実行
+    - cron: '0 0 * * 3,6'
+  workflow_dispatch: # 手動実行も可能
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Fetch latest news
+      run: npm run fetch-news
+    
+    - name: Build HTML page
+      run: npm run build
+    
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git diff --staged --quiet || git commit -m "Update AI news - $(date +'%Y-%m-%d')"
+        git push

@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI週刊ニュース - 最新のAI動向</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .update-info {
+            text-align: center;
+            opacity: 0.9;
+        }
+        
+        .update-time {
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+        
+        .news-count {
+            font-size: 0.9em;
+        }
+        
+        .main-content {
+            padding: 40px 0;
+        }
+        
+        .category-section {
+            margin-bottom: 50px;
+        }
+        
+        .category-header {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .news-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        }
+        
+        .news-item {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .news-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+        }
+        
+        .importance-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ff6b6b;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: bold;
+        }
+        
+        .importance-high {
+            background: #ff6b6b;
+        }
+        
+        .importance-medium {
+            background: #feca57;
+        }
+        
+        .importance-normal {
+            background: #48dbfb;
+        }
+        
+        .news-source {
+            color: #667eea;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .news-title {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 1.15em;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .news-title:hover {
+            color: #667eea;
+        }
+        
+        .news-date {
+            color: #7f8c8d;
+            font-size: 0.85em;
+            margin-bottom: 12px;
+        }
+        
+        .news-content {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        
+        footer p {
+            margin: 5px 0;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .empty-category {
+            color: #7f8c8d;
+            font-style: italic;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🤖 AI週刊ニュース</h1>
+            <div class="update-info">
+                <div class="update-time">最終更新: 2025年6月20日金曜日</div>
+                <div class="news-count">収集: 192件 / 掲載: 116件の重要ニュース</div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="container">
+            
+            <section class="category-section">
+                <h2 class="category-header">🔬 AI研究・開発</h2>
+                <div class="news-grid">
+                    
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/02/advances-in-private-training-for.html" target="_blank" class="news-title">Advances in private training for production on-device language models</a>
+                        <div class="news-date">2024年2月22日木曜日</div>
+                        <div class="news-content">Posted by Zheng Xu, Research Scientist, and Yanxiang Zhang, Software Engineer, Google
+
+
+
+
+Language models (LMs) trained to predict the next word given input text are the key technology for many applic...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/02/a-decoder-only-foundation-model-for.html" target="_blank" class="news-title">A decoder-only foundation model for time-series forecasting</a>
+                        <div class="news-date">2024年2月3日土曜日</div>
+                        <div class="news-content">Posted by Rajat Sen and Yichen Zhou, Google Research
+
+
+
+
+
+Time-series forecasting is ubiquitous in various domains, such as retail, finance, manufacturing, healthcare and natural sciences. In retail u...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/scin-new-resource-for-representative.html" target="_blank" class="news-title">SCIN: A new resource for representative dermatology images</a>
+                        <div class="news-date">2024年3月20日水曜日</div>
+                        <div class="news-content">Posted by Pooja Rao, Research Scientist, Google Research
+
+
+
+
+Health datasets play a crucial role in research and medical education, but it can be challenging to create a dataset that represents the re...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/google-at-aps-2024.html" target="_blank" class="news-title">Google at APS 2024</a>
+                        <div class="news-date">2024年3月5日火曜日</div>
+                        <div class="news-content">Posted by Kate Weber and Shannon Leon, Google Research, Quantum AI Team
+
+
+
+
+Today the 2024 March Meeting of the American Physical Society (APS) kicks off in Minneapolis, MN. A premier conference on to...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/gemini-25-updates-to-our-family-of-thinking-models/" target="_blank" class="news-title">Gemini 2.5: Updates to our family of thinking models</a>
+                        <div class="news-date">2025年6月18日水曜日</div>
+                        <div class="news-content">Explore the latest Gemini 2.5 model updates with enhanced performance and accuracy: Gemini 2.5 Pro now stable, Flash generally available, and the new Flash-Lite in preview.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/were-expanding-our-gemini-25-family-of-models/" target="_blank" class="news-title">We’re expanding our Gemini 2.5 family of models</a>
+                        <div class="news-date">2025年6月18日水曜日</div>
+                        <div class="news-content">Gemini 2.5 Flash and Pro are now generally available, and we’re introducing 2.5 Flash-Lite, our most cost-efficient and fastest 2.5 model yet.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/using-ai-to-expand-global-access-to.html" target="_blank" class="news-title">Using AI to expand global access to reliable flood forecasts</a>
+                        <div class="news-date">2024年3月21日木曜日</div>
+                        <div class="news-content">Posted by Yossi Matias, VP Engineering & Research, and Grey Nearing, Research Scientist, Google Research
+
+
+
+
+Floods are the most common natural disaster, and are responsible for roughly $50 billion in...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/02/videoprism-foundational-visual-encoder.html" target="_blank" class="news-title">VideoPrism: A foundational visual encoder for video understanding</a>
+                        <div class="news-date">2024年2月23日金曜日</div>
+                        <div class="news-content">Posted by Long Zhao, Senior Research Scientist, and Ting Liu, Senior Staff Software Engineer, Google Research
+
+
+
+
+An astounding number of videos are available on the Web, covering a variety of content...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/02/graph-neural-networks-in-tensorflow.html" target="_blank" class="news-title">Graph neural networks in TensorFlow</a>
+                        <div class="news-date">2024年2月7日水曜日</div>
+                        <div class="news-content">Posted by Dustin Zelle, Software Engineer, Google Research, and Arno Eigenwillig, Software Engineer, CoreML
+
+
+
+
+Objects and their relationships are ubiquitous in the world around us, and relationships...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/01/mixed-input-matrix-multiplication.html" target="_blank" class="news-title">Mixed-input matrix multiplication performance optimizations</a>
+                        <div class="news-date">2024年1月27日土曜日</div>
+                        <div class="news-content">Posted by Manish Gupta, Staff Software Engineer, Google Research
+
+
+
+
+AI-driven technologies are weaving themselves into the fabric of our daily routines, with the potential to enhance our access to kn...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/gemini-25-pro-preview-even-better-coding-performance/" target="_blank" class="news-title">Gemini 2.5 Pro Preview: even better coding performance</a>
+                        <div class="news-date">2025年5月7日水曜日</div>
+                        <div class="news-content">We’ve seen developers doing amazing things with Gemini 2.5 Pro, so we decided to release an updated version a couple of weeks early to get into developers hands sooner.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/experiment-with-gemini-20-flash-native-image-generation/" target="_blank" class="news-title">Experiment with Gemini 2.0 Flash native image generation</a>
+                        <div class="news-date">2025年3月12日水曜日</div>
+                        <div class="news-content">Native image output is available in Gemini 2.0 Flash for developers to experiment with in Google AI Studio and the Gemini API.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/start-building-with-gemini-20-flash-and-flash-lite/" target="_blank" class="news-title">Start building with Gemini 2.0 Flash and Flash-Lite</a>
+                        <div class="news-date">2025年2月26日水曜日</div>
+                        <div class="news-content">Gemini 2.0 Flash-Lite is now generally available in the Gemini API for production use in Google AI Studio and for enterprise customers on Vertex AI</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/google-deepmind-at-neurips-2024/" target="_blank" class="news-title">Google DeepMind at NeurIPS 2024</a>
+                        <div class="news-date">2024年12月6日金曜日</div>
+                        <div class="news-content">Advancing adaptive AI agents, empowering 3D scene creation, and innovating LLM training for a smarter, safer future</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/melon-reconstructing-3d-objects-from.html" target="_blank" class="news-title">MELON: Reconstructing 3D objects from images with unknown poses</a>
+                        <div class="news-date">2024年3月19日火曜日</div>
+                        <div class="news-content">Posted by Mark Matthews, Senior Software Engineer, and Dmitry Lagun, Research Scientist, Google Research
+
+
+
+
+
+A person's prior experience and understanding of the world generally enables them to easil...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/our-next-generation-model-gemini-15/" target="_blank" class="news-title">Our next-generation model: Gemini 1.5</a>
+                        <div class="news-date">2024年2月16日金曜日</div>
+                        <div class="news-content">The model delivers dramatically enhanced performance, with a breakthrough in long-context understanding across modalities.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/" target="_blank" class="news-title">Gemini Robotics brings AI into the physical world</a>
+                        <div class="news-date">2025年3月13日木曜日</div>
+                        <div class="news-content">Introducing Gemini Robotics and Gemini Robotics-ER, AI models designed for robots to understand, act and react to the physical world.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/computer-aided-diagnosis-for-lung.html" target="_blank" class="news-title">Computer-aided diagnosis for lung cancer screening</a>
+                        <div class="news-date">2024年3月21日木曜日</div>
+                        <div class="news-content">Posted by Atilla Kiraly, Software Engineer, and Rory Pilgrim, Product Manager, Google Research 
+
+
+
+
+
+Lung cancer is the leading cause of cancer-related deaths globally with 1.8 million deaths reported...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/screenai-visual-language-model-for-ui.html" target="_blank" class="news-title">ScreenAI: A visual language model for UI and visually-situated language understanding</a>
+                        <div class="news-date">2024年3月20日水曜日</div>
+                        <div class="news-content">Posted by Srinivas Sunkara and Gilles Baechler, Software Engineers, Google Research
+
+
+
+
+
+Screen user interfaces (UIs) and infographics, such as charts, diagrams and tables, play important roles in hum...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/heal-framework-for-health-equity.html" target="_blank" class="news-title">HEAL: A framework for health equity assessment of machine learning performance</a>
+                        <div class="news-date">2024年3月16日土曜日</div>
+                        <div class="news-content">Posted by Mike Schaekermann, Research Scientist, Google Research, and Ivor Horn, Chief Health Equity Officer & Director, Google Core
+
+
+
+
+Health equity is a major societal concern worldwide with dispar...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/cappy-outperforming-and-boosting-large.html" target="_blank" class="news-title">Cappy: Outperforming and boosting large multi-task language models with a small scorer</a>
+                        <div class="news-date">2024年3月15日金曜日</div>
+                        <div class="news-content">Posted by Yun Zhu and Lijuan Liu, Software Engineers, Google Research
+
+
+
+
+
+Large language model (LLM) advancements have led to a new paradigm that unifies various natural language processing (NLP) tas...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/talk-like-graph-encoding-graphs-for.html" target="_blank" class="news-title">Talk like a graph: Encoding graphs for large language models</a>
+                        <div class="news-date">2024年3月13日水曜日</div>
+                        <div class="news-content">Posted by Bahare Fatemi and Bryan Perozzi, Research Scientists, Google Research
+
+
+
+
+Imagine all the things around you — your friends, tools in your kitchen, or even the parts of your bike. They are al...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/chain-of-table-evolving-tables-in.html" target="_blank" class="news-title">Chain-of-table: Evolving tables in the reasoning chain for table understanding</a>
+                        <div class="news-date">2024年3月12日火曜日</div>
+                        <div class="news-content">Posted by Zilong Wang, Student Researcher, and Chen-Yu Lee, Research Scientist, Cloud AI Team
+
+
+
+
+People use tables every day to organize and interpret complex information in a structured, easily acce...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/health-specific-embedding-tools-for.html" target="_blank" class="news-title">Health-specific embedding tools for dermatology and pathology</a>
+                        <div class="news-date">2024年3月9日土曜日</div>
+                        <div class="news-content">Posted by Dave Steiner, Clinical Research Scientist, Google Health, and Rory Pilgrim, Product Manager, Google Research
+
+
+
+
+There’s a worldwide shortage of access to medical imaging expert interpretati...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/social-learning-collaborative-learning.html" target="_blank" class="news-title">Social learning: Collaborative learning with large language models</a>
+                        <div class="news-date">2024年3月8日金曜日</div>
+                        <div class="news-content">Posted by Amirkeivan Mohtashami, Research Intern, and Florian Hartmann, Software Engineer, Google Research
+
+
+
+
+Large language models (LLMs) have significantly improved the state of the art for solving...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/croissant-metadata-format-for-ml-ready.html" target="_blank" class="news-title">Croissant: a metadata format for ML-ready datasets</a>
+                        <div class="news-date">2024年3月7日木曜日</div>
+                        <div class="news-content">Posted by Omar Benjelloun, Software Engineer, Google Research, and Peter Mattson, Software Engineer, Google Core ML and President, MLCommons Association
+
+
+
+
+
+
+Machine learning (ML) practitioners looki...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/02/learning-importance-of-training-data.html" target="_blank" class="news-title">Learning the importance of training data under concept drift</a>
+                        <div class="news-date">2024年2月15日木曜日</div>
+                        <div class="news-content">Posted by Nishant Jain, Pre-doctoral Researcher, and Pradeep Shenoy, Research Scientist, Google Research
+
+
+
+
+The constantly changing nature of the world around us poses a significant challenge for the...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/google-gemini-update-sundar-pichai-2024/" target="_blank" class="news-title">The next chapter of our Gemini era</a>
+                        <div class="news-date">2024年2月8日木曜日</div>
+                        <div class="news-content">We're bringing Gemini to more Google products</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/02/intervening-on-early-readouts-for.html" target="_blank" class="news-title">Intervening on early readouts for mitigating spurious features and simplicity bias</a>
+                        <div class="news-date">2024年2月3日土曜日</div>
+                        <div class="news-content">Posted by Rishabh Tiwari, Pre-doctoral Researcher, and Pradeep Shenoy, Research Scientist, Google Research
+
+
+
+
+Machine learning models in the real world are often trained on limited data that may cont...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/01/mobilediffusion-rapid-text-to-image.html" target="_blank" class="news-title">MobileDiffusion: Rapid text-to-image generation on-device</a>
+                        <div class="news-date">2024年2月1日木曜日</div>
+                        <div class="news-content">Posted by Yang Zhao, Senior Software Engineer, and Tingbo Hou, Senior Staff Software Engineer, Core ML
+
+
+
+
+Text-to-image diffusion models have shown exceptional capabilities in generating high-quality...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/advanced-audio-dialog-and-generation-with-gemini-25/" target="_blank" class="news-title">Advanced audio dialog and generation with Gemini 2.5</a>
+                        <div class="news-date">2025年6月4日水曜日</div>
+                        <div class="news-content">Gemini 2.5 has new capabilities in AI-powered audio dialog and generation.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/gemini-25-our-world-leading-model-is-getting-even-better/" target="_blank" class="news-title">Gemini 2.5: Our most intelligent models are getting even better</a>
+                        <div class="news-date">2025年5月20日火曜日</div>
+                        <div class="news-content">Gemini 2.5 Pro continues to be loved by developers as the best model for coding, and 2.5 Flash is getting even better with a new update. We’re bringing new capabilities to our models, including Deep T...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/build-rich-interactive-web-apps-with-an-updated-gemini-25-pro/" target="_blank" class="news-title">Build rich, interactive web apps with an updated Gemini 2.5 Pro</a>
+                        <div class="news-date">2025年5月7日水曜日</div>
+                        <div class="news-content">Our updated version of Gemini 2.5 Pro Preview has improved capabilities for coding.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/introducing-gemini-2-5-flash/" target="_blank" class="news-title">Introducing Gemini 2.5 Flash</a>
+                        <div class="news-date">2025年4月18日金曜日</div>
+                        <div class="news-content">Gemini 2.5 Flash is our first fully hybrid reasoning model, giving developers the ability to turn thinking on or off.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/generate-videos-in-gemini-and-whisk-with-veo-2/" target="_blank" class="news-title">Generate videos in Gemini and Whisk with Veo 2</a>
+                        <div class="news-date">2025年4月16日水曜日</div>
+                        <div class="news-content">Transform text-based prompts into high-resolution eight-second videos in Gemini Advanced and use Whisk Animate to turn images into eight-second animated clips.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/gemini-2-5-our-most-intelligent-ai-model/" target="_blank" class="news-title">Gemini 2.5: Our most intelligent AI model</a>
+                        <div class="news-date">2025年3月26日水曜日</div>
+                        <div class="news-content">Gemini 2.5 is our most intelligent AI model, now with thinking built in.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/gemini-2-0-is-now-available-to-everyone/" target="_blank" class="news-title">Gemini 2.0 is now available to everyone</a>
+                        <div class="news-date">2025年2月6日木曜日</div>
+                        <div class="news-content">We’re announcing new updates to Gemini 2.0 Flash, plus introducing Gemini 2.0 Flash-Lite and Gemini 2.0 Pro Experimental.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/introducing-gemini-20-our-new-ai-model-for-the-agentic-era/" target="_blank" class="news-title">Introducing Gemini 2.0: our new AI model for the agentic era</a>
+                        <div class="news-date">2024年12月12日木曜日</div>
+                        <div class="news-content">Today, we’re announcing Gemini 2.0, our most capable multimodal AI model yet.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/updated-production-ready-gemini-models-reduced-15-pro-pricing-increased-rate-limits-and-more/" target="_blank" class="news-title">Updated production-ready Gemini models, reduced 1.5 Pro pricing, increased rate limits, and more</a>
+                        <div class="news-date">2024年9月25日水曜日</div>
+                        <div class="news-content">We’re releasing two updated production-ready Gemini models</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/google-deepmind-at-icml-2024/" target="_blank" class="news-title">Google DeepMind at ICML 2024</a>
+                        <div class="news-date">2024年7月19日金曜日</div>
+                        <div class="news-content">Exploring AGI, the challenges of scaling and the future of multimodal generative AI</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/alphafold-3-predicts-the-structure-and-interactions-of-all-lifes-molecules/" target="_blank" class="news-title">AlphaFold 3 predicts the structure and interactions of all of life’s molecules</a>
+                        <div class="news-date">2024年5月9日木曜日</div>
+                        <div class="news-content">Introducing a new AI model developed by Google DeepMind and Isomorphic Labs.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/google-deepmind-at-iclr-2024/" target="_blank" class="news-title">Google DeepMind at ICLR 2024</a>
+                        <div class="news-date">2024年5月3日金曜日</div>
+                        <div class="news-content">Developing next-gen AI agents, exploring new modalities, and pioneering foundational learning</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/google-deepmind-at-neurips-2023/" target="_blank" class="news-title">Google DeepMind at NeurIPS 2023</a>
+                        <div class="news-date">2023年12月9日土曜日</div>
+                        <div class="news-content">The Neural Information Processing Systems (NeurIPS) is the largest artificial intelligence (AI) conference in the world. NeurIPS 2023 will be taking place December 10-16 in New Orleans, USA.Teams from...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/rt-2-new-model-translates-vision-and-language-into-action/" target="_blank" class="news-title">RT-2: New model translates vision and language into action</a>
+                        <div class="news-date">2023年7月28日金曜日</div>
+                        <div class="news-content">Robotic Transformer 2 (RT-2) is a novel vision-language-action (VLA) model that learns from both web and robotics data, and translates this knowledge into generalised instructions for robotic control.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/google-deepmind-research-at-icml-2023/" target="_blank" class="news-title">Google DeepMind’s latest research at ICML 2023</a>
+                        <div class="news-date">2023年7月20日木曜日</div>
+                        <div class="news-content">Exploring AI safety, adaptability, and efficiency for the real world</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/deepminds-latest-research-at-iclr-2023/" target="_blank" class="news-title">DeepMind’s latest research at ICLR 2023</a>
+                        <div class="news-date">2023年4月27日木曜日</div>
+                        <div class="news-content">Next week marks the start of the 11th International Conference on Learning Representations (ICLR), taking place 1-5 May in Kigali, Rwanda. This will be the first major artificial intelligence (AI) con...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/weather-lab-cyclone-predictions-with-ai/" target="_blank" class="news-title">How we're supporting better tropical cyclone prediction with AI</a>
+                        <div class="news-date">2025年6月13日金曜日</div>
+                        <div class="news-content">We’re launching Weather Lab, featuring our experimental cyclone predictions, and we’re partnering with the U.S. National Hurricane Center to support their forecasts and warnings this cyclone season.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/our-vision-for-building-a-universal-ai-assistant/" target="_blank" class="news-title">Our vision for building a universal AI assistant</a>
+                        <div class="news-date">2025年5月20日火曜日</div>
+                        <div class="news-content">We’re extending Gemini to become a world model that can make plans and imagine new experiences by simulating aspects of the world.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/advancing-geminis-security-safeguards/" target="_blank" class="news-title">Advancing Gemini's security safeguards</a>
+                        <div class="news-date">2025年5月20日火曜日</div>
+                        <div class="news-content">We’ve made Gemini 2.5 our most secure model family to date.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/" target="_blank" class="news-title">AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms</a>
+                        <div class="news-date">2025年5月14日水曜日</div>
+                        <div class="news-content">New AI agent evolves algorithms for math and practical applications in computing by combining the creativity of large language models with automated evaluators</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/dolphingemma-how-google-ai-is-helping-decode-dolphin-communication/" target="_blank" class="news-title">DolphinGemma: How Google AI is helping decode dolphin communication</a>
+                        <div class="news-date">2025年4月15日火曜日</div>
+                        <div class="news-content">DolphinGemma, a large language model developed by Google, is helping scientists study how dolphins communicate — and hopefully find out what they're saying, too.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/facts-grounding-a-new-benchmark-for-evaluating-the-factuality-of-large-language-models/" target="_blank" class="news-title">FACTS Grounding: A new benchmark for evaluating the factuality of large language models</a>
+                        <div class="news-date">2024年12月18日水曜日</div>
+                        <div class="news-content">Our comprehensive benchmark and online leaderboard offer a much-needed measure of how accurately LLMs ground their responses in provided source material and avoid hallucinations</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/alphaqubit-tackles-one-of-quantum-computings-biggest-challenges/" target="_blank" class="news-title">AlphaQubit tackles one of quantum computing’s biggest challenges</a>
+                        <div class="news-date">2024年11月21日木曜日</div>
+                        <div class="news-content">Our new AI system accurately identifies errors inside quantum computers, helping to make this new technology more reliable.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/the-ai-for-science-forum-a-new-era-of-discovery/" target="_blank" class="news-title">The AI for Science Forum: A new era of discovery</a>
+                        <div class="news-date">2024年11月19日火曜日</div>
+                        <div class="news-content">The AI Science Forum highlights AI's present and potential role in revolutionizing scientific discovery and solving global challenges, emphasizing collaboration between the scientific community, polic...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/advances-in-robot-dexterity/" target="_blank" class="news-title">Our latest advances in robot dexterity</a>
+                        <div class="news-date">2024年9月12日木曜日</div>
+                        <div class="news-content">Two new AI systems, ALOHA Unleashed and DemoStart, help robots learn to perform complex tasks that require dexterous movement</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/ferminet-quantum-physics-and-chemistry-from-first-principles/" target="_blank" class="news-title">FermiNet: Quantum physics and chemistry from first principles</a>
+                        <div class="news-date">2024年8月23日金曜日</div>
+                        <div class="news-content">Using deep learning to solve fundamental problems in computational quantum chemistry and explore how matter interacts with light</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/" target="_blank" class="news-title">AI achieves silver-medal standard solving International Mathematical Olympiad problems</a>
+                        <div class="news-date">2024年7月26日金曜日</div>
+                        <div class="news-content">Breakthrough models AlphaProof and AlphaGeometry 2 solve advanced reasoning problems in mathematics</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/gemini-breaks-new-ground-a-faster-model-longer-context-and-ai-agents/" target="_blank" class="news-title">Gemini breaks new ground: a faster model, longer context and AI agents</a>
+                        <div class="news-date">2024年5月15日水曜日</div>
+                        <div class="news-content">We’re introducing a series of updates across the Gemini family of models, including the new 1.5 Flash, our lightweight model for speed and efficiency, and Project Astra, our vision for the future of A...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/watermarking-ai-generated-text-and-video-with-synthid/" target="_blank" class="news-title">Watermarking AI-generated text and video with SynthID</a>
+                        <div class="news-date">2024年5月15日水曜日</div>
+                        <div class="news-content">Announcing our novel watermarking method for AI-generated text and video, and how we’re bringing SynthID to key Google products</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/generative-ai-to-quantify-uncertainty.html" target="_blank" class="news-title">Generative AI to quantify uncertainty in weather forecasting</a>
+                        <div class="news-date">2024年3月30日土曜日</div>
+                        <div class="news-content">Posted by Lizao (Larry) Li, Software Engineer, and Rob Carver, Research Scientist, Google Research
+
+
+
+
+Accurate weather forecasts can have a direct impact on people’s lives, from helping make routine ...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/03/autobnn-probabilistic-time-series.html" target="_blank" class="news-title">AutoBNN: Probabilistic time series forecasting with compositional bayesian neural networks</a>
+                        <div class="news-date">2024年3月29日金曜日</div>
+                        <div class="news-content">Posted by Urs Köster, Software Engineer, Google Research
+
+
+
+
+Time series problems are ubiquitous, from forecasting weather and traffic patterns to understanding economic trends. Bayesian approaches st...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/gemma-introducing-new-state-of-the-art-open-models/" target="_blank" class="news-title">Gemma: Introducing new state-of-the-art open models</a>
+                        <div class="news-date">2024年2月21日水曜日</div>
+                        <div class="news-content">Gemma is built for responsible AI development from the same research and technology used to create Gemini models.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/02/dp-auditorium-flexible-library-for.html" target="_blank" class="news-title">DP-Auditorium: A flexible library for auditing differential privacy</a>
+                        <div class="news-date">2024年2月14日水曜日</div>
+                        <div class="news-content">Posted by Mónica Ribero Díaz, Research Scientist, Google Research
+
+
+
+
+
+Differential privacy (DP) is a property of randomized mechanisms that limit the influence of any individual user’s information wh...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">Google AI Blog</div>
+                        <a href="http://blog.research.google/2024/01/exphormer-scaling-transformers-for.html" target="_blank" class="news-title">Exphormer: Scaling transformers for graph-structured data</a>
+                        <div class="news-date">2024年1月24日水曜日</div>
+                        <div class="news-content">Posted by Ameya Velingker, Research Scientist, Google Research, and Balaji Venkatachalam, Software Engineer, Google
+
+
+
+
+Graphs, in which objects and their relations are represented as nodes (or vertic...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/shaping-the-future-of-advanced-robotics/" target="_blank" class="news-title">Shaping the future of advanced robotics</a>
+                        <div class="news-date">2024年1月4日木曜日</div>
+                        <div class="news-content">Introducing AutoRT, SARA-RT, and RT-Trajectory</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/" target="_blank" class="news-title">FunSearch: Making new discoveries in mathematical sciences using Large Language Models</a>
+                        <div class="news-date">2023年12月15日金曜日</div>
+                        <div class="news-content">In a paper published in Nature, we introduce FunSearch, a method for searching for “functions” written in computer code, and find new solutions in mathematics and computer science. FunSearch works by ...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/introducing-gemini-our-largest-and-most-capable-ai-model/" target="_blank" class="news-title">Introducing Gemini: our largest and most capable AI model</a>
+                        <div class="news-date">2023年12月7日木曜日</div>
+                        <div class="news-content">Making AI more helpful for everyone</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/scaling-up-learning-across-many-different-robot-types/" target="_blank" class="news-title">Scaling up learning across many different robot types</a>
+                        <div class="news-date">2023年10月4日水曜日</div>
+                        <div class="news-content">Robots are great specialists, but poor generalists. Typically, you have to train a model for each task, robot, and environment. Changing a single variable often requires starting from scratch. But wha...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/codoc-developing-reliable-ai-tools-for-healthcare/" target="_blank" class="news-title">Developing reliable AI tools for healthcare</a>
+                        <div class="news-date">2023年7月17日月曜日</div>
+                        <div class="news-content">We’ve published our joint paper with Google Research in Nature Medicine, which proposes CoDoC (Complementarity-driven Deferral-to-Clinical Workflow), an AI system that learns when to rely on predictiv...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/robocat-a-self-improving-robotic-agent/" target="_blank" class="news-title">RoboCat: A self-improving robotic agent</a>
+                        <div class="news-date">2023年6月20日火曜日</div>
+                        <div class="news-content">Robots are quickly becoming part of our everyday lives, but they’re often only programmed to perform specific tasks well. While harnessing recent advances in AI could lead to robots that could help in...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/google-cloud-driving-digital-transformation/" target="_blank" class="news-title">Google Cloud: Driving digital transformation</a>
+                        <div class="news-date">2023年6月14日水曜日</div>
+                        <div class="news-content">Google Cloud empowers organizations to digitally transform themselves into smarter businesses. It offers cloud computing, data analytics, and the latest artificial intelligence (AI) and machine learni...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/announcing-google-deepmind/" target="_blank" class="news-title">Announcing Google DeepMind</a>
+                        <div class="news-date">2023年4月20日木曜日</div>
+                        <div class="news-content">DeepMind and the Brain team from Google Research will join forces to accelerate progress towards a world in which AI helps solve the biggest challenges facing humanity.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/behind-ancestra-combining-veo-with-live-action-filmmaking/" target="_blank" class="news-title">Behind “ANCESTRA”: combining Veo with live-action filmmaking</a>
+                        <div class="news-date">2025年6月13日金曜日</div>
+                        <div class="news-content">We partnered with Darren Aronofsky, Eliza McNitt and a team of more than 200 people to make a film using Veo and live-action filmmaking.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/announcing-gemma-3n-preview-powerful-efficient-mobile-first-ai/" target="_blank" class="news-title">Announcing Gemma 3n preview: Powerful, efficient, mobile-first AI</a>
+                        <div class="news-date">2025年5月20日火曜日</div>
+                        <div class="news-content">Gemma 3n is a cutting-edge open model designed for fast, multimodal AI on devices, featuring optimized performance, unique flexibility with a 2-in-1 model, and expanded multimodal understanding with a...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/introducing-gemma-3/" target="_blank" class="news-title">Introducing Gemma 3</a>
+                        <div class="news-date">2025年3月12日水曜日</div>
+                        <div class="news-content">The most capable model you can run on a single GPU or TPU.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/state-of-the-art-video-and-image-generation-with-veo-2-and-imagen-3/" target="_blank" class="news-title">State-of-the-art video and image generation with Veo 2 and Imagen 3</a>
+                        <div class="news-date">2024年12月17日火曜日</div>
+                        <div class="news-content">We’re rolling out a new, state-of-the-art video model, Veo 2, and updates to Imagen 3. Plus, check out our new experiment, Whisk.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/" target="_blank" class="news-title">Genie 2: A large-scale foundation world model</a>
+                        <div class="news-date">2024年12月4日水曜日</div>
+                        <div class="news-content">Generating unlimited diverse training environments for future general agents</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/sima-generalist-ai-agent-for-3d-virtual-environments/" target="_blank" class="news-title">A generalist AI agent for 3D virtual environments</a>
+                        <div class="news-date">2024年3月13日水曜日</div>
+                        <div class="news-content">Introducing SIMA, a Scalable Instructable Multiworld Agent</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/2023-a-year-of-groundbreaking-advances-in-ai-and-computing/" target="_blank" class="news-title">2023: A Year of Groundbreaking Advances in AI and Computing</a>
+                        <div class="news-date">2023年12月22日金曜日</div>
+                        <div class="news-content">This has been a year of incredible progress in the field of Artificial Intelligence (AI) research and its practical applications.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">DeepMind Blog</div>
+                        <a href="https://deepmind.google/discover/blog/deepminds-latest-research-at-neurips-2022/" target="_blank" class="news-title">DeepMind’s latest research at NeurIPS 2022</a>
+                        <div class="news-date">2022年11月25日金曜日</div>
+                        <div class="news-content">NeurIPS is the world’s largest conference in artificial intelligence (AI) and machine learning (ML), and we’re proud to support the event as Diamond sponsors, helping foster the exchange of research a...</div>
+                    </article>
+                      
+                </div>
+            </section>
+              
+            <section class="category-section">
+                <h2 class="category-header">💼 ビジネス・投資</h2>
+                <div class="news-grid">
+                    
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/17/googles-gemini-panicked-when-playing-pokemon/" target="_blank" class="news-title">Google’s Gemini panicked when playing Pokémon</a>
+                        <div class="news-date">2025年6月18日水曜日</div>
+                        <div class="news-content">AI companies are battling to dominate the industry, but sometimes they’re also battling in Pokémon gyms. As Google and Anthropic both study how their latest AI models navigate early Pokémon games, the...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/18/midjourney-launches-its-first-ai-video-generation-model-v1/" target="_blank" class="news-title">Midjourney launches its first AI video generation model, V1</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">Midjourney launched its much anticipated AI video generation model, V1, on Wednesday and laid out a roadmap for its future releases.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/17/sam-altman-says-meta-tried-and-failed-to-poach-openais-talent-with-100m-offers/" target="_blank" class="news-title">Sam Altman says Meta tried and failed to poach OpenAI’s talent with $100M offers</a>
+                        <div class="news-date">2025年6月18日水曜日</div>
+                        <div class="news-content">OpenAI CEO Sam Altman said that Meta tried to poach its employees with nine-figure offers, but failed to recruit OpenAI's best people.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/17/openais-200m-dod-contract-could-squeeze-frenemy-microsoft/" target="_blank" class="news-title">OpenAI’s $200M DoD contract could squeeze frenemy Microsoft</a>
+                        <div class="news-date">2025年6月18日水曜日</div>
+                        <div class="news-content">The contract could put the model maker in competition with the OpenAI services that Microsoft wants to sell to the DoD.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/18/kid-pilled-sam-altman-constantly-asked-chatgpt-questions-about-his-newborn/" target="_blank" class="news-title">‘Kid-pilled’ Sam Altman ‘constantly’ asked ChatGPT questions about his newborn</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">Sam Altman, who is both the father of a 3-month-old and CEO of OpenAI, hopped on OpenAI's new podcast today to talk about how his company is impacting his experience with fatherhood.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/18/openai-drops-scale-ai-as-a-data-provider-following-meta-deal/" target="_blank" class="news-title">OpenAI drops Scale AI as a data provider following Meta deal</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">OpenAI says it's cutting ties with Scale AI following its deal with Meta, raising questions about the data provider's business.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/podcast/seed-to-series-c-what-vcs-actually-want-from-ai-startups/" target="_blank" class="news-title">Seed to Series C: What VCs actually want from AI startups</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">AI investments hit $110 billion in 2024, and the funding landscape in 2025 is more competitive than ever. For early-stage startups, that means more money in the market, but also more pressure to stand...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/18/multiplier-founded-by-ex-stripe-exec-nabs-27-5m-to-fuel-ai-powered-accounting-roll-ups/" target="_blank" class="news-title">Multiplier, founded by ex-Stripe exec, nabs $27.5M to fuel AI-powered accounting roll-ups</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">Multiplier raised  Series A and seed funding from Lightspeed and Ribbit Capital.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/18/xai-is-facing-a-lawsuit-for-operating-over-400-mw-of-gas-turbines-without-permits/" target="_blank" class="news-title">xAI is facing a lawsuit for operating over 400 MW of gas turbines without permits</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">The Colossus data center was allegedly operating as many as 35 gas turbines without pollution controls in a region that already had poor air quality.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/18/openai-found-features-in-ai-models-that-correspond-to-different-personas/" target="_blank" class="news-title">OpenAI found features in AI models that correspond to different ‘personas’</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">By looking at an AI model's internal representations — the numbers that dictate how an AI model responds, which often seem completely incoherent to humans — OpenAI researchers were able to find patter...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/18/the-openai-files-push-for-oversight-in-the-race-to-agi/" target="_blank" class="news-title">The ‘OpenAI Files’ push for oversight in the race to AGI</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">“The OpenAI Files,” an archival project from the Midas Project and the Tech Oversight Project, are a “collection of documented concerns with governance practices, leadership integrity, and organizatio...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/18/heres-your-first-look-at-the-rebooted-digg/" target="_blank" class="news-title">Here’s your first look at the rebooted Digg</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">Digg launched its iOS app to testers who are a part of its Groundbreakers community of early adopters.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/18/googles-ai-mode-can-now-have-back-and-forth-voice-conversations/" target="_blank" class="news-title">Google’s AI Mode can now have back-and-forth voice conversations</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">Google is rolling out the ability for users to have a back-and-forth voice conversation with AI Mode.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/19/a-timeline-of-the-u-s-semiconductor-market-in-2025/" target="_blank" class="news-title">A timeline of the US semiconductor market in 2025</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">It’s already been a tumultuous year for the U.S. semiconductor industry. The semiconductor industry plays a sizable role in the “AI race” that the U.S. seems determined to win, which is why this conte...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/18/here-are-the-24-us-ai-startups-that-have-raised-100m-or-more-in-2025/" target="_blank" class="news-title">Here are the 24 US AI startups that have raised $100M or more in 2025</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">Last year was monumental for the AI industry in the U.S. and beyond. How will 2025 compare?</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">TechCrunch AI</div>
+                        <a href="https://techcrunch.com/2025/06/18/6-month-old-solo-owned-vibe-coder-base44-sells-to-wix-for-80m-cash/" target="_blank" class="news-title">Six-month-old, solo-owned vibe coder Base44 sells to Wix for $80M cash</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">In Base44's six months as a stand-alone company, it reportedly grew to 250,000 users and was making nearly $200,000 in monthly profits.</div>
+                    </article>
+                      
+                </div>
+            </section>
+              
+            <section class="category-section">
+                <h2 class="category-header">💻 テクノロジー</h2>
+                <div class="news-grid">
+                    
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/ai/google-launches-production-ready-gemini-2-5-ai-models-to-challenge-openais-enterprise-dominance/" target="_blank" class="news-title">Google launches production-ready Gemini 2.5 AI models to challenge OpenAI’s enterprise dominance</a>
+                        <div class="news-date">2025年6月18日水曜日</div>
+                        <div class="news-content">Google launches production-ready Gemini 2.5 Pro and Flash AI models for enterprises while introducing cost-efficient Flash-Lite to challenge OpenAI's market dominance.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/ai/beyond-gpt-architecture-why-googles-diffusion-approach-could-reshape-llm-deployment/" target="_blank" class="news-title">Beyond GPT architecture: Why Google’s Diffusion approach could reshape LLM deployment</a>
+                        <div class="news-date">2025年6月14日土曜日</div>
+                        <div class="news-content">Gemini Diffusion is also useful for tasks such as refactoring code, adding new features to applications, or converting an existing codebase to a different language.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/ai/googles-gemini-transparency-cut-leaves-enterprise-developers-debugging-blind/" target="_blank" class="news-title">Google’s Gemini transparency cut leaves enterprise developers ‘debugging blind’</a>
+                        <div class="news-date">2025年6月20日金曜日</div>
+                        <div class="news-content">Why is Google hiding Gemini's reasoning traces? The decision sparks a debate over black-box models versus the need for transparency.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-high">重要</span>
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/ai/openai-moves-forward-with-gpt-4-5-deprecation-in-api-triggering-developer-anguish-and-confusion/" target="_blank" class="news-title">OpenAI moves forward with GPT-4.5 deprecation in API, triggering developer anguish and confusion</a>
+                        <div class="news-date">2025年6月18日水曜日</div>
+                        <div class="news-content">Despite the strong reaction, OpenAI had in fact already announced the plan to deprecate GPT-4.5 Preview back in April 2025.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">MIT Technology Review AI</div>
+                        <a href="https://www.technologyreview.com/2025/06/18/1119042/openai-can-rehabilitate-ai-models-that-develop-a-bad-boy-persona/" target="_blank" class="news-title">OpenAI can rehabilitate AI models that develop a “bad boy persona”</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">A new paper from OpenAI has shown why a little bit of bad training can make AI models go rogue—but also demonstrates that this problem is generally pretty easy to fix.  Back in February, a group of re...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        <span class="importance-badge importance-medium">注目</span>
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/ai/the-interpretable-ai-playbook-what-anthropics-research-means-for-your-enterprise-llm-strategy/" target="_blank" class="news-title">The Interpretable AI playbook: What Anthropic’s research means for your enterprise LLM strategy</a>
+                        <div class="news-date">2025年6月18日水曜日</div>
+                        <div class="news-content">Anthropic is developing “interpretable” AI, where models let us understand what they are thinking and arrive at a particular conclusion.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">AI News</div>
+                        <a href="https://www.artificialintelligence-news.com/news/unlock-the-other-99-of-your-data-now-ready-for-ai/" target="_blank" class="news-title">Unlock the other 99% of your data – now ready for AI</a>
+                        <div class="news-date">2025年6月20日金曜日</div>
+                        <div class="news-content">For decades, companies of all sizes have recognized that the data available to them holds significant value, for improving user and customer experiences and for developing strategic plans based on emp...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">AI News</div>
+                        <a href="https://www.artificialintelligence-news.com/news/meta-buys-stake-in-scale-ai-raising-antitrust-concerns/" target="_blank" class="news-title">Meta buys stake in Scale AI, raising antitrust concerns</a>
+                        <div class="news-date">2025年6月17日火曜日</div>
+                        <div class="news-content">Meta’s $14.8 billion investment in Scale AI – and the hiring of the startup’s CEO – is drawing attention to how US regulators will handle acquihire-style deals under the Trump administration. The deal...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/ai/do-reasoning-models-really-think-or-not-apple-research-sparks-lively-debate-response/" target="_blank" class="news-title">Do reasoning AI models really ‘think’ or not? Apple research sparks lively debate, response</a>
+                        <div class="news-date">2025年6月14日土曜日</div>
+                        <div class="news-content">Ultimately, the big takeaway for ML researchers is that before proclaiming an AI milestone—or obituary—make sure the test itself isn’t flawed</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">AI News</div>
+                        <a href="https://www.artificialintelligence-news.com/news/the-openai-files-ex-staff-claim-profit-greed-ai-safety/" target="_blank" class="news-title">The OpenAI Files: Ex-staff claim profit greed betraying AI safety</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">‘The OpenAI Files’ report, assembling voices of concerned ex-staff, claims the world’s most prominent AI lab is betraying safety for profit. What began as a noble quest to ensure AI would serve all of...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/ai/genlayer-launches-a-new-method-to-incentivize-people-to-market-your-brand-using-ai-and-blockchain/" target="_blank" class="news-title">GenLayer launches a new method to incentivize people to market your brand using AI and blockchain</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">With applications like Rally already live in beta, GenLayer presents a new category of intelligent blockchain infrastructure.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">AI News</div>
+                        <a href="https://www.artificialintelligence-news.com/news/apple-ai-chip-design-automation/" target="_blank" class="news-title">Apple hints at AI integration in chip design process</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">Apple is beginning to use generative artificial intelligence to help design the chips that power its devices. The company’s hardware chief, Johny Srouji, made that clear during a speech last month in ...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/programming-development/openai-open-sourced-a-new-customer-service-agent-framework-learn-more-about-its-growing-enterprise-strategy/" target="_blank" class="news-title">OpenAI open sourced a new Customer Service Agent framework — learn more about its growing enterprise strategy</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">By offering transparent tooling and clear implementation examples, OpenAI is pushing agentic systems out of the lab and into everyday use.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">MIT Technology Review AI</div>
+                        <a href="https://www.technologyreview.com/2025/06/18/1118943/ai-hardware-open/" target="_blank" class="news-title">Why AI hardware needs to be open</a>
+                        <div class="news-date">2025年6月18日水曜日</div>
+                        <div class="news-content">When OpenAI acquired Io to create “the coolest piece of tech that the world will have ever seen,” it confirmed what industry experts have long been saying: Hardware is the new frontier for AI. AI will...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/programming-development/qodo-teams-up-with-google-cloud-to-provide-devs-with-free-ai-code-review-tools-directly-within-platform/" target="_blank" class="news-title">Qodo teams up with Google Cloud to provide devs with FREE AI code review tools directly within platform</a>
+                        <div class="news-date">2025年6月17日火曜日</div>
+                        <div class="news-content">The goal is to make enterprise-grade code quality solutions accessible to fast-growing startups looking to scale responsibly.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">MIT Technology Review AI</div>
+                        <a href="https://www.technologyreview.com/2025/06/19/1119066/ai-chatbot-dirty-talk-deepseek-replika/" target="_blank" class="news-title">It’s pretty easy to get DeepSeek to talk dirty</a>
+                        <div class="news-date">2025年6月20日金曜日</div>
+                        <div class="news-content">AI companions like Replika are designed to engage in intimate exchanges, but people use general-purpose chatbots for sex talk too, despite their stricter content moderation policies. Now new research ...</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/ai/announcing-our-2025-vb-transform-innovation-showcase-finalists/" target="_blank" class="news-title">Announcing our 2025 VB Transform Innovation Showcase finalists</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">Seven companies will be sharing their latest AI innovations from the main stage at VB Transform in SF on June 25.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/ai/announcing-the-2024-nominees-for-venturebeat-women-in-ai-awards-2025/" target="_blank" class="news-title">Announcing the 2025 finalists for VentureBeat Women in AI Awards</a>
+                        <div class="news-date">2025年6月19日木曜日</div>
+                        <div class="news-content">Announcing the finalists for the 2025 women in AI awards.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/games/sportsvisio-raises-3-2m-for-ai-for-sports-athletes-and-fans/" target="_blank" class="news-title">SportsVisio raises $3.2M for AI for sports athletes and fans</a>
+                        <div class="news-date">2025年6月18日水曜日</div>
+                        <div class="news-content">SportsVisio has raised $3.2 million to put the power of advanced AI into the hands of every athlete, coach, and fan.</div>
+                    </article>
+                      
+                    <article class="news-item">
+                        
+                        <div class="news-source">VentureBeat AI</div>
+                        <a href="https://venturebeat.com/ai/metas-new-world-model-lets-robots-manipulate-objects-in-environments-theyve-never-encountered-before/" target="_blank" class="news-title">Meta’s new world model lets robots manipulate objects in environments they’ve never encountered before</a>
+                        <div class="news-date">2025年6月13日金曜日</div>
+                        <div class="news-content">A robot powered by V-JEPA 2 can be deployed in a new environment and successfully manipulate objects it has never encountered before.</div>
+                    </article>
+                      
+                </div>
+            </section>
+              
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>このページは毎週水曜日と土曜日に自動更新されます</p>
+            <p>Powered by GitHub Actions + GitHub Pages</p>
+        </div>
+    </footer>
+</body>
+</html>
