@@ -2,6 +2,7 @@ const axios = require('axios');
 const Parser = require('rss-parser');
 const fs = require('fs').promises;
 const path = require('path');
+const { translateText, generateSummary } = require('./translate');
 
 const parser = new Parser();
 
@@ -161,15 +162,26 @@ async function fetchRSSFeed(source) {
     console.log(`Fetching from ${source.name}...`);
     const feed = await parser.parseURL(source.url);
     
-    return feed.items.map(item => ({
-      title: item.title,
-      link: item.link,
-      pubDate: item.pubDate,
-      content: item.contentSnippet || item.content || '',
-      source: source.name,
-      category: source.category,
-      importance: calculateImportance(item, source)
+    const items = await Promise.all(feed.items.map(async item => {
+      const translatedTitle = await translateText(item.title);
+      const summary = generateSummary(item.contentSnippet || item.content || '');
+      const translatedSummary = await translateText(summary);
+      
+      return {
+        title: item.title,
+        titleJa: translatedTitle,
+        link: item.link,
+        pubDate: item.pubDate,
+        content: item.contentSnippet || item.content || '',
+        summary: summary,
+        summaryJa: translatedSummary,
+        source: source.name,
+        category: source.category,
+        importance: calculateImportance(item, source)
+      };
     }));
+    
+    return items;
   } catch (error) {
     console.error(`Error fetching ${source.name}:`, error.message);
     return [];
@@ -198,14 +210,16 @@ async function fetchAllNews() {
     }
   }
 
-  // 重要度でソート
+  // 日付順でソート（最新が上）
   uniqueNews.sort((a, b) => {
-    // まず重要度で比較
-    if (b.importance !== a.importance) {
-      return b.importance - a.importance;
+    // まず日付で比較（新しい順）
+    const dateA = new Date(a.pubDate);
+    const dateB = new Date(b.pubDate);
+    if (dateB.getTime() !== dateA.getTime()) {
+      return dateB.getTime() - dateA.getTime();
     }
-    // 同じ重要度なら日付で比較
-    return new Date(b.pubDate) - new Date(a.pubDate);
+    // 同じ日付なら重要度で比較
+    return b.importance - a.importance;
   });
   
   // 重要度が一定以上のニュースのみを選択（上限なし）
