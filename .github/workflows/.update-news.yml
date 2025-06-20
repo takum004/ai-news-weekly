@@ -1,10 +1,9 @@
- name: Update AI News Daily
+name: Update AI News Daily
 
   on:
     schedule:
-      # 毎日朝9時（日本時間）に実行
       - cron: '0 0 * * *'
-    workflow_dispatch: # 手動実行も可能
+    workflow_dispatch:
 
   jobs:
     update-news:
@@ -30,12 +29,9 @@
 
       - name: Commit and push changes
         run: |
-          git config --local user.email
-   "action@github.com"
-          git config --local user.name 
-  "GitHub Action"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add -A
-          git diff --staged --quiet || 
-  git commit -m "Update AI news - 
-  $(date +'%Y-%m-%d')"
+          git diff --staged --quiet || git commit -m "Update AI 
+  news - $(date +'%Y-%m-%d')"
           git push
