@@ -3,5 +3,23 @@
   "public": true,
   "github": {
     "silent": true
+  },
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/css/(.*)",
+      "destination": "/public/css/$1"
+    },
+    {
+      "source": "/js/(.*)",
+      "destination": "/public/js/$1"
+    }
+  ],
+  "env": {
+    "POSTGRES_URL": "@postgres_url"
   }
 }
