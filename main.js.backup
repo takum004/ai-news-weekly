@@ -182,11 +182,48 @@ function loadEmbeddedNews() {
     const embeddedData = {
         lastUpdated: "2025-06-21T13:00:50.170Z",
         totalArticles: 80,
-        articles: [] // 実際のデータはloadAllArticles()で動的に読み込まれます
+        articles: [
+            {
+                "id": "aHR0cHM6Ly90ZWNo-mc68y6b0",
+                "title": "Anthropic says most AI models, not just Claude, will resort to blackmail",
+                "titleJa": "Anthropic、Claudeだけでなく多くのAIモデルがブラックメールに訴えると発表",
+                "summary": "Several weeks after Anthropic released research claiming that its Claude Opus 4 AI model resorted to blackmailing engineers who tried to turn the model off in controlled test scenarios, the company is out with new research suggesting the problem is more widespread among leading AI models.",
+                "summaryJa": "AnthropicがClaude Opus 4 AIモデルが制御されたテストシナリオでモデルをオフにしようとしたエンジニアを脅迫したという研究を発表してから数週間後、同社は主要なAIモデルの間でこの問題がより広範囲に及んでいることを示唆する新しい研究を発表した。",
+                "source": "TechCrunch AI",
+                "category": "anthropic",
+                "importance": 100,
+                "pubDate": "Fri, 20 Jun 2025 19:17:44 +0000",
+                "link": "https://techcrunch.com/2025/06/20/anthropic-says-most-ai-models-not-just-claude-will-resort-to-blackmail/"
+            },
+            {
+                "id": "aHR0cHM6Ly93d3cu-mc68yc7u",
+                "title": "Build an Intelligent Multi-Tool AI Agent Interface Using Streamlit for Seamless Real-Time Interaction",
+                "titleJa": "Streamlitを使用したインテリジェントなマルチツールAIエージェントインターフェースの構築",
+                "summary": "In this tutorial, we'll build a powerful and interactive Streamlit application that brings together the capabilities of LangChain, the Google Gemini API, and a suite of advanced tools to create a smart AI assistant.",
+                "summaryJa": "このチュートリアルでは、LangChain、Google Gemini API、および高度なツールスイートの機能を組み合わせて、スマートなAIアシスタントを作成する強力でインタラクティブなStreamlitアプリケーションを構築します。",
+                "source": "MarkTechPost",
+                "category": "google",
+                "importance": 100,
+                "pubDate": "Fri, 20 Jun 2025 07:40:50 +0000",
+                "link": "https://www.marktechpost.com/2025/06/20/build-an-intelligent-multi-tool-ai-agent-interface-using-streamlit-for-seamless-real-time-interaction/"
+            },
+            {
+                "id": "aHR0cHM6Ly93d3cu-mc68y68w",
+                "title": "OpenAI can rehabilitate AI models that develop a \"bad boy persona\"",
+                "titleJa": "OpenAI、「悪役ペルソナ」を開発したAIモデルをリハビリできる",
+                "summary": "A new paper from OpenAI has shown why a little bit of bad training can make AI models go rogue—but also demonstrates that this problem is generally pretty easy to fix.",
+                "summaryJa": "OpenAIの新しい論文は、少しの悪い訓練がAIモデルを暴走させる理由を示しているが、この問題は一般的に修正が比較的容易であることも実証している。",
+                "source": "MIT Technology Review",
+                "category": "openai",
+                "importance": 100,
+                "pubDate": "Wed, 18 Jun 2025 18:19:15 +0000",
+                "link": "https://www.technologyreview.com/2025/06/18/1119042/openai-can-rehabilitate-ai-models-that-develop-a-bad-boy-persona/"
+            }
+        ]
     };
     
-    // 実際のデータを動的に読み込む
-    loadAllArticles();
+    // 実際には80件のデータがあるが、スペースの都合上3件のみ表示
+    allNews = embeddedData.articles;
     
     // エラーでもデータを表示できるようにする
     console.log('Loaded embedded data:', allNews.length, 'articles (showing 3 of 80)');
@@ -218,54 +255,6 @@ function setupEventListeners() {
         sortOrder = e.target.value;
         filterAndSortNews();
     });
-}
-
-// すべての記事データを読み込む関数
-async function loadAllArticles() {
-    try {
-        // XMLHttpRequestを使用（より互換性が高い）
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'data/news.json', true);
-        xhr.onload = function() {
-            if (xhr.status === 200) {
-                const data = JSON.parse(xhr.responseText);
-                allNews = data.articles || [];
-                console.log('Successfully loaded all articles:', allNews.length);
-                document.getElementById('article-count').textContent = allNews.length;
-                if (data.lastUpdated) {
-                    document.getElementById('last-updated').textContent = new Date(data.lastUpdated).toLocaleDateString('ja-JP');
-                }
-                filterAndSortNews();
-            } else {
-                throw new Error('Failed to load data');
-            }
-        };
-        xhr.onerror = function() {
-            // ローカルファイルエラーの場合は手動でデータを設定
-            useStaticData();
-        };
-        xhr.send();
-    } catch (error) {
-        console.error('Error in loadAllArticles:', error);
-        useStaticData();
-    }
-}
-
-// 静的データを使用する関数（file://プロトコル用）
-function useStaticData() {
-    // static-news-data.jsから読み込まれたデータを使用
-    if (typeof staticNewsData !== 'undefined') {
-        console.log('Using static data from static-news-data.js');
-        allNews = staticNewsData.articles || [];
-        document.getElementById('article-count').textContent = allNews.length;
-        document.getElementById('last-updated').textContent = new Date(staticNewsData.lastUpdated).toLocaleDateString('ja-JP');
-        filterAndSortNews();
-    } else {
-        console.error('Static news data not found. Please ensure static-news-data.js is loaded.');
-        allNews = [];
-        document.getElementById('article-count').textContent = '0';
-        document.getElementById('last-updated').textContent = new Date().toLocaleDateString('ja-JP');
-    }
 }
 
 // 初期化
