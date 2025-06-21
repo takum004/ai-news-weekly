@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カテゴリ別ニュース - AI Weekly News</title>
+    <meta name="description" content="カテゴリ別に整理されたAI関連ニュース">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="categories.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🤖</div>
+                    <div class="logo-text">
+                        <h1><a href="index.html">AI Weekly News</a></h1>
+                        <p>最新のAI動向を日本語で</p>
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">ホーム</a>
+                    <a href="index.html#news" class="nav-link">ニュース</a>
+                    <a href="categories.html" class="nav-link active">カテゴリ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index.html">ホーム</a> 
+            <span class="separator">></span>
+            <span>カテゴリ</span>
+        </div>
+    </nav>
+
+    <!-- Categories Hero -->
+    <section class="categories-hero">
+        <div class="container">
+            <h1>📂 カテゴリ別ニュース</h1>
+            <p>興味のあるカテゴリを選んで、関連するAIニュースをご覧ください</p>
+        </div>
+    </section>
+
+    <!-- Category Overview -->
+    <section class="category-overview">
+        <div class="container">
+            <div class="category-stats">
+                <h2>📊 カテゴリ別記事数</h2>
+                <div id="category-stats-grid" class="stats-grid">
+                    <!-- Stats will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <section class="category-nav">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">
+                    📰 すべて (<span id="count-all">0</span>)
+                </button>
+                <button class="category-tab" data-category="tech">
+                    💻 技術 (<span id="count-tech">0</span>)
+                </button>
+                <button class="category-tab" data-category="business">
+                    💼 ビジネス (<span id="count-business">0</span>)
+                </button>
+                <button class="category-tab" data-category="research">
+                    🔬 研究 (<span id="count-research">0</span>)
+                </button>
+                <button class="category-tab" data-category="healthcare">
+                    🏥 ヘルスケア (<span id="count-healthcare">0</span>)
+                </button>
+                <button class="category-tab" data-category="academic">
+                    🎓 学術 (<span id="count-academic">0</span>)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Content -->
+    <main class="category-content">
+        <div class="container">
+            <!-- Current Category Info -->
+            <div id="current-category-info" class="category-info">
+                <div class="category-header">
+                    <h2 id="category-title">📰 すべてのニュース</h2>
+                    <p id="category-description">全カテゴリのAI関連ニュースを表示しています</p>
+                </div>
+                <div class="category-meta">
+                    <span class="article-count">記事数: <strong id="current-count">0</strong></span>
+                    <span class="last-updated">最終更新: <strong id="last-updated"></strong></span>
+                </div>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="category-controls">
+                <div class="search-container">
+                    <input type="text" id="category-search" placeholder="記事を検索..." class="search-input">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="sort-container">
+                    <select id="sort-select" class="sort-select">
+                        <option value="importance">重要度順</option>
+                        <option value="date">日付順</option>
+                        <option value="title">タイトル順</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Articles Grid -->
+            <div id="category-articles" class="articles-grid">
+                <!-- Articles will be populated by JavaScript -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button id="load-more-btn" class="btn btn-primary" style="display: none;">
+                    📄 さらに表示
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Weekly News</h3>
+                    <p>最新のAI動向を毎日自動収集・翻訳してお届けします</p>
+                </div>
+                <div class="footer-section">
+                    <h4>カテゴリ</h4>
+                    <ul>
+                        <li><a href="categories.html?category=tech">技術</a></li>
+                        <li><a href="categories.html?category=business">ビジネス</a></li>
+                        <li><a href="categories.html?category=research">研究</a></li>
+                        <li><a href="categories.html?category=healthcare">ヘルスケア</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>更新情報</h4>
+                    <p>毎日 JST 6:00 に自動更新</p>
+                    <p>GitHub Actions による自動運用</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Weekly News. Auto-generated content.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="categories.js"></script>
+</body>
+</html>

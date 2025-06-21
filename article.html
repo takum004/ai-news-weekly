@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記事詳細 - AI Weekly News</title>
+    <meta name="description" content="AI関連ニュースの詳細記事ページ">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="article.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🤖</div>
+                    <div class="logo-text">
+                        <h1><a href="index.html">AI Weekly News</a></h1>
+                        <p>最新のAI動向を日本語で</p>
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">ホーム</a>
+                    <a href="index.html#news" class="nav-link">ニュース</a>
+                    <a href="categories.html" class="nav-link">カテゴリ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index.html">ホーム</a> 
+            <span class="separator">></span>
+            <span id="breadcrumb-category">カテゴリ</span>
+            <span class="separator">></span>
+            <span>記事詳細</span>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <main class="article-main">
+        <div class="container">
+            <article class="article-content">
+                <!-- Article Header -->
+                <header class="article-header">
+                    <div class="article-meta">
+                        <span id="article-category" class="category-badge"></span>
+                        <span id="article-importance" class="importance-badge"></span>
+                        <time id="article-date" class="article-date"></time>
+                    </div>
+                    
+                    <h1 id="article-title-en" class="article-title-en"></h1>
+                    <h2 id="article-title-ja" class="article-title-ja"></h2>
+                    
+                    <div class="article-source">
+                        <span>情報源:</span>
+                        <strong id="article-source-name"></strong>
+                    </div>
+                </header>
+
+                <!-- Article Body -->
+                <div class="article-body">
+                    <section class="summary-section">
+                        <h3>📝 要約</h3>
+                        <div class="summary-content">
+                            <div class="summary-en">
+                                <h4>English Summary</h4>
+                                <p id="article-summary-en"></p>
+                            </div>
+                            <div class="summary-ja">
+                                <h4>日本語要約</h4>
+                                <p id="article-summary-ja"></p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="details-section">
+                        <h3>🔍 詳細情報</h3>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <span class="detail-label">重要度スコア</span>
+                                <div id="importance-score" class="importance-score"></div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">公開日時</span>
+                                <span id="publication-date"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">記事ID</span>
+                                <span id="article-id"></span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="action-section">
+                        <h3>🔗 関連リンク</h3>
+                        <div class="action-buttons">
+                            <a id="original-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                📰 元記事を読む
+                            </a>
+                            <button onclick="shareArticle()" class="btn btn-secondary">
+                                🔗 記事をシェア
+                            </button>
+                            <button onclick="goBack()" class="btn btn-outline">
+                                ← 一覧に戻る
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </article>
+
+            <!-- Related Articles -->
+            <aside class="related-articles">
+                <h3>📚 関連記事</h3>
+                <div id="related-articles-list" class="related-list">
+                    <!-- Related articles will be populated by JavaScript -->
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Weekly News</h3>
+                    <p>最新のAI動向を毎日自動収集・翻訳してお届けします</p>
+                </div>
+                <div class="footer-section">
+                    <h4>情報源</h4>
+                    <ul>
+                        <li>OpenAI Blog</li>
+                        <li>MIT Technology Review</li>
+                        <li>TechCrunch AI</li>
+                        <li>AI News</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>更新情報</h4>
+                    <p>毎日 JST 6:00 に自動更新</p>
+                    <p>GitHub Actions による自動運用</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Weekly News. Auto-generated content.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="article.js"></script>
+</body>
+</html>
