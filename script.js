@@ -462,7 +462,7 @@ function loadEmbeddedNews() {
     // Full embedded news data
     const embeddedData = {
         lastUpdated: "2025-06-21T00:00:00Z",
-        totalArticles: 30,
+        totalArticles: 80,
         articles: [
             {
                 id: "openai-gpt-4-1-release",
@@ -834,6 +834,442 @@ function loadEmbeddedNews() {
                 category: "business",
                 importance: 75,
                 pubDate: "2025-06-19T07:00:00Z",
+                link: "#"
+            },
+            // Video Generation Articles
+            {
+                id: "runway-gen-3-alpha",
+                title: "Runway Gen-3 Alpha model creates Hollywood-quality video from text",
+                titleJa: "Runway Gen-3 Alpha、テキストからハリウッド品質の動画を生成",
+                summary: "Runway's Gen-3 Alpha brings significant improvements in video quality, consistency, and motion control.",
+                summaryJa: "RunwayのGen-3 Alphaが動画品質、一貫性、モーション制御で大幅改善を実現。",
+                source: "Runway Research",
+                category: "video_generation",
+                importance: 94,
+                pubDate: "2025-06-20T16:00:00Z",
+                link: "#"
+            },
+            {
+                id: "pika-labs-video-ai",
+                title: "Pika Labs launches new video AI model with camera controls",
+                titleJa: "Pika Labs、カメラ制御機能付き新動画AIモデルをリリース",
+                summary: "Pika's latest model offers precise camera movements, zoom controls, and cinematic effects.",
+                summaryJa: "Pikaの最新モデルが精密なカメラワーク、ズーム制御、映画的効果を提供。",
+                source: "Pika Labs",
+                category: "video_generation",
+                importance: 90,
+                pubDate: "2025-06-20T14:30:00Z",
+                link: "#"
+            },
+            {
+                id: "stable-video-diffusion",
+                title: "Stability AI releases Stable Video Diffusion for open-source community",
+                titleJa: "Stability AI、オープンソースコミュニティ向けStable Video Diffusionをリリース",
+                summary: "The open-source video generation model enables developers to create custom video AI applications.",
+                summaryJa: "オープンソース動画生成モデルにより開発者が独自の動画AIアプリケーションを作成可能。",
+                source: "Stability AI",
+                category: "video_generation",
+                importance: 88,
+                pubDate: "2025-06-20T12:00:00Z",
+                link: "#"
+            },
+            // Image Generation Articles
+            {
+                id: "midjourney-v7-announcement",
+                title: "Midjourney V7 delivers photorealistic images with enhanced consistency",
+                titleJa: "Midjourney V7、一貫性を向上させた写真品質の画像を提供",
+                summary: "The latest version brings significant improvements in image coherence and style consistency.",
+                summaryJa: "最新版が画像の一貫性とスタイルの統一性で大幅な改善を実現。",
+                source: "Midjourney",
+                category: "image_generation",
+                importance: 93,
+                pubDate: "2025-06-20T15:45:00Z",
+                link: "#"
+            },
+            {
+                id: "dalle-3-hd-update",
+                title: "DALL-E 3 HD update enables 4K image generation with fine details",
+                titleJa: "DALL-E 3 HDアップデートで4K画像生成と精細ディテールが可能",
+                summary: "OpenAI's updated DALL-E 3 can now generate high-resolution images with unprecedented detail.",
+                summaryJa: "OpenAIの更新されたDALL-E 3が前例のない詳細度で高解像度画像を生成可能。",
+                source: "OpenAI",
+                category: "image_generation",
+                importance: 91,
+                pubDate: "2025-06-20T13:20:00Z",
+                link: "#"
+            },
+            {
+                id: "adobe-firefly-integration",
+                title: "Adobe integrates Firefly AI across Creative Cloud suite",
+                titleJa: "Adobe、Creative CloudスイートにFirefly AIを統合",
+                summary: "Full integration brings AI-powered image generation directly into Photoshop, Illustrator, and more.",
+                summaryJa: "完全統合によりAI画像生成がPhotoshop、Illustrator等に直接組み込まれる。",
+                source: "Adobe",
+                category: "image_generation",
+                importance: 89,
+                pubDate: "2025-06-20T11:10:00Z",
+                link: "#"
+            },
+            // Music Generation Articles
+            {
+                id: "suno-v4-music-ai",
+                title: "Suno V4 generates full songs with lyrics in any genre",
+                titleJa: "Suno V4、あらゆるジャンルで歌詞付きフル楽曲を生成",
+                summary: "The latest Suno model can create complete songs with vocals, instruments, and production quality.",
+                summaryJa: "最新Sunoモデルがボーカル、楽器、プロダクション品質を含む完全な楽曲を作成。",
+                source: "Suno AI",
+                category: "music_generation",
+                importance: 87,
+                pubDate: "2025-06-20T10:30:00Z",
+                link: "#"
+            },
+            {
+                id: "udio-beta-release",
+                title: "Udio launches public beta with advanced music composition AI",
+                titleJa: "Udio、高度な音楽作曲AIでパブリックベータを開始",
+                summary: "Udio's beta platform allows users to create professional-quality music tracks using AI.",
+                summaryJa: "UdioのベータプラットフォームでユーザーがAIを使用してプロ品質の音楽トラックを作成可能。",
+                source: "Udio",
+                category: "music_generation",
+                importance: 85,
+                pubDate: "2025-06-20T09:15:00Z",
+                link: "#"
+            },
+            // Voice Cloning Articles
+            {
+                id: "elevenlabs-voice-cloning",
+                title: "ElevenLabs introduces real-time voice cloning with emotion control",
+                titleJa: "ElevenLabs、感情制御付きリアルタイム音声クローニングを発表",
+                summary: "The new feature allows instant voice replication with adjustable emotional expressions.",
+                summaryJa: "新機能により調整可能な感情表現でインスタント音声複製が可能。",
+                source: "ElevenLabs",
+                category: "voice_cloning",
+                importance: 86,
+                pubDate: "2025-06-20T08:00:00Z",
+                link: "#"
+            },
+            {
+                id: "speechify-voice-ai",
+                title: "Speechify launches AI voice actors for audiobook narration",
+                titleJa: "Speechify、オーディオブック朗読用AI声優を開始",
+                summary: "Professional-quality AI voices can now narrate entire books with consistent character voices.",
+                summaryJa: "プロ品質のAI音声が一貫したキャラクター音声で書籍全体を朗読可能。",
+                source: "Speechify",
+                category: "voice_cloning",
+                importance: 82,
+                pubDate: "2025-06-19T19:30:00Z",
+                link: "#"
+            },
+            // 3D Modeling Articles
+            {
+                id: "meta-3d-gen-model",
+                title: "Meta releases 3D Gen for instant 3D model creation from text",
+                titleJa: "Meta、テキストからインスタント3Dモデル作成の3D Genをリリース",
+                summary: "Meta's 3D Gen can create detailed 3D models and textures from simple text descriptions.",
+                summaryJa: "MetaのMD Genが簡単なテキスト説明から詳細な3Dモデルとテクスチャを作成。",
+                source: "Meta AI",
+                category: "3d_modeling",
+                importance: 89,
+                pubDate: "2025-06-19T18:45:00Z",
+                link: "#"
+            },
+            {
+                id: "nvidia-3d-ai-tools",
+                title: "NVIDIA Omniverse integrates AI-powered 3D content creation",
+                titleJa: "NVIDIA Omniverse、AI駆動3Dコンテンツ作成を統合",
+                summary: "New AI tools in Omniverse enable rapid 3D scene generation and asset creation.",
+                summaryJa: "OmniverseのAIツールが高速3Dシーン生成とアセット作成を実現。",
+                source: "NVIDIA",
+                category: "3d_modeling",
+                importance: 84,
+                pubDate: "2025-06-19T17:20:00Z",
+                link: "#"
+            },
+            // Code Generation Articles
+            {
+                id: "github-copilot-workspace",
+                title: "GitHub Copilot Workspace enables AI-powered end-to-end development",
+                titleJa: "GitHub Copilot Workspace、AI駆動のエンドツーエンド開発を実現",
+                summary: "New workspace features allow AI to plan, code, test, and deploy entire applications.",
+                summaryJa: "新ワークスペース機能によりAIがアプリケーション全体の計画、コーディング、テスト、デプロイを実行。",
+                source: "GitHub",
+                category: "code_generation",
+                importance: 92,
+                pubDate: "2025-06-19T16:00:00Z",
+                link: "#"
+            },
+            {
+                id: "cursor-ai-editor",
+                title: "Cursor AI editor gains predictive coding with 90% accuracy",
+                titleJa: "Cursor AIエディタ、90%精度の予測コーディングを獲得",
+                summary: "The AI-powered editor can now predict and write code blocks before developers finish typing.",
+                summaryJa: "AI駆動エディタが開発者のタイピング完了前にコードブロックを予測・作成可能。",
+                source: "Cursor",
+                category: "code_generation",
+                importance: 88,
+                pubDate: "2025-06-19T15:15:00Z",
+                link: "#"
+            },
+            {
+                id: "replit-agent-coding",
+                title: "Replit Agent can build full applications from natural language",
+                titleJa: "Replit Agent、自然言語から完全なアプリケーションを構築",
+                summary: "The AI agent understands requirements and builds complete web applications autonomously.",
+                summaryJa: "AIエージェントが要件を理解し、完全なWebアプリケーションを自律的に構築。",
+                source: "Replit",
+                category: "code_generation",
+                importance: 86,
+                pubDate: "2025-06-19T14:30:00Z",
+                link: "#"
+            },
+            // Agent AI Articles
+            {
+                id: "anthropic-claude-agents",
+                title: "Anthropic releases Claude Agents for autonomous task completion",
+                titleJa: "Anthropic、自律タスク完了のClaude Agentsをリリース",
+                summary: "Claude Agents can browse the web, use tools, and complete complex multi-step tasks.",
+                summaryJa: "Claude AgentsがWeb閲覧、ツール使用、複雑な多段階タスクの完了が可能。",
+                source: "Anthropic",
+                category: "agents",
+                importance: 91,
+                pubDate: "2025-06-19T13:45:00Z",
+                link: "#"
+            },
+            {
+                id: "openai-operator-release",
+                title: "OpenAI Operator can control your computer to complete tasks",
+                titleJa: "OpenAI Operator、タスク完了のためコンピュータを制御可能",
+                summary: "The new AI agent can interact with any software interface to accomplish user goals.",
+                summaryJa: "新AIエージェントがユーザー目標達成のため任意のソフトウェアインターフェースと対話可能。",
+                source: "OpenAI",
+                category: "agents",
+                importance: 94,
+                pubDate: "2025-06-19T12:20:00Z",
+                link: "#"
+            },
+            // Robotics Articles
+            {
+                id: "boston-dynamics-atlas-ai",
+                title: "Boston Dynamics Atlas robot gains AI-powered autonomous navigation",
+                titleJa: "Boston Dynamics Atlas ロボット、AI駆動自律ナビゲーションを獲得",
+                summary: "Atlas can now navigate complex environments and perform tasks without human guidance.",
+                summaryJa: "Atlasが複雑な環境をナビゲートし、人間の指導なしでタスクを実行可能。",
+                source: "Boston Dynamics",
+                category: "robotics",
+                importance: 89,
+                pubDate: "2025-06-19T11:00:00Z",
+                link: "#"
+            },
+            {
+                id: "tesla-optimus-update",
+                title: "Tesla Optimus robot demonstrates household task automation",
+                titleJa: "Tesla Optimusロボット、家事タスク自動化を実演",
+                summary: "Latest Optimus prototype can perform cooking, cleaning, and organizing tasks autonomously.",
+                summaryJa: "最新Optimusプロトタイプが料理、掃除、整理タスクを自律的に実行可能。",
+                source: "Tesla",
+                category: "robotics",
+                importance: 87,
+                pubDate: "2025-06-19T10:15:00Z",
+                link: "#"
+            },
+            // Multimodal AI Articles
+            {
+                id: "gpt-4v-vision-upgrade",
+                title: "GPT-4V vision capabilities expanded with real-time video analysis",
+                titleJa: "GPT-4Vビジョン機能、リアルタイム動画解析で拡張",
+                summary: "Enhanced vision model can now process and analyze live video streams in real-time.",
+                summaryJa: "強化されたビジョンモデルがライブ動画ストリームをリアルタイムで処理・解析可能。",
+                source: "OpenAI",
+                category: "multimodal",
+                importance: 90,
+                pubDate: "2025-06-19T09:30:00Z",
+                link: "#"
+            },
+            {
+                id: "google-gemini-multimodal",
+                title: "Google Gemini Pro gains advanced multimodal reasoning capabilities",
+                titleJa: "Google Gemini Pro、高度なマルチモーダル推論機能を獲得",
+                summary: "New model can simultaneously process text, images, audio, and video for complex reasoning.",
+                summaryJa: "新モデルが複雑な推論のためテキスト、画像、音声、動画を同時処理可能。",
+                source: "Google",
+                category: "multimodal",
+                importance: 88,
+                pubDate: "2025-06-19T08:45:00Z",
+                link: "#"
+            },
+            // xAI Articles
+            {
+                id: "grok-3-reasoning",
+                title: "xAI releases Grok-3 with enhanced reasoning and real-time data",
+                titleJa: "xAI、強化された推論とリアルタイムデータ対応のGrok-3をリリース",
+                summary: "Grok-3 combines advanced reasoning with live X (Twitter) data integration for current insights.",
+                summaryJa: "Grok-3が高度な推論とライブX（Twitter）データ統合で最新インサイトを提供。",
+                source: "xAI",
+                category: "xai",
+                importance: 86,
+                pubDate: "2025-06-19T07:30:00Z",
+                link: "#"
+            },
+            {
+                id: "grok-image-generation",
+                title: "Grok adds image generation capabilities powered by Flux",
+                titleJa: "Grok、Flux駆動の画像生成機能を追加",
+                summary: "xAI integrates advanced image generation directly into Grok for creative applications.",
+                summaryJa: "xAIがクリエイティブアプリケーション用に高度な画像生成をGrokに直接統合。",
+                source: "xAI",
+                category: "xai",
+                importance: 83,
+                pubDate: "2025-06-18T20:15:00Z",
+                link: "#"
+            },
+            // NVIDIA Articles
+            {
+                id: "nvidia-rtx-5090-ai",
+                title: "NVIDIA RTX 5090 delivers breakthrough AI performance for creators",
+                titleJa: "NVIDIA RTX 5090、クリエイター向けに画期的なAI性能を提供",
+                summary: "New graphics card offers 2x faster AI workloads with enhanced memory for large model inference.",
+                summaryJa: "新グラフィックカードが大型モデル推論用強化メモリで2倍高速なAIワークロードを提供。",
+                source: "NVIDIA",
+                category: "nvidia",
+                importance: 85,
+                pubDate: "2025-06-18T19:00:00Z",
+                link: "#"
+            },
+            {
+                id: "nvidia-ai-enterprise-5",
+                title: "NVIDIA AI Enterprise 5.0 simplifies AI deployment at scale",
+                titleJa: "NVIDIA AI Enterprise 5.0、大規模AI展開を簡素化",
+                summary: "New platform provides unified AI infrastructure management for enterprise deployments.",
+                summaryJa: "新プラットフォームが企業展開用の統一AIインフラ管理を提供。",
+                source: "NVIDIA",
+                category: "nvidia",
+                importance: 81,
+                pubDate: "2025-06-18T17:45:00Z",
+                link: "#"
+            },
+            // Gaming AI Articles
+            {
+                id: "unity-ai-npc-generator",
+                title: "Unity launches AI NPC generator for realistic game characters",
+                titleJa: "Unity、リアルなゲームキャラクター用AI NPC生成器を開始",
+                summary: "New tool automatically creates intelligent NPCs with unique personalities and behaviors.",
+                summaryJa: "新ツールが独特の個性と行動を持つ知的NPCを自動作成。",
+                source: "Unity",
+                category: "gaming",
+                importance: 82,
+                pubDate: "2025-06-18T16:30:00Z",
+                link: "#"
+            },
+            {
+                id: "epic-games-metahuman-ai",
+                title: "Epic Games MetaHuman Creator gains AI-powered facial animation",
+                titleJa: "Epic Games MetaHuman Creator、AI駆動顔面アニメーションを獲得",
+                summary: "Real-time facial animation generation brings photorealistic characters to life instantly.",
+                summaryJa: "リアルタイム顔面アニメーション生成により写真のようにリアルなキャラクターが瞬時に生命を得る。",
+                source: "Epic Games",
+                category: "gaming",
+                importance: 80,
+                pubDate: "2025-06-18T15:15:00Z",
+                link: "#"
+            },
+            // Translation AI Articles
+            {
+                id: "deepl-context-translation",
+                title: "DeepL introduces context-aware translation with 99% accuracy",
+                titleJa: "DeepL、99%精度のコンテキスト認識翻訳を発表",
+                summary: "New model understands document context and cultural nuances for more accurate translations.",
+                summaryJa: "新モデルが文書コンテキストと文化的ニュアンスを理解してより正確な翻訳を実現。",
+                source: "DeepL",
+                category: "translation",
+                importance: 84,
+                pubDate: "2025-06-18T14:00:00Z",
+                link: "#"
+            },
+            {
+                id: "google-translate-realtime",
+                title: "Google Translate enables real-time conversation translation",
+                titleJa: "Google翻訳、リアルタイム会話翻訳を実現",
+                summary: "Live conversation mode translates speech instantly with natural voice synthesis.",
+                summaryJa: "ライブ会話モードが自然な音声合成でスピーチを瞬時に翻訳。",
+                source: "Google",
+                category: "translation",
+                importance: 87,
+                pubDate: "2025-06-18T13:15:00Z",
+                link: "#"
+            },
+            // Reasoning AI Articles
+            {
+                id: "deepmind-alphaproof-math",
+                title: "DeepMind's AlphaProof achieves gold medal level in mathematical reasoning",
+                titleJa: "DeepMindのAlphaProof、数学的推論で金メダルレベルを達成",
+                summary: "AI system solves complex mathematical proofs at the level of International Mathematical Olympiad winners.",
+                summaryJa: "AIシステムが国際数学オリンピック優勝者レベルで複雑な数学証明を解決。",
+                source: "DeepMind",
+                category: "reasoning",
+                importance: 93,
+                pubDate: "2025-06-18T12:30:00Z",
+                link: "#"
+            },
+            {
+                id: "openai-o1-pro-benchmark",
+                title: "OpenAI o1-pro sets new benchmarks in complex reasoning tasks",
+                titleJa: "OpenAI o1-pro、複雑推論タスクで新ベンチマークを設定",
+                summary: "Latest reasoning model achieves human-level performance on challenging logic and mathematics problems.",
+                summaryJa: "最新推論モデルが困難な論理・数学問題で人間レベルの性能を達成。",
+                source: "OpenAI",
+                category: "reasoning",
+                importance: 91,
+                pubDate: "2025-06-18T11:45:00Z",
+                link: "#"
+            },
+            // Startup Articles
+            {
+                id: "ai-startup-funding-record",
+                title: "AI startups raise record $50 billion in 2025 funding rounds",
+                titleJa: "AIスタートアップ、2025年の資金調達ラウンドで記録的な500億ドルを調達",
+                summary: "Venture capital investment in AI companies reaches unprecedented levels as adoption accelerates.",
+                summaryJa: "AI導入加速に伴い、AI企業へのベンチャーキャピタル投資が前例のないレベルに到達。",
+                source: "PitchBook",
+                category: "startups",
+                importance: 79,
+                pubDate: "2025-06-18T10:20:00Z",
+                link: "#"
+            },
+            {
+                id: "perplexity-search-revenue",
+                title: "Perplexity AI reaches $100M annual revenue with conversational search",
+                titleJa: "Perplexity AI、対話型検索で年間収益1億ドルに到達",
+                summary: "AI-powered search startup achieves major milestone in challenge to traditional search engines.",
+                summaryJa: "AI駆動検索スタートアップが従来検索エンジンへの挑戦で主要マイルストーンを達成。",
+                source: "Perplexity",
+                category: "startups",
+                importance: 83,
+                pubDate: "2025-06-18T09:30:00Z",
+                link: "#"
+            },
+            // Regulation Articles
+            {
+                id: "eu-ai-act-implementation",
+                title: "EU AI Act implementation begins with first compliance deadlines",
+                titleJa: "EU AI法の実装開始、最初のコンプライアンス期限到来",
+                summary: "European Union's comprehensive AI legislation enters force with immediate requirements for high-risk systems.",
+                summaryJa: "欧州連合の包括的AI法が高リスクシステムへの即時要件と共に発効。",
+                source: "European Commission",
+                category: "regulation",
+                importance: 85,
+                pubDate: "2025-06-18T08:15:00Z",
+                link: "#"
+            },
+            {
+                id: "us-ai-safety-institute",
+                title: "US establishes National AI Safety Institute with $2B budget",
+                titleJa: "米国、20億ドル予算で国立AI安全研究所を設立",
+                summary: "New federal agency will oversee AI safety research and establish national AI safety standards.",
+                summaryJa: "新連邦機関がAI安全研究を監督し、国家AI安全基準を確立。",
+                source: "NIST",
+                category: "regulation",
+                importance: 88,
+                pubDate: "2025-06-18T07:00:00Z",
                 link: "#"
             }
         ]
