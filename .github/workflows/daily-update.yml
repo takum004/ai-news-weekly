@@ -37,6 +37,8 @@ jobs:
         timeout-minutes: 5
       
       - name: Fetch and update news
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           npm run update-news || {
             echo "RSS fetch failed, but continuing with workflow"

@@ -198,9 +198,9 @@ async function fetchNewsFromRSS() {
           allArticles.push({
             id: generateId(item.link || item.guid || title),
             title: cleanText(title),
-            titleJa: translateText(title),
+            titleJa: await translateText(title, process.env.OPENAI_API_KEY),
             summary: cleanText(summary),
-            summaryJa: translateText(summary),
+            summaryJa: await translateText(summary, process.env.OPENAI_API_KEY),
             source: feed.title || extractDomain(feedUrl),
             category: categorizeArticle(title, content),
             importance: calculateImportance(title, content),
@@ -370,9 +370,39 @@ function calculateImportance(title, content) {
   return Math.min(Math.max(score, 30), 100);
 }
 
-function translateText(text) {
+async function translateText(text, apiKey) {
   if (!text) return '';
   
+  // OpenAI APIが利用可能な場合は高品質な翻訳を使用
+  if (apiKey && process.env.OPENAI_API_KEY) {
+    try {
+      const OpenAI = require('openai');
+      const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+      
+      const response = await openai.chat.completions.create({
+        model: "gpt-3.5-turbo",
+        messages: [
+          {
+            role: "system",
+            content: "あなたは優秀な技術翻訳者です。英語のAIニュースを自然な日本語に翻訳してください。専門用語は適切に翻訳し、読みやすい日本語にしてください。"
+          },
+          {
+            role: "user",
+            content: text
+          }
+        ],
+        temperature: 0.3,
+        max_tokens: 500
+      });
+      
+      return response.choices[0].message.content.trim();
+    } catch (error) {
+      console.error('OpenAI translation error:', error.message);
+      // APIエラーの場合は基本翻訳にフォールバック
+    }
+  }
+  
+  // フォールバック: 基本的な翻訳（APIが使えない場合のみ）
   let translated = text;
   
   // Basic word translations for common English words
