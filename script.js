@@ -38,13 +38,11 @@ const categories = {
 // Utility Functions
 function formatDate(dateString) {
     const date = new Date(dateString);
-    return date.toLocaleDateString('ja-JP', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit'
-    });
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1; // getMonth() returns 0-11
+    const day = date.getDate();
+    
+    return `${year}/${month}/${day}`;
 }
 
 function getCategoryLabel(category) {

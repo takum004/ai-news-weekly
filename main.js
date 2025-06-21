@@ -21,23 +21,11 @@ const categoryNames = {
 // 日付フォーマット関数
 function formatDate(dateString) {
     const date = new Date(dateString);
-    const now = new Date();
-    const diffTime = Math.abs(now - date);
-    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1; // getMonth() returns 0-11
+    const day = date.getDate();
     
-    if (diffDays === 0) {
-        return '今日';
-    } else if (diffDays === 1) {
-        return '昨日';
-    } else if (diffDays < 7) {
-        return `${diffDays}日前`;
-    } else {
-        return date.toLocaleDateString('ja-JP', { 
-            year: 'numeric', 
-            month: 'short', 
-            day: 'numeric' 
-        });
-    }
+    return `${year}/${month}/${day}`;
 }
 
 // ニュースカードを作成
