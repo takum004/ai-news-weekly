@@ -410,11 +410,13 @@ async function initApp() {
 // Data Loading
 async function loadNewsData() {
     try {
-        // Try to load from news.json file
-        const response = await fetch('data/news.json', {
+        // Try to load from news.json file with cache busting
+        const cacheBuster = new Date().getTime();
+        const response = await fetch(`data/news.json?t=${cacheBuster}`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
+                'Cache-Control': 'no-cache'
             }
         });
         
@@ -443,6 +445,7 @@ async function loadNewsData() {
         
         // Update article count
         document.getElementById('article-count').textContent = mockNews.length;
+        console.log('Updated article count to:', mockNews.length);
         
         // Update category counts immediately after data is loaded
         updateCategoryCounts();

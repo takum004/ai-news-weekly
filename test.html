@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Data Loading</title>
+</head>
+<body>
+    <h1>Data Test</h1>
+    <p>Article Count: <span id="count">Loading...</span></p>
+    <p>Total Articles in JSON: <span id="total">Loading...</span></p>
+    
+    <script>
+        fetch('data/news.json?t=' + new Date().getTime())
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('count').textContent = data.articles.length;
+                document.getElementById('total').textContent = data.totalArticles;
+                console.log('Loaded articles:', data.articles.length);
+                console.log('Total from JSON:', data.totalArticles);
+            })
+            .catch(error => {
+                document.getElementById('count').textContent = 'Error: ' + error;
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+</html>
