@@ -2,38 +2,60 @@ const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
 
-// Enhanced RSS feeds for comprehensive AI news coverage
+// Enhanced RSS feeds for comprehensive AI news coverage (50-100 articles)
 const RSS_FEEDS = [
   // General AI & Tech News
   'https://feeds.feedburner.com/venturebeat/SZYF',
   'https://www.technologyreview.com/feed/',
   'https://techcrunch.com/category/artificial-intelligence/feed/',
   'https://www.artificialintelligence-news.com/feed/',
+  'https://www.theverge.com/ai-artificial-intelligence/rss/index.xml',
+  'https://venturebeat.com/ai/feed/',
+  'https://www.wired.com/feed/tag/ai/latest/rss',
   
-  // Company Specific
+  // Company Specific - Major Players
   'https://openai.com/blog/rss.xml',
   'https://blog.google/technology/ai/rss/',
+  'https://www.anthropic.com/news/rss',
+  'https://blogs.microsoft.com/ai/feed/',
   
   // AI Tools & Applications
   'https://www.marktechpost.com/feed/',
   'https://machinelearningmastery.com/feed/',
   'https://distill.pub/rss.xml',
-  
-  // Business & Industry
-  'https://www.theverge.com/ai-artificial-intelligence/rss/index.xml',
-  'https://venturebeat.com/ai/feed/',
+  'https://www.unite.ai/feed/',
+  'https://analyticsindiamag.com/feed/',
+  'https://www.kdnuggets.com/feed',
+  'https://towardsdatascience.com/feed',
   
   // Academic & Research
   'https://blog.research.google/feeds/posts/default',
   'https://www.deepmind.com/blog/rss.xml',
+  'https://research.facebook.com/blog/rss/',
+  'https://openai.com/research/rss.xml',
   
-  // Creative AI & Tools
-  'https://www.unite.ai/feed/',
-  'https://analyticsindiamag.com/feed/',
+  // Creative AI & Media Generation
+  'https://www.runwayml.com/blog/rss.xml',
+  'https://stability.ai/blog/rss.xml',
+  'https://huggingface.co/blog/feed.xml',
   
-  // Additional specialized feeds
-  'https://www.kdnuggets.com/feed',
-  'https://towardsdatascience.com/feed'
+  // Industry & Business
+  'https://www.forbes.com/ai/feed/',
+  'https://fortune.com/section/artificial-intelligence/feed/',
+  'https://www.businessinsider.com/sai/rss',
+  
+  // Developer & Technical
+  'https://github.blog/category/ai/feed/',
+  'https://pytorch.org/blog/feed.xml',
+  'https://blog.tensorflow.org/feeds/posts/default',
+  
+  // Startup & Investment
+  'https://news.crunchbase.com/ai/feed/',
+  'https://www.cbinsights.com/research-ai/feed',
+  
+  // Additional International Sources
+  'https://www.scmp.com/rss/91/feed',
+  'https://www.reuters.com/technology/artificial-intelligence/rss'
 ];
 
 // Enhanced keywords for comprehensive AI news filtering
@@ -160,7 +182,7 @@ async function fetchNewsFromRSS() {
       console.log(`Fetching from: ${feedUrl}`);
       const feed = await parser.parseURL(feedUrl);
       
-      for (const item of feed.items.slice(0, 15)) { // Latest 15 from each feed
+      for (const item of feed.items.slice(0, 8)) { // Latest 8 from each feed for broader coverage
         const title = item.title || '';
         const content = (item.content || item.summary || item.description || '').toLowerCase();
         const titleLower = title.toLowerCase();
@@ -253,17 +275,34 @@ function categorizeArticle(title, content) {
   if (text.includes('meta') || text.includes('llama') || text.includes('facebook ai') || text.includes('metaai')) {
     return 'meta';
   }
+  if (text.includes('xai') || text.includes('grok') || text.includes('elon musk') && text.includes('ai')) {
+    return 'xai';
+  }
+  if (text.includes('nvidia') || text.includes('cuda') || text.includes('tensor') || text.includes('gpu')) {
+    return 'nvidia';
+  }
   
-  // AI Application Areas (second priority)
-  if (text.includes('video generation') || text.includes('video ai') || text.includes('runway') || text.includes('pika') || text.includes('video synthesis') || text.includes('motion') || text.includes('film') || text.includes('movie')) {
+  // AI Application Areas - Creative (second priority)
+  if (text.includes('video generation') || text.includes('video ai') || text.includes('runway') || text.includes('pika') || text.includes('video synthesis') || text.includes('motion') || text.includes('film') || text.includes('movie') || text.includes('sora')) {
     return 'video_generation';
   }
-  if (text.includes('image generation') || text.includes('midjourney') || text.includes('stable diffusion') || text.includes('dall-e') || text.includes('imagen') || text.includes('art generation') || text.includes('creative ai')) {
+  if (text.includes('image generation') || text.includes('midjourney') || text.includes('stable diffusion') || text.includes('dall-e') || text.includes('imagen') || text.includes('art generation') || text.includes('creative ai') || text.includes('drawing')) {
     return 'image_generation';
   }
-  if (text.includes('audio generation') || text.includes('music ai') || text.includes('voice') || text.includes('speech') || text.includes('tts') || text.includes('elevenlabs') || text.includes('mubert')) {
+  if (text.includes('audio generation') || text.includes('speech synthesis') || text.includes('voice synthesis') || text.includes('tts') || text.includes('elevenlabs') || text.includes('audio ai')) {
     return 'audio_generation';
   }
+  if (text.includes('music generation') || text.includes('music ai') || text.includes('suno') || text.includes('udio') || text.includes('mubert') || text.includes('composing') || text.includes('soundtrack')) {
+    return 'music_generation';
+  }
+  if (text.includes('voice cloning') || text.includes('voice clone') || text.includes('voice mimicry') || text.includes('voice ai') || text.includes('speaker identification')) {
+    return 'voice_cloning';
+  }
+  if (text.includes('3d modeling') || text.includes('3d generation') || text.includes('blender') || text.includes('meshy') || text.includes('spline') || text.includes('3d ai')) {
+    return '3d_modeling';
+  }
+  
+  // AI Application Areas - Productivity (third priority)
   if (text.includes('presentation') || text.includes('slide') || text.includes('powerpoint') || text.includes('gamma') || text.includes('tome') || text.includes('pitch deck') || text.includes('slides')) {
     return 'presentation';
   }
@@ -272,6 +311,26 @@ function categorizeArticle(title, content) {
   }
   if (text.includes('automation') || text.includes('rpa') || text.includes('robotic process') || text.includes('workflow automation') || text.includes('zapier') || text.includes('no-code')) {
     return 'automation';
+  }
+  if (text.includes('code generation') || text.includes('coding ai') || text.includes('programming') || text.includes('github copilot') || text.includes('cursor') || text.includes('replit')) {
+    return 'code_generation';
+  }
+  if (text.includes('translation') || text.includes('translate') || text.includes('language translation') || text.includes('multilingual') || text.includes('localization')) {
+    return 'translation';
+  }
+  
+  // AI Application Areas - Advanced (fourth priority)
+  if (text.includes('multimodal') || text.includes('multi-modal') || text.includes('vision language') || text.includes('cross-modal')) {
+    return 'multimodal';
+  }
+  if (text.includes('reasoning') || text.includes('logical reasoning') || text.includes('chain of thought') || text.includes('problem solving') || text.includes('inference')) {
+    return 'reasoning';
+  }
+  if (text.includes('robotics') || text.includes('robot') || text.includes('embodied ai') || text.includes('robotic') || text.includes('manipulation')) {
+    return 'robotics';
+  }
+  if (text.includes('gaming') || text.includes('game ai') || text.includes('npc') || text.includes('procedural generation') || text.includes('game development')) {
+    return 'gaming';
   }
   
   // Domain-specific categories (third priority)
@@ -1687,7 +1746,7 @@ async function main() {
         if (importanceDiff !== 0) return importanceDiff;
         return new Date(b.pubDate) - new Date(a.pubDate);
       })
-      .slice(0, 30);
+      .slice(0, 80); // Increased from 30 to 80 articles
     
     const newsData = {
       lastUpdated: new Date().toISOString(),

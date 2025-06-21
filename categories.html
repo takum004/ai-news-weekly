@@ -314,13 +314,119 @@
                         <div class="category-name">Meta</div>
                         <div class="category-count">0件</div>
                     </button>
+                    <button class="category-btn" data-category="xai">
+                        <div class="category-icon">❌</div>
+                        <div class="category-name">xAI/Grok</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="nvidia">
+                        <div class="category-icon">💚</div>
+                        <div class="category-name">NVIDIA</div>
+                        <div class="category-count">0件</div>
+                    </button>
                 </div>
             </div>
             
-            <!-- 分野別 -->
+            <!-- クリエイティブAI -->
             <div class="category-group">
-                <h3 class="group-title">📚 分野別</h3>
-                <div class="category-buttons" id="field-categories">
+                <h3 class="group-title">🎨 クリエイティブAI</h3>
+                <div class="category-buttons" id="creative-categories">
+                    <button class="category-btn" data-category="video_generation">
+                        <div class="category-icon">🎬</div>
+                        <div class="category-name">動画生成</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="image_generation">
+                        <div class="category-icon">🎨</div>
+                        <div class="category-name">画像生成</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="audio_generation">
+                        <div class="category-icon">🎵</div>
+                        <div class="category-name">音声生成</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="music_generation">
+                        <div class="category-icon">🎼</div>
+                        <div class="category-name">音楽生成</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="voice_cloning">
+                        <div class="category-icon">🎤</div>
+                        <div class="category-name">音声クローン</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="3d_modeling">
+                        <div class="category-icon">🏗️</div>
+                        <div class="category-name">3Dモデリング</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 生産性AI -->
+            <div class="category-group">
+                <h3 class="group-title">⚡ 生産性AI</h3>
+                <div class="category-buttons" id="productivity-categories">
+                    <button class="category-btn" data-category="agents">
+                        <div class="category-icon">🤵</div>
+                        <div class="category-name">エージェントAI</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="automation">
+                        <div class="category-icon">⚡</div>
+                        <div class="category-name">自動化・RPA</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="code_generation">
+                        <div class="category-icon">💻</div>
+                        <div class="category-name">コード生成</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="translation">
+                        <div class="category-icon">🌍</div>
+                        <div class="category-name">翻訳</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="presentation">
+                        <div class="category-icon">📊</div>
+                        <div class="category-name">プレゼン</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 先端技術 -->
+            <div class="category-group">
+                <h3 class="group-title">🚀 先端技術</h3>
+                <div class="category-buttons" id="advanced-categories">
+                    <button class="category-btn" data-category="multimodal">
+                        <div class="category-icon">🌐</div>
+                        <div class="category-name">マルチモーダル</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="reasoning">
+                        <div class="category-icon">🧠</div>
+                        <div class="category-name">推論AI</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="robotics">
+                        <div class="category-icon">🤖</div>
+                        <div class="category-name">ロボティクス</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="gaming">
+                        <div class="category-icon">🎮</div>
+                        <div class="category-name">ゲーミング</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 従来分野 -->
+            <div class="category-group">
+                <h3 class="group-title">📚 従来分野</h3>
+                <div class="category-buttons" id="traditional-categories">
                     <button class="category-btn" data-category="research">
                         <div class="category-icon">🔬</div>
                         <div class="category-name">研究・開発</div>
@@ -333,7 +439,7 @@
                     </button>
                     <button class="category-btn" data-category="healthcare">
                         <div class="category-icon">🏥</div>
-                        <div class="category-name">医療・ヘルスケア</div>
+                        <div class="category-name">医療</div>
                         <div class="category-count">0件</div>
                     </button>
                     <button class="category-btn" data-category="academic">
@@ -341,9 +447,14 @@
                         <div class="category-name">学術・論文</div>
                         <div class="category-count">0件</div>
                     </button>
-                    <button class="category-btn" data-category="tech">
-                        <div class="category-icon">💻</div>
-                        <div class="category-name">テクノロジー</div>
+                    <button class="category-btn" data-category="startups">
+                        <div class="category-icon">🚀</div>
+                        <div class="category-name">スタートアップ</div>
+                        <div class="category-count">0件</div>
+                    </button>
+                    <button class="category-btn" data-category="regulation">
+                        <div class="category-icon">⚖️</div>
+                        <div class="category-name">規制・政策</div>
                         <div class="category-count">0件</div>
                     </button>
                 </div>

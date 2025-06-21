@@ -10,11 +10,30 @@ const categoryNames = {
     'anthropic': '💭 Anthropic',
     'microsoft': '🪟 Microsoft',
     'meta': '📘 Meta',
+    'xai': '❌ xAI/Grok',
+    'nvidia': '💚 NVIDIA',
+    'video_generation': '🎬 動画生成',
+    'image_generation': '🎨 画像生成',
+    'audio_generation': '🎵 音声生成',
+    'music_generation': '🎼 音楽生成',
+    'voice_cloning': '🎤 音声クローン',
+    '3d_modeling': '🏗️ 3Dモデリング',
+    'presentation': '📊 プレゼン',
+    'agents': '🤵 エージェント',
+    'automation': '⚡ 自動化',
+    'code_generation': '💻 コード生成',
+    'translation': '🌍 翻訳',
+    'multimodal': '🌐 マルチモーダル',
+    'reasoning': '🧠 推論AI',
+    'robotics': '🤖 ロボティクス',
+    'gaming': '🎮 ゲーミング',
     'research': '🔬 研究・開発',
     'business': '💼 ビジネス',
     'healthcare': '🏥 医療・ヘルスケア',
     'academic': '📚 学術・論文',
-    'tech': '💻 テクノロジー'
+    'tech': '💻 テクノロジー',
+    'startups': '🚀 スタートアップ',
+    'regulation': '⚖️ 規制・政策'
 };
 
 // 日付フォーマット関数

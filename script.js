@@ -18,21 +18,38 @@ const categories = {
     anthropic: { name: '💭 Anthropic/Claude', count: 0 },
     microsoft: { name: '🪟 Microsoft/Copilot', count: 0 },
     meta: { name: '📘 Meta/Llama', count: 0 },
+    xai: { name: '❌ xAI/Grok', count: 0 },
+    nvidia: { name: '💚 NVIDIA', count: 0 },
     
-    // AI Application Areas
+    // AI Application Areas - Creative
     video_generation: { name: '🎬 動画生成', count: 0 },
     image_generation: { name: '🎨 画像生成', count: 0 },
     audio_generation: { name: '🎵 音声生成', count: 0 },
+    music_generation: { name: '🎼 音楽生成', count: 0 },
+    voice_cloning: { name: '🎤 音声クローン', count: 0 },
+    3d_modeling: { name: '🏗️ 3Dモデリング', count: 0 },
+    
+    // AI Application Areas - Productivity
     presentation: { name: '📊 プレゼン・スライド', count: 0 },
     agents: { name: '🤵 エージェントAI', count: 0 },
     automation: { name: '⚡ 自動化・RPA', count: 0 },
+    code_generation: { name: '💻 コード生成', count: 0 },
+    translation: { name: '🌍 翻訳', count: 0 },
+    
+    // AI Application Areas - Advanced
+    multimodal: { name: '🌐 マルチモーダル', count: 0 },
+    reasoning: { name: '🧠 推論AI', count: 0 },
+    robotics: { name: '🤖 ロボティクス', count: 0 },
+    gaming: { name: '🎮 ゲーミング', count: 0 },
     
     // Traditional Categories
     research: { name: '🔬 AI研究', count: 0 },
     academic: { name: '📚 論文・学術', count: 0 },
     business: { name: '💼 ビジネス・投資', count: 0 },
     healthcare: { name: '🏥 医療・ヘルスケア', count: 0 },
-    tech: { name: '💻 テクノロジー', count: 0 }
+    tech: { name: '💻 テクノロジー', count: 0 },
+    startups: { name: '🚀 スタートアップ', count: 0 },
+    regulation: { name: '⚖️ 規制・政策', count: 0 }
 };
 
 // Utility Functions
