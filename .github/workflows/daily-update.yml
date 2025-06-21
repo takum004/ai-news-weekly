@@ -4,6 +4,8 @@ on:
   schedule:
     # 毎日 JST 6:00 (UTC 21:00) に実行
     - cron: "0 21 * * *"
+    # 念の為 JST 12:00 (UTC 3:00) にも実行
+    - cron: "0 3 * * *"
   workflow_dispatch:
     # 手動実行も可能
 
@@ -29,10 +31,18 @@ jobs:
           cache: 'npm'
       
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm ci
+          npm list
+        timeout-minutes: 5
       
       - name: Fetch and update news
-        run: npm run update-news
+        run: |
+          npm run update-news || {
+            echo "RSS fetch failed, but continuing with workflow"
+            exit 0
+          }
+        timeout-minutes: 10
       
       - name: Commit and push changes
         run: |
@@ -43,6 +53,7 @@ jobs:
           # Only commit if there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
           else
             git commit -m "Daily news update - $(date '+%Y-%m-%d %H:%M JST')
 
@@ -54,7 +65,9 @@ jobs:
             
             Co-Authored-By: GitHub Actions <noreply@github.com>"
             git push
+            echo "has_changes=true" >> $GITHUB_OUTPUT
           fi
+        id: commit
 
   # Deploy to GitHub Pages
   deploy:
@@ -66,7 +79,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # 最新のコミットを取得
+          fetch-depth: 0
       
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -1,0 +1,60 @@
+name: Test News Update
+
+on:
+  workflow_dispatch:
+    # 手動実行専用テストワークフロー
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  test-update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: |
+          npm ci
+          npm list
+        timeout-minutes: 5
+      
+      - name: Test fetch news
+        run: |
+          npm run update-news
+          echo "Generated articles: $(jq '.articles | length' data/news.json)"
+          echo "Last updated: $(jq -r '.lastUpdated' data/news.json)"
+        timeout-minutes: 10
+      
+      - name: Commit and push test changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Test"
+          git add data/news.json
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Test news update - $(date '+%Y-%m-%d %H:%M JST')
+            
+            🧪 Test run with GitHub Actions
+            
+            - Testing automatic news data generation
+            - Validating RSS feed processing
+            - Ensuring deployment pipeline works
+            
+            Co-Authored-By: GitHub Actions <noreply@github.com>"
+            git push
+          fi
