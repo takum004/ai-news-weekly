@@ -218,7 +218,8 @@ function loadEmbeddedNews() {
     allNews = embeddedData.articles;
     
     console.log('Loaded embedded data:', allNews.length, 'articles');
-    document.getElementById('article-count').textContent = 80; // 確実に80を表示
+    console.log('WARNING: Using fallback data, actual data should be loaded from news.json');
+    document.getElementById('article-count').textContent = allNews.length; // 実際の配列長を表示
     document.getElementById('last-updated').textContent = new Date().toLocaleDateString('ja-JP');
     
     filterAndSortNews();
