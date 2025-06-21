@@ -359,3 +359,53 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+/* 詳細分析セクション */
+.analysis-section {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 4px solid #3b82f6;
+}
+
+.analysis-section h3 {
+    color: #1e40af;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.analysis-content > div {
+    margin-bottom: 1.5rem;
+}
+
+.analysis-content h4 {
+    color: #374151;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.key-points ul {
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.key-points li {
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+}
+
+.impact-analysis p,
+.technical-details p {
+    color: #4b5563;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.technical-details {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+

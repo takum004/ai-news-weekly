@@ -3,7 +3,8 @@ let newsData = null;
 let mockNews = [];
 
 // Global Variables
-let currentNews = [...mockNews];
+let allNews = []; // Original complete dataset
+let currentNews = []; // Currently displayed news (for display only)
 let currentCategory = 'all';
 let currentSearch = '';
 
@@ -92,31 +93,45 @@ function getImportanceBadge(importance) {
 
 // Update Category Counts
 function updateCategoryCounts() {
+    console.log('updateCategoryCounts called, allNews length:', allNews.length);
+    
     // Reset counts
     Object.keys(categories).forEach(key => {
         categories[key].count = 0;
     });
     
-    // Count articles by category
-    currentNews.forEach(article => {
+    // Count articles by category using the original dataset
+    allNews.forEach(article => {
         if (categories[article.category]) {
             categories[article.category].count++;
         }
         categories.all.count++;
     });
     
-    // Update UI
+    console.log('Category counts after calculation:', Object.fromEntries(
+        Object.entries(categories).map(([key, value]) => [key, value.count])
+    ));
+    
+    // Update UI - handle both old and new HTML structures
     const tabs = document.querySelectorAll('.category-tab');
     tabs.forEach(tab => {
         const category = tab.dataset.category;
-        const countElement = tab.querySelector('.count');
+        // Try to find count element with different selectors
+        let countElement = tab.querySelector('.count') || tab.querySelector('span.count');
+        
         if (countElement && categories[category]) {
             countElement.textContent = categories[category].count;
         }
     });
     
-    // Update stats
-    document.getElementById('article-count').textContent = categories.all.count;
+    // Update stats element if it exists
+    const articleCountElement = document.getElementById('article-count');
+    if (articleCountElement) {
+        articleCountElement.textContent = categories.all.count;
+    }
+    
+    // Log for debugging (simplified)
+    console.log(`Categories updated: Total=${categories.all.count}, OpenAI=${categories.openai?.count || 0}, Google=${categories.google?.count || 0}`);
 }
 
 // Create News Card HTML
@@ -180,16 +195,18 @@ function createNewsCard(article) {
 
 // Filter and Display News
 function filterAndDisplayNews() {
-    if (!mockNews || mockNews.length === 0) {
+    if (!allNews || allNews.length === 0) {
         console.warn('No news data available');
         return;
     }
     
-    let filteredNews = [...mockNews];
+    let filteredNews = [...allNews];
     
     // Category filter
     if (currentCategory !== 'all') {
+        const beforeCount = filteredNews.length;
         filteredNews = filteredNews.filter(article => article.category === currentCategory);
+        console.log(`Filtering by category '${currentCategory}': ${beforeCount} -> ${filteredNews.length} articles`);
     }
     
     // Search filter
@@ -236,16 +253,22 @@ function displayNews() {
         noResults.style.display = 'none';
         newsGrid.innerHTML = currentNews.map(article => createNewsCard(article)).join('');
         
-        // Add staggered animation
+        // Add staggered animation with cleanup
         const cards = newsGrid.querySelectorAll('.news-card');
         cards.forEach((card, index) => {
-            setTimeout(() => {
+            // Clear any existing timeouts on this card
+            if (card.animationTimeout) {
+                clearTimeout(card.animationTimeout);
+            }
+            
+            card.animationTimeout = setTimeout(() => {
                 card.classList.add('slide-up');
-            }, index * 100);
+                card.animationTimeout = null;
+            }, index * 50); // Reduced delay for faster loading
         });
     }
     
-    updateCategoryCounts();
+    // Don't call updateCategoryCounts here since it's called after data loading
 }
 
 // Event Listeners
@@ -254,6 +277,8 @@ function setupEventListeners() {
     const categoryTabs = document.querySelectorAll('.category-tab');
     categoryTabs.forEach(tab => {
         tab.addEventListener('click', () => {
+            console.log(`Category tab clicked: ${tab.dataset.category}`);
+            
             // Update active state
             categoryTabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
@@ -334,8 +359,13 @@ async function initApp() {
         // Setup event listeners
         setupEventListeners();
         
-        // Initial display
-        filterAndDisplayNews();
+        // Initial display - ensure data is loaded
+        console.log('InitApp: allNews length:', allNews.length);
+        if (allNews.length > 0) {
+            filterAndDisplayNews();
+        } else {
+            console.error('No news data available for display');
+        }
         
         // Hide loading screen
         setTimeout(() => {
@@ -380,6 +410,10 @@ async function loadNewsData() {
         const data = await response.json();
         newsData = data;
         mockNews = data.articles || [];
+        allNews = [...(data.articles || [])]; // Store original dataset
+        
+        console.log('Data loaded - Total articles:', allNews.length);
+        console.log('Categories found:', [...new Set(allNews.map(a => a.category))]);
         
         // Update last updated time
         if (data.lastUpdated) {
@@ -394,6 +428,9 @@ async function loadNewsData() {
         
         // Update article count
         document.getElementById('article-count').textContent = mockNews.length;
+        
+        // Update category counts immediately after data is loaded
+        updateCategoryCounts();
         
         return mockNews;
     } catch (error) {
@@ -789,6 +826,10 @@ function loadEmbeddedNews() {
     
     newsData = embeddedData;
     mockNews = embeddedData.articles;
+    allNews = [...embeddedData.articles]; // Store original dataset
+    
+    console.log('Embedded data loaded - Total articles:', allNews.length);
+    console.log('Categories found:', [...new Set(allNews.map(a => a.category))]);
     
     // Update last updated time
     const lastUpdated = new Date(embeddedData.lastUpdated);
@@ -802,8 +843,31 @@ function loadEmbeddedNews() {
     // Update article count
     document.getElementById('article-count').textContent = mockNews.length;
     
+    // Update category counts immediately after embedded data is loaded
+    updateCategoryCounts();
+    
     return mockNews;
 }
+
+// Debug Functions - available in browser console
+window.debugAINews = {
+    getAllNews: () => allNews,
+    getCurrentNews: () => currentNews,
+    getCurrentCategory: () => currentCategory,
+    getCategories: () => categories,
+    testFilter: (category) => {
+        currentCategory = category;
+        filterAndDisplayNews();
+    },
+    checkData: () => {
+        console.log('All news count:', allNews.length);
+        console.log('Current news count:', currentNews.length);
+        console.log('Current category:', currentCategory);
+        console.log('Categories:', Object.fromEntries(
+            Object.entries(categories).map(([key, value]) => [key, value.count])
+        ));
+    }
+};
 
 // Error Handling
 window.addEventListener('error', (e) => {

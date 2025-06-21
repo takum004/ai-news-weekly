@@ -234,15 +234,32 @@ body {
     position: sticky;
     top: 70px;
     z-index: 900;
+    padding: 1rem 0;
+}
+
+.category-section {
+    margin-bottom: 1.5rem;
+}
+
+.category-section:last-child {
+    margin-bottom: 0;
+}
+
+.category-section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
 }
 
 .category-tabs {
     display: flex;
     gap: 0.5rem;
-    padding: 1rem 0;
     overflow-x: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    flex-wrap: wrap;
 }
 
 .category-tabs::-webkit-scrollbar {
@@ -349,6 +366,8 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
+    min-height: 400px; /* Minimum height to prevent layout jump */
+    align-items: start; /* Align cards to the top */
 }
 
 /* News Card */

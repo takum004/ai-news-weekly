@@ -12,156 +12,326 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* ヘッダー */
+        .header {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .nav-link:hover {
+            background: #0056b3;
+        }
+        
+        /* ヒーローセクション */
+        .hero {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 100px 0 40px;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        /* 検索セクション */
+        .search-section {
+            margin-bottom: 2rem;
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        #search-input {
+            flex: 1;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        #search-btn {
+            padding: 0.75rem 1.5rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .sort-select {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+            font-size: 1rem;
+        }
+        
+        /* ニュースグリッド */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .news-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .category-badge {
+            background: #007bff;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        
+        .importance-high {
+            background: #ff4444;
+        }
+        
+        .card-body {
+            padding: 1.5rem;
+        }
+        
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .card-summary {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        
+        .card-footer {
+            padding: 1rem 1.5rem;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .card-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .card-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* フッター */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        
+        /* レスポンシブ */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .search-box {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loading" class="loading-screen">
-        <div class="loading-spinner"></div>
-        <p>AIニュースを読み込み中...</p>
-    </div>
-
-    <!-- Header -->
+    <!-- ヘッダー -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">🤖</div>
-                    <div class="logo-text">
-                        <h1>AI Weekly News</h1>
-                        <p>最新のAI動向を日本語で</p>
-                    </div>
-                </div>
-                
-                <nav class="nav">
-                    <a href="index.html" class="nav-link active">ホーム</a>
-                    <a href="#news" class="nav-link">ニュース</a>
-                    <a href="categories.html" class="nav-link">カテゴリ</a>
-                </nav>
+                <a href="index.html" class="logo">
+                    <span style="font-size: 2rem;">🤖</span>
+                    <h1>AI Weekly News</h1>
+                </a>
+                <a href="categories.html" class="nav-link">📂 ジャンル別に見る</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ヒーローセクション -->
     <section class="hero">
-        <div class="hero-background">
-            <div class="hero-shape hero-shape-1"></div>
-            <div class="hero-shape hero-shape-2"></div>
-        </div>
-        
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">最新のAIニュースを日本語で</h1>
-                <p class="hero-description">
-                    毎日更新される重要なAI関連ニュースを、自動翻訳と要約で分かりやすくお届けします
-                </p>
-                
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-icon">🕒</div>
-                        <span>最終更新: <span id="last-updated">2025年6月21日</span></span>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-icon">📰</div>
-                        <span>今日の記事: <span id="article-count">3</span>件</span>
-                    </div>
+            <h2>🤖 最新のAIニュース</h2>
+            <p>世界中のAI関連ニュースを毎日自動収集・日本語翻訳</p>
+            <div class="stats">
+                <div class="stat">
+                    <strong id="article-count">0</strong>
+                    <div>記事</div>
+                </div>
+                <div class="stat">
+                    <strong>17</strong>
+                    <div>情報源</div>
+                </div>
+                <div class="stat">
+                    <strong id="last-updated">--</strong>
+                    <div>最終更新</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Category Tabs -->
-    <section class="categories">
-        <div class="container">
-            <div class="category-tabs" id="category-tabs">
-                <button class="category-tab active" data-category="all">
-                    🌐 すべて <span class="count">3</span>
-                </button>
-                <button class="category-tab" data-category="research">
-                    🔬 AI研究・開発 <span class="count">1</span>
-                </button>
-                <button class="category-tab" data-category="tech">
-                    💻 テクノロジー <span class="count">1</span>
-                </button>
-                <button class="category-tab" data-category="business">
-                    💼 ビジネス・投資 <span class="count">1</span>
-                </button>
-                <button class="category-tab" data-category="healthcare">
-                    🏥 医療・ヘルスケア <span class="count">0</span>
-                </button>
-                <button class="category-tab" data-category="academic">
-                    📚 論文・学術研究 <span class="count">0</span>
-                </button>
+    <!-- メインコンテンツ -->
+    <main class="container">
+        <!-- 検索セクション -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="ニュースを検索...">
+                <button id="search-btn">検索</button>
             </div>
+            <select class="sort-select" id="sort-select">
+                <option value="date-desc">新しい順</option>
+                <option value="date-asc">古い順</option>
+                <option value="importance-desc">重要度順</option>
+            </select>
         </div>
-    </section>
 
-    <!-- Main Content -->
-    <main class="main">
-        <div class="container">
-            <!-- Search and Filter -->
-            <div class="search-section">
-                <div class="search-box">
-                    <input type="text" id="search-input" placeholder="ニュースを検索...">
-                    <button id="search-btn">🔍</button>
-                </div>
-                
-                <div class="filter-options">
-                    <select id="sort-select">
-                        <option value="date-desc">新しい順</option>
-                        <option value="date-asc">古い順</option>
-                        <option value="importance-desc">重要度順</option>
-                    </select>
-                </div>
-            </div>
+        <!-- ニュースグリッド -->
+        <div class="news-grid" id="news-grid">
+            <!-- ニュースカードがここに動的に挿入される -->
+        </div>
 
-            <!-- News Grid -->
-            <div class="news-grid" id="news-grid">
-                <!-- ニュースカードがJavaScriptで動的に生成される -->
-            </div>
-
-            <!-- No Results -->
-            <div class="no-results" id="no-results" style="display: none;">
-                <div class="no-results-icon">📰</div>
-                <h3>該当するニュースがありません</h3>
-                <p>他のカテゴリやキーワードをお試しください</p>
-            </div>
+        <!-- 検索結果なし -->
+        <div id="no-results" style="display: none; text-align: center; padding: 3rem;">
+            <h3>該当するニュースがありません</h3>
+            <p>他のキーワードをお試しください</p>
         </div>
     </main>
 
-    <!-- Footer -->
+    <!-- フッター -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <div class="footer-feature">
-                        <span class="footer-icon">🕒</span>
-                        <span>毎日自動更新</span>
-                    </div>
-                    <div class="footer-feature">
-                        <span class="footer-icon">✨</span>
-                        <span>AI翻訳・要約機能付き</span>
-                    </div>
-                    <div class="footer-feature">
-                        <span class="footer-icon">🚀</span>
-                        <span>Powered by GitHub Actions</span>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <a href="https://github.com/takum004/ai-news-weekly" target="_blank">
-                        GitHub
-                    </a>
-                    <a href="#about">このサイトについて</a>
-                </div>
-            </div>
+            <p>&copy; 2025 AI Weekly News. 毎日自動更新</p>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
-</html><!-- GitHub Pages trigger -->
+</html>

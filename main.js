@@ -1,7 +1,8 @@
 // グローバル変数
 let allNews = [];
 let currentNews = [];
-let selectedCategory = null;
+let searchTerm = '';
+let sortOrder = 'date-desc';
 
 // カテゴリ名の日本語マッピング
 const categoryNames = {
@@ -10,10 +11,10 @@ const categoryNames = {
     'anthropic': '💭 Anthropic',
     'microsoft': '🪟 Microsoft',
     'meta': '📘 Meta',
-    'research': '🔬 研究・開発',
+    'research': '🔬 研究',
     'business': '💼 ビジネス',
-    'healthcare': '🏥 医療・ヘルスケア',
-    'academic': '📚 学術・論文',
+    'healthcare': '🏥 医療',
+    'academic': '📚 学術',
     'tech': '💻 テクノロジー'
 };
 
@@ -64,66 +65,6 @@ function createNewsCard(article) {
     `;
 }
 
-// カテゴリごとの記事数を計算
-function updateCategoryCounts() {
-    const counts = {};
-    
-    // 全カテゴリのカウントを初期化
-    Object.keys(categoryNames).forEach(category => {
-        counts[category] = 0;
-    });
-    
-    // 記事をカウント
-    allNews.forEach(article => {
-        if (counts.hasOwnProperty(article.category)) {
-            counts[article.category]++;
-        }
-    });
-    
-    // UIを更新
-    document.querySelectorAll('.category-btn').forEach(btn => {
-        const category = btn.dataset.category;
-        const countElement = btn.querySelector('.category-count');
-        if (countElement && counts.hasOwnProperty(category)) {
-            countElement.textContent = `${counts[category]}件`;
-        }
-    });
-    
-    console.log('Category counts:', counts);
-}
-
-// カテゴリで記事をフィルター
-function filterByCategory(category) {
-    selectedCategory = category;
-    
-    // アクティブボタンを更新
-    document.querySelectorAll('.category-btn').forEach(btn => {
-        btn.classList.remove('active');
-    });
-    
-    const activeBtn = document.querySelector(`[data-category="${category}"]`);
-    if (activeBtn) {
-        activeBtn.classList.add('active');
-    }
-    
-    // 記事をフィルター
-    currentNews = allNews.filter(article => article.category === category);
-    
-    // 選択されたカテゴリを表示
-    const selectedCategoryDiv = document.getElementById('selected-category');
-    const selectedCategoryName = document.getElementById('selected-category-name');
-    
-    if (currentNews.length > 0) {
-        selectedCategoryDiv.style.display = 'block';
-        selectedCategoryName.textContent = `${categoryNames[category] || category} (${currentNews.length}件)`;
-    } else {
-        selectedCategoryDiv.style.display = 'none';
-    }
-    
-    // ニュースを表示
-    displayNews();
-}
-
 // ニュースを表示
 function displayNews() {
     const newsGrid = document.getElementById('news-grid');
@@ -134,12 +75,41 @@ function displayNews() {
         noResults.style.display = 'block';
     } else {
         noResults.style.display = 'none';
-        
-        // 日付順でソート（新しい順）
-        currentNews.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
-        
         newsGrid.innerHTML = currentNews.map(article => createNewsCard(article)).join('');
     }
+}
+
+// ニュースをフィルター・ソート
+function filterAndSortNews() {
+    // 検索フィルター
+    if (searchTerm) {
+        currentNews = allNews.filter(article => {
+            const searchLower = searchTerm.toLowerCase();
+            return (
+                (article.title && article.title.toLowerCase().includes(searchLower)) ||
+                (article.titleJa && article.titleJa.toLowerCase().includes(searchLower)) ||
+                (article.summary && article.summary.toLowerCase().includes(searchLower)) ||
+                (article.summaryJa && article.summaryJa.toLowerCase().includes(searchLower))
+            );
+        });
+    } else {
+        currentNews = [...allNews];
+    }
+    
+    // ソート
+    switch (sortOrder) {
+        case 'date-desc':
+            currentNews.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+            break;
+        case 'date-asc':
+            currentNews.sort((a, b) => new Date(a.pubDate) - new Date(b.pubDate));
+            break;
+        case 'importance-desc':
+            currentNews.sort((a, b) => b.importance - a.importance);
+            break;
+    }
+    
+    displayNews();
 }
 
 // ニュースデータを読み込み
@@ -153,10 +123,17 @@ async function loadNews() {
         const data = await response.json();
         allNews = data.articles || [];
         
-        console.log('Loaded news articles:', allNews.length);
+        // 記事数を更新
+        document.getElementById('article-count').textContent = allNews.length;
         
-        // カテゴリカウントを更新
-        updateCategoryCounts();
+        // 最終更新日を更新
+        if (data.lastUpdated) {
+            const date = new Date(data.lastUpdated);
+            document.getElementById('last-updated').textContent = date.toLocaleDateString('ja-JP');
+        }
+        
+        // 初期表示
+        filterAndSortNews();
         
     } catch (error) {
         console.error('Error loading news:', error);
@@ -210,25 +187,37 @@ function loadEmbeddedNews() {
     ];
     
     console.log('Loaded embedded data:', allNews.length, 'articles');
-    updateCategoryCounts();
+    document.getElementById('article-count').textContent = allNews.length;
+    document.getElementById('last-updated').textContent = new Date().toLocaleDateString('ja-JP');
+    
+    filterAndSortNews();
 }
 
 // イベントリスナーをセットアップ
 function setupEventListeners() {
-    // カテゴリボタンのクリックイベント
-    document.querySelectorAll('.category-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const category = btn.dataset.category;
-            console.log('Category selected:', category);
-            filterByCategory(category);
-        });
+    // 検索ボタン
+    document.getElementById('search-btn').addEventListener('click', () => {
+        searchTerm = document.getElementById('search-input').value.trim();
+        filterAndSortNews();
+    });
+    
+    // 検索入力（Enterキー）
+    document.getElementById('search-input').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            searchTerm = e.target.value.trim();
+            filterAndSortNews();
+        }
+    });
+    
+    // ソート選択
+    document.getElementById('sort-select').addEventListener('change', (e) => {
+        sortOrder = e.target.value;
+        filterAndSortNews();
     });
 }
 
 // 初期化
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Categories page initialized');
     setupEventListeners();
     loadNews();
 });

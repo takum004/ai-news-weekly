@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>カテゴリ別ニュース - AI Weekly News</title>
-    <meta name="description" content="カテゴリ別に整理されたAI関連ニュース">
+    <title>ジャンル別 - AI Weekly News</title>
+    <meta name="description" content="AI関連ニュースをジャンル別に閲覧">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,212 +12,374 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="categories.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* ヘッダー */
+        .header {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .nav-link:hover {
+            background: #218838;
+        }
+        
+        /* カテゴリセクション */
+        .categories-section {
+            padding: 100px 0 40px;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        /* カテゴリグループ */
+        .category-group {
+            margin-bottom: 3rem;
+        }
+        
+        .group-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #007bff;
+        }
+        
+        .category-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .category-btn {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        
+        .category-btn:hover {
+            border-color: #007bff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .category-btn.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        
+        .category-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-name {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .category-count {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .category-btn.active .category-count {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* ニュースグリッド */
+        .news-section {
+            margin-bottom: 3rem;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .news-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .card-body {
+            padding: 1.5rem;
+        }
+        
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .card-summary {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        
+        .card-footer {
+            padding: 1rem 1.5rem;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .card-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .card-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* フッター */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        /* レスポンシブ */
+        @media (max-width: 768px) {
+            .category-buttons {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+        
+        /* 選択されたカテゴリの表示 */
+        .selected-category {
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .selected-category h3 {
+            font-size: 1.5rem;
+            color: #1976d2;
+        }
+        
+        #no-results {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- ヘッダー -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">🤖</div>
-                    <div class="logo-text">
-                        <h1><a href="index.html">AI Weekly News</a></h1>
-                        <p>最新のAI動向を日本語で</p>
-                    </div>
-                </div>
-                
-                <nav class="nav">
-                    <a href="index.html" class="nav-link">ホーム</a>
-                    <a href="index.html#news" class="nav-link">ニュース</a>
-                    <a href="categories.html" class="nav-link active">カテゴリ</a>
-                </nav>
+                <a href="index.html" class="logo">
+                    <span style="font-size: 2rem;">🤖</span>
+                    <h1>AI Weekly News</h1>
+                </a>
+                <a href="index.html" class="nav-link">🏠 すべての記事</a>
             </div>
         </div>
     </header>
 
-    <!-- Breadcrumb -->
-    <nav class="breadcrumb">
+    <!-- カテゴリセクション -->
+    <section class="categories-section">
         <div class="container">
-            <a href="index.html">ホーム</a> 
-            <span class="separator">></span>
-            <span>カテゴリ</span>
-        </div>
-    </nav>
-
-    <!-- Categories Hero -->
-    <section class="categories-hero">
-        <div class="container">
-            <h1>📂 カテゴリ別ニュース</h1>
-            <p>興味のあるカテゴリを選んで、関連するAIニュースをご覧ください</p>
-        </div>
-    </section>
-
-    <!-- Category Overview -->
-    <section class="category-overview">
-        <div class="container">
-            <div class="category-stats">
-                <h2>📊 カテゴリ別記事数</h2>
-                <div id="category-stats-grid" class="stats-grid">
-                    <!-- Stats will be populated by JavaScript -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Category Navigation -->
-    <section class="category-nav">
-        <div class="container">
-            <div class="category-section">
-                <h3>🏢 企業・モデル</h3>
-                <div class="category-tabs">
-                    <button class="category-tab" data-category="openai">
-                        🤖 OpenAI (<span id="count-openai">0</span>)
+            <h2 class="section-title">📂 ジャンル別ニュース</h2>
+            
+            <!-- 企業・モデル別 -->
+            <div class="category-group">
+                <h3 class="group-title">🏢 企業・モデル別</h3>
+                <div class="category-buttons" id="company-categories">
+                    <button class="category-btn" data-category="openai">
+                        <div class="category-icon">🤖</div>
+                        <div class="category-name">OpenAI</div>
+                        <div class="category-count">0件</div>
                     </button>
-                    <button class="category-tab" data-category="google">
-                        🔍 Google (<span id="count-google">0</span>)
+                    <button class="category-btn" data-category="google">
+                        <div class="category-icon">🔍</div>
+                        <div class="category-name">Google</div>
+                        <div class="category-count">0件</div>
                     </button>
-                    <button class="category-tab" data-category="anthropic">
-                        💭 Anthropic (<span id="count-anthropic">0</span>)
+                    <button class="category-btn" data-category="anthropic">
+                        <div class="category-icon">💭</div>
+                        <div class="category-name">Anthropic</div>
+                        <div class="category-count">0件</div>
                     </button>
-                    <button class="category-tab" data-category="microsoft">
-                        🪟 Microsoft (<span id="count-microsoft">0</span>)
+                    <button class="category-btn" data-category="microsoft">
+                        <div class="category-icon">🪟</div>
+                        <div class="category-name">Microsoft</div>
+                        <div class="category-count">0件</div>
                     </button>
-                    <button class="category-tab" data-category="meta">
-                        📘 Meta (<span id="count-meta">0</span>)
+                    <button class="category-btn" data-category="meta">
+                        <div class="category-icon">📘</div>
+                        <div class="category-name">Meta</div>
+                        <div class="category-count">0件</div>
                     </button>
                 </div>
             </div>
             
-            <div class="category-section">
-                <h3>🎨 AI応用分野</h3>
-                <div class="category-tabs">
-                    <button class="category-tab" data-category="video_generation">
-                        🎬 動画生成 (<span id="count-video_generation">0</span>)
+            <!-- 分野別 -->
+            <div class="category-group">
+                <h3 class="group-title">📚 分野別</h3>
+                <div class="category-buttons" id="field-categories">
+                    <button class="category-btn" data-category="research">
+                        <div class="category-icon">🔬</div>
+                        <div class="category-name">研究・開発</div>
+                        <div class="category-count">0件</div>
                     </button>
-                    <button class="category-tab" data-category="image_generation">
-                        🎨 画像生成 (<span id="count-image_generation">0</span>)
+                    <button class="category-btn" data-category="business">
+                        <div class="category-icon">💼</div>
+                        <div class="category-name">ビジネス</div>
+                        <div class="category-count">0件</div>
                     </button>
-                    <button class="category-tab" data-category="audio_generation">
-                        🎵 音声生成 (<span id="count-audio_generation">0</span>)
+                    <button class="category-btn" data-category="healthcare">
+                        <div class="category-icon">🏥</div>
+                        <div class="category-name">医療・ヘルスケア</div>
+                        <div class="category-count">0件</div>
                     </button>
-                    <button class="category-tab" data-category="presentation">
-                        📊 プレゼン (<span id="count-presentation">0</span>)
+                    <button class="category-btn" data-category="academic">
+                        <div class="category-icon">📚</div>
+                        <div class="category-name">学術・論文</div>
+                        <div class="category-count">0件</div>
                     </button>
-                    <button class="category-tab" data-category="agents">
-                        🤵 エージェント (<span id="count-agents">0</span>)
-                    </button>
-                    <button class="category-tab" data-category="automation">
-                        ⚡ 自動化 (<span id="count-automation">0</span>)
-                    </button>
-                </div>
-            </div>
-            
-            <div class="category-section">
-                <h3>📚 分野別</h3>
-                <div class="category-tabs">
-                    <button class="category-tab active" data-category="all">
-                        📰 すべて (<span id="count-all">0</span>)
-                    </button>
-                    <button class="category-tab" data-category="research">
-                        🔬 研究 (<span id="count-research">0</span>)
-                    </button>
-                    <button class="category-tab" data-category="academic">
-                        🎓 学術 (<span id="count-academic">0</span>)
-                    </button>
-                    <button class="category-tab" data-category="business">
-                        💼 ビジネス (<span id="count-business">0</span>)
-                    </button>
-                    <button class="category-tab" data-category="healthcare">
-                        🏥 ヘルスケア (<span id="count-healthcare">0</span>)
-                    </button>
-                    <button class="category-tab" data-category="tech">
-                        💻 技術 (<span id="count-tech">0</span>)
+                    <button class="category-btn" data-category="tech">
+                        <div class="category-icon">💻</div>
+                        <div class="category-name">テクノロジー</div>
+                        <div class="category-count">0件</div>
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Category Content -->
-    <main class="category-content">
+    <!-- ニュースセクション -->
+    <section class="news-section">
         <div class="container">
-            <!-- Current Category Info -->
-            <div id="current-category-info" class="category-info">
-                <div class="category-header">
-                    <h2 id="category-title">📰 すべてのニュース</h2>
-                    <p id="category-description">全カテゴリのAI関連ニュースを表示しています</p>
-                </div>
-                <div class="category-meta">
-                    <span class="article-count">記事数: <strong id="current-count">0</strong></span>
-                    <span class="last-updated">最終更新: <strong id="last-updated"></strong></span>
-                </div>
+            <!-- 選択されたカテゴリ表示 -->
+            <div id="selected-category" class="selected-category" style="display: none;">
+                <h3 id="selected-category-name"></h3>
             </div>
-
-            <!-- Search and Filter -->
-            <div class="category-controls">
-                <div class="search-container">
-                    <input type="text" id="category-search" placeholder="記事を検索..." class="search-input">
-                    <span class="search-icon">🔍</span>
-                </div>
-                <div class="sort-container">
-                    <select id="sort-select" class="sort-select">
-                        <option value="importance">重要度順</option>
-                        <option value="date">日付順</option>
-                        <option value="title">タイトル順</option>
-                    </select>
-                </div>
+            
+            <!-- ニュースグリッド -->
+            <div class="news-grid" id="news-grid">
+                <!-- ニュースカードがここに動的に挿入される -->
             </div>
-
-            <!-- Articles Grid -->
-            <div id="category-articles" class="articles-grid">
-                <!-- Articles will be populated by JavaScript -->
-            </div>
-
-            <!-- Load More Button -->
-            <div class="load-more-container">
-                <button id="load-more-btn" class="btn btn-primary" style="display: none;">
-                    📄 さらに表示
-                </button>
+            
+            <!-- 検索結果なし -->
+            <div id="no-results" style="display: none;">
+                <h3>記事がありません</h3>
+                <p>このカテゴリには現在記事がありません</p>
             </div>
         </div>
-    </main>
+    </section>
 
-    <!-- Footer -->
+    <!-- フッター -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI Weekly News</h3>
-                    <p>最新のAI動向を毎日自動収集・翻訳してお届けします</p>
-                </div>
-                <div class="footer-section">
-                    <h4>カテゴリ</h4>
-                    <ul>
-                        <li><a href="categories.html?category=tech">技術</a></li>
-                        <li><a href="categories.html?category=business">ビジネス</a></li>
-                        <li><a href="categories.html?category=research">研究</a></li>
-                        <li><a href="categories.html?category=healthcare">ヘルスケア</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>更新情報</h4>
-                    <p>毎日 JST 6:00 に自動更新</p>
-                    <p>GitHub Actions による自動運用</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 AI Weekly News. Auto-generated content.</p>
-            </div>
+            <p>&copy; 2025 AI Weekly News. 毎日自動更新</p>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
     <script src="categories.js"></script>
 </body>
 </html>

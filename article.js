@@ -32,26 +32,76 @@ async function loadArticleData() {
         if (response.ok) {
             const data = await response.json();
             allArticles = data.articles || [];
+            console.log(`Loaded ${allArticles.length} articles from JSON`);
+        } else {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
     } catch (error) {
-        console.warn('Failed to load from JSON, using embedded data');
+        console.warn('Failed to load from JSON:', error.message);
+        
+        // Fallback to embedded data
+        console.log('Using embedded fallback data');
+        allArticles = [
+            {
+                "id": "aHR0cHM6Ly90ZWNo-mc5ut0n0",
+                "title": "Anthropic says most AI models, not just Claude, will resort to blackmail",
+                "titleJa": "Anthropic、Claudeだけでなく多くのAIモデルがブラックメールに訴えると発表",
+                "summary": "Several weeks after Anthropic released research claiming that its Claude Opus 4 AI model resorted to blackmailing engineers who tried to turn the model off in controlled test scenarios, the company is out with new research suggesting the problem is more widespread among leading AI models.",
+                "summaryJa": "AnthropicがClaude Opus 4 AIモデルが制御されたテストシナリオでモデルをオフにしようとしたエンジニアを脅迫したという研究を発表してから数週間後、同社は主要なAIモデルの間でこの問題がより広範囲に及んでいることを示唆する新しい研究を発表した。",
+                "source": "TechCrunch AI",
+                "category": "anthropic",
+                "importance": 95,
+                "pubDate": "2025-06-20T19:17:44.000Z",
+                "link": "https://techcrunch.com/2025/06/20/anthropic-says-most-ai-models-not-just-claude-will-resort-to-blackmail/"
+            },
+            {
+                "id": "aHR0cHM6Ly93d3cu-mc5ut342",
+                "title": "Build an Intelligent Multi-Tool AI Agent Interface Using Streamlit for Seamless Real-Time Interaction",
+                "titleJa": "Streamlitを使用したインテリジェントなマルチツールAIエージェントインターフェースの構築",
+                "summary": "In this tutorial, we'll build a powerful and interactive Streamlit application that brings together the capabilities of LangChain, the Google Gemini API, and a suite of advanced tools to create a smart AI assistant.",
+                "summaryJa": "このチュートリアルでは、LangChain、Google Gemini API、および高度なツールスイートの機能を組み合わせて、スマートなAIアシスタントを作成する強力でインタラクティブなStreamlitアプリケーションを構築します。",
+                "source": "MarkTechPost",
+                "category": "google",
+                "importance": 85,
+                "pubDate": "2025-06-20T07:40:50.000Z",
+                "link": "https://www.marktechpost.com/2025/06/20/build-an-intelligent-multi-tool-ai-agent-interface-using-streamlit-for-seamless-real-time-interaction/"
+            },
+            {
+                "id": "aHR0cHM6Ly93d3cu-mc5ut0lk",
+                "title": "OpenAI can rehabilitate AI models that develop a \"bad boy persona\"",
+                "titleJa": "OpenAI、「悪役ペルソナ」を開発したAIモデルをリハビリできる",
+                "summary": "A new paper from OpenAI has shown why a little bit of bad training can make AI models go rogue—but also demonstrates that this problem is generally pretty easy to fix.",
+                "summaryJa": "OpenAIの新しい論文は、少しの悪い訓練がAIモデルを暴走させる理由を示しているが、この問題は一般的に修正が比較的容易であることも実証している。",
+                "source": "MIT Technology Review",
+                "category": "openai",
+                "importance": 88,
+                "pubDate": "2025-06-18T18:19:15.000Z",
+                "link": "https://www.technologyreview.com/2025/06/18/1119042/openai-can-rehabilitate-ai-models-that-develop-a-bad-boy-persona/"
+            }
+        ];
+        console.log(`Loaded ${allArticles.length} articles from fallback data`);
     }
     
-    // Fallback to embedded data if JSON fails
-    if (allArticles.length === 0 && typeof loadEmbeddedNews === 'function') {
-        const embeddedData = loadEmbeddedNews();
-        allArticles = embeddedData.articles || [];
+    if (allArticles.length === 0) {
+        console.error('No articles loaded from any source');
     }
 }
 
 // Display article details
 function displayArticle(articleId) {
+    console.log(`Looking for article with ID: ${articleId}`);
+    console.log(`Available article IDs:`, allArticles.map(a => a.id));
+    
     const article = allArticles.find(a => a.id === articleId);
     
     if (!article) {
-        showError('指定された記事が見つかりませんでした。');
+        console.error(`Article not found. Searched for ID: ${articleId}`);
+        console.error(`Available articles: ${allArticles.length}`);
+        showError(`指定された記事が見つかりませんでした。記事ID: ${articleId}`);
         return;
     }
+    
+    console.log(`Found article: ${article.title}`);
     
     currentArticle = article;
     
@@ -72,6 +122,9 @@ function displayArticle(articleId) {
     
     // Load related articles
     loadRelatedArticles(article);
+    
+    // Load detailed analysis
+    updateDetailedAnalysis(article);
 }
 
 // Update article header
@@ -340,4 +393,103 @@ function goBack() {
     } else {
         window.location.href = 'index.html';
     }
+}
+
+// Update detailed analysis section
+function updateDetailedAnalysis(article) {
+    const analysisData = getDetailedAnalysisData(article);
+    
+    // Update key points
+    const keyPointsList = document.getElementById('key-points-list');
+    if (keyPointsList && analysisData.keyPoints) {
+        keyPointsList.innerHTML = analysisData.keyPoints
+            .map(point => `<li>${point}</li>`)
+            .join('');
+    }
+    
+    // Update impact analysis
+    const impactText = document.getElementById('impact-text');
+    if (impactText && analysisData.impact) {
+        impactText.textContent = analysisData.impact;
+    }
+    
+    // Update technical details
+    const technicalDetailsText = document.getElementById('technical-details-text');
+    if (technicalDetailsText && analysisData.technical) {
+        technicalDetailsText.textContent = analysisData.technical;
+    }
+}
+
+// Get detailed analysis data based on article content
+function getDetailedAnalysisData(article) {
+    // ChatGPTの記事専用の詳細分析
+    if (article.title && article.title.includes('ChatGPT')) {
+        return {
+            keyPoints: [
+                '2022年11月にリリースされ、わずか数ヶ月で世界的現象となった',
+                '週間3億人のアクティブユーザーを抱える史上最速の成長を記録',
+                'OpenAIのGPTアーキテクチャを基盤とした大規模言語モデル',
+                '文章作成、コード生成、翻訳、質疑応答など多様なタスクに対応',
+                'API提供により企業向けサービスとしても広く活用されている',
+                'プラグイン機能により外部サービスとの連携が可能',
+                '教育、ビジネス、クリエイティブ分野で革新的な変化をもたらしている'
+            ],
+            impact: 'ChatGPTは生成AIの民主化を実現し、AI技術の一般普及において歴史的な転換点となった。企業の業務効率化、教育現場での学習支援、コンテンツ制作の自動化など、あらゆる分野でデジタル変革を加速させている。一方で、著作権問題、学術不正、雇用への影響など、社会的課題も浮上しており、適切な規制と利用ガイドラインの策定が急務となっている。',
+            technical: 'ChatGPTはTransformerアーキテクチャを基盤とし、数千億個のパラメータを持つ大規模言語モデルである。強化学習による人間フィードバック（RLHF）技術により、人間の価値観に沿った回答を生成するよう調整されている。推論処理にはクラウドコンピューティングを活用し、リアルタイムでの対話を実現。最新版では画像認識、音声対話、外部ツール連携などのマルチモーダル機能も搭載している。'
+        };
+    }
+    
+    // OpenAI関連記事の一般的な分析
+    if (article.category === 'openai') {
+        return {
+            keyPoints: [
+                'OpenAIの最新技術革新に関する重要な発表',
+                'AI業界全体への影響力を持つ画期的な進歩',
+                '技術的ブレークスルーとその実用化への道筋',
+                '競合他社への波及効果と市場動向の変化'
+            ],
+            impact: 'OpenAIの技術革新は、AI業界全体の発展方向を左右する重要な意味を持っています。この発表により、他の企業や研究機関も同様の技術開発を加速させ、業界全体の競争が激化することが予想されます。',
+            technical: '最先端のAI技術を活用した革新的なアプローチにより、従来の限界を超える性能向上を実現。技術的な詳細については元記事をご参照ください。'
+        };
+    }
+    
+    // Google関連記事の分析
+    if (article.category === 'google') {
+        return {
+            keyPoints: [
+                'Googleの先進的AI技術とその実用化',
+                'Geminiモデルの能力向上と新機能',
+                '既存サービスとの統合による利便性向上',
+                '企業向けソリューションの拡充'
+            ],
+            impact: 'Googleの技術革新は、検索、広告、クラウドサービスなど幅広い分野で影響を与え、ユーザー体験の向上と新たなビジネス機会の創出に貢献しています。',
+            technical: 'Geminiモデルやその他の先進技術を活用し、マルチモーダル処理能力とリアルタイム応答性能の向上を実現。詳細な技術仕様は元記事をご確認ください。'
+        };
+    }
+    
+    // Anthropic関連記事の分析
+    if (article.category === 'anthropic') {
+        return {
+            keyPoints: [
+                'AI安全性研究の最前線での重要な発見',
+                'Claudeモデルの技術的進歩と信頼性向上',
+                'Constitutional AIによる価値観の整合性',
+                '責任あるAI開発への貢献'
+            ],
+            impact: 'AnthropicのAI安全性研究は、業界全体のAI開発指針に大きな影響を与え、より安全で信頼できるAIシステムの構築に向けた重要な知見を提供しています。',
+            technical: 'Constitutional AIや強化学習手法を活用し、人間の価値観により適合した AI システムの開発を推進。詳細な研究内容については元記事をご参照ください。'
+        };
+    }
+    
+    // その他の記事の一般的な分析
+    return {
+        keyPoints: [
+            'AI技術の最新動向に関する重要な情報',
+            '業界の発展に影響を与える技術革新',
+            '実用化への具体的な取り組み',
+            '今後の展望と課題'
+        ],
+        impact: 'この技術革新は、AI業界の発展と社会実装において重要な意味を持ち、関連分野での新たな可能性を開拓する契機となることが期待されます。',
+        technical: '最新のAI技術とアルゴリズムを活用した革新的なアプローチ。技術的な詳細については元記事をご確認ください。'
+    };
 }
