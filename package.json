@@ -1,0 +1,33 @@
+{
+  "name": "ai-news-simple",
+  "version": "1.0.0",
+  "description": "AI Weekly News - 最新のAI関連ニュースを自動収集し、日本語翻訳・要約付きで毎日更新するWebサイト",
+  "main": "index.html",
+  "scripts": {
+    "update-news": "node scripts/fetch-news.js",
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000",
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0-rc.12",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "ai",
+    "news",
+    "automation",
+    "rss",
+    "japanese",
+    "github-actions"
+  ],
+  "author": "AI News Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takum004/ai-news-simple.git"
+  },
+  "homepage": "https://takum004.github.io/ai-news-simple/"
+}

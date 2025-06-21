@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Weekly News - 最新のAIニュースを日本語で</title>
+    <meta name="description" content="毎日更新される重要なAI関連ニュースを、自動翻訳と要約で分かりやすくお届けします">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>AIニュースを読み込み中...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🤖</div>
+                    <div class="logo-text">
+                        <h1>AI Weekly News</h1>
+                        <p>最新のAI動向を日本語で</p>
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <a href="#home" class="nav-link active">ホーム</a>
+                    <a href="#news" class="nav-link">ニュース</a>
+                    <a href="#categories" class="nav-link">カテゴリ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">最新のAIニュースを日本語で</h1>
+                <p class="hero-description">
+                    毎日更新される重要なAI関連ニュースを、自動翻訳と要約で分かりやすくお届けします
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-icon">🕒</div>
+                        <span>最終更新: <span id="last-updated">2025年6月21日</span></span>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon">📰</div>
+                        <span>今日の記事: <span id="article-count">3</span>件</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <section class="categories">
+        <div class="container">
+            <div class="category-tabs" id="category-tabs">
+                <button class="category-tab active" data-category="all">
+                    🌐 すべて <span class="count">3</span>
+                </button>
+                <button class="category-tab" data-category="research">
+                    🔬 AI研究・開発 <span class="count">1</span>
+                </button>
+                <button class="category-tab" data-category="tech">
+                    💻 テクノロジー <span class="count">1</span>
+                </button>
+                <button class="category-tab" data-category="business">
+                    💼 ビジネス・投資 <span class="count">1</span>
+                </button>
+                <button class="category-tab" data-category="healthcare">
+                    🏥 医療・ヘルスケア <span class="count">0</span>
+                </button>
+                <button class="category-tab" data-category="academic">
+                    📚 論文・学術研究 <span class="count">0</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Search and Filter -->
+            <div class="search-section">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="ニュースを検索...">
+                    <button id="search-btn">🔍</button>
+                </div>
+                
+                <div class="filter-options">
+                    <select id="sort-select">
+                        <option value="date-desc">新しい順</option>
+                        <option value="date-asc">古い順</option>
+                        <option value="importance-desc">重要度順</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- News Grid -->
+            <div class="news-grid" id="news-grid">
+                <!-- ニュースカードがJavaScriptで動的に生成される -->
+            </div>
+
+            <!-- No Results -->
+            <div class="no-results" id="no-results" style="display: none;">
+                <div class="no-results-icon">📰</div>
+                <h3>該当するニュースがありません</h3>
+                <p>他のカテゴリやキーワードをお試しください</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-feature">
+                        <span class="footer-icon">🕒</span>
+                        <span>毎日自動更新</span>
+                    </div>
+                    <div class="footer-feature">
+                        <span class="footer-icon">✨</span>
+                        <span>AI翻訳・要約機能付き</span>
+                    </div>
+                    <div class="footer-feature">
+                        <span class="footer-icon">🚀</span>
+                        <span>Powered by GitHub Actions</span>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://github.com/takum004/ai-news-weekly" target="_blank">
+                        GitHub
+                    </a>
+                    <a href="#about">このサイトについて</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

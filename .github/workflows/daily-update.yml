@@ -1,0 +1,81 @@
+name: Daily AI News Update
+
+on:
+  schedule:
+    # 毎日 JST 6:00 (UTC 21:00) に実行
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+    # 手動実行も可能
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Fetch and update news
+        run: npm run update-news
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/news.json
+          
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Daily news update - $(date '+%Y-%m-%d %H:%M JST')
+
+            🤖 Generated with GitHub Actions
+            
+            - Updated AI news data with latest articles
+            - Automatically filtered and categorized content
+            - Sorted by importance and recency
+            
+            Co-Authored-By: GitHub Actions <noreply@github.com>"
+            git push
+          fi
+
+  # Deploy to GitHub Pages
+  deploy:
+    needs: update-news
+    runs-on: ubuntu-latest
+    if: always()
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
