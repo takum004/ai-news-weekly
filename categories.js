@@ -279,25 +279,75 @@ function getCategoryInfo(category) {
             title: '📰 すべてのニュース',
             description: '全カテゴリのAI関連ニュースを表示しています'
         },
-        'tech': {
-            title: '💻 技術ニュース',
-            description: 'AI技術、プロダクト、ツールに関するニュースを表示しています'
+        
+        // Company/Model Categories
+        'openai': {
+            title: '🤖 OpenAI関連ニュース',
+            description: 'OpenAI、ChatGPT、GPT、DALL-E、Soraなどに関するニュースを表示しています'
         },
-        'business': {
-            title: '💼 ビジネスニュース',
-            description: 'AI企業、投資、市場動向に関するニュースを表示しています'
+        'google': {
+            title: '🔍 Google AI関連ニュース',
+            description: 'Google AI、Gemini、Bard、DeepMindなどに関するニュースを表示しています'
         },
+        'anthropic': {
+            title: '💭 Anthropic関連ニュース',
+            description: 'Anthropic、Claude、Constitutional AIなどに関するニュースを表示しています'
+        },
+        'microsoft': {
+            title: '🪟 Microsoft AI関連ニュース',
+            description: 'Microsoft、Copilot、Azure AIなどに関するニュースを表示しています'
+        },
+        'meta': {
+            title: '📘 Meta AI関連ニュース',
+            description: 'Meta、Llama、Facebook AIなどに関するニュースを表示しています'
+        },
+        
+        // AI Application Areas
+        'video_generation': {
+            title: '🎬 動画生成AI',
+            description: 'AI動画生成、Runway、Pika、映像合成技術に関するニュースを表示しています'
+        },
+        'image_generation': {
+            title: '🎨 画像生成AI',
+            description: 'AI画像生成、Midjourney、Stable Diffusion、アート生成に関するニュースを表示しています'
+        },
+        'audio_generation': {
+            title: '🎵 音声生成AI',
+            description: 'AI音声生成、音楽AI、音声合成、TTS技術に関するニュースを表示しています'
+        },
+        'presentation': {
+            title: '📊 プレゼンテーションAI',
+            description: 'AIスライド生成、プレゼン作成ツール、Gamma、Tomeなどに関するニュースを表示しています'
+        },
+        'agents': {
+            title: '🤵 エージェントAI',
+            description: 'AIエージェント、自律AI、マルチエージェント、ワークフロー自動化に関するニュースを表示しています'
+        },
+        'automation': {
+            title: '⚡ AI自動化・RPA',
+            description: 'AI自動化、RPA、ワークフロー最適化、ノーコードツールに関するニュースを表示しています'
+        },
+        
+        // Traditional Categories
         'research': {
-            title: '🔬 研究ニュース',
-            description: 'AI研究、ブレークスルー、アルゴリズムに関するニュースを表示しています'
-        },
-        'healthcare': {
-            title: '🏥 ヘルスケアニュース',
-            description: '医療AI、診断技術、ヘルステックに関するニュースを表示しています'
+            title: '🔬 AI研究ニュース',
+            description: 'AI研究、ブレークスルー、アルゴリズム、モデル開発に関するニュースを表示しています'
         },
         'academic': {
             title: '🎓 学術ニュース',
-            description: '大学、論文、学術機関のAI研究に関するニュースを表示しています'
+            description: '大学、論文、学術機関のAI研究、カンファレンスに関するニュースを表示しています'
+        },
+        'business': {
+            title: '💼 AIビジネスニュース',
+            description: 'AI企業、投資、市場動向、スタートアップに関するニュースを表示しています'
+        },
+        'healthcare': {
+            title: '🏥 医療AIニュース',
+            description: '医療AI、診断技術、ヘルステック、臨床応用に関するニュースを表示しています'
+        },
+        'tech': {
+            title: '💻 AI技術ニュース',
+            description: 'AI技術、プロダクト、開発ツール、プラットフォームに関するニュースを表示しています'
         }
     };
     
@@ -392,6 +442,22 @@ function loadMoreArticles() {
 // Utility functions
 function getCategoryDisplayName(category) {
     const categoryNames = {
+        // Company/Model Categories
+        'openai': '🤖 OpenAI',
+        'google': '🔍 Google/Gemini',
+        'anthropic': '💭 Anthropic/Claude',
+        'microsoft': '🪟 Microsoft/Copilot',
+        'meta': '📘 Meta/Llama',
+        
+        // AI Application Areas
+        'video_generation': '🎬 動画生成',
+        'image_generation': '🎨 画像生成',
+        'audio_generation': '🎵 音声生成',
+        'presentation': '📊 プレゼン・スライド',
+        'agents': '🤵 エージェントAI',
+        'automation': '⚡ 自動化・RPA',
+        
+        // Traditional Categories
         'tech': '💻 技術',
         'business': '💼 ビジネス',
         'research': '🔬 研究',

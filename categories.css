@@ -74,11 +74,27 @@
 /* Category Navigation */
 .category-nav {
     background: white;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
     border-bottom: 1px solid #e2e8f0;
     position: sticky;
     top: 0;
     z-index: 10;
+}
+
+.category-section {
+    margin-bottom: 2rem;
+}
+
+.category-section:last-child {
+    margin-bottom: 0;
+}
+
+.category-section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
 }
 
 .category-tabs {
@@ -86,6 +102,7 @@
     gap: 0.5rem;
     overflow-x: auto;
     padding-bottom: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .category-tab {

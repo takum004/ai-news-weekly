@@ -201,6 +201,22 @@ function loadRelatedArticles(article) {
 // Utility functions
 function getCategoryDisplayName(category) {
     const categoryNames = {
+        // Company/Model Categories
+        'openai': '🤖 OpenAI',
+        'google': '🔍 Google/Gemini',
+        'anthropic': '💭 Anthropic/Claude',
+        'microsoft': '🪟 Microsoft/Copilot',
+        'meta': '📘 Meta/Llama',
+        
+        // AI Application Areas
+        'video_generation': '🎬 動画生成',
+        'image_generation': '🎨 画像生成',
+        'audio_generation': '🎵 音声生成',
+        'presentation': '📊 プレゼン・スライド',
+        'agents': '🤵 エージェントAI',
+        'automation': '⚡ 自動化・RPA',
+        
+        // Traditional Categories
         'tech': '💻 技術',
         'business': '💼 ビジネス',
         'research': '🔬 研究',

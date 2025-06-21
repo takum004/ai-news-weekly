@@ -7,14 +7,31 @@ let currentNews = [...mockNews];
 let currentCategory = 'all';
 let currentSearch = '';
 
-// Category Configuration
+// Enhanced Category Configuration
 const categories = {
     all: { name: '🌐 すべて', count: 0 },
-    research: { name: '🔬 AI研究・開発', count: 0 },
-    tech: { name: '💻 テクノロジー', count: 0 },
+    
+    // Company/Model Releases
+    openai: { name: '🤖 OpenAI', count: 0 },
+    google: { name: '🔍 Google/Gemini', count: 0 },
+    anthropic: { name: '💭 Anthropic/Claude', count: 0 },
+    microsoft: { name: '🪟 Microsoft/Copilot', count: 0 },
+    meta: { name: '📘 Meta/Llama', count: 0 },
+    
+    // AI Application Areas
+    video_generation: { name: '🎬 動画生成', count: 0 },
+    image_generation: { name: '🎨 画像生成', count: 0 },
+    audio_generation: { name: '🎵 音声生成', count: 0 },
+    presentation: { name: '📊 プレゼン・スライド', count: 0 },
+    agents: { name: '🤵 エージェントAI', count: 0 },
+    automation: { name: '⚡ 自動化・RPA', count: 0 },
+    
+    // Traditional Categories
+    research: { name: '🔬 AI研究', count: 0 },
+    academic: { name: '📚 論文・学術', count: 0 },
     business: { name: '💼 ビジネス・投資', count: 0 },
     healthcare: { name: '🏥 医療・ヘルスケア', count: 0 },
-    academic: { name: '📚 論文・学術研究', count: 0 }
+    tech: { name: '💻 テクノロジー', count: 0 }
 };
 
 // Utility Functions
@@ -30,14 +47,30 @@ function formatDate(dateString) {
 }
 
 function getCategoryLabel(category) {
+    if (categories[category]) {
+        return categories[category].name;
+    }
+    
+    // Fallback labels
     const labels = {
-        tech: 'テクノロジー',
-        research: 'AI研究',
-        business: 'ビジネス',
-        healthcare: '医療',
-        academic: '学術'
+        tech: '💻 テクノロジー',
+        research: '🔬 AI研究',
+        business: '💼 ビジネス',
+        healthcare: '🏥 医療',
+        academic: '📚 学術',
+        openai: '🤖 OpenAI',
+        google: '🔍 Google',
+        anthropic: '💭 Anthropic',
+        microsoft: '🪟 Microsoft',
+        meta: '📘 Meta',
+        video_generation: '🎬 動画生成',
+        image_generation: '🎨 画像生成',
+        audio_generation: '🎵 音声生成',
+        presentation: '📊 プレゼン',
+        agents: '🤵 エージェント',
+        automation: '⚡ 自動化'
     };
-    return labels[category] || category;
+    return labels[category] || `📰 ${category}`;
 }
 
 function getImportanceBadge(importance) {

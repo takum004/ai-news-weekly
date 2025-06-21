@@ -2,36 +2,111 @@ const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
 
-// RSS feeds for AI news (verified working feeds only)
+// Enhanced RSS feeds for comprehensive AI news coverage
 const RSS_FEEDS = [
+  // General AI & Tech News
   'https://feeds.feedburner.com/venturebeat/SZYF',
   'https://www.technologyreview.com/feed/',
   'https://techcrunch.com/category/artificial-intelligence/feed/',
   'https://www.artificialintelligence-news.com/feed/',
+  
+  // Company Specific
   'https://openai.com/blog/rss.xml',
-  // Removed problematic feeds:
-  // 'https://hai.stanford.edu/news/rss.xml', // XML parsing error
-  // 'https://www.anthropic.com/news.rss',   // 404 error
-  // 'https://blog.google/products/ai/rss/'  // 404 error
+  'https://blog.google/technology/ai/rss/',
+  
+  // AI Tools & Applications
+  'https://www.marktechpost.com/feed/',
+  'https://machinelearningmastery.com/feed/',
+  'https://distill.pub/rss.xml',
+  
+  // Business & Industry
+  'https://www.theverge.com/ai-artificial-intelligence/rss/index.xml',
+  'https://venturebeat.com/ai/feed/',
+  
+  // Academic & Research
+  'https://blog.research.google/feeds/posts/default',
+  'https://www.deepmind.com/blog/rss.xml',
+  
+  // Creative AI & Tools
+  'https://www.unite.ai/feed/',
+  'https://analyticsindiamag.com/feed/',
+  
+  // Additional specialized feeds
+  'https://www.kdnuggets.com/feed',
+  'https://towardsdatascience.com/feed'
 ];
 
-// Keywords for AI news filtering
+// Enhanced keywords for comprehensive AI news filtering
 const AI_KEYWORDS = [
+  // Core AI Terms
   'artificial intelligence', 'machine learning', 'deep learning',
-  'neural network', 'openai', 'anthropic', 'google ai', 'gemini',
-  'gpt', 'claude', 'chatgpt', 'llm', 'generative ai', 'robotics',
-  'automation', 'computer vision', 'natural language processing',
-  'transformer', 'bert', 'ai model', 'ai research', 'ai breakthrough'
+  'neural network', 'llm', 'generative ai', 'transformer',
+  'computer vision', 'natural language processing', 'nlp',
+  
+  // Companies & Models
+  'openai', 'anthropic', 'google ai', 'gemini', 'deepmind',
+  'gpt', 'claude', 'chatgpt', 'bard', 'copilot', 'llama',
+  'palm', 'bert', 'dall-e', 'sora', 'midjourney',
+  
+  // AI Applications
+  'video generation', 'image generation', 'audio generation',
+  'voice synthesis', 'text-to-speech', 'speech recognition',
+  'ai agent', 'autonomous agent', 'workflow automation',
+  'presentation ai', 'slide generation', 'content creation',
+  
+  // Industry & Tools
+  'ai model', 'ai research', 'ai breakthrough', 'ai startup',
+  'stable diffusion', 'runway ml', 'elevenlabs', 'gamma',
+  'tome', 'notion ai', 'jasper ai', 'copy.ai',
+  
+  // Technical Terms
+  'multimodal', 'foundation model', 'fine-tuning',
+  'prompt engineering', 'reinforcement learning', 'robotics',
+  'automation', 'rpa', 'computer vision', 'diffusion model'
 ];
 
-// Translation dictionary for common AI terms
+// Enhanced translation dictionary for AI terms
 const TRANSLATION_DICT = {
+  // Core AI Terms
   'artificial intelligence': '人工知能',
   'machine learning': '機械学習',
   'deep learning': 'ディープラーニング',
   'neural network': 'ニューラルネットワーク',
   'natural language processing': '自然言語処理',
   'computer vision': 'コンピュータビジョン',
+  'generative ai': '生成AI',
+  'transformer': 'Transformer',
+  'foundation model': '基盤モデル',
+  'large language model': '大規模言語モデル',
+  'llm': 'LLM',
+  
+  // Companies & Models
+  'openai': 'OpenAI',
+  'anthropic': 'Anthropic',
+  'google': 'Google',
+  'microsoft': 'Microsoft',
+  'meta': 'Meta',
+  'chatgpt': 'ChatGPT',
+  'claude': 'Claude',
+  'gemini': 'Gemini',
+  'copilot': 'Copilot',
+  'bard': 'Bard',
+  
+  // AI Applications
+  'video generation': '動画生成',
+  'image generation': '画像生成',
+  'audio generation': '音声生成',
+  'voice synthesis': '音声合成',
+  'text-to-speech': 'テキスト読み上げ',
+  'speech recognition': '音声認識',
+  'presentation': 'プレゼンテーション',
+  'slide generation': 'スライド生成',
+  'content creation': 'コンテンツ作成',
+  'ai agent': 'AIエージェント',
+  'autonomous agent': '自律エージェント',
+  'workflow automation': 'ワークフロー自動化',
+  
+  // Technical Terms
   'robotics': 'ロボティクス',
   'automation': 'オートメーション',
   'breakthrough': '画期的な進歩',
@@ -43,9 +118,15 @@ const TRANSLATION_DICT = {
   'data': 'データ',
   'model': 'モデル',
   'training': '訓練',
+  'fine-tuning': 'ファインチューニング',
+  'prompt engineering': 'プロンプトエンジニアリング',
   'performance': '性能',
   'accuracy': '精度',
   'efficiency': '効率',
+  'multimodal': 'マルチモーダル',
+  'diffusion model': '拡散モデル',
+  
+  // Domain Areas
   'healthcare': 'ヘルスケア',
   'medical': '医療',
   'diagnosis': '診断',
@@ -59,7 +140,9 @@ const TRANSLATION_DICT = {
   'academic': '学術',
   'paper': '論文',
   'study': '研究',
-  'collaboration': '連携'
+  'collaboration': '連携',
+  'conference': '会議',
+  'journal': 'ジャーナル'
 };
 
 async function fetchNewsFromRSS() {
@@ -154,17 +237,59 @@ function extractSummary(content) {
 function categorizeArticle(title, content) {
   const text = (title + ' ' + content).toLowerCase();
   
-  if (text.includes('health') || text.includes('medical') || text.includes('drug') || text.includes('diagnosis')) {
-    return 'healthcare';
-  } else if (text.includes('robot') || text.includes('research') || text.includes('breakthrough') || text.includes('algorithm')) {
-    return 'research';
-  } else if (text.includes('business') || text.includes('invest') || text.includes('funding') || text.includes('enterprise')) {
-    return 'business';
-  } else if (text.includes('university') || text.includes('paper') || text.includes('study') || text.includes('academic')) {
-    return 'academic';
-  } else {
-    return 'tech';
+  // Company/Model specific categories (highest priority)
+  if (text.includes('openai') || text.includes('gpt') || text.includes('chatgpt') || text.includes('dall-e') || text.includes('sora') || text.includes('o1') || text.includes('o3')) {
+    return 'openai';
   }
+  if (text.includes('google') || text.includes('gemini') || text.includes('bard') || text.includes('deepmind') || text.includes('palm') || text.includes('vertex')) {
+    return 'google';
+  }
+  if (text.includes('anthropic') || text.includes('claude') || text.includes('constitutional ai')) {
+    return 'anthropic';
+  }
+  if (text.includes('microsoft') || text.includes('copilot') || text.includes('azure ai') || text.includes('bing ai')) {
+    return 'microsoft';
+  }
+  if (text.includes('meta') || text.includes('llama') || text.includes('facebook ai') || text.includes('metaai')) {
+    return 'meta';
+  }
+  
+  // AI Application Areas (second priority)
+  if (text.includes('video generation') || text.includes('video ai') || text.includes('runway') || text.includes('pika') || text.includes('video synthesis') || text.includes('motion') || text.includes('film') || text.includes('movie')) {
+    return 'video_generation';
+  }
+  if (text.includes('image generation') || text.includes('midjourney') || text.includes('stable diffusion') || text.includes('dall-e') || text.includes('imagen') || text.includes('art generation') || text.includes('creative ai')) {
+    return 'image_generation';
+  }
+  if (text.includes('audio generation') || text.includes('music ai') || text.includes('voice') || text.includes('speech') || text.includes('tts') || text.includes('elevenlabs') || text.includes('mubert')) {
+    return 'audio_generation';
+  }
+  if (text.includes('presentation') || text.includes('slide') || text.includes('powerpoint') || text.includes('gamma') || text.includes('tome') || text.includes('pitch deck') || text.includes('slides')) {
+    return 'presentation';
+  }
+  if (text.includes('agent') || text.includes('autonomous') || text.includes('multi-agent') || text.includes('ai assistant') || text.includes('workflow') || text.includes('task automation')) {
+    return 'agents';
+  }
+  if (text.includes('automation') || text.includes('rpa') || text.includes('robotic process') || text.includes('workflow automation') || text.includes('zapier') || text.includes('no-code')) {
+    return 'automation';
+  }
+  
+  // Domain-specific categories (third priority)
+  if (text.includes('health') || text.includes('medical') || text.includes('drug') || text.includes('diagnosis') || text.includes('healthcare') || text.includes('patient') || text.includes('clinical')) {
+    return 'healthcare';
+  }
+  if (text.includes('research') || text.includes('breakthrough') || text.includes('algorithm') || text.includes('model architecture') || text.includes('training') || text.includes('neural network')) {
+    return 'research';
+  }
+  if (text.includes('business') || text.includes('invest') || text.includes('funding') || text.includes('enterprise') || text.includes('startup') || text.includes('market') || text.includes('revenue')) {
+    return 'business';
+  }
+  if (text.includes('university') || text.includes('paper') || text.includes('study') || text.includes('academic') || text.includes('journal') || text.includes('conference') || text.includes('arxiv')) {
+    return 'academic';
+  }
+  
+  // Default category
+  return 'tech';
 }
 
 function calculateImportance(title, content) {
