@@ -166,63 +166,30 @@ async function loadNews() {
     }
 }
 
-// 埋め込みニュースデータ（フォールバック用）- script.jsからの80件データ
+// 埋め込みニュースデータ（フォールバック用）
 function loadEmbeddedNews() {
     console.log('Loading embedded news data as fallback');
     
-    // script.jsから移植した完全な80件フォールバックデータ
-    const embeddedData = {
-        lastUpdated: "2025-06-21T00:00:00Z",
-        totalArticles: 80,
-        articles: [
-            {
-                id: "openai-gpt-4-1-release",
-                title: "OpenAI launches new GPT-4.1 models with improved coding, long context comprehension",
-                titleJa: "OpenAI、コーディング能力と長文理解を向上させた新モデル「GPT-4.1」をリリース",
-                summary: "OpenAI has launched three new models in the API: GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano. These models outperform GPT-4o with major gains in coding and instruction following.",
-                summaryJa: "OpenAIがAPI向けに3つの新モデル「GPT-4.1」「GPT-4.1 mini」「GPT-4.1 nano」をリリース。GPT-4oを上回る性能でコーディングと指示追従が大幅改善。",
-                source: "Reuters",
-                category: "openai",
-                importance: 95,
-                pubDate: "2025-06-20T14:30:00Z",
-                link: "https://www.reuters.com/technology/artificial-intelligence/openai-launches-new-gpt-41-models-with-improved-coding-long-context-2025-04-14/"
-            },
-            {
-                id: "anthropic-claude-4-opus",
-                title: "Anthropic unveils Claude 4 Opus with claim to AI coding crown",
-                titleJa: "Anthropic、AIコーディング分野でのリーダーシップを主張する「Claude 4 Opus」を発表",
-                summary: "Anthropic debuted Claude 4 Opus, claiming the world's best coding model with sustained performance on complex tasks.",
-                summaryJa: "Anthropicが複雑なタスクで持続的な性能を発揮する世界最高のコーディングモデルとして「Claude 4 Opus」を発表。",
-                source: "Axios",
-                category: "anthropic",
-                importance: 92,
-                pubDate: "2025-06-20T13:15:00Z",
-                link: "https://www.axios.com/2025/05/22/anthropic-claude-version-4-ai-model"
-            },
-            {
-                id: "google-gemini-2-5-pro",
-                title: "Google introduces Gemini 2.5: Our most intelligent AI model",
-                titleJa: "Google、最も知的なAIモデル「Gemini 2.5」を発表",
-                summary: "Google's Gemini 2.5 Pro and Flash include thought summaries and improved efficiency.",
-                summaryJa: "GoogleのGemini 2.5 ProとFlashは思考要約を含み効率が向上。",
-                source: "Google DeepMind",
-                category: "google",
-                importance: 90,
-                pubDate: "2025-06-20T12:00:00Z",
-                link: "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/"
-            }
-        ]
-    };
+    // エラーメッセージを表示
+    const newsGrid = document.getElementById('news-grid');
+    if (newsGrid) {
+        newsGrid.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
+                <h3 style="color: #ef4444;">ニュースデータの読み込みに失敗しました</h3>
+                <p style="color: #64748b; margin-top: 1rem;">
+                    ニュースフィードが一時的に利用できません。<br>
+                    しばらく待ってからページを再読み込みしてください。
+                </p>
+                <button onclick="location.reload()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: #3b82f6; color: white; border: none; border-radius: 0.5rem; cursor: pointer;">
+                    ページを再読み込み
+                </button>
+            </div>
+        `;
+    }
     
-    // 80件のデータを設定（実際のscript.jsにはすべてのデータがあるが、ここでは省略表示）
-    allNews = embeddedData.articles;
-    
-    console.log('Loaded embedded data:', allNews.length, 'articles');
-    console.log('WARNING: Using fallback data, actual data should be loaded from news.json');
-    document.getElementById('article-count').textContent = allNews.length; // 実際の配列長を表示
+    // 記事数を0に設定
+    document.getElementById('article-count').textContent = '0';
     document.getElementById('last-updated').textContent = new Date().toLocaleDateString('ja-JP');
-    
-    filterAndSortNews();
 }
 
 // イベントリスナーをセットアップ

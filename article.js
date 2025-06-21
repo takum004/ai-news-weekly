@@ -39,47 +39,10 @@ async function loadArticleData() {
     } catch (error) {
         console.warn('Failed to load from JSON:', error.message);
         
-        // Fallback to embedded data
-        console.log('Using embedded fallback data');
-        allArticles = [
-            {
-                "id": "aHR0cHM6Ly90ZWNo-mc5ut0n0",
-                "title": "Anthropic says most AI models, not just Claude, will resort to blackmail",
-                "titleJa": "Anthropic、Claudeだけでなく多くのAIモデルがブラックメールに訴えると発表",
-                "summary": "Several weeks after Anthropic released research claiming that its Claude Opus 4 AI model resorted to blackmailing engineers who tried to turn the model off in controlled test scenarios, the company is out with new research suggesting the problem is more widespread among leading AI models.",
-                "summaryJa": "AnthropicがClaude Opus 4 AIモデルが制御されたテストシナリオでモデルをオフにしようとしたエンジニアを脅迫したという研究を発表してから数週間後、同社は主要なAIモデルの間でこの問題がより広範囲に及んでいることを示唆する新しい研究を発表した。",
-                "source": "TechCrunch AI",
-                "category": "anthropic",
-                "importance": 95,
-                "pubDate": "2025-06-20T19:17:44.000Z",
-                "link": "https://techcrunch.com/2025/06/20/anthropic-says-most-ai-models-not-just-claude-will-resort-to-blackmail/"
-            },
-            {
-                "id": "aHR0cHM6Ly93d3cu-mc5ut342",
-                "title": "Build an Intelligent Multi-Tool AI Agent Interface Using Streamlit for Seamless Real-Time Interaction",
-                "titleJa": "Streamlitを使用したインテリジェントなマルチツールAIエージェントインターフェースの構築",
-                "summary": "In this tutorial, we'll build a powerful and interactive Streamlit application that brings together the capabilities of LangChain, the Google Gemini API, and a suite of advanced tools to create a smart AI assistant.",
-                "summaryJa": "このチュートリアルでは、LangChain、Google Gemini API、および高度なツールスイートの機能を組み合わせて、スマートなAIアシスタントを作成する強力でインタラクティブなStreamlitアプリケーションを構築します。",
-                "source": "MarkTechPost",
-                "category": "google",
-                "importance": 85,
-                "pubDate": "2025-06-20T07:40:50.000Z",
-                "link": "https://www.marktechpost.com/2025/06/20/build-an-intelligent-multi-tool-ai-agent-interface-using-streamlit-for-seamless-real-time-interaction/"
-            },
-            {
-                "id": "aHR0cHM6Ly93d3cu-mc5ut0lk",
-                "title": "OpenAI can rehabilitate AI models that develop a \"bad boy persona\"",
-                "titleJa": "OpenAI、「悪役ペルソナ」を開発したAIモデルをリハビリできる",
-                "summary": "A new paper from OpenAI has shown why a little bit of bad training can make AI models go rogue—but also demonstrates that this problem is generally pretty easy to fix.",
-                "summaryJa": "OpenAIの新しい論文は、少しの悪い訓練がAIモデルを暴走させる理由を示しているが、この問題は一般的に修正が比較的容易であることも実証している。",
-                "source": "MIT Technology Review",
-                "category": "openai",
-                "importance": 88,
-                "pubDate": "2025-06-18T18:19:15.000Z",
-                "link": "https://www.technologyreview.com/2025/06/18/1119042/openai-can-rehabilitate-ai-models-that-develop-a-bad-boy-persona/"
-            }
-        ];
-        console.log(`Loaded ${allArticles.length} articles from fallback data`);
+        // Fallback to empty data
+        console.log('Failed to load articles from JSON, showing error');
+        allArticles = [];
+        console.log('No articles available');
     }
     
     if (allArticles.length === 0) {
@@ -120,11 +83,11 @@ function displayArticle(articleId) {
     // Update article body
     updateArticleBody(article);
     
+    // Update new detailed format sections
+    updateDetailedFormat(article);
+    
     // Load related articles
     loadRelatedArticles(article);
-    
-    // Load detailed analysis
-    updateDetailedAnalysis(article);
 }
 
 // Update article header
@@ -418,6 +381,139 @@ function updateDetailedAnalysis(article) {
     if (technicalDetailsText && analysisData.technical) {
         technicalDetailsText.textContent = analysisData.technical;
     }
+}
+
+// Update detailed format sections
+function updateDetailedFormat(article) {
+    // Update 引用元 section
+    const sourceUrl = document.getElementById('source-url');
+    if (sourceUrl && article.link && article.link !== '#') {
+        sourceUrl.href = article.link;
+        sourceUrl.textContent = article.link;
+    }
+    
+    // Update 概要 section
+    const overviewContent = document.getElementById('overview-content');
+    if (overviewContent) {
+        const overview = generateOverview(article);
+        overviewContent.innerHTML = `<p>${overview}</p>`;
+    }
+    
+    // Update 詳細レポート section
+    const detailedReportContent = document.getElementById('detailed-report-content');
+    if (detailedReportContent) {
+        const detailedReport = generateDetailedReport(article);
+        detailedReportContent.innerHTML = detailedReport;
+    }
+    
+    // Update Links to this page section
+    const linksContent = document.getElementById('links-content');
+    if (linksContent) {
+        const currentUrl = window.location.href;
+        linksContent.innerHTML = `
+            <div class="links-list">
+                <p><strong>この記事のURL:</strong></p>
+                <div class="url-box">
+                    <input type="text" value="${currentUrl}" readonly onclick="this.select()">
+                    <button onclick="copyToClipboard('${currentUrl}')" class="copy-btn">コピー</button>
+                </div>
+                <p><strong>共有用テキスト:</strong></p>
+                <div class="share-text-box">
+                    <textarea readonly onclick="this.select()">${article.titleJa || article.title}
+${article.summaryJa || article.summary}
+${currentUrl}</textarea>
+                    <button onclick="copyToClipboard(\`${article.titleJa || article.title}\\n${article.summaryJa || article.summary}\\n${currentUrl}\`)" class="copy-btn">コピー</button>
+                </div>
+            </div>
+        `;
+    }
+}
+
+// Generate overview text based on article
+function generateOverview(article) {
+    if (article.summaryJa) {
+        return article.summaryJa;
+    }
+    return article.summary || '概要が利用できません。';
+}
+
+// Generate detailed report based on article content
+function generateDetailedReport(article) {
+    const reportSections = [];
+    
+    // Add basic information section
+    reportSections.push(`
+        <div class="report-section">
+            <h4>1. 基本情報</h4>
+            <ul>
+                <li><strong>記事タイトル:</strong> ${article.title}</li>
+                <li><strong>日本語タイトル:</strong> ${article.titleJa || '翻訳なし'}</li>
+                <li><strong>情報源:</strong> ${article.source}</li>
+                <li><strong>カテゴリ:</strong> ${getCategoryDisplayName(article.category)}</li>
+                <li><strong>重要度:</strong> ${article.importance}/100</li>
+                <li><strong>公開日:</strong> ${formatDetailedDate(article.pubDate)}</li>
+            </ul>
+        </div>
+    `);
+    
+    // Add summary section
+    reportSections.push(`
+        <div class="report-section">
+            <h4>2. 要約と分析</h4>
+            <p><strong>英語要約:</strong><br>${article.summary || '要約なし'}</p>
+            ${article.summaryJa ? `<p><strong>日本語要約:</strong><br>${article.summaryJa}</p>` : ''}
+        </div>
+    `);
+    
+    // Add detailed analysis based on content
+    const detailedAnalysis = getDetailedAnalysisData(article);
+    if (detailedAnalysis.keyPoints && detailedAnalysis.keyPoints.length > 0) {
+        reportSections.push(`
+            <div class="report-section">
+                <h4>3. 主要ポイント</h4>
+                <ul>
+                    ${detailedAnalysis.keyPoints.map(point => `<li>${point}</li>`).join('')}
+                </ul>
+            </div>
+        `);
+    }
+    
+    if (detailedAnalysis.impact) {
+        reportSections.push(`
+            <div class="report-section">
+                <h4>4. 業界への影響</h4>
+                <p>${detailedAnalysis.impact}</p>
+            </div>
+        `);
+    }
+    
+    if (detailedAnalysis.technical) {
+        reportSections.push(`
+            <div class="report-section">
+                <h4>5. 技術的詳細</h4>
+                <p>${detailedAnalysis.technical}</p>
+            </div>
+        `);
+    }
+    
+    // Add conclusion section
+    reportSections.push(`
+        <div class="report-section">
+            <h4>6. 結論</h4>
+            <p>この記事は${getCategoryDisplayName(article.category)}分野における重要な動向を示しており、重要度スコア${article.importance}/100で評価されています。詳細な情報については元記事をご確認ください。</p>
+        </div>
+    `);
+    
+    return reportSections.join('');
+}
+
+// Copy to clipboard function
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        alert('クリップボードにコピーしました！');
+    }).catch(() => {
+        alert('コピーに失敗しました。手動でコピーしてください。');
+    });
 }
 
 // Get detailed analysis data based on article content
