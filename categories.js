@@ -152,7 +152,15 @@ function displayNews() {
 // ニュースデータを読み込み
 async function loadNews() {
     try {
-        const response = await fetch('data/news.json');
+        // キャッシュバスティング機能追加
+        const cacheBuster = new Date().getTime();
+        const response = await fetch(`data/news.json?t=${cacheBuster}`, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Cache-Control': 'no-cache'
+            }
+        });
         if (!response.ok) {
             throw new Error('Failed to load news data');
         }
