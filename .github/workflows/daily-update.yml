@@ -84,31 +84,6 @@ jobs:
           fi
         id: commit
 
-  # Deploy to GitHub Pages
-  deploy:
-    needs: update-news
-    runs-on: ubuntu-latest
-    if: always()
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # 最新のコミットを取得
-          fetch-depth: 0
-      
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
-      
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+  # GitHub Pagesのデプロイはプッシュ時に自動的に行われるため、
+  # 明示的なデプロイステップは不要です。
+  # GitHub Pagesは master ブランチから自動的にサイトを構築します。
