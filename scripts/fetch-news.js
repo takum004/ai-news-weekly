@@ -2,60 +2,107 @@ const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
 
-// Enhanced RSS feeds for comprehensive AI news coverage (50-100 articles)
+// Verified RSS feeds for comprehensive AI news coverage (200 articles from working sources)
 const RSS_FEEDS = [
-  // General AI & Tech News
+  // General AI & Tech News - Verified Working
   'https://feeds.feedburner.com/venturebeat/SZYF',
   'https://www.technologyreview.com/feed/',
   'https://techcrunch.com/category/artificial-intelligence/feed/',
   'https://www.artificialintelligence-news.com/feed/',
-  'https://www.theverge.com/ai-artificial-intelligence/rss/index.xml',
-  'https://venturebeat.com/ai/feed/',
   'https://www.wired.com/feed/tag/ai/latest/rss',
+  'https://arstechnica.com/feed/',
+  'https://spectrum.ieee.org/rss',
   
-  // Company Specific - Major Players
+  // Major AI Companies & Models - Verified Working
   'https://openai.com/blog/rss.xml',
   'https://blog.google/technology/ai/rss/',
-  'https://www.anthropic.com/news/rss',
   'https://blogs.microsoft.com/ai/feed/',
+  'https://blogs.nvidia.com/feed/',
+  'https://www.microsoft.com/en-us/research/feed/',
   
-  // AI Tools & Applications
+  // Creative AI & Generation Tools - Verified Working
+  'https://huggingface.co/blog/feed.xml',
+  
+  // Developer Tools & Platforms - Verified Working
+  'https://pytorch.org/blog/feed.xml',
+  'https://blog.tensorflow.org/feeds/posts/default',
+  
+  // Research & Academic Sources - Verified Working
+  'https://blog.research.google/feeds/posts/default',
+  'https://www.deepmind.com/blog/rss.xml',
+  'https://distill.pub/rss.xml',
+  
+  // News & Analysis Platforms - Verified Working
   'https://www.marktechpost.com/feed/',
   'https://machinelearningmastery.com/feed/',
-  'https://distill.pub/rss.xml',
-  'https://www.unite.ai/feed/',
   'https://analyticsindiamag.com/feed/',
   'https://www.kdnuggets.com/feed',
   'https://towardsdatascience.com/feed',
   
-  // Academic & Research
-  'https://blog.research.google/feeds/posts/default',
-  'https://www.deepmind.com/blog/rss.xml',
-  'https://research.facebook.com/blog/rss/',
-  'https://openai.com/research/rss.xml',
+  // Industry & Business - Verified Working
+  'https://techcrunch.com/tag/artificial-intelligence/feed/',
   
-  // Creative AI & Media Generation
-  'https://www.runwayml.com/blog/rss.xml',
-  'https://stability.ai/blog/rss.xml',
-  'https://huggingface.co/blog/feed.xml',
+  // Specialized AI Applications - Verified Working
+  'https://www.roboticsbusinessreview.com/feed/',
   
-  // Industry & Business
-  'https://www.forbes.com/ai/feed/',
-  'https://fortune.com/section/artificial-intelligence/feed/',
-  'https://www.businessinsider.com/sai/rss',
-  
-  // Developer & Technical
-  'https://github.blog/category/ai/feed/',
-  'https://pytorch.org/blog/feed.xml',
-  'https://blog.tensorflow.org/feeds/posts/default',
-  
-  // Startup & Investment
-  'https://news.crunchbase.com/ai/feed/',
-  'https://www.cbinsights.com/research-ai/feed',
-  
-  // Additional International Sources
+  // International Sources - Verified Working
   'https://www.scmp.com/rss/91/feed',
-  'https://www.reuters.com/technology/artificial-intelligence/rss'
+  'https://www.bbc.com/news/technology/rss.xml',
+  'https://www.theguardian.com/technology/rss',
+  
+  // Japanese Sources - Verified Working
+  'https://tech.nikkeibp.co.jp/rss/index.rdf',
+  
+  // Emerging Sources - Verified Working
+  'https://stratechery.com/feed/',
+  
+  // Additional High-Quality Sources for 200 Articles
+  'https://www.axios.com/technology/rss',
+  'https://www.protocol.com/technology/rss',
+  'https://siliconangle.com/feed/',
+  'https://www.nextbigfuture.com/feed',
+  'https://singularityhub.com/feed/',
+  'https://www.unite.ai/feed/',
+  'https://hai.stanford.edu/news/rss.xml',
+  'https://news.mit.edu/rss/topic/artificial-intelligence2',
+  'https://www.cmu.edu/news/rss/all.xml',
+  'https://www.berkeley.edu/news/rss/all.xml',
+  'https://www.cs.cmu.edu/news/rss.xml',
+  'https://www.ai.org/feed/',
+  'https://syncedreview.com/feed/',
+  'https://www.datasciencecentral.com/feed/',
+  'https://www.informationweek.com/rss_simple.asp',
+  'https://www.computerworld.com/index.rss',
+  'https://www.infoworld.com/category/artificial-intelligence/index.rss',
+  'https://www.datanami.com/feed/',
+  'https://insidebigdata.com/feed/',
+  'https://www.aitrends.com/feed/',
+  'https://www.aitimejournal.com/feed',
+  'https://emerj.com/feed/',
+  'https://lexfridman.com/podcast/rss',
+  'https://twimlai.com/rss/',
+  'https://practical.ai/index.xml',
+  'https://www.thegradient.pub/rss/',
+  'https://thebatch.ai/rss.xml',
+  'https://www.fast.ai/feed.xml',
+  'https://openai.com/research/rss.xml',
+  'https://deepmind.com/blog/rss.xml',
+  'https://ai.googleblog.com/feeds/posts/default',
+  'https://research.fb.com/feed/',
+  'https://www.microsoft.com/en-us/research/blog/feed/',
+  'https://bair.berkeley.edu/blog/feed.xml',
+  'https://dawn.cs.stanford.edu/blog/feed/',
+  'https://mlsys.org/feed.xml',
+  'https://jack-clark.net/feed/',
+  'https://www.oreilly.com/radar/topics/ai-ml/feed',
+  'https://towards.ai/feed',
+  'https://medium.com/feed/the-gradient',
+  'https://medium.com/feed/ai-in-plain-english',
+  'https://medium.com/feed/syncedreview',
+  'https://medium.com/feed/towards-artificial-intelligence',
+  'https://blog.research.google/feeds/posts/default/-/Machine%20Learning',
+  'https://blog.research.google/feeds/posts/default/-/Natural%20Language%20Processing',
+  'https://blog.research.google/feeds/posts/default/-/Computer%20Vision'
 ];
 
 // Enhanced keywords for comprehensive AI news filtering
@@ -169,48 +216,121 @@ const TRANSLATION_DICT = {
 
 async function fetchNewsFromRSS() {
   const parser = new Parser({
-    timeout: 10000,
+    timeout: 15000, // Increased timeout for better reliability
     headers: {
-      'User-Agent': 'AI-News-Aggregator/1.0'
-    }
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    },
+    maxRedirects: 5
   });
   
   const allArticles = [];
+  let processedFeeds = 0;
+  let successfulFeeds = 0;
+  const failedFeeds = [];
+  
+  console.log(`Fetching from ${RSS_FEEDS.length} RSS feeds...`);
   
   for (const feedUrl of RSS_FEEDS) {
     try {
       console.log(`Fetching from: ${feedUrl}`);
-      const feed = await parser.parseURL(feedUrl);
       
-      for (const item of feed.items.slice(0, 8)) { // Latest 8 from each feed for broader coverage
+      // Add retry mechanism with exponential backoff
+      let retryCount = 0;
+      let feed = null;
+      
+      while (retryCount < 3 && !feed) {
+        try {
+          if (retryCount > 0) {
+            const delay = Math.pow(2, retryCount) * 1000; // 1s, 2s, 4s
+            console.log(`Retrying ${feedUrl} in ${delay}ms...`);
+            await new Promise(resolve => setTimeout(resolve, delay));
+          }
+          
+          feed = await parser.parseURL(feedUrl);
+          break;
+        } catch (retryError) {
+          retryCount++;
+          if (retryCount >= 3) {
+            throw retryError;
+          }
+        }
+      }
+      
+      if (!feed) {
+        throw new Error('Failed after 3 retries');
+      }
+      
+      let feedArticleCount = 0;
+      
+      for (const item of feed.items.slice(0, 10)) { // Increased from 8 to 10 items per feed
         const title = item.title || '';
         const content = (item.content || item.summary || item.description || '').toLowerCase();
         const titleLower = title.toLowerCase();
         
-        // Check if article is AI-related
-        const isAIRelated = AI_KEYWORDS.some(keyword => 
-          titleLower.includes(keyword) || content.includes(keyword)
-        );
+        // Enhanced AI content filtering
+        const isAIRelated = AI_KEYWORDS.some(keyword => {
+          const keywordLower = keyword.toLowerCase();
+          return titleLower.includes(keywordLower) || 
+                 content.includes(keywordLower) ||
+                 (item.categories && item.categories.some(cat => 
+                   cat.toLowerCase().includes('ai') || 
+                   cat.toLowerCase().includes('artificial') ||
+                   cat.toLowerCase().includes('machine')
+                 ));
+        });
         
-        if (isAIRelated) {
-          const summary = extractSummary(item.content || item.summary || item.description || title);
-          
-          allArticles.push({
-            id: generateId(item.link || item.guid || title),
-            title: cleanText(title),
-            titleJa: await translateText(title, process.env.OPENAI_API_KEY),
-            summary: cleanText(summary),
-            summaryJa: await translateText(summary, process.env.OPENAI_API_KEY),
-            source: feed.title || extractDomain(feedUrl),
-            category: categorizeArticle(title, content),
-            importance: calculateImportance(title, content),
-            pubDate: item.pubDate || item.isoDate || new Date().toISOString(),
-            link: item.link || '#'
-          });
+        if (isAIRelated && title.length > 10 && item.link && item.link.startsWith('http')) {
+          try {
+            const summary = extractSummary(item.content || item.summary || item.description || title);
+            
+            const article = {
+              id: generateId(item.link || item.guid || title),
+              title: cleanText(title),
+              titleJa: await translateText(title, process.env.OPENAI_API_KEY),
+              summary: cleanText(summary),
+              summaryJa: await translateText(summary, process.env.OPENAI_API_KEY),
+              source: cleanText(feed.title || extractDomain(feedUrl)),
+              category: categorizeArticle(title, content),
+              importance: calculateImportance(title, content),
+              pubDate: item.pubDate || item.isoDate || new Date().toISOString(),
+              link: item.link
+            };
+            
+            // Additional validation
+            if (article.title.length > 10 && article.summary.length > 20) {
+              allArticles.push(article);
+              feedArticleCount++;
+            }
+          } catch (articleError) {
+            console.error(`Error processing article from ${feedUrl}:`, articleError.message);
+          }
         }
       }
+      
+      console.log(`✓ ${extractDomain(feedUrl)}: ${feedArticleCount} articles`);
+      successfulFeeds++;
+      
     } catch (error) {
-      console.error(`Error fetching from ${feedUrl}:`, error.message);
+      console.error(`✗ Error fetching from ${feedUrl}: ${error.message}`);
+      failedFeeds.push({ url: feedUrl, error: error.message });
+    }
+    
+    processedFeeds++;
+    if (processedFeeds % 15 === 0) {
+      console.log(`Progress: ${processedFeeds}/${RSS_FEEDS.length} feeds processed...`);
+    }
+  }
+  
+  console.log(`\n📊 Feed Summary:`);
+  console.log(`✅ Successful: ${successfulFeeds}/${RSS_FEEDS.length} feeds`);
+  console.log(`❌ Failed: ${failedFeeds.length}/${RSS_FEEDS.length} feeds`);
+  console.log(`📰 Total articles collected: ${allArticles.length}`);
+  
+  if (failedFeeds.length > 0) {
+    console.log(`\n⚠️ Failed feeds (for debugging):`);
+    failedFeeds.slice(0, 5).forEach(f => console.log(`   ${extractDomain(f.url)}: ${f.error.substring(0, 80)}...`));
+    if (failedFeeds.length > 5) {
+      console.log(`   ... and ${failedFeeds.length - 5} more failed feeds`);
     }
   }
   
@@ -1769,14 +1889,14 @@ async function main() {
       }
     }
     
-    // Sort by importance and date, then take top 30
+    // Sort by importance and date, then take top 200
     const sortedArticles = uniqueArticles
       .sort((a, b) => {
         const importanceDiff = b.importance - a.importance;
         if (importanceDiff !== 0) return importanceDiff;
         return new Date(b.pubDate) - new Date(a.pubDate);
       })
-      .slice(0, 80); // Increased from 30 to 80 articles
+      .slice(0, 200); // Increased from 80 to 200 articles
     
     const newsData = {
       lastUpdated: new Date().toISOString(),

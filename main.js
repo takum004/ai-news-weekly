@@ -150,6 +150,14 @@ async function loadNews() {
         // 記事数を更新
         document.getElementById('article-count').textContent = allNews.length;
         
+        // 情報源数を更新
+        if (data.sources) {
+            const sourcesElement = document.getElementById('sources-count');
+            if (sourcesElement) {
+                sourcesElement.textContent = data.sources;
+            }
+        }
+        
         // 最終更新日を更新
         if (data.lastUpdated) {
             const date = new Date(data.lastUpdated);
@@ -232,6 +240,15 @@ async function loadAllArticles() {
                 allNews = data.articles || [];
                 console.log('Successfully loaded all articles:', allNews.length);
                 document.getElementById('article-count').textContent = allNews.length;
+                
+                // 情報源数を更新
+                if (data.sources) {
+                    const sourcesElement = document.getElementById('sources-count');
+                    if (sourcesElement) {
+                        sourcesElement.textContent = data.sources;
+                    }
+                }
+                
                 if (data.lastUpdated) {
                     document.getElementById('last-updated').textContent = new Date(data.lastUpdated).toLocaleDateString('ja-JP');
                 }
@@ -258,6 +275,15 @@ function useStaticData() {
         console.log('Using static data from static-news-data.js');
         allNews = staticNewsData.articles || [];
         document.getElementById('article-count').textContent = allNews.length;
+        
+        // 情報源数を更新
+        if (staticNewsData.sources) {
+            const sourcesElement = document.getElementById('sources-count');
+            if (sourcesElement) {
+                sourcesElement.textContent = staticNewsData.sources;
+            }
+        }
+        
         document.getElementById('last-updated').textContent = new Date(staticNewsData.lastUpdated).toLocaleDateString('ja-JP');
         filterAndSortNews();
     } else {
