@@ -53,6 +53,10 @@ const RSS_FEEDS = [
   // Japanese Sources - Verified Working
   'https://tech.nikkeibp.co.jp/rss/index.rdf',
   
+  // Developer Tools & GitHub - Critical for AI tools coverage
+  'https://github.blog/feed',
+  'https://github.blog/engineering/feed',
+  
   // Emerging Sources - Verified Working
   'https://stratechery.com/feed/',
   
@@ -116,6 +120,7 @@ const AI_KEYWORDS = [
   'openai', 'anthropic', 'google ai', 'gemini', 'deepmind',
   'gpt', 'claude', 'chatgpt', 'bard', 'copilot', 'llama',
   'palm', 'bert', 'dall-e', 'sora', 'midjourney',
+  'cursor', 'windsurf', 'codeium', 'github copilot', 'notebooklm', 'genspark',
   
   // AI Applications
   'video generation', 'image generation', 'audio generation',
@@ -131,7 +136,12 @@ const AI_KEYWORDS = [
   // Technical Terms
   'multimodal', 'foundation model', 'fine-tuning',
   'prompt engineering', 'reinforcement learning', 'robotics',
-  'automation', 'rpa', 'computer vision', 'diffusion model'
+  'automation', 'rpa', 'computer vision', 'diffusion model',
+  
+  // Japanese AI Terms
+  '人工知能', 'AI', 'チャットボット', 'GPT', 'Claude',
+  '機械学習', 'ディープラーニング', '生成AI', '自然言語処理',
+  'コンピュータビジョン', 'ニューラルネットワーク', '大規模言語モデル'
 ];
 
 // Enhanced translation dictionary for AI terms
@@ -503,8 +513,8 @@ async function translateText(text, apiKey) {
         model: "gpt-3.5-turbo",
         messages: [
           {
-            role: "system",
-            content: "あなたは優秀な技術翻訳者です。英語のAIニュースを自然な日本語に翻訳してください。専門用語は適切に翻訳し、読みやすい日本語にしてください。"
+            role: "system", 
+            content: "あなたは優秀な技術翻訳者です。英語のAIニュースを自然で簡潔な日本語に翻訳してください。特に要約は100-200文字以内で、専門的でありながら読みやすい日本語にしてください。専門用語は適切に翻訳し、冗長な表現は避けてください。"
           },
           {
             role: "user",

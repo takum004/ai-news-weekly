@@ -148,6 +148,36 @@
             font-size: 1rem;
         }
         
+        /* ビュー切り替え */
+        .view-toggle {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .view-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .view-btn.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        
+        .view-btn:hover {
+            background: #f8f9fa;
+        }
+        
+        .view-btn.active:hover {
+            background: #0056b3;
+        }
+        
         /* ニュースグリッド */
         .news-grid {
             display: grid;
@@ -227,6 +257,74 @@
         }
         
         .card-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* リストビュー - Obsidian風 */
+        .date-section {
+            margin-bottom: 2rem;
+        }
+        
+        .date-header {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid #007bff;
+            color: #333;
+        }
+        
+        .news-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .news-item {
+            margin-bottom: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: white;
+            border-left: 3px solid #007bff;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            line-height: 1.5;
+            transition: all 0.2s ease;
+        }
+        
+        .news-item:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            transform: translateX(2px);
+        }
+        
+        .news-category {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-right: 0.5rem;
+        }
+        
+        .news-title {
+            color: #333;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+        
+        .news-summary {
+            color: #666;
+            margin-right: 0.5rem;
+        }
+        
+        .news-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .news-link:hover {
             text-decoration: underline;
         }
         
@@ -310,6 +408,10 @@
                 <option value="date-asc">古い順</option>
                 <option value="importance-desc">重要度順</option>
             </select>
+            <div class="view-toggle">
+                <button id="card-view-btn" class="view-btn active">カード表示</button>
+                <button id="list-view-btn" class="view-btn">リスト表示</button>
+            </div>
         </div>
 
         <!-- ニュースグリッド -->

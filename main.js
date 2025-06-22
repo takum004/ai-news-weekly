@@ -3,6 +3,7 @@ let allNews = [];
 let currentNews = [];
 let searchTerm = '';
 let sortOrder = 'date-desc';
+let viewMode = 'card'; // 'card' or 'list'
 
 // カテゴリ名の日本語マッピング（script.jsと統一）
 const categoryNames = {
@@ -81,6 +82,45 @@ function createNewsCard(article) {
     `;
 }
 
+// Obsidian風リストビューを作成
+function createNewsList(articles) {
+    // 日付ごとにグループ化
+    const groupedByDate = {};
+    articles.forEach(article => {
+        const dateKey = formatDate(article.pubDate);
+        if (!groupedByDate[dateKey]) {
+            groupedByDate[dateKey] = [];
+        }
+        groupedByDate[dateKey].push(article);
+    });
+    
+    let html = '';
+    Object.keys(groupedByDate).sort().reverse().forEach(date => {
+        html += `<div class="date-section">
+            <h3 class="date-header">${date}</h3>
+            <ul class="news-list">`;
+        
+        groupedByDate[date].forEach(article => {
+            const categoryName = categoryNames[article.category] || article.category;
+            const summary = (article.summaryJa || article.summary);
+            // より短く、読みやすい要約に調整（100-150文字に制限）
+            const truncatedSummary = summary.length > 150 ? summary.substring(0, 150) + '…' : summary;
+            
+            html += `
+                <li class="news-item">
+                    <span class="news-category">${categoryName}</span>
+                    <strong class="news-title">${article.titleJa || article.title}</strong>
+                    → <span class="news-summary">${truncatedSummary}</span>
+                    → <a href="${article.link}" target="_blank" rel="noopener" class="news-link">元記事</a>
+                </li>`;
+        });
+        
+        html += `</ul></div>`;
+    });
+    
+    return html;
+}
+
 // ニュースを表示
 function displayNews() {
     const newsGrid = document.getElementById('news-grid');
@@ -91,7 +131,18 @@ function displayNews() {
         noResults.style.display = 'block';
     } else {
         noResults.style.display = 'none';
-        newsGrid.innerHTML = currentNews.map(article => createNewsCard(article)).join('');
+        
+        if (viewMode === 'list') {
+            // リストビューの場合、Obsidian風のリスト表示
+            newsGrid.innerHTML = createNewsList(currentNews);
+            newsGrid.style.display = 'block';
+            newsGrid.style.gridTemplateColumns = '1fr'; // グリッドを1列に
+        } else {
+            // カードビューの場合、従来のカード表示
+            newsGrid.innerHTML = currentNews.map(article => createNewsCard(article)).join('');
+            newsGrid.style.display = 'grid';
+            newsGrid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(350px, 1fr))'; // グリッドを復元
+        }
     }
 }
 
@@ -225,6 +276,21 @@ function setupEventListeners() {
     document.getElementById('sort-select').addEventListener('change', (e) => {
         sortOrder = e.target.value;
         filterAndSortNews();
+    });
+    
+    // ビュー切り替えイベントリスナー
+    document.getElementById('card-view-btn').addEventListener('click', () => {
+        viewMode = 'card';
+        document.getElementById('card-view-btn').classList.add('active');
+        document.getElementById('list-view-btn').classList.remove('active');
+        displayNews();
+    });
+    
+    document.getElementById('list-view-btn').addEventListener('click', () => {
+        viewMode = 'list';
+        document.getElementById('list-view-btn').classList.add('active');
+        document.getElementById('card-view-btn').classList.remove('active');
+        displayNews();
     });
 }
 
