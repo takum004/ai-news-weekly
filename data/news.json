@@ -1,11 +1,23 @@
 {
-  "lastUpdated": "2025-06-21T13:00:50.170Z",
+  "lastUpdated": "2025-06-22T07:13:13.481Z",
   "totalArticles": 80,
   "generatedBy": "AI News Aggregator v1.0",
   "sources": 35,
   "articles": [
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc68y6b0",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz4m7",
+      "title": "Building Event-Driven AI Agents with UAgents and Google Gemini: A Modular Python Implementation Guide",
+      "titleJa": "Building Event-Driven AI Agents とUAgents とGoogle Gemini: Modular Python Implementation Guide",
+      "summary": "In this tutorial, we demonstrate how to use the UAgents framework to build a lightweight, event-driven AI agent architecture on top of Google’s Gemini API. We’ll start by applying nest_asyncio to enable nested event loops, then configure your Gemini API key and instantiate the GenAI client.",
+      "summaryJa": "でこのtutorial, we demonstrate どのようにに使用 UAgents フレームワーク に構築 lightweight, event-driven AIエージェント アーキテクチャ で上 のGoogle’s Gemini API. We’ll 開始 によってapplying nest_asyncio に可能にする nested event loops, then configure your Gemini API key とinstantiate GenAI クライアント.",
+      "source": "MarkTechPost",
+      "category": "google",
+      "importance": 100,
+      "pubDate": "Sat, 21 Jun 2025 19:13:08 +0000",
+      "link": "https://www.marktechpost.com/2025/06/21/building-event-driven-ai-agents-with-uagents-and-google-gemini-a-modular-python-implementation-guide/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNo-mc7byzq4",
       "title": "Anthropic says most AI models, not just Claude, will resort to blackmail",
       "titleJa": "Anthropic 述べる 最も AI models, not ちょうど Claude, will resort にblackmail",
       "summary": "Several weeks after Anthropic released research claiming that its Claude Opus 4 AI model resorted to blackmailing engineers who tried to turn the model off in controlled test scenarios, the company is out with new research suggesting the problem is more widespread among leading AI models.",
@@ -17,19 +29,7 @@
       "link": "https://techcrunch.com/2025/06/20/anthropic-says-most-ai-models-not-just-claude-will-resort-to-blackmail/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68yc7u",
-      "title": "Build an Intelligent Multi-Tool AI Agent Interface Using Streamlit for Seamless Real-Time Interaction",
-      "titleJa": "構築 知的な Multi-ツール AIエージェント Interface Using Streamlit のためのSeamless 実際の-時間 Interaction",
-      "summary": "In this tutorial, we’ll build a powerful and interactive Streamlit application that brings together the capabilities of LangChain, the Google Gemini API, and a suite of advanced tools to create a smart AI assistant.",
-      "summaryJa": "でこのtutorial, we’ll 構築 強力な とinteractive Streamlit application その持参 一緒に capabilities のLangChain, Google Gemini API, とsuite の高度な tools に作成 スマートな AI assistant.",
-      "source": "MarkTechPost",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "Fri, 20 Jun 2025 07:40:50 +0000",
-      "link": "https://www.marktechpost.com/2025/06/20/build-an-intelligent-multi-tool-ai-agent-interface-using-streamlit-for-seamless-real-time-interaction/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu-mc68y68w",
+      "id": "aHR0cHM6Ly93d3cu-mc7byzo4",
       "title": "OpenAI can rehabilitate AI models that develop a “bad boy persona”",
       "titleJa": "OpenAI can rehabilitate AI models その開発 “悪い boy persona”",
       "summary": "A new paper from OpenAI has shown why a little bit of bad training can make AI models go rogue—but also demonstrates that this problem is generally pretty easy to fix.",
@@ -41,7 +41,7 @@
       "link": "https://www.technologyreview.com/2025/06/18/1119042/openai-can-rehabilitate-ai-models-that-develop-a-bad-boy-persona/"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc68yarf",
+      "id": "aHR0cHM6Ly9ibG9n-mc7bz2sv",
       "title": "Hear a podcast discussion about Gemini’s coding capabilities.",
       "titleJa": "Hear podcast 議論 約 Gemini’s coding capabilities.",
       "summary": "The latest episode of the Google AI: Release Notes podcast focuses on how the Gemini team built one of the world’s leading AI coding models. Host Logan Kilpatrick chats w….",
@@ -53,7 +53,7 @@
       "link": "https://blog.google/products/gemini/gemini-coding-podcast/"
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu-mc68yacr",
+      "id": "aHR0cHM6Ly9vcGVu-mc7bz2dy",
       "title": "Introducing OpenAI for Government",
       "titleJa": "Introducing OpenAI のための政府",
       "summary": "We’re launching OpenAI for Government, a new initiative focused on bringing our most advanced AI tools to public servants across the United States. We're supporting the U. government's efforts in adopting best-in-class technology and deploying these tools in service of the public good.",
@@ -65,7 +65,7 @@
       "link": "https://openai.com/global-affairs/introducing-openai-for-government"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc68yarl",
+      "id": "aHR0cHM6Ly9ibG9n-mc7bz2t1",
       "title": "Get an audio overview of Search results in Labs, then click through to learn more.",
       "titleJa": "取得 音声 overview のSearch results でLabs, then click through に学習 より多い.",
       "summary": "Today, we’re launching a new Search experiment in Labs – Audio Overviews, which uses our latest Gemini models to generate quick, conversational audio overviews for certa….",
@@ -77,7 +77,7 @@
       "link": "https://blog.google/products/search/audio-overviews-search-labs/"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc68ymd3",
+      "id": "aHR0cHM6Ly9ibG9n-mc7bzg93",
       "title": "Faster Dynamically Quantized Inference with XNNPack",
       "titleJa": "より速く Dynamically Quantized Inference とXNNPack",
       "summary": "Posted by Alan Kelly, Software Engineer We are excited to announce that XNNPack’s Fully Connected and Convolution 2D operators now support dynamic range quantization.",
@@ -89,7 +89,7 @@
       "link": "https://blog.tensorflow.org/2024/04/faster-dynamically-quantized-inference-with-xnnpack.html"
     },
     {
-      "id": "aHR0cDovL2Jsb2cu-mc68yfu2",
+      "id": "aHR0cDovL2Jsb2cu-mc7bz873",
       "title": "SCIN: A new resource for representative dermatology images",
       "titleJa": "SCIN: 新しい リソース のためのrepresentative dermatology images",
       "summary": "Posted by Pooja Rao, Research Scientist, Google Research Health datasets play a crucial role in research and medical education, but it can be challenging to create a dataset that represents the real world.",
@@ -101,7 +101,7 @@
       "link": "http://blog.research.google/2024/03/scin-new-resource-for-representative.html"
     },
     {
-      "id": "aHR0cDovL2Jsb2cu-mc68yfu5",
+      "id": "aHR0cDovL2Jsb2cu-mc7bz876",
       "title": "HEAL: A framework for health equity assessment of machine learning performance",
       "titleJa": "HEAL: フレームワーク のための健康 equity assessment の機械 学習 性能",
       "summary": "Posted by Mike Schaekermann, Research Scientist, Google Research, and Ivor Horn, Chief Health Equity Officer Director, Google Core Health equity is a major societal concern worldwide with disparities having many causes.",
@@ -113,7 +113,7 @@
       "link": "http://blog.research.google/2024/03/heal-framework-for-health-equity.html"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc68ymd5",
+      "id": "aHR0cHM6Ly9ibG9n-mc7bzg95",
       "title": "Graph neural networks in TensorFlow",
       "titleJa": "Graph ニューラルネットワーク でTensorFlow",
       "summary": "",
@@ -125,7 +125,7 @@
       "link": "https://blog.tensorflow.org/2024/02/graph-neural-networks-in-tensorflow.html"
     },
     {
-      "id": "aHR0cHM6Ly92ZW50-mc68y5y0",
+      "id": "aHR0cHM6Ly92ZW50-mc7byziq",
       "title": "Google’s Gemini transparency cut leaves enterprise developers ‘debugging blind’",
       "titleJa": "Google’s Gemini transparency カット leaves 企業 developers ‘debugging blind’",
       "summary": "Why is Google hiding Gemini's reasoning traces. The decision sparks a debate over black-box models versus the need for transparency.",
@@ -137,7 +137,7 @@
       "link": "https://venturebeat.com/ai/googles-gemini-transparency-cut-leaves-enterprise-developers-debugging-blind/"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc68yarj",
+      "id": "aHR0cHM6Ly9ibG9n-mc7bz2sz",
       "title": "We’re expanding our Gemini 2.5 family of models",
       "titleJa": "We’re expanding our Gemini 2.5 家族 のmodels",
       "summary": "5 Flash and Pro are now generally available, and we’re introducing 2. 5 Flash-Lite, our most cost-efficient and fastest 2.",
@@ -149,7 +149,7 @@
       "link": "https://blog.google/products/gemini/gemini-2-5-model-family-expands/"
     },
     {
-      "id": "aHR0cDovL2Jsb2cu-mc68yfty",
+      "id": "aHR0cDovL2Jsb2cu-mc7bz86z",
       "title": "Using AI to expand global access to reliable flood forecasts",
       "titleJa": "Using AI にexpand global access に信頼できる flood forecasts",
       "summary": "Posted by Yossi Matias, VP Engineering Research, and Grey Nearing, Research Scientist, Google Research Floods are the most common natural disaster, and are responsible for roughly $50 billion in annual financial damages worldwide.",
@@ -161,7 +161,7 @@
       "link": "http://blog.research.google/2024/03/using-ai-to-expand-global-access-to.html"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc68y6ay",
+      "id": "aHR0cHM6Ly90ZWNo-mc7byzq2",
       "title": "Mira Murati’s Thinking Machines Lab closes on $2B at $10B valuation",
       "titleJa": "Mira Murati’s Thinking Machines Lab closes で$2B で$10B valuation",
       "summary": "Thinking Machines Lab, the secretive AI startup founded by OpenAI’s former chief technology officer Mira Murati, has closed a $2 billion seed round at a $10 billion valuation.",
@@ -173,7 +173,7 @@
       "link": "https://techcrunch.com/2025/06/20/mira-muratis-thinking-machines-lab-closes-on-2b-at-10b-valuation/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc68y6b2",
+      "id": "aHR0cHM6Ly90ZWNo-mc7byzq6",
       "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
       "titleJa": "ChatGPT: Everything you 必要 に知る 約 AI-powered chatbot",
       "summary": "ChatGPT, OpenAI’s text-generating AI chatbot, has taken the world by storm since its launch in November 2022. What started as a tool to supercharge productivity through writing essays and code with short text prompts has evolved into a behemoth with 300 million weekly active users.",
@@ -185,7 +185,7 @@
       "link": "https://techcrunch.com/2025/06/20/chatgpt-everything-to-know-about-the-ai-chatbot/"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc68ymd0",
+      "id": "aHR0cHM6Ly9ibG9n-mc7bzg8z",
       "title": "Introducing Wake Vision: A High-Quality, Large-Scale Dataset for TinyML Computer Vision Applications",
       "titleJa": "Introducing Wake Vision: 高い-Quality, 大きい-Scale Dataset のためのTinyML コンピューター Vision Applications",
       "summary": "Posted by Colby Banbury, Emil Njor, Andrea Mattia Garavagno, Vijay Janapa Reddi – Harvard University TinyML is an exciting frontier in machine learning, enabling models to run on extremely low-power devices such as microcontrollers and edge devices.",
@@ -197,7 +197,7 @@
       "link": "https://blog.tensorflow.org/2024/12/introducing-wake-vision-new-dataset-for-person-detection-in-tinyml.html"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc68ymd2",
+      "id": "aHR0cHM6Ly9ibG9n-mc7bzg91",
       "title": "MLSysBook.AI: Principles and Practices of Machine Learning Systems Engineering",
       "titleJa": "MLSysBook.AI: Principles とPractices の機械 学習 Systems Engineering",
       "summary": "Posted by Jason Jabbour, Kai Kleinbard and Vijay Janapa Reddi (Harvard University) Everyone wants to do the modeling work, but no one wants to do the engineering.",
@@ -209,7 +209,7 @@
       "link": "https://blog.tensorflow.org/2024/11/mlsysbookai-principles-and-practices-of-machine-learning-systems-engineering.html"
     },
     {
-      "id": "aHR0cDovL2Jsb2cu-mc68yfts",
+      "id": "aHR0cDovL2Jsb2cu-mc7bz86u",
       "title": "Generative AI to quantify uncertainty in weather forecasting",
       "titleJa": "生成AI にquantify uncertainty でweather forecasting",
       "summary": "",
@@ -221,7 +221,7 @@
       "link": "http://blog.research.google/2024/03/generative-ai-to-quantify-uncertainty.html"
     },
     {
-      "id": "aHR0cDovL2Jsb2cu-mc68yftu",
+      "id": "aHR0cDovL2Jsb2cu-mc7bz86w",
       "title": "AutoBNN: Probabilistic time series forecasting with compositional bayesian neural networks",
       "titleJa": "AutoBNN: Probabilistic 時間 series forecasting とcompositional bayesian ニューラルネットワーク",
       "summary": "Posted by Urs Köster, Software Engineer, Google Research Time series problems are ubiquitous, from forecasting weather and traffic patterns to understanding economic trends. Bayesian approaches start with an assumption about the data's patterns (prior probability), collecting evidence (e.",
@@ -233,7 +233,7 @@
       "link": "http://blog.research.google/2024/03/autobnn-probabilistic-time-series.html"
     },
     {
-      "id": "aHR0cDovL2Jsb2cu-mc68yftw",
+      "id": "aHR0cDovL2Jsb2cu-mc7bz86y",
       "title": "Computer-aided diagnosis for lung cancer screening",
       "titleJa": "コンピューター-aided 診断 のためのlung cancer screening",
       "summary": "Posted by Atilla Kiraly, Software Engineer, and Rory Pilgrim, Product Manager, Google Research Lung cancer is the leading cause of cancer-related deaths globally with 1. 8 million deaths reported in 2020. Late diagnosis dramatically reduces the chances of survival.",
@@ -245,7 +245,7 @@
       "link": "http://blog.research.google/2024/03/computer-aided-diagnosis-for-lung.html"
     },
     {
-      "id": "aHR0cDovL2Jsb2cu-mc68yfu0",
+      "id": "aHR0cDovL2Jsb2cu-mc7bz871",
       "title": "ScreenAI: A visual language model for UI and visually-situated language understanding",
       "titleJa": "ScreenAI: visual language モデル のためのUI とvisually-situated language understanding",
       "summary": "Posted by Srinivas Sunkara and Gilles Baechler, Software Engineers, Google Research Screen user interfaces (UIs) and infographics, such as charts, diagrams and tables, play important roles in human communication and human-machine interaction as they facilitate rich and interactive user experiences.",
@@ -257,7 +257,7 @@
       "link": "http://blog.research.google/2024/03/screenai-visual-language-model-for-ui.html"
     },
     {
-      "id": "aHR0cDovL2Jsb2cu-mc68yfu3",
+      "id": "aHR0cDovL2Jsb2cu-mc7bz874",
       "title": "MELON: Reconstructing 3D objects from images with unknown poses",
       "titleJa": "MELON: Reconstructing 3D objects からimages とunknown poses",
       "summary": "Posted by Mark Matthews, Senior Software Engineer, and Dmitry Lagun, Research Scientist, Google Research A person's prior experience and understanding of the world generally enables them to easily infer what an object looks like in whole, even if only looking at a few 2D pictures of it.",
@@ -269,7 +269,19 @@
       "link": "http://blog.research.google/2024/03/melon-reconstructing-3d-objects-from.html"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68yc7r",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz4lu",
+      "title": "Why Apple’s Critique of AI Reasoning Is Premature",
+      "titleJa": "なぜApple’s Critique のAI Reasoning Is Premature",
+      "summary": "The debate around the reasoning capabilities of Large Reasoning Models (LRMs) has been recently invigorated by two prominent yet conflicting papers: Apple s Illusion of Thinking and Anthropic s rebuttal titled The Illusion of the Illusion of Thinking.",
+      "summaryJa": "討論 約 reasoning capabilities の大きい Reasoning Models (LRMs) されている 最近 invigorated によってtwo prominent まだ conflicting papers: Apple s Illusion のThinking とAnthropic s rebuttal titled Illusion のIllusion のThinking.",
+      "source": "MarkTechPost",
+      "category": "anthropic",
+      "importance": 85,
+      "pubDate": "Sun, 22 Jun 2025 06:11:04 +0000",
+      "link": "https://www.marktechpost.com/2025/06/21/why-apples-critique-of-ai-reasoning-is-premature/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu-mc7bz4m9",
       "title": "Building an A2A-Compliant Random Number Agent: A Step-by-Step Guide to Implementing the Low-Level Executor Pattern with Python",
       "titleJa": "Building A2A-Compliant Random Number Agent: ステップ-by-ステップ Guide にImplementing 低い-Level Executor パターン とPython",
       "summary": "The Agent-to-Agent (A2A) protocol is a new standard by Google that enables AI agents—regardless of their underlying framework or developer—to communicate and collaborate seamlessly.",
@@ -281,7 +293,7 @@
       "link": "https://www.marktechpost.com/2025/06/21/building-an-a2a-compliant-random-number-agent-a-step-by-step-guide-to-implementing-the-low-level-executor-pattern-with-python/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc68ye9m",
+      "id": "aHR0cHM6Ly9hbmFs-mc7bz5z2",
       "title": "AI Models from Google, OpenAI, Anthropic Solve 0% of ‘Hard’ Coding Problems",
       "titleJa": "AI Models からGoogle, OpenAI, Anthropic Solve 0% の‘困難な’ Coding Problems",
       "summary": "Despite claims of AI models surpassing elite humans, 'a significant gap still remains, particularly in areas demanding novel insights. ' The post AI Models from Google, OpenAI, Anthropic Solve 0% of ‘Hard’ Coding Problems appeared first on Analytics India Magazine.",
@@ -293,19 +305,7 @@
       "link": "https://analyticsindiamag.com/global-tech/ai-models-from-google-openai-anthropic-solve-0-of-hard-coding-problems/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68yc7w",
-      "title": "This AI Paper from Google Introduces a Causal Framework to Interpret Subgroup Fairness in Machine Learning Evaluations More Reliably",
-      "titleJa": "このAI 論文 からGoogle 導入 Causal フレームワーク にInterpret Subgroup Fairness で機械 学習 Evaluations より多い Reliably",
-      "summary": "Understanding Subgroup Fairness in Machine Learning ML Evaluating fairness in machine learning often involves examining how models perform across different subgroups defined by attributes such as race, gender, or socioeconomic background.",
-      "summaryJa": "Understanding Subgroup Fairness で機械 学習 ML Evaluating fairness で機械 学習 しばしば involves examining どのようにmodels perform across 異なる subgroups defined によってattributes such としてrace, gender, またはsocioeconomic background.",
-      "source": "MarkTechPost",
-      "category": "google",
-      "importance": 85,
-      "pubDate": "Fri, 20 Jun 2025 05:09:29 +0000",
-      "link": "https://www.marktechpost.com/2025/06/19/this-ai-paper-from-google-introduces-a-causal-framework-to-interpret-subgroup-fairness-in-machine-learning-evaluations-more-reliably/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu-mc68y7ti",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz1a2",
       "title": "The OpenAI Files: Ex-staff claim profit greed betraying AI safety",
       "titleJa": "OpenAI Files: Ex-スタッフ claim 利益 greed betraying AI safety",
       "summary": "‘The OpenAI Files’ report, assembling voices of concerned ex-staff, claims the world s most prominent AI lab is betraying safety for profit.",
@@ -317,7 +317,7 @@
       "link": "https://www.artificialintelligence-news.com/news/the-openai-files-ex-staff-claim-profit-greed-ai-safety/"
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu-mc68yacs",
+      "id": "aHR0cHM6Ly9vcGVu-mc7bz2e0",
       "title": "Bringing the Magic of AI to Mattel’s Iconic Brands",
       "titleJa": "Bringing Magic のAI にMattel’s Iconic Brands",
       "summary": "OpenAI and Mattel are partnering to integrate AI into iconic brands such as Barbie and Hot Wheels, aiming to enhance creative development, streamline workflows, and create new ways for fans to engage.",
@@ -329,7 +329,7 @@
       "link": "https://openai.com/index/mattels-iconic-brands"
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu-mc68yacv",
+      "id": "aHR0cHM6Ly9vcGVu-mc7bz2e3",
       "title": "How we’re responding to The New York Times’ data demands in order to protect user privacy",
       "titleJa": "どのようにwe’re responding に新しい York Times’ データ demands でorder にprotect ユーザー privacy",
       "summary": "OpenAI is fighting a court order at the demands of The New York Times and plaintiffs, which involves retention of consumer ChatGPT and API user data indefinitely. Learn how we’re working to uphold user privacy, address legal requirements, and stay true to our data protection commitments.",
@@ -341,7 +341,7 @@
       "link": "https://openai.com/index/response-to-nyt-data-demands"
     },
     {
-      "id": "aHR0cHM6Ly92ZW50-mc68y5xy",
+      "id": "aHR0cHM6Ly92ZW50-mc7byzip",
       "title": "Anthropic study: Leading AI models show up to 96% blackmail rate against executives",
       "titleJa": "Anthropic 研究: Leading AI models 示す up に96% blackmail rate against executives",
       "summary": "Anthropic research reveals AI models from OpenAI, Google, Meta and others chose blackmail, corporate espionage and lethal actions when facing shutdown or conflicting goals.",
@@ -353,7 +353,7 @@
       "link": "https://venturebeat.com/ai/anthropic-study-leading-ai-models-show-up-to-96-blackmail-rate-against-executives/"
     },
     {
-      "id": "aHR0cHM6Ly9kZWVw-mc68yh2k",
+      "id": "aHR0cHM6Ly9kZWVw-mc7bz9gm",
       "title": "Gemini 2.5: Updates to our family of thinking models",
       "titleJa": "Gemini 2.5: Updates にour 家族 のthinking models",
       "summary": "Explore the latest Gemini 2. 5 model updates with enhanced performance and accuracy: Gemini 2. 5 Pro now stable, Flash generally available, and the new Flash-Lite in preview.",
@@ -365,7 +365,7 @@
       "link": "https://deepmind.google/discover/blog/gemini-25-updates-to-our-family-of-thinking-models/"
     },
     {
-      "id": "aHR0cHM6Ly9kZWVw-mc68yh2n",
+      "id": "aHR0cHM6Ly9kZWVw-mc7bz9gq",
       "title": "Advanced audio dialog and generation with Gemini 2.5",
       "titleJa": "高度な 音声 ダイアログ と世代 とGemini 2.5",
       "summary": "5 has new capabilities in AI-powered audio dialog and generation.",
@@ -377,7 +377,7 @@
       "link": "https://deepmind.google/discover/blog/advanced-audio-dialog-and-generation-with-gemini-25/"
     },
     {
-      "id": "aHR0cHM6Ly9kZWVw-mc68yh2o",
+      "id": "aHR0cHM6Ly9kZWVw-mc7bz9gr",
       "title": "Gemini 2.5: Our most intelligent models are getting even better",
       "titleJa": "Gemini 2.5: Our 最も 知的な models are getting さえ より良い",
       "summary": "5 Pro continues to be loved by developers as the best model for coding, and 2. 5 Flash is getting even better with a new update. We’re bringing new capabilities to our models, including Deep Think, an experimental enhanced reasoning mode for 2.",
@@ -389,7 +389,7 @@
       "link": "https://deepmind.google/discover/blog/gemini-25-our-world-leading-model-is-getting-even-better/"
     },
     {
-      "id": "aHR0cHM6Ly9kZWVw-mc68yh2p",
+      "id": "aHR0cHM6Ly9kZWVw-mc7bz9gs",
       "title": "Our vision for building a universal AI assistant",
       "titleJa": "Our vision のためのbuilding universal AI assistant",
       "summary": "We’re extending Gemini to become a world model that can make plans and imagine new experiences by simulating aspects of the world.",
@@ -401,7 +401,7 @@
       "link": "https://deepmind.google/discover/blog/our-vision-for-building-a-universal-ai-assistant/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc68ye9i",
+      "id": "aHR0cHM6Ly9hbmFs-mc7bz5yy",
       "title": "Accenture’s $1.5 Billion AI Wake-Up Call for Indian IT",
       "titleJa": "Accenture’s 1.5億ドル AI Wake-Up Call のためのIndian IT",
       "summary": "Accenture is already cashing in on generative AI. Indian IT is still talking about PoCs. The post Accenture’s $1.",
@@ -413,7 +413,7 @@
       "link": "https://analyticsindiamag.com/it-services/accentures-1-5-billion-ai-wake-up-call-for-indian-it/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc68y6b3",
+      "id": "aHR0cHM6Ly90ZWNo-mc7byzq7",
       "title": "Could OpenAI fill Microsoft’s shoes?",
       "titleJa": "Could OpenAI fill Microsoft’s shoes?",
       "summary": "OpenAI recently announced a $200 million deal with the U. Department of Defense, which has us wondering: Could this further strain the company’s relationship with its biggest backer, Microsoft.",
@@ -425,7 +425,7 @@
       "link": "https://techcrunch.com/podcast/could-openai-fill-microsofts-shoes/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68y9de",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz27e",
       "title": "What Big Tech's Band of Execs Will Do in the Army",
       "titleJa": "何を大きい Tech's Band のExecs Will Do でArmy",
       "summary": "Meta CTO Andrew \"Boz\" Bosworth and leaders from OpenAI and Palantir have joined a detachment intended to make the US Armed Forces \"leaner, smarter, and more lethal.",
@@ -437,7 +437,7 @@
       "link": "https://www.wired.com/story/what-lt-col-boz-and-big-techs-enlisted-execs-will-do-in-the-army/"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc68yarn",
+      "id": "aHR0cHM6Ly9ibG9n-mc7bz2t4",
       "title": "How we used generative media at I/O 2025",
       "titleJa": "どのようにwe 使用した generative media でI/O 2025",
       "summary": "From the keynote countdown to speaker title cards and beyond, generative AI took the stage at I/O 2025.",
@@ -449,7 +449,7 @@
       "link": "https://blog.google/technology/ai/generative-ai-io-keynote-2025/"
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu-mc68yact",
+      "id": "aHR0cHM6Ly9vcGVu-mc7bz2e2",
       "title": "Scaling security with responsible disclosure",
       "titleJa": "Scaling security とresponsible disclosure",
       "summary": "OpenAI introduces its Outbound Coordinated Disclosure Policy to guide how it responsibly reports vulnerabilities in third-party software—emphasizing integrity, collaboration, and proactive security at scale.",
@@ -461,7 +461,7 @@
       "link": "https://openai.com/index/scaling-coordinated-vulnerability-disclosure"
     },
     {
-      "id": "aHR0cHM6Ly9tYWNo-mc68yce8",
+      "id": "aHR0cHM6Ly9tYWNo-mc7bz4rh",
       "title": "7 Concepts Behind Large Language Models Explained in 7 Minutes",
       "titleJa": "7 Concepts Behind 大きい Language Models Explained で7 Minutes",
       "summary": "If you've been using large language models like GPT-4 or Claude, you've probably wondered how they can write actually usable code, explain complex topics, or even help you debug your morning coffee routine (just kidding.",
@@ -473,31 +473,43 @@
       "link": "https://machinelearningmastery.com/7-concepts-behind-large-language-models-explained-in-7-minutes/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68yc7s",
-      "title": "Meta AI Researchers Introduced a Scalable Byte-Level Autoregressive U-Net Model That Outperforms Token-Based Transformers Across Language Modeling Benchmarks",
-      "titleJa": "Meta AI Researchers Introduced Scalable Byte-Level Autoregressive U-Net モデル そのOutperforms Token-Based Transformers Across Language Modeling Benchmarks",
-      "summary": "Language modeling plays a foundational role in natural language processing, enabling machines to predict and generate text that resembles human language.",
-      "summaryJa": "Language modeling 再生 foundational role で自然の language processing, enabling machines にpredict とgenerate text そのresembles 人間 language.",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz4ly",
+      "title": "Texas A&M Researchers Introduce a Two-Phase Machine Learning Method Named ‘ShockCast’ for High-Speed Flow Simulation with Neural Temporal Re-Meshing",
+      "titleJa": "Texas A&M Researchers 導入 Two-フェーズ 機械 学習 方法 Named ‘ShockCast’ のための高い-Speed Flow Simulation とNeural Temporal Re-Meshing",
+      "summary": "Challenges in Simulating High-Speed Flows with Neural Solvers Modeling high-speed fluid flows, such as those in supersonic or hypersonic regimes, poses unique challenges due to the rapid changes associated with shock waves and expansion fans.",
+      "summaryJa": "Challenges でSimulating 高い-Speed Flows とNeural Solvers Modeling 高い-speed fluid flows, such としてthose でsupersonic またはhypersonic regimes, poses ユニークな challenges due に急速な 変更 associated とshock waves と拡張 fans.",
       "source": "MarkTechPost",
-      "category": "meta",
+      "category": "research",
       "importance": 65,
-      "pubDate": "Sat, 21 Jun 2025 06:43:09 +0000",
-      "link": "https://www.marktechpost.com/2025/06/20/meta-ai-researchers-introduced-a-scalable-byte-level-autoregressive-u-net-model-that-outperforms-token-based-transformers-across-language-modeling-benchmarks/"
+      "pubDate": "Sun, 22 Jun 2025 05:43:43 +0000",
+      "link": "https://www.marktechpost.com/2025/06/21/texas-am-researchers-introduce-a-two-phase-machine-learning-method-named-shockcast-for-high-speed-flow-simulation-with-neural-temporal-re-meshing/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68yc7z",
-      "title": "MiniMax AI Releases MiniMax-M1: A 456B Parameter Hybrid Model for Long-Context and Reinforcement Learning RL Tasks",
-      "titleJa": "MiniMax AI リリース MiniMax-M1: 456B Parameter Hybrid モデル のための長い-Context とReinforcement 学習 RL Tasks",
-      "summary": "The Challenge of Long-Context Reasoning in AI Models Large reasoning models are not only designed to understand language but are also structured to think through multi-step processes that require prolonged attention spans and contextual comprehension.",
-      "summaryJa": "Challenge の長い-Context Reasoning でAI Models 大きい reasoning models are not のみ 設計された にunderstand language しかし are また 構造化された に考える through multi-ステップ processes その必要 長期の attention spans とcontextual comprehension.",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz4m1",
+      "title": "This AI Paper Introduces WINGS: A Dual-Learner Architecture to Prevent Text-Only Forgetting in Multimodal Large Language Models",
+      "titleJa": "このAI 論文 導入 WINGS: Dual-Learner アーキテクチャ にPrevent Text-のみ Forgetting でマルチモーダル 大きい Language Models",
+      "summary": "Multimodal LLMs: Expanding Capabilities Across Text and Vision Expanding large language models (LLMs) to handle multiple modalities, particularly images and text, has enabled the development of more interactive and intuitive AI systems.",
+      "summaryJa": "マルチモーダル LLMs: Expanding Capabilities Across Text とVision Expanding 大きい language models (LLMs) にhandle 複数の modalities, particularly images とtext, has 可能にした 発展 のより多い interactive とintuitive AI systems.",
       "source": "MarkTechPost",
-      "category": "reasoning",
-      "importance": 65,
-      "pubDate": "Thu, 19 Jun 2025 17:40:11 +0000",
-      "link": "https://www.marktechpost.com/2025/06/19/minimax-ai-releases-minimax-m1-a-456b-parameter-hybrid-model-for-long-context-and-reinforcement-learning-rl-tasks/"
+      "category": "multimodal",
+      "importance": 60,
+      "pubDate": "Sat, 21 Jun 2025 21:57:01 +0000",
+      "link": "https://www.marktechpost.com/2025/06/21/this-ai-paper-introduces-wings-a-dual-learner-architecture-to-prevent-text-only-forgetting-in-multimodal-large-language-models/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68y9d7",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz4m4",
+      "title": "Mistral AI Releases Mistral Small 3.2: Enhanced Instruction Following, Reduced Repetition, and Stronger Function Calling for AI Integration",
+      "titleJa": "Mistral AI リリース Mistral 小さい 3.2: 強化した 指導 Following, 削減した Repetition, とStronger Function Calling のためのAI Integration",
+      "summary": "With the frequent release of new large language models (LLMs), there is a persistent quest to minimize repetitive errors, enhance robustness, and significantly improve user interactions.",
+      "summaryJa": "とfrequent リリース の新しい 大きい language models (LLMs), there is persistent quest にminimize repetitive errors, enhance robustness, とsignificantly 改善 ユーザー interactions.",
+      "source": "MarkTechPost",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "Sat, 21 Jun 2025 21:31:40 +0000",
+      "link": "https://www.marktechpost.com/2025/06/21/mistral-ai-releases-mistral-small-3-2-enhanced-instruction-following-reduced-repetition-and-stronger-function-calling-for-ai-integration/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu-mc7bz279",
       "title": "‘Wall-E With a Gun’: Midjourney Generates Videos of Disney Characters Amid Massive Copyright Lawsuit",
       "titleJa": "‘Wall-E とGun’: Midjourney Generates Videos のDisney Characters Amid 大規模な Copyright Lawsuit",
       "summary": "A week after Disney and Universal filed a landmark lawsuit against Midjourney, the generative AI startup’s new V1 video tool will make clips of Shrek, Deadpool, and other famous creations.",
@@ -509,19 +521,7 @@
       "link": "https://www.wired.com/story/midjourney-generates-videos-of-disney-characters-amid-massive-copyright-lawsuit/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68yc7t",
-      "title": "PoE-World + Planner Outperforms Reinforcement Learning RL Baselines in Montezuma’s Revenge with Minimal Demonstration Data",
-      "titleJa": "PoE-世界 + Planner Outperforms Reinforcement 学習 RL Baselines でMontezuma’s Revenge とMinimal 実証 データ",
-      "summary": "The Importance of Symbolic Reasoning in World Modeling Understanding how the world works is key to creating AI agents that can adapt to complex situations.",
-      "summaryJa": "Importance のSymbolic Reasoning で世界 Modeling Understanding どのように世界 機能 is key にcreating AI agents そのcan adapt に複雑な situations.",
-      "source": "MarkTechPost",
-      "category": "agents",
-      "importance": 60,
-      "pubDate": "Fri, 20 Jun 2025 18:01:16 +0000",
-      "link": "https://www.marktechpost.com/2025/06/20/poe-world-outperforms-reinforcement-learning-rl-baselines-in-montezumas-revenge-with-minimal-demonstration-data/"
-    },
-    {
-      "id": "aHR0cHM6Ly90b3dh-mc68yepn",
+      "id": "aHR0cHM6Ly90b3dh-mc7bz6kf",
       "title": "Understanding Application Performance with Roofline Modeling",
       "titleJa": "Understanding Application 性能 とRoofline Modeling",
       "summary": "A common challenge with calculating an application’s performance is that the real-world performance and theoretical performance can differ.",
@@ -533,7 +533,7 @@
       "link": "https://towardsdatascience.com/understanding-application-performance-with-roofline-modeling/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc68ye9k",
+      "id": "aHR0cHM6Ly9hbmFs-mc7bz5z0",
       "title": "This NVIDIA-Backed AI Startup Could Change the Way We Discover New Drugs",
       "titleJa": "このNVIDIA-Backed AI スタートアップ Could 変更 方法 We Discover 新しい Drugs",
       "summary": "With a $150 million boost in funding, the company aims to integrate advanced AI models with extensive datasets into the drug development process. The post This NVIDIA-Backed AI Startup Could Change the Way We Discover New Drugs appeared first on Analytics India Magazine.",
@@ -545,7 +545,7 @@
       "link": "https://analyticsindiamag.com/ai-features/this-nvidia-backed-ai-startup-could-change-the-way-we-discover-new-drugs/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc68ye9l",
+      "id": "aHR0cHM6Ly9hbmFs-mc7bz5z1",
       "title": "2025 is NOT the Year of AI Agents",
       "titleJa": "2025 is NOT 年 のAI Agents",
       "summary": "Andrej Karpathy said that whenever he uses ChatGPT, he feels like he is talking to an operating system through the terminal. The post 2025 is NOT the Year of AI Agents appeared first on Analytics India Magazine.",
@@ -557,7 +557,7 @@
       "link": "https://analyticsindiamag.com/global-tech/2025-is-not-the-year-of-ai-agents/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc68ye9n",
+      "id": "aHR0cHM6Ly9hbmFs-mc7bz5z3",
       "title": "Ola’s Krutrim Acquires BharatSah’AI’yak to Scale AI Solutions for Public Sector",
       "titleJa": "Ola’s Krutrim Acquires BharatSah’AI’yak にScale AI Solutions のための公開の Sector",
       "summary": "This move aims to use Krutrim’s advanced LLMs and cloud technology to enhance BharatSah’AI’yak’s capabilities, focusing on vernacular, accessible AI solutions. The post Ola’s Krutrim Acquires BharatSah’AI’yak to Scale AI Solutions for Public Sector appeared first on Analytics India Magazine.",
@@ -569,7 +569,7 @@
       "link": "https://analyticsindiamag.com/ai-news-updates/olas-krutrim-acquires-bharatsahaiyak-to-scale-ai-solutions-for-public-sector/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68y7tf",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz1a0",
       "title": "Unlock the other 99% of your data – now ready for AI",
       "titleJa": "Unlock 他の 99% のyour データ – 今 準備ができている のためのAI",
       "summary": "For decades, companies of all sizes have recognized that the data available to them holds significant value, for improving user and customer experiences and for developing strategic plans based on empirical evidence.",
@@ -581,31 +581,7 @@
       "link": "https://www.artificialintelligence-news.com/news/unlock-the-other-99-of-your-data-now-ready-for-ai/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68yc7v",
-      "title": "UC Berkeley Introduces CyberGym: A Real-World Cybersecurity Evaluation Framework to Evaluate AI Agents on Large-Scale Vulnerabilities Across Massive Codebases",
-      "titleJa": "UC Berkeley 導入 CyberGym: 実際の-世界 Cybersecurity Evaluation フレームワーク にEvaluate AI Agents で大きい-Scale Vulnerabilities Across 大規模な Codebases",
-      "summary": "Cybersecurity has become a significant area of interest in artificial intelligence, driven by the increasing reliance on large software systems and the expanding capabilities of AI tools.",
-      "summaryJa": "Cybersecurity has になる significant エリア のinterest で人工の intelligence, driven によってincreasing reliance で大きい ソフトウェア systems とexpanding capabilities のAI tools.",
-      "source": "MarkTechPost",
-      "category": "agents",
-      "importance": 60,
-      "pubDate": "Fri, 20 Jun 2025 05:57:00 +0000",
-      "link": "https://www.marktechpost.com/2025/06/19/uc-berkeley-introduces-cybergym-a-real-world-cybersecurity-evaluation-framework-to-evaluate-ai-agents-on-large-scale-vulnerabilities-across-massive-codebases/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu-mc68yc7x",
-      "title": "From Backend Automation to Frontend Collaboration: What’s New in AG-UI Latest Update for AI Agent-User Interaction",
-      "titleJa": "からBackend オートメーション にFrontend 連携: What’s 新しい でAG-UI 最新の Update のためのAIエージェント-ユーザー Interaction",
-      "summary": "Introduction AI agents are increasingly moving from pure backend automators to visible, collaborative elements within modern applications. However, making agents genuinely interactive—capable of both responding to users and proactively guiding workflows—has long been an engineering headache.",
-      "summaryJa": "Introduction AI agents are increasingly moving からpure backend automators に見える, collaborative elements within モダンな applications. しかし, making agents genuinely interactive—capable のboth responding にusers とproactively guiding workflows—has 長い been engineering headache.",
-      "source": "MarkTechPost",
-      "category": "agents",
-      "importance": 60,
-      "pubDate": "Fri, 20 Jun 2025 03:38:10 +0000",
-      "link": "https://www.marktechpost.com/2025/06/19/from-backend-automation-to-frontend-collaboration-whats-new-in-ag-ui-latest-update-for-ai-agent-user-interaction/"
-    },
-    {
-      "id": "aHR0cHM6Ly90b3dh-mc68yepr",
+      "id": "aHR0cHM6Ly90b3dh-mc7bz6ki",
       "title": "Beyond Model Stacking: The Architecture Principles That Make Multimodal AI Systems Work",
       "titleJa": "Beyond モデル Stacking: アーキテクチャ Principles その作成 マルチモーダル AI Systems 機能",
       "summary": "Transforming Independent Models into Collaborative Intelligence The post Beyond Model Stacking: The Architecture Principles That Make Multimodal AI Systems Work appeared first on Towards Data Science.",
@@ -617,7 +593,7 @@
       "link": "https://towardsdatascience.com/the-art-of-multimodal-ai-system-design/"
     },
     {
-      "id": "aHR0cHM6Ly90b3dh-mc68yept",
+      "id": "aHR0cHM6Ly90b3dh-mc7bz6kl",
       "title": "LLM-as-a-Judge: A Practical Guide",
       "titleJa": "LLM-as-a-Judge: Practical Guide",
       "summary": "How to Scale LLM Evaluations Beyond Manual Review The post LLM-as-a-Judge: A Practical Guide appeared first on Towards Data Science.",
@@ -629,7 +605,7 @@
       "link": "https://towardsdatascience.com/llm-as-a-judge-a-practical-guide/"
     },
     {
-      "id": "aHR0cHM6Ly90b3dh-mc68yepv",
+      "id": "aHR0cHM6Ly90b3dh-mc7bz6kn",
       "title": "From Configuration to Orchestration: Building an ETL Workflow with AWS Is No Longer a Struggle",
       "titleJa": "からConfiguration にOrchestration: Building ETL Workflow とAWS Is No より長く Struggle",
       "summary": "A step-by-step guide to leverage AWS services for efficient data pipeline automation The post From Configuration to Orchestration: Building an ETL Workflow with AWS Is No Longer a Struggle appeared first on Towards Data Science.",
@@ -641,7 +617,7 @@
       "link": "https://towardsdatascience.com/from-configuration-to-orchestration-building-etl-workflow-with-aws-is-no-longer-struggling/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68y7tk",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz1a3",
       "title": "Apple hints at AI integration in chip design process",
       "titleJa": "Apple hints でAI integration でchip デザイン プロセス",
       "summary": "Apple is beginning to use generative artificial intelligence to help design the chips that power its devices. The company s hardware chief, Johny Srouji, made that clear during a speech last month in Belgium.",
@@ -653,7 +629,7 @@
       "link": "https://www.artificialintelligence-news.com/news/apple-ai-chip-design-automation/"
     },
     {
-      "id": "aHR0cHM6Ly90b3dh-mc68yepx",
+      "id": "aHR0cHM6Ly90b3dh-mc7bz6kp",
       "title": "Beyond Code Generation: Continuously Evolve Text with LLMs",
       "titleJa": "Beyond Code 世代: 継続的に Evolve Text とLLMs",
       "summary": "Long-running content evolution and an introduction to result analysis The post Beyond Code Generation: Continuously Evolve Text with LLMs appeared first on Towards Data Science.",
@@ -665,7 +641,7 @@
       "link": "https://towardsdatascience.com/beyond-code-generation-continuously-evolve-text-with-llms/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68y9dg",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz27g",
       "title": "Amazon Rebuilt Alexa Using a ‘Staggering’ Amount of AI Tools",
       "titleJa": "Amazon Rebuilt Alexa Using ‘Staggering’ Amount のAI Tools",
       "summary": "From writing code to testing the new Alexa+, Amazon engineers used generative AI throughout the build process. We talk to Amazon's Daniel Rausch about the next version of the voice assistant.",
@@ -677,7 +653,7 @@
       "link": "https://www.wired.com/story/amazon-daniel-rausch-alexa-plus/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68y7tm",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz1a5",
       "title": "Hugging Face partners with Groq for ultra-fast AI model inference",
       "titleJa": "Hugging 面 partners とGroq のためのultra-高速な AI モデル inference",
       "summary": "Hugging Face has added Groq to its AI model inference providers, bringing lightning-fast processing to the popular model hub. Speed and efficiency have become increasingly crucial in AI development, with many organisations struggling to balance model performance against rising computational costs.",
@@ -689,7 +665,19 @@
       "link": "https://www.artificialintelligence-news.com/news/hugging-face-partners-groq-ultra-fast-ai-model-inference/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68y9da",
+      "id": "aHR0cHM6Ly93d3cu-mc7bzhux",
+      "title": "Chinese scientists build a laser weapon that can operate without cooling in Sahara Desert",
+      "titleJa": "Chinese scientists 構築 laser weapon そのcan operate without cooling でSahara Desert",
+      "summary": "",
+      "summaryJa": "",
+      "source": "News - South China Morning Post",
+      "category": "automation",
+      "importance": 55,
+      "pubDate": "Sun, 22 Jun 2025 07:00:08 +0000",
+      "link": "https://www.scmp.com/news/china/science/article/3315070/chinese-scientists-build-laser-weapon-can-operate-without-cooling-sahara-desert?utm_source=rss_feed"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu-mc7bz27c",
       "title": "Seriously, What Is ‘Superintelligence’?",
       "titleJa": "Seriously, 何をIs ‘Superintelligence’?",
       "summary": "In this episode of Uncanny Valley, we talk about Meta’s recent investment in Scale AI and its move to build a superintelligence AI research lab. So we ask: What is superintelligence anyway.",
@@ -701,7 +689,7 @@
       "link": "https://www.wired.com/story/uncanny-valley-podcast-superintelligence/"
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu-mc68yaco",
+      "id": "aHR0cHM6Ly9vcGVu-mc7bz2dw",
       "title": "Toward understanding and preventing misalignment generalization",
       "titleJa": "Toward understanding とpreventing misalignment generalization",
       "summary": "We study how training on incorrect responses can cause broader misalignment in language models and identify an internal feature driving this behavior—one that can be reversed with minimal fine-tuning.",
@@ -713,7 +701,31 @@
       "link": "https://openai.com/index/emergent-misalignment"
     },
     {
-      "id": "aHR0cHM6Ly92ZW50-mc68y5xf",
+      "id": "aHR0cHM6Ly93d3cu-mc7bzhut",
+      "title": "Yum China rolls out AI agent, to help, not replace store managers",
+      "titleJa": "Yum China rolls out AIエージェント, に支援, not replace store managers",
+      "summary": "Yum China, the company behind chains such as KFC and Pizza Hut, introduced an artificial intelligence (AI) agent for store managers on Friday, aligning with the restaurant industry’s broader push towards AI adoption to enhance efficiency.",
+      "summaryJa": "Yum China, 会社 behind chains such としてKFC とPizza Hut, introduced 人工の intelligence (AI) agent のためのstore managers でFriday, aligning とrestaurant industry’s broader push towards AI adoption にenhance 効率.",
+      "source": "News - South China Morning Post",
+      "category": "agents",
+      "importance": 50,
+      "pubDate": "Sun, 22 Jun 2025 07:06:13 +0000",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3315379/yum-china-rolls-out-ai-agent-help-not-replace-store-managers?utm_source=rss_feed"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu-mc7bzhuw",
+      "title": "‘I just felt sick’: how a free shot in Laos cost a British backpacker her life",
+      "titleJa": "‘I ちょうど 感じた 病気の’: どのように無料の shot でLaos コスト British backpacker her 生命",
+      "summary": "British national Bethany Clarke still remembers that day in Vang Vieng, Laos – tubing down the river with friends, followed by a sunset happy hour at the Nana Backpackers Hostel. It had all the hallmarks of a classic backpacker afternoon. The vodka and whisky shots were free.",
+      "summaryJa": "British national Bethany Clarke まだ remembers その日 でVang Vieng, Laos – tubing down river とfriends, 追跡した によってsunset happy 時間 でNana Backpackers Hostel. It had すべての hallmarks のクラシックな backpacker afternoon. vodka とwhisky shots were 無料の.",
+      "source": "News - South China Morning Post",
+      "category": "tech",
+      "importance": 50,
+      "pubDate": "Sun, 22 Jun 2025 07:00:13 +0000",
+      "link": "https://www.scmp.com/week-asia/health-environment/article/3315294/british-survivor-laos-methanol-poisoning-speaks-out-after-watching-friend-die?utm_source=rss_feed"
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50-mc7byzi7",
       "title": "Hospital cyber attacks cost $600K/hour. Here’s how AI is changing the math",
       "titleJa": "Hospital cyber attacks コスト $600K/時間. Here’s どのようにAI is changing math",
       "summary": "How Alberta Health Services is using advanced AI to bolster its defenses as attackers increasingly target healthcare facilities.",
@@ -725,7 +737,7 @@
       "link": "https://venturebeat.com/security/hospital-cyber-attacks-cost-600k-hour-heres-how-ai-is-changing-the-math/"
     },
     {
-      "id": "aHR0cHM6Ly9weXRv-mc68ylt7",
+      "id": "aHR0cHM6Ly9weXRv-mc7bzeyx",
       "title": "Fault Tolerant Llama: training with 2000 synthetic failures every ~15 seconds and no checkpoints on Crusoe L40S",
       "titleJa": "Fault Tolerant Llama: 訓練 と2000 synthetic failures every ~15 seconds とno checkpoints でCrusoe L40S",
       "summary": "Collaborators: Less Wright, Howard Huang, Chien-Chin Huang, Crusoe: Martin Cala, Ethan Petersen tl;dr: we used torchft and torchtitan to train a model in a real-world environment with extreme synthetic failure.",
@@ -737,19 +749,7 @@
       "link": "https://pytorch.org/blog/fault-tolerant-llama-training-with-2000-synthetic-failures-every-15-seconds-and-no-checkpoints-on-crusoe-l40s/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc68y6b5",
-      "title": "After trying to buy Ilya Sutskever’s $32B AI startup, Meta looks to hire its CEO",
-      "titleJa": "After trying にbuy Ilya Sutskever’s $32B AI スタートアップ, Meta 見える にhire そのCEO",
-      "summary": "Meta CEO Mark Zuckerberg tried to acquire Ilya Sutskever's $32B AI startup, but failed, so now he's in talks to hire its CEO, Daniel Gross.",
-      "summaryJa": "Meta CEO マーク Zuckerberg 試行した にacquire Ilya Sutskever's $32B AI スタートアップ, しかし failed, そのため 今 he's で話す にhire そのCEO, Daniel Gross.",
-      "source": "AI News & Artificial Intelligence | TechCrunch",
-      "category": "meta",
-      "importance": 50,
-      "pubDate": "Fri, 20 Jun 2025 15:32:28 +0000",
-      "link": "https://techcrunch.com/2025/06/20/after-trying-to-buy-ilya-sutskevers-32b-ai-startup-meta-looks-to-hire-its-ceo/"
-    },
-    {
-      "id": "aHR0cHM6Ly9tYWNo-mc68yce3",
+      "id": "aHR0cHM6Ly9tYWNo-mc7bz4rc",
       "title": "Beyond GridSearchCV: Advanced Hyperparameter Tuning Strategies for Scikit-learn Models",
       "titleJa": "Beyond GridSearchCV: 高度な Hyperparameter Tuning Strategies のためのScikit-学習 Models",
       "summary": "Ever felt like trying to find a needle in a haystack. That’s part of the process of building and optimizing machine learning models, particularly complex ones like ensembles and neural networks, where several hyperparameters need to be manually set by us before training them.",
@@ -761,7 +761,7 @@
       "link": "https://machinelearningmastery.com/beyond-gridsearchcv-advanced-hyperparameter-tuning-strategies-for-scikit-learn-models/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68yebz",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz644",
       "title": "Top 5 Frameworks for Distributed Machine Learning",
       "titleJa": "上 5 Frameworks のためのDistributed 機械 学習",
       "summary": "Use these frameworks to optimize memory and compute resources, scale your machine learning workflow, speed up your processes, and reduce the overall cost.",
@@ -773,7 +773,7 @@
       "link": "https://www.kdnuggets.com/top-5-frameworks-for-distributed-machine-learning"
     },
     {
-      "id": "aHR0cHM6Ly9tYWNo-mc68yce5",
+      "id": "aHR0cHM6Ly9tYWNo-mc7bz4re",
       "title": "A Gentle Introduction to Multi-Head Attention and Grouped-Query Attention",
       "titleJa": "優しい Introduction にMulti-頭 Attention とGrouped-Query Attention",
       "summary": "This post is divided into three parts; they are: • Why Attention is Needed • The Attention Operation • Multi-Head Attention (MHA) • Grouped-Query Attention (GQA) and Multi-Query Attention (MQA) Traditional neural networks struggle with long-range dependencies in sequences.",
@@ -785,7 +785,7 @@
       "link": "https://machinelearningmastery.com/a-gentle-introduction-to-multi-head-attention-and-grouped-query-attention/"
     },
     {
-      "id": "aHR0cHM6Ly9tYWNo-mc68yce7",
+      "id": "aHR0cHM6Ly9tYWNo-mc7bz4rf",
       "title": "10 Must-Know Python Libraries for MLOps in 2025",
       "titleJa": "10 Must-知る Python Libraries のためのMLOps で2025",
       "summary": "MLOps, or machine learning operations, is all about managing the end-to-end process of building, training, deploying, and maintaining machine learning models.",
@@ -797,7 +797,7 @@
       "link": "https://machinelearningmastery.com/10-must-know-python-libraries-for-mlops-in-2025/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68y68u",
+      "id": "aHR0cHM6Ly93d3cu-mc7byzo2",
       "title": "Is this the electric grid of the future?",
       "titleJa": "Is このelectric grid の将来の?",
       "summary": "One morning in the middle of March, a slow-moving spring blizzard stalled above eastern Nebraska, pounding the state capital of Lincoln with 60-mile-per-hour winds, driving sleet, and up to eight inches of snow.",
@@ -809,7 +809,7 @@
       "link": "https://www.technologyreview.com/2025/06/19/1118248/electric-grid-future-lincoln-nebraska-utilities-energy-transition/"
     },
     {
-      "id": "aHR0cHM6Ly9odWdn-mc68yjsz",
+      "id": "aHR0cHM6Ly9odWdn-mc7bzcdt",
       "title": "(LoRA) Fine-Tuning FLUX.1-dev on Consumer Hardware",
       "titleJa": "(LoRA) ファインチューニング FLUX.1-dev でConsumer ハードウェア",
       "summary": "(LoRA) Fine-Tuning FLUX. 1-dev on Consumer Hardware.",
@@ -821,7 +821,7 @@
       "link": "https://huggingface.co/blog/flux-qlora"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68y9di",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz27i",
       "title": "This AI Model Never Stops Learning",
       "titleJa": "このAI モデル 決して 停止 学習",
       "summary": "Scientists at Massachusetts Institute of Technology have devised a way for large language models to keep learning on the fly—a step toward building AI that continually improves itself.",
@@ -833,7 +833,7 @@
       "link": "https://www.wired.com/story/this-ai-model-never-stops-learning/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68y9dj",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz27j",
       "title": "Authors Are Posting TikToks to Protest AI Use in Writing—and to Prove They Aren’t Doing It",
       "titleJa": "Authors Are Posting TikToks にProtest AI 使用 でWriting—とにProve They Aren’t Doing It",
       "summary": "Traditional and indie authors are flooding #WritersTok with videos of them editing their manuscripts to refute accusations of generative AI use—and bring readers into their very human process.",
@@ -845,7 +845,7 @@
       "link": "https://www.wired.com/story/authors-are-posting-tiktoks-to-protest-ai-use-in-writing-and-to-prove-they-arent-doing-it/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc68yec1",
+      "id": "aHR0cHM6Ly93d3cu-mc7bz646",
       "title": "A Practical Guide to Multimodal Data Analytics",
       "titleJa": "Practical Guide にマルチモーダル データ Analytics",
       "summary": "BigQuery's ObjectRef unifies structured and unstructured data, enabling multimodal analytics via SQL and Python.",
@@ -857,7 +857,7 @@
       "link": "https://www.kdnuggets.com/2025/06/google/a-practical-guide-to-multimodal-data-analytics"
     },
     {
-      "id": "aHR0cHM6Ly9weXRv-mc68ylt9",
+      "id": "aHR0cHM6Ly9weXRv-mc7bzeyz",
       "title": "DeepNVMe: Affordable I/O scaling for Deep Learning Applications",
       "titleJa": "DeepNVMe: Affordable I/O scaling のための深い 学習 Applications",
       "summary": "Introduction We introduced DeepNVMe in summer 2024 as a suite of optimizations for tackling I/O bottlenecks in Deep Learning (DL). DeepNVMe delivers significant speedups for I/O bound DL workloads by leveraging storage.",
@@ -869,7 +869,7 @@
       "link": "https://pytorch.org/blog/deepnvme-affordable-i-o-scaling-for-deep-learning-applications/"
     },
     {
-      "id": "aHR0cHM6Ly9tYWNo-mc68yce9",
+      "id": "aHR0cHM6Ly9tYWNo-mc7bz4ri",
       "title": "How to Combine Scikit-learn, CatBoost, and SHAP for Explainable Tree Models",
       "titleJa": "どのようににCombine Scikit-学習, CatBoost, とSHAP のためのExplainable Tree Models",
       "summary": "Machine learning workflows often involve a delicate balance: you want models that perform exceptionally well, but you also need to understand and explain their predictions.",
@@ -881,7 +881,7 @@
       "link": "https://machinelearningmastery.com/how-to-combine-scikit-learn-catboost-and-shap-for-explainable-tree-models/"
     },
     {
-      "id": "aHR0cHM6Ly9tYWNo-mc68ycea",
+      "id": "aHR0cHM6Ly9tYWNo-mc7bz4rj",
       "title": "Positional Encodings in Transformer Models",
       "titleJa": "Positional Encodings でTransformer Models",
       "summary": "",
@@ -893,7 +893,7 @@
       "link": "https://machinelearningmastery.com/positional-encodings-in-transformer-models/"
     },
     {
-      "id": "aHR0cHM6Ly9weXRv-mc68yltb",
+      "id": "aHR0cHM6Ly9weXRv-mc7bzez0",
       "title": "ParetoQ: Scaling Laws in Extremely Low-bit LLM Quantization",
       "titleJa": "ParetoQ: Scaling Laws で極めて 低い-ビット LLM Quantization",
       "summary": "The field of large language models is shifting toward lower-precision computation. This shift necessitates a rethinking of scaling laws to account for the effects of quantization on resulting quantized model.",
@@ -905,7 +905,7 @@
       "link": "https://pytorch.org/blog/paretoq-scaling-laws-in-extremely-low-bit-llm-quantization/"
     },
     {
-      "id": "aHR0cHM6Ly9weXRv-mc68yltc",
+      "id": "aHR0cHM6Ly9weXRv-mc7bzez1",
       "title": "Build Responsible AI Products with your own Yellow Teaming LLM",
       "titleJa": "構築 Responsible AI Products とyour own Yellow Teaming LLM",
       "summary": "The tools we use to build AI are evolving fast, with PyTorch at the heart of many advances. But unless we evolve the way we approach building AI systems, we.",
@@ -917,7 +917,7 @@
       "link": "https://pytorch.org/blog/build-responsible-ai-products-with-your-own-yellow-teaming-llm/"
     },
     {
-      "id": "aHR0cHM6Ly9kaXN0-mc68ycgi",
+      "id": "aHR0cHM6Ly9kaXN0-mc7bz4uy",
       "title": "Understanding Convolutions on Graphs",
       "titleJa": "Understanding Convolutions でGraphs",
       "summary": "Understanding the building blocks and design choices of graph neural networks.",
@@ -929,7 +929,7 @@
       "link": "https://distill.pub/2021/understanding-gnns"
     },
     {
-      "id": "aHR0cHM6Ly9kaXN0-mc68ycgk",
+      "id": "aHR0cHM6Ly9kaXN0-mc7bz4v1",
       "title": "A Gentle Introduction to Graph Neural Networks",
       "titleJa": "優しい Introduction にGraph ニューラルネットワーク",
       "summary": "What components are needed for building learning algorithms that leverage the structure and properties of graphs.",
@@ -941,7 +941,7 @@
       "link": "https://distill.pub/2021/gnn-intro"
     },
     {
-      "id": "aHR0cHM6Ly9kaXN0-mc68ycgl",
+      "id": "aHR0cHM6Ly9kaXN0-mc7bz4v2",
       "title": "Branch Specialization",
       "titleJa": "Branch Specialization",
       "summary": "When a neural network layer is divided into multiple branches, neurons self-organize into coherent groupings.",
@@ -953,7 +953,7 @@
       "link": "https://distill.pub/2020/circuits/branch-specialization"
     },
     {
-      "id": "aHR0cHM6Ly9kaXN0-mc68ych9",
+      "id": "aHR0cHM6Ly9kaXN0-mc7bz4vo",
       "title": "Multimodal Neurons in Artificial Neural Networks",
       "titleJa": "マルチモーダル Neurons で人工の ニューラルネットワーク",
       "summary": "We report the existence of multimodal neurons in artificial neural networks, similar to those found in the human brain.",

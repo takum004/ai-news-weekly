@@ -46,11 +46,21 @@ jobs:
           }
         timeout-minutes: 10
       
+      - name: Generate static data file
+        run: |
+          node -e "
+          const fs = require('fs');
+          const data = JSON.parse(fs.readFileSync('data/news.json', 'utf8'));
+          const output = 'const staticNewsData = ' + JSON.stringify(data, null, 2) + ';';
+          fs.writeFileSync('static-news-data.js', output);
+          console.log('Generated static-news-data.js with', data.articles.length, 'articles');
+          "
+      
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/news.json
+          git add data/news.json static-news-data.js
           
           # Only commit if there are changes
           if git diff --staged --quiet; then
