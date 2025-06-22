@@ -89,6 +89,9 @@ jobs:
     needs: update-news
     runs-on: ubuntu-latest
     if: always()
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
       - name: Checkout
