@@ -47,7 +47,7 @@ jobs:
             echo "RSS fetch failed, but continuing with workflow"
             exit 0
           }
-        timeout-minutes: 10
+        timeout-minutes: 30
       
       - name: Generate static data file
         run: |

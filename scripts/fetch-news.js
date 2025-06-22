@@ -240,7 +240,12 @@ async function fetchNewsFromRSS() {
   
   console.log(`Fetching from ${RSS_FEEDS.length} RSS feeds...`);
   
-  for (const feedUrl of RSS_FEEDS) {
+  // バッチ処理で並列実行（10個ずつ）
+  const batchSize = 10;
+  for (let i = 0; i < RSS_FEEDS.length; i += batchSize) {
+    const batch = RSS_FEEDS.slice(i, i + batchSize);
+    
+    await Promise.all(batch.map(async (feedUrl) => {
     try {
       console.log(`Fetching from: ${feedUrl}`);
       
@@ -326,9 +331,9 @@ async function fetchNewsFromRSS() {
     }
     
     processedFeeds++;
-    if (processedFeeds % 15 === 0) {
-      console.log(`Progress: ${processedFeeds}/${RSS_FEEDS.length} feeds processed...`);
-    }
+    }));
+    
+    console.log(`Progress: ${Math.min(i + batchSize, RSS_FEEDS.length)}/${RSS_FEEDS.length} feeds processed...`);
   }
   
   console.log(`\n📊 Feed Summary:`);
