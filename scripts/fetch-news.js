@@ -561,7 +561,7 @@ async function translateText(text, apiKey) {
   if (!text) return '';
   
   // OpenAI APIが利用可能な場合は高品質な翻訳を使用
-  if (apiKey && process.env.OPENAI_API_KEY) {
+  if (process.env.OPENAI_API_KEY) {
     try {
       const OpenAI = require('openai');
       const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
@@ -589,8 +589,56 @@ async function translateText(text, apiKey) {
     }
   }
   
-  // フォールバック: 基本的な翻訳（APIが使えない場合のみ）
+  // フォールバック: 改善された基本翻訳（APIが使えない場合のみ）
+  // 重要: 単純な単語置換ではなく、より自然な日本語に
   let translated = text;
+  
+  // まず、よく使われるフレーズを自然な日本語に置換
+  const phraseTranslations = [
+    [/takes down/gi, '削除'],
+    [/pulls down/gi, '取り下げ'],
+    [/agrees to be acquired/gi, '買収に合意'],
+    [/due to/gi, 'により'],
+    [/amid/gi, 'の中で'],
+    [/according to/gi, 'によると'],
+    [/in order to/gi, 'するために'],
+    [/as well as/gi, 'だけでなく'],
+    [/such as/gi, 'などの'],
+    [/including/gi, 'を含む'],
+    [/based on/gi, 'に基づいて'],
+    [/related to/gi, 'に関連する'],
+    [/compared to/gi, 'と比較して'],
+    [/instead of/gi, 'の代わりに'],
+    [/because of/gi, 'のため'],
+    [/in addition to/gi, 'に加えて'],
+    [/as a result/gi, 'その結果'],
+    [/on the other hand/gi, '一方で'],
+    [/for example/gi, '例えば'],
+    [/in other words/gi, '言い換えれば'],
+    [/first of all/gi, 'まず第一に'],
+    [/last but not least/gi, '最後に重要なことは'],
+    [/at the same time/gi, '同時に'],
+    [/in the future/gi, '将来'],
+    [/in the past/gi, '過去に'],
+    [/at present/gi, '現在'],
+    [/up to/gi, 'まで'],
+    [/more than/gi, '以上'],
+    [/less than/gi, '以下'],
+    [/rather than/gi, 'よりむしろ'],
+    [/in terms of/gi, 'の観点から'],
+    [/with regard to/gi, 'に関して'],
+    [/in spite of/gi, 'にもかかわらず'],
+    [/in case of/gi, 'の場合'],
+    [/as long as/gi, 'である限り'],
+    [/as soon as/gi, 'するとすぐに'],
+    [/even though/gi, 'であっても'],
+    [/even if/gi, 'たとえ〜でも']
+  ];
+  
+  // フレーズ翻訳を適用
+  for (const [pattern, replacement] of phraseTranslations) {
+    translated = translated.replace(pattern, replacement);
+  }
   
   // Basic word translations for common English words
   const basicTranslations = [
@@ -626,6 +674,8 @@ async function translateText(text, apiKey) {
     [/\bbuilds?\b/gi, '構築'],
     [/\bmakes?\b/gi, '作成'],
     [/\bgets?\b/gi, '取得'],
+    [/\btakes?\s+down\b/gi, '削除する'],
+    [/\bpulls?\s+down\b/gi, '取り下げる'],
     [/\btakes?\b/gi, '取る'],
     [/\bgives?\b/gi, '与える'],
     [/\bshows?\b/gi, '示す'],
@@ -1875,7 +1925,21 @@ async function translateText(text, apiKey) {
   
   // Additional smart translation patterns
   const smartTranslations = [
-    // Company names and products
+    // 文末の調整（最初に実行）
+    [/\bmentions of\b/gi, 'に関する言及を'],
+    [/\bagreed to\b/gi, 'に合意した'],
+    [/\bhas taken down\b/gi, 'を削除した'],
+    [/\bappears to have\b/gi, 'したようだ'],
+    [/\bforced to\b/gi, 'を余儀なくされた'],
+    [/\baccording to\b/gi, 'によると'],
+    [/\bdue to\b/gi, 'により'],
+    [/\bamid\b/gi, 'の中で'],
+    [/\bafter receiving\b/gi, 'を受けて'],
+    [/\bvalued at\b/gi, 'と評価される'],
+    [/\bwill receive\b/gi, 'を受け取る予定'],
+    [/\bunder the terms of\b/gi, 'の条件により'],
+    
+    // Company names and products - keep as is
     [/\bOpenAI\b/gi, 'OpenAI'],
     [/\bGoogle\b/gi, 'Google'],
     [/\bAnthropic\b/gi, 'Anthropic'],
