@@ -3,12 +3,20 @@ const axios = require('axios');
 const Parser = require('rss-parser');
 
 // Verified RSS feeds for comprehensive AI news coverage (200 articles from working sources)
+// Prioritized by update frequency and AI focus
 const RSS_FEEDS = [
-  // General AI & Tech News - Verified Working
-  'https://feeds.feedburner.com/venturebeat/SZYF',
+  // High-frequency AI News Sources (Updated Daily or Multiple Times Daily)
+  'https://techcrunch.com/category/artificial-intelligence/feed/', // Very active, daily updates
+  'https://www.artificialintelligence-news.com/feed/', // AI-focused, frequent updates
+  'https://venturebeat.com/ai/feed/', // AI section specific feed
+  'https://feeds.feedburner.com/venturebeat/SZYF', // General VentureBeat feed
+  'https://www.marktechpost.com/feed/', // Very active AI news
+  'https://www.theinformation.com/feed', // Premium tech news with AI coverage
+  'https://siliconangle.com/category/ai/feed/', // AI category feed
+  'https://www.bloomberg.com/technology/artificial-intelligence/rss.xml', // Bloomberg AI news
+  
+  // Major Tech Publications - AI Coverage
   'https://www.technologyreview.com/feed/',
-  'https://techcrunch.com/category/artificial-intelligence/feed/',
-  'https://www.artificialintelligence-news.com/feed/',
   'https://www.wired.com/feed/tag/ai/latest/rss',
   'https://arstechnica.com/feed/',
   'https://spectrum.ieee.org/rss',
@@ -33,11 +41,12 @@ const RSS_FEEDS = [
   'https://distill.pub/rss.xml',
   
   // News & Analysis Platforms - Verified Working
-  'https://www.marktechpost.com/feed/',
   'https://machinelearningmastery.com/feed/',
   'https://analyticsindiamag.com/feed/',
   'https://www.kdnuggets.com/feed',
   'https://towardsdatascience.com/feed',
+  'https://syncedreview.com/feed/', // Active AI news
+  'https://www.unite.ai/feed/', // Frequent AI updates
   
   // Industry & Business - Verified Working
   'https://techcrunch.com/tag/artificial-intelligence/feed/',
@@ -238,7 +247,13 @@ async function fetchNewsFromRSS() {
   let successfulFeeds = 0;
   const failedFeeds = [];
   
+  // Calculate date 7 days ago and current date
+  const now = new Date();
+  const twoDaysAgo = new Date();
+  twoDaysAgo.setDate(twoDaysAgo.getDate() - 2); // より最新のニュースに絞る（2日以内）
+  
   console.log(`Fetching from ${RSS_FEEDS.length} RSS feeds...`);
+  console.log(`Filtering articles between: ${twoDaysAgo.toISOString()} and ${now.toISOString()}`);
   
   // バッチ処理で並列実行（10個ずつ）
   const batchSize = 10;
@@ -296,6 +311,14 @@ async function fetchNewsFromRSS() {
         
         if (isAIRelated && title.length > 10 && item.link && item.link.startsWith('http')) {
           try {
+            // Parse article date
+            const articleDate = new Date(item.pubDate || item.isoDate || item.date || new Date());
+            
+            // Skip articles older than 2 days or in the future
+            if (articleDate < twoDaysAgo || articleDate > now) {
+              continue;
+            }
+            
             const summary = extractSummary(item.content || item.summary || item.description || title);
             
             const article = {
@@ -306,8 +329,8 @@ async function fetchNewsFromRSS() {
               summaryJa: await translateText(summary, process.env.OPENAI_API_KEY),
               source: cleanText(feed.title || extractDomain(feedUrl)),
               category: categorizeArticle(title, content),
-              importance: calculateImportance(title, content),
-              pubDate: item.pubDate || item.isoDate || new Date().toISOString(),
+              importance: calculateImportance(title, content, articleDate),
+              pubDate: articleDate.toISOString(),
               link: item.link
             };
             
@@ -340,6 +363,7 @@ async function fetchNewsFromRSS() {
   console.log(`✅ Successful: ${successfulFeeds}/${RSS_FEEDS.length} feeds`);
   console.log(`❌ Failed: ${failedFeeds.length}/${RSS_FEEDS.length} feeds`);
   console.log(`📰 Total articles collected: ${allArticles.length}`);
+  console.log(`🗓️  Articles from last 7 days only`);
   
   if (failedFeeds.length > 0) {
     console.log(`\n⚠️ Failed feeds (for debugging):`);
@@ -486,9 +510,19 @@ function categorizeArticle(title, content) {
   return 'tech';
 }
 
-function calculateImportance(title, content) {
+function calculateImportance(title, content, articleDate) {
   let score = 50;
   const text = (title + ' ' + content).toLowerCase();
+  
+  // Date-based scoring (prioritize very recent news)
+  const now = new Date();
+  const hoursSincePublished = (now - new Date(articleDate)) / (1000 * 60 * 60);
+  
+  if (hoursSincePublished < 24) {
+    score += 30; // Articles from last 24 hours get major boost
+  } else if (hoursSincePublished < 48) {
+    score += 15; // Articles from last 48 hours get moderate boost
+  }
   
   // High importance keywords
   if (text.includes('breakthrough') || text.includes('revolutionary')) score += 30;

@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "update-news": "node scripts/fetch-news.js",
+    "test-date-filter": "node scripts/test-date-filter.js",
     "dev": "python -m http.server 8000",
     "start": "python -m http.server 8000",
     "test": "echo \"No tests configured\" && exit 0"
