@@ -42,6 +42,8 @@ const RSS_FEEDS = [
   'https://bair.berkeley.edu/blog/feed.xml', // Berkeley AI Research
   'https://aws.amazon.com/blogs/machine-learning/feed/', // AWS ML Blog
   'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', // ScienceDaily AI
+  'https://rss.arxiv.org/rss/cs.AI', // arXiv Artificial Intelligence papers
+  'https://rss.arxiv.org/rss/cs.LG', // arXiv Machine Learning papers
   
   // News & Analysis Platforms - Verified Working
   'https://machinelearningmastery.com/feed/',
@@ -64,6 +66,9 @@ const RSS_FEEDS = [
   
   // Japanese Sources - Verified Working
   // 'https://tech.nikkeibp.co.jp/rss/index.rdf', // Removed - 403 forbidden/paywall
+  'https://rss.itmedia.co.jp/rss/2.0/aiplus.xml', // ITmedia AI+ - AI/ML focused news
+  'https://news.livedoor.com/topics/rss/inet.xml', // Livedoor IT/Internet News
+  'https://gigazine.net/news/rss_2.0/', // Gigazine - Tech/Science news
   
   // Developer Tools & GitHub - Critical for AI tools coverage
   'https://github.blog/feed',
