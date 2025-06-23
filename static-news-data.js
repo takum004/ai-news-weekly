@@ -1,11 +1,11 @@
 const staticNewsData = {
-  "lastUpdated": "2025-06-23T11:43:57.393Z",
-  "totalArticles": 99,
+  "lastUpdated": "2025-06-23T11:51:02.860Z",
+  "totalArticles": 132,
   "generatedBy": "AI News Aggregator v1.0",
-  "sources": 49,
+  "sources": 54,
   "articles": [
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9132t3",
+      "id": "aHR0cHM6Ly93d3cu-mc91c67i",
       "title": "OpenAI takes down mentions of Jony Ive’s io amid trademark row",
       "titleJa": "OpenAI 取る down mentions のJony Ive’s io amid trademark row",
       "summary": "ChatGPT developer forced to act after receiving legal complaint from earbud maker iyOBusiness live – latest updatesOpenAI has taken down online content related to its recent deal with Sir Jony Ive’s hardware startup, io, after a trademark complaint.",
@@ -17,7 +17,7 @@ const staticNewsData = {
       "link": "https://www.theguardian.com/technology/2025/jun/23/openai-jony-ive-io-amid-trademark-iyo"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc9132kp",
+      "id": "aHR0cHM6Ly9hbmFs-mc91c60l",
       "title": "QNu Labs Launches Academy to Support India’s Quantum Talent",
       "titleJa": "QNu Labs 発表 Academy にSupport India’s Quantum 才能",
       "summary": "The programme includes certification, placement support, faculty development modules and emphasises building CoEs. The post QNu Labs Launches Academy to Support India’s Quantum Talent appeared first on Analytics India Magazine.",
@@ -29,7 +29,31 @@ const staticNewsData = {
       "link": "https://analyticsindiamag.com/ai-news-updates/qnu-labs-launches-academy-to-support-indias-quantum-talent/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxp-mc9137t3",
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5l6",
+      "title": "SHADE-Arena: Evaluating Sabotage and Monitoring in LLM Agents",
+      "titleJa": "SHADE-Arena: Evaluating Sabotage とMonitoring でLLM Agents",
+      "summary": "15740v1 Announce Type: new Abstract: As Large Language Models (LLMs) are increasingly deployed as autonomous agents in complex and long horizon settings, it is critical to evaluate their ability to sabotage users by pursuing hidden objectives.",
+      "summaryJa": "15740v1 発表 Type: 新しい Abstract: として大きい Language Models (LLMs) are increasingly 配備された としてautonomous agents で複雑な と長い horizon settings, it is critical にevaluate それらの能力 にsabotage users によってpursuing 隠れた objectives.",
+      "source": "cs.AI updates on arXiv.org",
+      "category": "google",
+      "importance": 100,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15740"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5lb",
+      "title": "SLR: An Automated Synthesis Framework for Scalable Logical Reasoning",
+      "titleJa": "SLR: Automated Synthesis フレームワーク のためのScalable Logical Reasoning",
+      "summary": "15787v1 Announce Type: new Abstract: We introduce SLR, an end-to-end framework for systematic evaluation and training of Large Language Models (LLMs) via Scalable Logical Reasoning.",
+      "summaryJa": "15787v1 発表 Type: 新しい Abstract: We 導入 SLR, 終了-to-終了 フレームワーク のためのsystematic evaluation と訓練 の大きい Language Models (LLMs) via Scalable Logical Reasoning.",
+      "source": "cs.AI updates on arXiv.org",
+      "category": "google",
+      "importance": 100,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15787"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxp-mc91cbv1",
       "title": "Couchbase agrees to be acquired by private equity firm Haveli for $1.5B",
       "titleJa": "Couchbase agrees にbe acquired によってプライベートの equity 会社 Haveli のための$1.5B",
       "summary": "NoSQL cloud database platform company Couchbase Inc. today agreed to be acquired by the private equity firm Haveli Investments LP in an all-cash transaction valued at about $1. Under the terms of the deal, Couchbase shareholders will receive $24.",
@@ -41,7 +65,7 @@ const staticNewsData = {
       "link": "https://siliconangle.com/2025/06/22/couchbase-agrees-acquired-private-equity-firm-haveli-1-5b/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc912va5",
+      "id": "aHR0cHM6Ly90ZWNo-mc91bzje",
       "title": "OpenAI pulls promotional materials around Jony Ive deal due to court order",
       "titleJa": "OpenAI pulls promotional materials 約 Jony Ive deal due にcourt order",
       "summary": "OpenAI appears to have pulled a much-discussed video promoting the friendship between CEO Sam Altman and legendary Apple designer Jony Ive (plus, incidentally, OpenAI’s $6. 5 billion deal to acquire Ive and Altman’s device startup io) from its website and YouTube page.",
@@ -53,7 +77,7 @@ const staticNewsData = {
       "link": "https://techcrunch.com/2025/06/22/openai-pulls-promotional-materials-around-jony-ive-deal/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc912vbd",
+      "id": "aHR0cHM6Ly90ZWNo-mc91bzko",
       "title": "Mira Murati’s Thinking Machines Lab closes on $2B at $10B valuation",
       "titleJa": "Mira Murati’s Thinking Machines Lab closes で$2B で$10B valuation",
       "summary": "Thinking Machines Lab, the secretive AI startup founded by OpenAI’s former chief technology officer Mira Murati, has closed a $2 billion seed round at a $10 billion valuation.",
@@ -65,7 +89,7 @@ const staticNewsData = {
       "link": "https://techcrunch.com/2025/06/20/mira-muratis-thinking-machines-lab-closes-on-2b-at-10b-valuation/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc912vbh",
+      "id": "aHR0cHM6Ly90ZWNo-mc91bzkr",
       "title": "Anthropic says most AI models, not just Claude, will resort to blackmail",
       "titleJa": "Anthropic 述べる 最も AI models, not ちょうど Claude, will resort にblackmail",
       "summary": "Several weeks after Anthropic released research claiming that its Claude Opus 4 AI model resorted to blackmailing engineers who tried to turn the model off in controlled test scenarios, the company is out with new research suggesting the problem is more widespread among leading AI models.",
@@ -77,7 +101,7 @@ const staticNewsData = {
       "link": "https://techcrunch.com/2025/06/20/anthropic-says-most-ai-models-not-just-claude-will-resort-to-blackmail/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc912vbi",
+      "id": "aHR0cHM6Ly90ZWNo-mc91bzkt",
       "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
       "titleJa": "ChatGPT: Everything you 必要 に知る 約 AI-powered chatbot",
       "summary": "ChatGPT, OpenAI’s text-generating AI chatbot, has taken the world by storm since its launch in November 2022. What started as a tool to supercharge productivity through writing essays and code with short text prompts has evolved into a behemoth with 300 million weekly active users.",
@@ -89,7 +113,7 @@ const staticNewsData = {
       "link": "https://techcrunch.com/2025/06/20/chatgpt-everything-to-know-about-the-ai-chatbot/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vi1",
+      "id": "aHR0cHM6Ly93d3cu-mc91bzml",
       "title": "OpenAI can rehabilitate AI models that develop a “bad-boy persona”",
       "titleJa": "OpenAI can rehabilitate AI models その開発 “悪い-boy persona”",
       "summary": "A new paper from OpenAI has shown why a little bit of bad training can make AI models go rogue—but also demonstrates that this problem is generally pretty easy to fix.",
@@ -101,7 +125,7 @@ const staticNewsData = {
       "link": "https://www.technologyreview.com/2025/06/18/1119042/openai-can-rehabilitate-ai-models-that-develop-a-bad-boy-persona/"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc912vm2",
+      "id": "aHR0cHM6Ly9ibG9n-mc91bzso",
       "title": "Hear a podcast discussion about Gemini’s coding capabilities.",
       "titleJa": "Hear podcast 議論 約 Gemini’s coding capabilities.",
       "summary": "The latest episode of the Google AI: Release Notes podcast focuses on how the Gemini team built one of the world’s leading AI coding models. Host Logan Kilpatrick chats w….",
@@ -113,7 +137,7 @@ const staticNewsData = {
       "link": "https://blog.google/products/gemini/gemini-coding-podcast/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc913205",
+      "id": "aHR0cHM6Ly93d3cu-mc91c5jl",
       "title": "Breaking bonds, breaking ground: Advancing the accuracy of computational chemistry with deep learning",
       "titleJa": "Breaking bonds, breaking ground: Advancing 精度 のcomputational chemistry と深い 学習",
       "summary": "Microsoft researchers achieved a breakthrough in the accuracy of DFT, a method for predicting the properties of molecules and materials, by using deep learning. This work can lead to better batteries, green fertilizers, precision drug discovery, and more.",
@@ -125,7 +149,7 @@ const staticNewsData = {
       "link": "https://www.microsoft.com/en-us/research/blog/breaking-bonds-breaking-ground-advancing-the-accuracy-of-computational-chemistry-with-deep-learning/"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc912vm5",
+      "id": "aHR0cHM6Ly9ibG9n-mc91bzsq",
       "title": "We’re expanding our Gemini 2.5 family of models",
       "titleJa": "We’re expanding our Gemini 2.5 家族 のmodels",
       "summary": "5 Flash and Pro are now generally available, and we’re introducing 2. 5 Flash-Lite, our most cost-efficient and fastest 2.",
@@ -137,7 +161,7 @@ const staticNewsData = {
       "link": "https://blog.google/products/gemini/gemini-2-5-model-family-expands/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9132rs",
+      "id": "aHR0cHM6Ly93d3cu-mc91c6db",
       "title": "Tesla robotaxi 'low-key' launch in Texas",
       "titleJa": "Tesla robotaxi '低い-key' launch でTexas",
       "summary": "Tesla hopes to rival firms already offering driverless ride-hailing in the US and around the world, such as Waymo, Zoox and Baidu.",
@@ -149,7 +173,7 @@ const staticNewsData = {
       "link": "https://www.bbc.com/news/articles/cjwnlje3yp1o"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc9132kq",
+      "id": "aHR0cHM6Ly9hbmFs-mc91c60m",
       "title": "New Method Customises LLMs in Seconds, Beats Tuning: Research",
       "titleJa": "新しい 方法 Customises LLMs でSeconds, Beats Tuning: 研究",
       "summary": "Referred to as DnD LLMs, the new approach generates task-specific LoRA adapters directly from prompts. The post New Method Customises LLMs in Seconds, Beats Tuning: Research appeared first on Analytics India Magazine.",
@@ -161,7 +185,43 @@ const staticNewsData = {
       "link": "https://analyticsindiamag.com/ai-news-updates/new-method-customises-llms-in-seconds-beats-tuning-research/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc912vbb",
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5l7",
+      "title": "OAgents: An Empirical Study of Building Effective Agents",
+      "titleJa": "OAgents: Empirical 研究 のBuilding 効果的な Agents",
+      "summary": "15741v1 Announce Type: new Abstract: Recently, Agentic AI has become an increasingly popular research field. However, we argue that current agent research practices lack standardization and scientific rigor, making it hard to conduct fair comparisons among methods.",
+      "summaryJa": "15741v1 発表 Type: 新しい Abstract: 最近, Agentic AI has になる increasingly 人気の 研究 フィールド. しかし, we argue その現在の agent 研究 practices lack standardization とscientific rigor, making it 困難な にconduct 公平な comparisons among methods.",
+      "source": "cs.AI updates on arXiv.org",
+      "category": "agents",
+      "importance": 95,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15741"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5l8",
+      "title": "Sysformer: Safeguarding Frozen Large Language Models with Adaptive System Prompts",
+      "titleJa": "Sysformer: Safeguarding Frozen 大きい Language Models とAdaptive システム Prompts",
+      "summary": "15751v1 Announce Type: new Abstract: As large language models (LLMs) are deployed in safety-critical settings, it is essential to ensure that their responses comply with safety standards.",
+      "summaryJa": "15751v1 発表 Type: 新しい Abstract: として大きい language models (LLMs) are 配備された でsafety-critical settings, it is essential にensure そのそれらのresponses comply とsafety standards.",
+      "source": "cs.AI updates on arXiv.org",
+      "category": "research",
+      "importance": 95,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15751"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5w6",
+      "title": "Development of a Multiprocessing Interface Genetic Algorithm for Optimising a Multilayer Perceptron for Disease Prediction",
+      "titleJa": "発展 のMultiprocessing Interface Genetic アルゴリズム のためのOptimising Multilayer Perceptron のためのDisease Prediction",
+      "summary": "15694v1 Announce Type: new Abstract: This study introduces a framework that integrates nonlinear feature extraction, classification, and efficient optimization. First, kernel principal component analysis with a radial basis function kernel reduces dimensionality while preserving 95% of the variance.",
+      "summaryJa": "15694v1 発表 Type: 新しい Abstract: この研究 導入 フレームワーク そのintegrates nonlinear feature extraction, classification, と効率的な optimization. First, kernel principal コンポーネント analysis とradial basis function kernel 削減 dimensionality while preserving 95% のvariance.",
+      "source": "cs.LG updates on arXiv.org",
+      "category": "automation",
+      "importance": 95,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15694"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNo-mc91bzkm",
       "title": "Cartoonist Paul Pope is more worried about killer robots than AI plagiarism",
       "titleJa": "Cartoonist Paul Pope is より多い worried 約 killer robots than AI plagiarism",
       "summary": "Paul Pope has written and drawn some of the most gorgeous comics of the twenty-first century — from “Batman: Year 100,” in which Batman challenges a dystopian surveillance state, to “Battling Boy,” with its adolescent god proving his mettle by fighting giant monsters.",
@@ -173,7 +233,7 @@ const staticNewsData = {
       "link": "https://techcrunch.com/2025/06/21/cartoonist-paul-pope-is-more-worried-about-killer-robots-than-ai-plagiarism/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc9132kk",
+      "id": "aHR0cHM6Ly9hbmFs-mc91c60g",
       "title": "How AI is Filling India’s Rural Healthcare Gaps",
       "titleJa": "どのようにAI is Filling India’s Rural ヘルスケア Gaps",
       "summary": "AI won’t replace doctors, but reach where doctors rarely go. The post How AI is Filling India’s Rural Healthcare Gaps appeared first on Analytics India Magazine.",
@@ -185,7 +245,7 @@ const staticNewsData = {
       "link": "https://analyticsindiamag.com/ai-features/how-ai-is-filling-indias-rural-healthcare-gaps/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnN0-mc912vrt",
+      "id": "aHR0cHM6Ly9hcnN0-mc91bztz",
       "title": "How a grad student got LHC data to play nice with quantum interference",
       "titleJa": "どのようにgrad student 取得した LHC データ に再生 素晴らしい とquantum interference",
       "summary": "New approach is already having an impact on the experiment’s plans for future work.",
@@ -197,7 +257,7 @@ const staticNewsData = {
       "link": "https://arstechnica.com/science/2025/06/how-a-grad-student-got-lhc-data-to-play-nice-with-quantum-interference/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc9132kl",
+      "id": "aHR0cHM6Ly9hbmFs-mc91c60h",
       "title": "Gear Up for the Upcoming Snowflake GCC Forums 2025",
       "titleJa": "Gear Up のためのUpcoming Snowflake GCC Forums 2025",
       "summary": "Join top GCC leaders, data experts, and innovation architects as they explore how data, AI, and cloud-native strategies are rewriting the rules of global enterprise. The post Gear Up for the Upcoming Snowflake GCC Forums 2025 appeared first on Analytics India Magazine.",
@@ -209,7 +269,7 @@ const staticNewsData = {
       "link": "https://analyticsindiamag.com/ai-highlights/gear-up-for-the-upcoming-snowflake-gcc-forums-2025/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc9132km",
+      "id": "aHR0cHM6Ly9hbmFs-mc91c60i",
       "title": "‘We are Not Quitting India,’ RevRag’s $10 Million Agentic AI Roadmap for Two Years",
       "titleJa": "‘We are Not Quitting India,’ RevRag’s 10万ドル Agentic AI Roadmap のためのTwo Years",
       "summary": "The company is currently working towards its first $1 million in Indian revenue, with plans to scale up to $5 million and $10 million by combining India and US operations.",
@@ -221,7 +281,7 @@ const staticNewsData = {
       "link": "https://analyticsindiamag.com/ai-startups/we-are-not-quitting-india-revrags-10-million-agentic-ai-roadmap-for-two-years/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc9132kn",
+      "id": "aHR0cHM6Ly9hbmFs-mc91c60j",
       "title": "Karnataka’s Proposal to Extend Work Hours Raises Concerns Across IT Sector",
       "titleJa": "Karnataka’s Proposal にExtend 機能 Hours Raises Concerns Across IT Sector",
       "summary": "The proposed increase in working hours could pave the way for a two-shift system, potentially resulting in mass layoffs across the sector. The post Karnataka’s Proposal to Extend Work Hours Raises Concerns Across IT Sector appeared first on Analytics India Magazine.",
@@ -233,7 +293,19 @@ const staticNewsData = {
       "link": "https://analyticsindiamag.com/ai-news-updates/karnatakas-proposal-to-extend-work-hours-raises-concerns-across-it-sector/"
     },
     {
-      "id": "aHR0cHM6Ly9lbWVy-mc913dr7",
+      "id": "aHR0cHM6Ly9naWdh-mc91cbjq",
+      "title": "イランがイスラエルの防空網を突破するのに使用した極超音速ミサイル「Fattah-2」とは？",
+      "titleJa": "イランがイスラエルの防空網を突破するのに使用した極超音速ミサイル「Fattah-2」とは？",
+      "summary": "2025年6月22日、アメリカ軍がイランの核施設を攻撃したことへの報復として、イランがイスラエルに対してミサイル攻撃を実施しました。この攻撃に使用されたのは、「Fattah-2」と呼ばれる極超音速ミサイルで、このミサイルがなぜイスラエルの防空システムを突破できてしまうのかを、チャンネル登録者数150万人超のYouTubeチャンネルであるAiTellyが解説しています。続きを読む.",
+      "summaryJa": "2025年6月22日、アメリカ軍がイランの核施設を攻撃したことへの報復として、イランがイスラエルに対してミサイル攻撃を実施しました。この攻撃に使用されたのは、「Fattah-2」と呼ばれる極超音速ミサイルで、このミサイルがなぜイスラエルの防空システムを突破できてしまうのかを、チャンネル登録者数150万人超のYouTubeチャンネルであるAiTellyが解説しています。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2025-06-23T10:00:00.000Z",
+      "link": "https://gigazine.net/news/20250623-how-to-work-fattah-2/"
+    },
+    {
+      "id": "aHR0cHM6Ly9lbWVy-mc91chwr",
       "title": "Inside Enterprise Strategies for Fighting First Party Fraud at Scale – with Leaders from Justt and Walmart",
       "titleJa": "内側 企業 Strategies のためのFighting First Party Fraud でScale – とLeaders からJustt とWalmart",
       "summary": "This article is sponsored by Justt and was written, edited, and published in alignment with our Emerj sponsored content guidelines. Learn more about our thought leadership and content creation services on our Emerj Media Services page.",
@@ -245,7 +317,7 @@ const staticNewsData = {
       "link": "https://emerj.com/inside-enterprise-strategies-for-fighting-first-party-fraud-at-scale-leaders-justt-walmart/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc9132ko",
+      "id": "aHR0cHM6Ly9hbmFs-mc91c60k",
       "title": "Indian Army Places ₹137 Crore Emergency Order for ideaForge Hybrid Mini UAVs",
       "titleJa": "Indian Army Places ₹137 Crore Emergency Order のためのideaForge Hybrid Mini UAVs",
       "summary": "The order addresses urgent operational requirements and will be executed over the next 12 months. The post Indian Army Places ₹137 Crore Emergency Order for ideaForge Hybrid Mini UAVs appeared first on Analytics India Magazine.",
@@ -257,7 +329,7 @@ const staticNewsData = {
       "link": "https://analyticsindiamag.com/ai-news-updates/indian-army-places-%e2%82%b9137-crore-emergency-order-for-ideaforge-hybrid-mini-uavs/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc9132kr",
+      "id": "aHR0cHM6Ly9hbmFs-mc91c60n",
       "title": "Vibe Coder Gets Legal Notice From DocuSign",
       "titleJa": "Vibe Coder 取得 Legal Notice からDocuSign",
       "summary": "“I never stole anything from DocuSign or made misleading statements,” said the developer. The post Vibe Coder Gets Legal Notice From DocuSign appeared first on Analytics India Magazine.",
@@ -269,7 +341,7 @@ const staticNewsData = {
       "link": "https://analyticsindiamag.com/ai-news-updates/vibe-coder-gets-legal-notice-from-docusign/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc9132ks",
+      "id": "aHR0cHM6Ly9hbmFs-mc91c60o",
       "title": "Why TCS Changed Its Bench Policy",
       "titleJa": "なぜTCS 変更した そのBench 政策",
       "summary": "With AI expected to automate a wide range of IT tasks, including coding and testing, traditional bench roles may shrink. The post Why TCS Changed Its Bench Policy appeared first on Analytics India Magazine.",
@@ -281,7 +353,223 @@ const staticNewsData = {
       "link": "https://analyticsindiamag.com/ai-features/why-tcs-changed-its-bench-policy/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9131ym",
+      "id": "aHR0cHM6Ly9naWdh-mc91cbjr",
+      "title": "AIを信頼する度合いは低所得国と開発途上国で最も高いが日本と中国では例外",
+      "titleJa": "AIを信頼する度合いは低所得国と開発途上国で最も高いが日本と中国では例外",
+      "summary": "長寿で健康な生活、知識、人間らしい生活の3つの分野から測定される社会指標「人間開発指数(HDI)」とAIの関係性を見いだした国連開発計画(UNDP)の報告書で、各国のAIに対する理解度、期待度、信頼度などが明らかになりました。続きを読む.",
+      "summaryJa": "長寿で健康な生活、知識、人間らしい生活の3つの分野から測定される社会指標「人間開発指数(HDI)」とAIの関係性を見いだした国連開発計画(UNDP)の報告書で、各国のAIに対する理解度、期待度、信頼度などが明らかになりました。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:22:00.000Z",
+      "link": "https://gigazine.net/news/20250623-ai-trust-hdi/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5kx",
+      "title": "LLMs Struggle to Perform Counterfactual Reasoning with Parametric Knowledge",
+      "titleJa": "LLMs Struggle にPerform Counterfactual Reasoning とParametric 知識",
+      "summary": "15732v1 Announce Type: new Abstract: Large Language Models have been shown to contain extensive world knowledge in their parameters, enabling impressive performance on many knowledge intensive tasks.",
+      "summaryJa": "15732v1 発表 Type: 新しい Abstract: 大きい Language Models have been shown にcontain extensive 世界 知識 でそれらのparameters, enabling 印象的 性能 で多くの 知識 intensive tasks.",
+      "source": "cs.AI updates on arXiv.org",
+      "category": "reasoning",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15732"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5ky",
+      "title": "$\\texttt{SPECS}$: Faster Test-Time Scaling through Speculative Drafts",
+      "titleJa": "$\\texttt{SPECS}$: より速く テスト-時間 Scaling through Speculative Drafts",
+      "summary": "15733v1 Announce Type: new Abstract: Scaling test-time compute has driven the recent advances in the reasoning capabilities of large language models (LLMs), typically by allocating additional computation for more thorough exploration.",
+      "summaryJa": "15733v1 発表 Type: 新しい Abstract: Scaling テスト-時間 compute has driven 最近の advances でreasoning capabilities の大きい language models (LLMs), 典型的に によってallocating additional computation のためのより多い thorough exploration.",
+      "source": "cs.AI updates on arXiv.org",
+      "category": "automation",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15733"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5l4",
+      "title": "The Safety Reminder: A Soft Prompt to Reactivate Delayed Safety Awareness in Vision-Language Models",
+      "titleJa": "Safety Reminder: 柔らかい Prompt にReactivate 遅延された Safety Awareness でVision-Language Models",
+      "summary": "15734v1 Announce Type: new Abstract: As Vision-Language Models (VLMs) demonstrate increasing capabilities across real-world applications such as code generation and chatbot assistance, ensuring their safety has become paramount.",
+      "summaryJa": "15734v1 発表 Type: 新しい Abstract: としてVision-Language Models (VLMs) demonstrate increasing capabilities across 実際の-世界 applications such としてcode 世代 とchatbot assistance, ensuring それらのsafety has になる paramount.",
+      "source": "cs.AI updates on arXiv.org",
+      "category": "code_generation",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15734"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5l6",
+      "title": "ContextBench: Modifying Contexts for Targeted Latent Activation",
+      "titleJa": "ContextBench: Modifying Contexts のためのTargeted Latent Activation",
+      "summary": "15735v1 Announce Type: new Abstract: Identifying inputs that trigger specific behaviours or latent features in language models could have a wide range of safety use cases.",
+      "summaryJa": "15735v1 発表 Type: 新しい Abstract: Identifying inputs そのtrigger 特定の behaviours またはlatent features でlanguage models could have 幅広い 範囲 のsafety 使用 cases.",
+      "source": "cs.AI updates on arXiv.org",
+      "category": "business",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15735"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5l9",
+      "title": "Linear-Time Primitives for Algorithm Development in Graphical Causal Inference",
+      "titleJa": "Linear-時間 Primitives のためのアルゴリズム 発展 でGraphical Causal Inference",
+      "summary": "15758v1 Announce Type: new Abstract: We introduce CIfly, a framework for efficient algorithmic primitives in graphical causal inference that isolates reachability as a reusable core operation.",
+      "summaryJa": "15758v1 発表 Type: 新しい Abstract: We 導入 CIfly, フレームワーク のための効率的な algorithmic primitives でgraphical causal inference そのisolates reachability としてreusable コア 運営.",
+      "source": "cs.AI updates on arXiv.org",
+      "category": "reasoning",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15758"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5la",
+      "title": "Advancing Stochastic 3-SAT Solvers by Dissipating Oversatisfied Constraints",
+      "titleJa": "Advancing Stochastic 3-SAT Solvers によってDissipating Oversatisfied Constraints",
+      "summary": "15774v1 Announce Type: new Abstract: We introduce and benchmark a stochastic local search heuristic for the NP-complete satisfiability problem 3-SAT that drastically outperforms existing solvers in the notoriously difficult realm of critically hard instances.",
+      "summaryJa": "15774v1 発表 Type: 新しい Abstract: We 導入 とbenchmark stochastic local search heuristic のためのNP-完全な satisfiability 問題 3-SAT そのdrastically outperforms 既存の solvers でnotoriously 困難な 領域 のcritically 困難な instances.",
+      "source": "cs.AI updates on arXiv.org",
+      "category": "research",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15774"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5vw",
+      "title": "Ignition Phase : Standard Training for Fast Adversarial Robustness",
+      "titleJa": "Ignition フェーズ : Standard 訓練 のための高速な Adversarial Robustness",
+      "summary": "15685v1 Announce Type: new Abstract: Adversarial Training (AT) is a cornerstone defense, but many variants overlook foundational feature representations by primarily focusing on stronger attack generation.",
+      "summaryJa": "15685v1 発表 Type: 新しい Abstract: Adversarial 訓練 (AT) is cornerstone defense, しかし 多くの variants overlook foundational feature representations によって主に focusing でstronger attack 世代.",
+      "source": "cs.LG updates on arXiv.org",
+      "category": "presentation",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15685"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5vx",
+      "title": "Learning from M-Tuple Dominant Positive and Unlabeled Data",
+      "titleJa": "学習 からM-Tuple Dominant Positive とUnlabeled データ",
+      "summary": "15686v1 Announce Type: new Abstract: Label Proportion Learning (LLP) addresses the classification problem where multiple instances are grouped into bags and each bag contains information about the proportion of each class.",
+      "summaryJa": "15686v1 発表 Type: 新しい Abstract: ラベル Proportion 学習 (LLP) addresses classification 問題 どこで複数の instances are grouped into bags とeach bag contains 情報 約 proportion のeach class.",
+      "source": "cs.LG updates on arXiv.org",
+      "category": "research",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15686"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5vz",
+      "title": "S$^2$GPT-PINNs: Sparse and Small models for PDEs",
+      "titleJa": "S$^2$GPT-PINNs: Sparse と小さい models のためのPDEs",
+      "summary": "15687v1 Announce Type: new Abstract: We propose S$^2$GPT-PINN, a sparse and small model for solving parametric partial differential equations (PDEs).",
+      "summaryJa": "15687v1 発表 Type: 新しい Abstract: We propose S$^2$GPT-PINN, sparse と小さい モデル のためのsolving parametric partial differential equations (PDEs).",
+      "source": "cs.LG updates on arXiv.org",
+      "category": "openai",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15687"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5w0",
+      "title": "Cellular Traffic Prediction via Deep State Space Models with Attention Mechanism",
+      "titleJa": "Cellular Traffic Prediction via 深い 状態 宇宙 Models とAttention Mechanism",
+      "summary": "15688v1 Announce Type: new Abstract: Cellular traffic prediction is of great importance for operators to manage network resources and make decisions. Traffic is highly dynamic and influenced by many exogenous factors, which would lead to the degradation of traffic prediction accuracy.",
+      "summaryJa": "15688v1 発表 Type: 新しい Abstract: Cellular traffic prediction is の素晴らしい importance のためのoperators にmanage network resources と作成 decisions. Traffic is highly dynamic とinfluenced によって多くの exogenous factors, どのwould lead にdegradation のtraffic prediction 精度.",
+      "source": "cs.LG updates on arXiv.org",
+      "category": "research",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15688"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5w1",
+      "title": "BASE-Q: Bias and Asymmetric Scaling Enhanced Rotational Quantization for Large Language Models",
+      "titleJa": "BASE-Q: Bias とAsymmetric Scaling 強化した Rotational Quantization のための大きい Language Models",
+      "summary": "15689v1 Announce Type: new Abstract: Rotations have become essential to state-of-the-art quantization pipelines for large language models (LLMs) by effectively smoothing outliers in weights and activations.",
+      "summaryJa": "15689v1 発表 Type: 新しい Abstract: Rotations have になる essential に状態-of-the-art quantization pipelines のための大きい language models (LLMs) によってeffectively smoothing outliers でweights とactivations.",
+      "source": "cs.LG updates on arXiv.org",
+      "category": "research",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15689"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5w2",
+      "title": "LLM Web Dynamics: Tracing Model Collapse in a Network of LLMs",
+      "titleJa": "LLM Web Dynamics: Tracing モデル Collapse でNetwork のLLMs",
+      "summary": "15690v1 Announce Type: new Abstract: The increasing use of synthetic data from the public Internet has enhanced data usage efficiency in large language model (LLM) training. However, the potential threat of model collapse remains insufficiently explored.",
+      "summaryJa": "15690v1 発表 Type: 新しい Abstract: increasing 使用 のsynthetic データ から公開の Internet has 強化した データ usage 効率 で大きい language モデル (LLM) 訓練. しかし, potential threat のモデル collapse 残る insufficiently explored.",
+      "source": "cs.LG updates on arXiv.org",
+      "category": "image_generation",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15690"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5w3",
+      "title": "What Do Latent Action Models Actually Learn?",
+      "titleJa": "何をDo Latent 行動 Models Actually 学習?",
+      "summary": "15691v1 Announce Type: new Abstract: Latent action models (LAMs) aim to learn action-relevant changes from unlabeled videos by compressing changes between frames as latents.",
+      "summaryJa": "15691v1 発表 Type: 新しい Abstract: Latent 行動 models (LAMs) aim に学習 行動-relevant 変更 からunlabeled videos によってcompressing 変更 between frames としてlatents.",
+      "source": "cs.LG updates on arXiv.org",
+      "category": "academic",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15691"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5w3",
+      "title": "MLE-STAR: Machine Learning Engineering Agent via Search and Targeted Refinement",
+      "titleJa": "MLE-星: 機械 学習 Engineering Agent via Search とTargeted Refinement",
+      "summary": "15692v1 Announce Type: new Abstract: Agents based on large language models (LLMs) for machine learning engineering (MLE) can automatically implement ML models via code generation.",
+      "summaryJa": "15692v1 発表 Type: 新しい Abstract: Agents based で大きい language models (LLMs) のための機械 学習 engineering (MLE) can automatically implement ML models via code 世代.",
+      "source": "cs.LG updates on arXiv.org",
+      "category": "agents",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15692"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhp-mc91c5w4",
+      "title": "Verifiable Safety Q-Filters via Hamilton-Jacobi Reachability and Multiplicative Q-Networks",
+      "titleJa": "Verifiable Safety Q-Filters via Hamilton-Jacobi Reachability とMultiplicative Q-Networks",
+      "summary": "15693v1 Announce Type: new Abstract: Recent learning-based safety filters have outperformed conventional methods, such as hand-crafted Control Barrier Functions (CBFs), by effectively adapting to complex constraints. However, these learning-based approaches lack formal safety guarantees.",
+      "summaryJa": "15693v1 発表 Type: 新しい Abstract: 最近の 学習-based safety filters have outperformed conventional methods, such として手-crafted Control Barrier Functions (CBFs), によってeffectively adapting に複雑な constraints. しかし, these 学習-based approaches lack フォーマルな safety guarantees.",
+      "source": "cs.LG updates on arXiv.org",
+      "category": "academic",
+      "importance": 90,
+      "pubDate": "2025-06-23T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2506.15693"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdh-mc91cbjr",
+      "title": "アメリカ軍の特殊爆弾「バンカーバスター」はイランの地下深くにある核関連施設をどんな仕組みで攻撃したのか？",
+      "titleJa": "アメリカ軍の特殊爆弾「バンカーバスター」はイランの地下深くにある核関連施設をどんな仕組みで攻撃したのか？",
+      "summary": "日本時間の2025年6月22日(日)に、アメリカ軍がイランの3つの核関連施設を攻撃したことを発表しました。イランの核関連施設は地下深くに建設されており、アメリカ軍は地下深くの建造物を攻撃するために「バンカーバスター」と呼ばれる特殊な爆弾を使用したことを明らかにしています。このバンカーバスターは「大きくて重くて貫通力の高い爆弾」といったように説明されることがありますが、「ただ大きくて重たいだけで、地下深くへの精密な攻撃が可能なのか？」と疑問に思う人も多いはず。バンカーバスターの仕組みについてYouTubeチャンネルのAiTellyが解説していたので、仕組みをまとめてみました。続きを読む.",
+      "summaryJa": "日本時間の2025年6月22日(日)に、アメリカ軍がイランの3つの核関連施設を攻撃したことを発表しました。イランの核関連施設は地下深くに建設されており、アメリカ軍は地下深くの建造物を攻撃するために「バンカーバスター」と呼ばれる特殊な爆弾を使用したことを明らかにしています。このバンカーバスターは「大きくて重くて貫通力の高い爆弾」といったように説明されることがありますが、「ただ大きくて重たいだけで、地下深くへの精密な攻撃が可能なのか？」と疑問に思う人も多いはず。バンカーバスターの仕組みについてYouTubeチャンネルのAiTellyが解説していたので、仕組みをまとめてみました。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2025-06-23T03:16:00.000Z",
+      "link": "https://gigazine.net/news/20250623-bunker-buster-bomb/"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdh-mc91cbjs",
+      "title": "ソフトバンクの孫正義が140兆円超のAIロボット製造拠点をアリゾナ州に建設する「プロジェクト・クリスタルランド」をトランプ政権とTSMCに提案か",
+      "titleJa": "ソフトバンクの孫正義が140兆円超のAIロボット製造拠点をアリゾナ州に建設する「プロジェクト・クリスタルランド」をトランプ政権とTSMCに提案か",
+      "summary": "アメリカ経済メディアのBloombergは、ソフトバンクグループの創業者である孫正義氏がTSMCと提携し、ロボットやAIを開発する巨大拠点をアメリカ・アリゾナ州に建設することを計画していると報じました。この計画の規模は1兆ドル(約145兆円)におよぶとみられており、AIを搭載した産業用ロボットの生産ラインが製造される可能性があるとのことです。続きを読む.",
+      "summaryJa": "アメリカ経済メディアのBloombergは、ソフトバンクグループの創業者である孫正義氏がTSMCと提携し、ロボットやAIを開発する巨大拠点をアメリカ・アリゾナ州に建設することを計画していると報じました。この計画の規模は1兆ドル(約145兆円)におよぶとみられており、AIを搭載した産業用ロボットの生産ラインが製造される可能性があるとのことです。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2025-06-23T02:55:00.000Z",
+      "link": "https://gigazine.net/news/20250623-softbank-tsmc-project-crystal-land/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu-mc91c5ig",
       "title": "AI at light speed: How glass fibers could replace silicon brains",
       "titleJa": "AI で軽い speed: どのようにglass fibers could replace silicon brains",
       "summary": "Imagine supercomputers that think with light instead of electricity. That s the breakthrough two European research teams have made, demonstrating how intense laser pulses through ultra-thin glass fibers can perform AI-like computations thousands of times faster than traditional electronics.",
@@ -293,7 +581,7 @@ const staticNewsData = {
       "link": "https://www.sciencedaily.com/releases/2025/06/250619090855.htm"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9131yl",
+      "id": "aHR0cHM6Ly93d3cu-mc91c5ie",
       "title": "Half of today’s jobs could vanish—Here’s how smart countries are future-proofing workers",
       "titleJa": "Half の今日’s jobs could vanish—Here’s どのようにスマートな countries are 将来の-proofing workers",
       "summary": "AI is revolutionizing the job landscape, prompting nations worldwide to prepare their workforces for dramatic changes. A University of Georgia study evaluated 50 countries’ national AI strategies and found significant differences in how governments prioritize education and workforce training.",
@@ -305,7 +593,7 @@ const staticNewsData = {
       "link": "https://www.sciencedaily.com/releases/2025/06/250622030429.htm"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFs-mc9132kt",
+      "id": "aHR0cHM6Ly9hbmFs-mc91c60p",
       "title": "Accenture’s $1.5 Billion AI Wake-Up Call for Indian IT",
       "titleJa": "Accenture’s 1.5億ドル AI Wake-Up Call のためのIndian IT",
       "summary": "Accenture is already cashing in on generative AI. Indian IT is still talking about PoCs. The post Accenture’s $1.",
@@ -317,7 +605,7 @@ const staticNewsData = {
       "link": "https://analyticsindiamag.com/it-services/accentures-1-5-billion-ai-wake-up-call-for-indian-it/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxp-mc9137t4",
+      "id": "aHR0cHM6Ly9zaWxp-mc91cbv2",
       "title": "Report: Apple has held internal discussions about acquiring Perplexity",
       "titleJa": "Report: Apple has 保持した internal discussions 約 acquiring Perplexity",
       "summary": "executives have held discussions about buying Perplexity AI Inc. , Bloomberg reported today. The publication cited sources as saying that the talks are in an early stage and may not lead to an acquisition.",
@@ -329,7 +617,7 @@ const staticNewsData = {
       "link": "https://siliconangle.com/2025/06/20/report-apple-held-internal-discussions-acquiring-perplexity/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc912vbl",
+      "id": "aHR0cHM6Ly90ZWNo-mc91bzkw",
       "title": "Could OpenAI fill Microsoft’s shoes?",
       "titleJa": "Could OpenAI fill Microsoft’s shoes?",
       "summary": "OpenAI recently announced a $200 million deal with the U. Department of Defense, which has us wondering: Could this further strain the company’s relationship with its biggest backer, Microsoft.",
@@ -341,7 +629,7 @@ const staticNewsData = {
       "link": "https://techcrunch.com/podcast/could-openai-fill-microsofts-shoes/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912via",
+      "id": "aHR0cHM6Ly93d3cu-mc91bznf",
       "title": "What Big Tech's Band of Execs Will Do in the Army",
       "titleJa": "何を大きい Tech's Band のExecs Will Do でArmy",
       "summary": "Meta CTO Andrew \"Boz\" Bosworth and leaders from OpenAI and Palantir have joined a detachment intended to make the US Armed Forces \"leaner, smarter, and more lethal.",
@@ -353,7 +641,7 @@ const staticNewsData = {
       "link": "https://www.wired.com/story/what-lt-col-boz-and-big-techs-enlisted-execs-will-do-in-the-army/"
     },
     {
-      "id": "aHR0cHM6Ly9kZWVw-mc91323g",
+      "id": "aHR0cHM6Ly9kZWVw-mc91c5uh",
       "title": "Gemini 2.5: Updates to our family of thinking models",
       "titleJa": "Gemini 2.5: Updates にour 家族 のthinking models",
       "summary": "Explore the latest Gemini 2. 5 model updates with enhanced performance and accuracy: Gemini 2. 5 Pro now stable, Flash generally available, and the new Flash-Lite in preview.",
@@ -365,7 +653,19 @@ const staticNewsData = {
       "link": "https://deepmind.google/discover/blog/gemini-25-updates-to-our-family-of-thinking-models/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vhq",
+      "id": "aHR0cHM6Ly93d3cu-mc91cbih",
+      "title": "AIイラストに“ファンアートタグ”使わないで──VTuber「ぶいすぽっ！」運営が声明 「#AIイラスト」の利用を必須化",
+      "titleJa": "AIイラストに“ファンアートタグ”使わないで──VTuber「ぶいすぽっ！」運営が声明 「#AIイラスト」の利用を必須化",
+      "summary": "AIイラストには“ファンアートタグ”は使わないで──VTuberプロジェクト「ぶいすぽっ！」を運営するバーチャルエンターテイメントは、公式Xアカウント（＠Vspo77）でそんな声明を発表した。.",
+      "summaryJa": "AIイラストには“ファンアートタグ”は使わないで──VTuberプロジェクト「ぶいすぽっ！」を運営するバーチャルエンターテイメントは、公式Xアカウント（＠Vspo77）でそんな声明を発表した。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2025-06-23T10:11:00.000Z",
+      "link": "https://www.itmedia.co.jp/aiplus/articles/2506/23/news098.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu-mc91bzm5",
       "title": "Book review: Surveillance & privacy",
       "titleJa": "Book review: Surveillance & privacy",
       "summary": "Privacy only matters to those with something to hide. So goes one of the more inane and disingenuous justifications for mass government and corporate surveillance.",
@@ -377,7 +677,7 @@ const staticNewsData = {
       "link": "https://www.technologyreview.com/2025/06/23/1118401/privacy-book-reviews-surveillance-higher-education/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vi6",
+      "id": "aHR0cHM6Ly93d3cu-mc91bznb",
       "title": "Taiwan Is Rushing to Make Its Own Drones Before It's Too Late",
       "titleJa": "Taiwan Is Rushing に作成 そのOwn Drones Before It's も Late",
       "summary": "Unmanned vehicles are increasingly becoming essential weapons of war. But with a potential conflict with China looming large, Taiwan is scrambling to build a domestic drone industry from scratch.",
@@ -389,7 +689,79 @@ const staticNewsData = {
       "link": "https://www.wired.com/story/taiwans-rush-to-make-its-own-drones-before-its-too-late/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc912vb6",
+      "id": "aHR0cHM6Ly93d3cu-mc91cbik",
+      "title": "ゆうちょ銀行、YouTubeの“ニセ情報動画”に注意喚起 生成AI利用とみられるフェイク相次ぐ",
+      "titleJa": "ゆうちょ銀行、YouTubeの“ニセ情報動画”に注意喚起 生成AI利用とみられるフェイク相次ぐ",
+      "summary": "ゆうちょ銀行は、YouTube上で偽の情報を発信する動画について、注意を呼びかけた。「7月からゆうちょ銀行の口座が使えなくなる」など、誤った内容の動画を複数確認。7月以降も、同社の全ての商品・サービスは通常通り利用できるとしている。.",
+      "summaryJa": "ゆうちょ銀行は、YouTube上で偽の情報を発信する動画について、注意を呼びかけた。「7月からゆうちょ銀行の口座が使えなくなる」など、誤った内容の動画を複数確認。7月以降も、同社の全ての商品・サービスは通常通り利用できるとしている。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2025-06-23T09:59:00.000Z",
+      "link": "https://www.itmedia.co.jp/aiplus/articles/2506/23/news094.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu-mc91cbik",
+      "title": "AI作成の偽サイトをAI用いて捜査、フィッシングサイト作成の男2人を逮捕 大阪府警",
+      "titleJa": "AI作成の偽サイトをAI用いて捜査、フィッシングサイト作成の男2人を逮捕 大阪府警",
+      "summary": "ECサイトになりすましたフィッシングサイトを作成し、インターネットに公開したなどとして、大阪府警サイバー犯罪捜査課は不正アクセス禁止法違反の疑いで2人を逮捕したと発表した。.",
+      "summaryJa": "ECサイトになりすましたフィッシングサイトを作成し、インターネットに公開したなどとして、大阪府警サイバー犯罪捜査課は不正アクセス禁止法違反の疑いで2人を逮捕したと発表した。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2025-06-23T08:27:00.000Z",
+      "link": "https://www.itmedia.co.jp/news/articles/2506/23/news093.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu-mc91cbil",
+      "title": "NTT Comも参入 NTTグループはAIエージェント事業に総力を結集できるか？",
+      "titleJa": "NTT Comも参入 NTTグループはAIエージェント事業に総力を結集できるか？",
+      "summary": "“百花繚乱”のAIエージェント市場において、NTT Comが業務、業界別のソリューションを打ち出した。NTTデータも既にAIエージェント市場に参入しているが、NTTグループとしてこの分野に総力を結集する態勢になり得るのだろうか。.",
+      "summaryJa": "“百花繚乱”のAIエージェント市場において、NTT Comが業務、業界別のソリューションを打ち出した。NTTデータも既にAIエージェント市場に参入しているが、NTTグループとしてこの分野に総力を結集する態勢になり得るのだろうか。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2025-06-23T07:00:00.000Z",
+      "link": "https://www.itmedia.co.jp/enterprise/articles/2506/23/news064.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu-mc91cbim",
+      "title": "InfomaticaがAIエージェントに本気 日本に向け「挑戦はリスク、だが待っていては追い付けない」",
+      "titleJa": "InfomaticaがAIエージェントに本気 日本に向け「挑戦はリスク、だが待っていては追い付けない」",
+      "summary": "米Informaticaは年次イベント「Informatica World 2025」で、AIエージェントに関連する取り組みの大幅強化を発表した。日本に向けては、失敗を恐れず挑戦するよう訴えかけている。.",
+      "summaryJa": "米Informaticaは年次イベント「Informatica 世界 2025」で、AIエージェントに関連する取り組みの大幅強化を発表した。日本に向けては、失敗を恐れず挑戦するよう訴えかけている。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2025-06-23T01:00:00.000Z",
+      "link": "https://www.itmedia.co.jp/enterprise/articles/2506/23/news033.html"
+    },
+    {
+      "id": "aHR0cHM6Ly9tb25v-mc91cbim",
+      "title": "AIによる生産要件の自動判定機能が好評な3Dプラットフォーム",
+      "titleJa": "AIによる生産要件の自動判定機能が好評な3Dプラットフォーム",
+      "summary": "LIGHTzは、製造業の設計開発における開発速度や生産性の向上を支援する3Dプラットフォーム「blooplinter」の導入が製造業で進んでいると発表した。特に「AI要件チェック機能」が活用されているという。.",
+      "summaryJa": "LIGHTzは、製造業の設計開発における開発速度や生産性の向上を支援する3Dプラットフォーム「blooplinter」の導入が製造業で進んでいると発表した。特に「AI要件チェック機能」が活用されているという。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2025-06-23T00:00:00.000Z",
+      "link": "https://monoist.itmedia.co.jp/mn/articles/2506/23/news006.html"
+    },
+    {
+      "id": "aHR0cHM6Ly9hdG1h-mc91cbin",
+      "title": "「企業の主体はヒトからAIエージェントに」PwCが生成AIの技術動向を分析",
+      "titleJa": "「企業の主体はヒトからAIエージェントに」PwCが生成AIの技術動向を分析",
+      "summary": "PwCコンサルティングは、「生成AIの将来技術動向」と題したレポートを発表した。現在のLLMが抱える技術的な課題とその克服に向けた進化の方向性などについて分析している。.",
+      "summaryJa": "PwCコンサルティングは、「生成AIの将来技術動向」と題したレポートを発表した。現在のLLMが抱える技術的な課題とその克服に向けた進化の方向性などについて分析している。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2025-06-22T23:00:00.000Z",
+      "link": "https://atmarkit.itmedia.co.jp/ait/articles/2506/23/news025.html"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNo-mc91bzkh",
       "title": "Moratorium on state AI regulation clears Senate hurdle",
       "titleJa": "Moratorium で状態 AI 規制 clears Senate hurdle",
       "summary": "A Republican effort to prevent states from enforcing their own AI regulations cleared a key procedural hurdle on Saturday.",
@@ -401,7 +773,7 @@ const staticNewsData = {
       "link": "https://techcrunch.com/2025/06/22/moratorium-on-state-ai-regulation-clears-senate-hurdle/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc912vb9",
+      "id": "aHR0cHM6Ly90ZWNo-mc91bzkk",
       "title": "LinkedIn CEO says AI writing assistant is not as popular as expected",
       "titleJa": "LinkedIn CEO 述べる AI writing assistant is not として人気の としてexpected",
       "summary": "While LinkedIn users seem to have embraced AI, there’s one area that’s seen less uptake than expected, according to CEO Ryan Roslansky: the AI-generated suggestions for polishing your LinkedIn posts.",
@@ -413,7 +785,7 @@ const staticNewsData = {
       "link": "https://techcrunch.com/2025/06/22/linkedin-ceo-says-ai-writing-assistant-is-not-as-popular-as-expected/"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc912vm1",
+      "id": "aHR0cHM6Ly9ibG9n-mc91bzsm",
       "title": "Search Live: Talk, listen and explore in real time with AI Mode",
       "titleJa": "Search ライブの: 話す, 聞く とexplore で実際の 時間 とAI モード",
       "summary": "Search Live with voice facilitates back-and-forth conversations in AI Mode.",
@@ -425,7 +797,7 @@ const staticNewsData = {
       "link": "https://blog.google/products/search/search-live-ai-mode/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9132ru",
+      "id": "aHR0cHM6Ly93d3cu-mc91c6dd",
       "title": "OpenAI boss: Meta offering $100m plus to poach my staff",
       "titleJa": "OpenAI boss: Meta offering $100m プラス にpoach my スタッフ",
       "summary": "Sam Altman said so far none of his \"best people\" had jumped ship to his big tech rival.",
@@ -437,7 +809,7 @@ const staticNewsData = {
       "link": "https://www.bbc.com/news/articles/c8730088e5do"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc912vbk",
+      "id": "aHR0cHM6Ly90ZWNo-mc91bzkv",
       "title": "Character.AI taps Meta’s former VP of business products as CEO",
       "titleJa": "Character.AI taps Meta’s former VP のビジネス products としてCEO",
       "summary": "Karandeep Anand comes to Character. AI with experience running advertising products that reached billions of users on Meta's apps.",
@@ -449,7 +821,7 @@ const staticNewsData = {
       "link": "https://techcrunch.com/2025/06/20/character-ai-taps-metas-former-vp-of-business-products-as-ceo/"
     },
     {
-      "id": "aHR0cHM6Ly9tYWNo-mc9131vg",
+      "id": "aHR0cHM6Ly9tYWNo-mc91c5yf",
       "title": "7 Concepts Behind Large Language Models Explained in 7 Minutes",
       "titleJa": "7 Concepts Behind 大きい Language Models Explained で7 Minutes",
       "summary": "If you've been using large language models like GPT-4 or Claude, you've probably wondered how they can write actually usable code, explain complex topics, or even help you debug your morning coffee routine (just kidding.",
@@ -461,7 +833,7 @@ const staticNewsData = {
       "link": "https://machinelearningmastery.com/7-concepts-behind-large-language-models-explained-in-7-minutes/"
     },
     {
-      "id": "aHR0cHM6Ly9zaW5n-mc9137vb",
+      "id": "aHR0cHM6Ly9zaW5n-mc91cbnj",
       "title": "‘Cyborg Tadpoles’ With Super Soft Neural Implants Shine Light on Early Brain Development",
       "titleJa": "‘Cyborg Tadpoles’ とSuper 柔らかい Neural Implants Shine 軽い でEarly 脳 発展",
       "summary": "Tofu-like probes capture the activity of individual neurons in tadpole embryos as they grow. The post ‘Cyborg Tadpoles’ With Super Soft Neural Implants Shine Light on Early Brain Development appeared first on SingularityHub.",
@@ -473,7 +845,7 @@ const staticNewsData = {
       "link": "https://singularityhub.com/2025/06/20/cyborg-tadpoles-with-super-soft-neural-implants-shine-light-on-early-brain-development/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo-mc912vbf",
+      "id": "aHR0cHM6Ly90ZWNo-mc91bzkp",
       "title": "Cluely, a startup that helps ‘cheat on everything,’ raises $15M from a16z",
       "titleJa": "Cluely, スタートアップ その支援 ‘cheat でeverything,’ raises $15M からa16z",
       "summary": "Cluely's new funding comes roughly two months after it raised $5. 3 million in seed funding co-led by Abstract Ventures and Susa Ventures.",
@@ -485,7 +857,7 @@ const staticNewsData = {
       "link": "https://techcrunch.com/2025/06/20/cluely-a-startup-that-helps-cheat-on-everything-raises-15m-from-a16z/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vi7",
+      "id": "aHR0cHM6Ly93d3cu-mc91bznc",
       "title": "‘Wall-E With a Gun’: Midjourney Generates Videos of Disney Characters Amid Massive Copyright Lawsuit",
       "titleJa": "‘Wall-E とGun’: Midjourney Generates Videos のDisney Characters Amid 大規模な Copyright Lawsuit",
       "summary": "A week after Disney and Universal filed a landmark lawsuit against Midjourney, the generative AI startup’s new V1 video tool will make clips of Shrek, Deadpool, and other famous creations.",
@@ -497,7 +869,7 @@ const staticNewsData = {
       "link": "https://www.wired.com/story/midjourney-generates-videos-of-disney-characters-amid-massive-copyright-lawsuit/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxp-mc9137t5",
+      "id": "aHR0cHM6Ly9zaWxp-mc91cbv3",
       "title": "Meta debuts $399 AI-powered Oakley Meta HSTN smart glasses",
       "titleJa": "Meta debuts $399 AI-powered Oakley Meta HSTN スマートな glasses",
       "summary": "today debuted a pair of smart glasses called the Oakley Meta HSTN that will ship with a built-in artificial intelligence assistant. The device is the fruit of a collaboration with sport eyewear maker Oakley.",
@@ -509,7 +881,7 @@ const staticNewsData = {
       "link": "https://siliconangle.com/2025/06/20/meta-debuts-ai-powered-oakley-meta-hstn-smart-glasses/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxp-mc9137t7",
+      "id": "aHR0cHM6Ly9zaWxp-mc91cbv4",
       "title": "The AI infrastructure boom: From sovereign compute to global creativity",
       "titleJa": "AI infrastructure boom: からsovereign compute にglobal creativity",
       "summary": "A tidal wave of AI-driven innovation is reshaping global technology. At its forefront is a massive buildout of next-gen infrastructure comprising data centers, custom silicon, sovereign AI models and a rising culture of AI entrepreneurship.",
@@ -521,7 +893,7 @@ const staticNewsData = {
       "link": "https://siliconangle.com/2025/06/20/ai-infrastructure-boom-sovereign-ai-compute-global-creativity-roboticsaiinfrastructure/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxp-mc9137t8",
+      "id": "aHR0cHM6Ly9zaWxp-mc91cbv4",
       "title": "Doing data differently: Qlik turns strategy into execution with AI-powered data",
       "titleJa": "Doing データ differently: Qlik turns 戦略 into execution とAI-powered データ",
       "summary": "Data is the nucleus of today s digital enterprise. Every operational facet — from manufacturing to marketing, customer support and logistics — relies on data for efficiency and scalability.",
@@ -533,7 +905,7 @@ const staticNewsData = {
       "link": "https://siliconangle.com/2025/06/20/data-management-strategy-execution-ai-powered-qlikconnect/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxp-mc9137t9",
+      "id": "aHR0cHM6Ly9zaWxp-mc91cbv5",
       "title": "Qlik’s Talend powers new data solutions for circular economy specialist Reworld",
       "titleJa": "Qlik’s Talend powers 新しい データ solutions のためのcircular 経済 specialist Reworld",
       "summary": "Building applications for the circular economy takes reliable data, and sustainable waste solutions provider Reworld Holding Corp. was coming up short in this particular area. The company was struggling with access to reliable data from its various systems and reporting tools.",
@@ -545,7 +917,7 @@ const staticNewsData = {
       "link": "https://siliconangle.com/2025/06/20/qliks-talend-powers-reliable-data-reworld-qlikconnect/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxp-mc9137ta",
+      "id": "aHR0cHM6Ly9zaWxp-mc91cbv6",
       "title": "Self-serve analytics: BT Group embraces new capabilities for structured data with Qlik Answers",
       "titleJa": "Self-serve analytics: BT グループ embraces 新しい capabilities のための構造化された データ とQlik 答える",
       "summary": "Building on its introduction last year of Qlik Answers for unstructured data, QlikTech International AB unveiled a new AI agentic experience in May.",
@@ -557,7 +929,7 @@ const staticNewsData = {
       "link": "https://siliconangle.com/2025/06/20/bt-group-structured-data-qlik-answers-qlikconnect/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxp-mc9137tb",
+      "id": "aHR0cHM6Ly9zaWxp-mc91cbv7",
       "title": "Foodbank Victoria partners with Qlik to improve food distribution system",
       "titleJa": "Foodbank Victoria partners とQlik に改善 食物 distribution システム",
       "summary": "Foodbank Victoria is distributing an impressive 25 million meals a year to provide hunger relief. It also runs a school breakfast program that goes out to about 1,200 schools.",
@@ -569,7 +941,7 @@ const staticNewsData = {
       "link": "https://siliconangle.com/2025/06/20/foodbank-victoria-qlik-hunger-relief-qlikconnect/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxp-mc9137tc",
+      "id": "aHR0cHM6Ly9zaWxp-mc91cbv8",
       "title": "Qlik leads with ‘ecosystem-first’ strategy in servicing customers",
       "titleJa": "Qlik leads と‘ecosystem-first’ 戦略 でservicing customers",
       "summary": "A strong partner network is key for managing an increasingly complex infrastructure based on artificial intelligence and the multicloud. QlikTech International AB has prioritized collaboration with companies such as Snowflake Inc. and Amazon Web Services Inc.",
@@ -581,7 +953,7 @@ const staticNewsData = {
       "link": "https://siliconangle.com/2025/06/20/qlik-cloud-ecosystem-partner-network-qlikconnect/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxp-mc9137td",
+      "id": "aHR0cHM6Ly9zaWxp-mc91cbv9",
       "title": "Empowering women in data: Qlik Connect 2025 champions diversity in AI development",
       "titleJa": "Empowering women でデータ: Qlik Connect 2025 champions diversity でAI 発展",
       "summary": "At Qlik Connect 2025, the spotlight rested extensively on cutting-edge developments and partnerships in data and AI. Subsequently, it turned to inclusion, mentorship and the future of women in data, examining the current state of affairs and proffering areas of improvement.",
@@ -593,7 +965,7 @@ const staticNewsData = {
       "link": "https://siliconangle.com/2025/06/20/empowering-women-in-data-diversity-ai-development-qlikconnect/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9132rt",
+      "id": "aHR0cHM6Ly93d3cu-mc91c6dc",
       "title": "BBC threatens AI firm with legal action over unauthorised content use",
       "titleJa": "BBC threatens AI 会社 とlegal 行動 over unauthorised コンテンツ 使用",
       "summary": "It is first time that the BBC has taken such action regarding alleged scraping of its content for AI.",
@@ -605,7 +977,7 @@ const staticNewsData = {
       "link": "https://www.bbc.com/news/articles/cy7ndgylzzmo"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vhs",
+      "id": "aHR0cHM6Ly93d3cu-mc91bzm8",
       "title": "The Download: talking dirty with DeepSeek, and the risks and rewards of calorie restriction",
       "titleJa": "Download: talking 汚い とDeepSeek, とrisks とrewards のcalorie restriction",
       "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology.",
@@ -617,7 +989,7 @@ const staticNewsData = {
       "link": "https://www.technologyreview.com/2025/06/20/1119102/the-download-talking-dirty-with-deepseek-and-the-risks-and-rewards-of-calorie-restriction/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vic",
+      "id": "aHR0cHM6Ly93d3cu-mc91bznh",
       "title": "How AI Is Helping Students Find the Right College",
       "titleJa": "どのようにAI Is Helping Students 発見 正しい College",
       "summary": "College counselors in the US are too overworked to meet with every student. A new wave of specialized AI tools can learn students’ interests, then recommend schools, areas of study, and scholarships.",
@@ -629,7 +1001,7 @@ const staticNewsData = {
       "link": "https://www.wired.com/story/how-ai-is-helping-kids-find-the-right-college/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vhu",
+      "id": "aHR0cHM6Ly93d3cu-mc91bzma",
       "title": "How a 30-year-old techno-thriller predicted our digital isolation",
       "titleJa": "どのように30-年-古い techno-thriller predicted our digital isolation",
       "summary": "In April, Mark Zuckerberg, as tech billionaires are so fond of doing these days, pontificated at punishing length on a podcast. In the interview, he addressed America’s loneliness epidemic: “The average American has—I think it’s fewer than three friends.",
@@ -641,7 +1013,7 @@ const staticNewsData = {
       "link": "https://www.technologyreview.com/2025/06/20/1118379/the-net-cyber-thriller-digital-isolation/"
     },
     {
-      "id": "aHR0cHM6Ly9lbWVy-mc913dra",
+      "id": "aHR0cHM6Ly9lbWVy-mc91chwu",
       "title": "Artificial Intelligence at CVS Health",
       "titleJa": "人工の Intelligence でCVS 健康",
       "summary": "As one of the largest healthcare companies in the United States, CVS Health generated $357. 8 billion in revenue in 2023 and serves over 100 million people annually across its insurance, retail, and pharmacy operations.",
@@ -653,7 +1025,7 @@ const staticNewsData = {
       "link": "https://emerj.com/artificial-intelligence-at-cvs-health/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vhw",
+      "id": "aHR0cHM6Ly93d3cu-mc91bzme",
       "title": "It’s pretty easy to get DeepSeek to talk dirty",
       "titleJa": "It’s かなり 簡単な に取得 DeepSeek に話す 汚い",
       "summary": "AI companions like Replika are designed to engage in intimate exchanges, but people use general-purpose chatbots for sex talk too, despite their stricter content moderation policies. Now new research shows that not all chatbots are equally willing to talk dirty: DeepSeek is the easiest to convince.",
@@ -665,7 +1037,7 @@ const staticNewsData = {
       "link": "https://www.technologyreview.com/2025/06/19/1119066/ai-chatbot-dirty-talk-deepseek-replika/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc913206",
+      "id": "aHR0cHM6Ly93d3cu-mc91c5jm",
       "title": "New methods boost reasoning in small and large language models",
       "titleJa": "新しい methods boost reasoning で小さい と大きい language models",
       "summary": "New techniques are reimagining how LLMs reason. By combining symbolic logic, mathematical rigor, and adaptive planning, these methods enable models to tackle complex, real-world problems across a variety of fields.",
@@ -677,7 +1049,7 @@ const staticNewsData = {
       "link": "https://www.microsoft.com/en-us/research/blog/new-methods-boost-reasoning-in-small-and-large-language-models/"
     },
     {
-      "id": "aHR0cHM6Ly9zeW5j-mc9132f3",
+      "id": "aHR0cHM6Ly9zeW5j-mc91c634",
       "title": "MIT Researchers Unveil “SEAL”: A New Step Towards Self-Improving AI",
       "titleJa": "MIT Researchers 発表 “SEAL”: 新しい ステップ Towards Self-Improving AI",
       "summary": "MIT introduces SEAL, a framework enabling large language models to self-edit and update their weights via reinforcement learning. The post MIT Researchers Unveil “SEAL”: A New Step Towards Self-Improving AI first appeared on Synced.",
@@ -689,7 +1061,7 @@ const staticNewsData = {
       "link": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vi9",
+      "id": "aHR0cHM6Ly93d3cu-mc91bzne",
       "title": "Seriously, What Is ‘Superintelligence’?",
       "titleJa": "Seriously, 何をIs ‘Superintelligence’?",
       "summary": "In this episode of Uncanny Valley, we talk about Meta’s recent investment in Scale AI and its move to build a superintelligence AI research lab. So we ask: What is superintelligence anyway.",
@@ -701,7 +1073,7 @@ const staticNewsData = {
       "link": "https://www.wired.com/story/uncanny-valley-podcast-superintelligence/"
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu-mc9131xp",
+      "id": "aHR0cHM6Ly9hd3Mu-mc91c5dm",
       "title": "Building trust in AI: The AWS approach to the EU AI Act",
       "titleJa": "Building trust でAI: AWS アプローチ にEU AI Act",
       "summary": "The EU AI Act establishes comprehensive regulations for AI development and deployment within the EU.",
@@ -713,7 +1085,7 @@ const staticNewsData = {
       "link": "https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-the-aws-approach-to-the-eu-ai-act/"
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu-mc9131xq",
+      "id": "aHR0cHM6Ly9hd3Mu-mc91c5dn",
       "title": "Update on the AWS DeepRacer Student Portal",
       "titleJa": "Update でAWS DeepRacer Student Portal",
       "summary": "Starting July 14, 2025, the AWS DeepRacer Student Portal will enter a maintenance phase where new registrations will be disabled.",
@@ -725,7 +1097,7 @@ const staticNewsData = {
       "link": "https://aws.amazon.com/blogs/machine-learning/update-on-the-aws-deepracer-student-portal/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vhx",
+      "id": "aHR0cHM6Ly93d3cu-mc91bzmg",
       "title": "The Download: future grids, and bad boy bots",
       "titleJa": "Download: 将来の grids, と悪い boy bots",
       "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology. Before we embark on our usual programming we’re thrilled to share that The Download won Best Technology Newsletter at this year s Publisher Newsletter Awards.",
@@ -737,7 +1109,7 @@ const staticNewsData = {
       "link": "https://www.technologyreview.com/2025/06/19/1119059/the-download-future-grids-and-bad-boy-bots/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vif",
+      "id": "aHR0cHM6Ly93d3cu-mc91bznj",
       "title": "Amazon Rebuilt Alexa Using a ‘Staggering’ Amount of AI Tools",
       "titleJa": "Amazon Rebuilt Alexa Using ‘Staggering’ Amount のAI Tools",
       "summary": "From writing code to testing the new Alexa+, Amazon engineers used generative AI throughout the build process. We talk to Amazon's Daniel Rausch about the next version of the voice assistant.",
@@ -749,7 +1121,7 @@ const staticNewsData = {
       "link": "https://www.wired.com/story/amazon-daniel-rausch-alexa-plus/"
     },
     {
-      "id": "aHR0cHM6Ly9naXRo-mc9132sv",
+      "id": "aHR0cHM6Ly9naXRo-mc91cbew",
       "title": "GitHub Copilot Spaces: Bring the right context to every suggestion",
       "titleJa": "GitHub Copilot Spaces: 持参 正しい context にevery suggestion",
       "summary": "Learn how to build your first space in minutes and customize Copilot to match your team's unique coding style and workflows. The post GitHub Copilot Spaces: Bring the right context to every suggestion appeared first on The GitHub Blog.",
@@ -761,7 +1133,7 @@ const staticNewsData = {
       "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-spaces-bring-the-right-context-to-every-suggestion/"
     },
     {
-      "id": "aHR0cHM6Ly9naXRo-mc9132sw",
+      "id": "aHR0cHM6Ly9naXRo-mc91cbex",
       "title": "5 tips for using GitHub Copilot with issues to boost your productivity",
       "titleJa": "5 tips のためのusing GitHub Copilot とissues にboost your productivity",
       "summary": "Reduce context-switching, minimize manual work, and accelerate resolution times with these new AI-powered features. The post 5 tips for using GitHub Copilot with issues to boost your productivity appeared first on The GitHub Blog.",
@@ -773,7 +1145,7 @@ const staticNewsData = {
       "link": "https://github.blog/ai-and-ml/github-copilot/5-tips-for-using-github-copilot-with-issues-to-boost-your-productivity/"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc912w2h",
+      "id": "aHR0cHM6Ly9ibG9n-mc91c03x",
       "title": "Hexagon Taps NVIDIA Robotics and AI Software to Build and Deploy AEON, a New Humanoid",
       "titleJa": "Hexagon Taps NVIDIA ロボティクス とAI ソフトウェア に構築 とDeploy AEON, 新しい Humanoid",
       "summary": "As a global labor shortage leaves 50 million positions unfilled across industries like manufacturing and logistics, Hexagon — a global leader in measurement technologies — is developing humanoid robots that can lend a helping hand.",
@@ -785,7 +1157,19 @@ const staticNewsData = {
       "link": "https://blogs.nvidia.com/blog/hexagon-robotics-ai-software-aeon-humanoid/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnN0-mc912vrw",
+      "id": "aHR0cHM6Ly93d3cu-mc91chj0",
+      "title": "The hidden cost of over-instrumentation: Why more tracking can hurt product teams",
+      "titleJa": "隠れた コスト のover-instrumentation: なぜより多い tracking can hurt product teams",
+      "summary": "Stop tracking everything: Rethink your data strategy If you’ve ever opened a product analytics dashboard and scrolled past dozens of unlabeled metrics, charts with no viewers, and events no one can explain—welcome to the world of metric sprawl.",
+      "summaryJa": "停止 tracking everything: Rethink your データ 戦略 If you’ve ever opened product analytics dashboard とscrolled 過去の dozens のunlabeled metrics, charts とno viewers, とevents no one can explain—welcome に世界 のmetric sprawl.",
+      "source": "Data Science Central",
+      "category": "tech",
+      "importance": 65,
+      "pubDate": "2025-06-17T14:22:12.000Z",
+      "link": "https://www.datasciencecentral.com/the-hidden-cost-of-over-instrumentation-why-more-tracking-can-hurt-product-teams/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnN0-mc91bzu2",
       "title": "A shark scientist reflects on Jaws at 50",
       "titleJa": "shark scientist reflects でJaws で50",
       "summary": "Ars chats with marine biologist David Shiffman about the film's legacy—both good and bad.",
@@ -797,7 +1181,7 @@ const staticNewsData = {
       "link": "https://arstechnica.com/science/2025/06/a-shark-scientist-reflects-on-jaws-at-50/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnN0-mc912vry",
+      "id": "aHR0cHM6Ly9hcnN0-mc91bzu7",
       "title": "Record DDoS pummels site with once-unimaginable 7.3Tbps of junk traffic",
       "titleJa": "Record DDoS pummels サイト と一度-unimaginable 7.3Tbps のjunk traffic",
       "summary": "Attacker rained down the equivalent of 9,300 full-length HD movies in just 45 seconds.",
@@ -809,7 +1193,7 @@ const staticNewsData = {
       "link": "https://arstechnica.com/security/2025/06/record-ddos-pummels-site-with-once-unimaginable-7-3tbps-of-junk-traffic/"
     },
     {
-      "id": "aHR0cHM6Ly9weXRv-mc9131v1",
+      "id": "aHR0cHM6Ly9weXRv-mc91c5hu",
       "title": "Fault Tolerant Llama: training with 2000 synthetic failures every ~15 seconds and no checkpoints on Crusoe L40S",
       "titleJa": "Fault Tolerant Llama: 訓練 と2000 synthetic failures every ~15 seconds とno checkpoints でCrusoe L40S",
       "summary": "Collaborators: Less Wright, Howard Huang, Chien-Chin Huang, Crusoe: Martin Cala, Ethan Petersen tl;dr: we used torchft and torchtitan to train a model in a real-world environment with extreme synthetic failure.",
@@ -821,7 +1205,7 @@ const staticNewsData = {
       "link": "https://pytorch.org/blog/fault-tolerant-llama-training-with-2000-synthetic-failures-every-15-seconds-and-no-checkpoints-on-crusoe-l40s/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnN0-mc912vs1",
+      "id": "aHR0cHM6Ly9hcnN0-mc91bzud",
       "title": "MIT student prints AI polymer masks to restore paintings in hours",
       "titleJa": "MIT student prints AI polymer masks にrestore paintings でhours",
       "summary": "Removable transparent films apply digital restorations directly to damaged artwork.",
@@ -833,7 +1217,7 @@ const staticNewsData = {
       "link": "https://arstechnica.com/ai/2025/06/mit-student-prints-ai-polymer-masks-to-restore-paintings-in-hours/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnN0-mc912vs3",
+      "id": "aHR0cHM6Ly9hcnN0-mc91bzuj",
       "title": "YouTube is hiding an excellent, official high-speed Pac-Man mod in plain sight",
       "titleJa": "YouTube is hiding 優秀, 公式の 高い-speed Pac-Man mod でplain sight",
       "summary": "Pac-Man Superfast turns the arcade classic into a high-octane reflex test.",
@@ -845,7 +1229,7 @@ const staticNewsData = {
       "link": "https://arstechnica.com/gaming/2025/06/one-of-the-best-pac-man-games-in-years-is-playable-on-youtube-of-all-places/"
     },
     {
-      "id": "aHR0cHM6Ly9tYWNo-mc9131vc",
+      "id": "aHR0cHM6Ly9tYWNo-mc91c5yd",
       "title": "Beyond GridSearchCV: Advanced Hyperparameter Tuning Strategies for Scikit-learn Models",
       "titleJa": "Beyond GridSearchCV: 高度な Hyperparameter Tuning Strategies のためのScikit-学習 Models",
       "summary": "Ever felt like trying to find a needle in a haystack. That’s part of the process of building and optimizing machine learning models, particularly complex ones like ensembles and neural networks, where several hyperparameters need to be manually set by us before training them.",
@@ -857,7 +1241,7 @@ const staticNewsData = {
       "link": "https://machinelearningmastery.com/beyond-gridsearchcv-advanced-hyperparameter-tuning-strategies-for-scikit-learn-models/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9132dc",
+      "id": "aHR0cHM6Ly93d3cu-mc91c60z",
       "title": "Top 5 Frameworks for Distributed Machine Learning",
       "titleJa": "上 5 Frameworks のためのDistributed 機械 学習",
       "summary": "Use these frameworks to optimize memory and compute resources, scale your machine learning workflow, speed up your processes, and reduce the overall cost.",
@@ -869,7 +1253,7 @@ const staticNewsData = {
       "link": "https://www.kdnuggets.com/top-5-frameworks-for-distributed-machine-learning"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vie",
+      "id": "aHR0cHM6Ly93d3cu-mc91bzni",
       "title": "How Much Energy Does AI Use? The People Who Know Aren’t Saying",
       "titleJa": "どのようにMuch Energy Does AI 使用? People 誰が知る Aren’t Saying",
       "summary": "A growing body of research attempts to put a number on energy use and AI—even as the companies behind the most popular models keep their carbon emissions a secret.",
@@ -881,7 +1265,7 @@ const staticNewsData = {
       "link": "https://www.wired.com/story/ai-carbon-emissions-energy-unknown-mystery-research/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9131yn",
+      "id": "aHR0cHM6Ly93d3cu-mc91c5ih",
       "title": "The AI that writes climate-friendly cement recipes in seconds",
       "titleJa": "AI その書く climate-friendly cement recipes でseconds",
       "summary": "AI researchers in Switzerland have found a way to dramatically cut cement s carbon footprint by redesigning its recipe. Their system simulates thousands of ingredient combinations, pinpointing those that keep cement strong while emitting far less CO2 all in seconds.",
@@ -893,7 +1277,7 @@ const staticNewsData = {
       "link": "https://www.sciencedaily.com/releases/2025/06/250619035502.htm"
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu-mc912vnw",
+      "id": "aHR0cHM6Ly9vcGVu-mc91bzsh",
       "title": "Toward understanding and preventing misalignment generalization",
       "titleJa": "Toward understanding とpreventing misalignment generalization",
       "summary": "We study how training on incorrect responses can cause broader misalignment in language models and identify an internal feature driving this behavior—one that can be reversed with minimal fine-tuning.",
@@ -905,7 +1289,7 @@ const staticNewsData = {
       "link": "https://openai.com/index/emergent-misalignment"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9132dg",
+      "id": "aHR0cHM6Ly93d3cu-mc91c611",
       "title": "NotebookLM + Deep Research: The Ultimate Learning Hack",
       "titleJa": "NotebookLM + 深い 研究: Ultimate 学習 Hack",
       "summary": "Let’s unlock smarter, faster learning by combining NotebookLM with deep research strategies.",
@@ -917,7 +1301,19 @@ const staticNewsData = {
       "link": "https://www.kdnuggets.com/notebooklm-deep-research-the-ultimate-learning-hack"
     },
     {
-      "id": "aHR0cHM6Ly9tYWNo-mc9131vd",
+      "id": "aHR0cHM6Ly93d3cu-mc91cbio",
+      "title": "MIXIの会話ロボ、ASD・ADHD当事者向けの新モデル発売 会話を通じ、自身の特性理解するサポート",
+      "titleJa": "MIXIの会話ロボ、ASD・ADHD当事者向けの新モデル発売 会話を通じ、自身の特性理解するサポート",
+      "summary": "MIXIは、自閉スペクトラム症（ASD）と注意欠如・多動症（ADHD）当事者の社会人向けに、AI会話ロボット「Romi」の新モデル「ライフスキルトレーニングモデル」を発売した。Romiとの会話を通じて、ASD・ADHD当事者が自身の特性を理解する手助けをするという。.",
+      "summaryJa": "MIXIは、自閉スペクトラム症（ASD）と注意欠如・多動症（ADHD）当事者の社会人向けに、AI会話ロボット「Romi」の新モデル「ライフスキルトレーニングモデル」を発売した。Romiとの会話を通じて、ASD・ADHD当事者が自身の特性を理解する手助けをするという。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 55,
+      "pubDate": "2025-06-20T09:36:00.000Z",
+      "link": "https://www.itmedia.co.jp/aiplus/articles/2506/20/news099.html"
+    },
+    {
+      "id": "aHR0cHM6Ly9tYWNo-mc91c5yd",
       "title": "A Gentle Introduction to Multi-Head Attention and Grouped-Query Attention",
       "titleJa": "優しい Introduction にMulti-頭 Attention とGrouped-Query Attention",
       "summary": "This post is divided into three parts; they are: • Why Attention is Needed • The Attention Operation • Multi-Head Attention (MHA) • Grouped-Query Attention (GQA) and Multi-Query Attention (MQA) Traditional neural networks struggle with long-range dependencies in sequences.",
@@ -929,7 +1325,7 @@ const staticNewsData = {
       "link": "https://machinelearningmastery.com/a-gentle-introduction-to-multi-head-attention-and-grouped-query-attention/"
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu-mc9131xn",
+      "id": "aHR0cHM6Ly9hd3Mu-mc91c5dl",
       "title": "Build a scalable AI video generator using Amazon SageMaker AI and CogVideoX",
       "titleJa": "構築 scalable AI 動画 generator using Amazon SageMaker AI とCogVideoX",
       "summary": "In recent years, the rapid advancement of artificial intelligence and machine learning (AI/ML) technologies has revolutionized various aspects of digital content creation.",
@@ -941,7 +1337,7 @@ const staticNewsData = {
       "link": "https://aws.amazon.com/blogs/machine-learning/build-a-scalable-ai-video-generator-using-amazon-sagemaker-ai-and-cogvideox/"
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu-mc9131xr",
+      "id": "aHR0cHM6Ly9hd3Mu-mc91c5do",
       "title": "Accelerate foundation model training and inference with Amazon SageMaker HyperPod and Amazon SageMaker Studio",
       "titleJa": "Accelerate 基盤モデル 訓練 とinference とAmazon SageMaker HyperPod とAmazon SageMaker Studio",
       "summary": "In this post, we discuss how SageMaker HyperPod and SageMaker Studio can improve and speed up the development experience of data scientists by using IDEs and tooling of SageMaker Studio and the scalability and resiliency of SageMaker HyperPod with Amazon EKS.",
@@ -953,7 +1349,7 @@ const staticNewsData = {
       "link": "https://aws.amazon.com/blogs/machine-learning/accelerate-foundation-model-training-and-inference-with-amazon-sagemaker-hyperpod-and-amazon-sagemaker-studio/"
     },
     {
-      "id": "aHR0cHM6Ly9tYWNo-mc9131ve",
+      "id": "aHR0cHM6Ly9tYWNo-mc91c5ye",
       "title": "10 Must-Know Python Libraries for MLOps in 2025",
       "titleJa": "10 Must-知る Python Libraries のためのMLOps で2025",
       "summary": "MLOps, or machine learning operations, is all about managing the end-to-end process of building, training, deploying, and maintaining machine learning models.",
@@ -965,7 +1361,7 @@ const staticNewsData = {
       "link": "https://machinelearningmastery.com/10-must-know-python-libraries-for-mlops-in-2025/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vhz",
+      "id": "aHR0cHM6Ly93d3cu-mc91bzmj",
       "title": "Is this the electric grid of the future?",
       "titleJa": "Is このelectric grid の将来の?",
       "summary": "One morning in the middle of March, a slow-moving spring blizzard stalled above eastern Nebraska, pounding the state capital of Lincoln with 60-mile-per-hour winds, driving sleet, and up to eight inches of snow.",
@@ -977,7 +1373,7 @@ const staticNewsData = {
       "link": "https://www.technologyreview.com/2025/06/19/1118248/electric-grid-future-lincoln-nebraska-utilities-energy-transition/"
     },
     {
-      "id": "aHR0cHM6Ly9odWdn-mc9131k6",
+      "id": "aHR0cHM6Ly9odWdn-mc91c55p",
       "title": "(LoRA) Fine-Tuning FLUX.1-dev on Consumer Hardware",
       "titleJa": "(LoRA) ファインチューニング FLUX.1-dev でConsumer ハードウェア",
       "summary": "(LoRA) Fine-Tuning FLUX. 1-dev on Consumer Hardware.",
@@ -989,7 +1385,7 @@ const staticNewsData = {
       "link": "https://huggingface.co/blog/flux-qlora"
     },
     {
-      "id": "aHR0cHM6Ly9lbWVy-mc913drb",
+      "id": "aHR0cHM6Ly9lbWVy-mc91chwv",
       "title": "How Leaders in Regulated Industries Are Scaling Enterprise AI – with Leaders from Searce, Blue Cross Blue Shield, US Bank, and Citi",
       "titleJa": "どのようにLeaders でRegulated Industries Are Scaling 企業 AI – とLeaders からSearce, Blue Cross Blue Shield, US 銀行, とCiti",
       "summary": "This interview analysis is sponsored by Searce and was written, edited, and published in alignment with our Emerj sponsored content guidelines. Learn more about our thought leadership and content creation services on our Emerj Media Services page.",
@@ -1001,7 +1397,7 @@ const staticNewsData = {
       "link": "https://emerj.com/how-leaders-in-regulated-industries-are-scaling-enterprise-ai-with-leaders-from-searce-blue-cross-blue-shield-us-bank-and-citi/"
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu-mc9131xs",
+      "id": "aHR0cHM6Ly9hd3Mu-mc91c5dp",
       "title": "Meeting summarization and action item extraction with Amazon Nova",
       "titleJa": "Meeting summarization と行動 item extraction とAmazon Nova",
       "summary": "In this post, we present a benchmark of different understanding models from the Amazon Nova family available on Amazon Bedrock, to provide insights on how you can choose the best model for a meeting summarization task.",
@@ -1013,7 +1409,7 @@ const staticNewsData = {
       "link": "https://aws.amazon.com/blogs/machine-learning/meeting-summarization-and-action-item-extraction-with-amazon-nova/"
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu-mc9131xt",
+      "id": "aHR0cHM6Ly9hd3Mu-mc91c5dp",
       "title": "Building a custom text-to-SQL agent using Amazon Bedrock and Converse API",
       "titleJa": "Building 慣習 text-to-SQL agent using Amazon Bedrock とConverse API",
       "summary": "Developing robust text-to-SQL capabilities is a critical challenge in the field of natural language processing (NLP) and database management. The complexity of NLP and database management increases in this field, particularly while dealing with complex queries and database structures.",
@@ -1025,7 +1421,7 @@ const staticNewsData = {
       "link": "https://aws.amazon.com/blogs/machine-learning/building-a-custom-text-to-sql-agent-using-amazon-bedrock-and-converse-api/"
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu-mc9131xu",
+      "id": "aHR0cHM6Ly9hd3Mu-mc91c5dq",
       "title": "Accelerate threat modeling with generative AI",
       "titleJa": "Accelerate threat modeling と生成AI",
       "summary": "In this post, we explore how generative AI can revolutionize threat modeling practices by automating vulnerability identification, generating comprehensive attack scenarios, and providing contextual mitigation strategies.",
@@ -1037,7 +1433,7 @@ const staticNewsData = {
       "link": "https://aws.amazon.com/blogs/machine-learning/accelerate-threat-modeling-with-generative-ai/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vig",
+      "id": "aHR0cHM6Ly93d3cu-mc91bznl",
       "title": "This AI Model Never Stops Learning",
       "titleJa": "このAI モデル 決して 停止 学習",
       "summary": "Scientists at Massachusetts Institute of Technology have devised a way for large language models to keep learning on the fly—a step toward building AI that continually improves itself.",
@@ -1049,7 +1445,7 @@ const staticNewsData = {
       "link": "https://www.wired.com/story/this-ai-model-never-stops-learning/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9132df",
+      "id": "aHR0cHM6Ly93d3cu-mc91c610",
       "title": "Getting Started with Cassandra: Installation and Setup Guide",
       "titleJa": "Getting 開始した とCassandra: Installation とSetup Guide",
       "summary": "Apache Cassandra is a distributed NoSQL database for managing massive data with high availability. This guide covers its installation on Linux, Windows, and macOS.",
@@ -1061,7 +1457,7 @@ const staticNewsData = {
       "link": "https://www.kdnuggets.com/getting-started-with-cassandra-installation-and-setup-guide"
     },
     {
-      "id": "aHR0cHM6Ly9ibG9n-mc912w2g",
+      "id": "aHR0cHM6Ly9ibG9n-mc91c03w",
       "title": "Plug and Play: Build a G-Assist Plug-In Today",
       "titleJa": "Plug と再生: 構築 G-Assist Plug-で今日",
       "summary": "Project G-Assist — available through the NVIDIA App — is an experimental AI assistant that helps tune, control and optimize NVIDIA GeForce RTX systems.",
@@ -1073,7 +1469,7 @@ const staticNewsData = {
       "link": "https://blogs.nvidia.com/blog/rtx-ai-garage-g-assist-hackathon-plug-in/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc912vii",
+      "id": "aHR0cHM6Ly93d3cu-mc91bznn",
       "title": "Authors Are Posting TikToks to Protest AI Use in Writing—and to Prove They Aren’t Doing It",
       "titleJa": "Authors Are Posting TikToks にProtest AI 使用 でWriting—とにProve They Aren’t Doing It",
       "summary": "Traditional and indie authors are flooding #WritersTok with videos of them editing their manuscripts to refute accusations of generative AI use—and bring readers into their very human process.",
@@ -1085,7 +1481,7 @@ const staticNewsData = {
       "link": "https://www.wired.com/story/authors-are-posting-tiktoks-to-protest-ai-use-in-writing-and-to-prove-they-arent-doing-it/"
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu-mc912vns",
+      "id": "aHR0cHM6Ly9vcGVu-mc91bzsd",
       "title": "Preparing for future AI risks in biology",
       "titleJa": "Preparing のための将来の AI risks でbiology",
       "summary": "Advanced AI can transform biology and medicine—but also raises biosecurity risks. We’re proactively assessing capabilities and implementing safeguards to prevent misuse.",
@@ -1097,7 +1493,7 @@ const staticNewsData = {
       "link": "https://openai.com/index/preparing-for-future-ai-capabilities-in-biology"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9132ru",
+      "id": "aHR0cHM6Ly93d3cu-mc91c6dd",
       "title": "Amazon boss says AI will replace jobs at tech giant",
       "titleJa": "Amazon boss 述べる AI will replace jobs でtech giant",
       "summary": "Andy Jassy tells staff to embrace artificial intelligence (AI) as he warns the workforce will get smaller.",
@@ -1109,7 +1505,7 @@ const staticNewsData = {
       "link": "https://www.bbc.com/news/articles/cn0q2v851k9o"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9132df",
+      "id": "aHR0cHM6Ly93d3cu-mc91c611",
       "title": "A Practical Guide to Multimodal Data Analytics",
       "titleJa": "Practical Guide にマルチモーダル データ Analytics",
       "summary": "BigQuery's ObjectRef unifies structured and unstructured data, enabling multimodal analytics via SQL and Python.",
@@ -1121,7 +1517,7 @@ const staticNewsData = {
       "link": "https://www.kdnuggets.com/2025/06/google/a-practical-guide-to-multimodal-data-analytics"
     },
     {
-      "id": "aHR0cHM6Ly9weXRv-mc9131v3",
+      "id": "aHR0cHM6Ly9weXRv-mc91c5hx",
       "title": "DeepNVMe: Affordable I/O scaling for Deep Learning Applications",
       "titleJa": "DeepNVMe: Affordable I/O scaling のための深い 学習 Applications",
       "summary": "Introduction We introduced DeepNVMe in summer 2024 as a suite of optimizations for tackling I/O bottlenecks in Deep Learning (DL). DeepNVMe delivers significant speedups for I/O bound DL workloads by leveraging storage.",
@@ -1133,7 +1529,7 @@ const staticNewsData = {
       "link": "https://pytorch.org/blog/deepnvme-affordable-i-o-scaling-for-deep-learning-applications/"
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu-mc9131xv",
+      "id": "aHR0cHM6Ly9hd3Mu-mc91c5dt",
       "title": "How Anomalo solves unstructured data quality issues to deliver trusted assets for AI with AWS",
       "titleJa": "どのようにAnomalo solves unstructured データ quality issues に配信 信頼された assets のためのAI とAWS",
       "summary": "In this post, we explore how you can use Anomalo with Amazon Web Services (AWS) AI and machine learning (AI/ML) to profile, validate, and cleanse unstructured data collections to transform your data lake into a trusted source for production ready AI initiatives.",
@@ -1145,7 +1541,7 @@ const staticNewsData = {
       "link": "https://aws.amazon.com/blogs/machine-learning/how-anomalo-solves-unstructured-data-quality-issues-to-deliver-trusted-assets-for-ai-with-aws/"
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu-mc9131xw",
+      "id": "aHR0cHM6Ly9hd3Mu-mc91c5du",
       "title": "An innovative financial services leader finds the right AI solution: Robinhood and Amazon Nova",
       "titleJa": "革新的な financial services leader 発見 正しい AI 解決策: Robinhood とAmazon Nova",
       "summary": "In this post, we share how Robinhood delivers democratized finance and real-time market insights using generative AI and Amazon Nova.",
@@ -1157,7 +1553,7 @@ const staticNewsData = {
       "link": "https://aws.amazon.com/blogs/machine-learning/an-innovative-financial-services-leader-finds-the-right-ai-solution-robinhood-and-amazon-nova/"
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu-mc9131xx",
+      "id": "aHR0cHM6Ly9hd3Mu-mc91c5dv",
       "title": "Build conversational interfaces for structured data using Amazon Bedrock Knowledge Bases",
       "titleJa": "構築 conversational interfaces のための構造化された データ using Amazon Bedrock 知識 Bases",
       "summary": "This post provides instructions to configure a structured data retrieval solution, with practical code examples and templates. It covers implementation samples and additional considerations, empowering you to quickly build and scale your conversational data interfaces.",
@@ -1169,7 +1565,7 @@ const staticNewsData = {
       "link": "https://aws.amazon.com/blogs/machine-learning/build-conversational-interfaces-for-structured-data-using-amazon-bedrock-knowledge-bases/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cu-mc9132dh",
+      "id": "aHR0cHM6Ly93d3cu-mc91c612",
       "title": "Deploying the Magistral vLLM Server on Modal",
       "titleJa": "Deploying Magistral vLLM Server でModal",
       "summary": "A guide for Python beginners to build, deploy, and test a Magistral reasoning model.",
@@ -1181,7 +1577,7 @@ const staticNewsData = {
       "link": "https://www.kdnuggets.com/deploying-the-magistral-vllm-server-on-modal"
     },
     {
-      "id": "aHR0cHM6Ly9tYWNo-mc9131vh",
+      "id": "aHR0cHM6Ly9tYWNo-mc91c5yh",
       "title": "How to Combine Scikit-learn, CatBoost, and SHAP for Explainable Tree Models",
       "titleJa": "どのようににCombine Scikit-学習, CatBoost, とSHAP のためのExplainable Tree Models",
       "summary": "Machine learning workflows often involve a delicate balance: you want models that perform exceptionally well, but you also need to understand and explain their predictions.",
