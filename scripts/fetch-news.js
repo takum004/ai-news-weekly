@@ -249,11 +249,11 @@ async function fetchNewsFromRSS() {
   
   // Calculate date 7 days ago and current date
   const now = new Date();
-  const twoDaysAgo = new Date();
-  twoDaysAgo.setDate(twoDaysAgo.getDate() - 2); // より最新のニュースに絞る（2日以内）
+  const oneWeekAgo = new Date();
+  oneWeekAgo.setDate(oneWeekAgo.getDate() - 7); // 1週間以内のニュースを取得
   
   console.log(`Fetching from ${RSS_FEEDS.length} RSS feeds...`);
-  console.log(`Filtering articles between: ${twoDaysAgo.toISOString()} and ${now.toISOString()}`);
+  console.log(`Filtering articles between: ${oneWeekAgo.toISOString()} and ${now.toISOString()}`);
   
   // バッチ処理で並列実行（10個ずつ）
   const batchSize = 10;
@@ -314,8 +314,8 @@ async function fetchNewsFromRSS() {
             // Parse article date
             const articleDate = new Date(item.pubDate || item.isoDate || item.date || new Date());
             
-            // Skip articles older than 2 days or in the future
-            if (articleDate < twoDaysAgo || articleDate > now) {
+            // Skip articles older than 1 week or in the future
+            if (articleDate < oneWeekAgo || articleDate > now) {
               continue;
             }
             
@@ -514,14 +514,18 @@ function calculateImportance(title, content, articleDate) {
   let score = 50;
   const text = (title + ' ' + content).toLowerCase();
   
-  // Date-based scoring (prioritize very recent news)
+  // Date-based scoring (adjusted for 1-week range)
   const now = new Date();
   const hoursSincePublished = (now - new Date(articleDate)) / (1000 * 60 * 60);
   
   if (hoursSincePublished < 24) {
     score += 30; // Articles from last 24 hours get major boost
   } else if (hoursSincePublished < 48) {
-    score += 15; // Articles from last 48 hours get moderate boost
+    score += 20; // Articles from last 48 hours get good boost
+  } else if (hoursSincePublished < 72) {
+    score += 10; // Articles from last 72 hours get moderate boost
+  } else if (hoursSincePublished < 168) {
+    score += 5; // Articles from last week get small boost
   }
   
   // High importance keywords
