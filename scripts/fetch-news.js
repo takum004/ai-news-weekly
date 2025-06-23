@@ -8,18 +8,18 @@ const RSS_FEEDS = [
   // High-frequency AI News Sources (Updated Daily or Multiple Times Daily)
   'https://techcrunch.com/category/artificial-intelligence/feed/', // Very active, daily updates
   'https://www.artificialintelligence-news.com/feed/', // AI-focused, frequent updates
-  'https://venturebeat.com/ai/feed/', // AI section specific feed
-  'https://feeds.feedburner.com/venturebeat/SZYF', // General VentureBeat feed
+  // 'https://venturebeat.com/ai/feed/', // Removed - redirects instead of RSS
+  // 'https://feeds.feedburner.com/venturebeat/SZYF', // Removed - may have issues with feedburner
   'https://www.marktechpost.com/feed/', // Very active AI news
-  'https://www.theinformation.com/feed', // Premium tech news with AI coverage
-  'https://siliconangle.com/category/ai/feed/', // AI category feed
-  'https://www.bloomberg.com/technology/artificial-intelligence/rss.xml', // Bloomberg AI news
+  // 'https://www.theinformation.com/feed', // Removed - paywall/403 error
+  // 'https://siliconangle.com/category/ai/feed/', // Removed - potential 404 or parse errors
+  // 'https://www.bloomberg.com/technology/artificial-intelligence/rss.xml', // Removed - 403 forbidden
   
   // Major Tech Publications - AI Coverage
   'https://www.technologyreview.com/feed/',
   'https://www.wired.com/feed/tag/ai/latest/rss',
   'https://arstechnica.com/feed/',
-  'https://spectrum.ieee.org/rss',
+  // 'https://spectrum.ieee.org/rss', // Removed - certificate/DNS issues
   
   // Major AI Companies & Models - Verified Working
   'https://openai.com/blog/rss.xml',
@@ -38,7 +38,10 @@ const RSS_FEEDS = [
   // Research & Academic Sources - Verified Working
   'https://blog.research.google/feeds/posts/default',
   'https://www.deepmind.com/blog/rss.xml',
-  'https://distill.pub/rss.xml',
+  // 'https://distill.pub/rss.xml', // Removed - site inactive/parse errors
+  'https://bair.berkeley.edu/blog/feed.xml', // Berkeley AI Research
+  'https://aws.amazon.com/blogs/machine-learning/feed/', // AWS ML Blog
+  'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', // ScienceDaily AI
   
   // News & Analysis Platforms - Verified Working
   'https://machinelearningmastery.com/feed/',
@@ -49,73 +52,79 @@ const RSS_FEEDS = [
   'https://www.unite.ai/feed/', // Frequent AI updates
   
   // Industry & Business - Verified Working
-  'https://techcrunch.com/tag/artificial-intelligence/feed/',
+  // 'https://techcrunch.com/tag/artificial-intelligence/feed/', // Duplicate of above TechCrunch feed
   
   // Specialized AI Applications - Verified Working
   'https://www.roboticsbusinessreview.com/feed/',
   
   // International Sources - Verified Working
-  'https://www.scmp.com/rss/91/feed',
+  // 'https://www.scmp.com/rss/91/feed', // Removed - 403 forbidden
   'https://www.bbc.com/news/technology/rss.xml',
   'https://www.theguardian.com/technology/rss',
   
   // Japanese Sources - Verified Working
-  'https://tech.nikkeibp.co.jp/rss/index.rdf',
+  // 'https://tech.nikkeibp.co.jp/rss/index.rdf', // Removed - 403 forbidden/paywall
   
   // Developer Tools & GitHub - Critical for AI tools coverage
   'https://github.blog/feed',
   'https://github.blog/engineering/feed',
+  'https://www.anthropic.com/rss.xml', // Anthropic (Claude) updates
+  'https://jack-clark.net/feed/', // Import AI by Jack Clark
+  // 'https://www.artificial-intelligence.blog/rss', // Removed - DNS/certificate issues
   
   // Emerging Sources - Verified Working
-  'https://stratechery.com/feed/',
+  // 'https://stratechery.com/feed/', // Removed - paywall/limited access
   
   // Additional High-Quality Sources for 200 Articles
   'https://www.axios.com/technology/rss',
-  'https://www.protocol.com/technology/rss',
+  // 'https://www.protocol.com/technology/rss', // Removed - site shut down
   'https://siliconangle.com/feed/',
-  'https://www.nextbigfuture.com/feed',
+  // 'https://www.nextbigfuture.com/feed', // Removed - parse errors/unreliable
   'https://singularityhub.com/feed/',
-  'https://www.unite.ai/feed/',
+  // 'https://www.unite.ai/feed/', // Duplicate - already included above
   'https://hai.stanford.edu/news/rss.xml',
   'https://news.mit.edu/rss/topic/artificial-intelligence2',
   'https://www.cmu.edu/news/rss/all.xml',
   'https://www.berkeley.edu/news/rss/all.xml',
-  'https://www.cs.cmu.edu/news/rss.xml',
-  'https://www.ai.org/feed/',
-  'https://syncedreview.com/feed/',
+  // 'https://www.cs.cmu.edu/news/rss.xml', // Removed - 404 not found
+  // 'https://www.ai.org/feed/', // Removed - DNS/site issues
+  // 'https://syncedreview.com/feed/', // Duplicate - already included above
   'https://www.datasciencecentral.com/feed/',
-  'https://www.informationweek.com/rss_simple.asp',
-  'https://www.computerworld.com/index.rss',
-  'https://www.infoworld.com/category/artificial-intelligence/index.rss',
+  // 'https://www.informationweek.com/rss_simple.asp', // Removed - 404 not found
+  // 'https://www.computerworld.com/index.rss', // Removed - 404 not found
+  // 'https://www.infoworld.com/category/artificial-intelligence/index.rss', // Removed - 404 not found
   'https://www.datanami.com/feed/',
   'https://insidebigdata.com/feed/',
-  'https://www.aitrends.com/feed/',
-  'https://www.aitimejournal.com/feed',
+  // 'https://www.aitrends.com/feed/', // Removed - site inactive
+  // 'https://www.aitimejournal.com/feed', // Removed - DNS/certificate issues
   'https://emerj.com/feed/',
-  'https://lexfridman.com/podcast/rss',
-  'https://twimlai.com/rss/',
-  'https://practical.ai/index.xml',
+  // 'https://lexfridman.com/podcast/rss', // Removed - podcast feed, not news
+  // 'https://twimlai.com/rss/', // Removed - podcast feed, not news
+  // 'https://practical.ai/index.xml', // Removed - podcast feed, not news
   'https://www.thegradient.pub/rss/',
-  'https://thebatch.ai/rss.xml',
+  // 'https://thebatch.ai/rss.xml', // Removed - 404 not found
   'https://www.fast.ai/feed.xml',
-  'https://openai.com/research/rss.xml',
-  'https://deepmind.com/blog/rss.xml',
-  'https://ai.googleblog.com/feeds/posts/default',
-  'https://research.fb.com/feed/',
-  'https://www.microsoft.com/en-us/research/blog/feed/',
-  'https://bair.berkeley.edu/blog/feed.xml',
-  'https://dawn.cs.stanford.edu/blog/feed/',
-  'https://mlsys.org/feed.xml',
-  'https://jack-clark.net/feed/',
-  'https://www.oreilly.com/radar/topics/ai-ml/feed',
-  'https://towards.ai/feed',
-  'https://medium.com/feed/the-gradient',
-  'https://medium.com/feed/ai-in-plain-english',
-  'https://medium.com/feed/syncedreview',
-  'https://medium.com/feed/towards-artificial-intelligence',
+  // 'https://openai.com/research/rss.xml', // Removed - 404 not found
+  // 'https://deepmind.com/blog/rss.xml', // Removed - duplicate of above DeepMind feed
+  // 'https://ai.googleblog.com/feeds/posts/default', // Removed - redirects to blog.google
+  // 'https://research.fb.com/feed/', // Already added as Meta AI Research
+  // 'https://www.microsoft.com/en-us/research/blog/feed/', // Duplicate of above Microsoft Research feed
+  // 'https://bair.berkeley.edu/blog/feed.xml', // Already added above
+  // 'https://dawn.cs.stanford.edu/blog/feed/', // Removed - inactive/404
+  // 'https://mlsys.org/feed.xml', // Removed - conference site, not news
+  // 'https://jack-clark.net/feed/', // Already added above
+  // 'https://www.oreilly.com/radar/topics/ai-ml/feed', // Removed - 404 not found
+  // 'https://towards.ai/feed', // Removed - redirects/parse issues
+  // 'https://medium.com/feed/the-gradient', // Removed - Medium feeds unreliable
+  // 'https://medium.com/feed/ai-in-plain-english', // Removed - Medium feeds unreliable
+  // 'https://medium.com/feed/syncedreview', // Removed - Medium feeds unreliable
+  // 'https://medium.com/feed/towards-artificial-intelligence', // Removed - Medium feeds unreliable
   'https://blog.research.google/feeds/posts/default/-/Machine%20Learning',
   'https://blog.research.google/feeds/posts/default/-/Natural%20Language%20Processing',
-  'https://blog.research.google/feeds/posts/default/-/Computer%20Vision'
+  'https://blog.research.google/feeds/posts/default/-/Computer%20Vision',
+  'https://feeds.feedburner.com/blogspot/gJZg', // Google Research Blog
+  // 'https://www.deeplearning.ai/the-batch/feed/', // Removed - 404 not found
+  // 'https://www.alignmentforum.org/feed.xml' // Removed - specialized/low volume
 ];
 
 // Enhanced keywords for comprehensive AI news filtering
