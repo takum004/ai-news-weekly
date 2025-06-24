@@ -1,5 +1,8 @@
-{
-  "lastUpdated": "2025-06-24T11:39:00.507Z",
+const fs = require('fs');
+
+// 初期ニュースデータ
+const initialNews = {
+  "lastUpdated": new Date().toISOString(),
   "articles": [
     {
       "id": "init-1",
@@ -10,7 +13,7 @@
       "source": "AI News Today",
       "category": "openai",
       "importance": 95,
-      "pubDate": "2025-06-24T09:39:00.507Z",
+      "pubDate": new Date(Date.now() - 1000 * 60 * 60 * 2).toISOString(),
       "link": "https://example.com/openai-gpt5"
     },
     {
@@ -22,7 +25,7 @@
       "source": "Tech Chronicle",
       "category": "video_generation",
       "importance": 90,
-      "pubDate": "2025-06-24T07:39:00.507Z",
+      "pubDate": new Date(Date.now() - 1000 * 60 * 60 * 4).toISOString(),
       "link": "https://example.com/google-video-ai"
     },
     {
@@ -34,7 +37,7 @@
       "source": "Developer Weekly",
       "category": "code_generation",
       "importance": 88,
-      "pubDate": "2025-06-24T05:39:00.507Z",
+      "pubDate": new Date(Date.now() - 1000 * 60 * 60 * 6).toISOString(),
       "link": "https://example.com/claude-35"
     },
     {
@@ -46,7 +49,7 @@
       "source": "Business Tech News",
       "category": "microsoft",
       "importance": 85,
-      "pubDate": "2025-06-24T03:39:00.507Z",
+      "pubDate": new Date(Date.now() - 1000 * 60 * 60 * 8).toISOString(),
       "link": "https://example.com/copilot-expansion"
     },
     {
@@ -58,7 +61,7 @@
       "source": "Hardware Insider",
       "category": "nvidia",
       "importance": 82,
-      "pubDate": "2025-06-24T01:39:00.507Z",
+      "pubDate": new Date(Date.now() - 1000 * 60 * 60 * 10).toISOString(),
       "link": "https://example.com/nvidia-edge"
     },
     {
@@ -70,7 +73,7 @@
       "source": "Medical AI Journal",
       "category": "healthcare",
       "importance": 93,
-      "pubDate": "2025-06-23T23:39:00.507Z",
+      "pubDate": new Date(Date.now() - 1000 * 60 * 60 * 12).toISOString(),
       "link": "https://example.com/ai-medical"
     },
     {
@@ -82,7 +85,7 @@
       "source": "Open Source AI",
       "category": "multimodal",
       "importance": 87,
-      "pubDate": "2025-06-23T21:39:00.507Z",
+      "pubDate": new Date(Date.now() - 1000 * 60 * 60 * 14).toISOString(),
       "link": "https://example.com/meta-multimodal"
     },
     {
@@ -94,7 +97,7 @@
       "source": "Business Innovation",
       "category": "agents",
       "importance": 80,
-      "pubDate": "2025-06-23T19:39:00.507Z",
+      "pubDate": new Date(Date.now() - 1000 * 60 * 60 * 16).toISOString(),
       "link": "https://example.com/ai-agents"
     },
     {
@@ -106,7 +109,7 @@
       "source": "AI Research Quarterly",
       "category": "research",
       "importance": 91,
-      "pubDate": "2025-06-23T17:39:00.507Z",
+      "pubDate": new Date(Date.now() - 1000 * 60 * 60 * 18).toISOString(),
       "link": "https://example.com/ai-reasoning"
     },
     {
@@ -118,8 +121,19 @@
       "source": "Creative AI Weekly",
       "category": "music_generation",
       "importance": 78,
-      "pubDate": "2025-06-23T15:39:00.507Z",
+      "pubDate": new Date(Date.now() - 1000 * 60 * 60 * 20).toISOString(),
       "link": "https://example.com/ai-music"
     }
   ]
+};
+
+// data ディレクトリを作成
+if (!fs.existsSync('data')) {
+  fs.mkdirSync('data');
 }
+
+// news.json ファイルを作成
+fs.writeFileSync('data/news.json', JSON.stringify(initialNews, null, 2));
+
+console.log('Created initial news data with', initialNews.articles.length, 'articles');
+console.log('File saved to: data/news.json');
