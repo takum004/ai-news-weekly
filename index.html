@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Weekly News - 最新のAIニュースを日本語で</title>
+    <meta name="description" content="毎日更新される重要なAI関連ニュースを、自動翻訳と要約で分かりやすくお届けします">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* ヘッダー */
+        .header {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .nav-link:hover {
+            background: #0056b3;
+        }
+        
+        /* ヒーローセクション */
+        .hero {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 100px 0 40px;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        /* 検索セクション */
+        .search-section {
+            margin-bottom: 2rem;
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        #search-input {
+            flex: 1;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        #search-btn {
+            padding: 0.75rem 1.5rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .sort-select {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+            font-size: 1rem;
+        }
+        
+        /* ビュー切り替え */
+        .view-toggle {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .view-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .view-btn.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        
+        .view-btn:hover {
+            background: #f8f9fa;
+        }
+        
+        .view-btn.active:hover {
+            background: #0056b3;
+        }
+        
+        /* ニュースグリッド */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .news-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .category-badge {
+            background: #007bff;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        
+        .importance-high {
+            background: #ff4444;
+        }
+        
+        .card-body {
+            padding: 1.5rem;
+        }
+        
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .card-summary {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        
+        .card-footer {
+            padding: 1rem 1.5rem;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .card-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .card-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* リストビュー - Obsidian風 */
+        .date-section {
+            margin-bottom: 2rem;
+        }
+        
+        .date-header {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid #007bff;
+            color: #333;
+        }
+        
+        .news-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .news-item {
+            margin-bottom: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: white;
+            border-left: 3px solid #007bff;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            line-height: 1.5;
+            transition: all 0.2s ease;
+        }
+        
+        .news-item:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            transform: translateX(2px);
+        }
+        
+        .news-category {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-right: 0.5rem;
+        }
+        
+        .news-title {
+            color: #333;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+        
+        .news-summary {
+            color: #666;
+            margin-right: 0.5rem;
+        }
+        
+        .news-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .news-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* フッター */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        
+        /* レスポンシブ */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .search-box {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span style="font-size: 2rem;">🤖</span>
+                    <h1>AI Weekly News</h1>
+                </a>
+                <a href="categories.html" class="nav-link">📂 ジャンル別に見る</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="container">
+            <h2>🤖 最新のAIニュース</h2>
+            <p>世界中のAI関連ニュースを毎日自動収集・日本語翻訳</p>
+            <div class="stats">
+                <div class="stat">
+                    <strong id="article-count">0</strong>
+                    <div>記事</div>
+                </div>
+                <div class="stat">
+                    <strong id="sources-count">35</strong>
+                    <div>情報源</div>
+                </div>
+                <div class="stat">
+                    <strong id="last-updated">--</strong>
+                    <div>最終更新</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- メインコンテンツ -->
+    <main class="container">
+        <!-- 検索セクション -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="ニュースを検索...">
+                <button id="search-btn">検索</button>
+            </div>
+            <select class="sort-select" id="sort-select">
+                <option value="date-desc">新しい順</option>
+                <option value="date-asc">古い順</option>
+                <option value="importance-desc">重要度順</option>
+            </select>
+            <div class="view-toggle">
+                <button id="card-view-btn" class="view-btn active">カード表示</button>
+                <button id="list-view-btn" class="view-btn">リスト表示</button>
+            </div>
+        </div>
+
+        <!-- ニュースグリッド -->
+        <div class="news-grid" id="news-grid">
+            <!-- ニュースカードがここに動的に挿入される -->
+        </div>
+
+        <!-- 検索結果なし -->
+        <div id="no-results" style="display: none; text-align: center; padding: 3rem;">
+            <h3>該当するニュースがありません</h3>
+            <p>他のキーワードをお試しください</p>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 AI Weekly News. 毎日自動更新</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="static-news-data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
