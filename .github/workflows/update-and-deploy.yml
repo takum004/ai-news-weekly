@@ -1,0 +1,90 @@
+name: Update News and Deploy
+
+on:
+  schedule:
+    # JST 6:00 AM (UTC 21:00)
+    - cron: '0 21 * * *'
+    # JST 12:00 PM (UTC 3:00)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'data/news.json'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Fetch and update news
+        run: |
+          echo "Starting news update..."
+          npm run update-news || echo "News update completed with warnings"
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          
+      - name: Check if news.json exists and has content
+        run: |
+          if [ ! -f data/news.json ]; then
+            echo "Creating data directory and news.json"
+            mkdir -p data
+            echo '{"lastUpdated":"'$(date -u +%Y-%m-%dT%H:%M:%S.000Z)'","articles":[]}' > data/news.json
+          fi
+          echo "Current news.json size: $(wc -c < data/news.json) bytes"
+          
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update AI news - $(date +'%Y-%m-%d %H:%M:%S JST' -d '+9 hours')"
+            git push
+          fi
+
+  deploy:
+    needs: update-news
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
