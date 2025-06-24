@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
     <style>
         * {
             margin: 0;
@@ -360,6 +361,11 @@
     </style>
 </head>
 <body>
+    <!-- ローディング画面 -->
+    <div id="loading" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>AIニュースを読み込み中...</p>
+    </div>
     <!-- ヘッダー -->
     <header class="header">
         <div class="container">
@@ -368,7 +374,7 @@
                     <span style="font-size: 2rem;">🤖</span>
                     <h1>AI Weekly News</h1>
                 </a>
-                <a href="categories.html" class="nav-link">📂 ジャンル別に見る</a>
+                <a href="#categories" class="nav-link">📂 ジャンル別に見る</a>
             </div>
         </div>
     </header>
@@ -397,6 +403,18 @@
 
     <!-- メインコンテンツ -->
     <main class="container">
+        <!-- カテゴリータブ -->
+        <div class="category-tabs" id="categories">
+            <button class="category-tab active" data-category="all">🌐 すべて</button>
+            <button class="category-tab" data-category="openai">🤖 OpenAI</button>
+            <button class="category-tab" data-category="google">🔍 Google</button>
+            <button class="category-tab" data-category="video_generation">🎬 動画生成</button>
+            <button class="category-tab" data-category="agents">🤵 エージェント</button>
+            <button class="category-tab" data-category="code_generation">💻 コード生成</button>
+            <button class="category-tab" data-category="business">💼 ビジネス</button>
+            <button class="category-tab" data-category="research">🔬 研究</button>
+        </div>
+        
         <!-- 検索セクション -->
         <div class="search-section">
             <div class="search-box">

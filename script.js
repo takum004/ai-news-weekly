@@ -7,6 +7,7 @@ let allNews = []; // Original complete dataset
 let currentNews = []; // Currently displayed news (for display only)
 let currentCategory = 'all';
 let currentSearch = '';
+let viewMode = 'card'; // 'card' or 'list'
 
 // Enhanced Category Configuration
 const categories = {
@@ -256,7 +257,7 @@ function filterAndDisplayNews() {
     displayNews();
 }
 
-// Display News in Grid
+// Display News in Grid or List
 function displayNews() {
     const newsGrid = document.getElementById('news-grid');
     const noResults = document.getElementById('no-results');
@@ -266,21 +267,30 @@ function displayNews() {
         noResults.style.display = 'block';
     } else {
         noResults.style.display = 'none';
-        newsGrid.innerHTML = currentNews.map(article => createNewsCard(article)).join('');
         
-        // Add staggered animation with cleanup
-        const cards = newsGrid.querySelectorAll('.news-card');
-        cards.forEach((card, index) => {
-            // Clear any existing timeouts on this card
-            if (card.animationTimeout) {
-                clearTimeout(card.animationTimeout);
-            }
+        // Apply view mode class
+        newsGrid.className = viewMode === 'list' ? 'news-list' : 'news-grid';
+        
+        // Create appropriate HTML based on view mode
+        if (viewMode === 'list') {
+            newsGrid.innerHTML = currentNews.map(article => createNewsListItem(article)).join('');
+        } else {
+            newsGrid.innerHTML = currentNews.map(article => createNewsCard(article)).join('');
             
-            card.animationTimeout = setTimeout(() => {
-                card.classList.add('slide-up');
-                card.animationTimeout = null;
-            }, index * 50); // Reduced delay for faster loading
-        });
+            // Add staggered animation with cleanup (only for card view)
+            const cards = newsGrid.querySelectorAll('.news-card');
+            cards.forEach((card, index) => {
+                // Clear any existing timeouts on this card
+                if (card.animationTimeout) {
+                    clearTimeout(card.animationTimeout);
+                }
+                
+                card.animationTimeout = setTimeout(() => {
+                    card.classList.add('slide-up');
+                    card.animationTimeout = null;
+                }, index * 50); // Reduced delay for faster loading
+            });
+        }
     }
     
     // Don't call updateCategoryCounts here since it's called after data loading
@@ -334,6 +344,26 @@ function setupEventListeners() {
     const sortSelect = document.getElementById('sort-select');
     sortSelect.addEventListener('change', filterAndDisplayNews);
     
+    // View toggle
+    const cardViewBtn = document.getElementById('card-view-btn');
+    const listViewBtn = document.getElementById('list-view-btn');
+    
+    if (cardViewBtn && listViewBtn) {
+        cardViewBtn.addEventListener('click', () => {
+            viewMode = 'card';
+            cardViewBtn.classList.add('active');
+            listViewBtn.classList.remove('active');
+            filterAndDisplayNews();
+        });
+        
+        listViewBtn.addEventListener('click', () => {
+            viewMode = 'list';
+            listViewBtn.classList.add('active');
+            cardViewBtn.classList.remove('active');
+            filterAndDisplayNews();
+        });
+    }
+    
     // Smooth scrolling for nav links
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
@@ -385,7 +415,9 @@ async function initApp() {
         // Hide loading screen
         setTimeout(() => {
             const loadingScreen = document.getElementById('loading');
-            loadingScreen.classList.add('hidden');
+            if (loadingScreen) {
+                loadingScreen.classList.add('hidden');
+            }
         }, 1000);
         
         // Add some dynamic effects
@@ -402,7 +434,9 @@ async function initApp() {
         // Hide loading screen even on error
         setTimeout(() => {
             const loadingScreen = document.getElementById('loading');
-            loadingScreen.classList.add('hidden');
+            if (loadingScreen) {
+                loadingScreen.classList.add('hidden');
+            }
         }, 1000);
     }
 }
@@ -1352,6 +1386,33 @@ function handleResize() {
 }
 
 window.addEventListener('resize', debounce(handleResize, 250));
+
+// Create list item HTML
+function createNewsListItem(article) {
+    const importance = getImportanceBadge(article.importance);
+    const categoryInfo = getCategoryLabel(article.category);
+    const date = formatDate(article.pubDate);
+    
+    return `
+        <article class="news-list-item">
+            <div class="news-list-content">
+                <h3 class="news-list-title">
+                    <a href="${article.link}" target="_blank" rel="noopener noreferrer">
+                        ${article.titleJa || article.title}
+                    </a>
+                </h3>
+                <div class="news-list-meta">
+                    <span class="category-badge ${article.category}">
+                        ${categoryInfo}
+                    </span>
+                    ${importance}
+                    <time class="news-list-date">${date}</time>
+                    <span class="news-list-source">${article.source}</span>
+                </div>
+            </div>
+        </article>
+    `;
+}
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', initApp);
