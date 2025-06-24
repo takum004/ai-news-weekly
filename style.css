@@ -737,3 +737,24 @@ body {
 .mb-2 { margin-bottom: 0.5rem; }
 .mb-3 { margin-bottom: 0.75rem; }
 .mb-4 { margin-bottom: 1rem; }
+
+/* Article Page Specific Styles */
+.source {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.article-meta time {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.article-meta .source {
+    margin-left: 0.5rem;
+}
+
+/* Fix category badge in article page */
+.article-meta .category-badge {
+    display: inline-block;
+    margin-right: 0.5rem;
+}

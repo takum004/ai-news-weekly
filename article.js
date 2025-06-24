@@ -61,27 +61,38 @@ function getImportanceBadge(importance) {
 
 // Load and display article
 async function loadArticle() {
+    console.log('Loading article with ID:', articleId);
     const contentDiv = document.getElementById('article-content');
     
     if (!articleId) {
+        console.error('No article ID provided in URL');
         contentDiv.innerHTML = '<div class="error">記事が見つかりません</div>';
         return;
     }
     
     try {
         // Load news data
-        const response = await fetch(`data/news.json?t=${Date.now()}`);
+        console.log('Fetching news data...');
+        const dataUrl = `./data/news.json?t=${Date.now()}`;
+        console.log('Fetching from:', dataUrl);
+        
+        const response = await fetch(dataUrl);
         if (!response.ok) {
+            console.error('Failed to fetch news.json:', response.status, response.statusText);
             throw new Error('データの読み込みに失敗しました');
         }
         
         const data = await response.json();
+        console.log('Loaded articles count:', data.articles?.length || 0);
         const article = data.articles.find(a => a.id === articleId);
         
         if (!article) {
+            console.error('Article not found with ID:', articleId);
             contentDiv.innerHTML = '<div class="error">記事が見つかりません</div>';
             return;
         }
+        
+        console.log('Article found:', article.title);
         
         // Update page title
         document.title = `${article.titleJa || article.title} - AI Weekly News`;
