@@ -1,21 +1,12 @@
-name: Daily AI News Update
+name: Daily News Update
 
 on:
   schedule:
-    # 毎日 JST 6:00 (UTC 21:00) に実行
-    - cron: "0 21 * * *"
-    # 念の為 JST 12:00 (UTC 3:00) にも実行
-    - cron: "0 3 * * *"
-  workflow_dispatch:
-    # 手動実行も可能
-  push:
-    branches: [ master ]
-    # masterブランチへのプッシュでも実行
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+    # Run at 6:00 AM JST (21:00 UTC previous day)
+    - cron: '0 21 * * *'
+    # Run at 12:00 PM JST (03:00 UTC)
+    - cron: '0 3 * * *'
+  workflow_dispatch: # Allow manual triggering
 
 jobs:
   update-news:
@@ -25,65 +16,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      
+          ref: master
+          fetch-depth: 0
+        
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
-      
+          node-version: '18'
+          
       - name: Install dependencies
-        run: |
-          npm ci
-          npm list
-        timeout-minutes: 5
-      
-      - name: Fetch and update news
+        run: npm install
+        
+      - name: Fetch latest news
+        run: node scripts/fetch-news.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: |
-          npm run update-news || {
-            echo "RSS fetch failed, but continuing with workflow"
-            exit 0
-          }
-        timeout-minutes: 30
-      
-      - name: Generate static data file
-        run: |
-          node -e "
-          const fs = require('fs');
-          const data = JSON.parse(fs.readFileSync('data/news.json', 'utf8'));
-          const output = 'const staticNewsData = ' + JSON.stringify(data, null, 2) + ';';
-          fs.writeFileSync('static-news-data.js', output);
-          console.log('Generated static-news-data.js with', data.articles.length, 'articles');
-          "
-      
+          
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/news.json static-news-data.js
-          
-          # Only commit if there are changes
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-          else
-            git commit -m "Daily news update - $(date '+%Y-%m-%d %H:%M JST')
-
-            🤖 Generated with GitHub Actions
-            
-            - Updated AI news data with latest articles
-            - Automatically filtered and categorized content
-            - Sorted by importance and recency
-            
-            Co-Authored-By: GitHub Actions <noreply@github.com>"
-            git push
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-          fi
-        id: commit
-
-  # GitHub Pagesのデプロイはプッシュ時に自動的に行われるため、
-  # 明示的なデプロイステップは不要です。
-  # GitHub Pagesは master ブランチから自動的にサイトを構築します。
+          # Pull latest changes to avoid conflicts
+          git pull origin master --rebase
+          git add data/news.json
+          git diff --staged --quiet || git commit -m "Update news data - $(date +'%Y-%m-%d %H:%M JST')"
+          git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
