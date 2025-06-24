@@ -27,7 +27,7 @@ const categories = {
     audio_generation: { name: '🎵 音声生成', count: 0 },
     music_generation: { name: '🎼 音楽生成', count: 0 },
     voice_cloning: { name: '🎤 音声クローン', count: 0 },
-    3d_modeling: { name: '🏗️ 3Dモデリング', count: 0 },
+    '3d_modeling': { name: '🏗️ 3Dモデリング', count: 0 },
     
     // AI Application Areas - Productivity
     presentation: { name: '📊 プレゼン・スライド', count: 0 },
