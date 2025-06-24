@@ -1,11 +1,11 @@
  name: Update AI News Daily
 
-  on:
+ on:
     schedule:
       - cron: '0 0 * * *'
     workflow_dispatch:
 
-  jobs:
+ jobs:
     update-news:
       runs-on: ubuntu-latest
 
@@ -33,5 +33,5 @@
           git config --local user.name "GitHub Action"
           git add -A
           git diff --staged --quiet || git commit -m "Update AI 
-  news - $(date +'%Y-%m-%d')"
+          news - $(date +'%Y-%m-%d')"
           git push
