@@ -1,8 +1,28 @@
-# AI Weekly News - シンプル版
+# AI Weekly News - 最新AIニュース自動収集サイト
 
 ## 📌 プロジェクト概要
 
 **AI Weekly News**は、最新のAI関連ニュースを自動収集し、日本語翻訳・要約付きで毎日更新するWebサイトです。
+
+## 🔧 セットアップ手順
+
+### 1. リポジトリ設定
+1. GitHubリポジトリの Settings > Actions > General へ移動
+2. "Workflow permissions" で "Read and write permissions" を選択
+3. "Allow GitHub Actions to create and approve pull requests" にチェック
+4. Save をクリック
+
+### 2. GitHub Pages設定
+1. Settings > Pages へ移動
+2. Source: "GitHub Actions" を選択
+3. Save をクリック
+
+### 3. シークレット設定（オプション）
+OpenAI APIを使用する場合：
+1. Settings > Secrets and variables > Actions
+2. "New repository secret" をクリック
+3. Name: `OPENAI_API_KEY`、Value: あなたのAPIキー
+4. Add secret をクリック
 
 ## 🚀 特徴
 
