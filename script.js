@@ -195,8 +195,12 @@ function createNewsCard(article) {
             
             <div class="news-card-footer">
                 <div class="news-card-actions">
+                    <a href="article.html?id=${article.id}" class="news-card-link secondary">
+                        <span>詳細を見る</span>
+                        <span class="news-card-link-icon">→</span>
+                    </a>
                     <a href="${article.link}" target="_blank" rel="noopener noreferrer" class="news-card-link primary">
-                        <span>記事を読む</span>
+                        <span>元記事</span>
                         <span class="news-card-link-icon">↗</span>
                     </a>
                 </div>

@@ -413,7 +413,8 @@ body {
     flex: 1;
 }
 
-.news-card-category {
+.news-card-category,
+.category-badge {
     background: #f3f4f6;
     color: #374151;
     padding: 0.25rem 0.75rem;
@@ -422,11 +423,34 @@ body {
     font-weight: 500;
 }
 
-.news-card-category.tech { background: #dbeafe; color: #1e40af; }
-.news-card-category.research { background: #ede9fe; color: #6d28d9; }
-.news-card-category.business { background: #d1fae5; color: #047857; }
-.news-card-category.healthcare { background: #fee2e2; color: #b91c1c; }
-.news-card-category.academic { background: #fef3c7; color: #92400e; }
+.news-card-category.tech,
+.category-badge.tech { background: #dbeafe; color: #1e40af; }
+.news-card-category.research,
+.category-badge.research { background: #ede9fe; color: #6d28d9; }
+.news-card-category.business,
+.category-badge.business { background: #d1fae5; color: #047857; }
+.news-card-category.healthcare,
+.category-badge.healthcare { background: #fee2e2; color: #b91c1c; }
+.news-card-category.academic,
+.category-badge.academic { background: #fef3c7; color: #92400e; }
+
+/* Additional categories */
+.news-card-category.openai,
+.category-badge.openai { background: #e0f2fe; color: #0369a1; }
+.news-card-category.google,
+.category-badge.google { background: #dcfce7; color: #166534; }
+.news-card-category.anthropic,
+.category-badge.anthropic { background: #f3e8ff; color: #6b21a8; }
+.news-card-category.microsoft,
+.category-badge.microsoft { background: #e0e7ff; color: #4338ca; }
+.news-card-category.video_generation,
+.category-badge.video_generation { background: #fce7f3; color: #a21caf; }
+.news-card-category.image_generation,
+.category-badge.image_generation { background: #ffe4e6; color: #be123c; }
+.news-card-category.code_generation,
+.category-badge.code_generation { background: #f0fdf4; color: #15803d; }
+.news-card-category.agents,
+.category-badge.agents { background: #fef3c7; color: #a16207; }
 
 .importance-badge {
     display: flex;
