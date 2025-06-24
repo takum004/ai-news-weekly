@@ -75,8 +75,7 @@ function createNewsCard(article) {
                 <p class="card-summary">${(article.summaryJa || article.summary).substring(0, 150)}...</p>
             </div>
             <div class="card-footer">
-                <a href="article.html?id=${article.id}" class="card-link">詳細を見る →</a>
-                <a href="${article.link}" target="_blank" rel="noopener" class="card-link">元記事 ↗</a>
+                <a href="${article.link}" target="_blank" rel="noopener" class="card-link">記事を読む ↗</a>
             </div>
         </div>
     `;
