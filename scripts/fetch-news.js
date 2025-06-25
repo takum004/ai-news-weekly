@@ -2409,17 +2409,48 @@ async function main() {
     console.log('🤖 Starting AI news aggregation...');
     const articles = await fetchNewsFromRSS();
     
-    if (articles.length === 0) {
-      console.log('⚠️ No articles found, keeping existing data');
+    // Twitter/X フィードの統合（オプション）
+    let tweets = [];
+    if (process.env.TWITTER_BEARER_TOKEN) {
+      try {
+        console.log('🐦 Fetching tweets from X accounts...');
+        const { fetchTweets } = require('./fetch-tweets');
+        await fetchTweets();
+        
+        // ツイートデータを読み込み
+        const tweetsData = JSON.parse(fs.readFileSync('data/tweets.json', 'utf8'));
+        tweets = tweetsData.tweets || [];
+        console.log(`✓ Loaded ${tweets.length} tweets from X`);
+      } catch (twitterError) {
+        console.error('❌ Twitter integration error:', twitterError.message);
+        // Twitterエラーでも続行
+      }
+    }
+    
+    // 記事とツイートを結合
+    const allContent = [...articles, ...tweets];
+    
+    if (allContent.length === 0) {
+      console.log('⚠️ No content found, keeping existing data');
       return;
     }
     
     // Remove duplicates based on title similarity
     const uniqueArticles = [];
-    for (const article of articles) {
-      const isDuplicate = uniqueArticles.some(existing => 
-        similarity(existing.title.toLowerCase(), article.title.toLowerCase()) > 0.8
-      );
+    for (const article of allContent) {
+      const isDuplicate = uniqueArticles.some(existing => {
+        // タイトルの類似度チェック
+        if (similarity(existing.title.toLowerCase(), article.title.toLowerCase()) > 0.8) {
+          return true;
+        }
+        // ツイートとニュース記事の重複チェック（同じ内容を報じている場合）
+        if (existing.isTweet !== article.isTweet) {
+          const existingSummary = (existing.summary || '').toLowerCase();
+          const articleSummary = (article.summary || '').toLowerCase();
+          return similarity(existingSummary, articleSummary) > 0.7;
+        }
+        return false;
+      });
       if (!isDuplicate) {
         uniqueArticles.push(article);
       }
