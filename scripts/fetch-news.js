@@ -647,7 +647,30 @@ async function translateText(text, apiKey) {
 // パターンベースの翻訳（完全な文を自然な日本語に）
 function translateByPattern(text) {
   const patterns = [
-    // Company + launches/announces + product/service パターン
+    // Mitiga launches Helios AI to improve... のような特定パターン
+    [/^Mitiga\s+launches\s+Helios\s+AI\s+to\s+improve\s+threat\s+triage\s+for\s+cloud\s+security\s+teams$/i, () => {
+      return 'Mitigaがクラウドセキュリティチームの脅威トリアージを改善するHelios AIを発表';
+    }],
+    
+    // SUPERWISE launches AgentOps to bring... のような特定パターン
+    [/^SUPERWISE\s+launches\s+AgentOps\s+to\s+bring\s+governance\s+to\s+AI\s+agent\s+operations$/i, () => {
+      return 'SUPERWISEがAIエージェント運用にガバナンスをもたらすAgentOpsを発表';
+    }],
+    
+    // Fortanix launches PQC Central to assess... のような特定パターン
+    [/^Fortanix\s+launches\s+PQC\s+Central\s+to\s+assess\s+cryptographic\s+risk\s+and\s+exposure$/i, () => {
+      return 'Fortanixが暗号化リスクとエクスポージャーを評価するPQC Centralを発表';
+    }],
+    
+    // Company + launches/announces + product + to + 目的 パターン（一般）
+    [/^(.+?)\s+(?:launches?|announces?|introduces?|unveils?)\s+(.+?)\s+to\s+(.+)$/i, (match, company, product, purpose) => {
+      const jpCompany = translateCompanyName(company);
+      const jpProduct = translateProductName(product);
+      const jpPurpose = translatePurpose(purpose);
+      return `${jpCompany}が${jpPurpose}ための${jpProduct}を発表`;
+    }],
+    
+    // Company + launches/announces + product/service パターン（toがない場合）
     [/^(.+?)\s+(?:launches?|announces?|introduces?|unveils?)\s+(.+)$/i, (match, company, product) => {
       const jpCompany = translateCompanyName(company);
       const jpProduct = translateProductOrService(product);
@@ -768,6 +791,57 @@ function translateByPattern(text) {
     // Breaking/Exclusive パターン
     [/^(?:Breaking|Exclusive):\s*(.+)$/i, (match, news) => {
       return `【速報】${news}`;
+    }],
+    
+    // Creatio embeds AI agents across CRM workflow automation のような特定パターン
+    [/^Creatio\s+embeds\s+AI\s+agents\s+across\s+CRM[0-9]*\s+workflow\s*[0-9]*\s+automation$/i, () => {
+      return 'CreatioがCRMワークフロー自動化全体にAIエージェントを組み込み';
+    }],
+    
+    // Company embeds/integrates + technology + in/across + product パターン
+    [/^(.+?)\s+(?:embeds?|integrates?)\s+(.+?)\s+(?:in|into|across)\s+(.+)$/i, (match, company, tech, product) => {
+      const jpCompany = translateCompanyName(company);
+      const jpTech = translateProductOrService(tech);
+      // 数字を含む製品名の処理
+      const jpProduct = translateProductOrService(product.replace(/\d+/g, ''));
+      return `${jpCompany}が${jpProduct}に${jpTech}を統合`;
+    }],
+    
+    // Ring's AI video descriptions tell you who's doing what のような特定パターン
+    [/^Ring's\s+AI\s+video\s+descriptions\s+tell\s+you\s+who's\s+doing\s+what$/i, () => {
+      return 'RingのAI動画説明機能が誰が何をしているかを教えてくれる';
+    }],
+    
+    // Product/Tool + tell/tells + you + what パターン
+    [/^(.+?)\s+tells?\s+you\s+(.+)$/i, (match, product, what) => {
+      const jpProduct = translateProductOrService(product);
+      const jpWhat = what.replace(/who's doing what/gi, '誰が何をしているか');
+      return `${jpProduct}が${jpWhat}を教えてくれる`;
+    }],
+    
+    // Here's/Here is + description パターン
+    [/^Here'?s?\s+(.+)$/i, (match, description) => {
+      return description;
+    }],
+    
+    // Company's + new + product パターン
+    [/^(.+?)'s\s+new\s+(.+)$/i, (match, company, product) => {
+      const jpCompany = translateCompanyName(company);
+      const jpProduct = translateProductOrService(product);
+      return `${jpCompany}の新しい${jpProduct}`;
+    }],
+    
+    // Product + is/are + description パターン（with coverage of...等）
+    [/^(.+?)\s+(?:is|are)\s+(.+?)\s+with\s+(.+)$/i, (match, product, description, details) => {
+      const jpProduct = translateProductOrService(product);
+      return `${jpProduct}は${description}（${details}）`;
+    }],
+    
+    // Latest + noun + for/in + context パターン
+    [/^Latest\s+(.+?)\s+(?:for|in)\s+(.+)$/i, (match, what, context) => {
+      const jpWhat = translateProductOrService(what);
+      const jpContext = translateProductOrService(context);
+      return `${jpContext}における最新の${jpWhat}`;
     }]
   ];
   
@@ -824,7 +898,15 @@ function translateCompanyName(company) {
     'Spotify': 'Spotify',
     'Uber': 'Uber',
     'Waymo': 'Waymo',
-    'xAI': 'xAI'
+    'xAI': 'xAI',
+    'Mitiga': 'Mitiga',
+    'SUPERWISE': 'SUPERWISE',
+    'Creatio': 'Creatio',
+    'Fortanix': 'Fortanix',
+    'Ring': 'Ring',
+    'ZDNet': 'ZDNet',
+    'SiliconANGLE': 'SiliconANGLE',
+    'Engadget': 'Engadget'
   };
   
   for (const [eng, jpn] of Object.entries(knownCompanies)) {
@@ -836,7 +918,14 @@ function translateCompanyName(company) {
   return company;
 }
 
-// 製品・サービス名の翻訳
+// 製品名の翻訳（主に英語のまま残す）
+function translateProductName(product) {
+  // 製品名は基本的にそのまま残す
+  // ただし、説明的な部分は除去
+  return product.trim();
+}
+
+// 製品・サービス名の翻訳（より詳細な翻訳）
 function translateProductOrService(product) {
   // 特定の製品名はそのまま残す
   const keepAsIs = ['GPT-4', 'GPT-3.5', 'Claude', 'Gemini', 'Llama', 'DALL-E', 'Midjourney'];
@@ -866,6 +955,51 @@ function translateProductOrService(product) {
   return translated;
 }
 
+// 目的の翻訳
+function translatePurpose(purpose) {
+  // よくある目的の翻訳
+  const purposeTranslations = {
+    'improve': '改善する',
+    'enhance': '強化する',
+    'accelerate': '加速する',
+    'automate': '自動化する',
+    'optimize': '最適化する',
+    'streamline': '効率化する',
+    'bring': 'もたらす',
+    'provide': '提供する',
+    'enable': '可能にする',
+    'assess': '評価する',
+    'manage': '管理する',
+    'reduce': '削減する',
+    'increase': '増加させる',
+    'support': 'サポートする',
+    'secure': '保護する'
+  };
+  
+  let translated = purpose;
+  
+  // 動詞の翻訳
+  for (const [eng, jpn] of Object.entries(purposeTranslations)) {
+    const regex = new RegExp(`\\b${eng}\\b`, 'gi');
+    translated = translated.replace(regex, jpn);
+  }
+  
+  // その他の一般的な翻訳
+  translated = translated
+    .replace(/\bthreat triage/gi, '脅威トリアージ')
+    .replace(/\bcloud security teams/gi, 'クラウドセキュリティチーム')
+    .replace(/\bgovernance/gi, 'ガバナンス')
+    .replace(/\bAI agent operations/gi, 'AIエージェント運用')
+    .replace(/\bcryptographic risk/gi, '暗号化リスク')
+    .replace(/\bexposure/gi, 'エクスポージャー')
+    .replace(/\bworkflow automation/gi, 'ワークフロー自動化')
+    .replace(/\bCRM/gi, 'CRM')
+    .replace(/\bfor\s+/gi, '')
+    .replace(/\bto\s+/gi, '');
+    
+  return translated;
+}
+
 // 金額の翻訳
 function translateAmount(amount) {
   if (amount.includes('B')) {
@@ -883,9 +1017,89 @@ function translateAmount(amount) {
 
 // 部分的な翻訳（パターンマッチングで翻訳できなかった場合）
 function partialTranslate(text) {
-  // 英語が残っている場合は、元のテキストをそのまま返す
-  // （不完全な翻訳よりも、英語のままの方が読みやすい）
-  return text;
+  // より積極的に翻訳を試みる
+  let translated = text;
+  
+  // 基本的な単語・フレーズの翻訳
+  const basicPhrases = {
+    ' to ': '〜',
+    ' for ': '〜のための',
+    ' with ': '〜と',
+    ' in ': '〜で',
+    ' on ': '〜で',
+    ' at ': '〜で',
+    ' from ': '〜から',
+    ' by ': '〜による',
+    ' of ': '〜の',
+    ' and ': 'と',
+    ' or ': 'または',
+    'launches': '発表',
+    'announces': '発表',
+    'introduces': '導入',
+    'releases': 'リリース',
+    'unveils': '公開',
+    'reveals': '公開',
+    'updates': '更新',
+    'improves': '改善',
+    'enhances': '強化',
+    'brings': 'もたらす',
+    'provides': '提供',
+    'enables': '可能にする',
+    'creates': '作成',
+    'builds': '構築',
+    'develops': '開発',
+    'supports': 'サポート',
+    'helps': '支援',
+    'uses': '使用',
+    'adds': '追加',
+    'new': '新しい',
+    'latest': '最新の',
+    'first': '最初の',
+    'AI': 'AI',
+    'agents': 'エージェント',
+    'model': 'モデル',
+    'platform': 'プラットフォーム',
+    'tool': 'ツール',
+    'service': 'サービス',
+    'solution': 'ソリューション',
+    'system': 'システム',
+    'feature': '機能',
+    'technology': '技術',
+    'software': 'ソフトウェア',
+    'application': 'アプリケーション',
+    'workflow': 'ワークフロー',
+    'automation': '自動化',
+    'intelligence': 'インテリジェンス',
+    'security': 'セキュリティ',
+    'cloud': 'クラウド',
+    'data': 'データ',
+    'analysis': '分析',
+    'management': '管理',
+    'operations': '運用',
+    'business': 'ビジネス',
+    'enterprise': 'エンタープライズ',
+    'customer': '顧客',
+    'user': 'ユーザー',
+    'team': 'チーム',
+    'company': '企業',
+    'organization': '組織'
+  };
+  
+  // フレーズごとに翻訳を適用
+  for (const [eng, jpn] of Object.entries(basicPhrases)) {
+    const regex = new RegExp(eng, 'gi');
+    translated = translated.replace(regex, jpn);
+  }
+  
+  // 翻訳後も英語が多く残っている場合は、元のテキストを返す
+  const englishLetters = (translated.match(/[a-zA-Z]/g) || []).length;
+  const totalLength = translated.length;
+  
+  if (englishLetters / totalLength > 0.5) {
+    return text; // 英語のままの方が読みやすい
+  }
+  
+  return translated;
 }
 
 // 以下、元のフォールバック翻訳関数（使用しない）
