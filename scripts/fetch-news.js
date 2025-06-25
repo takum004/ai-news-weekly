@@ -600,8 +600,266 @@ async function translateText(text, apiKey) {
   }
   
   // フォールバック: 改善された基本翻訳（APIが使えない場合のみ）
-  // 重要: 単純な単語置換ではなく、より自然な日本語に
   console.log('Using enhanced fallback translation');
+  
+  // AIニュースのタイトルでよく見られるパターンを分析し、より自然な日本語に変換
+  // 1. まず全体的なパターンマッチングを試みる
+  let translated = translateByPattern(text);
+  
+  // 2. パターンマッチングで翻訳できなかった場合のみ、部分的な翻訳を行う
+  if (translated === text) {
+    translated = partialTranslate(text);
+  }
+  
+  return translated;
+}
+
+// パターンベースの翻訳（完全な文を自然な日本語に）
+function translateByPattern(text) {
+  const patterns = [
+    // Company + launches/announces + product/service パターン
+    [/^(.+?)\s+(?:launches?|announces?|introduces?|unveils?)\s+(.+)$/i, (match, company, product) => {
+      const jpCompany = translateCompanyName(company);
+      const jpProduct = translateProductOrService(product);
+      return `${jpCompany}が${jpProduct}を発表`;
+    }],
+    
+    // Company + partners with + Company パターン
+    [/^(.+?)\s+partners?\s+with\s+(.+)$/i, (match, company1, company2) => {
+      const jpCompany1 = translateCompanyName(company1);
+      const jpCompany2 = translateCompanyName(company2);
+      return `${jpCompany1}と${jpCompany2}が提携`;
+    }],
+    
+    // Company + raises + funding パターン
+    [/^(.+?)\s+raises?\s+\$?([\d.]+[MBK]?)\s*(?:million|billion)?\s*(?:in\s+)?(.*)$/i, (match, company, amount, type) => {
+      const jpCompany = translateCompanyName(company);
+      const jpAmount = translateAmount(amount);
+      return `${jpCompany}が${jpAmount}の資金調達を実施`;
+    }],
+    
+    // Judge/Court + backs/rules + decision パターン
+    [/^(?:Judge|Court)\s+(?:backs?|rules?)\s+(.+)$/i, (match, decision) => {
+      // "AI company over use of copyrighted books" のようなケースを処理
+      if (/AI\s+(?:company|firm)\s+over\s+(?:use\s+of\s+)?copyrighted/i.test(decision)) {
+        return '裁判所がAI企業の著作権使用を支持';
+      }
+      return `裁判所が${decision}を支持`;
+    }],
+    
+    // Animal Health / Healthcare company パターン
+    [/^(.+?)\s+(?:Health|Healthcare)\s+(?:company|firm)\s+(.+)$/i, (match, type, rest) => {
+      if (/Animal/i.test(type)) {
+        // "Animal Health company Zoetis Partners with..." のようなケース
+        const restMatch = rest.match(/^(\w+)\s+partners?\s+with\s+(.+)$/i);
+        if (restMatch) {
+          const company1 = restMatch[1];
+          const company2 = translateCompanyName(restMatch[2]);
+          return `動物医療企業${company1}が${company2}と提携`;
+        }
+      }
+      return `${type}ヘルスケア企業：${rest}`;
+    }],
+    
+    // Product/Service + now available パターン
+    [/^(.+?)\s+(?:is\s+)?now\s+available\s+(.*)$/i, (match, product, details) => {
+      const jpProduct = translateProductOrService(product);
+      const jpDetails = details ? `（${partialTranslate(details)}）` : '';
+      return `${jpProduct}が利用可能に${jpDetails}`;
+    }],
+    
+    // Company + acquires + Company パターン
+    [/^(.+?)\s+acquires?\s+(.+)$/i, (match, buyer, target) => {
+      const jpBuyer = translateCompanyName(buyer);
+      const jpTarget = translateCompanyName(target);
+      return `${jpBuyer}が${jpTarget}を買収`;
+    }],
+    
+    // AI/Model + beats/outperforms パターン
+    [/^(.+?)\s+(?:beats?|outperforms?)\s+(.+)$/i, (match, model1, model2) => {
+      const jpModel1 = translateProductOrService(model1);
+      const jpModel2 = translateProductOrService(model2);
+      return `${jpModel1}が${jpModel2}を上回る性能を達成`;
+    }],
+    
+    // Company + opens/launches + in location パターン
+    [/^(.+?)\s+(?:opens?|launches?)\s+(?:in|at)\s+(.+)$/i, (match, company, location) => {
+      const jpCompany = translateCompanyName(company);
+      return `${jpCompany}が${location}で事業開始`;
+    }],
+    
+    // Company + releases + update/version パターン
+    [/^(.+?)\s+releases?\s+(.+?)\s+(?:update|version|v?[\d.]+)$/i, (match, company, product) => {
+      const jpCompany = translateCompanyName(company);
+      const jpProduct = translateProductOrService(product);
+      return `${jpCompany}が${jpProduct}の新バージョンをリリース`;
+    }],
+    
+    // Research/Study + shows/finds パターン
+    [/^(?:New\s+)?(?:Research|Study)\s+(?:shows?|finds?|reveals?)\s+(.+)$/i, (match, finding) => {
+      return `新研究：${finding}`;
+    }],
+    
+    // Company + integrates/adds パターン
+    [/^(.+?)\s+(?:integrates?|adds?)\s+(.+)$/i, (match, company, feature) => {
+      const jpCompany = translateCompanyName(company);
+      const jpFeature = translateProductOrService(feature);
+      return `${jpCompany}が${jpFeature}を統合`;
+    }],
+    
+    // Company + to/will + action パターン
+    [/^(.+?)\s+(?:to|will)\s+(.+)$/i, (match, company, action) => {
+      const jpCompany = translateCompanyName(company);
+      return `${jpCompany}が${action}を予定`;
+    }],
+    
+    // AI/Technology + enables/allows パターン
+    [/^(.+?)\s+(?:enables?|allows?)\s+(.+)$/i, (match, tech, capability) => {
+      const jpTech = translateProductOrService(tech);
+      return `${jpTech}により${capability}が可能に`;
+    }],
+    
+    // Company A and Company B + action パターン
+    [/^(.+?)\s+and\s+(.+?)\s+(.+)$/i, (match, company1, company2, action) => {
+      const jpCompany1 = translateCompanyName(company1);
+      const jpCompany2 = translateCompanyName(company2);
+      // actionが動詞で始まる場合
+      if (/^(?:announce|launch|partner|collaborate|develop|create|build)/i.test(action)) {
+        return `${jpCompany1}と${jpCompany2}が${action}`;
+      }
+      return `${jpCompany1}と${jpCompany2}：${action}`;
+    }],
+    
+    // How/Why/What + subject + verb パターン
+    [/^(?:How|Why|What)\s+(.+)$/i, (match, rest) => {
+      return rest; // 疑問詞は省略して内容を優先
+    }],
+    
+    // Breaking/Exclusive パターン
+    [/^(?:Breaking|Exclusive):\s*(.+)$/i, (match, news) => {
+      return `【速報】${news}`;
+    }]
+  ];
+  
+  for (const [pattern, replacer] of patterns) {
+    const match = text.match(pattern);
+    if (match) {
+      return replacer(...match);
+    }
+  }
+  
+  return text;
+}
+
+// 企業名の翻訳
+function translateCompanyName(company) {
+  const knownCompanies = {
+    'OpenAI': 'OpenAI',
+    'Google': 'Google',
+    'Microsoft': 'Microsoft',
+    'Meta': 'Meta',
+    'Anthropic': 'Anthropic',
+    'Amazon': 'Amazon',
+    'Apple': 'Apple',
+    'NVIDIA': 'NVIDIA',
+    'IBM': 'IBM',
+    'Tesla': 'Tesla',
+    'Infosys': 'Infosys',
+    'Zoetis': 'Zoetis',
+    'DeepMind': 'DeepMind',
+    'Stability AI': 'Stability AI',
+    'Midjourney': 'Midjourney',
+    'Hugging Face': 'Hugging Face',
+    'Runway': 'Runway',
+    'Cohere': 'Cohere',
+    'Inflection AI': 'Inflection AI',
+    'Adept': 'Adept',
+    'Character.AI': 'Character.AI',
+    'Jasper': 'Jasper',
+    'Scale AI': 'Scale AI',
+    'Databricks': 'Databricks',
+    'Palantir': 'Palantir',
+    'ByteDance': 'ByteDance',
+    'Baidu': 'Baidu',
+    'Alibaba': 'Alibaba',
+    'Tencent': 'Tencent',
+    'Samsung': 'Samsung',
+    'Intel': 'Intel',
+    'AMD': 'AMD',
+    'Qualcomm': 'Qualcomm',
+    'Oracle': 'Oracle',
+    'Salesforce': 'Salesforce',
+    'Adobe': 'Adobe',
+    'Netflix': 'Netflix',
+    'Spotify': 'Spotify',
+    'Uber': 'Uber',
+    'Waymo': 'Waymo',
+    'xAI': 'xAI'
+  };
+  
+  for (const [eng, jpn] of Object.entries(knownCompanies)) {
+    if (company.toLowerCase().includes(eng.toLowerCase())) {
+      return company.replace(new RegExp(eng, 'i'), jpn);
+    }
+  }
+  
+  return company;
+}
+
+// 製品・サービス名の翻訳
+function translateProductOrService(product) {
+  // 特定の製品名はそのまま残す
+  const keepAsIs = ['GPT-4', 'GPT-3.5', 'Claude', 'Gemini', 'Llama', 'DALL-E', 'Midjourney'];
+  for (const name of keepAsIs) {
+    if (product.includes(name)) {
+      return product;
+    }
+  }
+  
+  // AIサービスの一般的な用語を翻訳
+  let translated = product
+    .replace(/\bAI\s+(?:model|system|platform)/gi, 'AIモデル')
+    .replace(/\bneural network/gi, 'ニューラルネットワーク')
+    .replace(/\bmachine learning/gi, '機械学習')
+    .replace(/\bdeep learning/gi, 'ディープラーニング')
+    .replace(/\bnatural language/gi, '自然言語')
+    .replace(/\bcomputer vision/gi, 'コンピュータビジョン')
+    .replace(/\bAPI/g, 'API')
+    .replace(/\bSDK/g, 'SDK')
+    .replace(/\bplatform/gi, 'プラットフォーム')
+    .replace(/\bservice/gi, 'サービス')
+    .replace(/\btool/gi, 'ツール')
+    .replace(/\bapp(?:lication)?/gi, 'アプリ')
+    .replace(/\bsoftware/gi, 'ソフトウェア')
+    .replace(/\bsolution/gi, 'ソリューション');
+    
+  return translated;
+}
+
+// 金額の翻訳
+function translateAmount(amount) {
+  if (amount.includes('B')) {
+    const num = parseFloat(amount);
+    return `${num}0億ドル`;
+  } else if (amount.includes('M')) {
+    const num = parseFloat(amount);
+    return `${num}00万ドル`;
+  } else if (amount.includes('K')) {
+    const num = parseFloat(amount);
+    return `${num}000ドル`;
+  }
+  return amount + 'ドル';
+}
+
+// 部分的な翻訳（パターンマッチングで翻訳できなかった場合）
+function partialTranslate(text) {
+  // 英語が残っている場合は、元のテキストをそのまま返す
+  // （不完全な翻訳よりも、英語のままの方が読みやすい）
+  return text;
+}
+
+// 以下、元のフォールバック翻訳関数（使用しない）
+function oldPartialTranslate(text) {
   let translated = text;
   
   // まず、よく使われるフレーズを自然な日本語に置換
