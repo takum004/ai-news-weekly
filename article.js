@@ -170,141 +170,74 @@ function generateDetailedReport(article) {
     const sections = [];
     const summary = article.summaryJa || article.summary;
     const title = article.titleJa || article.title;
+    const originalTitle = article.title;
+    const originalSummary = article.summary;
     
-    // 1. Introduction section - より詳細な導入
+    // Extract key information from the article
+    const keyInfo = extractKeyInformation(article);
+    
+    // 1. Introduction section - タイトルと要約に基づいた導入
     sections.push(`
         <div class="report-section">
             <h3>1. はじめに：なぜこのニュースが重要なのか</h3>
             <p>${summary}</p>
-            <p>このニュースは、AI業界における最新の動向を示すものであり、技術の進化がもたらす可能性と課題の両面を理解する上で重要な意味を持ちます。特に、${getCategoryContext(article.category)}という観点から注目に値します。</p>
+            <p>${generateIntroductionContext(article, keyInfo)}</p>
         </div>
     `);
     
-    // 2. Background and Context - 背景と文脈
+    // 2. Background and Context - 記事固有の背景
     sections.push(`
         <div class="report-section">
             <h3>2. 背景と文脈</h3>
-            ${getBackgroundContext(article)}
+            ${generateDynamicBackground(article, keyInfo)}
         </div>
     `);
     
-    // 3. Key Technical Details - カテゴリに応じた詳細分析
-    if (article.category === 'research' || article.category === 'academic') {
-        sections.push(`
-            <div class="report-section">
-                <h3>3. 研究の詳細と意義</h3>
-                <p>この研究発表は、AI分野の基礎研究における重要な一歩を示しています。従来のアプローチでは解決が困難だった問題に対して、新しい視点からの解決策を提示している可能性があります。</p>
-                <p>学術的な観点から見ると、この研究は以下のような点で重要性を持ちます：</p>
-                <ul>
-                    <li><strong>理論的貢献</strong>：既存の理論的枠組みを拡張し、新しい理解の地平を開く可能性</li>
-                    <li><strong>実験的検証</strong>：提案された手法の有効性を実証し、再現可能な結果を提供</li>
-                    <li><strong>応用可能性</strong>：研究成果が実世界の問題解決にどのように適用できるかの示唆</li>
-                </ul>
-                <p>また、この研究が他の研究者たちの今後の研究方向に与える影響も注目されます。新しい研究の道筋を示すことで、AI分野全体の発展に寄与する可能性があります。</p>
-            </div>
-        `);
-    } else if (article.category === 'business' || article.category === 'tech') {
-        sections.push(`
-            <div class="report-section">
-                <h3>3. ビジネスインパクトと市場への影響</h3>
-                <p>この技術革新やビジネス展開は、業界構造に大きな変化をもたらす可能性を秘めています。短期的には既存のビジネスモデルに影響を与え、長期的には新しい市場の創出につながる可能性があります。</p>
-                <p>具体的なビジネスへの影響として以下が考えられます：</p>
-                <ul>
-                    <li><strong>競争環境の変化</strong>：新技術の導入により、業界内の競争力学が大きく変わる可能性</li>
-                    <li><strong>顧客価値の向上</strong>：エンドユーザーにとってより価値の高いサービスや製品の提供が可能に</li>
-                    <li><strong>新規参入の機会</strong>：技術革新により、新しいプレイヤーが市場に参入する機会が生まれる</li>
-                    <li><strong>既存企業の対応</strong>：従来の大手企業も、この変化に適応するための戦略転換が必要</li>
-                </ul>
-            </div>
-        `);
-    } else if (article.category.includes('generation') || article.category === 'multimodal') {
-        sections.push(`
-            <div class="report-section">
-                <h3>3. 生成AI技術の進化と特徴</h3>
-                <p>この発表は、生成AI技術の急速な進化を示す重要な例です。${getCategorySpecificDetail(article.category)}</p>
-                <p>技術的な観点から見た主な特徴：</p>
-                <ul>
-                    <li><strong>性能向上</strong>：従来モデルと比較して、品質・速度・効率性の大幅な改善</li>
-                    <li><strong>新機能</strong>：これまで不可能だったタスクの実現や、新しい使用方法の提案</li>
-                    <li><strong>アクセシビリティ</strong>：より多くのユーザーが利用できるようになる工夫や改善</li>
-                    <li><strong>倫理的配慮</strong>：生成コンテンツの品質管理や悪用防止のための対策</li>
-                </ul>
-            </div>
-        `);
-    } else {
-        sections.push(`
-            <div class="report-section">
-                <h3>3. 技術的な詳細と革新性</h3>
-                <p>この発表における技術的な進歩は、AI分野の現在の発展段階を象徴するものです。特に注目すべきは、実用性と革新性のバランスが取れている点です。</p>
-                <p>主な技術的特徴：</p>
-                <ul>
-                    <li><strong>アーキテクチャ</strong>：新しい設計思想に基づく効率的なシステム構成</li>
-                    <li><strong>スケーラビリティ</strong>：大規模な展開にも対応できる拡張性</li>
-                    <li><strong>パフォーマンス</strong>：実用的な速度と精度の両立</li>
-                </ul>
-            </div>
-        `);
-    }
+    // 3. Key Technical Details - 記事の内容に基づいた詳細分析
+    sections.push(`
+        <div class="report-section">
+            <h3>3. ${getTechnicalSectionTitle(article, keyInfo)}</h3>
+            ${generateTechnicalAnalysis(article, keyInfo)}
+        </div>
+    `);
     
-    // 4. Impact Analysis - 影響分析
+    // 4. Impact Analysis - 記事固有の影響分析
     sections.push(`
         <div class="report-section">
             <h3>4. 想定される影響と波及効果</h3>
-            ${getImpactAnalysis(article)}
+            ${generateSpecificImpactAnalysis(article, keyInfo)}
         </div>
     `);
     
-    // 5. Challenges and Considerations - 課題と考慮事項
+    // 5. Challenges and Considerations - 記事に関連した具体的な課題
     sections.push(`
         <div class="report-section">
             <h3>5. 課題と今後の検討事項</h3>
-            <p>この技術や発表には大きな可能性がある一方で、実装や普及に向けていくつかの課題も存在します：</p>
-            <ul>
-                <li><strong>技術的課題</strong>：スケーラビリティ、信頼性、性能の更なる向上</li>
-                <li><strong>倫理的配慮</strong>：AIの公平性、透明性、プライバシー保護の確保</li>
-                <li><strong>規制対応</strong>：各国の法規制への適合と、新しい規制枠組みへの対応</li>
-                <li><strong>社会的受容</strong>：一般ユーザーや企業による技術の理解と受け入れ</li>
-            </ul>
-            <p>これらの課題に対して、業界全体での協力と継続的な改善が求められます。</p>
+            ${generateSpecificChallenges(article, keyInfo)}
         </div>
     `);
     
-    // 6. Future Outlook - 将来展望
+    // 6. Future Outlook - このニュースが示す将来
     sections.push(`
         <div class="report-section">
             <h3>6. 今後の展望と予測</h3>
-            <p>この発表を踏まえて、今後のAI業界の発展について以下のような展開が予想されます：</p>
-            <p><strong>短期的展望（6ヶ月〜1年）</strong></p>
-            <ul>
-                <li>関連技術の急速な進化と、競合他社による類似技術の発表</li>
-                <li>実証実験やパイロットプロジェクトの増加</li>
-                <li>開発者コミュニティでの活発な議論と改善提案</li>
-            </ul>
-            <p><strong>中長期的展望（1〜3年）</strong></p>
-            <ul>
-                <li>実用化の進展と、一般ユーザーへの普及</li>
-                <li>新しいビジネスモデルやサービスの登場</li>
-                <li>技術標準の確立と、業界エコシステムの形成</li>
-                <li>社会インフラへの組み込みと、日常生活での活用拡大</li>
-            </ul>
+            ${generateFutureOutlook(article, keyInfo)}
         </div>
     `);
     
-    // 7. Expert Commentary - 専門家の視点
+    // 7. Expert Commentary - このニュースに対する業界の視点
     sections.push(`
         <div class="report-section">
             <h3>7. 専門家の視点と業界の反応</h3>
-            <p>この発表に対して、AI業界の専門家や関係者からは様々な反応が予想されます。技術的な革新性を評価する声がある一方で、実装面での課題を指摘する意見も出てくるでしょう。</p>
-            <p>特に注目されるのは、この技術が既存の技術スタックとどのように統合されるか、また、競合他社がどのような対抗策を打ち出すかという点です。業界全体の技術水準の向上につながることが期待されています。</p>
+            ${generateExpertPerspective(article, keyInfo)}
         </div>
     `);
     
-    // 8. Conclusion - まとめ
+    // 8. Conclusion - このニュース固有の結論
     sections.push(`
         <div class="report-section">
             <h3>8. まとめ：このニュースから学ぶべきこと</h3>
-            <p>「${title}」というニュースは、AI技術の現在地と将来の方向性を示す重要な指標となります。技術の進歩がもたらす可能性を最大限に活用しながら、同時に潜在的な課題にも適切に対処していく必要があります。</p>
-            <p>私たちは、このような技術革新が社会にもたらす変化を注視し、建設的な形でその発展に貢献していくことが求められています。AI技術の民主化と責任ある利用を通じて、より良い未来の構築に向けて歩みを進めていくことが重要です。</p>
+            ${generateConclusion(article, keyInfo)}
         </div>
     `);
     
@@ -407,6 +340,609 @@ function getImpactAnalysis(article) {
     }
     
     return content;
+}
+
+// Extract key information from article
+function extractKeyInformation(article) {
+    const title = article.titleJa || article.title;
+    const summary = article.summaryJa || article.summary;
+    
+    // Extract company names, product names, version numbers, etc.
+    const patterns = {
+        company: /(OpenAI|Google|Anthropic|Microsoft|Meta|NVIDIA|Amazon|Apple|IBM|Tesla)/gi,
+        product: /(GPT-\d+\.?\d*|Claude \d+\.?\d*|Gemini \d+\.?\d*|Llama \d+|Copilot|ChatGPT|DALL-E|Midjourney)/gi,
+        version: /(\d+\.\d+|\d+\.x|v\d+|バージョン\d+|版)/gi,
+        feature: /(API|SDK|プラットフォーム|フレームワーク|モデル|エンジン|ツール|サービス)/gi,
+        metric: /(\d+[%％]|\d+倍|\d+億|\d+万|\$\d+)/gi
+    };
+    
+    const keyInfo = {
+        companies: [...new Set((title + ' ' + summary).match(patterns.company) || [])],
+        products: [...new Set((title + ' ' + summary).match(patterns.product) || [])],
+        versions: [...new Set((title + ' ' + summary).match(patterns.version) || [])],
+        features: [...new Set((title + ' ' + summary).match(patterns.feature) || [])],
+        metrics: [...new Set((title + ' ' + summary).match(patterns.metric) || [])],
+        isResearch: article.category === 'research' || article.category === 'academic',
+        isBusiness: article.category === 'business' || article.category === 'tech',
+        isGeneration: article.category.includes('generation') || article.category === 'multimodal',
+        mainFocus: determineMainFocus(title, summary)
+    };
+    
+    return keyInfo;
+}
+
+// Determine main focus of the article
+function determineMainFocus(title, summary) {
+    const text = (title + ' ' + summary).toLowerCase();
+    
+    if (text.includes('発表') || text.includes('リリース') || text.includes('公開')) {
+        return 'release';
+    } else if (text.includes('研究') || text.includes('論文') || text.includes('実験')) {
+        return 'research';
+    } else if (text.includes('買収') || text.includes('投資') || text.includes('資金')) {
+        return 'business';
+    } else if (text.includes('更新') || text.includes('アップデート') || text.includes('改善')) {
+        return 'update';
+    } else if (text.includes('問題') || text.includes('課題') || text.includes('批判')) {
+        return 'issue';
+    }
+    return 'general';
+}
+
+// Generate introduction context based on article
+function generateIntroductionContext(article, keyInfo) {
+    let context = '';
+    
+    if (keyInfo.companies.length > 0) {
+        context += `${keyInfo.companies[0]}による今回の発表は、`;
+    } else {
+        context += 'この発表は、';
+    }
+    
+    if (keyInfo.mainFocus === 'release') {
+        context += '新たな技術やサービスの市場投入を意味し、業界の競争力学に大きな影響を与える可能性があります。';
+    } else if (keyInfo.mainFocus === 'research') {
+        context += 'AI技術の基礎研究における重要な進展を示しており、将来の応用可能性を大きく広げるものです。';
+    } else if (keyInfo.mainFocus === 'business') {
+        context += 'ビジネス戦略の転換点を示しており、市場構造の変化をもたらす可能性があります。';
+    } else if (keyInfo.mainFocus === 'update') {
+        context += '既存技術の継続的な改善を示しており、ユーザー体験の向上に寄与します。';
+    } else {
+        context += 'AI分野における重要な動向を示しています。';
+    }
+    
+    if (keyInfo.products.length > 0) {
+        context += `特に${keyInfo.products[0]}は、${getCategoryContext(article.category)}という観点から注目に値します。`;
+    } else {
+        context += `特に、${getCategoryContext(article.category)}という観点から注目に値します。`;
+    }
+    
+    return context;
+}
+
+// Generate dynamic background based on article content
+function generateDynamicBackground(article, keyInfo) {
+    let content = '<p>';
+    const summary = article.summaryJa || article.summary;
+    
+    // Company-specific background
+    if (keyInfo.companies.includes('OpenAI')) {
+        content += 'OpenAIは、2015年の設立以来、AGI（汎用人工知能）の実現を目指して革新的な研究開発を続けています。';
+    } else if (keyInfo.companies.includes('Google')) {
+        content += 'Googleは、検索技術から始まり、現在では包括的なAIエコシステムを構築する巨大テック企業として、';
+    } else if (keyInfo.companies.includes('Anthropic')) {
+        content += 'Anthropicは、AI安全性研究に特化した企業として、より信頼性の高いAIシステムの開発を目指しています。';
+    } else {
+        content += '現在のAI業界は、急速な技術革新と激しい競争が特徴となっています。';
+    }
+    
+    // Add context about the specific technology mentioned
+    if (summary.includes('言語モデル') || summary.includes('LLM')) {
+        content += '大規模言語モデル（LLM）の分野では、パラメータ数の増加だけでなく、効率性や特定タスクへの最適化が重要な競争軸となっています。';
+    } else if (summary.includes('画像') || summary.includes('動画')) {
+        content += 'マルチモーダルAIの発展により、テキストだけでなく視覚情報も扱えるシステムが主流になりつつあります。';
+    }
+    
+    content += '</p><p>';
+    
+    // Add specific context based on the article's focus
+    if (keyInfo.metrics.length > 0) {
+        content += `今回発表された${keyInfo.metrics[0]}という数値は、技術の進歩の速さを物語っています。`;
+    }
+    
+    if (keyInfo.versions.length > 0) {
+        content += `${keyInfo.versions[0]}への進化は、継続的な改善の取り組みの成果と言えるでしょう。`;
+    }
+    
+    content += 'このような背景の中で、今回の発表の意義を正しく理解することが重要です。</p>';
+    
+    return content;
+}
+
+// Get technical section title based on article
+function getTechnicalSectionTitle(article, keyInfo) {
+    if (keyInfo.isResearch) {
+        return '技術的詳細と研究の核心';
+    } else if (keyInfo.isBusiness) {
+        return 'ビジネスモデルと市場戦略';
+    } else if (keyInfo.isGeneration) {
+        return '生成技術の革新と特徴';
+    } else if (keyInfo.mainFocus === 'update') {
+        return '改善点と技術的進歩';
+    }
+    return '技術仕様と革新性';
+}
+
+// Generate technical analysis based on article
+function generateTechnicalAnalysis(article, keyInfo) {
+    const summary = article.summaryJa || article.summary;
+    let content = '<p>';
+    
+    // Start with article-specific introduction
+    if (keyInfo.products.length > 0) {
+        content += `${keyInfo.products[0]}における技術的な進歩は、`;
+    } else {
+        content += 'この発表における技術的な進歩は、';
+    }
+    
+    // Extract and discuss specific features mentioned
+    const features = extractSpecificFeatures(summary);
+    if (features.length > 0) {
+        content += `特に${features.join('、')}の面で顕著です。`;
+    } else {
+        content += '複数の面で革新的な要素を含んでいます。';
+    }
+    
+    content += '</p>';
+    
+    // Add specific technical details based on what's mentioned in the article
+    if (summary.includes('性能') || summary.includes('速度') || summary.includes('精度')) {
+        content += '<h4>性能面での進化</h4><p>';
+        content += generatePerformanceAnalysis(summary, keyInfo);
+        content += '</p>';
+    }
+    
+    if (summary.includes('機能') || summary.includes('新しい') || summary.includes('追加')) {
+        content += '<h4>新機能と改善点</h4><p>';
+        content += generateFeatureAnalysis(summary, keyInfo);
+        content += '</p>';
+    }
+    
+    if (keyInfo.isResearch) {
+        content += '<h4>研究手法と検証</h4><p>';
+        content += generateResearchMethodology(summary);
+        content += '</p>';
+    }
+    
+    return content;
+}
+
+// Extract specific features from summary
+function extractSpecificFeatures(summary) {
+    const features = [];
+    
+    if (summary.includes('コード') || summary.includes('プログラ')) features.push('コーディング能力');
+    if (summary.includes('推論') || summary.includes('論理')) features.push('推論能力');
+    if (summary.includes('翻訳')) features.push('多言語対応');
+    if (summary.includes('画像') || summary.includes('視覚')) features.push('視覚認識');
+    if (summary.includes('音声') || summary.includes('音楽')) features.push('音声処理');
+    if (summary.includes('リアルタイム')) features.push('リアルタイム処理');
+    if (summary.includes('効率') || summary.includes('最適化')) features.push('処理効率');
+    
+    return features;
+}
+
+// Generate performance analysis
+function generatePerformanceAnalysis(summary, keyInfo) {
+    let analysis = '';
+    
+    if (keyInfo.metrics.length > 0) {
+        analysis += `報告されている${keyInfo.metrics[0]}という改善は、従来の技術と比較して大幅な進歩を示しています。`;
+    }
+    
+    if (summary.includes('高速') || summary.includes('速い')) {
+        analysis += '処理速度の向上により、より実用的なアプリケーションへの応用が可能になります。';
+    }
+    
+    if (summary.includes('精度') || summary.includes('正確')) {
+        analysis += '精度の向上は、より信頼性の高いシステムの構築を可能にし、実世界での導入を促進します。';
+    }
+    
+    return analysis || '性能面での改善により、より幅広い用途での活用が期待されます。';
+}
+
+// Generate feature analysis
+function generateFeatureAnalysis(summary, keyInfo) {
+    const title = keyInfo.products.length > 0 ? keyInfo.products[0] : 'このシステム';
+    let analysis = `${title}に追加された新機能は、ユーザーのニーズに応える形で設計されています。`;
+    
+    if (summary.includes('API')) {
+        analysis += '特にAPI経由でのアクセスが可能になることで、開発者コミュニティでの活用が促進されるでしょう。';
+    }
+    
+    if (summary.includes('インターフェース') || summary.includes('UI')) {
+        analysis += 'ユーザーインターフェースの改善により、技術的な知識が少ないユーザーでも活用しやすくなっています。';
+    }
+    
+    return analysis;
+}
+
+// Generate research methodology
+function generateResearchMethodology(summary) {
+    let methodology = '本研究では、';
+    
+    if (summary.includes('データセット') || summary.includes('データ')) {
+        methodology += '大規模なデータセットを用いた実証的なアプローチが取られています。';
+    } else if (summary.includes('実験') || summary.includes('検証')) {
+        methodology += '厳密な実験設計に基づいて、提案手法の有効性が検証されています。';
+    } else {
+        methodology += '新しいアプローチにより、従来の限界を突破する試みがなされています。';
+    }
+    
+    return methodology;
+}
+
+// Generate specific impact analysis
+function generateSpecificImpactAnalysis(article, keyInfo) {
+    const summary = article.summaryJa || article.summary;
+    let content = '<p>「' + (article.titleJa || article.title) + '」がもたらす影響を、具体的に検討してみましょう。</p>';
+    
+    // Technical impact specific to the article
+    content += '<h4>技術的影響</h4><ul>';
+    
+    if (keyInfo.products.length > 0) {
+        content += `<li>${keyInfo.products[0]}の登場により、関連技術の開発が加速される可能性</li>`;
+    }
+    
+    if (summary.includes('オープンソース') || summary.includes('公開')) {
+        content += '<li>技術の民主化による、より多くの開発者の参入</li>';
+    }
+    
+    if (keyInfo.companies.length > 0) {
+        content += `<li>${keyInfo.companies[0]}のエコシステム内での新たな統合可能性</li>`;
+    }
+    
+    content += '</ul>';
+    
+    // Economic impact
+    content += '<h4>経済的影響</h4><ul>';
+    
+    if (keyInfo.mainFocus === 'business') {
+        content += '<li>新たなビジネスモデルの創出と既存市場の再編</li>';
+    }
+    
+    if (summary.includes('コスト') || summary.includes('価格') || summary.includes('無料')) {
+        content += '<li>技術へのアクセスコストの変化による市場構造の変革</li>';
+    }
+    
+    content += '<li>関連産業への波及効果と新規雇用の創出</li></ul>';
+    
+    // Social impact
+    content += '<h4>社会的影響</h4><ul>';
+    content += generateSocialImpact(summary, keyInfo);
+    content += '</ul>';
+    
+    if (article.importance >= 90) {
+        content += `<p class="highlight-box">この発表は重要度${article.importance}と評価されており、業界全体に大きなインパクトを与える可能性が高いと考えられます。</p>`;
+    }
+    
+    return content;
+}
+
+// Generate social impact based on article
+function generateSocialImpact(summary, keyInfo) {
+    let impacts = '';
+    
+    if (summary.includes('教育') || summary.includes('学習')) {
+        impacts += '<li>教育分野での活用による学習機会の拡大</li>';
+    }
+    
+    if (summary.includes('医療') || summary.includes('健康')) {
+        impacts += '<li>医療・ヘルスケア分野での応用可能性</li>';
+    }
+    
+    if (summary.includes('アクセシビリティ') || summary.includes('誰でも')) {
+        impacts += '<li>技術へのアクセスの民主化</li>';
+    }
+    
+    if (keyInfo.isGeneration) {
+        impacts += '<li>クリエイティブ産業への影響と新たな表現手法の創出</li>';
+    }
+    
+    return impacts || '<li>日常生活における AI 活用の新たな可能性</li>';
+}
+
+// Generate specific challenges
+function generateSpecificChallenges(article, keyInfo) {
+    const summary = article.summaryJa || article.summary;
+    let content = '<p>この技術や発表に関連する具体的な課題を整理します：</p>';
+    
+    // Extract challenges from the summary itself
+    const challenges = extractChallengesFromSummary(summary);
+    
+    if (challenges.length > 0) {
+        content += '<h4>記事で言及されている課題</h4><ul>';
+        challenges.forEach(challenge => {
+            content += `<li>${challenge}</li>`;
+        });
+        content += '</ul>';
+    }
+    
+    // Add category-specific challenges
+    content += '<h4>技術分野特有の課題</h4><ul>';
+    
+    if (keyInfo.isGeneration) {
+        content += '<li>生成コンテンツの品質管理と著作権問題</li>';
+        content += '<li>悪用防止のための技術的・制度的対策</li>';
+    } else if (keyInfo.isResearch) {
+        content += '<li>理論と実装のギャップを埋める必要性</li>';
+        content += '<li>研究成果の再現性と検証可能性の確保</li>';
+    } else if (keyInfo.companies.length > 0) {
+        content += `<li>${keyInfo.companies[0]}のプラットフォームへの依存リスク</li>`;
+        content += '<li>競合他社との技術格差への対応</li>';
+    }
+    
+    content += '</ul>';
+    
+    // Implementation challenges
+    content += '<h4>実装・導入における課題</h4><ul>';
+    content += generateImplementationChallenges(summary, keyInfo);
+    content += '</ul>';
+    
+    return content;
+}
+
+// Extract challenges from summary
+function extractChallengesFromSummary(summary) {
+    const challenges = [];
+    
+    if (summary.includes('課題') || summary.includes('問題')) {
+        const sentences = summary.split('。');
+        sentences.forEach(sentence => {
+            if (sentence.includes('課題') || sentence.includes('問題')) {
+                challenges.push(sentence.trim() + '。');
+            }
+        });
+    }
+    
+    return challenges;
+}
+
+// Generate implementation challenges
+function generateImplementationChallenges(summary, keyInfo) {
+    let challenges = '';
+    
+    if (summary.includes('大規模') || summary.includes('スケール')) {
+        challenges += '<li>大規模展開時のインフラストラクチャ要件</li>';
+    }
+    
+    if (summary.includes('コスト') || keyInfo.metrics.some(m => m.includes('$'))) {
+        challenges += '<li>導入・運用コストと投資対効果のバランス</li>';
+    }
+    
+    if (summary.includes('データ') || summary.includes('プライバシー')) {
+        challenges += '<li>データプライバシーとセキュリティの確保</li>';
+    }
+    
+    challenges += '<li>既存システムとの統合と移行戦略</li>';
+    
+    return challenges;
+}
+
+// Generate future outlook
+function generateFutureOutlook(article, keyInfo) {
+    const title = article.titleJa || article.title;
+    const summary = article.summaryJa || article.summary;
+    
+    let content = `<p>「${title}」という発表を踏まえ、今後予想される展開を時系列で整理します。</p>`;
+    
+    // Short-term outlook
+    content += '<h4>短期的展望（3-6ヶ月）</h4><ul>';
+    content += generateShortTermOutlook(summary, keyInfo);
+    content += '</ul>';
+    
+    // Medium-term outlook
+    content += '<h4>中期的展望（6ヶ月-1年）</h4><ul>';
+    content += generateMediumTermOutlook(summary, keyInfo);
+    content += '</ul>';
+    
+    // Long-term outlook
+    content += '<h4>長期的展望（1-3年）</h4><ul>';
+    content += generateLongTermOutlook(summary, keyInfo);
+    content += '</ul>';
+    
+    return content;
+}
+
+// Generate short-term outlook
+function generateShortTermOutlook(summary, keyInfo) {
+    let outlook = '';
+    
+    if (keyInfo.products.length > 0) {
+        outlook += `<li>${keyInfo.products[0]}の初期ユーザーからのフィードバックと改善</li>`;
+    }
+    
+    if (summary.includes('ベータ') || summary.includes('プレビュー') || summary.includes('試験')) {
+        outlook += '<li>ベータ版から正式版への移行と機能の安定化</li>';
+    }
+    
+    if (keyInfo.companies.length > 0) {
+        outlook += `<li>競合他社による類似技術・サービスの発表</li>`;
+    }
+    
+    outlook += '<li>開発者コミュニティでの実験的な応用事例の登場</li>';
+    
+    return outlook;
+}
+
+// Generate medium-term outlook
+function generateMediumTermOutlook(summary, keyInfo) {
+    let outlook = '';
+    
+    if (keyInfo.mainFocus === 'release' || keyInfo.mainFocus === 'update') {
+        outlook += '<li>企業での本格的な導入事例の増加</li>';
+    }
+    
+    if (summary.includes('API') || summary.includes('SDK')) {
+        outlook += '<li>サードパーティ製アプリケーションの充実</li>';
+    }
+    
+    outlook += '<li>技術の成熟化と最適化の進展</li>';
+    outlook += '<li>規制当局との対話と業界標準の形成</li>';
+    
+    return outlook;
+}
+
+// Generate long-term outlook
+function generateLongTermOutlook(summary, keyInfo) {
+    let outlook = '';
+    
+    if (keyInfo.isGeneration) {
+        outlook += '<li>創造的産業における標準ツールとしての定着</li>';
+    } else if (keyInfo.isResearch) {
+        outlook += '<li>研究成果の実用化と商業展開</li>';
+    }
+    
+    outlook += '<li>次世代技術への進化と paradigm shift</li>';
+    outlook += '<li>社会インフラへの統合と日常生活での当たり前の存在に</li>';
+    
+    if (keyInfo.companies.length > 1) {
+        outlook += '<li>業界再編と新たなエコシステムの形成</li>';
+    }
+    
+    return outlook;
+}
+
+// Generate expert perspective
+function generateExpertPerspective(article, keyInfo) {
+    const summary = article.summaryJa || article.summary;
+    let content = '<p>この発表に対して、各分野の専門家からは以下のような視点が提示されることが予想されます：</p>';
+    
+    // Technical experts
+    content += '<h4>技術専門家の視点</h4><p>';
+    content += generateTechnicalExpertView(summary, keyInfo);
+    content += '</p>';
+    
+    // Business analysts
+    content += '<h4>ビジネスアナリストの視点</h4><p>';
+    content += generateBusinessAnalystView(summary, keyInfo);
+    content += '</p>';
+    
+    // Ethical considerations
+    if (keyInfo.isGeneration || summary.includes('AI') || summary.includes('倫理')) {
+        content += '<h4>倫理・社会学者の視点</h4><p>';
+        content += generateEthicalView(summary, keyInfo);
+        content += '</p>';
+    }
+    
+    return content;
+}
+
+// Generate technical expert view
+function generateTechnicalExpertView(summary, keyInfo) {
+    let view = '';
+    
+    if (keyInfo.products.length > 0) {
+        view += `${keyInfo.products[0]}の技術的アーキテクチャについて、`;
+    }
+    
+    if (summary.includes('性能') || summary.includes('効率')) {
+        view += 'パフォーマンスの改善は評価できるものの、実運用環境での検証が重要になるでしょう。';
+    } else if (summary.includes('新しい') || summary.includes('革新')) {
+        view += '革新的なアプローチは注目に値しますが、既存システムとの互換性が課題となる可能性があります。';
+    } else {
+        view += '技術的な実現可能性と拡張性について、慎重な評価が必要です。';
+    }
+    
+    return view;
+}
+
+// Generate business analyst view
+function generateBusinessAnalystView(summary, keyInfo) {
+    let view = 'ビジネス的観点から見ると、';
+    
+    if (keyInfo.mainFocus === 'business') {
+        view += 'この動きは市場の競争構造を大きく変える可能性があります。';
+    } else if (summary.includes('無料') || summary.includes('オープン')) {
+        view += 'オープン化戦略は市場拡大には有効ですが、収益化の道筋が重要になります。';
+    } else {
+        view += 'ROIの観点から、導入企業は慎重な cost-benefit 分析が必要でしょう。';
+    }
+    
+    if (keyInfo.companies.length > 0) {
+        view += `${keyInfo.companies[0]}の市場ポジショニングにも注目が集まります。`;
+    }
+    
+    return view;
+}
+
+// Generate ethical view
+function generateEthicalView(summary, keyInfo) {
+    let view = 'AI倫理の観点から、';
+    
+    if (keyInfo.isGeneration) {
+        view += '生成コンテンツの真正性と責任の所在について、社会的合意形成が急務です。';
+    } else if (summary.includes('データ') || summary.includes('学習')) {
+        view += '学習データの透明性と公平性の確保が重要な課題となります。';
+    } else {
+        view += '技術の社会実装における倫理的ガイドラインの整備が求められます。';
+    }
+    
+    return view;
+}
+
+// Generate conclusion
+function generateConclusion(article, keyInfo) {
+    const title = article.titleJa || article.title;
+    const summary = article.summaryJa || article.summary;
+    
+    let content = `<p>「${title}」というニュースを詳細に分析してきました。`;
+    
+    // Key takeaways specific to this article
+    content += 'この発表から得られる重要な示唆は以下の通りです：</p><ul>';
+    
+    // Generate specific takeaways based on article content
+    if (keyInfo.products.length > 0) {
+        content += `<li>${keyInfo.products[0]}は、${extractKeyValue(summary)}という点で画期的です</li>`;
+    }
+    
+    if (keyInfo.companies.length > 0) {
+        content += `<li>${keyInfo.companies[0]}の戦略は、業界全体の方向性を示唆しています</li>`;
+    }
+    
+    if (keyInfo.mainFocus === 'research') {
+        content += '<li>基礎研究の重要性と、その実用化への道筋が明確になりました</li>';
+    } else if (keyInfo.mainFocus === 'business') {
+        content += '<li>ビジネスモデルの転換が、技術革新と同じく重要であることが示されました</li>';
+    }
+    
+    content += '</ul>';
+    
+    // Final thoughts
+    content += '<p>';
+    if (article.importance >= 90) {
+        content += 'この発表は、AI業界における重要な転換点として記憶されることでしょう。';
+    } else {
+        content += 'この動きは、AI技術の着実な進歩を示す一例と言えます。';
+    }
+    
+    content += '私たちは、このような技術革新がもたらす機会を最大限に活用しながら、同時に責任ある形でその発展に貢献していく必要があります。</p>';
+    
+    return content;
+}
+
+// Extract key value proposition from summary
+function extractKeyValue(summary) {
+    if (summary.includes('性能') && summary.includes('向上')) {
+        return '性能の大幅な向上';
+    } else if (summary.includes('コスト') && summary.includes('削減')) {
+        return 'コスト効率の改善';
+    } else if (summary.includes('新しい') || summary.includes('初めて')) {
+        return '従来不可能だった機能の実現';
+    } else if (summary.includes('統合') || summary.includes('連携')) {
+        return 'シームレスな統合';
+    }
+    return '技術的な革新性';
 }
 
 // Initialize when DOM is loaded
