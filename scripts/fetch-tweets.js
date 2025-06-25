@@ -2,21 +2,23 @@ const { TwitterApi } = require('twitter-api-v2');
 const fs = require('fs').promises;
 const path = require('path');
 
-// X (Twitter) アカウントリスト
+// X (Twitter) アカウントリスト（無料プラン制限対応：重要5アカウントのみ）
 const TWITTER_ACCOUNTS = [
-  // 主要AI企業
+  // 最重要AI企業のみに限定
   { handle: 'OpenAI', name: 'OpenAI', category: 'openai' },
   { handle: 'AnthropicAI', name: 'Anthropic', category: 'anthropic' },
   { handle: 'GoogleAI', name: 'Google AI', category: 'google' },
+  { handle: 'midjourney', name: 'Midjourney', category: 'image_generation' },
+  { handle: 'cursor_ai', name: 'Cursor', category: 'code_generation' }
+];
+
+// 将来的に有料プラン利用時に追加可能なアカウント
+const ADDITIONAL_ACCOUNTS_FOR_PAID_PLAN = [
   { handle: 'MSFTResearch', name: 'Microsoft Research', category: 'microsoft' },
   { handle: 'DeepMind', name: 'DeepMind', category: 'google' },
   { handle: 'StabilityAI', name: 'Stability AI', category: 'image_generation' },
-  { handle: 'midjourney', name: 'Midjourney', category: 'image_generation' },
   { handle: 'runwayml', name: 'Runway', category: 'video_generation' },
-  
-  // 追加AI企業・サービス
   { handle: 'genspark_ai', name: 'Genspark', category: 'agents' },
-  { handle: 'cursor_ai', name: 'Cursor', category: 'code_generation' },
   { handle: 'kling_ai', name: 'KlingAI', category: 'video_generation' },
   { handle: 'suno_ai_', name: 'Suno', category: 'music_generation' },
   { handle: 'ViduAI_official', name: 'Vidu', category: 'video_generation' }
@@ -128,7 +130,7 @@ async function fetchTweets() {
         
         // 最新のツイートを取得（過去24時間）
         const tweets = await v2Client.userTimeline(user.data.id, {
-          max_results: 10,
+          max_results: 5, // 無料プラン対応：10から5に削減
           exclude: ['retweets', 'replies'],
           'tweet.fields': ['created_at', 'public_metrics', 'entities'],
           start_time: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString()
@@ -159,6 +161,14 @@ async function fetchTweets() {
     console.log(`\n📊 Tweet Summary:`);
     console.log(`✅ Total AI-related tweets collected: ${allTweets.length}`);
     console.log(`❌ Failed accounts: ${errors.length}`);
+    
+    // API使用量の見積もり
+    const tweetsPerDay = TWITTER_ACCOUNTS.length * 5 * 2; // アカウント数 × 5ツイート × 1日2回
+    const tweetsPerMonth = tweetsPerDay * 30;
+    console.log(`\n📈 API Usage Estimate:`);
+    console.log(`- Per execution: ${TWITTER_ACCOUNTS.length * 5} tweets`);
+    console.log(`- Per day (2x): ${tweetsPerDay} tweets`);
+    console.log(`- Per month: ${tweetsPerMonth} tweets (Free tier limit: 1,500)`);
     
     // 重複チェック（同じ内容のツイート）
     const uniqueTweets = [];
