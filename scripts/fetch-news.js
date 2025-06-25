@@ -3,17 +3,17 @@ const axios = require('axios');
 const Parser = require('rss-parser');
 
 // Verified RSS feeds for comprehensive AI news coverage (200 articles from working sources)
-// Prioritized by update frequency and AI focus
+// Expanded to include more sources for better coverage
 const RSS_FEEDS = [
   // High-frequency AI News Sources (Updated Daily or Multiple Times Daily)
   'https://techcrunch.com/category/artificial-intelligence/feed/', // Very active, daily updates
   'https://www.artificialintelligence-news.com/feed/', // AI-focused, frequent updates
-  // 'https://venturebeat.com/ai/feed/', // Removed - redirects instead of RSS
-  // 'https://feeds.feedburner.com/venturebeat/SZYF', // Removed - may have issues with feedburner
   'https://www.marktechpost.com/feed/', // Very active AI news
-  // 'https://www.theinformation.com/feed', // Removed - paywall/403 error
-  // 'https://siliconangle.com/category/ai/feed/', // Removed - potential 404 or parse errors
-  // 'https://www.bloomberg.com/technology/artificial-intelligence/rss.xml', // Removed - 403 forbidden
+  'https://venturebeat.com/feed/', // Re-enabled - main feed works
+  'https://thenextweb.com/neural/feed', // TNW Neural - AI section
+  'https://www.zdnet.com/topic/artificial-intelligence/rss.xml', // ZDNet AI section
+  'https://www.cnet.com/rss/news/', // CNET general tech including AI
+  'https://www.engadget.com/rss.xml', // Engadget tech news
   
   // Major Tech Publications - AI Coverage
   'https://www.technologyreview.com/feed/',
@@ -38,12 +38,14 @@ const RSS_FEEDS = [
   // Research & Academic Sources - Verified Working
   'https://blog.research.google/feeds/posts/default',
   'https://www.deepmind.com/blog/rss.xml',
-  // 'https://distill.pub/rss.xml', // Removed - site inactive/parse errors
   'https://bair.berkeley.edu/blog/feed.xml', // Berkeley AI Research
   'https://aws.amazon.com/blogs/machine-learning/feed/', // AWS ML Blog
   'https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml', // ScienceDaily AI
   'https://rss.arxiv.org/rss/cs.AI', // arXiv Artificial Intelligence papers
   'https://rss.arxiv.org/rss/cs.LG', // arXiv Machine Learning papers
+  'https://rss.arxiv.org/rss/cs.CV', // arXiv Computer Vision papers
+  'https://rss.arxiv.org/rss/cs.CL', // arXiv Computation and Language papers
+  'https://rss.arxiv.org/rss/cs.NE', // arXiv Neural and Evolutionary Computing
   
   // News & Analysis Platforms - Verified Working
   'https://machinelearningmastery.com/feed/',
@@ -82,15 +84,17 @@ const RSS_FEEDS = [
   
   // Additional High-Quality Sources for 200 Articles
   'https://www.axios.com/technology/rss',
-  // 'https://www.protocol.com/technology/rss', // Removed - site shut down
   'https://siliconangle.com/feed/',
-  // 'https://www.nextbigfuture.com/feed', // Removed - parse errors/unreliable
   'https://singularityhub.com/feed/',
-  // 'https://www.unite.ai/feed/', // Duplicate - already included above
   'https://hai.stanford.edu/news/rss.xml',
   'https://news.mit.edu/rss/topic/artificial-intelligence2',
   'https://www.cmu.edu/news/rss/all.xml',
   'https://www.berkeley.edu/news/rss/all.xml',
+  'https://www.pcmag.com/feeds/all', // PCMag tech news
+  'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', // The Verge AI section
+  'https://www.reuters.com/technology/rss', // Reuters Technology
+  'https://feeds.bloomberg.com/technology/news.rss', // Bloomberg Technology
+  'https://feeds.npr.org/1019/rss.xml', // NPR Technology
   // 'https://www.cs.cmu.edu/news/rss.xml', // Removed - 404 not found
   // 'https://www.ai.org/feed/', // Removed - DNS/site issues
   // 'https://syncedreview.com/feed/', // Duplicate - already included above
@@ -455,11 +459,11 @@ function categorizeArticle(title, content) {
     return 'nvidia';
   }
   
-  // AI Application Areas - Creative (second priority)
-  if (text.includes('video generation') || text.includes('video ai') || text.includes('runway') || text.includes('pika') || text.includes('video synthesis') || text.includes('motion') || text.includes('film') || text.includes('movie') || text.includes('sora')) {
+  // AI Application Areas - Creative (second priority) - 細分化
+  if (text.includes('video generation') || text.includes('video ai') || text.includes('runway') || text.includes('pika') || text.includes('video synthesis') || text.includes('motion') || text.includes('film') || text.includes('movie') || text.includes('sora') || text.includes('video creator') || text.includes('text-to-video') || text.includes('video editing')) {
     return 'video_generation';
   }
-  if (text.includes('image generation') || text.includes('midjourney') || text.includes('stable diffusion') || text.includes('dall-e') || text.includes('imagen') || text.includes('art generation') || text.includes('creative ai') || text.includes('drawing')) {
+  if (text.includes('image generation') || text.includes('midjourney') || text.includes('stable diffusion') || text.includes('dall-e') || text.includes('imagen') || text.includes('art generation') || text.includes('creative ai') || text.includes('drawing') || text.includes('text-to-image') || text.includes('image synthesis') || text.includes('art ai')) {
     return 'image_generation';
   }
   if (text.includes('audio generation') || text.includes('speech synthesis') || text.includes('voice synthesis') || text.includes('tts') || text.includes('elevenlabs') || text.includes('audio ai')) {
@@ -518,6 +522,32 @@ function categorizeArticle(title, content) {
   }
   if (text.includes('university') || text.includes('paper') || text.includes('study') || text.includes('academic') || text.includes('journal') || text.includes('conference') || text.includes('arxiv')) {
     return 'academic';
+  }
+  
+  // 新しい詳細カテゴリ
+  if (text.includes('regulation') || text.includes('policy') || text.includes('government') || text.includes('law') || text.includes('ethics') || text.includes('copyright') || text.includes('privacy')) {
+    return 'regulation';
+  }
+  if (text.includes('education') || text.includes('learning') || text.includes('teaching') || text.includes('edtech') || text.includes('course') || text.includes('tutorial')) {
+    return 'education';
+  }
+  if (text.includes('finance') || text.includes('fintech') || text.includes('banking') || text.includes('trading') || text.includes('cryptocurrency') || text.includes('blockchain')) {
+    return 'finance';
+  }
+  if (text.includes('security') || text.includes('cybersecurity') || text.includes('threat') || text.includes('attack') || text.includes('vulnerability') || text.includes('safety')) {
+    return 'security';
+  }
+  if (text.includes('data') || text.includes('dataset') || text.includes('database') || text.includes('analytics') || text.includes('big data') || text.includes('data science')) {
+    return 'data_science';
+  }
+  if (text.includes('startup') || text.includes('founder') || text.includes('entrepreneur') || text.includes('incubator') || text.includes('accelerator')) {
+    return 'startups';
+  }
+  if (text.includes('quantum') || text.includes('quantum computing') || text.includes('quantum ai') || text.includes('quantum machine learning')) {
+    return 'quantum';
+  }
+  if (text.includes('edge') || text.includes('iot') || text.includes('embedded') || text.includes('mobile ai') || text.includes('on-device')) {
+    return 'edge_ai';
   }
   
   // Default category

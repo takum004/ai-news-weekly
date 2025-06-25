@@ -22,7 +22,7 @@ const categories = {
     xai: { name: '❌ xAI/Grok', count: 0 },
     nvidia: { name: '💚 NVIDIA', count: 0 },
     
-    // AI Application Areas - Creative
+    // AI Application Areas - Creative (分離済み)
     video_generation: { name: '🎬 動画生成', count: 0 },
     image_generation: { name: '🎨 画像生成', count: 0 },
     audio_generation: { name: '🎵 音声生成', count: 0 },
@@ -50,7 +50,15 @@ const categories = {
     healthcare: { name: '🏥 医療・ヘルスケア', count: 0 },
     tech: { name: '💻 テクノロジー', count: 0 },
     startups: { name: '🚀 スタートアップ', count: 0 },
-    regulation: { name: '⚖️ 規制・政策', count: 0 }
+    regulation: { name: '⚖️ 規制・政策', count: 0 },
+    
+    // 新しい詳細カテゴリ
+    education: { name: '🎓 教育・学習', count: 0 },
+    finance: { name: '💰 金融・フィンテック', count: 0 },
+    security: { name: '🔒 セキュリティ', count: 0 },
+    data_science: { name: '📊 データサイエンス', count: 0 },
+    quantum: { name: '⚛️ 量子コンピューティング', count: 0 },
+    edge_ai: { name: '📱 エッジAI・IoT', count: 0 }
 };
 
 // Utility Functions
