@@ -39,8 +39,16 @@ jobs:
       - name: Fetch and update news
         run: |
           echo "Starting news update..."
-          echo "DeepL API Key exists: ${{ secrets.DEEPL_API_KEY && 'Yes' || 'No' }}"
-          echo "OpenAI API Key exists: ${{ secrets.OPENAI_API_KEY && 'Yes' || 'No' }}"
+          if [ -n "$DEEPL_API_KEY" ]; then
+            echo "DeepL API Key exists: Yes"
+          else
+            echo "DeepL API Key exists: No"
+          fi
+          if [ -n "$OPENAI_API_KEY" ]; then
+            echo "OpenAI API Key exists: Yes"
+          else
+            echo "OpenAI API Key exists: No"
+          fi
           npm run update-news || echo "News update completed with warnings"
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
