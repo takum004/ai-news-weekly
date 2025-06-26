@@ -352,8 +352,8 @@ async function fetchNewsFromRSS() {
             const summary = extractSummary(item.content || item.summary || item.description || title);
             
             // タイトルと要約の翻訳
-            const translatedTitle = await translateText(title, process.env.OPENAI_API_KEY);
-            const translatedSummary = await translateText(summary, process.env.OPENAI_API_KEY);
+            const translatedTitle = await translateText(title);
+            const translatedSummary = await translateText(summary);
             
             // 日本語要約の改善（翻訳が失敗した場合の対応）
             const improvedSummaryJa = improveJapaneseSummary(translatedSummary, summary, translatedTitle);
@@ -767,7 +767,7 @@ function calculateImportance(title, content, articleDate) {
   return Math.min(Math.max(score, 30), 100);
 }
 
-async function translateText(text, apiKey) {
+async function translateText(text) {
   if (!text) return '';
   
   // Debug logging
