@@ -107,17 +107,36 @@ async function loadArticle() {
         // Debug: Show first few article IDs
         console.log('First 5 article IDs:', data.articles.slice(0, 5).map(a => a.id));
         console.log('Looking for article ID:', decodedArticleId);
+        console.log('Raw article ID from URL:', articleId);
         
-        const article = data.articles.find(a => a.id === decodedArticleId);
+        // 記事を柔軟に検索（IDが完全一致、またはURLエンコードされた形式）
+        const article = data.articles.find(a => {
+            return a.id === decodedArticleId || 
+                   a.id === articleId ||
+                   decodeURIComponent(a.id) === decodedArticleId;
+        });
         
         if (!article) {
             console.error('Article not found with ID:', decodedArticleId);
-            console.error('Available IDs:', data.articles.map(a => a.id));
+            console.error('Raw ID:', articleId);
+            console.error('Total articles in data:', data.articles.length);
+            console.error('First 10 available IDs:', data.articles.slice(0, 10).map(a => a.id));
+            
             contentDiv.innerHTML = `
                 <div class="error">
-                    <p>記事が見つかりません</p>
-                    <p style="font-size: 0.9rem; color: #666;">Article ID: ${decodedArticleId}</p>
-                    <a href="index.html" style="display: inline-block; margin-top: 20px; color: #6366f1;">ホームに戻る</a>
+                    <h2>記事が見つかりません</h2>
+                    <p>リクエストされた記事が見つかりませんでした。</p>
+                    <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">この記事は削除されたか、まだ更新されていない可能性があります。</p>
+                    <div style="margin-top: 30px;">
+                        <a href="index.html" style="display: inline-block; padding: 10px 20px; background: #6366f1; color: white; text-decoration: none; border-radius: 6px;">
+                            ← ホームに戻る
+                        </a>
+                    </div>
+                    <details style="margin-top: 20px; font-size: 0.85rem; color: #999;">
+                        <summary style="cursor: pointer;">デバッグ情報</summary>
+                        <p style="margin-top: 10px;">Article ID: ${decodedArticleId}</p>
+                        <p>Raw ID: ${articleId}</p>
+                    </details>
                 </div>
             `;
             return;

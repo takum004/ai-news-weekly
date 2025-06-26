@@ -414,9 +414,12 @@ async function fetchNewsFromRSS() {
 }
 
 function generateId(text) {
-  return Buffer.from(text).toString('base64')
-    .replace(/[^a-zA-Z0-9]/g, '')
-    .slice(0, 16) + '-' + Date.now().toString(36);
+  // URLのハッシュを生成して一意で固定のIDを作成
+  const base64 = Buffer.from(text).toString('base64')
+    .replace(/[^a-zA-Z0-9]/g, '');
+  
+  // 長すぎる場合は最初の32文字に制限
+  return base64.length > 32 ? base64.slice(0, 32) : base64;
 }
 
 function extractDomain(url) {
