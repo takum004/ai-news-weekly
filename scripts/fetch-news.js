@@ -817,11 +817,22 @@ async function translateText(text) {
       // レート制限対策: APIコールの間に遅延を追加
       if (global.lastDeepLCall) {
         const timeSinceLastCall = Date.now() - global.lastDeepLCall;
-        if (timeSinceLastCall < 1000) { // 1秒以内の連続コールを避ける
-          await new Promise(resolve => setTimeout(resolve, 1000 - timeSinceLastCall));
+        if (timeSinceLastCall < 2000) { // 2秒以内の連続コールを避ける
+          await new Promise(resolve => setTimeout(resolve, 2000 - timeSinceLastCall));
         }
       }
       global.lastDeepLCall = Date.now();
+      
+      // レート制限カウンター
+      if (!global.deepLRateLimitHits) {
+        global.deepLRateLimitHits = 0;
+      }
+      
+      // レート制限に10回連続で引っかかった場合は一時停止
+      if (global.deepLRateLimitHits >= 10) {
+        console.log('DeepL API rate limit exceeded too many times, disabling for this session');
+        return enhancedPartialTranslate(text);
+      }
       
       const deepLUrl = 'https://api-free.deepl.com/v2/translate';
       const params = new URLSearchParams({
@@ -849,7 +860,12 @@ async function translateText(text) {
           console.error('DeepL quota exceeded! Using fallback translation.');
         } else if (error.response.status === 429) {
           console.error('DeepL rate limit hit! Waiting before retry...');
-          await new Promise(resolve => setTimeout(resolve, 5000)); // 5秒待つ
+          global.deepLRateLimitHits = (global.deepLRateLimitHits || 0) + 1;
+          
+          // バックオフ戦略: 失敗回数に応じて待機時間を増やす
+          const waitTime = Math.min(30000, 5000 * Math.pow(1.5, global.deepLRateLimitHits));
+          console.log(`Waiting ${waitTime}ms before next attempt...`);
+          await new Promise(resolve => setTimeout(resolve, waitTime));
         }
       }
       console.error('Falling back to pattern-based translation...');
@@ -881,15 +897,32 @@ async function translateText(text) {
   // 最終フォールバック: 改良されたパターンベース翻訳
   console.log('Using enhanced pattern-based translation');
   
-  // AIニュースのタイトルでよく見られるパターンを分析し、より自然な日本語に変換
-  let translated = translateByPattern(text);
-  
-  // パターンマッチングで翻訳できなかった場合は、改良された部分翻訳を使用
-  if (translated === text) {
-    translated = enhancedPartialTranslate(text);
+  // APIが全て失敗した場合でも、基本的な翻訳は提供する
+  try {
+    // AIニュースのタイトルでよく見られるパターンを分析し、より自然な日本語に変換
+    let translated = translateByPattern(text);
+    
+    // パターンマッチングで翻訳できなかった場合は、改良された部分翻訳を使用
+    if (translated === text) {
+      translated = enhancedPartialTranslate(text);
+    }
+    
+    // それでも翻訳できなかった場合の最終フォールバック
+    if (translated === text && text.length > 50) {
+      // 長い文章の場合は最初の部分だけでも翻訳を試みる
+      const firstSentence = text.split('.')[0];
+      const partialTranslation = enhancedPartialTranslate(firstSentence);
+      if (partialTranslation !== firstSentence) {
+        translated = partialTranslation + '...';
+      }
+    }
+    
+    return translated;
+  } catch (fallbackError) {
+    console.error('Fallback translation error:', fallbackError.message);
+    // 全ての翻訳が失敗した場合は元のテキストを返す
+    return text;
   }
-  
-  return translated;
 }
 
 // パターンベースの翻訳（完全な文を自然な日本語に）
@@ -1266,7 +1299,147 @@ function translateAmount(amount) {
 // 部分的な翻訳（パターンマッチングで翻訳できなかった場合）
 // 改良された部分翻訳関数
 function enhancedPartialTranslate(text) {
-  return partialTranslate(text);
+  if (!text || text.length === 0) return '';
+  
+  // タイトルと要約の共通パターンを優先的に処理
+  let translated = text;
+  
+  try {
+    // 会社名を前処理
+    const companies = [
+      'OpenAI', 'Google', 'Microsoft', 'Meta', 'NVIDIA', 'Anthropic', 'DeepMind',
+      'Amazon', 'Apple', 'Tesla', 'xAI', 'Hugging Face', 'Stability AI',
+      'Midjourney', 'Cohere', 'Character.AI', 'Databricks', 'Palantir',
+      'ByteDance', 'Baidu', 'Alibaba', 'Tencent', 'Samsung', 'Intel', 'AMD',
+      'Qualcomm', 'Oracle', 'Salesforce', 'Adobe', 'Netflix', 'Spotify',
+      'Uber', 'Waymo', 'Dell', 'IBM', 'Insta360', 'Bonfy', 'Mitiga',
+      'SUPERWISE', 'Fortanix', 'Creatio', 'SiliconANGLE', 'Engadget'
+    ];
+    
+    // 会社名を一時的にプレースホルダーに置換
+    const companyMap = new Map();
+    companies.forEach((company, index) => {
+      const placeholder = `__COMPANY_${index}__`;
+      const regex = new RegExp(company, 'gi');
+      if (translated.match(regex)) {
+        companyMap.set(placeholder, company);
+        translated = translated.replace(regex, placeholder);
+      }
+    });
+    
+    // 基本的な翻訳パターンを適用
+    const patterns = [
+      // 動詞パターン
+      [/\blaunches?\b/gi, '発表'],
+      [/\bannounces?\b/gi, '発表'],
+      [/\bintroduces?\b/gi, '導入'],
+      [/\bunveils?\b/gi, '公開'],
+      [/\breleases?\b/gi, 'リリース'],
+      [/\bupdates?\b/gi, '更新'],
+      [/\bimproves?\b/gi, '改善'],
+      [/\benhances?\b/gi, '強化'],
+      [/\benables?\b/gi, '可能にする'],
+      [/\boffers?\b/gi, '提供'],
+      [/\bprovides?\b/gi, '提供'],
+      [/\bsupports?\b/gi, 'サポート'],
+      [/\bachieves?\b/gi, '達成'],
+      [/\breaches?\b/gi, '到達'],
+      [/\bwins?\b/gi, '勝利'],
+      [/\breceives?\b/gi, '受領'],
+      
+      // 名詞パターン
+      [/\bnew\b/gi, '新しい'],
+      [/\bAI\b/g, 'AI'],
+      [/\bartificial intelligence\b/gi, '人工知能'],
+      [/\bmachine learning\b/gi, '機械学習'],
+      [/\bdeep learning\b/gi, 'ディープラーニング'],
+      [/\bmodel\b/gi, 'モデル'],
+      [/\bplatform\b/gi, 'プラットフォーム'],
+      [/\btool\b/gi, 'ツール'],
+      [/\bservice\b/gi, 'サービス'],
+      [/\bsolution\b/gi, 'ソリューション'],
+      [/\bsystem\b/gi, 'システム'],
+      [/\bfeature\b/gi, '機能'],
+      [/\btechnology\b/gi, '技術'],
+      [/\bupdate\b/gi, 'アップデート'],
+      [/\bsecurity\b/gi, 'セキュリティ'],
+      [/\bgenerator?\b/gi, '生成'],
+      [/\bvideo\b/gi, '動画'],
+      [/\bimage\b/gi, '画像'],
+      [/\baudio\b/gi, '音声'],
+      [/\bvoice\b/gi, '音声'],
+      [/\bcontent\b/gi, 'コンテンツ'],
+      [/\bgaming\b/gi, 'ゲーミング'],
+      [/\brobotics?\b/gi, 'ロボティクス'],
+      [/\bhealthcare\b/gi, 'ヘルスケア'],
+      [/\bmedical\b/gi, '医療'],
+      [/\bfinance\b/gi, '金融'],
+      [/\beducation\b/gi, '教育'],
+      [/\bresearch\b/gi, '研究'],
+      [/\bpaper\b/gi, '論文'],
+      [/\bperformance\b/gi, '性能'],
+      [/\baccuracy\b/gi, '精度'],
+      [/\befficiency\b/gi, '効率'],
+      [/\bproductivity\b/gi, '生産性'],
+      [/\bautomation\b/gi, '自動化'],
+      [/\bagents?\b/gi, 'エージェント'],
+      [/\bworkflow\b/gi, 'ワークフロー'],
+      [/\bmanagement\b/gi, '管理'],
+      [/\boperations?\b/gi, '運用'],
+      [/\bbusiness\b/gi, 'ビジネス'],
+      [/\benterprise\b/gi, 'エンタープライズ'],
+      [/\bcustomer\b/gi, '顧客'],
+      [/\buser\b/gi, 'ユーザー'],
+      [/\bteam\b/gi, 'チーム'],
+      [/\bcompany\b/gi, '企業'],
+      [/\borganization\b/gi, '組織'],
+      
+      // 接続詞・前置詞
+      [/\bfor\b/gi, 'のための'],
+      [/\bwith\b/gi, 'を使った'],
+      [/\bto\b/gi, 'への'],
+      [/\bby\b/gi, 'による'],
+      [/\band\b/gi, 'と'],
+      [/\bor\b/gi, 'または'],
+      [/\bthe\b/gi, '']
+    ];
+    
+    // パターンを適用
+    patterns.forEach(([pattern, replacement]) => {
+      translated = translated.replace(pattern, replacement);
+    });
+    
+    // スペースの整理
+    translated = translated.replace(/\s+/g, ' ').trim();
+    
+    // 会社名を復元
+    companyMap.forEach((company, placeholder) => {
+      translated = translated.replace(new RegExp(placeholder, 'g'), company);
+    });
+    
+    // 最終的な整形
+    translated = translated
+      .replace(/がを/g, 'が')
+      .replace(/をが/g, 'が')
+      .replace(/のの/g, 'の')
+      .replace(/へのへの/g, 'への')
+      .replace(/\s+/g, ' ')
+      .trim();
+    
+    // 翻訳結果が元の文とほとんど同じ場合は、基本的なフォールバックを返す
+    if (translated === text || translated.length < 5) {
+      // タイトルのみの場合の簡易翻訳
+      if (text.includes('launches') || text.includes('announces')) {
+        return text.replace(/launches|announces/gi, '発表') + 'に関するニュース';
+      }
+      return text + 'に関するニュース';
+    }
+    
+    return translated;
+  } catch (error) {
+    console.error('Enhanced partial translate error:', error);
+    return text;
+  }
 }
 
 function partialTranslate(text) {
