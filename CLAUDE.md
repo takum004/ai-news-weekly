@@ -28,10 +28,7 @@
 # 1. 環境変数を設定
 export DEEPL_API_KEY="your-deepl-api-key-here"
 
-# 2. テスト実行
-node test-translation.js
-
-# 3. ニュースを更新
+# 2. ニュースを更新
 node scripts/fetch-news.js
 ```
 
