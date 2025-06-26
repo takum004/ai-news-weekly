@@ -101,11 +101,23 @@ async function loadArticle() {
         
         const data = await response.json();
         console.log('Loaded articles count:', data.articles?.length || 0);
+        
+        // Debug: Show first few article IDs
+        console.log('First 5 article IDs:', data.articles.slice(0, 5).map(a => a.id));
+        console.log('Looking for article ID:', articleId);
+        
         const article = data.articles.find(a => a.id === articleId);
         
         if (!article) {
             console.error('Article not found with ID:', articleId);
-            contentDiv.innerHTML = '<div class="error">記事が見つかりません</div>';
+            console.error('Available IDs:', data.articles.map(a => a.id));
+            contentDiv.innerHTML = `
+                <div class="error">
+                    <p>記事が見つかりません</p>
+                    <p style="font-size: 0.9rem; color: #666;">Article ID: ${articleId}</p>
+                    <a href="index.html" style="display: inline-block; margin-top: 20px; color: #6366f1;">ホームに戻る</a>
+                </div>
+            `;
             return;
         }
         
