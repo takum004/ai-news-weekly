@@ -2,33 +2,17 @@
 
 ## 📌 プロジェクト概要
 
-**AI Weekly News**は、最新のAI関連ニュースを自動収集し、日本語翻訳・要約付きで毎日更新するWebサイトです。
+**AI Weekly News**は、最新のAI関連ニュースを自動収集し、日本語翻訳・要約付きで毎日更新するWebサイトです。RSS feedsとTwitter/X APIを使用して、180-200件の記事を収集し、カテゴリ別に整理して表示します。
 
-## 🔧 セットアップ手順
+**デモサイト**: https://takum004.github.io/ai-news-weekly/
 
-### 1. リポジトリ設定
-1. GitHubリポジトリの Settings > Actions > General へ移動
-2. "Workflow permissions" で "Read and write permissions" を選択
-3. "Allow GitHub Actions to create and approve pull requests" にチェック
-4. Save をクリック
+## 🚀 主な特徴
 
-### 2. GitHub Pages設定
-1. Settings > Pages へ移動
-2. Source: "GitHub Actions" を選択
-3. Save をクリック
-
-### 3. シークレット設定（オプション）
-OpenAI APIを使用する場合：
-1. Settings > Secrets and variables > Actions
-2. "New repository secret" をクリック
-3. Name: `OPENAI_API_KEY`、Value: あなたのAPIキー
-4. Add secret をクリック
-
-## 🚀 特徴
-
-- ✅ **毎日自動更新**: GitHub Actionsで自動実行
-- ✅ **日本語翻訳**: AI自動翻訳・要約機能
-- ✅ **カテゴリ分類**: 技術・研究・ビジネス・医療・学術
+- ✅ **毎日自動更新**: GitHub Actionsで1日2回（日本時間 6:00, 12:00）自動実行
+- ✅ **豊富な情報源**: 67のRSSフィード + 5つの主要AIアカウント（Twitter/X）
+- ✅ **日本語翻訳**: パターンベースの高品質翻訳システム
+- ✅ **詳細なカテゴリ分類**: 33以上のカテゴリで分類
+- ✅ **動的な記事詳細ページ**: 各記事の内容に基づいた詳細レポート生成
 - ✅ **レスポンシブデザイン**: PC・タブレット・スマホ対応
 - ✅ **高速表示**: シンプルなHTML/CSS/JS構成
 - ✅ **無料運用**: GitHub Pages + GitHub Actions
@@ -41,278 +25,278 @@ OpenAI APIを使用する場合：
 - **JavaScript (ES6+)**: バニラJS、フレームワークなし
 - **Google Fonts**: Noto Sans JP (日本語フォント)
 
-### データ管理
-- **news.json**: ニュースデータストレージ
-- **GitHub**: バージョン管理・ホスティング
+### バックエンド処理
+- **Node.js**: ニュース収集・翻訳処理
+- **RSS Parser**: RSSフィード解析
+- **Twitter API v2**: ツイート収集
 - **GitHub Actions**: 自動化ワークフロー
+
+### データソース
+- **RSSフィード**: 67の主要AI関連ニュースサイト
+- **Twitter/X**: @OpenAI, @AnthropicAI, @GoogleAI, @midjourney, @cursor_ai
 
 ## 📁 ファイル構成
 
 ```
-ai-news-simple/
+ai-news-weekly/
 ├── index.html          # メインページ
-├── style.css           # スタイルシート  
-├── script.js           # JavaScript機能
-├── data/               # データディレクトリ
-│   └── news.json       # ニュースデータ (自動生成)
-├── scripts/            # 自動化スクリプト
-│   ├── fetch-news.js   # ニュース収集
-│   └── translate.js    # 翻訳処理
+├── article.html        # 記事詳細ページ
+├── style.css           # メインスタイル
+├── script.js           # メインページJS
+├── article.js          # 記事詳細ページJS  
+├── data/               
+│   ├── news.json       # ニュースデータ (自動生成)
+│   └── tweets.json     # ツイートデータ (自動生成)
+├── scripts/            
+│   ├── fetch-news.js   # RSS収集・翻訳
+│   └── fetch-tweets.js # Twitter収集
 ├── .github/
 │   └── workflows/
-│       └── daily-update.yml  # 自動更新設定
-├── README.md           # このファイル
-└── SYSTEM_OVERVIEW.md  # システム全体概要
+│       └── update-and-deploy.yml
+├── package.json        # 依存関係
+└── README.md           # このファイル
 ```
 
-## 🎨 デザイン仕様
+## 🔧 セットアップ手順
 
-### カラーパレット
-- **プライマリ**: #06b6d4 (シアン)
-- **セカンダリ**: #3b82f6 (ブルー)
-- **アクセント**: #6366f1 (インディゴ)
-- **背景**: #f8fafc (ライトグレー)
-- **テキスト**: #1f2937 (ダークグレー)
+### 1. リポジトリの準備
+```bash
+# リポジトリをクローン
+git clone https://github.com/yourusername/ai-news-weekly.git
+cd ai-news-weekly
 
-### タイポグラフィ
-- **メインフォント**: Noto Sans JP
-- **サイズ**: レスポンシブ対応
-- **ウェイト**: 300, 400, 500, 700
-
-### レイアウト
-- **グリッドシステム**: CSS Grid + Flexbox
-- **ブレークポイント**: 
-  - モバイル: ~768px
-  - タブレット: 768px~1024px
-  - デスクトップ: 1024px~
-
-## 🔧 機能詳細
-
-### 1. ニュース表示
-```javascript
-// ニュースカード表示
-function createNewsCard(article) {
-    // HTMLテンプレート生成
-    // カテゴリバッジ
-    // 重要度表示
-    // 日本語翻訳タイトル・要約
-}
+# 依存関係をインストール
+npm install
 ```
 
-### 2. フィルタリング・検索
-```javascript
-// カテゴリフィルタ
-currentCategory = 'tech|research|business|healthcare|academic|all'
+### 2. GitHub設定
 
-// 検索機能  
-currentSearch = 'キーワード'
+#### Actions権限設定
+1. Settings > Actions > General へ移動
+2. "Workflow permissions" で "Read and write permissions" を選択
+3. "Allow GitHub Actions to create and approve pull requests" にチェック
+4. Save をクリック
 
-// ソート機能
-sortBy = 'date-desc|date-asc|importance-desc'
-```
+#### GitHub Pages設定
+1. Settings > Pages へ移動
+2. Source: "GitHub Actions" を選択
+3. Save をクリック
 
-### 3. レスポンシブ対応
-```css
-/* モバイルファースト */
-@media (max-width: 768px) {
-    .news-grid {
-        grid-template-columns: 1fr;
-    }
-}
-```
+### 3. APIキー設定（オプション）
+
+#### OpenAI API（翻訳品質向上用）
+1. Settings > Secrets and variables > Actions
+2. "New repository secret" をクリック
+3. Name: `OPENAI_API_KEY`、Value: あなたのAPIキー
+4. Add secret をクリック
+
+#### Twitter API（ツイート収集用）
+1. 同様に "New repository secret" をクリック
+2. Name: `TWITTER_BEARER_TOKEN`、Value: あなたのBearer Token
+3. Add secret をクリック
 
 ## 📊 データフォーマット
 
 ### news.json 構造
 ```json
 {
-  "lastUpdated": "2025-06-21T00:00:00Z",
+  "lastUpdated": "2025-06-25T12:00:00Z",
   "articles": [
     {
       "id": "unique-identifier",
       "title": "Original English Title",
-      "titleJa": "日本語タイトル",
+      "titleJa": "日本語タイトル（自動翻訳）",
       "summary": "English summary text...",
-      "summaryJa": "日本語要約文...",
-      "source": "VentureBeat",
-      "category": "tech",
+      "summaryJa": "日本語要約文（自動翻訳）",
+      "source": "TechCrunch",
+      "category": "openai",
       "importance": 85,
-      "pubDate": "2025-06-21T10:30:00Z",
-      "link": "https://original-article-url.com"
+      "pubDate": "2025-06-25T10:30:00Z",
+      "link": "https://original-article-url.com",
+      "isTweet": false
     }
   ]
 }
 ```
 
-### カテゴリ分類
-- **tech**: テクノロジー・製品
-- **research**: AI研究・開発
-- **business**: ビジネス・投資
-- **healthcare**: 医療・ヘルスケア
-- **academic**: 論文・学術研究
+### カテゴリ一覧
+```javascript
+// 企業カテゴリ
+openai, google, anthropic, microsoft, meta, xai, nvidia
+
+// 生成AIカテゴリ  
+video_generation    // 動画生成
+image_generation    // 画像生成
+audio_generation    // 音声生成
+music_generation    // 音楽生成
+voice_cloning       // 音声クローン
+3d_modeling         // 3Dモデリング
+
+// 技術カテゴリ
+agents              // AIエージェント
+automation          // 自動化
+code_generation     // コード生成
+translation         // 翻訳
+multimodal          // マルチモーダル
+reasoning           // 推論AI
+
+// 産業カテゴリ
+robotics            // ロボティクス
+gaming              // ゲーミング
+healthcare          // ヘルスケア
+education           // 教育
+finance             // 金融
+
+// その他
+research            // 研究
+academic            // 学術
+business            // ビジネス
+regulation          // 規制・政策
+presentation        // プレゼン
+tech                // テクノロジー
+other               // その他
+```
+
+## 🎨 デザイン仕様
+
+### カラーパレット
+- **プライマリ**: #6366f1 (インディゴ)
+- **セカンダリ**: #3b82f6 (ブルー)  
+- **アクセント**: #8b5cf6 (パープル)
+- **背景**: #fafafa (ライトグレー)
+- **カード背景**: #ffffff (ホワイト)
+- **テキスト**: #111827 (ダークグレー)
+
+### レスポンシブブレークポイント
+- モバイル: ~768px
+- タブレット: 768px~1024px
+- デスクトップ: 1024px~
 
 ## 🤖 自動化システム
 
 ### GitHub Actions ワークフロー
 ```yaml
-name: Daily AI News Update
+name: Update News and Deploy
 on:
   schedule:
-    - cron: "0 0 * * *"  # 毎日0時実行
+    - cron: '0 21 * * *'  # JST 6:00 AM
+    - cron: '0 3 * * *'   # JST 12:00 PM
   workflow_dispatch:      # 手動実行可能
 
 jobs:
   update-news:
-    runs-on: ubuntu-latest
-    steps:
-      - name: ニュース収集・翻訳・更新
-        # RSS/API から AI ニュース取得
-        # 重要度判定・フィルタリング
-        # 日本語翻訳・要約生成  
-        # news.json 更新・コミット
+    # RSS/Twitter から AI ニュース取得
+    # パターンベース日本語翻訳
+    # カテゴリ分類・重要度判定
+    # news.json 更新・コミット
+  
+  deploy:
+    # GitHub Pages へデプロイ
 ```
 
-## 🚀 デプロイ方法
+## 🔍 主な機能
 
-### 1. GitHub Pages設定
-```bash
-# リポジトリ設定 > Pages
-# Source: Deploy from a branch
-# Branch: main / (root)
-```
+### 1. ニュース収集機能
+- 67のRSSフィードから記事を収集
+- Twitter API v2で主要AIアカウントのツイートを収集
+- 重複除去とAI関連フィルタリング
+- 重要度スコアリング（0-100）
 
-### 2. カスタムドメイン (オプション)
-```bash
-# CNAME ファイル作成
-echo "ai-news.your-domain.com" > CNAME
-```
+### 2. 日本語翻訳機能
+- パターンベースの高品質翻訳
+- 会社名・製品名の適切な翻訳
+- 技術用語の統一翻訳
+- 文脈を考慮した自然な日本語生成
 
-### 3. 自動デプロイ確認
-- GitHub Actions が正常実行されているか
-- Pages デプロイが成功しているか
-- サイトが正常表示されているか
+### 3. 記事詳細ページ
+- 記事内容から重要情報を自動抽出
+- 動的なレポート生成（8つのセクション）
+  - はじめに：なぜこのニュースが重要なのか
+  - 背景と文脈
+  - 技術的詳細
+  - 想定される影響と波及効果
+  - 課題と今後の検討事項
+  - 今後の展望と予測
+  - 専門家の視点と業界の反応
+  - まとめ：このニュースから学ぶべきこと
 
-## 🔍 トラブルシューティング
+### 4. フィルタリング・検索
+- カテゴリ別表示
+- キーワード検索
+- 日付範囲フィルター
+- 重要度でのソート
 
-### よくある問題
+## 🚀 カスタマイズ方法
 
-#### 1. ニュースが表示されない
-**原因**: news.json読み込み失敗  
-**解決**: 
+### RSS フィードの追加
 ```javascript
-// script.js で mock data を確認
-console.log('Mock news loaded:', mockNews);
+// scripts/fetch-news.js の RSS_FEEDS 配列に追加
+const RSS_FEEDS = [
+  'https://example.com/ai/feed.xml',
+  // 新しいフィードをここに追加
+];
 ```
 
-#### 2. スタイルが適用されない  
-**原因**: CSS読み込み失敗
-**解決**:
-```html
-<!-- index.html でパス確認 -->
-<link rel="stylesheet" href="style.css">
+### 新しいカテゴリの追加
+```javascript
+// script.js と article.js の categoryLabels に追加
+const categoryLabels = {
+  new_category: '🆕 新カテゴリ',
+  // 既存のカテゴリ...
+};
 ```
 
-#### 3. GitHub Actions失敗
-**原因**: API制限・権限エラー
-**解決**: 
-- GitHub token 権限確認
-- API rate limit 確認
-- workflow_dispatch で手動実行テスト
+### 翻訳パターンの改善
+```javascript
+// scripts/fetch-news.js の translateByPattern 関数に追加
+const patterns = [
+  [/新しいパターン/, (match) => '翻訳結果'],
+  // 既存のパターン...
+];
+```
 
 ## 📈 パフォーマンス最適化
 
-### 1. 画像最適化
-```html
-<!-- 遅延読み込み -->
-<img loading="lazy" src="image.jpg" alt="description">
-```
-
-### 2. JavaScript最適化
-```javascript
-// デバウンス実装
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-```
-
-### 3. CSS最適化
-```css
-/* Critical CSS inlining */
-/* 未使用CSS削除 */
-/* CSS Grid + Flexbox 活用 */
-```
-
-## 🧪 テスト方法
-
-### 1. 手動テスト
-- [ ] 全カテゴリ表示確認
-- [ ] 検索機能動作確認  
-- [ ] ソート機能動作確認
-- [ ] レスポンシブ表示確認
-- [ ] リンク動作確認
-
-### 2. 自動化テスト (将来実装)
-```javascript
-// Jest or similar framework
-describe('News filtering', () => {
-    test('Category filter works correctly', () => {
-        // テストコード
-    });
-});
-```
+### 実装済みの最適化
+- データの差分更新（最新100件のみ保持）
+- 遅延読み込み（スクロールに応じて表示）
+- キャッシュバスティング（更新時の確実な反映）
+- 効率的なDOM操作（DocumentFragment使用）
 
 ## 🔐 セキュリティ
 
-### 1. XSS対策
+### 実装済みの対策
+- XSS対策：textContent使用によるHTMLエスケープ
+- APIキーの保護：GitHub Secretsで管理
+- CORS対応：同一オリジンでのデータ取得
+
+## 📝 トラブルシューティング
+
+### よくある問題と解決方法
+
+#### ニュースが表示されない
 ```javascript
-// HTMLエスケープ実装
-function escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
-}
+// ブラウザコンソールで確認
+console.log('Loaded articles:', data.articles.length);
+// キャッシュクリア: Ctrl+Shift+R
 ```
 
-### 2. CSP設定
-```html
-<meta http-equiv="Content-Security-Policy" 
-      content="default-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src fonts.gstatic.com;">
-```
+#### GitHub Actions が失敗する
+- Secrets設定を確認
+- ワークフロー権限を確認
+- Actions タブでエラーログを確認
 
-## 📝 今後の改善予定
-
-### Phase 1: 基本機能完成
-- [x] HTML/CSS/JS基本実装
-- [ ] GitHub Pages デプロイ
-- [ ] 自動ニュース収集実装
-
-### Phase 2: 機能拡張  
-- [ ] PWA対応
-- [ ] ダークモード
-- [ ] お気に入り機能 (localStorage)
-- [ ] 通知機能
-
-### Phase 3: 高度化
-- [ ] AI要約品質向上
-- [ ] 多言語対応
-- [ ] アナリティクス実装
-- [ ] コメント機能
+#### 翻訳が不自然
+- translateByPattern関数のパターンを調整
+- 新しいパターンを追加
 
 ## 🤝 コントリビューション
 
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
+1. このリポジトリをFork
+2. 機能ブランチを作成 (`git checkout -b feature/amazing-feature`)
+3. 変更をコミット (`git commit -m 'Add amazing feature'`)
+4. ブランチにPush (`git push origin feature/amazing-feature`)
+5. Pull Requestを作成
 
 ## 📄 ライセンス
 
@@ -321,12 +305,11 @@ MIT License - 詳細は `LICENSE` ファイルを参照
 ## 📞 サポート
 
 - **Issues**: GitHub Issues でバグ報告・機能要求
-- **Documentation**: README.md + SYSTEM_OVERVIEW.md
-- **Updates**: GitHub Releases で変更履歴確認
+- **Discussions**: GitHub Discussions で質問・議論
 
 ---
 
 **作成日**: 2025-06-21  
-**最終更新**: 2025-06-21  
-**バージョン**: 1.0.0  
-**ステータス**: ✅ 基本実装完了
+**最終更新**: 2025-06-25  
+**バージョン**: 2.0.0  
+**ステータス**: ✅ 本番稼働中

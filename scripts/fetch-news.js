@@ -320,11 +320,23 @@ async function fetchNewsFromRSS() {
           const keywordLower = keyword.toLowerCase();
           return titleLower.includes(keywordLower) || 
                  content.includes(keywordLower) ||
-                 (item.categories && item.categories.some(cat => 
-                   cat.toLowerCase().includes('ai') || 
-                   cat.toLowerCase().includes('artificial') ||
-                   cat.toLowerCase().includes('machine')
-                 ));
+                 (item.categories && item.categories.some(cat => {
+                   // カテゴリが文字列でない場合の対応
+                   if (typeof cat === 'string') {
+                     const catLower = cat.toLowerCase();
+                     return catLower.includes('ai') || 
+                            catLower.includes('artificial') ||
+                            catLower.includes('machine');
+                   } else if (cat && typeof cat === 'object') {
+                     // カテゴリがオブジェクトの場合（{term: "AI"} など）
+                     const catStr = cat.term || cat.name || cat.label || '';
+                     const catLower = catStr.toLowerCase();
+                     return catLower.includes('ai') || 
+                            catLower.includes('artificial') ||
+                            catLower.includes('machine');
+                   }
+                   return false;
+                 }));
         });
         
         if (isAIRelated && title.length > 10 && item.link && item.link.startsWith('http')) {
@@ -339,13 +351,20 @@ async function fetchNewsFromRSS() {
             
             const summary = extractSummary(item.content || item.summary || item.description || title);
             
+            // タイトルと要約の翻訳
+            const translatedTitle = await translateText(title, process.env.OPENAI_API_KEY);
+            const translatedSummary = await translateText(summary, process.env.OPENAI_API_KEY);
+            
+            // 日本語要約の改善（翻訳が失敗した場合の対応）
+            const improvedSummaryJa = improveJapaneseSummary(translatedSummary, summary, translatedTitle);
+            
             const article = {
               id: generateId(item.link || item.guid || title),
               title: cleanText(title),
-              titleJa: await translateText(title, process.env.OPENAI_API_KEY),
+              titleJa: translatedTitle || title, // 翻訳失敗時は英語を使用
               summary: cleanText(summary),
-              summaryJa: await translateText(summary, process.env.OPENAI_API_KEY),
-              source: cleanText(feed.title || extractDomain(feedUrl)),
+              summaryJa: improvedSummaryJa,
+              source: extractSourceName(feed.title, feedUrl),
               category: categorizeArticle(title, content),
               importance: calculateImportance(title, content, articleDate),
               pubDate: articleDate.toISOString(),
@@ -417,6 +436,69 @@ function cleanText(text) {
     .substring(0, 500); // Limit length
 }
 
+// Extract clean source name from feed title
+function extractSourceName(feedTitle, feedUrl) {
+  if (!feedTitle) {
+    return extractDomain(feedUrl);
+  }
+  
+  // Remove common prefixes and suffixes
+  let source = feedTitle;
+  
+  // If title contains | or -, take the last part (usually the source name)
+  if (source.includes('|')) {
+    source = source.split('|').pop().trim();
+  } else if (source.includes(' - ') && source.split(' - ').length > 1) {
+    source = source.split(' - ').pop().trim();
+  }
+  
+  // Remove common suffixes
+  source = source
+    .replace(/\s*(RSS|Feed|News Feed|Blog|AI News|Artificial Intelligence|Tech News)\s*$/i, '')
+    .replace(/\s*(\(.*\))\s*$/g, '') // Remove content in parentheses
+    .trim();
+  
+  // Map known sources to clean names
+  const sourceMap = {
+    'techcrunch': 'TechCrunch',
+    'venturebeat': 'VentureBeat',
+    'the verge': 'The Verge',
+    'ars technica': 'Ars Technica',
+    'wired': 'WIRED',
+    'mit technology review': 'MIT Technology Review',
+    'zdnet': 'ZDNet',
+    'cnet': 'CNET',
+    'engadget': 'Engadget',
+    'the next web': 'The Next Web',
+    'bloomberg': 'Bloomberg',
+    'reuters': 'Reuters',
+    'bbc': 'BBC',
+    'the guardian': 'The Guardian',
+    'hugging face': 'Hugging Face',
+    'openai': 'OpenAI',
+    'google': 'Google AI',
+    'microsoft': 'Microsoft Research',
+    'anthropic': 'Anthropic',
+    'deepmind': 'DeepMind',
+    'nvidia': 'NVIDIA',
+    'meta': 'Meta AI',
+    'berkeley': 'Berkeley AI Research',
+    'stanford': 'Stanford HAI',
+    'mit': 'MIT News'
+  };
+  
+  // Check if we have a known mapping
+  const sourceLower = source.toLowerCase();
+  for (const [key, value] of Object.entries(sourceMap)) {
+    if (sourceLower.includes(key)) {
+      return value;
+    }
+  }
+  
+  // If no mapping found, return the cleaned source
+  return source || extractDomain(feedUrl);
+}
+
 function extractSummary(content) {
   if (!content) return '';
   
@@ -433,29 +515,89 @@ function extractSummary(content) {
   return summary.trim();
 }
 
+// 日本語要約の改善
+function improveJapaneseSummary(translatedSummary, originalSummary, translatedTitle) {
+  // 翻訳が失敗した場合の処理
+  if (!translatedSummary || translatedSummary === originalSummary) {
+    // タイトルから基本的な要約を生成
+    if (translatedTitle && translatedTitle !== originalSummary) {
+      return `${translatedTitle}に関するニュース。`;
+    }
+    // フォールバック
+    return 'ニュースの詳細はリンク先をご確認ください。';
+  }
+  
+  // 要約が長すぎる場合の対応
+  if (translatedSummary.length > 200) {
+    // 最初の200文字 + "..."
+    const truncated = translatedSummary.substring(0, 197) + '...';
+    // 最後の句点で切る
+    const lastPeriod = truncated.lastIndexOf('。');
+    if (lastPeriod > 100) {
+      return truncated.substring(0, lastPeriod + 1);
+    }
+    return truncated;
+  }
+  
+  // 要約が短すぎる場合の対応
+  if (translatedSummary.length < 50 && translatedTitle) {
+    // タイトルを使って補完
+    if (!translatedSummary.includes(translatedTitle)) {
+      return `${translatedTitle}に関する内容。${translatedSummary}`;
+    }
+  }
+  
+  // 句点の追加
+  if (!translatedSummary.endsWith('。') && !translatedSummary.endsWith('!') && !translatedSummary.endsWith('?')) {
+    return translatedSummary + '。';
+  }
+  
+  return translatedSummary;
+}
+
 function categorizeArticle(title, content) {
   const text = (title + ' ' + content).toLowerCase();
+  const titleLower = title.toLowerCase();
   
-  // Company/Model specific categories (highest priority)
-  if (text.includes('openai') || text.includes('gpt') || text.includes('chatgpt') || text.includes('dall-e') || text.includes('sora') || text.includes('o1') || text.includes('o3')) {
+  // Helper function to check if article is primarily about a company
+  const isAboutCompany = (company, keywords) => {
+    // Check if company name is in title
+    if (titleLower.includes(company)) {
+      return true;
+    }
+    
+    // Count keyword occurrences
+    let keywordCount = 0;
+    keywords.forEach(keyword => {
+      const matches = (text.match(new RegExp(`\\b${keyword}\\b`, 'g')) || []).length;
+      keywordCount += matches;
+    });
+    
+    // Article is about the company if multiple keywords appear
+    return keywordCount >= 3;
+  };
+  
+  // Company/Model specific categories (highest priority - but only if article is ABOUT them)
+  if (isAboutCompany('openai', ['openai', 'gpt-4', 'gpt-3', 'chatgpt', 'dall-e', 'sora', 'o1', 'o3'])) {
     return 'openai';
   }
-  if (text.includes('google') || text.includes('gemini') || text.includes('bard') || text.includes('deepmind') || text.includes('palm') || text.includes('vertex')) {
+  if (isAboutCompany('google', ['google', 'gemini', 'bard', 'deepmind', 'palm', 'vertex']) || 
+      isAboutCompany('deepmind', ['deepmind', 'alphafold', 'alphagenome'])) {
     return 'google';
   }
-  if (text.includes('anthropic') || text.includes('claude') || text.includes('constitutional ai')) {
+  if (isAboutCompany('anthropic', ['anthropic', 'claude', 'constitutional ai'])) {
     return 'anthropic';
   }
-  if (text.includes('microsoft') || text.includes('copilot') || text.includes('azure ai') || text.includes('bing ai')) {
+  if (isAboutCompany('microsoft', ['microsoft', 'copilot', 'azure ai', 'bing ai', 'bing chat'])) {
     return 'microsoft';
   }
-  if (text.includes('meta') || text.includes('llama') || text.includes('facebook ai') || text.includes('metaai')) {
+  if (isAboutCompany('meta', ['meta', 'llama', 'facebook ai', 'metaai', 'reality labs'])) {
     return 'meta';
   }
-  if (text.includes('xai') || text.includes('grok') || text.includes('elon musk') && text.includes('ai')) {
+  if (isAboutCompany('xai', ['xai', 'grok']) || (titleLower.includes('elon musk') && text.includes('ai'))) {
     return 'xai';
   }
-  if (text.includes('nvidia') || text.includes('cuda') || text.includes('tensor') || text.includes('gpu')) {
+  if (isAboutCompany('nvidia', ['nvidia', 'cuda', 'tensor', 'rtx', 'geforce']) && text.includes('ai')) {
     return 'nvidia';
   }
   
@@ -550,6 +692,44 @@ function categorizeArticle(title, content) {
     return 'edge_ai';
   }
   
+  // 追加の詳細カテゴリ
+  if (text.includes('climate') || text.includes('sustainability') || text.includes('environmental') || text.includes('green ai') || text.includes('carbon')) {
+    return 'climate';
+  }
+  if (text.includes('retail') || text.includes('e-commerce') || text.includes('shopping') || text.includes('customer experience') || text.includes('personalization')) {
+    return 'retail';
+  }
+  if (text.includes('manufacturing') || text.includes('industry 4.0') || text.includes('factory') || text.includes('production') || text.includes('supply chain')) {
+    return 'manufacturing';
+  }
+  if (text.includes('transportation') || text.includes('autonomous vehicle') || text.includes('self-driving') || text.includes('mobility') || text.includes('logistics')) {
+    return 'transportation';
+  }
+  if (text.includes('agriculture') || text.includes('farming') || text.includes('agtech') || text.includes('crop') || text.includes('precision agriculture')) {
+    return 'agriculture';
+  }
+  if (text.includes('energy') || text.includes('power grid') || text.includes('renewable') || text.includes('energy efficiency') || text.includes('smart grid')) {
+    return 'energy';
+  }
+  if (text.includes('legal') || text.includes('law firm') || text.includes('contract') || text.includes('compliance') || text.includes('legal tech')) {
+    return 'legal';
+  }
+  if (text.includes('real estate') || text.includes('property') || text.includes('construction') || text.includes('architecture') || text.includes('building')) {
+    return 'real_estate';
+  }
+  if (text.includes('entertainment') || text.includes('media') || text.includes('content creation') || text.includes('streaming') || text.includes('social media')) {
+    return 'entertainment';
+  }
+  if (text.includes('military') || text.includes('defense') || text.includes('warfare') || text.includes('national security') || text.includes('weapon')) {
+    return 'defense';
+  }
+  if (text.includes('space') || text.includes('satellite') || text.includes('astronomy') || text.includes('nasa') || text.includes('spacex')) {
+    return 'space';
+  }
+  if (text.includes('biotech') || text.includes('genomics') || text.includes('crispr') || text.includes('synthetic biology') || text.includes('life science')) {
+    return 'biotech';
+  }
+  
   // Default category
   return 'tech';
 }
@@ -592,7 +772,9 @@ async function translateText(text, apiKey) {
   
   // Debug logging
   const hasApiKey = !!process.env.OPENAI_API_KEY;
-  console.log(`Translation mode: ${hasApiKey ? 'OpenAI API' : 'Fallback translation'}`);
+  const hasDeepLKey = !!process.env.DEEPL_API_KEY;
+  const hasLibreKey = !!process.env.LIBRETRANSLATE_URL;
+  console.log(`Translation mode: ${hasApiKey ? 'OpenAI API' : hasDeepLKey ? 'DeepL API' : hasLibreKey ? 'LibreTranslate' : 'Enhanced Pattern Matching'}`);
   
   // OpenAI APIが利用可能な場合は高品質な翻訳を使用
   if (process.env.OPENAI_API_KEY) {
@@ -622,23 +804,89 @@ async function translateText(text, apiKey) {
     } catch (error) {
       console.error('OpenAI translation error:', error.message);
       console.error('API Key exists:', !!process.env.OPENAI_API_KEY);
-      console.error('Falling back to basic translation...');
-      // APIエラーの場合は基本翻訳にフォールバック
+      console.error('Falling back to alternative translation...');
+      // APIエラーの場合は他の翻訳にフォールバック
     }
-  } else {
-    console.log('No OpenAI API key found, using fallback translation');
   }
   
-  // フォールバック: 改善された基本翻訳（APIが使えない場合のみ）
-  console.log('Using enhanced fallback translation');
+  // DeepL API Free (月50万文字まで無料、それ以降は課金)
+  if (process.env.DEEPL_API_KEY) {
+    try {
+      console.log('Attempting DeepL API translation...');
+      
+      // レート制限対策: APIコールの間に遅延を追加
+      if (global.lastDeepLCall) {
+        const timeSinceLastCall = Date.now() - global.lastDeepLCall;
+        if (timeSinceLastCall < 1000) { // 1秒以内の連続コールを避ける
+          await new Promise(resolve => setTimeout(resolve, 1000 - timeSinceLastCall));
+        }
+      }
+      global.lastDeepLCall = Date.now();
+      
+      const deepLUrl = 'https://api-free.deepl.com/v2/translate';
+      const params = new URLSearchParams({
+        auth_key: process.env.DEEPL_API_KEY,
+        text: text.substring(0, 5000), // DeepL Freeの制限に合わせる
+        source_lang: 'EN',
+        target_lang: 'JA'
+      });
+      
+      const response = await axios.post(deepLUrl, params, {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        timeout: 30000 // 30秒タイムアウト
+      });
+      
+      if (response.data && response.data.translations && response.data.translations[0]) {
+        console.log('DeepL API translation successful');
+        return response.data.translations[0].text;
+      }
+    } catch (error) {
+      console.error('DeepL translation error:', error.message);
+      if (error.response) {
+        if (error.response.status === 456) {
+          console.error('DeepL quota exceeded! Using fallback translation.');
+        } else if (error.response.status === 429) {
+          console.error('DeepL rate limit hit! Waiting before retry...');
+          await new Promise(resolve => setTimeout(resolve, 5000)); // 5秒待つ
+        }
+      }
+      console.error('Falling back to pattern-based translation...');
+    }
+  }
+  
+  // LibreTranslate (セルフホスト可能、完全無料)
+  if (process.env.LIBRETRANSLATE_URL) {
+    try {
+      console.log('Attempting LibreTranslate API translation...');
+      const response = await axios.post(`${process.env.LIBRETRANSLATE_URL}/translate`, {
+        q: text.substring(0, 1000),
+        source: 'en',
+        target: 'ja',
+        format: 'text'
+      }, {
+        timeout: 10000
+      });
+      
+      if (response.data && response.data.translatedText) {
+        console.log('LibreTranslate API translation successful');
+        return response.data.translatedText;
+      }
+    } catch (error) {
+      console.error('LibreTranslate error:', error.message);
+    }
+  }
+  
+  // 最終フォールバック: 改良されたパターンベース翻訳
+  console.log('Using enhanced pattern-based translation');
   
   // AIニュースのタイトルでよく見られるパターンを分析し、より自然な日本語に変換
-  // 1. まず全体的なパターンマッチングを試みる
   let translated = translateByPattern(text);
   
-  // 2. パターンマッチングで翻訳できなかった場合のみ、部分的な翻訳を行う
+  // パターンマッチングで翻訳できなかった場合は、改良された部分翻訳を使用
   if (translated === text) {
-    translated = partialTranslate(text);
+    translated = enhancedPartialTranslate(text);
   }
   
   return translated;
@@ -1016,6 +1264,11 @@ function translateAmount(amount) {
 }
 
 // 部分的な翻訳（パターンマッチングで翻訳できなかった場合）
+// 改良された部分翻訳関数
+function enhancedPartialTranslate(text) {
+  return partialTranslate(text);
+}
+
 function partialTranslate(text) {
   // より積極的に翻訳を試みる
   let translated = text;

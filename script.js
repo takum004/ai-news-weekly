@@ -58,7 +58,21 @@ const categories = {
     security: { name: '🔒 セキュリティ', count: 0 },
     data_science: { name: '📊 データサイエンス', count: 0 },
     quantum: { name: '⚛️ 量子コンピューティング', count: 0 },
-    edge_ai: { name: '📱 エッジAI・IoT', count: 0 }
+    edge_ai: { name: '📱 エッジAI・IoT', count: 0 },
+    
+    // 産業別カテゴリ
+    climate: { name: '🌍 気候・環境', count: 0 },
+    retail: { name: '🛒 小売・コマース', count: 0 },
+    manufacturing: { name: '🏭 製造業', count: 0 },
+    transportation: { name: '🚗 交通・運輸', count: 0 },
+    agriculture: { name: '🌾 農業', count: 0 },
+    energy: { name: '⚡ エネルギー', count: 0 },
+    legal: { name: '⚖️ 法務', count: 0 },
+    real_estate: { name: '🏢 不動産', count: 0 },
+    entertainment: { name: '🎬 エンタメ', count: 0 },
+    defense: { name: '🛡️ 防衛', count: 0 },
+    space: { name: '🚀 宇宙', count: 0 },
+    biotech: { name: '🧬 バイオ', count: 0 }
 };
 
 // Utility Functions

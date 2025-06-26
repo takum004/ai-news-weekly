@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ジャンル検索 - AI Weekly News</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Search page specific styles */
+        .search-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .search-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .search-header h1 {
+            font-size: 2rem;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+        
+        .search-box {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            position: relative;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            font-size: 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            outline: none;
+            transition: all 0.3s ease;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        
+        .search-input:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+        
+        .search-button {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #6366f1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-button:hover {
+            background: #4f46e5;
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-color: #6366f1;
+        }
+        
+        .category-card.active {
+            border-color: #6366f1;
+            background: #f3f4ff;
+        }
+        
+        .category-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .category-name {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #374151;
+            margin-bottom: 5px;
+        }
+        
+        .category-count {
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+        
+        .results-section {
+            margin-top: 40px;
+        }
+        
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            background: #f9fafb;
+            border-radius: 10px;
+        }
+        
+        .results-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #111827;
+        }
+        
+        .results-count {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        
+        .clear-filter {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+        
+        .clear-filter:hover {
+            background: #dc2626;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .category-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 10px;
+            }
+            
+            .category-card {
+                padding: 15px;
+            }
+            
+            .category-icon {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-icon">🤖</span>
+                <span>AI Weekly News</span>
+            </div>
+            <div class="nav-actions">
+                <a href="index.html" class="genre-button">
+                    ← ホームに戻る
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="search-container">
+        <div class="search-header">
+            <h1>🔍 ジャンル検索</h1>
+            <p>興味のあるジャンルを選択するか、キーワードで検索してください</p>
+        </div>
+
+        <div class="search-box">
+            <input 
+                type="text" 
+                class="search-input" 
+                placeholder="キーワードを入力（例：ChatGPT、画像生成、etc.）"
+                id="searchInput"
+            >
+            <button class="search-button" onclick="performSearch()">検索</button>
+        </div>
+
+        <div class="category-grid" id="categoryGrid">
+            <!-- Categories will be dynamically inserted here -->
+        </div>
+
+        <div class="results-section" id="resultsSection" style="display: none;">
+            <div class="results-header">
+                <h2 class="results-title" id="resultsTitle">検索結果</h2>
+                <div>
+                    <span class="results-count" id="resultsCount">0件</span>
+                    <button class="clear-filter" onclick="clearFilters()">フィルターをクリア</button>
+                </div>
+            </div>
+            <div class="news-grid" id="newsGrid">
+                <!-- Search results will be displayed here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AI Weekly News. 毎日自動更新中</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Search page specific functionality
+        let allArticles = [];
+        let currentCategory = null;
+        let currentSearch = '';
+        
+        // Category labels definition
+        const categoryLabels = {
+            all: '🌐 すべて',
+            openai: '🤖 OpenAI',
+            google: '🔍 Google/Gemini',
+            anthropic: '💭 Anthropic/Claude',
+            microsoft: '🪟 Microsoft/Copilot',
+            meta: '📘 Meta/Llama',
+            xai: '❌ xAI/Grok',
+            nvidia: '💚 NVIDIA',
+            video_generation: '🎬 動画生成',
+            image_generation: '🎨 画像生成',
+            audio_generation: '🎵 音声生成',
+            music_generation: '🎼 音楽生成',
+            voice_cloning: '🎤 音声クローン',
+            '3d_modeling': '🏗️ 3Dモデリング',
+            presentation: '📊 プレゼン・スライド',
+            agents: '🤵 エージェントAI',
+            automation: '⚡ 自動化・RPA',
+            code_generation: '💻 コード生成',
+            translation: '🌍 翻訳',
+            multimodal: '🌐 マルチモーダル',
+            reasoning: '🧠 推論AI',
+            robotics: '🤖 ロボティクス',
+            gaming: '🎮 ゲーミング',
+            research: '🔬 AI研究',
+            academic: '📚 論文・学術',
+            business: '💼 ビジネス・投資',
+            healthcare: '🏥 医療・ヘルスケア',
+            tech: '💻 テクノロジー',
+            regulation: '⚖️ 規制・政策',
+            education: '🎓 教育・学習',
+            finance: '💰 金融・フィンテック',
+            security: '🔒 セキュリティ',
+            data_science: '📊 データサイエンス',
+            startups: '🚀 スタートアップ',
+            quantum: '⚛️ 量子コンピューティング',
+            edge_ai: '📱 エッジAI・IoT',
+            climate: '🌍 気候・環境',
+            retail: '🛒 小売・コマース',
+            manufacturing: '🏭 製造業',
+            transportation: '🚗 交通・運輸',
+            agriculture: '🌾 農業',
+            energy: '⚡ エネルギー',
+            legal: '⚖️ 法務',
+            real_estate: '🏢 不動産',
+            entertainment: '🎬 エンタメ',
+            defense: '🛡️ 防衛',
+            space: '🚀 宇宙',
+            biotech: '🧬 バイオ',
+            other: '📌 その他'
+        };
+
+        // Initialize search page
+        async function initSearchPage() {
+            try {
+                const response = await fetch(`./data/news.json?t=${Date.now()}`);
+                const data = await response.json();
+                allArticles = data.articles || [];
+                
+                displayCategories();
+                
+                // Check URL parameters for initial category
+                const urlParams = new URLSearchParams(window.location.search);
+                const category = urlParams.get('category');
+                if (category) {
+                    selectCategory(category);
+                }
+            } catch (error) {
+                console.error('Error loading news data:', error);
+            }
+        }
+
+        // Display category grid
+        function displayCategories() {
+            const categoryGrid = document.getElementById('categoryGrid');
+            const categoryCounts = {};
+            
+            // Count articles per category
+            allArticles.forEach(article => {
+                const cat = article.category || 'other';
+                categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+            });
+            
+            // Sort categories by count, but exclude 'all' category
+            const sortedCategories = Object.entries(categoryLabels)
+                .filter(([key, _]) => key !== 'all')
+                .sort((a, b) => (categoryCounts[b[0]] || 0) - (categoryCounts[a[0]] || 0));
+            
+            categoryGrid.innerHTML = sortedCategories.map(([key, label]) => {
+                const count = categoryCounts[key] || 0;
+                if (count === 0) return ''; // Skip empty categories
+                
+                return `
+                    <div class="category-card" onclick="selectCategory('${key}')" data-category="${key}">
+                        <div class="category-icon">${label.split(' ')[0]}</div>
+                        <div class="category-name">${label.split(' ').slice(1).join(' ')}</div>
+                        <div class="category-count">${count}件</div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Select a category
+        function selectCategory(category) {
+            currentCategory = category;
+            currentSearch = '';
+            document.getElementById('searchInput').value = '';
+            
+            // Update active state
+            document.querySelectorAll('.category-card').forEach(card => {
+                card.classList.toggle('active', card.dataset.category === category);
+            });
+            
+            displayResults();
+        }
+
+        // Perform keyword search
+        function performSearch() {
+            const searchInput = document.getElementById('searchInput');
+            currentSearch = searchInput.value.trim();
+            currentCategory = null;
+            
+            // Clear category selection
+            document.querySelectorAll('.category-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            
+            displayResults();
+        }
+
+        // Display search results
+        function displayResults() {
+            const resultsSection = document.getElementById('resultsSection');
+            const resultsTitle = document.getElementById('resultsTitle');
+            const resultsCount = document.getElementById('resultsCount');
+            const newsGrid = document.getElementById('newsGrid');
+            
+            let filteredArticles = allArticles;
+            
+            // Filter by category
+            if (currentCategory) {
+                filteredArticles = filteredArticles.filter(article => 
+                    article.category === currentCategory
+                );
+                resultsTitle.textContent = `${categoryLabels[currentCategory]} の記事`;
+            }
+            
+            // Filter by search keyword
+            if (currentSearch) {
+                const searchLower = currentSearch.toLowerCase();
+                filteredArticles = filteredArticles.filter(article => {
+                    const titleMatch = (article.titleJa || article.title || '').toLowerCase().includes(searchLower);
+                    const summaryMatch = (article.summaryJa || article.summary || '').toLowerCase().includes(searchLower);
+                    const sourceMatch = (article.source || '').toLowerCase().includes(searchLower);
+                    return titleMatch || summaryMatch || sourceMatch;
+                });
+                resultsTitle.textContent = `"${currentSearch}" の検索結果`;
+            }
+            
+            // Sort by date (newest first)
+            filteredArticles.sort((a, b) => 
+                new Date(b.pubDate) - new Date(a.pubDate)
+            );
+            
+            resultsCount.textContent = `${filteredArticles.length}件`;
+            resultsSection.style.display = 'block';
+            
+            // Display articles using the same card format as main page
+            newsGrid.innerHTML = filteredArticles.map(article => 
+                createNewsCard(article)
+            ).join('');
+        }
+
+        // Clear all filters
+        function clearFilters() {
+            currentCategory = null;
+            currentSearch = '';
+            document.getElementById('searchInput').value = '';
+            document.querySelectorAll('.category-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            document.getElementById('resultsSection').style.display = 'none';
+        }
+
+        // Handle Enter key in search input
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+            
+            initSearchPage();
+        });
+    </script>
+</body>
+</html>

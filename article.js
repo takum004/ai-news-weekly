@@ -34,6 +34,23 @@ const categoryLabels = {
     regulation: '⚖️ 規制・政策',
     education: '🎓 教育',
     finance: '💰 金融',
+    security: '🔒 セキュリティ',
+    data_science: '📊 データサイエンス',
+    startups: '🚀 スタートアップ',
+    quantum: '⚛️ 量子コンピューティング',
+    edge_ai: '📱 エッジAI',
+    climate: '🌍 気候・環境',
+    retail: '🛒 小売・コマース',
+    manufacturing: '🏭 製造業',
+    transportation: '🚗 交通・運輸',
+    agriculture: '🌾 農業',
+    energy: '⚡ エネルギー',
+    legal: '⚖️ 法務',
+    real_estate: '🏢 不動産',
+    entertainment: '🎬 エンタメ',
+    defense: '🛡️ 防衛',
+    space: '🚀 宇宙',
+    biotech: '🧬 バイオ',
     other: '📌 その他'
 };
 
@@ -342,33 +359,139 @@ function getImpactAnalysis(article) {
     return content;
 }
 
-// Extract key information from article
+// Extract key information from article with enhanced analysis
 function extractKeyInformation(article) {
     const title = article.titleJa || article.title;
     const summary = article.summaryJa || article.summary;
+    const originalSummary = article.summary || '';
+    const fullText = title + ' ' + summary + ' ' + originalSummary;
     
-    // Extract company names, product names, version numbers, etc.
+    // Enhanced patterns for comprehensive extraction
     const patterns = {
-        company: /(OpenAI|Google|Anthropic|Microsoft|Meta|NVIDIA|Amazon|Apple|IBM|Tesla)/gi,
-        product: /(GPT-\d+\.?\d*|Claude \d+\.?\d*|Gemini \d+\.?\d*|Llama \d+|Copilot|ChatGPT|DALL-E|Midjourney)/gi,
-        version: /(\d+\.\d+|\d+\.x|v\d+|バージョン\d+|版)/gi,
-        feature: /(API|SDK|プラットフォーム|フレームワーク|モデル|エンジン|ツール|サービス)/gi,
-        metric: /(\d+[%％]|\d+倍|\d+億|\d+万|\$\d+)/gi
+        company: /(OpenAI|Google|Anthropic|Microsoft|Meta|NVIDIA|Amazon|Apple|IBM|Tesla|DeepMind|Stability AI|Midjourney|Runway|Adobe|Intel|AMD|Qualcomm|Samsung|Sony|ByteDance|Baidu|Alibaba|Tencent|Hugging Face|Cohere|Inflection|Character\.AI|Databricks|Scale AI|Weights & Biases|Together AI|Replicate|Vercel|Supabase)/gi,
+        product: /(GPT-\d+\.?\d*|Claude \d+\.?\d*|Gemini \d+\.?\d*|Llama \d+|Copilot|ChatGPT|DALL-E|Midjourney|Stable Diffusion|Imagen|PaLM|BERT|T5|Whisper|Codex|GitHub Copilot|Cursor|Codeium|Tabnine|AlphaCode|Bard|Bing Chat|Perplexity|You\.com|Neeva|Phind|Poe|HuggingChat|OpenAssistant)/gi,
+        version: /(\d+\.\d+|\d+\.x|v\d+|バージョン\d+|版|Version \d+|Release \d+|Update \d+)/gi,
+        feature: /(API|SDK|プラットフォーム|フレームワーク|モデル|エンジン|ツール|サービス|アプリ|ソフトウェア|システム|機能|インターフェース|ダッシュボード|コンソール|ライブラリ|プラグイン|拡張機能|統合|連携|自動化|最適化|高速化|効率化|改善|強化|アップデート|リリース|ローンチ|発表|公開)/gi,
+        metric: /(\d+[%％]|\d+倍|\d+億|\d+万|\$\d+[BMK]?|\d+[BMK]?\s*ドル|\d+兆|\d+千万|\d+百万|約\d+|以上|以下|超|未満)/gi,
+        technology: /(機械学習|深層学習|ディープラーニング|ニューラルネットワーク|自然言語処理|コンピュータビジョン|音声認識|画像認識|生成AI|強化学習|転移学習|ファインチューニング|プロンプトエンジニアリング|RAG|Retrieval|Augmented|Generation|Transformer|Attention|RLHF|Constitutional AI|Chain of Thought|Few-shot|Zero-shot|マルチモーダル|クロスモーダル)/gi,
+        action: /(発表|リリース|公開|導入|開始|提供|実装|統合|連携|買収|提携|投資|資金調達|契約|合意|承認|認可|取得|達成|突破|更新|改善|強化|拡張|追加|削除|終了|中止|延期|計画|予定|検討|開発|研究|実験|テスト|評価|分析|調査|報告|警告|批判|議論|懸念)/gi,
+        benefit: /(向上|改善|効率化|高速化|自動化|簡素化|最適化|削減|節約|増加|拡大|成長|革新|変革|進化|ブレークスルー|画期的|革命的|先進的|最先端|業界初|世界初|初めて|新しい|最新|次世代)/gi,
+        challenge: /(課題|問題|懸念|リスク|脅威|危険|困難|制限|制約|障壁|ハードル|コスト|費用|時間|労力|複雑|難しい|不足|欠如|エラー|バグ|脆弱性|セキュリティ|プライバシー|倫理|規制|法律|コンプライアンス)/gi,
+        stakeholder: /(ユーザー|顧客|開発者|エンジニア|研究者|科学者|企業|組織|政府|規制当局|投資家|株主|パートナー|サプライヤー|コミュニティ|一般市民|消費者|学生|教育機関|医療機関|金融機関)/gi
     };
     
-    const keyInfo = {
-        companies: [...new Set((title + ' ' + summary).match(patterns.company) || [])],
-        products: [...new Set((title + ' ' + summary).match(patterns.product) || [])],
-        versions: [...new Set((title + ' ' + summary).match(patterns.version) || [])],
-        features: [...new Set((title + ' ' + summary).match(patterns.feature) || [])],
-        metrics: [...new Set((title + ' ' + summary).match(patterns.metric) || [])],
-        isResearch: article.category === 'research' || article.category === 'academic',
-        isBusiness: article.category === 'business' || article.category === 'tech',
-        isGeneration: article.category.includes('generation') || article.category === 'multimodal',
-        mainFocus: determineMainFocus(title, summary)
+    // Extract all patterns
+    const extracted = {};
+    for (const [key, pattern] of Object.entries(patterns)) {
+        const matches = fullText.match(pattern) || [];
+        extracted[key] = [...new Set(matches)];
+    }
+    
+    // Analyze key phrases and sentences
+    const keyPhrases = extractKeyPhrases(fullText);
+    const mainPoints = extractMainPoints(summary);
+    
+    // Determine article characteristics
+    const characteristics = {
+        isProductLaunch: /発表|リリース|公開|ローンチ|launch|release|announce/i.test(fullText),
+        isResearch: /研究|論文|実験|study|research|paper/i.test(fullText),
+        isBusiness: /買収|投資|資金|提携|acquisition|investment|partnership/i.test(fullText),
+        isUpdate: /更新|アップデート|改善|update|improve|enhance/i.test(fullText),
+        isCritical: /問題|懸念|批判|リスク|issue|concern|risk|problem/i.test(fullText),
+        hasMetrics: extracted.metric.length > 0,
+        hasTechnicalDetails: extracted.technology.length > 0,
+        hasMultipleStakeholders: extracted.stakeholder.length > 2
     };
     
-    return keyInfo;
+    return {
+        ...extracted,
+        companies: extracted.company,
+        products: extracted.product,
+        versions: extracted.version,
+        features: extracted.feature,
+        metrics: extracted.metric,
+        technologies: extracted.technology,
+        actions: extracted.action,
+        benefits: extracted.benefit,
+        challenges: extracted.challenge,
+        stakeholders: extracted.stakeholder,
+        keyPhrases,
+        mainPoints,
+        characteristics,
+        mainFocus: determineMainFocus(title, summary),
+        sentiment: analyzeSentiment(fullText),
+        complexity: analyzeComplexity(fullText)
+    };
+}
+
+// Extract key phrases from text
+function extractKeyPhrases(text) {
+    const phrases = [];
+    
+    // Extract quoted phrases
+    const quotedPhrases = text.match(/「([^」]+)」|"([^"]+)"/g) || [];
+    phrases.push(...quotedPhrases.map(p => p.replace(/[「」""]/g, '')));
+    
+    // Extract phrases with specific patterns
+    const importantPatterns = [
+        /により(.{5,30})が可能/g,
+        /(.{5,30})を実現/g,
+        /(.{5,30})を提供/g,
+        /(.{5,30})を開発/g,
+        /(.{5,30})を発表/g,
+        /(.{5,30})に成功/g,
+        /(.{5,30})を達成/g
+    ];
+    
+    for (const pattern of importantPatterns) {
+        const matches = text.match(pattern) || [];
+        phrases.push(...matches);
+    }
+    
+    return [...new Set(phrases)];
+}
+
+// Extract main points from summary
+function extractMainPoints(summary) {
+    // Split by sentences
+    const sentences = summary.split(/[。．.!?！？]/).filter(s => s.trim().length > 10);
+    
+    // Extract sentences with key information
+    const mainPoints = sentences.filter(sentence => {
+        // Check if sentence contains important information
+        return /発表|開発|導入|実現|達成|改善|提供|可能|成功|初めて|新しい|画期的/.test(sentence) ||
+               /\d+[%％倍]/.test(sentence) || // Contains metrics
+               /により|ため|よって/.test(sentence); // Contains reasoning
+    });
+    
+    return mainPoints.slice(0, 5); // Return top 5 main points
+}
+
+// Analyze sentiment of the article
+function analyzeSentiment(text) {
+    const positive = (text.match(/成功|達成|改善|向上|革新|画期的|素晴らしい|優れた|良い|ポジティブ|前進|進歩|breakthrough|success|improve|achieve|innovative/gi) || []).length;
+    const negative = (text.match(/失敗|問題|懸念|リスク|批判|困難|悪い|ネガティブ|後退|failure|problem|concern|risk|criticism|difficult/gi) || []).length;
+    const neutral = (text.match(/発表|報告|説明|紹介|検討|分析|announce|report|explain|introduce|consider|analyze/gi) || []).length;
+    
+    const total = positive + negative + neutral;
+    if (total === 0) return 'neutral';
+    
+    if (positive > negative * 1.5) return 'positive';
+    if (negative > positive * 1.5) return 'negative';
+    return 'neutral';
+}
+
+// Analyze complexity of the article
+function analyzeComplexity(text) {
+    const technicalTerms = (text.match(/API|SDK|アーキテクチャ|アルゴリズム|プロトコル|インフラ|フレームワーク|ライブラリ|コンパイラ|ランタイム|デプロイ|スケーラビリティ|レイテンシ|スループット/gi) || []).length;
+    const longSentences = text.split(/[。．.!?！？]/).filter(s => s.length > 100).length;
+    const metrics = (text.match(/\d+[%％倍]|\d+[BMK]/gi) || []).length;
+    
+    const complexityScore = technicalTerms + longSentences + metrics;
+    
+    if (complexityScore > 10) return 'high';
+    if (complexityScore > 5) return 'medium';
+    return 'low';
 }
 
 // Determine main focus of the article
@@ -393,28 +516,71 @@ function determineMainFocus(title, summary) {
 function generateIntroductionContext(article, keyInfo) {
     let context = '';
     
+    // Build introduction based on extracted information
     if (keyInfo.companies.length > 0) {
-        context += `${keyInfo.companies[0]}による今回の発表は、`;
+        context += `${keyInfo.companies.join('と')}による今回の`;
+        if (keyInfo.actions.length > 0) {
+            context += `${keyInfo.actions[0]}は、`;
+        } else {
+            context += '発表は、';
+        }
     } else {
-        context += 'この発表は、';
+        context += 'この';
+        if (keyInfo.actions.length > 0) {
+            context += `${keyInfo.actions[0]}は、`;
+        } else {
+            context += 'ニュースは、';
+        }
     }
     
-    if (keyInfo.mainFocus === 'release') {
-        context += '新たな技術やサービスの市場投入を意味し、業界の競争力学に大きな影響を与える可能性があります。';
-    } else if (keyInfo.mainFocus === 'research') {
-        context += 'AI技術の基礎研究における重要な進展を示しており、将来の応用可能性を大きく広げるものです。';
-    } else if (keyInfo.mainFocus === 'business') {
-        context += 'ビジネス戦略の転換点を示しており、市場構造の変化をもたらす可能性があります。';
-    } else if (keyInfo.mainFocus === 'update') {
-        context += '既存技術の継続的な改善を示しており、ユーザー体験の向上に寄与します。';
-    } else {
-        context += 'AI分野における重要な動向を示しています。';
+    // Add specific context based on characteristics
+    if (keyInfo.characteristics.isProductLaunch && keyInfo.products.length > 0) {
+        context += `${keyInfo.products[0]}という新たな`;
+        if (keyInfo.technologies.length > 0) {
+            context += `${keyInfo.technologies[0]}技術を活用した`;
+        }
+        context += 'ソリューションの登場を意味します。';
+    } else if (keyInfo.characteristics.isResearch) {
+        if (keyInfo.technologies.length > 0) {
+            context += `${keyInfo.technologies[0]}分野における`;
+        }
+        context += '重要な研究成果であり、';
+        if (keyInfo.metrics.length > 0) {
+            context += `${keyInfo.metrics[0]}という`;
+        }
+        context += '顕著な成果を示しています。';
+    } else if (keyInfo.characteristics.isBusiness) {
+        if (keyInfo.metrics.length > 0) {
+            context += `${keyInfo.metrics[0]}規模の`;
+        }
+        context += 'ビジネス展開であり、';
+        if (keyInfo.stakeholders.length > 0) {
+            context += `${keyInfo.stakeholders[0]}にとって重要な意味を持ちます。`;
+        } else {
+            context += '業界に大きな影響を与える可能性があります。';
+        }
+    } else if (keyInfo.characteristics.isUpdate) {
+        if (keyInfo.features.length > 0) {
+            context += `${keyInfo.features.slice(0, 2).join('や')}の`;
+        }
+        context += '改善により、';
+        if (keyInfo.benefits.length > 0) {
+            context += `${keyInfo.benefits[0]}が期待されます。`;
+        } else {
+            context += 'ユーザー体験の向上が期待されます。';
+        }
     }
     
-    if (keyInfo.products.length > 0) {
-        context += `特に${keyInfo.products[0]}は、${getCategoryContext(article.category)}という観点から注目に値します。`;
-    } else {
-        context += `特に、${getCategoryContext(article.category)}という観点から注目に値します。`;
+    // Add impact based on sentiment and complexity
+    if (keyInfo.sentiment === 'positive' && keyInfo.complexity === 'high') {
+        context += 'この技術的に高度な成果は、業界に新たな可能性をもたらすでしょう。';
+    } else if (keyInfo.sentiment === 'negative') {
+        context += 'ただし、いくつかの課題も指摘されており、慎重な検討が必要です。';
+    }
+    
+    // Add key phrases if available
+    if (keyInfo.keyPhrases.length > 0) {
+        context += `特に「${keyInfo.keyPhrases[0]}」という点が注目されています。`;
     }
     
     return context;
@@ -461,11 +627,11 @@ function generateDynamicBackground(article, keyInfo) {
 
 // Get technical section title based on article
 function getTechnicalSectionTitle(article, keyInfo) {
-    if (keyInfo.isResearch) {
+    if (keyInfo.characteristics.isResearch) {
         return '技術的詳細と研究の核心';
-    } else if (keyInfo.isBusiness) {
+    } else if (keyInfo.characteristics.isBusiness) {
         return 'ビジネスモデルと市場戦略';
-    } else if (keyInfo.isGeneration) {
+    } else if (article.category.includes('generation')) {
         return '生成技術の革新と特徴';
     } else if (keyInfo.mainFocus === 'update') {
         return '改善点と技術的進歩';
@@ -508,9 +674,9 @@ function generateTechnicalAnalysis(article, keyInfo) {
         content += '</p>';
     }
     
-    if (keyInfo.isResearch) {
+    if (keyInfo.characteristics.isResearch) {
         content += '<h4>研究手法と検証</h4><p>';
-        content += generateResearchMethodology(summary);
+        content += generateResearchMethodology(summary, keyInfo);
         content += '</p>';
     }
     
@@ -532,54 +698,19 @@ function extractSpecificFeatures(summary) {
     return features;
 }
 
-// Generate performance analysis
+// Generate performance analysis (deprecated - use generateDynamicPerformanceAnalysis)
 function generatePerformanceAnalysis(summary, keyInfo) {
-    let analysis = '';
-    
-    if (keyInfo.metrics.length > 0) {
-        analysis += `報告されている${keyInfo.metrics[0]}という改善は、従来の技術と比較して大幅な進歩を示しています。`;
-    }
-    
-    if (summary.includes('高速') || summary.includes('速い')) {
-        analysis += '処理速度の向上により、より実用的なアプリケーションへの応用が可能になります。';
-    }
-    
-    if (summary.includes('精度') || summary.includes('正確')) {
-        analysis += '精度の向上は、より信頼性の高いシステムの構築を可能にし、実世界での導入を促進します。';
-    }
-    
-    return analysis || '性能面での改善により、より幅広い用途での活用が期待されます。';
+    return generateDynamicPerformanceAnalysis(summary, keyInfo);
 }
 
-// Generate feature analysis
+// Generate feature analysis (deprecated - use generateDynamicFeatureAnalysis)
 function generateFeatureAnalysis(summary, keyInfo) {
-    const title = keyInfo.products.length > 0 ? keyInfo.products[0] : 'このシステム';
-    let analysis = `${title}に追加された新機能は、ユーザーのニーズに応える形で設計されています。`;
-    
-    if (summary.includes('API')) {
-        analysis += '特にAPI経由でのアクセスが可能になることで、開発者コミュニティでの活用が促進されるでしょう。';
-    }
-    
-    if (summary.includes('インターフェース') || summary.includes('UI')) {
-        analysis += 'ユーザーインターフェースの改善により、技術的な知識が少ないユーザーでも活用しやすくなっています。';
-    }
-    
-    return analysis;
+    return generateDynamicFeatureAnalysis(summary, keyInfo);
 }
 
-// Generate research methodology
-function generateResearchMethodology(summary) {
-    let methodology = '本研究では、';
-    
-    if (summary.includes('データセット') || summary.includes('データ')) {
-        methodology += '大規模なデータセットを用いた実証的なアプローチが取られています。';
-    } else if (summary.includes('実験') || summary.includes('検証')) {
-        methodology += '厳密な実験設計に基づいて、提案手法の有効性が検証されています。';
-    } else {
-        methodology += '新しいアプローチにより、従来の限界を突破する試みがなされています。';
-    }
-    
-    return methodology;
+// Generate research methodology (deprecated - use generateDynamicResearchMethodology)
+function generateResearchMethodology(summary, keyInfo) {
+    return generateDynamicResearchMethodology(summary, keyInfo);
 }
 
 // Generate specific impact analysis
@@ -645,7 +776,7 @@ function generateSocialImpact(summary, keyInfo) {
         impacts += '<li>技術へのアクセスの民主化</li>';
     }
     
-    if (keyInfo.isGeneration) {
+    if (article.category.includes('generation')) {
         impacts += '<li>クリエイティブ産業への影響と新たな表現手法の創出</li>';
     }
     
@@ -671,10 +802,10 @@ function generateSpecificChallenges(article, keyInfo) {
     // Add category-specific challenges
     content += '<h4>技術分野特有の課題</h4><ul>';
     
-    if (keyInfo.isGeneration) {
+    if (article.category.includes('generation')) {
         content += '<li>生成コンテンツの品質管理と著作権問題</li>';
         content += '<li>悪用防止のための技術的・制度的対策</li>';
-    } else if (keyInfo.isResearch) {
+    } else if (keyInfo.characteristics.isResearch) {
         content += '<li>理論と実装のギャップを埋める必要性</li>';
         content += '<li>研究成果の再現性と検証可能性の確保</li>';
     } else if (keyInfo.companies.length > 0) {
@@ -797,9 +928,9 @@ function generateMediumTermOutlook(summary, keyInfo) {
 function generateLongTermOutlook(summary, keyInfo) {
     let outlook = '';
     
-    if (keyInfo.isGeneration) {
+    if (article.category.includes('generation')) {
         outlook += '<li>創造的産業における標準ツールとしての定着</li>';
-    } else if (keyInfo.isResearch) {
+    } else if (keyInfo.characteristics.isResearch) {
         outlook += '<li>研究成果の実用化と商業展開</li>';
     }
     
@@ -829,7 +960,7 @@ function generateExpertPerspective(article, keyInfo) {
     content += '</p>';
     
     // Ethical considerations
-    if (keyInfo.isGeneration || summary.includes('AI') || summary.includes('倫理')) {
+    if (article.category.includes('generation') || summary.includes('AI') || summary.includes('倫理')) {
         content += '<h4>倫理・社会学者の視点</h4><p>';
         content += generateEthicalView(summary, keyInfo);
         content += '</p>';
@@ -880,7 +1011,7 @@ function generateBusinessAnalystView(summary, keyInfo) {
 function generateEthicalView(summary, keyInfo) {
     let view = 'AI倫理の観点から、';
     
-    if (keyInfo.isGeneration) {
+    if (article.category.includes('generation')) {
         view += '生成コンテンツの真正性と責任の所在について、社会的合意形成が急務です。';
     } else if (summary.includes('データ') || summary.includes('学習')) {
         view += '学習データの透明性と公平性の確保が重要な課題となります。';
@@ -943,6 +1074,133 @@ function extractKeyValue(summary) {
         return 'シームレスな統合';
     }
     return '技術的な革新性';
+}
+
+// Generate architecture analysis
+function generateArchitectureAnalysis(summary, keyInfo) {
+    let analysis = '';
+    
+    if (keyInfo.technologies.length > 1) {
+        analysis += `${keyInfo.technologies.slice(0, 3).join('、')}などの技術を組み合わせたアーキテクチャが採用されています。`;
+    } else if (keyInfo.technologies.length === 1) {
+        analysis += `${keyInfo.technologies[0]}をコア技術として活用しています。`;
+    }
+    
+    if (summary.includes('スケール') || summary.includes('大規模')) {
+        analysis += 'スケーラビリティを重視した設計により、大規模展開に対応できます。';
+    }
+    
+    if (summary.includes('クラウド') || summary.includes('エッジ')) {
+        analysis += 'クラウドネイティブなアプローチにより、柔軟なデプロイメントが可能です。';
+    }
+    
+    return analysis || '最新のソフトウェアアーキテクチャに基づいた堅牢なシステム設計が採用されています。';
+}
+
+// Generate dynamic performance analysis
+function generateDynamicPerformanceAnalysis(summary, keyInfo) {
+    let analysis = '';
+    
+    // Start with specific metrics if available
+    if (keyInfo.metrics.length > 0) {
+        analysis += `${keyInfo.metrics.map(m => m).join('、')}という具体的な数値は、`;
+        
+        // Analyze what the metrics mean
+        if (keyInfo.metrics.some(m => m.includes('%') || m.includes('倍'))) {
+            analysis += '大幅な性能改善を示しています。';
+        } else if (keyInfo.metrics.some(m => m.includes('億') || m.includes('万'))) {
+            analysis += '大規模な展開を示唆しています。';
+        } else {
+            analysis += '重要な指標として注目されます。';
+        }
+    }
+    
+    // Add context based on summary content
+    if (summary.includes('高速') || summary.includes('速い') || summary.includes('速度')) {
+        if (analysis) analysis += '特に';
+        analysis += '処理速度の面では、リアルタイム処理や大量データの迅速な処理が可能になります。';
+    }
+    
+    if (summary.includes('精度') || summary.includes('正確')) {
+        if (analysis) analysis += 'また、';
+        analysis += '精度の向上は、実用的なアプリケーションでの信頼性を大幅に高めます。';
+    }
+    
+    if (summary.includes('効率') || summary.includes('最適化')) {
+        if (analysis) analysis += 'さらに、';
+        analysis += '計算効率の改善により、コスト削減と環境負荷の低減にも貢献します。';
+    }
+    
+    return analysis || 'この技術のパフォーマンス特性は、実用化に向けた重要なステップを示しています。';
+}
+
+// Generate dynamic feature analysis
+function generateDynamicFeatureAnalysis(summary, keyInfo) {
+    let analysis = '';
+    
+    // Analyze features mentioned in the article
+    if (keyInfo.features.length > 0) {
+        analysis += `主要機能として、${keyInfo.features.slice(0, 3).join('、')}などが挙げられます。`;
+        
+        // Add specific analysis based on feature types
+        if (keyInfo.features.some(f => f.includes('API') || f.includes('SDK'))) {
+            analysis += '開発者向けのツールが充実していることで、エコシステムの拡大が期待されます。';
+        }
+        
+        if (keyInfo.features.some(f => f.includes('プラットフォーム') || f.includes('統合'))) {
+            analysis += 'プラットフォーム統合により、既存のワークフローへの組み込みが容易になります。';
+        }
+    }
+    
+    // Add analysis based on key phrases
+    if (keyInfo.keyPhrases.length > 1) {
+        analysis += `また、「${keyInfo.keyPhrases[1]}」という点も注目に値します。`;
+    }
+    
+    // Add user benefit analysis
+    if (keyInfo.stakeholders.includes('ユーザー') || keyInfo.stakeholders.includes('開発者')) {
+        const stakeholder = keyInfo.stakeholders[0];
+        analysis += `${stakeholder}にとっては、`;
+        
+        if (keyInfo.benefits.length > 0) {
+            analysis += `${keyInfo.benefits[0]}というメリットがあります。`;
+        } else {
+            analysis += '作業効率の大幅な改善が期待できます。';
+        }
+    }
+    
+    return analysis || 'この機能セットは、実用性と革新性のバランスを追求した結果と言えます。';
+}
+
+// Generate dynamic research methodology
+function generateDynamicResearchMethodology(summary, keyInfo) {
+    let methodology = '';
+    
+    // Extract research-specific information
+    if (keyInfo.mainPoints.some(p => p.includes('研究') || p.includes('実験'))) {
+        const researchPoint = keyInfo.mainPoints.find(p => p.includes('研究') || p.includes('実験'));
+        methodology += `${researchPoint} `;
+    }
+    
+    // Add methodology based on technologies mentioned
+    if (keyInfo.technologies.length > 0) {
+        methodology += `${keyInfo.technologies[0]}を活用したアプローチにより、`;
+        
+        if (keyInfo.metrics.length > 0) {
+            methodology += `${keyInfo.metrics[0]}という成果を達成しています。`;
+        } else {
+            methodology += '新たな知見が得られています。';
+        }
+    }
+    
+    // Add validation approach
+    if (summary.includes('データセット') || summary.includes('データ')) {
+        methodology += 'データ駆動型の検証により、結果の信頼性が確保されています。';
+    } else if (summary.includes('検証') || summary.includes('評価')) {
+        methodology += '複数の評価基準を用いた包括的な検証が行われています。';
+    }
+    
+    return methodology || 'この研究は、科学的な手法に基づいて慎重に実施されています。';
 }
 
 // Initialize when DOM is loaded
