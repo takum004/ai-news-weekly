@@ -285,9 +285,11 @@
         // Initialize search page
         async function initSearchPage() {
             try {
+                console.log('Initializing search page...');
                 const response = await fetch(`./data/news.json?t=${Date.now()}`);
                 const data = await response.json();
                 allArticles = data.articles || [];
+                console.log('Loaded articles:', allArticles.length);
                 
                 displayCategories();
                 
@@ -299,12 +301,27 @@
                 }
             } catch (error) {
                 console.error('Error loading news data:', error);
+                // Try loading from parent directory if in subdirectory
+                try {
+                    const response = await fetch(`../data/news.json?t=${Date.now()}`);
+                    const data = await response.json();
+                    allArticles = data.articles || [];
+                    console.log('Loaded articles from parent:', allArticles.length);
+                    displayCategories();
+                } catch (err) {
+                    console.error('Failed to load from parent too:', err);
+                }
             }
         }
 
         // Display category grid
         function displayCategories() {
             const categoryGrid = document.getElementById('categoryGrid');
+            if (!categoryGrid) {
+                console.error('Category grid element not found!');
+                return;
+            }
+            
             const categoryCounts = {};
             
             // Count articles per category
@@ -313,12 +330,16 @@
                 categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
             });
             
+            console.log('Category counts:', categoryCounts);
+            
             // Sort categories by count, but exclude 'all' category
             const sortedCategories = Object.entries(categoryLabels)
                 .filter(([key, _]) => key !== 'all')
                 .sort((a, b) => (categoryCounts[b[0]] || 0) - (categoryCounts[a[0]] || 0));
             
-            categoryGrid.innerHTML = sortedCategories.map(([key, label]) => {
+            console.log('Sorted categories:', sortedCategories.length);
+            
+            const categoryHTML = sortedCategories.map(([key, label]) => {
                 const count = categoryCounts[key] || 0;
                 if (count === 0) return ''; // Skip empty categories
                 
@@ -330,6 +351,9 @@
                     </div>
                 `;
             }).join('');
+            
+            console.log('Generated HTML length:', categoryHTML.length);
+            categoryGrid.innerHTML = categoryHTML;
         }
 
         // Select a category
