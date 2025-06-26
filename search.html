@@ -229,6 +229,15 @@
         let currentCategory = null;
         let currentSearch = '';
         
+        // Helper function to format date
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const year = date.getFullYear();
+            const month = date.getMonth() + 1;
+            const day = date.getDate();
+            return `${year}/${month}/${day}`;
+        }
+        
         // Category labels definition
         const categoryLabels = {
             all: '🌐 すべて',
@@ -322,6 +331,8 @@
                 return;
             }
             
+            console.log('displayCategories called with', allArticles.length, 'articles');
+            
             const categoryCounts = {};
             
             // Count articles per category
@@ -330,18 +341,24 @@
                 categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
             });
             
+            // Add 'all' category with total count
+            categoryCounts['all'] = allArticles.length;
+            
             console.log('Category counts:', categoryCounts);
             
-            // Sort categories by count, but exclude 'all' category
-            const sortedCategories = Object.entries(categoryLabels)
+            // First add 'all' category, then sort other categories by count
+            const allCategory = [['all', categoryLabels.all]];
+            const otherCategories = Object.entries(categoryLabels)
                 .filter(([key, _]) => key !== 'all')
                 .sort((a, b) => (categoryCounts[b[0]] || 0) - (categoryCounts[a[0]] || 0));
+            
+            const sortedCategories = [...allCategory, ...otherCategories];
             
             console.log('Sorted categories:', sortedCategories.length);
             
             const categoryHTML = sortedCategories.map(([key, label]) => {
                 const count = categoryCounts[key] || 0;
-                if (count === 0) return ''; // Skip empty categories
+                // Show categories even if they have 0 articles for now
                 
                 return `
                     <div class="category-card" onclick="selectCategory('${key}')" data-category="${key}">
@@ -421,10 +438,63 @@
             resultsCount.textContent = `${filteredArticles.length}件`;
             resultsSection.style.display = 'block';
             
-            // Display articles using the same card format as main page
-            newsGrid.innerHTML = filteredArticles.map(article => 
-                createNewsCard(article)
-            ).join('');
+            // Display articles using inline card format
+            newsGrid.innerHTML = filteredArticles.map(article => {
+                const importanceBadge = article.importance >= 80 ? 
+                    `<span class="importance-badge ${article.importance >= 90 ? 'high' : 'medium'}">
+                        <span>${article.importance >= 90 ? '🔥' : '⭐'}</span>
+                        <span>${article.importance >= 90 ? '重要' : '注目'}</span>
+                    </span>` : '';
+                
+                return `
+                    <article class="news-card ${article.category} fade-in">
+                        <div class="news-card-header">
+                            <div class="news-card-meta">
+                                <div class="news-card-tags">
+                                    <span class="news-card-category ${article.category}">
+                                        ${categoryLabels[article.category] || article.category}
+                                    </span>
+                                    ${importanceBadge}
+                                </div>
+                            </div>
+                            
+                            <div class="news-card-source">
+                                <span class="source-name">${article.source}</span>
+                                <span class="source-date">${formatDate(article.pubDate)}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="news-card-content">
+                            <h3 class="news-card-title">
+                                ${article.titleJa || article.title}
+                            </h3>
+                            
+                            ${article.titleJa && article.titleJa !== article.title ? `
+                                <p class="news-card-title-original">
+                                    ${article.title}
+                                </p>
+                            ` : ''}
+                            
+                            <p class="news-card-summary">
+                                ${article.summaryJa || article.summary}
+                            </p>
+                        </div>
+                        
+                        <div class="news-card-footer">
+                            <div class="news-card-actions">
+                                <a href="article.html?id=${encodeURIComponent(article.id)}" class="news-card-link secondary">
+                                    <span>詳細を見る</span>
+                                    <span class="news-card-link-icon">→</span>
+                                </a>
+                                <a href="${article.link}" target="_blank" rel="noopener noreferrer" class="news-card-link primary">
+                                    <span>元記事</span>
+                                    <span class="news-card-link-icon">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                `;
+            }).join('');
         }
 
         // Clear all filters

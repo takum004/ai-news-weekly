@@ -217,7 +217,7 @@ function createNewsCard(article) {
             
             <div class="news-card-footer">
                 <div class="news-card-actions">
-                    <a href="article.html?id=${article.id}" class="news-card-link secondary">
+                    <a href="article.html?id=${encodeURIComponent(article.id)}" class="news-card-link secondary">
                         <span>詳細を見る</span>
                         <span class="news-card-link-icon">→</span>
                     </a>
@@ -1419,7 +1419,7 @@ function createNewsListItem(article) {
         <article class="news-list-item">
             <div class="news-list-content">
                 <h3 class="news-list-title">
-                    <a href="${article.link}" target="_blank" rel="noopener noreferrer">
+                    <a href="article.html?id=${encodeURIComponent(article.id)}">
                         ${article.titleJa || article.title}
                     </a>
                 </h3>
@@ -1430,6 +1430,9 @@ function createNewsListItem(article) {
                     ${importance}
                     <time class="news-list-date">${date}</time>
                     <span class="news-list-source">${article.source}</span>
+                    <a href="${article.link}" target="_blank" rel="noopener noreferrer" class="external-link">
+                        元記事 ↗
+                    </a>
                 </div>
             </div>
         </article>

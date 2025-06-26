@@ -1,6 +1,8 @@
 // Get article ID from URL parameters
 const urlParams = new URLSearchParams(window.location.search);
 const articleId = urlParams.get('id');
+// Decode the article ID in case it was URL encoded
+const decodedArticleId = articleId ? decodeURIComponent(articleId) : null;
 
 // Category labels
 const categoryLabels = {
@@ -78,10 +80,10 @@ function getImportanceBadge(importance) {
 
 // Load and display article
 async function loadArticle() {
-    console.log('Loading article with ID:', articleId);
+    console.log('Loading article with ID:', decodedArticleId);
     const contentDiv = document.getElementById('article-content');
     
-    if (!articleId) {
+    if (!decodedArticleId) {
         console.error('No article ID provided in URL');
         contentDiv.innerHTML = '<div class="error">記事が見つかりません</div>';
         return;
@@ -104,17 +106,17 @@ async function loadArticle() {
         
         // Debug: Show first few article IDs
         console.log('First 5 article IDs:', data.articles.slice(0, 5).map(a => a.id));
-        console.log('Looking for article ID:', articleId);
+        console.log('Looking for article ID:', decodedArticleId);
         
-        const article = data.articles.find(a => a.id === articleId);
+        const article = data.articles.find(a => a.id === decodedArticleId);
         
         if (!article) {
-            console.error('Article not found with ID:', articleId);
+            console.error('Article not found with ID:', decodedArticleId);
             console.error('Available IDs:', data.articles.map(a => a.id));
             contentDiv.innerHTML = `
                 <div class="error">
                     <p>記事が見つかりません</p>
-                    <p style="font-size: 0.9rem; color: #666;">Article ID: ${articleId}</p>
+                    <p style="font-size: 0.9rem; color: #666;">Article ID: ${decodedArticleId}</p>
                     <a href="index.html" style="display: inline-block; margin-top: 20px; color: #6366f1;">ホームに戻る</a>
                 </div>
             `;
