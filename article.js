@@ -83,6 +83,11 @@ async function loadArticle() {
     console.log('Loading article with ID:', decodedArticleId);
     const contentDiv = document.getElementById('article-content');
     
+    if (!contentDiv) {
+        console.error('article-content element not found!');
+        return;
+    }
+    
     if (!decodedArticleId) {
         console.error('No article ID provided in URL');
         contentDiv.innerHTML = '<div class="error">記事が見つかりません</div>';
@@ -102,10 +107,32 @@ async function loadArticle() {
         }
         
         const data = await response.json();
+        console.log('Loaded data:', data);
+        console.log('Data type:', typeof data);
+        console.log('Has articles property:', 'articles' in data);
+        console.log('Articles is array:', Array.isArray(data.articles));
         console.log('Loaded articles count:', data.articles?.length || 0);
         
+        // データ構造を確認
+        if (!data || typeof data !== 'object') {
+            console.error('Data is not an object:', data);
+            throw new Error('データが正しいオブジェクトではありません');
+        }
+        
+        if (!data.articles) {
+            console.error('No articles property in data:', data);
+            throw new Error('データにarticlesプロパティがありません');
+        }
+        
+        if (!Array.isArray(data.articles)) {
+            console.error('Articles is not an array:', data.articles);
+            throw new Error('articlesが配列ではありません');
+        }
+        
         // Debug: Show first few article IDs
-        console.log('First 5 article IDs:', data.articles.slice(0, 5).map(a => a.id));
+        if (data.articles.length > 0) {
+            console.log('First 5 article IDs:', data.articles.slice(0, 5).map(a => a.id));
+        }
         console.log('Looking for article ID:', decodedArticleId);
         console.log('Raw article ID from URL:', articleId);
         
@@ -119,8 +146,10 @@ async function loadArticle() {
         if (!article) {
             console.error('Article not found with ID:', decodedArticleId);
             console.error('Raw ID:', articleId);
-            console.error('Total articles in data:', data.articles.length);
-            console.error('First 10 available IDs:', data.articles.slice(0, 10).map(a => a.id));
+            console.error('Total articles in data:', data.articles?.length || 0);
+            if (data.articles && data.articles.length > 0) {
+                console.error('First 10 available IDs:', data.articles.slice(0, 10).map(a => a.id));
+            }
             
             contentDiv.innerHTML = `
                 <div class="error">
@@ -211,7 +240,31 @@ async function loadArticle() {
         
     } catch (error) {
         console.error('Error loading article:', error);
-        contentDiv.innerHTML = '<div class="error">記事の読み込み中にエラーが発生しました</div>';
+        console.error('Error stack:', error.stack);
+        
+        // より詳細なエラー情報を表示
+        contentDiv.innerHTML = `
+            <div class="error">
+                <h2>エラーが発生しました</h2>
+                <p>${error.message}</p>
+                <p>しばらく経ってから再度お試しください。</p>
+                <div style="margin-top: 30px;">
+                    <a href="index.html" style="display: inline-block; padding: 10px 20px; background: #6366f1; color: white; text-decoration: none; border-radius: 6px;">
+                        ← ホームに戻る
+                    </a>
+                </div>
+                <details style="margin-top: 20px; font-size: 0.85rem; color: #999;">
+                    <summary style="cursor: pointer;">デバッグ情報</summary>
+                    <pre style="margin-top: 10px; white-space: pre-wrap; word-wrap: break-word;">
+Error: ${error.message}
+URL: ${window.location.href}
+Article ID: ${decodedArticleId}
+Timestamp: ${new Date().toISOString()}
+User Agent: ${navigator.userAgent}
+                    </pre>
+                </details>
+            </div>
+        `;
     }
 }
 
@@ -1237,4 +1290,13 @@ function generateDynamicResearchMethodology(summary, keyInfo) {
 }
 
 // Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', loadArticle);
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log('DOM loaded, initializing article page...');
+        loadArticle();
+    });
+} else {
+    // DOM is already loaded
+    console.log('DOM already loaded, initializing article page...');
+    loadArticle();
+}
