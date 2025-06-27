@@ -290,28 +290,43 @@ function generateDetailedReport(article) {
         `);
         
         // 2. Key Points - 重要なポイント
-        sections.push(`
-            <div class="report-section">
-                <h3>2. Key Points</h3>
-                ${generateKeyPoints(article)}
-            </div>
-        `);
+        try {
+            sections.push(`
+                <div class="report-section">
+                    <h3>2. Key Points</h3>
+                    ${generateKeyPoints(article)}
+                </div>
+            `);
+        } catch (e) {
+            console.error('Error in generateKeyPoints:', e);
+            sections.push('<div class="report-section"><h3>2. Key Points</h3><p>Error generating key points</p></div>');
+        }
         
         // 3. Why it matters - なぜ重要か
-        sections.push(`
-            <div class="report-section">
-                <h3>3. Why it matters</h3>
-                ${generateWhyItMatters(article)}
-            </div>
-        `);
+        try {
+            sections.push(`
+                <div class="report-section">
+                    <h3>3. Why it matters</h3>
+                    ${generateWhyItMatters(article)}
+                </div>
+            `);
+        } catch (e) {
+            console.error('Error in generateWhyItMatters:', e);
+            sections.push('<div class="report-section"><h3>3. Why it matters</h3><p>Error generating importance</p></div>');
+        }
         
         // 4. What's next - 今後の展望
-        sections.push(`
-            <div class="report-section">
-                <h3>4. What's next</h3>
-                ${generateWhatsNext(article)}
-            </div>
-        `);
+        try {
+            sections.push(`
+                <div class="report-section">
+                    <h3>4. What's next</h3>
+                    ${generateWhatsNext(article)}
+                </div>
+            `);
+        } catch (e) {
+            console.error('Error in generateWhatsNext:', e);
+            sections.push('<div class="report-section"><h3>4. What\'s next</h3><p>Error generating next steps</p></div>');
+        }
     
         return sections.join('');
     } catch (error) {
@@ -349,29 +364,62 @@ function generateKeyPoints(article) {
 function generateWhyItMatters(article) {
     const category = article.category;
     const importance = article.importance;
+    const summary = article.summary;
+    const title = article.title;
     
     let content = '<ul>';
     
-    // Category-specific importance
-    if (category === 'openai' || category === 'anthropic' || category === 'google') {
-        content += '<li>Major AI company development that could shape the industry</li>';
+    // Extract key insights from the article content
+    if (summary.includes('acquisition') || summary.includes('acquire')) {
+        content += '<li>Strategic move that could reshape competitive dynamics in the AI industry</li>';
+        content += '<li>Potential for technology integration and accelerated innovation</li>';
+    }
+    
+    if (summary.includes('launch') || summary.includes('release') || summary.includes('introduce')) {
+        content += '<li>New tool/service that could change how people interact with AI technology</li>';
+        content += '<li>Opportunity for developers and businesses to leverage new capabilities</li>';
+    }
+    
+    if (summary.includes('research') || summary.includes('breakthrough') || summary.includes('discover')) {
+        content += '<li>Scientific advancement that pushes the boundaries of what\'s possible with AI</li>';
+        content += '<li>Potential foundation for future AI applications and improvements</li>';
+    }
+    
+    if (summary.includes('partner') || summary.includes('collaboration')) {
+        content += '<li>Industry collaboration that could accelerate AI development and adoption</li>';
+        content += '<li>Cross-pollination of expertise leading to innovative solutions</li>';
+    }
+    
+    if (summary.includes('funding') || summary.includes('investment') || summary.includes('raise')) {
+        content += '<li>Financial backing signals confidence in AI market growth</li>';
+        content += '<li>Resources to scale operations and accelerate product development</li>';
+    }
+    
+    // Category-specific insights
+    if (category === 'openai' || category === 'anthropic' || category === 'google' || category === 'meta' || category === 'microsoft') {
+        content += '<li>Major tech company move that sets industry direction and standards</li>';
     } else if (category === 'regulation' || category === 'legal') {
-        content += '<li>Regulatory changes that could impact AI development and deployment</li>';
-    } else if (category === 'business' || category === 'finance') {
-        content += '<li>Business developments affecting AI market dynamics</li>';
+        content += '<li>Legal framework that will shape how AI can be developed and deployed</li>';
+        content += '<li>Compliance requirements that all AI companies must consider</li>';
     } else if (category.includes('generation')) {
-        content += '<li>Advances in AI generation capabilities</li>';
+        content += '<li>Creative AI advancement expanding possibilities for content creation</li>';
+        content += '<li>Democratization of creative tools for artists and creators</li>';
+    } else if (category === 'healthcare') {
+        content += '<li>Healthcare innovation with potential to save lives and improve patient outcomes</li>';
+        content += '<li>AI addressing critical challenges in medical diagnosis and treatment</li>';
+    } else if (category === 'agents' || category === 'automation') {
+        content += '<li>Automation capabilities that could transform workplace productivity</li>';
+        content += '<li>Evolution toward more autonomous and intelligent systems</li>';
     }
     
-    // Importance-based reasoning
+    // Importance-based insights
     if (importance >= 90) {
-        content += '<li>High-impact news that could significantly affect the AI landscape</li>';
+        content += '<li>High-priority development that industry leaders are closely watching</li>';
+    } else if (importance >= 80) {
+        content += '<li>Significant advancement that demonstrates AI\'s expanding capabilities</li>';
     } else if (importance >= 70) {
-        content += '<li>Notable development worth tracking for industry professionals</li>';
+        content += '<li>Notable progress in the ongoing AI innovation cycle</li>';
     }
-    
-    // General fallback
-    content += '<li>Part of ongoing AI industry evolution and innovation</li>';
     
     content += '</ul>';
     return content;
