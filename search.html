@@ -222,7 +222,7 @@
         <p>&copy; 2025 AI Weekly News. 毎日自動更新中</p>
     </footer>
 
-    <script src="script.js?v=20250627-2"></script>
+    <script src="script.js?v=20250628"></script>
     <script>
         // Search page specific functionality
         let allArticles = [];
@@ -422,8 +422,8 @@
             if (currentSearch) {
                 const searchLower = currentSearch.toLowerCase();
                 filteredArticles = filteredArticles.filter(article => {
-                    const titleMatch = (article.titleJa || article.title || '').toLowerCase().includes(searchLower);
-                    const summaryMatch = (article.summaryJa || article.summary || '').toLowerCase().includes(searchLower);
+                    const titleMatch = (article.title || '').toLowerCase().includes(searchLower);
+                    const summaryMatch = (article.summary || '').toLowerCase().includes(searchLower);
                     const sourceMatch = (article.source || '').toLowerCase().includes(searchLower);
                     return titleMatch || summaryMatch || sourceMatch;
                 });
@@ -466,17 +466,12 @@
                         
                         <div class="news-card-content">
                             <h3 class="news-card-title">
-                                ${article.titleJa || article.title}
+                                ${article.title}
                             </h3>
                             
-                            ${article.titleJa && article.titleJa !== article.title ? `
-                                <p class="news-card-title-original">
-                                    ${article.title}
-                                </p>
-                            ` : ''}
                             
                             <p class="news-card-summary">
-                                ${article.summaryJa || article.summary}
+                                ${article.summary}
                             </p>
                         </div>
                         

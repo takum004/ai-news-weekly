@@ -175,7 +175,7 @@ async function loadArticle() {
         console.log('Article object:', article);
         
         // Update page title
-        document.title = `${article.titleJa || article.title} - AI Weekly News`;
+        document.title = `${article.title} - AI Weekly News`;
         
         // Display article
         contentDiv.innerHTML = `
@@ -189,9 +189,7 @@ async function loadArticle() {
                     <span class="source">出典: ${article.source}</span>
                 </div>
                 
-                <h1 class="article-title">${article.titleJa || article.title}</h1>
-                ${article.titleJa && article.title !== article.titleJa ? 
-                    `<div class="article-title-original">${article.title}</div>` : ''}
+                <h1 class="article-title">${article.title}</h1>
             </article>
             
             <article class="article-content">
@@ -203,8 +201,8 @@ async function loadArticle() {
                 
                 <!-- 概要 -->
                 <div class="article-summary">
-                    <h2>概要</h2>
-                    <p>${article.summaryJa || article.summary}</p>
+                    <h2>Summary</h2>
+                    <p>${article.summary}</p>
                 </div>
                 
                 <!-- 詳細レポート -->
@@ -278,8 +276,8 @@ function generateDetailedReport(article) {
         }
         
         const sections = [];
-        const summary = article.summaryJa || article.summary;
-        const title = article.titleJa || article.title;
+        const summary = article.summary;
+        const title = article.title;
         
         // シンプルな要約形式に変更
         
@@ -326,8 +324,8 @@ function generateDetailedReport(article) {
 // Generate key points from article
 function generateKeyPoints(article) {
     const points = [];
-    const summary = article.summaryJa || article.summary;
-    const title = article.titleJa || article.title;
+    const summary = article.summary;
+    const title = article.title;
     
     // Extract key information from the article
     const sentences = summary.split(/[.!?]+/).filter(s => s.trim().length > 10);
@@ -381,7 +379,7 @@ function generateWhyItMatters(article) {
 
 // Generate what's next section
 function generateWhatsNext(article) {
-    const summary = article.summaryJa || article.summary;
+    const summary = article.summary;
     const category = article.category;
     
     let content = '<ul>';
@@ -504,8 +502,8 @@ function getImpactAnalysis(article) {
 
 // Extract key information from article with enhanced analysis
 function extractKeyInformation(article) {
-    const title = article.titleJa || article.title;
-    const summary = article.summaryJa || article.summary;
+    const title = article.title;
+    const summary = article.summary;
     const originalSummary = article.summary || '';
     const fullText = title + ' ' + summary + ' ' + originalSummary;
     
@@ -732,7 +730,7 @@ function generateIntroductionContext(article, keyInfo) {
 // Generate dynamic background based on article content
 function generateDynamicBackground(article, keyInfo) {
     let content = '<p>';
-    const summary = article.summaryJa || article.summary;
+    const summary = article.summary;
     
     // Company-specific background
     if (keyInfo.companies.includes('OpenAI')) {
@@ -784,7 +782,7 @@ function getTechnicalSectionTitle(article, keyInfo) {
 
 // Generate technical analysis based on article
 function generateTechnicalAnalysis(article, keyInfo) {
-    const summary = article.summaryJa || article.summary;
+    const summary = article.summary;
     let content = '<p>';
     
     // Start with article-specific introduction
@@ -862,8 +860,8 @@ function generateSpecificImpactAnalysis(article, keyInfo) {
         console.error('generateSpecificImpactAnalysis: article is undefined');
         return '<p>影響分析の生成中にエラーが発生しました。</p>';
     }
-    const summary = article.summaryJa || article.summary;
-    let content = '<p>「' + (article.titleJa || article.title) + '」がもたらす影響を、具体的に検討してみましょう。</p>';
+    const summary = article.summary;
+    let content = '<p>「' + (article.title) + '」がもたらす影響を、具体的に検討してみましょう。</p>';
     
     // Technical impact specific to the article
     content += '<h4>技術的影響</h4><ul>';
@@ -932,7 +930,7 @@ function generateSocialImpact(summary, keyInfo) {
 
 // Generate specific challenges
 function generateSpecificChallenges(article, keyInfo) {
-    const summary = article.summaryJa || article.summary;
+    const summary = article.summary;
     let content = '<p>この技術や発表に関連する具体的な課題を整理します：</p>';
     
     // Extract challenges from the summary itself
@@ -1009,8 +1007,8 @@ function generateImplementationChallenges(summary, keyInfo) {
 
 // Generate future outlook
 function generateFutureOutlook(article, keyInfo) {
-    const title = article.titleJa || article.title;
-    const summary = article.summaryJa || article.summary;
+    const title = article.title;
+    const summary = article.summary;
     
     let content = `<p>「${title}」という発表を踏まえ、今後予想される展開を時系列で整理します。</p>`;
     
@@ -1093,7 +1091,7 @@ function generateLongTermOutlook(summary, keyInfo) {
 
 // Generate expert perspective
 function generateExpertPerspective(article, keyInfo) {
-    const summary = article.summaryJa || article.summary;
+    const summary = article.summary;
     let content = '<p>この発表に対して、各分野の専門家からは以下のような視点が提示されることが予想されます：</p>';
     
     // Technical experts
@@ -1171,8 +1169,8 @@ function generateEthicalView(summary, keyInfo) {
 
 // Generate conclusion
 function generateConclusion(article, keyInfo) {
-    const title = article.titleJa || article.title;
-    const summary = article.summaryJa || article.summary;
+    const title = article.title;
+    const summary = article.summary;
     
     let content = `<p>「${title}」というニュースを詳細に分析してきました。`;
     

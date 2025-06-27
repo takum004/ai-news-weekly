@@ -361,9 +361,7 @@ async function fetchNewsFromRSS() {
             const article = {
               id: generateId(item.link || item.guid || title),
               title: cleanText(title),
-              titleJa: title, // 英語のまま表示
               summary: cleanText(summary),
-              summaryJa: summary, // 英語のまま表示
               source: extractSourceName(feed.title, feedUrl),
               category: categorizeArticle(title, content),
               importance: calculateImportance(title, content, articleDate),

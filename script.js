@@ -201,17 +201,12 @@ function createNewsCard(article) {
             
             <div class="news-card-content">
                 <h3 class="news-card-title">
-                    ${article.titleJa || article.title}
+                    ${article.title}
                 </h3>
                 
-                ${article.titleJa && article.titleJa !== article.title ? `
-                    <p class="news-card-title-original">
-                        ${article.title}
-                    </p>
-                ` : ''}
                 
                 <p class="news-card-summary">
-                    ${article.summaryJa || article.summary}
+                    ${article.summary}
                 </p>
             </div>
             
@@ -252,9 +247,7 @@ function filterAndDisplayNews() {
         const searchTerm = currentSearch.toLowerCase();
         filteredNews = filteredNews.filter(article => 
             (article.title && article.title.toLowerCase().includes(searchTerm)) ||
-            (article.titleJa && article.titleJa.toLowerCase().includes(searchTerm)) ||
             (article.summary && article.summary.toLowerCase().includes(searchTerm)) ||
-            (article.summaryJa && article.summaryJa.toLowerCase().includes(searchTerm)) ||
             (article.source && article.source.toLowerCase().includes(searchTerm))
         );
     }
@@ -1420,7 +1413,7 @@ function createNewsListItem(article) {
             <div class="news-list-content">
                 <h3 class="news-list-title">
                     <a href="article.html?id=${encodeURIComponent(article.id)}">
-                        ${article.titleJa || article.title}
+                        ${article.title}
                     </a>
                 </h3>
                 <div class="news-list-meta">
