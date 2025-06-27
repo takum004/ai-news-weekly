@@ -280,92 +280,137 @@ function generateDetailedReport(article) {
         const sections = [];
         const summary = article.summaryJa || article.summary;
         const title = article.titleJa || article.title;
-        const originalTitle = article.title;
-        const originalSummary = article.summary;
+        
+        // シンプルな要約形式に変更
+        
+        // 1. What's this about? - 何についてのニュースか
+        sections.push(`
+            <div class="report-section">
+                <h3>1. What's this about?</h3>
+                <p>${summary}</p>
+            </div>
+        `);
+        
+        // 2. Key Points - 重要なポイント
+        sections.push(`
+            <div class="report-section">
+                <h3>2. Key Points</h3>
+                ${generateKeyPoints(article)}
+            </div>
+        `);
+        
+        // 3. Why it matters - なぜ重要か
+        sections.push(`
+            <div class="report-section">
+                <h3>3. Why it matters</h3>
+                ${generateWhyItMatters(article)}
+            </div>
+        `);
+        
+        // 4. What's next - 今後の展望
+        sections.push(`
+            <div class="report-section">
+                <h3>4. What's next</h3>
+                ${generateWhatsNext(article)}
+            </div>
+        `);
     
-    // Extract key information from the article
-    const keyInfo = extractKeyInformation(article);
-    
-    // 1. Introduction section - タイトルと要約に基づいた導入
-    sections.push(`
-        <div class="report-section">
-            <h3>1. はじめに：なぜこのニュースが重要なのか</h3>
-            <p>${summary}</p>
-            <p>${generateIntroductionContext(article, keyInfo)}</p>
-        </div>
-    `);
-    
-    // 2. Background and Context - 記事固有の背景
-    sections.push(`
-        <div class="report-section">
-            <h3>2. 背景と文脈</h3>
-            ${generateDynamicBackground(article, keyInfo)}
-        </div>
-    `);
-    
-    // 3. Key Technical Details - 記事の内容に基づいた詳細分析
-    sections.push(`
-        <div class="report-section">
-            <h3>3. ${getTechnicalSectionTitle(article, keyInfo)}</h3>
-            ${generateTechnicalAnalysis(article, keyInfo)}
-        </div>
-    `);
-    
-    // 4. Impact Analysis - 記事固有の影響分析
-    sections.push(`
-        <div class="report-section">
-            <h3>4. 想定される影響と波及効果</h3>
-            ${generateSpecificImpactAnalysis(article, keyInfo)}
-        </div>
-    `);
-    
-    // 5. Challenges and Considerations - 記事に関連した具体的な課題
-    sections.push(`
-        <div class="report-section">
-            <h3>5. 課題と今後の検討事項</h3>
-            ${generateSpecificChallenges(article, keyInfo)}
-        </div>
-    `);
-    
-    // 6. Future Outlook - このニュースが示す将来
-    sections.push(`
-        <div class="report-section">
-            <h3>6. 今後の展望と予測</h3>
-            ${generateFutureOutlook(article, keyInfo)}
-        </div>
-    `);
-    
-    // 7. Expert Commentary - このニュースに対する業界の視点
-    sections.push(`
-        <div class="report-section">
-            <h3>7. 専門家の視点と業界の反応</h3>
-            ${generateExpertPerspective(article, keyInfo)}
-        </div>
-    `);
-    
-    // 8. Conclusion - このニュース固有の結論
-    sections.push(`
-        <div class="report-section">
-            <h3>8. まとめ：このニュースから学ぶべきこと</h3>
-            ${generateConclusion(article, keyInfo)}
-        </div>
-    `);
-    
-    // Add source information
-    sections.push(`
-        <div class="report-section source-info">
-            <p class="source-note">情報源: ${article.source} (${formatDate(article.pubDate)})</p>
-            <p class="source-note">カテゴリ: ${categoryLabels[article.category] || article.category}</p>
-            ${article.importance >= 90 ? '<p class="source-note importance-note">🔥 このニュースは特に重要度が高いと判断されています</p>' : ''}
-        </div>
-    `);
-    
-    return sections.join('');
+        return sections.join('');
     } catch (error) {
         console.error('Error in generateDetailedReport:', error);
         console.error('Article data:', article);
         return '<p>詳細レポートの生成中にエラーが発生しました。</p>';
     }
+}
+
+// Generate key points from article
+function generateKeyPoints(article) {
+    const points = [];
+    const summary = article.summaryJa || article.summary;
+    const title = article.titleJa || article.title;
+    
+    // Extract key information from the article
+    const sentences = summary.split(/[.!?]+/).filter(s => s.trim().length > 10);
+    
+    // Take first 3-4 important sentences
+    const keyPoints = sentences.slice(0, Math.min(4, sentences.length));
+    
+    if (keyPoints.length > 0) {
+        return '<ul>' + keyPoints.map(point => `<li>${point.trim()}</li>`).join('') + '</ul>';
+    }
+    
+    // Fallback if no sentences found
+    return `<ul>
+        <li>${title}</li>
+        <li>Category: ${categoryLabels[article.category] || article.category}</li>
+        <li>Source: ${article.source}</li>
+    </ul>`;
+}
+
+// Generate why it matters section
+function generateWhyItMatters(article) {
+    const category = article.category;
+    const importance = article.importance;
+    
+    let content = '<ul>';
+    
+    // Category-specific importance
+    if (category === 'openai' || category === 'anthropic' || category === 'google') {
+        content += '<li>Major AI company development that could shape the industry</li>';
+    } else if (category === 'regulation' || category === 'legal') {
+        content += '<li>Regulatory changes that could impact AI development and deployment</li>';
+    } else if (category === 'business' || category === 'finance') {
+        content += '<li>Business developments affecting AI market dynamics</li>';
+    } else if (category.includes('generation')) {
+        content += '<li>Advances in AI generation capabilities</li>';
+    }
+    
+    // Importance-based reasoning
+    if (importance >= 90) {
+        content += '<li>High-impact news that could significantly affect the AI landscape</li>';
+    } else if (importance >= 70) {
+        content += '<li>Notable development worth tracking for industry professionals</li>';
+    }
+    
+    // General fallback
+    content += '<li>Part of ongoing AI industry evolution and innovation</li>';
+    
+    content += '</ul>';
+    return content;
+}
+
+// Generate what's next section
+function generateWhatsNext(article) {
+    const summary = article.summaryJa || article.summary;
+    const category = article.category;
+    
+    let content = '<ul>';
+    
+    // Look for future-oriented keywords
+    if (summary.includes('will') || summary.includes('plans') || summary.includes('future')) {
+        content += '<li>Watch for further announcements and implementation details</li>';
+    }
+    
+    if (summary.includes('launch') || summary.includes('release') || summary.includes('available')) {
+        content += '<li>Product/service rollout and market adoption to follow</li>';
+    }
+    
+    if (summary.includes('partner') || summary.includes('acquisition') || summary.includes('invest')) {
+        content += '<li>Integration and synergy developments expected</li>';
+    }
+    
+    // Category-specific predictions
+    if (category === 'research' || category === 'academic') {
+        content += '<li>Potential for follow-up research and real-world applications</li>';
+    } else if (category === 'regulation') {
+        content += '<li>Industry response and compliance measures to emerge</li>';
+    }
+    
+    // General fallback
+    content += '<li>Monitor industry reactions and competitive responses</li>';
+    
+    content += '</ul>';
+    return content;
 }
 
 // Helper function to get category context
