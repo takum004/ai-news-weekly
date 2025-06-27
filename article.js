@@ -172,6 +172,7 @@ async function loadArticle() {
         }
         
         console.log('Article found:', article.title);
+        console.log('Article object:', article);
         
         // Update page title
         document.title = `${article.titleJa || article.title} - AI Weekly News`;
@@ -270,11 +271,17 @@ User Agent: ${navigator.userAgent}
 
 // Generate detailed report based on article content
 function generateDetailedReport(article) {
-    const sections = [];
-    const summary = article.summaryJa || article.summary;
-    const title = article.titleJa || article.title;
-    const originalTitle = article.title;
-    const originalSummary = article.summary;
+    try {
+        if (!article) {
+            console.error('generateDetailedReport: article is undefined');
+            return '<p>詳細レポートの生成中にエラーが発生しました。</p>';
+        }
+        
+        const sections = [];
+        const summary = article.summaryJa || article.summary;
+        const title = article.titleJa || article.title;
+        const originalTitle = article.title;
+        const originalSummary = article.summary;
     
     // Extract key information from the article
     const keyInfo = extractKeyInformation(article);
@@ -354,6 +361,11 @@ function generateDetailedReport(article) {
     `);
     
     return sections.join('');
+    } catch (error) {
+        console.error('Error in generateDetailedReport:', error);
+        console.error('Article data:', article);
+        return '<p>詳細レポートの生成中にエラーが発生しました。</p>';
+    }
 }
 
 // Helper function to get category context
@@ -801,6 +813,10 @@ function generateResearchMethodology(summary, keyInfo) {
 
 // Generate specific impact analysis
 function generateSpecificImpactAnalysis(article, keyInfo) {
+    if (!article) {
+        console.error('generateSpecificImpactAnalysis: article is undefined');
+        return '<p>影響分析の生成中にエラーが発生しました。</p>';
+    }
     const summary = article.summaryJa || article.summary;
     let content = '<p>「' + (article.titleJa || article.title) + '」がもたらす影響を、具体的に検討してみましょう。</p>';
     

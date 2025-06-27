@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Article Debug</title>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .debug-info {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Article Debug Test</h1>
+    
+    <div class="debug-info">
+        <h2>URL Parameters</h2>
+        <div id="url-params"></div>
+    </div>
+    
+    <div class="debug-info">
+        <h2>Data Loading Test</h2>
+        <div id="data-test"></div>
+    </div>
+    
+    <div class="debug-info">
+        <h2>Article Search Test</h2>
+        <div id="article-test"></div>
+    </div>
+
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const articleId = urlParams.get('id');
+        const decodedArticleId = articleId ? decodeURIComponent(articleId) : null;
+        
+        document.getElementById('url-params').innerHTML = `
+            <p>Raw ID: <code>${articleId}</code></p>
+            <p>Decoded ID: <code>${decodedArticleId}</code></p>
+            <p>Current URL: <code>${window.location.href}</code></p>
+        `;
+        
+        // Test data loading
+        async function testDataLoading() {
+            const dataTestDiv = document.getElementById('data-test');
+            
+            try {
+                dataTestDiv.innerHTML = '<p>Loading data...</p>';
+                
+                const response = await fetch(`./data/news.json?t=${Date.now()}`);
+                dataTestDiv.innerHTML += `<p>Response status: ${response.status} ${response.statusText}</p>`;
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                dataTestDiv.innerHTML += `
+                    <p class="success">✓ Data loaded successfully</p>
+                    <p>Total articles: ${data.articles?.length || 0}</p>
+                    <p>Last updated: ${data.lastUpdated}</p>
+                `;
+                
+                // Test article search
+                if (decodedArticleId && data.articles) {
+                    const articleTestDiv = document.getElementById('article-test');
+                    
+                    // Show first 5 article IDs
+                    articleTestDiv.innerHTML = `
+                        <h3>First 5 Article IDs in data:</h3>
+                        <pre>${JSON.stringify(data.articles.slice(0, 5).map(a => a.id), null, 2)}</pre>
+                    `;
+                    
+                    // Try to find the article
+                    const article = data.articles.find(a => 
+                        a.id === decodedArticleId || 
+                        a.id === articleId ||
+                        decodeURIComponent(a.id) === decodedArticleId
+                    );
+                    
+                    if (article) {
+                        articleTestDiv.innerHTML += `
+                            <p class="success">✓ Article found!</p>
+                            <h4>Article details:</h4>
+                            <pre>${JSON.stringify({
+                                id: article.id,
+                                title: article.title,
+                                category: article.category,
+                                pubDate: article.pubDate
+                            }, null, 2)}</pre>
+                        `;
+                    } else {
+                        articleTestDiv.innerHTML += `
+                            <p class="error">✗ Article not found</p>
+                            <p>Looking for ID: <code>${decodedArticleId}</code></p>
+                            <p>All article IDs:</p>
+                            <pre style="max-height: 300px; overflow-y: auto;">${JSON.stringify(data.articles.map(a => a.id), null, 2)}</pre>
+                        `;
+                    }
+                } else {
+                    document.getElementById('article-test').innerHTML = '<p>No article ID provided in URL</p>';
+                }
+                
+            } catch (error) {
+                dataTestDiv.innerHTML += `
+                    <p class="error">✗ Error: ${error.message}</p>
+                    <pre>${error.stack}</pre>
+                `;
+            }
+        }
+        
+        // Run test
+        testDataLoading();
+    </script>
+</body>
+</html>
