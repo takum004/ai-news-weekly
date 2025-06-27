@@ -351,19 +351,19 @@ async function fetchNewsFromRSS() {
             
             const summary = extractSummary(item.content || item.summary || item.description || title);
             
-            // タイトルと要約の翻訳
-            const translatedTitle = await translateText(title);
-            const translatedSummary = await translateText(summary);
+            // 翻訳を無効化 - 英語のまま表示
+            const translatedTitle = title;
+            const translatedSummary = summary;
             
-            // 日本語要約の改善（翻訳が失敗した場合の対応）
-            const improvedSummaryJa = improveJapaneseSummary(translatedSummary, summary, translatedTitle);
+            // 日本語要約も英語のまま
+            const improvedSummaryJa = summary;
             
             const article = {
               id: generateId(item.link || item.guid || title),
               title: cleanText(title),
-              titleJa: translatedTitle || title, // 翻訳失敗時は英語を使用
+              titleJa: title, // 英語のまま表示
               summary: cleanText(summary),
-              summaryJa: improvedSummaryJa,
+              summaryJa: summary, // 英語のまま表示
               source: extractSourceName(feed.title, feedUrl),
               category: categorizeArticle(title, content),
               importance: calculateImportance(title, content, articleDate),
@@ -473,6 +473,7 @@ function extractSourceName(feedTitle, feedUrl) {
     'cnet': 'CNET',
     'engadget': 'Engadget',
     'the next web': 'The Next Web',
+    'tnw': 'The Next Web',
     'bloomberg': 'Bloomberg',
     'reuters': 'Reuters',
     'bbc': 'BBC',
@@ -487,7 +488,33 @@ function extractSourceName(feedTitle, feedUrl) {
     'meta': 'Meta AI',
     'berkeley': 'Berkeley AI Research',
     'stanford': 'Stanford HAI',
-    'mit': 'MIT News'
+    'mit': 'MIT News',
+    'axios': 'Axios',
+    'siliconangle': 'SiliconANGLE',
+    'singularityhub': 'Singularity Hub',
+    'hai': 'Stanford HAI',
+    'cmu': 'CMU',
+    'pcmag': 'PCMag',
+    'npr': 'NPR',
+    'datasciencecentral': 'Data Science Central',
+    'datanami': 'Datanami',
+    'insidebigdata': 'insideBigData',
+    'emerj': 'Emerj',
+    'thegradient': 'The Gradient',
+    'fast': 'fast.ai',
+    'syncedreview': 'Synced',
+    'decrypt': 'Decrypt',
+    'gizmodo': 'Gizmodo',
+    'artificialintelligence-news': 'AI News',
+    'importai': 'Import AI',
+    'gigaom': 'Gigaom',
+    'marktechpost': 'MarkTechPost',
+    'analyticsinsight': 'Analytics Insight',
+    'kdnuggets': 'KDnuggets',
+    'itpro': 'ITPro',
+    'cio': 'CIO',
+    'informationweek': 'InformationWeek',
+    'sciencedaily': 'ScienceDaily'
   };
   
   // Check if we have a known mapping
@@ -1003,6 +1030,20 @@ function translateByPattern(text) {
       const jpProduct = translateProductOrService(product);
       const jpDetails = details ? `（${partialTranslate(details)}）` : '';
       return `${jpProduct}が利用可能に${jpDetails}`;
+    }],
+    
+    // Company + is reportedly + doing something パターン
+    [/^(.+?)\s+is\s+reportedly\s+(.+)$/i, (match, company, action) => {
+      const jpCompany = translateCompanyName(company);
+      const jpAction = translateAction(action);
+      return `${jpCompany}が${jpAction}との報道`;
+    }],
+    
+    // Company + reportedly + does something パターン
+    [/^(.+?)\s+reportedly\s+(.+)$/i, (match, company, action) => {
+      const jpCompany = translateCompanyName(company);
+      const jpAction = translateAction(action);
+      return `${jpCompany}が${jpAction}との報道`;
     }],
     
     // Company + acquires + Company パターン
