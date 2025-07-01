@@ -199,6 +199,14 @@
             >
             <button class="search-button" onclick="performSearch()">検索</button>
         </div>
+        
+        <div class="date-filter-box" style="max-width: 600px; margin: 0 auto 30px; text-align: center;">
+            <label style="margin-right: 10px;">期間で絞り込み：</label>
+            <input type="date" id="date-from" class="date-input" style="padding: 8px; margin: 0 5px; border: 2px solid #e5e7eb; border-radius: 5px;">
+            <span class="date-separator" style="margin: 0 5px;">〜</span>
+            <input type="date" id="date-to" class="date-input" style="padding: 8px; margin: 0 5px; border: 2px solid #e5e7eb; border-radius: 5px;">
+            <button class="apply-filter-btn" id="apply-date-filter" onclick="performSearch()" style="padding: 8px 16px; margin-left: 10px; background: #6366f1; color: white; border: none; border-radius: 5px; cursor: pointer;">適用</button>
+        </div>
 
         <div class="category-grid" id="categoryGrid">
             <!-- Categories will be dynamically inserted here -->
@@ -428,6 +436,28 @@
                     return titleMatch || summaryMatch || sourceMatch;
                 });
                 resultsTitle.textContent = `"${currentSearch}" の検索結果`;
+            }
+            
+            // Filter by date range
+            const dateFrom = document.getElementById('date-from');
+            const dateTo = document.getElementById('date-to');
+            
+            if (dateFrom && dateFrom.value) {
+                const fromDate = new Date(dateFrom.value);
+                fromDate.setHours(0, 0, 0, 0);
+                filteredArticles = filteredArticles.filter(article => {
+                    const articleDate = new Date(article.pubDate);
+                    return articleDate >= fromDate;
+                });
+            }
+            
+            if (dateTo && dateTo.value) {
+                const toDate = new Date(dateTo.value);
+                toDate.setHours(23, 59, 59, 999);
+                filteredArticles = filteredArticles.filter(article => {
+                    const articleDate = new Date(article.pubDate);
+                    return articleDate <= toDate;
+                });
             }
             
             // Sort by date (newest first)

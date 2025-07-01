@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Weekly News - 最新のAIニュースを日本語で</title>
-    <meta name="description" content="毎日更新される重要なAI関連ニュースを、自動翻訳と要約で分かりやすくお届けします">
+    <title>AI Weekly News - 最新のAIニュース</title>
+    <meta name="description" content="毎日更新される重要なAI関連ニュースを、要約で分かりやすくお届けします">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -139,6 +139,26 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 1rem;
+        }
+        
+        .filter-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .date-input {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+            font-size: 1rem;
+        }
+        
+        .date-separator {
+            color: #666;
+            font-weight: 500;
         }
         
         .sort-select {
@@ -382,14 +402,14 @@
     <section class="hero">
         <div class="container">
             <h2>🤖 最新のAIニュース</h2>
-            <p>世界中のAI関連ニュースを毎日自動収集・日本語翻訳</p>
+            <p>世界中のAI関連ニュースを毎日自動収集</p>
             <div class="stats">
                 <div class="stat">
                     <strong id="article-count">0</strong>
                     <div>記事</div>
                 </div>
                 <div class="stat">
-                    <strong id="sources-count">35</strong>
+                    <strong id="sources-count">71</strong>
                     <div>情報源</div>
                 </div>
                 <div class="stat">
@@ -422,14 +442,21 @@
                 <input type="text" id="search-input" placeholder="ニュースを検索...">
                 <button id="search-btn">検索</button>
             </div>
-            <select class="sort-select" id="sort-select">
-                <option value="date-desc">新しい順</option>
-                <option value="date-asc">古い順</option>
-                <option value="importance-desc">重要度順</option>
-            </select>
-            <div class="view-toggle">
-                <button id="card-view-btn" class="view-btn active">カード表示</button>
-                <button id="list-view-btn" class="view-btn">リスト表示</button>
+            <div class="filter-controls" style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <select class="sort-select" id="sort-select">
+                    <option value="date-desc">新しい順</option>
+                    <option value="date-asc">古い順</option>
+                    <option value="importance-desc">重要度順</option>
+                </select>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <input type="date" id="date-from" class="date-input" placeholder="開始日">
+                    <span class="date-separator">〜</span>
+                    <input type="date" id="date-to" class="date-input" placeholder="終了日">
+                </div>
+                <div class="view-toggle">
+                    <button id="card-view-btn" class="view-btn active">カード表示</button>
+                    <button id="list-view-btn" class="view-btn">リスト表示</button>
+                </div>
             </div>
         </div>
 
@@ -453,6 +480,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js?v=20250628"></script>
+    <script src="script.js?v=20250628_2"></script>
 </body>
 </html>

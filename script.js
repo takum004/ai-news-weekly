@@ -252,6 +252,28 @@ function filterAndDisplayNews() {
         );
     }
     
+    // Date filter
+    const dateFrom = document.getElementById('date-from');
+    const dateTo = document.getElementById('date-to');
+    
+    if (dateFrom && dateFrom.value) {
+        const fromDate = new Date(dateFrom.value);
+        fromDate.setHours(0, 0, 0, 0); // Set to start of day
+        filteredNews = filteredNews.filter(article => {
+            const articleDate = new Date(article.pubDate);
+            return articleDate >= fromDate;
+        });
+    }
+    
+    if (dateTo && dateTo.value) {
+        const toDate = new Date(dateTo.value);
+        toDate.setHours(23, 59, 59, 999); // Set to end of day
+        filteredNews = filteredNews.filter(article => {
+            const articleDate = new Date(article.pubDate);
+            return articleDate <= toDate;
+        });
+    }
+    
     // Sort
     const sortSelect = document.getElementById('sort-select');
     const sortValue = sortSelect.value;
@@ -354,6 +376,18 @@ function setupEventListeners() {
             filterAndDisplayNews();
         }
     });
+    
+    // Date filter functionality
+    const dateFrom = document.getElementById('date-from');
+    const dateTo = document.getElementById('date-to');
+    
+    if (dateFrom) {
+        dateFrom.addEventListener('change', filterAndDisplayNews);
+    }
+    
+    if (dateTo) {
+        dateTo.addEventListener('change', filterAndDisplayNews);
+    }
     
     // Sort
     const sortSelect = document.getElementById('sort-select');

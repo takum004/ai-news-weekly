@@ -79,6 +79,14 @@ const RSS_FEEDS = [
   'https://jack-clark.net/feed/', // Import AI by Jack Clark
   // 'https://www.artificial-intelligence.blog/rss', // Removed - DNS/certificate issues
   
+  // New Developer & Investment Sources (Added 2025-07-01)
+  'https://developers.googleblog.com/feeds/posts/default', // Google Developers Blog - AI/ML content
+  'https://www.ainvest.com/feed/', // AI Investment & Business Analysis
+  
+  // Japanese AI Research & News Sources (Added 2025-07-01)
+  'https://sakana.ai/blog/feed', // Sakana AI - Japanese AI research company
+  'https://innovatopia.jp/feed/', // Innovatopia - Japanese AI news
+  
   // Emerging Sources - Verified Working
   // 'https://stratechery.com/feed/', // Removed - paywall/limited access
   

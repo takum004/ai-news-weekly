@@ -311,12 +311,7 @@ body {
 
 /* Search Section */
 .search-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 2rem;
-    gap: 1rem;
-    flex-wrap: wrap;
 }
 
 .search-box {
@@ -325,8 +320,7 @@ body {
     border-radius: 50px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    max-width: 400px;
+    margin-bottom: 1rem;
 }
 
 .search-box input {
@@ -350,6 +344,32 @@ body {
     background: linear-gradient(135deg, #0891b2, #2563eb);
 }
 
+.filter-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.date-input {
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.date-input:focus {
+    border-color: #06b6d4;
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+}
+
+.date-separator {
+    color: #6b7280;
+    font-weight: 500;
+}
+
 .filter-options select {
     background: white;
     border: 1px solid #d1d5db;
@@ -363,7 +383,7 @@ body {
 /* News Grid */
 .news-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-bottom: 3rem;
     min-height: 400px; /* Minimum height to prevent layout jump */
