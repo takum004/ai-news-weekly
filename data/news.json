@@ -1,28 +1,458 @@
 {
-  "lastUpdated": "2026-03-09T04:45:15.614Z",
+  "lastUpdated": "2026-03-09T21:32:06.440Z",
   "totalArticles": 200,
   "generatedBy": "AI News Aggregator v1.0",
   "sources": 71,
   "articles": [
     {
-      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
-      "title": "国防総省がサプライチェーンリスクに指定したAnthropicにGoogle・Amazon・Microsoftが防衛関連以外で協力表明、一方「なぜ指定したのか」について国防総省のAI担当者が語る",
-      "summary": "AIの軍事利用を巡りアメリカ国防総省と意見が対立したAnthropicが「サプライチェーンリスク」に指定された問題で、複数のテック企業がAnthropicとの提携を継続すると表明したことが分かりました。続きを読む.",
-      "source": "GIGAZINE",
-      "category": "google",
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "OpenAI and Google employees rush to Anthropic’s defense in DOD lawsuit",
+      "summary": "More than 30 OpenAI and Google DeepMind employees signed onto a statement supporting Anthropic's lawsuit against the Defense Department after the agency labeled the AI firm a supply chain risk, according to court filings.",
+      "source": "TechCrunch",
+      "category": "openai",
       "importance": 100,
-      "pubDate": "2026-03-09T04:22:00.000Z",
-      "link": "https://gigazine.net/news/20260309-anthropic-supply-chain-risk/"
+      "pubDate": "2026-03-09T21:15:17.000Z",
+      "link": "https://techcrunch.com/2026/03/09/openai-and-google-employees-rush-to-anthropics-defense-in-dod-lawsuit/"
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
+      "title": "How to make your e-commerce product visible to AI agents? Use this new system trusted by L’Oréal, Unilever, Mars & Beiersdorf",
+      "summary": "For future-focused e-commerce brands, the primary customer is rapidly changing from a person behind a screen to the AI agents that said human customer deploys on their behalf to research and, if projections are correct, purchase the product on their behalf.",
+      "source": "VentureBeat",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-03-09T21:13:00.000Z",
+      "link": "https://venturebeat.com/infrastructure/how-to-make-your-e-commerce-product-visible-to-ai-agents-use-this-new-system"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
+      "title": "Anthropic・Google・OpenAI・xAIが開発したAIモデルは会話を重ねると学術不正に協力してしまうという調査結果",
+      "summary": "対話型AIモデルは論文の要約や文章作成の補助に使われる一方で、学術不正につながる依頼にどこまで応じてしまうのかも問題になっています。科学誌のNatureが取り上げたベンチマーク「AFIM」では、主要な13モデルを対象にプレプリントサーバー「arXiv」への不適切な投稿支援などを想定した依頼を段階的に与えたところ、単発の依頼なら拒否できるAIモデルであっても、複数ターンのやりとりを行うと一部の依頼に応じてしまうという判定結果が出たと報告されています。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-03-09T21:00:00.000Z",
+      "link": "https://gigazine.net/news/20260310-afim-llm-academic-fraud/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "Anthropic Claims Pentagon Feud Could Cost It Billions",
+      "summary": "Executives at the AI startup say companies paused deal talks after the Trump administration labeled it a supply-chain risk, warning the fallout could cause a major revenue hit.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T20:49:29.000Z",
+      "link": "https://www.wired.com/story/anthropic-claims-business-is-in-peril-due-to-supply-chain-risk-designation/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "Employees across OpenAI and Google support Anthropic’s lawsuit against the Pentagon",
+      "summary": "On Monday, Anthropic filed its lawsuit against the Department of Defense over being designated as a supply chain risk.",
+      "source": "The Verge",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-03-09T20:45:24.000Z",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/891514/anthropic-pentagon-lawsuit-amicus-brief-openai-google"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Access Anthropic Claude models in India on Amazon Bedrock with Global cross-Region inference",
+      "summary": "In this post, you will discover how to use Amazon Bedrock's Global cross-Region Inference for Claude models in India. We will guide you through the capabilities of each Claude model variant and how to get started with a code example to help you start building generative AI applications immediately.",
+      "source": "aws",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T20:44:13.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/access-anthropic-claude-models-in-india-on-amazon-bedrock-with-global-cross-region-inference/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "OpenAI and Google Workers File Amicus Brief in Support of Anthropic Against the US Government",
+      "summary": "Google DeepMind chief scientist Jeff Dean is among the AI researchers and engineers rushing to Anthropic's defense.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-03-09T20:38:12.000Z",
+      "link": "https://www.wired.com/story/openai-deepmind-employees-file-amicus-brief-anthropic-dod-lawsuit/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "Bluesky's CEO is stepping down after nearly 5 years",
+      "summary": "Bluesky CEO Jay Graber, who has led the upstart social platform since 2021, is stepping down from her role as its top executive. Toni Schneider, who has been an advisor and investor in Bluesky, will take over the job temporarily while Graber stays on as Chief Innovation Officer.",
+      "source": "Engadget",
+      "category": "business",
+      "importance": 100,
+      "pubDate": "2026-03-09T20:19:00.000Z",
+      "link": "https://www.engadget.com/social-media/blueskys-ceo-is-stepping-down-after-nearly-5-years-201900960.html?src=rss"
+    },
+    {
+      "id": "aHR0cHM6Ly9hdG1hcmtpdC5pdG1lZGlh",
+      "title": "複数のAIエージェントをどう組み合わせる？ 3つのワークフローパターンをAnthropicが解説",
+      "summary": "複数のAIエージェントで問題を解決する場合、単に丸投げするのではなく、AIエージェントが活躍できるような仕組みが必要です。そのために必要な3つのワークフローパターンをAnthropicが公開したブログ記事を基に紹介します。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T20:00:00.000Z",
+      "link": "https://atmarkit.itmedia.co.jp/ait/articles/2603/10/news017.html"
+    },
+    {
+      "id": "aHR0cHM6Ly9hdG1hcmtpdC5pdG1lZGlh",
+      "title": "【無料】Anthropic公式「エージェントスキル入門」講座が公開 Claude Codeでの活用法が分かる22分の動画",
+      "summary": "Anthropicのオンライン講座「Anthropic Academy」に、Claude Codeの重要機能「エージェントスキル（Agent Skills）」を解説する新コースが追加された。約22分の動画で、AIエージェントの新しい開発スタイルを学べる講座の内容を整理し、技術の背景も含めて紹介する。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T20:00:00.000Z",
+      "link": "https://atmarkit.itmedia.co.jp/ait/articles/2603/10/news010.html"
     },
     {
       "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "Former Google AI Researcher Sets Up AI Robotics Startup in Tokyo",
-      "summary": "A Silicon Valley-born AI startup is turning to Japan to prove AI can reshape one of the world’s largest industrial robot supply chains.",
+      "title": "Oracle, OpenAI End Plans to Expand Flagship Data Center | Bloomberg Tech 3/9/2026",
+      "summary": "Bloomberg’s Caroline Hyde and Ed Ludlow discuss the impact of the ongoing conflict in the Middle East. Plus, Oracle and OpenAI scrap plans to expand a flagship data center project in Texas. And, Anthropic sues the US Department of Defense after the government labeled the AI firm a supply chain risk.",
+      "source": "Bloomberg",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-03-09T19:59:24.000Z",
+      "link": "https://www.bloomberg.com/news/videos/2026-03-09/bloomberg-tech-3-9-2026-video"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmJjLmNvbS9uZXdz",
+      "title": "Anthropic sues US government for calling it a risk",
+      "summary": "The artificial intelligence company has been in a public fight with US government leaders over use of its tools like Claude.",
+      "source": "BBC",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T19:49:58.000Z",
+      "link": "https://www.bbc.com/news/articles/cq571w5vllxo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Anthropic launches code review tool to check flood of AI-generated code",
+      "summary": "Anthropic launched Code Review in Claude Code, a multi-agent system that automatically analyzes AI-generated code, flags logic errors, and helps enterprise developers manage the growing volume of code produced with AI.",
+      "source": "TechCrunch",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T19:41:34.000Z",
+      "link": "https://techcrunch.com/2026/03/09/anthropic-launches-code-review-tool-to-check-flood-of-ai-generated-code/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vdGVj",
+      "title": "I Tried Vibe Coding the Same Project Using Different Gemini Models. The Results Were Dramatic",
+      "summary": "The AI model you choose to vibe code with can dramatically affect your final output.",
+      "source": "CNET",
+      "category": "tech",
+      "importance": 100,
+      "pubDate": "2026-03-09T19:10:11.000Z",
+      "link": "https://www.cnet.com/tech/services-and-software/i-tried-vibe-coding-with-different-gemini-models-heres-what-i-learned/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "This new Claude Code Review tool uses AI agents to check your pull requests for bugs - here's how",
+      "summary": "Each pull request can cost up to $25. Here's why companies might still pay to prevent catastrophic bugs.",
+      "source": "Latest news",
+      "category": "agents",
+      "importance": 100,
+      "pubDate": "2026-03-09T19:00:44.000Z",
+      "link": "https://www.zdnet.com/article/claude-code-review-ai-agents-pull-request-bug-detection/"
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
+      "title": "Anthropic rolls out Code Review for Claude Code as it sues over Pentagon blacklist and partners with Microsoft",
+      "summary": "Anthropic on Monday released Code Review, a multi-agent code review system built into Claude Code that dispatches teams of AI agents to scrutinize every pull request for bugs that human reviewers routinely miss.",
+      "source": "VentureBeat",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T19:00:00.000Z",
+      "link": "https://venturebeat.com/technology/anthropic-rolls-out-code-review-for-claude-code-as-it-sues-over-pentagon"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Apple Postpones Smart Home Display Launch as It Waits for New AI and Siri",
+      "summary": "’s artificial intelligence struggles are rippling through its product plans, forcing the company to delay a long-in-the-works smart home display until later this year, according to people with knowledge of the matter.",
+      "source": "Bloomberg",
+      "category": "edge_ai",
+      "importance": 100,
+      "pubDate": "2026-03-09T18:42:49.000Z",
+      "link": "https://www.bloomberg.com/news/articles/2026-03-09/apple-postpones-smart-home-display-launch-as-it-waits-for-new-ai-and-siri"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Consumers Embrace More Gen-AI Apps",
+      "summary": "OpenAI and Anthropic are becoming their own artificial intelligence app stores and consumers are embracing a wider number of generative AI tools, according to Andreessen Horowitz’s “Top 100 Gen AI Consumer Apps” report.",
+      "source": "Bloomberg",
+      "category": "tech",
+      "importance": 100,
+      "pubDate": "2026-03-09T18:40:48.000Z",
+      "link": "https://www.bloomberg.com/news/videos/2026-03-09/consumers-embrace-more-gen-ai-apps-video"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Meta, Google Pivot in Addiction Trial to Accuser’s History",
+      "summary": "As Meta Platforms Inc. and Google start presenting their defense in a landmark trial over social media addiction, the companies are pushing back on claims by the 20-year-old who brought the case that they’re solely to blame for her mental health struggles.",
       "source": "Bloomberg",
       "category": "google",
       "importance": 100,
-      "pubDate": "2026-03-09T04:15:00.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-03-09/ex-google-researcher-seeks-to-transform-japan-s-robots-with-ai"
+      "pubDate": "2026-03-09T18:00:08.000Z",
+      "link": "https://www.bloomberg.com/news/articles/2026-03-09/meta-google-pivot-in-addiction-trial-to-accuser-s-home-life"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "OpenAI acquires Promptfoo to secure its AI agents",
+      "summary": "This deal underscores how frontier labs are scrambling to prove their technology can be used safely in critical business operations.",
+      "source": "TechCrunch",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-03-09T17:49:04.000Z",
+      "link": "https://techcrunch.com/2026/03/09/openai-acquires-promptfoo-to-secure-its-ai-agents/"
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
+      "title": "The open-source AI red-teaming tool used by Fortune 500 companies is now part of OpenAI",
+      "summary": "The acquisition of Promptfoo, which counts more than 125,000 developers and 30-plus Fortune 500 companies among its users, is OpenAI’s most direct move yet into AI application security. Its technology will go into Frontier, the company’s enterprise agent platform launched just a month ago.",
+      "source": "The Next Web",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-03-09T17:39:38.000Z",
+      "link": "https://thenextweb.com/news/openai-acquires-promptfoo-ai-security-frontier"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "EA laid off staffers across Battlefield studios to 'better align' its teams",
+      "summary": "EA axed an undisclosed number of employees across the game studios behind the Battlefield franchise. As first reported by IGN, EA told affected employees that the layoffs were part of a \"realignment\" across the Battlefield studios, which include Dice, Criterion, Ripple Effect and Motive Studios.",
+      "source": "Engadget",
+      "category": "music_generation",
+      "importance": 100,
+      "pubDate": "2026-03-09T17:36:17.000Z",
+      "link": "https://www.engadget.com/gaming/ea-laid-off-staffers-across-battlefield-studios-to-better-align-its-teams-173617672.html?src=rss"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
+      "title": "Anthropic sues the Trump administration over 'supply chain risk' label",
+      "summary": "The Pentagon told suppliers they can't use Anthropic's artificial intelligence tools after the company said it would not let its tech be used for autonomous weapons and mass domestic surveillance.",
+      "source": "NPR",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T17:30:59.000Z",
+      "link": "https://www.npr.org/2026/03/09/nx-s1-5742548/anthropic-pentagon-lawsuit-amodai-hegseth"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Anthropic sues Defense Department over supply-chain risk designation",
+      "summary": "Anthropic filed suit against the Department of Defense on Monday after the agency labeled it a supply-chain risk. The complaint calls the DOD's actions \"unprecedented and unlawful.",
+      "source": "TechCrunch",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T17:25:40.000Z",
+      "link": "https://techcrunch.com/2026/03/09/anthropic-sues-defense-department-over-supply-chain-risk-designation/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "Hyper Light Drifter studio workers form union after rounds of layoffs",
+      "summary": "Workers at Heart Machine, the independent studio behind Hyper Light Drifter and Solar Ash, have formed a union with Communications Workers of America (CWA) Local 9003.",
+      "source": "Engadget",
+      "category": "music_generation",
+      "importance": 100,
+      "pubDate": "2026-03-09T16:58:28.000Z",
+      "link": "https://www.engadget.com/gaming/hyper-light-drifter-studio-workers-form-union-after-rounds-of-layoffs-165828565.html?src=rss"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vdGVj",
+      "title": "The Pentagon's Anthropic Feud 'Should Be a Wake-Up Call for Congress'",
+      "summary": "Serious technology issues like privacy need to be dealt with clearly, not fought over in social media posts, analysts say.",
+      "source": "CNET",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T16:51:00.000Z",
+      "link": "https://www.cnet.com/tech/services-and-software/pentagon-anthropic-ai-feud-wake-up-call-for-congress-analysis/"
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
+      "title": "Italy s Mirai Robotics raises $4.2M to build autonomous vessels for the blue economy",
+      "summary": "A Puglia-based startup founded by the man behind aircraft maker Blackshape has closed a pre-seed round to build software-defined ships and maritime AI. The ocean, it argues, is the last major physical environment not yet governed by software.",
+      "source": "The Next Web",
+      "category": "agents",
+      "importance": 100,
+      "pubDate": "2026-03-09T16:37:56.000Z",
+      "link": "https://thenextweb.com/news/mirai-robotics-42m-pre-seed-autonomous-vessels"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "Anthropic is suing the Department of Defense",
+      "summary": "Anthropic has sued the US government over its designation as a supply-chain risk, the latest move in a weekslong battle between it and the Pentagon over the acceptable use cases for its military AI tech.",
+      "source": "The Verge",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T16:37:42.000Z",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/891377/anthropic-dod-lawsuit"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
+      "title": "Google Stax: Testing Models and Prompts Against Your Own Criteria",
+      "summary": "Learn how Google Stax tests AI models and prompts against your own criteria. Compare Gemini vs GPT with custom evaluators. Step-by-step guide for beginners.",
+      "source": "KDnuggets",
+      "category": "google",
+      "importance": 100,
+      "pubDate": "2026-03-09T16:00:18.000Z",
+      "link": "https://www.kdnuggets.com/google-stax-testing-models-and-prompts-against-your-own-criteria"
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
+      "title": "Microsoft announces Copilot Cowork with help from Anthropic — a cloud-powered AI agent that works across M365 apps",
+      "summary": "If you thought Anthropic was about to run away with the enterprise AI business. you re not totally off the mark, actually.",
+      "source": "VentureBeat",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-03-09T15:58:00.000Z",
+      "link": "https://venturebeat.com/orchestration/microsoft-announces-copilot-cowork-with-help-from-anthropic-a-cloud-powered"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "Live Nation settlement avoids breakup with Ticketmaster",
+      "summary": "To keep Ticketmaster, Live Nation is going to have to make some major changes. As first reported by Politico, Live Nation reached a settlement with the Department of Justice in its antitrust case that accused the live entertainment giant of monopolistic practices.",
+      "source": "Engadget",
+      "category": "business",
+      "importance": 100,
+      "pubDate": "2026-03-09T15:50:38.000Z",
+      "link": "https://www.engadget.com/entertainment/music/live-nation-settlement-avoids-breakup-with-ticketmaster-155031214.html?src=rss"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "Anthropic Sues Department of Defense Over Supply-Chain-Risk Designation",
+      "summary": "The Claude chatbot developer says the Trump administration overstepped by escalating a contract dispute into a federal ban on the company’s technology.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T15:29:57.000Z",
+      "link": "https://www.wired.com/story/anthropic-sues-department-of-defense-over-supply-chain-risk-designation/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Anthropic Sues US Government Over Supply Chain Risk Label",
+      "summary": "Anthropic PBC sued the Defense Department for declaring that the artificial intelligence giant posed a risk to the US supply chain, further ramping up a high-stakes dispute with the Pentagon over safeguards on the company’s technology.",
+      "source": "Bloomberg",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T15:12:42.000Z",
+      "link": "https://www.bloomberg.com/news/articles/2026-03-09/anthropic-sues-defense-department-over-supply-chain-risk-label"
+    },
+    {
+      "id": "aHR0cHM6Ly9ibG9ncy5udmlkaWEuY29t",
+      "title": "ABB Robotics Taps NVIDIA Omniverse to Deliver Industrial‑Grade Physical AI at Scale",
+      "summary": "ABB Robotics and NVIDIA today announced a breakthrough partnership that brings industrial‑grade physical AI to the factory floor.",
+      "source": "NVIDIA",
+      "category": "nvidia",
+      "importance": 100,
+      "pubDate": "2026-03-09T15:00:34.000Z",
+      "link": "https://blogs.nvidia.com/blog/abb-robotics-omniverse/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "Amazon’s Zoox will test its robotaxis in Dallas and Phoenix",
+      "summary": "Amazon’s self-driving subsidiary Zoox announced on Monday that it will begin testing its autonomous vehicles in Dallas and Phoenix.",
+      "source": "Engadget",
+      "category": "audio_generation",
+      "importance": 100,
+      "pubDate": "2026-03-09T14:38:28.000Z",
+      "link": "https://www.engadget.com/big-tech/amazons-zoox-will-test-its-robotaxis-in-dallas-and-phoenix-143828899.html?src=rss"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
+      "title": "The Download: murky AI surveillance laws, and the White House cracks down on defiant labs",
+      "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology. Is the Pentagon allowed to surveil Americans with AI.",
+      "source": "MIT Technology Review",
+      "category": "regulation",
+      "importance": 100,
+      "pubDate": "2026-03-09T13:57:44.000Z",
+      "link": "https://www.technologyreview.com/2026/03/09/1134050/the-download-ai-surveillance-laws-white-house-cracks-down-defiant-labs/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Atlas rolls out multi-agent AI system to automate game asset production",
+      "summary": "Atlas, an artificial intelligence-native video game content creation platform, announced today that it has launched a multi-agent system within its AI Studio for game asset production.",
+      "source": "SiliconANGLE",
+      "category": "music_generation",
+      "importance": 100,
+      "pubDate": "2026-03-09T13:00:38.000Z",
+      "link": "https://siliconangle.com/2026/03/09/atlas-rolls-multi-agent-ai-system-automate-game-asset-production/"
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
+      "title": "Microsoft says ungoverned AI agents could become corporate 'double agents.' Its fix costs $99 a month.",
+      "summary": "Microsoft today announced the general availability of Agent 365 and Microsoft 365 Enterprise 7, two products designed to bring security and governance to the rapidly growing population of AI agents operating inside the world s largest organizations.",
+      "source": "VentureBeat",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-03-09T13:00:00.000Z",
+      "link": "https://venturebeat.com/technology/microsoft-says-ungoverned-ai-agents-could-become-corporate-double-agents-its"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "How AI firm Anthropic wound up in the Pentagon’s crosshairs",
+      "summary": "Standoff with DoD over Claude chatbot reignites debate over how AI will be used in war – and who will be held accountableUntil recently, Anthropic was one of the quieter names in the artificial intelligence boom.",
+      "source": "The Guardian",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-03-09T11:00:48.000Z",
+      "link": "https://www.theguardian.com/technology/2026/mar/09/anthropic-artificial-intelligence-pentagon"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
+      "title": "エプスタイン・ファイル218GBをAIモデル「Claude Opus 4.6」で精査した結果レポート「Epstein-research」が公開中",
+      "summary": "児童人身売買や性的虐待の疑いで逮捕されて獄中死したジェフリー・エプスタインの捜査関連データ、通称「エプスタイン・ファイル」が2025年12月から2026年1月末にかけて大量に公開され、世界中を揺るがす大きなスキャンダルとなっています。このエプスタイン・ファイルをClaude Opus 4. 6とfaster-whisperで構造化して分析した方科学分析ライブラリ「Epstein-research」が公開されています。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "research",
+      "importance": 100,
+      "pubDate": "2026-03-09T11:00:00.000Z",
+      "link": "https://gigazine.net/news/20260309-epstein-research/"
+    },
+    {
+      "id": "aHR0cHM6Ly9lbWVyai5jb20vd2h5LWFy",
+      "title": "Why Architecture Determines the Future of AI Innovation",
+      "summary": "Enterprises today face a structural information problem. The majority of new business data is unstructured — documents, emails, contracts, and multimedia scattered across fragmented systems. IDC estimates that 90% of the data generated by organizations in 2022 was unstructured.",
+      "source": "Emerj",
+      "category": "research",
+      "importance": 100,
+      "pubDate": "2026-03-09T10:23:00.000Z",
+      "link": "https://emerj.com/why-architecture-determines-the-future-of-ai-innovation/"
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
+      "title": "OpenAI to acquire Promptfoo",
+      "summary": "OpenAI is acquiring Promptfoo, an AI security platform that helps enterprises identify and remediate vulnerabilities in AI systems during development.",
+      "source": "Open",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-03-09T10:00:00.000Z",
+      "link": "https://openai.com/index/openai-to-acquire-promptfoo"
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
+      "title": "Alphabet handed Sundar Pichai a $692M pay package",
+      "summary": "The new deal ties Google’s CEO to the future of its most ambitious bets, and signals that the board has finally decided they’re bets worth making. Sundar Pichai has run Google since 2015 and Alphabet since 2019.",
+      "source": "The Next Web",
+      "category": "business",
+      "importance": 100,
+      "pubDate": "2026-03-09T07:17:29.000Z",
+      "link": "https://thenextweb.com/news/sundar-pichai-692-million-pay-waymo-wing"
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
+      "title": "How AI is changing SEO tools: Citation tracking, GEO AI visibility",
+      "summary": "If you’ve been feeling like the ground is shifting under your feet in search right now, you’re not imagining it. Twelve months ago, AI in SEO meant one thing: content generation.",
+      "source": "The Next Web",
+      "category": "energy",
+      "importance": 100,
+      "pubDate": "2026-03-09T07:09:53.000Z",
+      "link": "https://thenextweb.com/news/ai-changing-seo-tools"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "「なんJ語」うますぎAI現る→ワイ、悩み相談を“なんJスレ風”にして救われる",
+      "summary": "先週は、米OpenAIのAIモデル最新版「GPT-5. 4」もリリースされた。推論やコーディング力だけでなく、日本語を操る力も向上しているようで、「GPT-5. 4に小説を書かせたら面白かった」などと話題になっている。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 100,
+      "pubDate": "2026-03-09T05:45:00.000Z",
+      "link": "https://www.itmedia.co.jp/news/articles/2603/09/news076.html"
     },
     {
       "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
@@ -65,106 +495,6 @@
       "link": "https://arxiv.org/abs/2603.06064"
     },
     {
-      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
-      "title": "OpenAIが脆弱性の発見・検証・修正を自動化するAIエージェント「Codex Security」を発表",
-      "summary": "OpenAIがコードのセキュリティレビューを自動化するAIエージェント「Codex Security」を発表しました。他のエージェントツールでは見逃されてしまうような複雑な脆弱(ぜいじゃく)性も特定し修正案を提示することが可能で、システムのセキュリティを大幅に向上させられるとしています。続きを読む.",
-      "source": "GIGAZINE",
-      "category": "openai",
-      "importance": 100,
-      "pubDate": "2026-03-09T03:35:00.000Z",
-      "link": "https://gigazine.net/news/20260309-codex-security/"
-    },
-    {
-      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
-      "title": "AnthropicとMozillaが連携、Claude Opus 4.6がFirefoxで100件超のバグをわずか2週間で発見しそのうち14件は高深刻度",
-      "summary": "AnthropicのFrontier Red TeamとMozillaがAIを用いた脆弱(ぜいじゃく)性検出に関する連携を行い、Claude Opus 4. 6がわずか2週間の調査でFirefoxについて計112件の報告を提出し、その中から22件の脆弱性が確認されたことを報告しました。この成果は、AIが大規模なコードベースの安全性を極めて高い速度で検証し、強化できる可能性を実証するものです。続きを読む.",
-      "source": "GIGAZINE",
-      "category": "anthropic",
-      "importance": 100,
-      "pubDate": "2026-03-09T03:28:00.000Z",
-      "link": "https://gigazine.net/news/20260309-anthropic-mozilla-firefox-debug/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
-      "title": "OpenAI robotics leader resigns over concerns about Pentagon AI deal",
-      "summary": "A senior member of OpenAI's robotics team said guardrails around certain AI uses were not sufficiently defined before OpenAI announced an agreement with the Pentagon.",
-      "source": "NPR",
-      "category": "openai",
-      "importance": 100,
-      "pubDate": "2026-03-08T20:44:11.000Z",
-      "link": "https://www.npr.org/2026/03/08/nx-s1-5741779/openai-resigns-ai-pentagon-guardrails-military"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Will the Pentagon’s Anthropic controversy scare startups away from defense work?",
-      "summary": "On the latest episode of TechCrunch’s Equity podcast, we discussed what the controversy means for other startups seeking to work with the federal government.",
-      "source": "TechCrunch",
-      "category": "anthropic",
-      "importance": 100,
-      "pubDate": "2026-03-08T20:14:42.000Z",
-      "link": "https://techcrunch.com/2026/03/08/will-the-pentagons-anthropic-controversy-scare-startups-away-from-defense-work/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hdG1hcmtpdC5pdG1lZGlh",
-      "title": "自分のPCのChrome拡張は安全か？ 話題沸騰のAI「Claude Cowork」で権限と挙動をチェックしてみた",
-      "summary": "Chrome拡張機能は便利ですが、安全なのか気になったことはないでしょうか。私はAIエージェント「Claude Cowork」を使い、自分のPCに入っている拡張機能をセキュリティ解析してみました。すると、AIだけで“自分のPCを監査する”新しい使い方が見えてきました。その手順とポイントを紹介します。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 100,
-      "pubDate": "2026-03-08T20:00:00.000Z",
-      "link": "https://atmarkit.itmedia.co.jp/ait/articles/2603/09/news010.html"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "OpenAI's robotics hardware lead resigns following deal with the Department of Defense",
-      "summary": "OpenAI's robotics hardware lead is out. Caitlin Kalinowski, who oversaw hardware within the robotics division of OpenAI, posted on X that she was resigning from her role, while criticizing the company's haste in partnering with the Department of Defense without investigating proper guardrails.",
-      "source": "Engadget",
-      "category": "openai",
-      "importance": 100,
-      "pubDate": "2026-03-08T14:44:19.000Z",
-      "link": "https://www.engadget.com/ai/openais-robotics-hardware-lead-resigns-following-deal-with-the-department-of-defense-195918599.html?src=rss"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "Tech oligarchs reshape humanity while billionaires of old seem quaint",
-      "summary": "From Gates to Musk and Altman, today’s ultra-rich steer AI and tech, raising questions about who decides the futureWhen Bill Gates became the first modern IT mogul to reach the apex of wealth and power in 1992, the world was a very different place.",
-      "source": "The Guardian",
-      "category": "business",
-      "importance": 100,
-      "pubDate": "2026-03-08T10:00:16.000Z",
-      "link": "https://www.theguardian.com/technology/2026/mar/08/billionaires-tech-oligarchs"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "AI chatbots point vulnerable social media users to illegal online casinos, analysis shows",
-      "summary": "Tech firms condemned for lack of controls with Meta AI and Gemini even offering advice on how to bypass UK gambling and addiction checksAI chatbots are recommending illegal online casinos to vulnerable social media users, putting them at increased risk of fraud, addiction and even suicide.",
-      "source": "The Guardian",
-      "category": "legal",
-      "importance": 100,
-      "pubDate": "2026-03-08T08:00:14.000Z",
-      "link": "https://www.theguardian.com/technology/2026/mar/08/ai-chatbots-point-vulnerable-to-online-casinos-gambling-addiction-uk"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "Google WorkspaceがAIエージェントに開放—OpenClaw対応CLIが示す「次のOS」の正体",
-      "summary": "2026年3月8日 GoogleはGitHubに、Google Workspace全体に対応するコマンドラインインターフェース（CLI）を2026年3月2日に公開した。 Gmail、Google Drive、Docs、Sheets、Slid [ ] innovaTopia Ami.",
-      "source": "innovaTopia",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-03-08T08:00:00.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/82135/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "A roadmap for AI, if anyone will listen",
-      "summary": "The Pro-Human Declaration was finalized before last week's Pentagon-Anthropic standoff, but the collision of the two events wasn’t lost on anyone involved.",
-      "source": "TechCrunch",
-      "category": "tech",
-      "importance": 100,
-      "pubDate": "2026-03-08T06:05:26.000Z",
-      "link": "https://techcrunch.com/2026/03/07/a-roadmap-for-ai-if-anyone-will-listen/"
-    },
-    {
       "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
       "title": "Google just gave Sundar Pichai a $692M pay package",
       "summary": "Most of it is tied to performance, including new stock incentives linked to Waymo and Wing, its drone delivery venture.",
@@ -195,56 +525,6 @@
       "link": "https://venturebeat.com/orchestration/langchains-ceo-argues-that-better-models-alone-wont-get-your-ai-agent-to"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "OpenAI is reportedly pushing back the launch of its 'adult mode' even further",
-      "summary": "Here comes another disappointment for ChatGPT users. As first reported by Sources' Alex Heath, OpenAI is yet again delaying its \"adult mode\" for ChatGPT.",
-      "source": "Engadget",
-      "category": "openai",
-      "importance": 100,
-      "pubDate": "2026-03-07T21:30:13.000Z",
-      "link": "https://www.engadget.com/ai/openai-is-reportedly-pushing-back-the-launch-of-its-adult-mode-even-further-213013801.html?src=rss"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "Engadget review recap: Galaxy S26 Ultra, Galaxy Buds 4, Dell XPS 14 and more",
-      "summary": "It’s a busy time for the reviews team and Engadget, and with Apple announcing new devices this week, we aren’t letting up any time soon. New products from Samsung, Dell, Google and ASUS headline the roundup this time, and we’ve got a few unique items to discuss as well.",
-      "source": "Engadget",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-03-07T14:04:35.000Z",
-      "link": "https://www.engadget.com/engadget-review-recap-galaxy-s26-ultra-galaxy-buds-4-dell-xps-14-and-more-140435975.html?src=rss"
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
-      "title": "Google made Gmail and Drive easier for AI agents to use",
-      "summary": "A new command-line tool published to GitHub consolidates Workspace’s sprawling APIs into a single interface. It also signals how seriously the company is taking the agentic AI moment.",
-      "source": "The Next Web",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-03-07T09:28:48.000Z",
-      "link": "https://thenextweb.com/news/google-made-gmail-and-drive-easier-for-ai-agents-to-use"
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
-      "title": "Karpathy’s March of Nines shows why 90% AI reliability isn’t even close to enough",
-      "summary": "“When you get a demo and something works 90% of the time, that’s just the first nine. ” — Andrej KarpathyThe “March of Nines” frames a common production reality: You can reach the first 90% reliability with a strong demo, and each additional nine often requires comparable engineering effort.",
-      "source": "VentureBeat",
-      "category": "music_generation",
-      "importance": 100,
-      "pubDate": "2026-03-07T05:00:00.000Z",
-      "link": "https://venturebeat.com/technology/karpathys-march-of-nines-shows-why-90-ai-reliability-isnt-even-close-to"
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
-      "title": "Anthropic launches marketplace for Claude-powered software",
-      "summary": "Despite facing a Pentagon blacklist and a storm of political headwinds, the AI lab is deepening its bet on enterprise. The timing looks deliberate. The product, called Anthropic Marketplace, is straightforward in concept and timed precisely.",
-      "source": "The Next Web",
-      "category": "anthropic",
-      "importance": 100,
-      "pubDate": "2026-03-07T02:44:38.000Z",
-      "link": "https://thenextweb.com/news/anthropic-marketplace-claude-enterprise-software"
-    },
-    {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
       "title": "Anthropic launches Claude Marketplace with third-party cloud services",
       "summary": "Anthropic PBC today launched an e-commerce store that will enable enterprise customers to buy software from third parties. The Claude Marketplace features services that use the company’s eponymous large language model series. The initial catalog includes products from six partners: Snowflake Inc.",
@@ -253,16 +533,6 @@
       "importance": 100,
       "pubDate": "2026-03-07T01:31:28.000Z",
       "link": "https://siliconangle.com/2026/03/06/anthropic-launches-claude-marketplace-third-party-cloud-services/"
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
-      "title": "Anthropic launches Claude Marketplace, giving enterprises access to Claude-powered tools from Replit, GitLab, Harvey and more",
-      "summary": "San Francisco startup Anthropic continues to ship new AI products and services at a blistering pace, despite a messy ongoing dispute with the U.",
-      "source": "VentureBeat",
-      "category": "openai",
-      "importance": 100,
-      "pubDate": "2026-03-07T00:25:00.000Z",
-      "link": "https://venturebeat.com/technology/anthropic-launches-claude-marketplace-giving-enterprises-access-to-claude"
     },
     {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
@@ -275,16 +545,6 @@
       "link": "https://siliconangle.com/2026/03/06/openai-introduces-codex-security-help-developers-fix-software-vulnerabilities/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Anthropic says it’s in ‘productive’ discussions with Pentagon about Claude but still plans to sue on ban",
-      "summary": "Anthropic PBC has shared an update about its artificial intelligence safety feud with the Pentagon. In a Thursday blog post, Chief Executive Dario Amodei stated that the company has been “having productive conversations” with defense officials.",
-      "source": "SiliconANGLE",
-      "category": "anthropic",
-      "importance": 100,
-      "pubDate": "2026-03-06T21:32:52.000Z",
-      "link": "https://siliconangle.com/2026/03/06/anthropic-says-productive-discussions-pentagon-claude-but-plans-sue-ban/"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
       "title": "Grammarly is using our identities without permission",
       "summary": "Grammarly's \"expert review\" feature offers to give users writing advice \"inspired by\" subject matter experts, including recently deceased professors, as Wired reported on Wednesday.",
@@ -293,56 +553,6 @@
       "importance": 100,
       "pubDate": "2026-03-06T20:58:24.000Z",
       "link": "https://www.theverge.com/ai-artificial-intelligence/890921/grammarly-ai-expert-reviews"
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
-      "title": "Google PM open-sources Always On Memory Agent, ditching vector databases for LLM-driven persistent memory",
-      "summary": "Google senior AI product manager Shubham Saboo has turned one of the thorniest problems in agent design into an open-source engineering exercise: persistent memory.",
-      "source": "VentureBeat",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-03-06T19:56:00.000Z",
-      "link": "https://venturebeat.com/orchestration/google-pm-open-sources-always-on-memory-agent-ditching-vector-databases-for"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Microsoft, Google, Amazon say Anthropic Claude remains available to non-defense customers",
-      "summary": "Trump's Department of War feud with Anthropic won't impact other companies that are using Claude via Microsoft and Google products.",
-      "source": "TechCrunch",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-03-06T19:50:10.000Z",
-      "link": "https://techcrunch.com/2026/03/06/microsoft-anthropic-claude-remains-available-to-customers-except-the-defense-department/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Anthropic’s Claude found 22 vulnerabilities in Firefox over two weeks",
-      "summary": "In a recent security partnership with Mozilla, Anthropic found 22 separate vulnerabilities in Firefox — 14 of them classified as \"high-severity.",
-      "source": "TechCrunch",
-      "category": "anthropic",
-      "importance": 100,
-      "pubDate": "2026-03-06T19:00:22.000Z",
-      "link": "https://techcrunch.com/2026/03/06/anthropics-claude-found-22-vulnerabilities-in-firefox-over-two-weeks/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Anthropic launches tool to monitor jobs lost to AI systems",
-      "summary": "Anthropic PBC today announced it has introduced a detection tool that measures artificial intelligence s displacement of jobs. The forecasts so far of what AI will do to the labor force have ranged from dystopian to mild.",
-      "source": "SiliconANGLE",
-      "category": "anthropic",
-      "importance": 100,
-      "pubDate": "2026-03-06T02:34:30.000Z",
-      "link": "https://siliconangle.com/2026/03/05/anthropic-launches-tool-monitor-jobs-lost-ai-systems/"
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
-      "title": "Google Workspace CLI brings Gmail, Docs, Sheets and more into a common interface for AI agents",
-      "summary": "What s old is new: the command line — the original, clunky non-graphical interface for interacting with and controlling PCs, where the user just typed in raw commands in code — has become one of the most important interfaces in agentic AI.",
-      "source": "VentureBeat",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-03-06T01:20:00.000Z",
-      "link": "https://venturebeat.com/orchestration/google-workspace-cli-brings-gmail-docs-sheets-and-more-into-a-common"
     },
     {
       "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
@@ -385,24 +595,54 @@
       "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI1",
-      "title": "A Digital Pheromone-Based Approach for In-Control/Out-of-Control Classification",
-      "summary": "07329v4 Announce Type: replace Abstract: In complex production lines, it is essential to have strict, fast-acting rules to determine whether the system is In Control (InC) or Out of Control (OutC).",
-      "source": "cs.NE updates on arXiv.org",
-      "category": "academic",
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "Dutch intelligence services warn of Russian hackers targeting Signal and WhatsApp",
+      "summary": "The Netherlands’ military intelligence service and domestic intelligence agency have issued a join warning claiming that Russian hackers have launched a large-scale global cyber campaign to gain access to Signal and WhatsApp accounts belonging to dignitaries, military personnel and civil servants.",
+      "source": "Engadget",
+      "category": "regulation",
       "importance": 95,
-      "pubDate": "2026-03-09T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2510.07329"
+      "pubDate": "2026-03-09T20:37:07.000Z",
+      "link": "https://www.engadget.com/cybersecurity/dutch-intelligence-services-warn-of-russian-hackers-targeting-signal-and-whatsapp-203707202.html?src=rss"
     },
     {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI0",
-      "title": "Predictive Coding Networks and Inference Learning: Tutorial and Survey",
-      "summary": "04117v3 Announce Type: replace-cross Abstract: Recent years have witnessed a growing call for renewed emphasis on neuroscience-inspired approaches in artificial intelligence research, under the banner of NeuroAI.",
-      "source": "cs.NE updates on arXiv.org",
-      "category": "reasoning",
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Don't worry, Valve still plans to launch the Steam Machine \"this year\"",
+      "summary": "What part of \"this year,\" exactly, is still anyone's guess.",
+      "source": "Ars Technica",
+      "category": "tech",
       "importance": 95,
-      "pubDate": "2026-03-09T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2407.04117"
+      "pubDate": "2026-03-09T16:31:12.000Z",
+      "link": "https://arstechnica.com/gaming/2026/03/dont-worry-valve-still-plans-to-launch-the-steam-machine-this-year/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
+      "title": "Trump is using immigration policy to suppress speech, lawsuit claims",
+      "summary": "A new lawsuit accuses the administration of violating the First Amendment by threatening the visas of researchers for work on disinformation and content moderation of social media.",
+      "source": "NPR",
+      "category": "research",
+      "importance": 95,
+      "pubDate": "2026-03-09T15:35:06.000Z",
+      "link": "https://www.npr.org/2026/03/09/nx-s1-5741213/trump-censorship-visas-deportation-lawsuit"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Sandberg, Clegg join Nscale board as this ‘Stargate Norway’ startup hits $14.6B valuation",
+      "summary": "Nvidia-backed British AI infrastructure startup Nscale has raised another megaround of $2 billion.",
+      "source": "TechCrunch",
+      "category": "business",
+      "importance": 95,
+      "pubDate": "2026-03-09T15:09:35.000Z",
+      "link": "https://techcrunch.com/2026/03/09/sandberg-clegg-join-nscale-board-as-this-stargate-norway-startup-hits-14-6b-valuation/"
+    },
+    {
+      "id": "aHR0cHM6Ly9qYWNrLWNsYXJrLm5ldC8y",
+      "title": "Import AI 448: AI R Bytedance’s CUDA-writing agent; on-device satellite AI",
+      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please subscribe.",
+      "source": "Import AI",
+      "category": "nvidia",
+      "importance": 95,
+      "pubDate": "2026-03-09T12:45:54.000Z",
+      "link": "https://jack-clark.net/2026/03/09/import-ai-448-ai-rd-bytedances-cuda-writing-agent-on-device-satellite-ai/"
     },
     {
       "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
@@ -413,6 +653,26 @@
       "importance": 95,
       "pubDate": "2026-03-09T04:00:00.000Z",
       "link": "https://arxiv.org/abs/2603.05559"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
+      "title": "DreamCAD: Scaling Multi-modal CAD Generation using Differentiable Parametric Surfaces",
+      "summary": "05607v1 Announce Type: new Abstract: Computer-Aided Design (CAD) relies on structured and editable geometric representations, yet existing generative methods are constrained by small annotated datasets with explicit design histories or boundary representation (BRep) labels.",
+      "source": "cs.CV updates on arXiv.org",
+      "category": "presentation",
+      "importance": 95,
+      "pubDate": "2026-03-09T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2603.05607"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
+      "title": "When Rubrics Fail: Error Enumeration as Reward in Reference-Free RL Post-Training for Virtual Try-On",
+      "summary": "05659v1 Announce Type: new Abstract: Reinforcement learning with verifiable rewards (RLVR) and Rubrics as Rewards (RaR) have driven strong gains in domains with clear correctness signals and even in subjective domains by synthesizing evaluation criteria from ideal reference answers.",
+      "source": "cs.CV updates on arXiv.org",
+      "category": "automation",
+      "importance": 95,
+      "pubDate": "2026-03-09T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2603.05659"
     },
     {
       "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
@@ -465,24 +725,24 @@
       "link": "https://arxiv.org/abs/2603.05743"
     },
     {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "DreamCAD: Scaling Multi-modal CAD Generation using Differentiable Parametric Surfaces",
-      "summary": "05607v1 Announce Type: new Abstract: Computer-Aided Design (CAD) relies on structured and editable geometric representations, yet existing generative methods are constrained by small annotated datasets with explicit design histories or boundary representation (BRep) labels.",
-      "source": "cs.CV updates on arXiv.org",
-      "category": "presentation",
+      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI1",
+      "title": "A Digital Pheromone-Based Approach for In-Control/Out-of-Control Classification",
+      "summary": "07329v4 Announce Type: replace Abstract: In complex production lines, it is essential to have strict, fast-acting rules to determine whether the system is In Control (InC) or Out of Control (OutC).",
+      "source": "cs.NE updates on arXiv.org",
+      "category": "academic",
       "importance": 95,
       "pubDate": "2026-03-09T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2603.05607"
+      "link": "https://arxiv.org/abs/2510.07329"
     },
     {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "When Rubrics Fail: Error Enumeration as Reward in Reference-Free RL Post-Training for Virtual Try-On",
-      "summary": "05659v1 Announce Type: new Abstract: Reinforcement learning with verifiable rewards (RLVR) and Rubrics as Rewards (RaR) have driven strong gains in domains with clear correctness signals and even in subjective domains by synthesizing evaluation criteria from ideal reference answers.",
-      "source": "cs.CV updates on arXiv.org",
-      "category": "automation",
+      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI0",
+      "title": "Predictive Coding Networks and Inference Learning: Tutorial and Survey",
+      "summary": "04117v3 Announce Type: replace-cross Abstract: Recent years have witnessed a growing call for renewed emphasis on neuroscience-inspired approaches in artificial intelligence research, under the banner of NeuroAI.",
+      "source": "cs.NE updates on arXiv.org",
+      "category": "reasoning",
       "importance": 95,
       "pubDate": "2026-03-09T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2603.05659"
+      "link": "https://arxiv.org/abs/2407.04117"
     },
     {
       "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
@@ -525,184 +785,264 @@
       "link": "https://arxiv.org/abs/2603.06082"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "AI allows hackers to identify anonymous social media accounts, study finds",
-      "summary": "New research suggests tech behind AI platforms such as ChatGPT makes it easier to perform sophisticated privacy attacksAI has made it vastly easier for malicious hackers to identify anonymous social media accounts, a new study has warned.",
-      "source": "The Guardian",
-      "category": "research",
-      "importance": 95,
-      "pubDate": "2026-03-08T14:00:26.000Z",
-      "link": "https://www.theguardian.com/technology/2026/mar/08/ai-hackers-social-media-accounts-study"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "OpenAI’s Head of Robotics Resigns Over Company’s Pentagon Deal",
-      "summary": "The head of OpenAI’s robotics team resigned Saturday, citing the company’s deal to deploy its artificial intelligence models within the Pentagon’s classified network as the cause.",
-      "source": "Bloomberg",
+      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
+      "title": "OpenAI robotics leader resigns over concerns about Pentagon AI deal",
+      "summary": "A senior member of OpenAI's robotics team said guardrails around certain AI uses were not sufficiently defined before OpenAI announced an agreement with the Pentagon.",
+      "source": "NPR",
       "category": "openai",
       "importance": 95,
-      "pubDate": "2026-03-07T22:25:21.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-03-07/openai-s-head-of-robotics-resigns-over-company-s-pentagon-deal"
+      "pubDate": "2026-03-08T20:44:11.000Z",
+      "link": "https://www.npr.org/2026/03/08/nx-s1-5741779/openai-resigns-ai-pentagon-guardrails-military"
     },
     {
       "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "OpenAI hardware exec Caitlin Kalinowski quits in response to Pentagon deal",
-      "summary": "Hardware executive Caitlin Kalinowski announced today that in response to OpenAI's controversial agreement with the Department of Defense, she’s resigned from her role leading the company's robotics team.",
+      "title": "Will the Pentagon’s Anthropic controversy scare startups away from defense work?",
+      "summary": "On the latest episode of TechCrunch’s Equity podcast, we discussed what the controversy means for other startups seeking to work with the federal government.",
       "source": "TechCrunch",
-      "category": "openai",
-      "importance": 95,
-      "pubDate": "2026-03-07T20:44:25.000Z",
-      "link": "https://techcrunch.com/2026/03/07/openai-robotics-lead-caitlin-kalinowski-quits-in-response-to-pentagon-deal/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "Indonesia announces a social media ban for anyone under 16",
-      "summary": "Following in the footsteps of Australia, Indonesia will be the latest country to limit social media usage for children under 16.",
-      "source": "Engadget",
-      "category": "regulation",
-      "importance": 95,
-      "pubDate": "2026-03-07T17:46:34.000Z",
-      "link": "https://www.engadget.com/social-media/indonesia-announces-a-social-media-ban-for-anyone-under-16-174634956.html?src=rss"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "OpenAI delays ChatGPT’s ‘adult mode’ again",
-      "summary": "The feature, which will give verified adult users access to erotica and other adult content, had already been delayed from December.",
-      "source": "TechCrunch",
-      "category": "openai",
-      "importance": 95,
-      "pubDate": "2026-03-07T17:28:41.000Z",
-      "link": "https://techcrunch.com/2026/03/07/openai-delays-chatgpts-adult-mode-again/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "Roblox introduces real-time AI-powered chat rephraser for inappropriate language",
-      "summary": "Roblox has launched a feature powered by AI that can rephrase inappropriate language in real time. The online game has been using AI filters to block out any language that goes against its policy for a while now, but it has been replacing censored chats with a series of hash signs (####).",
-      "source": "Engadget",
-      "category": "translation",
-      "importance": 95,
-      "pubDate": "2026-03-07T16:00:00.000Z",
-      "link": "https://www.engadget.com/gaming/roblox-introduces-real-time-ai-powered-chat-rephraser-for-inappropriate-language-160000063.html?src=rss"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "Pentagon Turns to Ex-Uber Executive in Anthropic Feud Over AI",
-      "summary": "Pentagon Turns to Ex-Uber Executive in Anthropic Feud Over AI.",
-      "source": "Bloomberg",
       "category": "anthropic",
       "importance": 95,
-      "pubDate": "2026-03-07T14:30:02.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-03-07/pentagon-turns-to-ex-uber-executive-in-anthropic-feud-over-ai"
+      "pubDate": "2026-03-08T20:14:42.000Z",
+      "link": "https://techcrunch.com/2026/03/08/will-the-pentagons-anthropic-controversy-scare-startups-away-from-defense-work/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "Slay the Spire 2, Scott Pilgrim EX and other new indie games worth checking out",
-      "summary": "Welcome to our latest roundup of what's going on in the indie game space. We've got a lot of new and upcoming games to highlight this week, and those are on top of all of our coverage of the Nintendo Indie World stream the other day.",
-      "source": "Engadget",
-      "category": "video_generation",
-      "importance": 95,
-      "pubDate": "2026-03-07T12:00:00.000Z",
-      "link": "https://www.engadget.com/gaming/slay-the-spire-2-scott-pilgrim-ex-and-other-new-indie-games-worth-checking-out-120000884.html?src=rss"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "Google's new command-line tool can plug OpenClaw into your Workspace data",
-      "summary": "This could make it easier to use multiple Workspace APIs, but it's not yet an official Google product.",
-      "source": "Ars Technica",
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
+      "title": "Google WorkspaceがAIエージェントに開放—OpenClaw対応CLIが示す「次のOS」の正体",
+      "summary": "2026年3月8日 GoogleはGitHubに、Google Workspace全体に対応するコマンドラインインターフェース（CLI）を2026年3月2日に公開した。 Gmail、Google Drive、Docs、Sheets、Slid [ ] innovaTopia Ami.",
+      "source": "innovaTopia",
       "category": "google",
       "importance": 95,
-      "pubDate": "2026-03-06T19:56:20.000Z",
-      "link": "https://arstechnica.com/ai/2026/03/googles-new-command-line-tool-can-plug-openclaw-into-your-workspace-data/"
+      "pubDate": "2026-03-08T08:00:00.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/82135/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "The AI Doc is an overwrought hype piece for doomers and accelerationists alike",
-      "summary": "Co-director Daniel Roher. | Image: Focus Features We are in the thick of a massive push to incorporate generative AI into almost every aspect of our lives, but it is still easy to be confused about what it is and how it works.",
-      "source": "The Verge",
-      "category": "robotics",
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "A roadmap for AI, if anyone will listen",
+      "summary": "The Pro-Human AI Declaration was finalized before last week's Pentagon-Anthropic standoff, but the collision of the two events wasn’t lost on anyone involved.",
+      "source": "TechCrunch",
+      "category": "tech",
       "importance": 95,
-      "pubDate": "2026-03-06T19:05:00.000Z",
-      "link": "https://www.theverge.com/entertainment/890806/the-ai-doc-or-how-i-became-an-apocaloptimist-review"
+      "pubDate": "2026-03-08T06:05:26.000Z",
+      "link": "https://techcrunch.com/2026/03/07/a-roadmap-for-ai-if-anyone-will-listen/"
     },
     {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Telcos try to hop on the AI train, Anthropic wars with the Pentagon, and agents threaten Microsoft",
-      "summary": "Can telecommunications companies leverage artificial intelligence to become, at long last, more than dumb pipes. Or, as so often has happened, will they get left behind in the coming platform shift.",
+      "title": "Diamond cooling emerges as a new lever for AI data center efficiency",
+      "summary": "AI infrastructure is running into a hard physical barrier, and diamond cooling is emerging as a new way to push more compute through existing power limits. As AI systems grow larger and hotter, the challenge is no longer simply installing more GPUs but managing the heat and electricity they demand.",
       "source": "SiliconANGLE",
-      "category": "anthropic",
-      "importance": 95,
-      "pubDate": "2026-03-06T16:00:26.000Z",
-      "link": "https://siliconangle.com/2026/03/06/telcos-try-hop-ai-train-anthropic-wars-pentagon-agents-threaten-microsoft/"
+      "category": "data_science",
+      "importance": 90,
+      "pubDate": "2026-03-09T20:53:14.000Z",
+      "link": "https://siliconangle.com/2026/03/09/diamond-cooling-ai-data-center-efficiency-aifactoriesdatacenters/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "The Download: 10 things that matter in AI, plus Anthropic’s plan to sue the Pentagon",
-      "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology.",
-      "source": "MIT Technology Review",
-      "category": "anthropic",
-      "importance": 95,
-      "pubDate": "2026-03-06T13:10:00.000Z",
-      "link": "https://www.technologyreview.com/2026/03/06/1133989/the-download-10-things-that-matter-in-ai-anthropics-plan-sue-pentagon/"
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "I wore the world's first HDR10 XR glasses, and they turned me into Bruce Wayne (sort of)",
+      "summary": "XR glasses are a must-have for on-the-go entertainment and gaming, and the new RayNeo Air 4 Pro provides a compelling experience.",
+      "source": "Latest news",
+      "category": "gaming",
+      "importance": 90,
+      "pubDate": "2026-03-09T19:12:00.000Z",
+      "link": "https://www.zdnet.com/article/rayneo-air-4-pro-glasses-review/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vdGVj",
+      "title": "AI Is One of the Least-Liked Things in America, According to New NBC Poll",
+      "summary": "The poll finds that AI is viewed less positively than ICE and President Donald Trump, and only more positively than Iran and the Democratic Party.",
+      "source": "CNET",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2026-03-09T19:09:39.000Z",
+      "link": "https://www.cnet.com/tech/services-and-software/ai-unpopular-in-america-new-nbc-poll/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "Uber expands its program that helps pair women riders and drivers",
+      "summary": "Uber has expanded its program that helps pair women riders and drivers. The Women Preferences feature is now available nationwide, after being tested in several cities. It has previously been available in many countries around the globe and started in Saudi Arabia back in 2019.",
+      "source": "Engadget",
+      "category": "data_science",
+      "importance": 90,
+      "pubDate": "2026-03-09T18:48:32.000Z",
+      "link": "https://www.engadget.com/apps/uber-expands-its-program-that-helps-pair-women-riders-and-drivers-184832010.html?src=rss"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "AI Startup ElevenLabs Aims to Be IPO-Ready in Two or Three Years",
+      "summary": "AI voice startup ElevenLabs plans to be ready for an initial public offering in two to three years, according to Chief Executive Officer Mati Staniszewski, potentially making it one of the first artificial intelligence companies started in Europe to prepare for an IPO.",
+      "source": "Bloomberg",
+      "category": "audio_generation",
+      "importance": 90,
+      "pubDate": "2026-03-09T18:31:12.000Z",
+      "link": "https://www.bloomberg.com/news/articles/2026-03-09/ai-startup-elevenlabs-aims-to-be-ipo-ready-in-two-or-three-years"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "Samsung promises 120 games will be playable via its glasses-free 3D monitor tech by the end of the year",
+      "summary": "Samsung just announced that 120 games will be playable via its Odyssey 3D Hub platform by the end of the year. This is the platform that provides content for glasses-free 3D monitors like recent Odyssey displays.",
+      "source": "Engadget",
+      "category": "gaming",
+      "importance": 90,
+      "pubDate": "2026-03-09T18:01:02.000Z",
+      "link": "https://www.engadget.com/gaming/samsung-promises-120-games-will-be-playable-via-its-glasses-free-3d-monitor-tech-by-the-end-of-the-year-180102470.html?src=rss"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vdGVj",
+      "title": "MacBook Pro 16 M5 Pro, M5 Max Review: Go, Speed Racer, Go",
+      "summary": "The GPUs in Apple's latest chips bring its flagship creative laptop to new heights, especially for generative AI.",
+      "source": "CNET",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2026-03-09T17:00:00.000Z",
+      "link": "https://www.cnet.com/tech/computing/apple-macbook-pro-16-m5-max-pro-review/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "Amazon will give you a $200 gift card when you preorder the Galaxy S26, plus $400 off: Last chance",
+      "summary": "Preorder the new Samsung Galaxy S26, S26 Plus, or S26 Ultra from Amazon at a discount, and get a free gift card. We break down the details.",
+      "source": "Latest news",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2026-03-09T16:54:12.000Z",
+      "link": "https://www.zdnet.com/article/samsung-galaxy-s26-amazon-deal/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Fireworks AI bets on Hathora acquisition to power the next phase of real-time AI",
+      "summary": "Artificial intelligence inference startup Fireworks AI Inc. has acquired Hathora Inc. , a real-time compute and server orchestration platform focused on multiplayer games and AI inference.",
+      "source": "SiliconANGLE",
+      "category": "presentation",
+      "importance": 90,
+      "pubDate": "2026-03-09T16:15:03.000Z",
+      "link": "https://siliconangle.com/2026/03/09/fireworks-ai-bets-hathora-acquisition-power-next-phase-real-time-ai/"
+    },
+    {
+      "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9haS1h",
+      "title": "Under the hood: Security architecture of GitHub Agentic Workflows",
+      "summary": "GitHub Agentic Workflows are built with isolation, constrained outputs, and comprehensive logging. Learn how our threat model and security architecture help teams run agents safely in GitHub Actions.",
+      "source": "The GitHub",
+      "category": "agents",
+      "importance": 90,
+      "pubDate": "2026-03-09T16:00:00.000Z",
+      "link": "https://github.blog/ai-and-ml/generative-ai/under-the-hood-security-architecture-of-github-agentic-workflows/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Qualcomm’s partnership with Neura Robotics is just the beginning",
+      "summary": "Neura Robotics is going to build new robots on top of Qualcomm's new IQ10 processors that were released at CES.",
+      "source": "TechCrunch",
+      "category": "robotics",
+      "importance": 90,
+      "pubDate": "2026-03-09T15:58:11.000Z",
+      "link": "https://techcrunch.com/2026/03/09/qualcomms-partnership-with-neura-robotics-is-just-the-beginning/"
     },
     {
       "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Anthropic makes last-ditch effort to salvage deal with Pentagon after blowup",
-      "summary": "Anthropic CEO Dario Amodei is reportedly back at the negotiating table with the Department of Defense in an attempt to salvage the company's relationship with the US military and prevent it from being iced out of defense work for being a \"supply chain risk.",
+      "title": "X says you can block Grok from editing your photos",
+      "summary": "Pay attention to that small print about tagging @Grok, this new toggle has disappointing limitations. | Image by The Verge / xAI X has introduced a new feature that makes it slightly harder for other users to manipulate your uploaded images with the Grok chatbot.",
       "source": "The Verge",
-      "category": "anthropic",
-      "importance": 95,
-      "pubDate": "2026-03-05T11:46:46.000Z",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/889782/anthropic-pentagon-discussions-ai-deal"
+      "category": "xai",
+      "importance": 90,
+      "pubDate": "2026-03-09T15:24:03.000Z",
+      "link": "https://www.theverge.com/tech/891352/x-grok-xai-edit-blocker-photo-toggle"
     },
     {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "Introducing ChatGPT for Excel and new financial data integrations",
-      "summary": "OpenAI introduces ChatGPT for Excel and new financial app integrations, powered by GPT-5. 4 to accelerate modeling, research, and analysis in regulated environments.",
-      "source": "Open",
-      "category": "openai",
-      "importance": 95,
-      "pubDate": "2026-03-05T00:00:00.000Z",
-      "link": "https://openai.com/index/chatgpt-for-excel"
+      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
+      "title": "How AI is turning the Iran conflict into theater",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. “Anyone wanna host a get together in SF and pull this up on a 100 inch TV.",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "importance": 90,
+      "pubDate": "2026-03-09T15:11:01.000Z",
+      "link": "https://www.technologyreview.com/2026/03/09/1134063/how-ai-is-turning-the-iran-conflict-into-theater/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Dataiku is evolving into the orchestration layer for enterprise-grade AI agents",
+      "summary": "Artificial intelligence data analytics startup Dataiku Inc. is evolving its popular data science studio to focus more on the development of trusted and measurable autonomous AI agents.",
+      "source": "SiliconANGLE",
+      "category": "music_generation",
+      "importance": 90,
+      "pubDate": "2026-03-09T13:00:53.000Z",
+      "link": "https://siliconangle.com/2026/03/09/dataiku-evolving-orchestration-layer-enterprise-grade-ai-agents/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Chevrolet killed it then brought it back, now we drive it: The 2027 Bolt",
+      "summary": "Faster charging, more modern infotainment, and a new LFP battery are highlights.",
+      "source": "Ars Technica",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2026-03-09T13:00:45.000Z",
+      "link": "https://arstechnica.com/cars/2026/03/new-battery-new-motor-but-the-2027-chevrolet-bolt-keeps-its-charm/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "OneTrust expands platform with real-time AI governance and agent oversight capabilities",
+      "summary": "Governance platform provider OneTrust LLC today announced new capabilities that expand its platform to support real-time artificial intelligence governance that moves beyond traditional compliance checks to continuous monitoring and enforcement of AI systems.",
+      "source": "SiliconANGLE",
+      "category": "agents",
+      "importance": 90,
+      "pubDate": "2026-03-09T12:30:49.000Z",
+      "link": "https://siliconangle.com/2026/03/09/onetrust-expands-platform-real-time-ai-governance-agent-oversight-capabilities/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "CData expands Connect AI platform with agent-specific tooling and governance",
+      "summary": "is expanding its Connect AI platform with new tooling and governance features designed to help enterprises move artificial intelligence systems from experimental pilots into production environments.",
+      "source": "SiliconANGLE",
+      "category": "agents",
+      "importance": 90,
+      "pubDate": "2026-03-09T12:00:24.000Z",
+      "link": "https://siliconangle.com/2026/03/09/cdata-expands-connect-ai-platform-agent-specific-tooling-governance/"
     },
     {
       "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
-      "title": "Luma AIの新型画像生成モデル「Uni-1」がベンチマークでNano Banana 2・GPT Image 1.5を凌駕する性能を発揮",
-      "summary": "AIプラットフォームのLuma AIが、同社初の統合理解生成モデルとなる「Uni-1」を発表しました。続きを読む.",
+      "title": "ChatGPTの「アダルトモード」が延期",
+      "summary": "2026年第1四半期中に実装される予定だったChatGPTの「アダルトモード」について、サービス開始が延期されたことが分かりました。続きを読む.",
       "source": "GIGAZINE",
-      "category": "tech",
+      "category": "openai",
       "importance": 90,
-      "pubDate": "2026-03-09T04:19:00.000Z",
-      "link": "https://gigazine.net/news/20260309-uni-1-luma-ai/"
+      "pubDate": "2026-03-09T10:00:00.000Z",
+      "link": "https://gigazine.net/news/20260309-chatgpt-adult-mode-delay/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Looking Through Glass Box",
-      "summary": "06272v1 Announce Type: new Abstract: This essay is about a neural implementation of the fuzzy cognitive map, the FHM, and corresponding evaluations.",
-      "source": "cs.NE updates on arXiv.org",
-      "category": "academic",
+      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
+      "title": "Nscale raises $2bn Series C at $14.6bn valuation",
+      "summary": "The UK hyperscaler has now raised over $4. 5bn across equity rounds in less than six months, and says it is the largest Series C ever closed in Europe. That claim deserves scrutiny.",
+      "source": "The Next Web",
+      "category": "business",
       "importance": 90,
-      "pubDate": "2026-03-09T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2603.06272"
+      "pubDate": "2026-03-09T08:20:48.000Z",
+      "link": "https://thenextweb.com/news/nscale-raises-2bn-series-c-at-14-6bn-valuation"
     },
     {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Enhanced Protein Intrinsic Disorder Prediction Through Dual-View Multiscale Features and Multi-objective Evolutionary Algorithm",
-      "summary": "06292v1 Announce Type: new Abstract: Intrinsically disordered regions of proteins play a crucial role in cell signaling and drug discovery. However, their high structural flexibility makes accurate residue-level prediction challenging.",
-      "source": "cs.NE updates on arXiv.org",
+      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
+      "title": "Augur raises $15m from Plural to turn existing surveillance infrastructure into real-time intelligence",
+      "summary": "A London startup founded by the creator of safety app Path is betting that the cameras and sensors already deployed across Europe’s transport hubs, stadiums, and power stations are gathering dust when they matter most.",
+      "source": "The Next Web",
+      "category": "business",
+      "importance": 90,
+      "pubDate": "2026-03-09T07:57:10.000Z",
+      "link": "https://thenextweb.com/news/augur-15m-plural-ai-surveillance-critical-infrastructure"
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
+      "title": "Munich’s Telura exits stealth with €4M to make deep geothermal economically viable",
+      "summary": "Telura has come out of stealth with €4 million and a bold claim: it can make deep geothermal economically viable almost anywhere on Earth. The problem with geothermal energy has never been the heat.",
+      "source": "The Next Web",
+      "category": "energy",
+      "importance": 90,
+      "pubDate": "2026-03-09T07:33:21.000Z",
+      "link": "https://thenextweb.com/news/telura-exits-stealth-with-e4m"
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
+      "title": "Enterprise agentic AI requires a process layer most companies haven’t built",
+      "summary": "Presented by Celonis85% of enterprises want to become agentic within three years — yet 76% admit their operations can’t support it.",
+      "source": "VentureBeat",
       "category": "presentation",
       "importance": 90,
-      "pubDate": "2026-03-09T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2603.06292"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI0",
-      "title": "TT-SNN: Tensor Train Decomposition for Efficient Spiking Neural Network Training",
-      "summary": "08001v2 Announce Type: replace Abstract: Spiking Neural Networks (SNNs) have gained significant attention as a potentially energy-efficient alternative for standard neural networks with their sparse binary activation.",
-      "source": "cs.NE updates on arXiv.org",
-      "category": "nvidia",
-      "importance": 90,
-      "pubDate": "2026-03-09T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2401.08001"
+      "pubDate": "2026-03-09T05:00:00.000Z",
+      "link": "https://venturebeat.com/orchestration/enterprise-agentic-ai-requires-a-process-layer-most-companies-havent-built"
     },
     {
       "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
@@ -786,46 +1126,6 @@
     },
     {
       "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "NOTAI.AI: Explainable Detection of Machine-Generated Text via Curvature and Feature Attribution",
-      "summary": "05617v1 Announce Type: new Abstract: We present NOTAI. AI, an explainable framework for machine-generated text detection that extends Fast-DetectGPT by integrating curvature-based signals with neural and stylometric features in a supervised setting.",
-      "source": "cs.CL updates on arXiv.org",
-      "category": "presentation",
-      "importance": 90,
-      "pubDate": "2026-03-09T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2603.05617"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
-      "summary": "05698v1 Announce Type: new Abstract: Retrieval-Augmented Generation (RAG) was introduced to enhance the capabilities of Large Language Models (LLMs) beyond their encoded prior knowledge.",
-      "source": "cs.CL updates on arXiv.org",
-      "category": "research",
-      "importance": 90,
-      "pubDate": "2026-03-09T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2603.05698"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Cultural Perspectives and Expectations for Generative AI: A Global Survey Approach",
-      "summary": "05723v1 Announce Type: new Abstract: There is a lack of empirical evidence about global attitudes around whether and how GenAI should represent cultures. This paper assesses understandings and beliefs about culture as it relates to GenAI from a large-scale global survey.",
-      "source": "cs.CL updates on arXiv.org",
-      "category": "presentation",
-      "importance": 90,
-      "pubDate": "2026-03-09T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2603.05723"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Structured Multidimensional Representation Learning for Large Language Models",
-      "summary": "05727v1 Announce Type: new Abstract: Transformer architectures achieve state-of-the-art performance across a wide range of pattern recognition and natural language processing tasks, but their scaling is accompanied by substantial parameter growth and redundancy in the embedding dimension.",
-      "source": "cs.CL updates on arXiv.org",
-      "category": "presentation",
-      "importance": 90,
-      "pubDate": "2026-03-09T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2603.05727"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
       "title": "Edges Are All You Need: Robust Gait Recognition via Label-Free Structure",
       "summary": "05537v1 Announce Type: new Abstract: Gait recognition is a non-intrusive biometric technique for security applications, yet existing studies are dominated by silhouette- and parsing-based representations. Silhouettes are sparse and miss internal structural details, limiting discriminability.",
       "source": "cs.CV updates on arXiv.org",
@@ -896,6 +1196,76 @@
     },
     {
       "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
+      "title": "NOTAI.AI: Explainable Detection of Machine-Generated Text via Curvature and Feature Attribution",
+      "summary": "05617v1 Announce Type: new Abstract: We present NOTAI. AI, an explainable framework for machine-generated text detection that extends Fast-DetectGPT by integrating curvature-based signals with neural and stylometric features in a supervised setting.",
+      "source": "cs.CL updates on arXiv.org",
+      "category": "presentation",
+      "importance": 90,
+      "pubDate": "2026-03-09T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2603.05617"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
+      "title": "Towards Robust Retrieval-Augmented Generation Based on Knowledge Graph: A Comparative Analysis",
+      "summary": "05698v1 Announce Type: new Abstract: Retrieval-Augmented Generation (RAG) was introduced to enhance the capabilities of Large Language Models (LLMs) beyond their encoded prior knowledge.",
+      "source": "cs.CL updates on arXiv.org",
+      "category": "research",
+      "importance": 90,
+      "pubDate": "2026-03-09T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2603.05698"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
+      "title": "Cultural Perspectives and Expectations for Generative AI: A Global Survey Approach",
+      "summary": "05723v1 Announce Type: new Abstract: There is a lack of empirical evidence about global attitudes around whether and how GenAI should represent cultures. This paper assesses understandings and beliefs about culture as it relates to GenAI from a large-scale global survey.",
+      "source": "cs.CL updates on arXiv.org",
+      "category": "presentation",
+      "importance": 90,
+      "pubDate": "2026-03-09T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2603.05723"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
+      "title": "Structured Multidimensional Representation Learning for Large Language Models",
+      "summary": "05727v1 Announce Type: new Abstract: Transformer architectures achieve state-of-the-art performance across a wide range of pattern recognition and natural language processing tasks, but their scaling is accompanied by substantial parameter growth and redundancy in the embedding dimension.",
+      "source": "cs.CL updates on arXiv.org",
+      "category": "presentation",
+      "importance": 90,
+      "pubDate": "2026-03-09T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2603.05727"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
+      "title": "Looking Through Glass Box",
+      "summary": "06272v1 Announce Type: new Abstract: This essay is about a neural implementation of the fuzzy cognitive map, the FHM, and corresponding evaluations.",
+      "source": "cs.NE updates on arXiv.org",
+      "category": "academic",
+      "importance": 90,
+      "pubDate": "2026-03-09T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2603.06272"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
+      "title": "Enhanced Protein Intrinsic Disorder Prediction Through Dual-View Multiscale Features and Multi-objective Evolutionary Algorithm",
+      "summary": "06292v1 Announce Type: new Abstract: Intrinsically disordered regions of proteins play a crucial role in cell signaling and drug discovery. However, their high structural flexibility makes accurate residue-level prediction challenging.",
+      "source": "cs.NE updates on arXiv.org",
+      "category": "presentation",
+      "importance": 90,
+      "pubDate": "2026-03-09T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2603.06292"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI0",
+      "title": "TT-SNN: Tensor Train Decomposition for Efficient Spiking Neural Network Training",
+      "summary": "08001v2 Announce Type: replace Abstract: Spiking Neural Networks (SNNs) have gained significant attention as a potentially energy-efficient alternative for standard neural networks with their sparse binary activation.",
+      "source": "cs.NE updates on arXiv.org",
+      "category": "nvidia",
+      "importance": 90,
+      "pubDate": "2026-03-09T04:00:00.000Z",
+      "link": "https://arxiv.org/abs/2401.08001"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
       "title": "RoboLayout: Differentiable 3D Scene Generation for Embodied Agents",
       "summary": "05522v1 Announce Type: new Abstract: Recent advances in vision language models (VLMs) have shown strong potential for spatial reasoning and 3D scene layout generation from open-ended language instructions.",
       "source": "cs.AI updates on arXiv.org",
@@ -945,94 +1315,34 @@
       "link": "https://www.itmedia.co.jp/news/articles/2603/09/news075.html"
     },
     {
-      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
-      "title": "Appleは3つの新しい「Ultra」デバイスを2026年中に発売する可能性",
-      "summary": "Appleは2026年3月にiPhone 17eやM4搭載iPad Air、M5搭載MacBook Air、M5 Pro／M5 Max搭載MacBook Pro、Studio Display XDR、MacBook Neoなどの新製品を発表しました。さらにAppleが2026年中に「Ultra」クラスのデバイスを少なくとも3種類発売すると、Apple関連の情報に詳しいBloombergのマーク・ガーマン記者が報じています。続きを読む.",
-      "source": "GIGAZINE",
-      "category": "music_generation",
-      "importance": 90,
-      "pubDate": "2026-03-09T02:11:00.000Z",
-      "link": "https://gigazine.net/news/20260309-apple-ultra-3-devices/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "China’s ‘Smart Economy’ Push Spurs Hunt for New Stock Winners",
-      "summary": "Investors are growing more upbeat about China’s push to build a “smart economy,” with AI, semiconductors and a range of frontier technology sectors emerging as beneficiaries of the policy drive.",
-      "source": "Bloomberg",
-      "category": "business",
-      "importance": 90,
-      "pubDate": "2026-03-09T00:00:00.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-03-09/china-s-smart-economy-push-spurs-hunt-for-new-stock-winners"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "NetEase is reportedly pulling funding for Yakuza creator's studio",
-      "summary": "The hype for Gang of Dragon, the debut game from Nagoshi Studio, may already be getting derailed. According to a Bloomberg report, Chinese tech giant NetEase is going to stop financing Nagoshi Studio starting in May.",
-      "source": "Engadget",
-      "category": "music_generation",
-      "importance": 90,
-      "pubDate": "2026-03-08T18:29:45.000Z",
-      "link": "https://www.engadget.com/gaming/netease-is-reportedly-pulling-funding-for-yakuza-creators-studio-182945690.html?src=rss"
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
-      "title": "Dynamic UI for dynamic AI: Inside the emerging A2UI model",
-      "summary": "With agentic AI, businesses are conducting business more dynamically. Instead of traditional pre-programmed bots and static rules, agents can now “think” and invent alternate paths when unseen conditions arise.",
-      "source": "VentureBeat",
-      "category": "agents",
-      "importance": 90,
-      "pubDate": "2026-03-08T17:00:00.000Z",
-      "link": "https://venturebeat.com/technology/dynamic-ui-for-dynamic-ai-inside-the-emerging-a2ui-model"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "Apple is reportedly looking into 3D printing aluminum iPhones and Apple Watches",
-      "summary": "There could be even more 3D-printed Apple products coming in the future. According to Bloomberg's Mark Gurman, Apple is exploring ways to 3D print aluminum to make the manufacturing processes for iPhones and Apple Watches more efficient.",
-      "source": "Engadget",
-      "category": "data_science",
-      "importance": 90,
-      "pubDate": "2026-03-08T16:37:21.000Z",
-      "link": "https://www.engadget.com/mobile/smartphones/apple-is-reportedly-looking-into-3d-printing-aluminum-iphones-and-apple-watches-163721491.html?src=rss"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "Readers reply: What if Shakespeare was dropped in modern-day London?",
-      "summary": "The long-running series in which readers answer other readers’ questions ponders the hypothetical reactions of eminent historical personages to today’s Trafalgar SquareThis week’s question: which are more like life, novels or films.",
+      "title": "AI chatbots point vulnerable social media users to illegal online casinos, analysis shows",
+      "summary": "Tech firms condemned for lack of controls with Meta AI and Gemini even offering advice on how to bypass UK gambling and addiction checksAI chatbots are recommending illegal online casinos to vulnerable social media users, putting them at increased risk of fraud, addiction and even suicide.",
       "source": "The Guardian",
-      "category": "video_generation",
+      "category": "legal",
       "importance": 90,
-      "pubDate": "2026-03-08T14:00:23.000Z",
-      "link": "https://www.theguardian.com/lifeandstyle/2026/mar/08/readers-reply-what-if-shakespeare-was-dropped-in-modern-day-london"
+      "pubDate": "2026-03-08T08:00:14.000Z",
+      "link": "https://www.theguardian.com/technology/2026/mar/08/ai-chatbots-point-vulnerable-to-online-casinos-gambling-addiction-uk"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "Current and former Block workers say AI can’t do their jobs after Jack Dorsey’s mass layoffs: ‘You can’t really AI that’",
-      "summary": "The CEO said he cut the company’s workforce by 4,000 people – almost in half – because of gains in AI productivityMark remembers the first time he wondered whether he was teaching Block’s AI tools how to do his job – and maybe even replace him.",
-      "source": "The Guardian",
-      "category": "presentation",
-      "importance": 90,
-      "pubDate": "2026-03-08T12:00:20.000Z",
-      "link": "https://www.theguardian.com/technology/2026/mar/08/block-ai-layoffs-jack-dorsey"
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
-      "title": "Honor s Robot phone is real, and coming later this year",
-      "summary": "The camera nods, dances to music, and tracks faces. The rest of the specs are a secret. Something unusual happened at Mobile World Congress this year.",
-      "source": "The Next Web",
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "The AI Doc is an overwrought hype piece for doomers and accelerationists alike",
+      "summary": "Co-director Daniel Roher. | Image: Focus Features We are in the thick of a massive push to incorporate generative AI into almost every aspect of our lives, but it is still easy to be confused about what it is and how it works.",
+      "source": "The Verge",
       "category": "robotics",
       "importance": 90,
-      "pubDate": "2026-03-08T07:00:24.000Z",
-      "link": "https://thenextweb.com/news/honors-robot-phone-is-real-and-coming-later-this-year"
+      "pubDate": "2026-03-06T19:05:00.000Z",
+      "link": "https://www.theverge.com/entertainment/890806/the-ai-doc-or-how-i-became-an-apocaloptimist-review"
     },
     {
-      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
-      "title": "New KV cache compaction technique cuts LLM memory 50x without accuracy loss",
-      "summary": "Enterprise AI applications that handle large documents or long-horizon tasks face a severe memory bottleneck. As the context grows longer, so does the KV cache, the area where the model’s working memory is stored.",
-      "source": "VentureBeat",
-      "category": "presentation",
+      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
+      "title": "The Download: 10 things that matter in AI, plus Anthropic’s plan to sue the Pentagon",
+      "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology.",
+      "source": "MIT Technology Review",
+      "category": "anthropic",
       "importance": 90,
-      "pubDate": "2026-03-06T21:00:00.000Z",
-      "link": "https://venturebeat.com/orchestration/new-kv-cache-compaction-technique-cuts-llm-memory-50x-without-accuracy-loss"
+      "pubDate": "2026-03-06T13:10:00.000Z",
+      "link": "https://www.technologyreview.com/2026/03/06/1133989/the-download-10-things-that-matter-in-ai-anthropics-plan-sue-pentagon/"
     },
     {
       "id": "aHR0cHM6Ly9ibG9nLmdvb2dsZS9pbm5v",
@@ -1065,14 +1375,14 @@
       "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/tips-prompt-writing-project-genie/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "The Download: The startup that says it can stop lightning, and inside OpenAI’s Pentagon deal",
-      "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology.",
-      "source": "MIT Technology Review",
-      "category": "openai",
-      "importance": 90,
-      "pubDate": "2026-03-03T13:30:00.000Z",
-      "link": "https://www.technologyreview.com/2026/03/03/1133900/the-download-the-startup-that-says-it-can-stop-lightning-and-inside-openais-pentagon-deal/"
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "Apple reportedly delays its planned smart display launch to fall",
+      "summary": "Mark Gurman at Bloomberg is back with the latest rumors about what s afoot with Apple s future plans, and how its ongoing difficulties with artificial intelligence seem to be creating further delays for its next wave of product launches.",
+      "source": "Engadget",
+      "category": "data_science",
+      "importance": 85,
+      "pubDate": "2026-03-09T19:45:39.000Z",
+      "link": "https://www.engadget.com/home/smart-home/apple-reportedly-delays-its-planned-smart-display-launch-to-fall-194539082.html?src=rss"
     },
     {
       "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
@@ -1085,34 +1395,14 @@
       "link": "https://arxiv.org/abs/2603.06142"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "NASA's DART spacecraft changed a binary asteroid's orbit around the sun, in a first for a human-made object",
-      "summary": "When NASA crashed a spacecraft into the asteroid moonlet Dimorphos in 2022, it altered both Dimorphos orbit around its parent asteroid, Didymos, and the two objects orbit around the sun, according to new research.",
-      "source": "Engadget",
-      "category": "video_generation",
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "AI allows hackers to identify anonymous social media accounts, study finds",
+      "summary": "New research suggests tech behind AI platforms such as ChatGPT makes it easier to perform sophisticated privacy attacksAI has made it vastly easier for malicious hackers to identify anonymous social media accounts, a new study has warned.",
+      "source": "The Guardian",
+      "category": "research",
       "importance": 85,
-      "pubDate": "2026-03-07T21:05:29.000Z",
-      "link": "https://www.engadget.com/science/space/nasas-dart-spacecraft-changed-a-binary-asteroids-orbit-around-the-sun-in-a-first-for-a-human-made-object-210529924.html?src=rss"
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
-      "title": "How an AI system beat experienced doctors at diagnosing rare diseases",
-      "summary": "DeepRare, an agentic AI system integrating 40 specialised tools, outperformed medical specialists in identifying rare conditions in a head-to-head study published in Nature. For millions of people with rare diseases, the path to diagnosis is a labyrinth.",
-      "source": "The Next Web",
-      "category": "agents",
-      "importance": 85,
-      "pubDate": "2026-03-07T09:30:57.000Z",
-      "link": "https://thenextweb.com/news/how-an-ai-system-beat-experienced-doctors-at-diagnosing-rare-diseases"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "米国防総省、Anthropicを「サプライチェーンリスク」に正式指定 法廷で争うとアモデイCEO",
-      "summary": "Anthropicのダリオ・アモデイCEOは、米国防総省から「サプライチェーンリスク」認定書簡を受け取ったと発表した。監視や自律型兵器へのAI利用制限を巡り交渉が膠着し、実質的な取引排除処分を受けた形だ。アモデイ氏は、この認定が法的に不当だとし、法廷で争う姿勢を改めて示した。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "anthropic",
-      "importance": 85,
-      "pubDate": "2026-03-06T22:46:00.000Z",
-      "link": "https://www.itmedia.co.jp/news/articles/2603/07/news030.html"
+      "pubDate": "2026-03-08T14:00:26.000Z",
+      "link": "https://www.theguardian.com/technology/2026/mar/08/ai-hackers-social-media-accounts-study"
     },
     {
       "id": "aHR0cHM6Ly93d3cuYmJjLmNvbS9uZXdz",
@@ -1125,66 +1415,6 @@
       "link": "https://www.bbc.com/news/articles/czx7915nn8qo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "Is the Pentagon allowed to surveil Americans with AI?",
-      "summary": "The ongoing public feud between the Department of Defense and the AI company Anthropic has raised a deep and still unanswered question: Does the law actually allow the US government to conduct mass surveillance on Americans. Surprisingly, the answer is not straightforward.",
-      "source": "MIT Technology Review",
-      "category": "regulation",
-      "importance": 85,
-      "pubDate": "2026-03-06T19:21:22.000Z",
-      "link": "https://www.technologyreview.com/2026/03/06/1134012/is-the-pentagon-allowed-to-surveil-americans-with-ai/"
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
-      "title": "Unmasking the illusion of safety online",
-      "summary": "The global cost of cybercrime surpasses billions of dollars annually, with phishing/spoofing, personal data breaches, and extortion accounting for a significant share of losses.",
-      "source": "The Next Web",
-      "category": "automation",
-      "importance": 85,
-      "pubDate": "2026-03-06T18:17:55.000Z",
-      "link": "https://thenextweb.com/news/unmasking-the-illusion-of-safety-online"
-    },
-    {
-      "id": "aHR0cHM6Ly9ibG9nLmdvb2dsZS9jb21w",
-      "title": "How our open-source AI model SpeciesNet is helping to promote wildlife conservation",
-      "summary": "An overview of SpeciesNet, our open-source AI model that is helping people around the world protect and conserve wildlife.",
-      "source": "AI",
-      "category": "tech",
-      "importance": 85,
-      "pubDate": "2026-03-06T18:00:00.000Z",
-      "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Telcos’ last chance: Why the edge becomes hyperconverged",
-      "summary": "Our main thesis coming out of MWC 2026 is that the telecommunications industry is staring at a once-in-a-generation infrastructure reset. Carriers poured billions into 5G spectrum, fiber expansion and network modernization on the promise that faster networks would unlock new enterprise revenue.",
-      "source": "SiliconANGLE",
-      "category": "business",
-      "importance": 85,
-      "pubDate": "2026-03-06T17:18:01.000Z",
-      "link": "https://siliconangle.com/2026/03/06/telcos-last-chance-edge-becomes-hyperconverged/"
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "How Descript enables multilingual video dubbing at scale",
-      "summary": "Descript uses OpenAI models to scale multilingual video dubbing, optimizing translations for both meaning and timing so dubbed speech sounds natural across languages.",
-      "source": "Open",
-      "category": "translation",
-      "importance": 85,
-      "pubDate": "2026-03-06T10:00:00.000Z",
-      "link": "https://openai.com/index/descript"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
-      "title": "Pentagon labels AI company Anthropic a supply chain risk",
-      "summary": "The Pentagon said in a statement Thursday that it has \"officially informed Anthropic leadership the company and its products are deemed a supply chain risk, effective immediately.",
-      "source": "NPR",
-      "category": "anthropic",
-      "importance": 85,
-      "pubDate": "2026-03-06T06:08:43.000Z",
-      "link": "https://www.npr.org/2026/03/06/g-s1-112713/pentagon-labels-ai-company-anthropic-a-supply-chain-risk"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
       "title": "Tapeworms Inspire Medical Device Created During Summer Undergraduate Research Fellowship",
       "summary": "Olivia LaFond, a Carnegie Mellon University senior majoring in biomedical and chemical engineering, created a 3D-printed device based on tapeworms designed to attach to the small intestine and deliver sensors or modular treatments over time.",
@@ -1193,16 +1423,6 @@
       "importance": 85,
       "pubDate": "2026-03-05T15:00:00.000Z",
       "link": "https://www.cmu.edu/news/stories/archives/2026/march/tapeworms-inspire-medical-device-created-during-summer-undergraduate-research-fellowship"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "AI tools can unmask anonymous accounts",
-      "summary": "Do you have a Reddit alt, secret X, finsta, or Glassdoor account you trash your boss with. AI might have just made it a lot easier to unmask you.",
-      "source": "The Verge",
-      "category": "agents",
-      "importance": 85,
-      "pubDate": "2026-03-05T13:30:00.000Z",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/889395/ai-agents-unmask-anonymous-online-accounts"
     },
     {
       "id": "aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNv",
@@ -1215,14 +1435,164 @@
       "link": "https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Ring’s Jamie Siminoff has been trying to calm privacy fears since the Super Bowl, but his answers may not help",
-      "summary": "The facial recognition question is where things get more tangled.",
-      "source": "TechCrunch",
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Run NVIDIA Nemotron 3 Nano as a fully managed serverless model on Amazon Bedrock",
+      "summary": "We are excited to announce that NVIDIA’s Nemotron 3 Nano is now available as a fully managed and serverless model in Amazon Bedrock. This follows our earlier announcement at AWS re:Invent supporting NVIDIA Nemotron 2 Nano 9B and NVIDIA Nemotron 2 Nano VL 12B models.",
+      "source": "aws",
+      "category": "nvidia",
+      "importance": 80,
+      "pubDate": "2026-03-09T20:48:46.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/run-nvidia-nemotron-3-nano-as-a-fully-managed-serverless-model-on-amazon-bedrock/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Quad Cortex mini amp modeler: All the power, half the size",
+      "summary": "A warehouse of guitar gear in the palm of your hand.",
+      "source": "Ars Technica",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-03-09T20:36:25.000Z",
+      "link": "https://arstechnica.com/reviews/2026/03/quad-cortex-mini-insane-amp-modeling-power-for-the-discerning-guitarist/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "How to clear your Windows 11 PC cache (and why you shouldn't wait to do it)",
+      "summary": "Clearing this hidden data will noticeably speed up your computer - here's how to do it.",
+      "source": "Latest news",
+      "category": "data_science",
+      "importance": 80,
+      "pubDate": "2026-03-09T20:24:00.000Z",
+      "link": "https://www.zdnet.com/article/how-to-clear-your-windows-11-pc-cache/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "HPE Projects Sales That Top Estimates on AI Hardware Demand",
+      "summary": "Hewlett Packard Enterprise Co. gave an outlook for revenue in the current quarter that exceeded analysts’ estimates, a sign the company is benefiting from solid demand for hardware that helps customers run AI workloads.",
+      "source": "Bloomberg",
+      "category": "presentation",
+      "importance": 80,
+      "pubDate": "2026-03-09T20:11:28.000Z",
+      "link": "https://www.bloomberg.com/news/articles/2026-03-09/hpe-projects-sales-that-top-estimates-on-ai-hardware-demand"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Alger's Ankur Crawford: Demand for Compute is Insatiable",
+      "summary": "Alger Executive Vice President and Portfolio Manager Ankur Crawford discusses an insatiable demand for AI computing, gold, and a \"directionless\" and \"choppy\" market. She talks with Romaine Bostick and Katie Greifeld on \"The Close. \" (Source: Bloomberg).",
+      "source": "Bloomberg",
+      "category": "business",
+      "importance": 80,
+      "pubDate": "2026-03-09T19:53:18.000Z",
+      "link": "https://www.bloomberg.com/news/videos/2026-03-09/alger-s-ankur-crawford-demand-for-compute-is-insatiable-video"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "Sony WF-1000XM6 vs. Apple AirPods Pro 3: I tested both earbuds, and this pair wins",
+      "summary": "The battle of ecosystems is at the center, but buyers should consider these factors too.",
+      "source": "Latest news",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-03-09T19:31:00.000Z",
+      "link": "https://www.zdnet.com/article/airpods-pro-3-vs-sony-wf1000xm6/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Harvey Adds AI Agent Builder for Law Firms",
+      "summary": "Harvey, an AI provider for legal services, unveiled a tool allowing law firms to build custom agents. Harvey CEO Winston Weinberg explains why the startup is betting it can win the legal market by staying in its own lane. He joins Caroline Hyde and Ed Ludlow on “Bloomberg Tech.",
+      "source": "Bloomberg",
+      "category": "agents",
+      "importance": 80,
+      "pubDate": "2026-03-09T18:35:46.000Z",
+      "link": "https://www.bloomberg.com/news/videos/2026-03-09/harvey-adds-ai-agent-builder-for-law-firms-video"
+    },
+    {
+      "id": "aHR0cHM6Ly9ibG9ncy5udmlkaWEuY29t",
+      "title": "How AI Is Driving Revenue, Cutting Costs and Boosting Productivity for Every Industry in 2026",
+      "summary": "AI is everywhere and accelerating everything — becoming essential infrastructure to create the intelligence that will advance every industry. That’s why companies are increasingly focusing on the technology’s return on investment (ROI), as well as how to best apply AI to their own use cases.",
+      "source": "NVIDIA",
+      "category": "business",
+      "importance": 80,
+      "pubDate": "2026-03-09T15:00:23.000Z",
+      "link": "https://blogs.nvidia.com/blog/state-of-ai-report-2026/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "Feeld Was a Dating App for the Freaks. Now Some People Call It ‘Normie Hell’",
+      "summary": "The app that catered to unconventional kinks is gaining steam among daters with vanilla preferences—and some aren’t happy about it.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-03-09T13:00:00.000Z",
+      "link": "https://www.wired.com/story/feeld-was-a-dating-app-for-the-freaks-now-some-people-call-it-normie-hell/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
+      "title": "7 Ways People Are Making Money Using AI in 2026",
+      "summary": "Learn how people are turning AI tools into real income by building practical systems, selling outcomes, and creating niche products that businesses are willing to pay for.",
+      "source": "KDnuggets",
+      "category": "business",
+      "importance": 80,
+      "pubDate": "2026-03-09T12:00:27.000Z",
+      "link": "https://www.kdnuggets.com/7-ways-people-are-making-money-using-ai-in-2026"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "DeNAが“AI社員”を育成中 AIエージェント「OpenClaw」活用 南場会長「毎朝けんか」",
+      "summary": "DeNAの南場智子代表取締役会長は、自律的にタスクをこなす独自のAIエージェントを開発中と明かした。同社のIT本部がオープンソースのAIエージェント開発基盤「OpenClaw」で作成しているもので、名前は「Lemonクン」。秘書やチームの一員としての活用を目指す。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
       "category": "regulation",
       "importance": 80,
-      "pubDate": "2026-03-09T04:35:06.000Z",
-      "link": "https://techcrunch.com/2026/03/08/rings-jamie-siminoff-has-been-trying-to-calm-privacy-fears-since-the-super-bowl-but-his-answers-may-not-help/"
+      "pubDate": "2026-03-09T11:54:00.000Z",
+      "link": "https://www.itmedia.co.jp/aiplus/articles/2603/09/news106.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "Liverpool and Manchester United complain to X over ‘sickening’ Grok AI posts",
+      "summary": "AI feature generated offensive posts about Diogo Jota and the Hillsborough and Munich disastersLiverpool and Manchester United have complained to Elon Musk’s X after the Grok AI feature made offensive posts about Diogo Jota and the Hillsborough and Munich disasters.",
+      "source": "The Guardian",
+      "category": "xai",
+      "importance": 80,
+      "pubDate": "2026-03-09T11:08:11.000Z",
+      "link": "https://www.theguardian.com/technology/2026/mar/09/liverpool-and-manchester-united-complain-to-x-over-sickening-grok-ai-posts"
+    },
+    {
+      "id": "aHR0cHM6Ly9tYWNoaW5lbGVhcm5pbmdt",
+      "title": "The 6 Best AI Agent Memory Frameworks You Should Try in 2026",
+      "summary": "Memory helps <a href=\"https://www.",
+      "source": "MachineLearningMastery.com",
+      "category": "agents",
+      "importance": 80,
+      "pubDate": "2026-03-09T11:00:55.000Z",
+      "link": "https://machinelearningmastery.com/the-6-best-ai-agent-memory-frameworks-you-should-try-in-2026/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "校務に生成AI活用する学校は2割 「学校だより」執筆も 文科省のデジタル化調査で判明",
+      "summary": "業務に生成AIを利用している学校の割合が17. 2％に上ることが、文部科学省の学校のデジタル化に関する調査で明らかになった。家庭に配布する「学校だより」のたたき台を作らせたり、授業で集めた子供の感想文を分析させたりするほか、子供の生活態度や長所などを記載する通知表の所見欄の作成に使うケースもあった。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-03-09T09:43:00.000Z",
+      "link": "https://www.itmedia.co.jp/news/articles/2603/09/news104.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "Can AI Kill the Venture Capitalist?",
+      "summary": "VCs are betting that artificial intelligence will disrupt nearly every industry in the world. Are they prepared for it to disrupt their own.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-03-09T09:00:00.000Z",
+      "link": "https://www.wired.com/story/ai-kill-venture-capital/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "「AIにオールイン」宣言から1年、DeNA南場会長が明かす進捗 「効率化は進んだ。ところが……」",
+      "summary": "DeNAの「AIにオールイン」宣言から1年。同社の南場智子代表取締役会長が取り組みの進捗を明かした。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-03-09T05:32:00.000Z",
+      "link": "https://www.itmedia.co.jp/aiplus/articles/2603/09/news087.html"
     },
     {
       "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
@@ -1255,26 +1625,6 @@
       "link": "https://www.itmedia.co.jp/enterprise/articles/2603/09/news052.html"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "China’s OpenClaw-Tied Stocks Rise on Policy Support, Adoption",
-      "summary": "Chinese companies linked to open-source AI agent software OpenClaw advanced after Shenzhen authorities offered measures to support further development of tools using the technology.",
-      "source": "Bloomberg",
-      "category": "agents",
-      "importance": 80,
-      "pubDate": "2026-03-09T03:12:49.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-03-09/china-s-openclaw-tied-stocks-rise-on-policy-support-adoption"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "Tencent Is Said to Be Back On Paramount-Warner Bros Deal With Fresh Funding",
-      "summary": "intends to invest several hundred million dollars in Paramount Skydance Corp. ’s acquisition of Warner Bros. , according to people familiar with the situation.",
-      "source": "Bloomberg",
-      "category": "business",
-      "importance": 80,
-      "pubDate": "2026-03-09T02:30:10.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-03-09/tencent-is-said-to-be-back-on-paramount-warner-bros-deal-with-fresh-funding"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
       "title": "AI同士が“核兵器が使える戦争ゲーム”で対決→核の発射率は95％ 英国の研究者が報告",
       "summary": "英キングス・カレッジ・ロンドンに所属する研究者は、核兵器が使える戦争ゲームにおいて、AIたちがどのような判断を下すのかをシミュレーションした研究報告を発表した。.",
@@ -1285,14 +1635,14 @@
       "link": "https://www.itmedia.co.jp/aiplus/articles/2603/09/news022.html"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "”AWS上ですぐ使えるOpenClaw”提供開始 仮想プライベートサーバ「Amazon Lightsail」のインスタンスイメージとして",
-      "summary": "米Amazon Web Services（AWS）は、仮想プライベートサーバ（VPS）のAmazon Lightsailで簡単にOpenClawが導入できる、事前設定されたOpenClawインスタンスイメージの提供を開始しました。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "regulation",
+      "id": "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9i",
+      "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
+      "summary": "Ulysses Sequence Parallelism: Training with Million-Token Contexts.",
+      "source": "huggingface",
+      "category": "research",
       "importance": 80,
-      "pubDate": "2026-03-09T01:46:00.000Z",
-      "link": "https://www.itmedia.co.jp/news/articles/2603/09/news058.html"
+      "pubDate": "2026-03-09T00:00:00.000Z",
+      "link": "https://huggingface.co/blog/ulysses-sp"
     },
     {
       "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
@@ -1305,16 +1655,6 @@
       "link": "https://innovatopia.jp/ai/ai-news/82150/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "さくらインターネット「さくらのAI検定」を創設 教材も無料公開",
-      "summary": "さくらインターネットはAIの基礎から実践まで学べる「さくらのAI検定」を創設した。生成AI普及を背景に国内企業で専門人材不足が続く状況を踏まえ、AIサービス選択や安全な活用力を持つ人材育成を狙う。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-03-08T23:00:00.000Z",
-      "link": "https://www.itmedia.co.jp/enterprise/articles/2603/08/news016.html"
-    },
-    {
       "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9z",
       "title": "ALTILAN×中部日本プラスチック、浜松発の宇宙エコシステム構築へ—地域製造業の宇宙参入支援で協業MOU締結",
       "summary": "2026年3月9日 「うちの技術、宇宙で使えますか？」——地域の製造業がずっと抱えてきたこの問いに、AIが最短10分で答えを出すプラットフォームが登場しました。浜松市を拠点とする2社のMOU締結は、地域発の宇宙ビジネスエコシステムが形になり [ ] innovaTopia TaTsu.",
@@ -1323,16 +1663,6 @@
       "importance": 80,
       "pubDate": "2026-03-08T22:47:29.000Z",
       "link": "https://innovatopia.jp/spacetechnology/spacetechnology-news/82146/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "日本人「旅行離れ」の根本原因 インバウンド高騰で泊まれない実態と「AIの限界」",
-      "summary": "かつての「安価な団体ツアー」が崩壊した今、旅行業界は誰をターゲットにし、どんな付加価値を提供すべきなのか。各社のデータと予測トレンドから、2026年の旅行ビジネスにおける勝ち筋を分析する。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-03-08T22:00:00.000Z",
-      "link": "https://www.itmedia.co.jp/business/articles/2603/09/news016.html"
     },
     {
       "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
@@ -1345,134 +1675,84 @@
       "link": "https://innovatopia.jp/ai/ai-news/82142/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "Why the AI Boom Will Make Phones, Cars and Electronics More Expensive",
-      "summary": "AI demand is triggering a historic memory-chip shortage. Meeting exponential demand for chips will be expensive and maybe even impossible.",
-      "source": "Bloomberg",
-      "category": "tech",
+      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
+      "title": "Dynamic UI for dynamic AI: Inside the emerging A2UI model",
+      "summary": "With agentic AI, businesses are conducting business more dynamically. Instead of traditional pre-programmed bots and static rules, agents can now “think” and invent alternate paths when unseen conditions arise.",
+      "source": "VentureBeat",
+      "category": "agents",
       "importance": 80,
-      "pubDate": "2026-03-08T20:00:08.000Z",
-      "link": "https://www.bloomberg.com/graphics/2026-ai-boom-memory-chip-shortage/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Owner of ICE detention facility sees big opportunity in AI man camps",
-      "summary": "AI data center developers are increasingly relying on a style of camp popularized as housing for men working in remote oil fields.",
-      "source": "TechCrunch",
-      "category": "data_science",
-      "importance": 80,
-      "pubDate": "2026-03-08T16:30:00.000Z",
-      "link": "https://techcrunch.com/2026/03/08/owner-of-ice-detention-facility-sees-big-opportunity-in-ai-man-camps/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "Jessica Jones joins the fray in Daredevil: Born Again trailer",
-      "summary": "\"I'm gonna take this city back.",
-      "source": "Ars Technica",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-03-08T13:13:03.000Z",
-      "link": "https://arstechnica.com/culture/2026/03/jessica-jones-joins-the-fray-in-daredevil-born-again-trailer/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "How to turn off HDMI-CEC on your TV - and why doing so is such a big deal",
-      "summary": "TVs often analyze what you watch to curate suggestions and serve you ads, even through HDMI-connected devices. But I've found ways to regain control.",
-      "source": "Latest news",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-03-08T13:00:44.000Z",
-      "link": "https://www.zdnet.com/article/how-to-turn-off-hdmi-cec-on-your-tv/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "Apple AirPods Pro 3 review: I didn't think earbuds could pull off immersive ANC like this",
-      "summary": "After testing AirPods Pro 3 for months, one feature stood out above all the upgrades.",
-      "source": "Latest news",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-03-08T12:00:47.000Z",
-      "link": "https://www.zdnet.com/article/apple-airpods-pro-3-review/"
+      "pubDate": "2026-03-08T17:00:00.000Z",
+      "link": "https://venturebeat.com/technology/dynamic-ui-for-dynamic-ai-inside-the-emerging-a2ui-model"
     },
     {
       "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "ChatGPT driving rise in reports of ‘satanic’ organised ritual abuse, UK experts say",
-      "summary": "Exclusive: ‘Witchcraft, spirit possession and spiritual abuse’ offending typified by sexual abuse, violence and neglectChatGPT is driving a rise in reports of organised ritual abuse, UK experts have said, as survivors of “satanic” sexual violence use the AI tool for therapy.",
+      "title": "Readers reply: What if Shakespeare was dropped in modern-day London?",
+      "summary": "The long-running series in which readers answer other readers’ questions ponders the hypothetical reactions of eminent historical personages to today’s Trafalgar SquareThis week’s question: which are more like life, novels or films.",
       "source": "The Guardian",
-      "category": "openai",
+      "category": "video_generation",
       "importance": 80,
-      "pubDate": "2026-03-08T12:00:22.000Z",
-      "link": "https://www.theguardian.com/technology/2026/mar/08/chatgpt-driving-rise-in-reports-of-satanic-organised-ritual-abuse-uk-experts-say"
+      "pubDate": "2026-03-08T14:00:23.000Z",
+      "link": "https://www.theguardian.com/lifeandstyle/2026/mar/08/readers-reply-what-if-shakespeare-was-dropped-in-modern-day-london"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "iPhone 17e vs. iPhone 17: I compared both models to uncover the $200 difference",
-      "summary": "Apple's latest iPhone 17e is shaping up to be a great midrange device, but how does it stack up against the base iPhone 17.",
-      "source": "Latest news",
-      "category": "tech",
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "Current and former Block workers say AI can’t do their jobs after Jack Dorsey’s mass layoffs: ‘You can’t really AI that’",
+      "summary": "The CEO said he cut the company’s workforce by 4,000 people – almost in half – because of gains in AI productivityMark remembers the first time he wondered whether he was teaching Block’s AI tools how to do his job – and maybe even replace him.",
+      "source": "The Guardian",
+      "category": "presentation",
       "importance": 80,
-      "pubDate": "2026-03-08T11:00:46.000Z",
-      "link": "https://www.zdnet.com/article/iphone-17e-vs-iphone-17/"
+      "pubDate": "2026-03-08T12:00:20.000Z",
+      "link": "https://www.theguardian.com/technology/2026/mar/08/block-ai-layoffs-jack-dorsey"
     },
     {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9l",
-      "title": "Kyro™ が示す警備の未来―AMC Robotics、東京セキュリティショー2026で自律型ロボットをデモ",
-      "summary": "2026年3月8日 AMC Robotics Corporation（Nasdaq: AMCI）は2026年3月3日から6日にかけて、東京ビッグサイトで開催された東京セキュリティショー2026に出展した。 同社はAI搭載の四足歩行ロボット [ ] innovaTopia Ami.",
-      "source": "innovaTopia",
+      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
+      "title": "Honor s Robot phone is real, and coming later this year",
+      "summary": "The camera nods, dances to music, and tracks faces. The rest of the specs are a secret. Something unusual happened at Mobile World Congress this year.",
+      "source": "The Next Web",
       "category": "robotics",
       "importance": 80,
-      "pubDate": "2026-03-08T09:00:00.000Z",
-      "link": "https://innovatopia.jp/edge/edge-news/82138/"
+      "pubDate": "2026-03-08T07:00:24.000Z",
+      "link": "https://thenextweb.com/news/honors-robot-phone-is-real-and-coming-later-this-year"
     },
     {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9j",
-      "title": "Microsoft警告：ChromeのAI拡張機能に潜む罠—ChatGPT・DeepSeekの会話履歴が密かに流出",
-      "summary": "2026年3月8日 Microsoft Defender セキュリティリサーチチームは2026年3月5日、正規のAIアシスタントツールを装った悪意のあるChromiumベースのブラウザ拡張機能を調査・報告した。 当該拡張機能のインストール数 [ ] innovaTopia TaTsu.",
-      "source": "innovaTopia",
-      "category": "microsoft",
-      "importance": 80,
-      "pubDate": "2026-03-08T07:00:00.000Z",
-      "link": "https://innovatopia.jp/cyber-security/cyber-security-news/82132/"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "Huawei がMWCで「AI＋公共サービス」戦略を発表—チャットで手続き完結する行政の未来像",
-      "summary": "2026年3月8日 2026年3月5日、スペイン・バルセロナで開催されたMWC バルセロナ2026において、Huawei Government Public Services Digitalization BU はグローバル AI+ 公共サ [ ] innovaTopia Ami.",
-      "source": "innovaTopia",
+      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
+      "title": "Is the Pentagon allowed to surveil Americans with AI?",
+      "summary": "The ongoing public feud between the Department of Defense and the AI company Anthropic has raised a deep and still unanswered question: Does the law actually allow the US government to conduct mass surveillance on Americans. Surprisingly, the answer is not straightforward.",
+      "source": "MIT Technology Review",
       "category": "regulation",
       "importance": 80,
-      "pubDate": "2026-03-08T05:00:00.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/82126/"
+      "pubDate": "2026-03-06T19:21:22.000Z",
+      "link": "https://www.technologyreview.com/2026/03/06/1134012/is-the-pentagon-allowed-to-surveil-americans-with-ai/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "HPE flexes some Juniper muscle at MWC26",
-      "summary": "Hewlett Packard Enterprise Co. announced new networking, compute hardware, cloud operations software and financing updates for service providers at this past week s MWC26 in Barcelona.",
-      "source": "SiliconANGLE",
-      "category": "business",
+      "id": "aHR0cHM6Ly9ibG9nLmdvb2dsZS9jb21w",
+      "title": "How our open-source AI model SpeciesNet is helping to promote wildlife conservation",
+      "summary": "An overview of SpeciesNet, our open-source AI model that is helping people around the world protect and conserve wildlife.",
+      "source": "AI",
+      "category": "tech",
       "importance": 80,
-      "pubDate": "2026-03-07T18:12:21.000Z",
-      "link": "https://siliconangle.com/2026/03/07/hpe-flexes-juniper-muscle-mwc26/"
+      "pubDate": "2026-03-06T18:00:00.000Z",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "Dell XPS 14 (2026) review: A beautiful laptop that excels at almost everything… except typing",
-      "summary": "There is so much to love about Dell s new XPS 14, it s hard for me to discuss it without sounding like a total fanboy. Its new design makes it incredibly thin and light. And Intel s Panther Lake chips give it a ton of power, even when it comes to games.",
-      "source": "Engadget",
-      "category": "gaming",
+      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
+      "title": "How Descript enables multilingual video dubbing at scale",
+      "summary": "Descript uses OpenAI models to scale multilingual video dubbing, optimizing translations for both meaning and timing so dubbed speech sounds natural across languages.",
+      "source": "Open",
+      "category": "translation",
       "importance": 80,
-      "pubDate": "2026-03-07T13:30:34.000Z",
-      "link": "https://www.engadget.com/computing/laptops/dell-xps-14-2026-review-a-beautiful-laptop-that-excels-at-almost-everything-except-typing-130000656.html?src=rss"
+      "pubDate": "2026-03-06T10:00:00.000Z",
+      "link": "https://openai.com/index/descript"
     },
     {
       "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
-      "title": "How tech giants with data centers to power AI can reduce consumers' electricity bills",
-      "summary": "NPR's Scott Simon speaks with Michael Thomas, CEO of Cleanview, about his new report on tech companies' plans to build their own off-grid power plants to provide energy for data centers.",
+      "title": "Pentagon labels AI company Anthropic a supply chain risk",
+      "summary": "The Pentagon said in a statement Thursday that it has \"officially informed Anthropic leadership the company and its products are deemed a supply chain risk, effective immediately.",
       "source": "NPR",
-      "category": "data_science",
+      "category": "anthropic",
       "importance": 80,
-      "pubDate": "2026-03-07T12:44:25.000Z",
-      "link": "https://www.npr.org/2026/03/07/nx-s1-5727698/ai-and-power-generation"
+      "pubDate": "2026-03-06T06:08:43.000Z",
+      "link": "https://www.npr.org/2026/03/06/g-s1-112713/pentagon-labels-ai-company-anthropic-a-supply-chain-risk"
     },
     {
       "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
@@ -1495,14 +1775,14 @@
       "link": "https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Apple Music adds optional labels for AI songs and visuals",
-      "summary": "No AI usage will be assumed on works that providers haven't voluntarily tagged. | Illustration: Alex Castro / The Verge Apple is asking artists and record labels on its music streaming platform to voluntarily label songs that were made using AI.",
-      "source": "The Verge",
-      "category": "business",
+      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
+      "title": "Introducing GPT-5.4",
+      "summary": "4, OpenAI’s most most capable and efficient frontier model for professional work, with state-of-the-art coding, computer use, tool search, and 1M-token context.",
+      "source": "Open",
+      "category": "tech",
       "importance": 80,
-      "pubDate": "2026-03-05T14:00:00.000Z",
-      "link": "https://www.theverge.com/tech/889836/apple-music-ai-transparency-tags-launch"
+      "pubDate": "2026-03-05T10:00:00.000Z",
+      "link": "https://openai.com/index/introducing-gpt-5-4"
     },
     {
       "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
@@ -1515,26 +1795,6 @@
       "link": "https://openai.com/index/reasoning-models-chain-of-thought-controllability"
     },
     {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "Introducing GPT-5.4",
-      "summary": "4, OpenAI’s most most capable and efficient frontier model for professional work, with state-of-the-art coding, computer use, tool search, and 1M-token context.",
-      "source": "Open",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-03-05T10:00:00.000Z",
-      "link": "https://openai.com/index/introducing-gpt-5-4"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "What AI Models for War Actually Look Like",
-      "summary": "While companies like Anthropic debate limits on military uses of AI, Smack Technologies is training models to plan battlefield operations.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "research",
-      "importance": 80,
-      "pubDate": "2026-03-04T22:00:03.000Z",
-      "link": "https://www.wired.com/story/ai-model-military-use-smack-technologies/"
-    },
-    {
       "id": "aHR0cHM6Ly9ibG9nLmdvb2dsZS9wcm9k",
       "title": "Use Canvas in AI Mode to get things done and bring your ideas to life, right in Search.",
       "summary": "Canvas in AI Mode is now available for everyone in the U. Plus, it can now help you draft documents or build interactive tools.",
@@ -1545,24 +1805,14 @@
       "link": "https://blog.google/products-and-platforms/products/search/ai-mode-canvas-writing-coding/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "What Is That Mysterious Metallic Device US Chief Design Officer Joe Gebbia Is Using?",
-      "summary": "Gebbia was reportedly spotted at a San Francisco coffee shop using an unidentified pair of earbuds with a circular disc that looks similar to the device seen in a recent OpenAI hoax ad.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "meta",
-      "importance": 80,
-      "pubDate": "2026-03-03T01:06:01.000Z",
-      "link": "https://www.wired.com/story/joe-gebbia-mystery-metallic-device/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "From Iran to Ukraine, everyone's trying to hack security cameras",
-      "summary": "Research shows apparent Iranian state hackers trying to hijack consumer-grade cameras.",
-      "source": "Ars Technica",
-      "category": "research",
+      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
+      "title": "How an AI system beat experienced doctors at diagnosing rare diseases",
+      "summary": "DeepRare, an agentic AI system integrating 40 specialised tools, outperformed medical specialists in identifying rare conditions in a head-to-head study published in Nature. For millions of people with rare diseases, the path to diagnosis is a labyrinth.",
+      "source": "The Next Web",
+      "category": "agents",
       "importance": 75,
-      "pubDate": "2026-03-07T11:30:06.000Z",
-      "link": "https://arstechnica.com/security/2026/03/from-iran-to-ukraine-everyones-trying-to-hack-security-cameras/"
+      "pubDate": "2026-03-07T09:30:57.000Z",
+      "link": "https://thenextweb.com/news/how-an-ai-system-beat-experienced-doctors-at-diagnosing-rare-diseases"
     },
     {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
@@ -1575,74 +1825,84 @@
       "link": "https://siliconangle.com/2026/03/06/decision-intelligence-telecom-ai-modernization-thecuberesearch-appdevangle/"
     },
     {
-      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
-      "title": "Holyvolt buys US battery pioneer Wildcat Discovery for $73M",
-      "summary": "The battery industry has a translation problem. Researchers can identify promising new materials in the lab; the challenge is moving those discoveries through chemistry, engineering, and manufacturing without losing years and hundreds of millions of dollars in the process.",
-      "source": "The Next Web",
-      "category": "translation",
-      "importance": 75,
-      "pubDate": "2026-03-06T14:35:21.000Z",
-      "link": "https://thenextweb.com/news/holyvolt-wildcat-discovery-acquisition-battery"
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Owner of ICE detention facility sees big opportunity in AI man camps",
+      "summary": "AI data center developers are increasingly relying on a style of camp popularized as housing for men working in remote oil fields.",
+      "source": "TechCrunch",
+      "category": "data_science",
+      "importance": 70,
+      "pubDate": "2026-03-08T16:30:00.000Z",
+      "link": "https://techcrunch.com/2026/03/08/owner-of-ice-detention-facility-sees-big-opportunity-in-ai-man-camps/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "ChatGPT driving rise in reports of ‘satanic’ organised and ritual abuse, UK experts say",
+      "summary": "Exclusive: ‘Witchcraft, spirit possession and spiritual abuse’ offending typified by sexual abuse, violence and neglectChatGPT is driving a rise in reports of organised and ritual abuse, UK experts have said, as survivors of “satanic” sexual violence use the AI tool for therapy.",
+      "source": "The Guardian",
+      "category": "openai",
+      "importance": 70,
+      "pubDate": "2026-03-08T12:00:22.000Z",
+      "link": "https://www.theguardian.com/technology/2026/mar/08/chatgpt-driving-rise-in-reports-of-satanic-organised-ritual-abuse-uk-experts-say"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9l",
+      "title": "Kyro™ が示す警備の未来―AMC Robotics、東京セキュリティショー2026で自律型ロボットをデモ",
+      "summary": "2026年3月8日 AMC Robotics Corporation（Nasdaq: AMCI）は2026年3月3日から6日にかけて、東京ビッグサイトで開催された東京セキュリティショー2026に出展した。 同社はAI搭載の四足歩行ロボット [ ] innovaTopia Ami.",
+      "source": "innovaTopia",
+      "category": "robotics",
+      "importance": 70,
+      "pubDate": "2026-03-08T09:00:00.000Z",
+      "link": "https://innovatopia.jp/edge/edge-news/82138/"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9j",
+      "title": "Microsoft警告：ChromeのAI拡張機能に潜む罠—ChatGPT・DeepSeekの会話履歴が密かに流出",
+      "summary": "2026年3月8日 Microsoft Defender セキュリティリサーチチームは2026年3月5日、正規のAIアシスタントツールを装った悪意のあるChromiumベースのブラウザ拡張機能を調査・報告した。 当該拡張機能のインストール数 [ ] innovaTopia TaTsu.",
+      "source": "innovaTopia",
+      "category": "microsoft",
+      "importance": 70,
+      "pubDate": "2026-03-08T07:00:00.000Z",
+      "link": "https://innovatopia.jp/cyber-security/cyber-security-news/82132/"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
+      "title": "Huawei がMWCで「AI＋公共サービス」戦略を発表—チャットで手続き完結する行政の未来像",
+      "summary": "2026年3月8日 2026年3月5日、スペイン・バルセロナで開催されたMWC バルセロナ2026において、Huawei Government Public Services Digitalization BU はグローバル AI+ 公共サ [ ] innovaTopia Ami.",
+      "source": "innovaTopia",
+      "category": "regulation",
+      "importance": 70,
+      "pubDate": "2026-03-08T05:00:00.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/82126/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "HPE flexes some Juniper muscle at MWC26",
+      "summary": "Hewlett Packard Enterprise Co. announced new networking, compute hardware, cloud operations software and financing updates for service providers at this past week s MWC26 in Barcelona.",
+      "source": "SiliconANGLE",
+      "category": "business",
+      "importance": 70,
+      "pubDate": "2026-03-07T18:12:21.000Z",
+      "link": "https://siliconangle.com/2026/03/07/hpe-flexes-juniper-muscle-mwc26/"
     },
     {
       "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
-      "title": "2 young billionaires are behind the prediction market boom. They hate each other",
-      "summary": "The 20-something billionaires who run Kalshi and Polymarket are battling it out to be the top prediction market company. Observers and former insiders say the feud is just heating up.",
+      "title": "How tech giants with data centers to power AI can reduce consumers' electricity bills",
+      "summary": "NPR's Scott Simon speaks with Michael Thomas, CEO of Cleanview, about his new report on tech companies' plans to build their own off-grid power plants to provide energy for data centers.",
       "source": "NPR",
-      "category": "business",
-      "importance": 75,
-      "pubDate": "2026-03-06T10:00:00.000Z",
-      "link": "https://www.npr.org/2026/03/06/nx-s1-5735893/iran-war-kalshi-polymarket-feud"
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Build a serverless conversational AI agent using Claude with LangGraph and managed MLflow on Amazon SageMaker AI",
-      "summary": "This post explores how to build an intelligent conversational agent using Amazon Bedrock, LangGraph, and managed MLflow on Amazon SageMaker AI.",
-      "source": "aws",
-      "category": "agents",
-      "importance": 75,
-      "pubDate": "2026-03-02T18:51:43.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/build-a-serverless-conversational-ai-agent-using-claude-with-langgraph-and-managed-mlflow-on-amazon-sagemaker-ai/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "Samsung confirms smart glasses capabilities to compete with Meta Ray-Bans - what's coming",
-      "summary": "The upcoming glasses will feature a camera at eye level and use AI to process and understand your visual context.",
-      "source": "Latest news",
-      "category": "meta",
+      "category": "data_science",
       "importance": 70,
-      "pubDate": "2026-03-08T01:12:00.000Z",
-      "link": "https://www.zdnet.com/article/samsung-ai-smart-glasses-features/"
+      "pubDate": "2026-03-07T12:44:25.000Z",
+      "link": "https://www.npr.org/2026/03/07/nx-s1-5727698/ai-and-power-generation"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Grammarly’s ‘expert review’ is just missing the actual experts",
-      "summary": "A recently-added feature in Grammarly purports to improve users’ writing with help from the world's great writers and thinkers — and some tech journalists, too.",
-      "source": "TechCrunch",
-      "category": "academic",
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "‘It means missile defence on datacentres’: drone strikes raise doubts over Gulf as AI superpower",
+      "summary": "Iran’s targeting of commercial datacentres in the UAE and Bahrain signals a new frontier in asymmetric warfareIt is believed to be a first: the deliberate targeting of a commercial datacentre by the armed forces of a country at war.",
+      "source": "The Guardian",
+      "category": "data_science",
       "importance": 70,
-      "pubDate": "2026-03-07T22:56:31.000Z",
-      "link": "https://techcrunch.com/2026/03/07/grammarlys-expert-review-is-just-missing-the-actual-experts/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "The OpenClaw superfan meetup serves optimism and lobster",
-      "summary": "The woman at the door wore a plush lobster headdress. She sat in the front hallway of a multistory event venue in Manhattan, beside a bundle of wristbands.",
-      "source": "The Verge",
-      "category": "agents",
-      "importance": 70,
-      "pubDate": "2026-03-07T14:00:00.000Z",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/890517/openclaw-clawcon-meetup-nyc-open-source-ai"
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
-      "title": "Dominate AI search in 2026",
-      "summary": "Discovery has already changed, even if many teams have not fully felt the consequences yet. Buyers no longer open ten tabs, skim through blog posts, and slowly form an opinion over weeks.",
-      "source": "The Next Web",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-03-07T09:00:09.000Z",
-      "link": "https://thenextweb.com/news/dominate-ai-search-in-2026"
+      "pubDate": "2026-03-07T11:00:48.000Z",
+      "link": "https://www.theguardian.com/world/2026/mar/07/it-means-missile-defence-on-data-centres-drone-strikes-raises-doubts-over-gulf-as-ai-superpower"
     },
     {
       "id": "aHR0cHM6Ly9zaW5ndWxhcml0eWh1Yi5j",
@@ -1655,44 +1915,14 @@
       "link": "https://singularityhub.com/2026/03/06/autonomous-ai-agents-have-an-ethics-problem/"
     },
     {
-      "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9zZWN1",
-      "title": "How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework",
-      "summary": "GitHub Security Lab Taskflow Agent is very effective at finding Auth Bypasses, IDORs, Token Leaks, and other high-impact vulnerabilities. The post How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework appeared first on The GitHub Blog.",
-      "source": "The GitHub",
-      "category": "agents",
-      "importance": 70,
-      "pubDate": "2026-03-06T21:09:04.000Z",
-      "link": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Uncovering innovation amidst the noise of MWC",
-      "summary": "Once again, artificial intelligence dominated the buzz at this year’s MWC Barcelona, formerly called Mobile World Congress. From smartphones to satellites, networks to applications, no vendor or service provider could resist the lure of AI.",
-      "source": "SiliconANGLE",
-      "category": "space",
-      "importance": 70,
-      "pubDate": "2026-03-06T19:56:51.000Z",
-      "link": "https://siliconangle.com/2026/03/06/uncovering-innovation-amidst-noise-mwc/"
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
-      "title": "Inaccurate business listings are quietly costing companies customers",
-      "summary": "TL;DR Moz Local automates local listing management, review monitoring, and reputation management across 90+ directories, starting at $16/month per location on annual billing.",
-      "source": "The Next Web",
-      "category": "presentation",
-      "importance": 70,
-      "pubDate": "2026-03-06T11:00:25.000Z",
-      "link": "https://thenextweb.com/news/inaccurate-business-listings-are-costing-companies"
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
-      "title": "TaxDown secures €4M financing to expand AI tax platform",
-      "summary": "The Madrid tax fintech doubled revenue in 2025 and hit profitability. Now it’s taking on structured debt to scale its AI platform, a sign that its capital strategy is as deliberate as its product. Most tax software companies want to tell you how many users they have.",
-      "source": "The Next Web",
+      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
+      "title": "2 young billionaires are behind the prediction market boom. They hate each other",
+      "summary": "The 20-something billionaires who run Kalshi and Polymarket are battling it out to be the top prediction market company. Observers and former insiders say the feud is just heating up.",
+      "source": "NPR",
       "category": "business",
       "importance": 70,
-      "pubDate": "2026-03-06T10:07:31.000Z",
-      "link": "https://thenextweb.com/news/taxdown-secures-e4m-financing-to-expand-ai-tax-platform"
+      "pubDate": "2026-03-06T10:00:00.000Z",
+      "link": "https://www.npr.org/2026/03/06/nx-s1-5735893/iran-war-kalshi-polymarket-feud"
     },
     {
       "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
@@ -1703,16 +1933,6 @@
       "importance": 70,
       "pubDate": "2026-03-05T18:27:16.000Z",
       "link": "https://www.theverge.com/streaming/889973/netflix-ben-affleck-interpositive-ai"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "The best LED face masks in the UK, tested: 11 light therapy devices that are worth the hype",
-      "summary": "They claim to fix fine lines, blemishes and redness – but which stand up to scrutiny.",
-      "source": "The Guardian",
-      "category": "research",
-      "importance": 70,
-      "pubDate": "2026-03-05T10:00:08.000Z",
-      "link": "https://www.theguardian.com/thefilter/2025/sep/19/best-led-red-light-therapy-face-masks"
     },
     {
       "id": "aHR0cHM6Ly93d3cuYmJjLmNvbS9uZXdz",
@@ -1755,74 +1975,14 @@
       "link": "https://www.npr.org/2026/03/03/nx-s1-5729433/ai-brain-monkey-neurons"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuc2NpZW5jZWRhaWx5",
-      "title": "ChatGPT as a therapist? New study reveals serious ethical risks",
-      "summary": "As millions turn to ChatGPT and other AI chatbots for therapy-style advice, new research from Brown University raises a serious red flag: even when instructed to act like trained therapists, these systems routinely break core ethical standards of mental health care.",
-      "source": "ScienceDaily",
-      "category": "healthcare",
-      "importance": 70,
-      "pubDate": "2026-03-02T15:04:35.000Z",
-      "link": "https://www.sciencedaily.com/releases/2026/03/260302030642.htm"
-    },
-    {
-      "id": "aHR0cHM6Ly9qYWNrLWNsYXJrLm5ldC8y",
-      "title": "Import AI 447: The AGI economy; testing AIs with generated games; and agent ecologies",
-      "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please subscribe.",
-      "source": "Import AI",
-      "category": "agents",
-      "importance": 70,
-      "pubDate": "2026-03-02T13:45:27.000Z",
-      "link": "https://jack-clark.net/2026/03/02/import-ai-447-the-agi-economy-testing-ais-with-generated-games-and-agent-ecologies/"
-    },
-    {
-      "id": "aHR0cHM6Ly9lbWVyai5jb20vYXJ0aWZp",
-      "title": "Artificial Intelligence at Tenet Healthcare",
-      "summary": "Tenet Healthcare Corporation is one of the largest investor-owned healthcare services companies in the United States. Headquartered in Dallas, Texas, the company operates 65 acute care hospitals and over 450 healthcare facilities, including ambulatory surgery centers and other outpatient facilities.",
-      "source": "Emerj",
-      "category": "healthcare",
-      "importance": 70,
-      "pubDate": "2026-03-02T11:00:00.000Z",
-      "link": "https://emerj.com/artificial-intelligence-at-tenet-healthcare/"
-    },
-    {
-      "id": "aHR0cHM6Ly9lbWVyai5jb20vYnVzaW5l",
-      "title": "The Millennium Project: The Business Implications of Global AGI Regulation and Oversight",
-      "summary": "As geopolitical tensions, economic uncertainty, and rapid advances in frontier AI converge, the governance of Artificial General Intelligence (AGI) has moved from a speculative concern to a central priority for global institutions.",
-      "source": "Emerj",
-      "category": "research",
-      "importance": 65,
-      "pubDate": "2026-03-06T11:00:00.000Z",
-      "link": "https://emerj.com/business-implications-of-global-agi-regulation-and-oversight/"
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "Codex Security: now in research preview",
-      "summary": "Codex Security is an AI application security agent that analyzes project context to detect, validate, and patch complex vulnerabilities with higher confidence and less noise.",
-      "source": "Open",
+      "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9zZWN1",
+      "title": "How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework",
+      "summary": "GitHub Security Lab Taskflow Agent is very effective at finding Auth Bypasses, IDORs, Token Leaks, and other high-impact vulnerabilities. The post How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework appeared first on The GitHub Blog.",
+      "source": "The GitHub",
       "category": "agents",
       "importance": 65,
-      "pubDate": "2026-03-06T10:00:00.000Z",
-      "link": "https://openai.com/index/codex-security-now-in-research-preview"
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "How Balyasny Asset Management built an AI research engine for investing",
-      "summary": "See how Balyasny built an AI research system with GPT-5. 4, rigorous model evaluation, and agent workflows to transform investment analysis at scale.",
-      "source": "Open",
-      "category": "agents",
-      "importance": 65,
-      "pubDate": "2026-03-06T07:00:00.000Z",
-      "link": "https://openai.com/index/balyasny-asset-management"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "ByteDance’s AI Ambitions Are Being Hampered by Compute Restraints and Copyright Concerns",
-      "summary": "ByteDance’s new Seedance 2. 0 AI video model seemed unstoppable—until heavy demand strained the company’s compute capacity and copyright complaints began piling up.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "regulation",
-      "importance": 65,
-      "pubDate": "2026-03-05T21:14:22.000Z",
-      "link": "https://www.wired.com/story/made-in-china-bytedances-ai-ambitions-are-being-hampered-by-compute-restraints/"
+      "pubDate": "2026-03-06T21:09:04.000Z",
+      "link": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/"
     },
     {
       "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9haS1h",
@@ -1843,166 +2003,6 @@
       "importance": 65,
       "pubDate": "2026-03-05T17:00:00.000Z",
       "link": "https://github.blog/developer-skills/career-growth/scaling-ai-opportunity-across-the-globe-learnings-from-github-and-andela/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "‘Our consciousness is under siege’: Michael Pollan on chatbots, social media and mental freedom",
-      "summary": "In his new book, the celebrated author explains why we need ‘consciousness hygiene’ to defend ourselves from AI and dopamine-driven algorithmsEach day when you wake up, you come back to yourself.",
-      "source": "The Guardian",
-      "category": "research",
-      "importance": 65,
-      "pubDate": "2026-03-05T15:00:03.000Z",
-      "link": "https://www.theguardian.com/wellness/2026/mar/05/michael-pollan-book-a-world-appears-consciousness-hygiene"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "The Download: an AI agent’s hit piece, and preventing lightning",
-      "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology.",
-      "source": "MIT Technology Review",
-      "category": "agents",
-      "importance": 65,
-      "pubDate": "2026-03-05T14:28:46.000Z",
-      "link": "https://www.technologyreview.com/2026/03/05/1133968/the-download-ai-agent-hit-piece-preventing-lightning/"
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "Introducing the Adoption news channel",
-      "summary": "Practical insights and frameworks to turn AI progress into business advantage.",
-      "source": "Open",
-      "category": "business",
-      "importance": 65,
-      "pubDate": "2026-03-05T00:00:00.000Z",
-      "link": "https://openai.com/index/introducing-the-adoption-news-channel"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "Bridging the operational AI gap",
-      "summary": "The transformational potential of AI is already well established. Enterprise use cases are building momentum and organizations are transitioning from pilot projects to AI in production. Companies are no longer just talking about AI; they are redirecting budgets and resources to make it happen.",
-      "source": "MIT Technology Review",
-      "category": "agents",
-      "importance": 65,
-      "pubDate": "2026-03-04T14:00:00.000Z",
-      "link": "https://www.technologyreview.com/2026/03/04/1133642/bridging-the-operational-ai-gap/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "The Download: Earth’s rumblings, and AI for strikes on Iran",
-      "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology. Listen to Earth’s rumbling, secret soundtrack The boom of a calving glacier. The crackling rumble of a wildfire.",
-      "source": "MIT Technology Review",
-      "category": "music_generation",
-      "importance": 65,
-      "pubDate": "2026-03-04T13:12:00.000Z",
-      "link": "https://www.technologyreview.com/2026/03/04/1133942/the-download-earths-rumblings-and-ai-for-strikes-on-iran/"
-    },
-    {
-      "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9lbmdp",
-      "title": "How we rebuilt the search architecture for high availability in GitHub Enterprise Server",
-      "summary": "Here's how we the search experience better, faster, and more resilient for GHES customers. The post How we rebuilt the search architecture for high availability in GitHub Enterprise Server appeared first on The GitHub Blog.",
-      "source": "The GitHub",
-      "category": "presentation",
-      "importance": 65,
-      "pubDate": "2026-03-03T18:45:09.000Z",
-      "link": "https://github.blog/engineering/architecture-optimization/how-we-rebuilt-the-search-architecture-for-high-availability-in-github-enterprise-server/"
-    },
-    {
-      "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9haS1h",
-      "title": "Join or host a GitHub Copilot Dev Days event near you",
-      "summary": "GitHub Copilot Dev Days is a global series of hands-on, in-person, community-led events designed to help developers explore real-world, AI-assisted coding. The post Join or host a GitHub Copilot Dev Days event near you appeared first on The GitHub Blog.",
-      "source": "The GitHub",
-      "category": "microsoft",
-      "importance": 65,
-      "pubDate": "2026-03-03T16:55:00.000Z",
-      "link": "https://github.blog/ai-and-ml/github-copilot/join-or-host-a-github-copilot-dev-days-event-near-you/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaW5ndWxhcml0eWh1Yi5j",
-      "title": "New Device Detects Brain Waves in Mini Brains Mimicking Early Human Development",
-      "summary": "The flower-shaped device wraps around brain organoids and maps nearly all electrical activity. The post New Device Detects Brain Waves in Mini Brains Mimicking Early Human Development appeared first on SingularityHub.",
-      "source": "Singularity Hub",
-      "category": "tech",
-      "importance": 65,
-      "pubDate": "2026-03-02T23:47:26.000Z",
-      "link": "https://singularityhub.com/2026/03/02/new-device-detects-brain-waves-in-mini-brains-mimicking-early-human-development/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
-      "title": "Pittsburgh Showcases the Next Era of Real-World AI with $1.275 Million Start-up Prize and Draft Week Showcase",
-      "summary": "As the Draft brings national and global attention to Pittsburgh, Carnegie Mellon University, in partnership with the AI Strike Team and Pittsburgh Steelers will host a national showcase highlighting the next era of AI systems designed to operate in the real world, at scale.",
-      "source": "cmu",
-      "category": "audio_generation",
-      "importance": 65,
-      "pubDate": "2026-03-02T13:30:00.000Z",
-      "link": "https://www.cmu.edu/news/stories/archives/2026/march/pittsburgh-showcases-the-next-era-of-real-world-ai-with-1275-million-start-up-prize-and-draft-week"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "This Jammer Wants to Block Always-Listening AI Wearables. It Probably Won’t Work",
-      "summary": "Deveillance’s Spectre I, developed by a recent Harvard grad, wants to give people control over the always-on wearables surrounding their lives.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "tech",
-      "importance": 60,
-      "pubDate": "2026-03-06T23:45:14.000Z",
-      "link": "https://www.wired.com/story/deveillance-spectre-i/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "AIの常時稼働によるトラフィック激増にどう対応するか NEC・東大・NTTが技術を結集",
-      "summary": "NECと東京大学、NTTは、6G/IOWN基盤でAIエージェント向け技術を統合したと発表した。大容量データの通信と計算を効率化し、リアルタイムAR支援の実証で遅延抑制と精度維持を確認した。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 60,
-      "pubDate": "2026-03-06T23:00:00.000Z",
-      "link": "https://www.itmedia.co.jp/enterprise/articles/2603/07/news016.html"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
-      "title": "Netflix acquires Ben Affleck's AI company",
-      "summary": "Affleck's company helps filmmakers build their own AI models that take care of time-intensive details.",
-      "source": "NPR",
-      "category": "video_generation",
-      "importance": 60,
-      "pubDate": "2026-03-06T21:37:17.000Z",
-      "link": "https://www.npr.org/2026/03/06/nx-s1-5739370/netflix-ben-affleck-ai-interpositive-deal"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "Indonesia to ban social media for children under 16",
-      "summary": "Platforms include YouTube, TikTok and Instagram as communication minister says ‘our children face real threats’Indonesia will ban social media for children under 16, its communication and digital affairs minister said on Friday.",
-      "source": "The Guardian",
-      "category": "business",
-      "importance": 60,
-      "pubDate": "2026-03-06T16:25:53.000Z",
-      "link": "https://www.theguardian.com/technology/2026/mar/06/indonesia-social-media-ban-children"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
-      "title": "5 Powerful Python Decorators to Optimize LLM Applications",
-      "summary": "Learn these five Python decorators based on diverse libraries, that take particular significance when used in the context of LLM-based applications.",
-      "source": "KDnuggets",
-      "category": "tech",
-      "importance": 60,
-      "pubDate": "2026-03-06T15:00:19.000Z",
-      "link": "https://www.kdnuggets.com/5-powerful-python-decorators-to-optimize-llm-applications"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "Why Is Alexa+ So Bad?",
-      "summary": "I stuck Amazon’s Echo Show 15 and its Alexa+ AI assistant in my kitchen for a month. Things have not gone well.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "agents",
-      "importance": 60,
-      "pubDate": "2026-03-06T11:00:00.000Z",
-      "link": "https://www.wired.com/story/why-is-amazon-alexa-plus-so-bad/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "Jack Dorsey Is Ready to Explain the Block Layoffs",
-      "summary": "In an exclusive interview with WIRED, Block’s cofounder and CEO says he axed 40 percent of his workforce so that he can rebuild the company “as an intelligence.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "startups",
-      "importance": 60,
-      "pubDate": "2026-03-06T10:00:00.000Z",
-      "link": "https://www.wired.com/story/jack-dorsey-explains-block-layoffs/"
     }
   ]
 }
