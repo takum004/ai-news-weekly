@@ -1,9 +1,19 @@
 {
-  "lastUpdated": "2026-05-02T21:40:03.868Z",
-  "totalArticles": 195,
+  "lastUpdated": "2026-05-03T05:48:24.409Z",
+  "totalArticles": 188,
   "generatedBy": "AI News Aggregator v1.0",
   "sources": 71,
   "articles": [
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9j",
+      "title": "OpenAI、ChatGPTに「Advanced Account Security」導入 ─ Yubicoと提携しパスキー必須化",
+      "summary": "2026年5月3日 あなたのChatGPTには、いま何が積み重なっているでしょうか。仕事の機密、個人的な悩み、書きかけのコード──そのアカウントが、メール以上に「自分」を映す存在になりつつある時代に、OpenAIが本格的なアカウント保護機能 [ ] innovaTopia TaTsu.",
+      "source": "innovaTopia",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-05-03T00:20:59.000Z",
+      "link": "https://innovatopia.jp/cyber-security/cyber-security-news/100211/"
+    },
     {
       "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
       "title": "OpenAI introduces AI-generated pets for its Codex app",
@@ -285,46 +295,6 @@
       "link": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "End-to-end autonomous scientific discovery on a real optical platform",
-      "summary": "27092v1 Announce Type: new Abstract: Scientific research has long been human-led, driving new knowledge and transformative technologies through the continual revision of questions, methods and claims as evidence accumulates.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 95,
-      "pubDate": "2026-05-02T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2604.27092"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Think it, Run it: Autonomous ML pipeline generation via self-healing multi-agent AI",
-      "summary": "27096v1 Announce Type: new Abstract: The purpose of our paper is to develop a unified multi-agent architecture that automates end-to-end machine learning (ML) pipeline generation from datasets and natural-language (NL) goals, improving efficiency, robustness and explainability.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 95,
-      "pubDate": "2026-05-02T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2604.27096"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Unsupervised Electrofacies Classification and Porosity Characterization in the Offshore Keta Basin Using Wireline Logs",
-      "summary": "27126v1 Announce Type: new Abstract: This study presents an unsupervised machine learning workflow for electrofacies analysis in the offshore Keta Basin, Ghana, where core data are scarce.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 95,
-      "pubDate": "2026-05-02T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2604.27126"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Optimal Stop-Loss and Take-Profit Parameterization for Autonomous Trading Agent Swarm",
-      "summary": "27150v1 Announce Type: new Abstract: Autonomous crypto trading systems often spend most of their design effort on finding entries, while exits are left to fixed rules that are rarely tested in a systematic way.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 95,
-      "pubDate": "2026-05-02T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2604.27150"
-    },
-    {
       "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
       "title": "Salesforce launches Agentforce Operations to fix the workflows breaking enterprise AI",
       "summary": "Enterprise AI teams are hitting a wall — not because their models can t reason, but because the workflows underneath them were never built for agents. Tasks fail, handoffs break, and the problem compounds as organizations push agents deeper into back-office systems.",
@@ -445,46 +415,6 @@
       "link": "https://www.itmedia.co.jp/aiplus/articles/2605/01/news110.html"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "なぜ？ ChatGPTの回答で「ゴブリン」増殖の謎 OpenAIが対策済み",
-      "summary": "ChatGPTで「ゴブリン」の比喩が急増した原因をOpenAIが解明。原因は「オタク」人格設定の学習過程における過剰評価だった。後継モデルにも波及したが、現在は人格の廃止やプロンプトによる抑制で修正が図られている。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "openai",
-      "importance": 95,
-      "pubDate": "2026-05-01T05:25:00.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/articles/2605/01/news085.html"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "OpenAI、「ChatGPT」に物理キー対応の高度なセキュリティ機能「AAS」を導入",
-      "summary": "OpenAIは、ChatGPTユーザー向けの保護機能「Advanced Account Security」を発表した。パスキーや物理キーによる認証を導入し、アカウント回復手段を制限することで安全性を高める。有効化によりAI学習の対象からも自動で除外される。Yubicoとの提携による専用キーの優待販売も実施し、全ユーザーが利用可能だ。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "openai",
-      "importance": 95,
-      "pubDate": "2026-05-01T02:08:00.000Z",
-      "link": "https://www.itmedia.co.jp/news/articles/2605/01/news071.html"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "How Shivon Zilis Operated as Elon Musk’s OpenAI Insider",
-      "summary": "Messages presented at trial reveal how Zilis, the mother of four of Musk’s children, acted as an intermediary between him and OpenAI.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "openai",
-      "importance": 95,
-      "pubDate": "2026-05-01T00:51:18.000Z",
-      "link": "https://www.wired.com/story/model-behavior-why-everything-in-musk-v-altman-leads-back-to-shivon-zelis/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Sources: Anthropic potential $900B+ valuation round could happen within 2 weeks",
-      "summary": "Anthropic is asking investors to submit allocations for the AI company’s latest fundraise within the next 48 hours, according to sources familiar with the matter.",
-      "source": "TechCrunch",
-      "category": "anthropic",
-      "importance": 95,
-      "pubDate": "2026-04-30T23:07:56.000Z",
-      "link": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
       "title": "Elon Musk confirms xAI used OpenAI’s models to train Grok",
       "summary": "In a federal courtroom in California on Thursday, Elon Musk testified that his own AI startup, xAI, has used OpenAI's models to improve its own.",
@@ -503,6 +433,26 @@
       "importance": 95,
       "pubDate": "2026-04-29T17:30:27.000Z",
       "link": "https://www.npr.org/2026/04/29/nx-s1-5803833/elon-musk-testimony-openai-altman-day-2"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
+      "title": "AIモデルに「あなたは熟練プログラマーです」と伝えるとかえってプログラマーとしての能力が低下する",
+      "summary": "AIへ指示する際に「あなたはこの分野の専門家です」と伝えることで性能が向上する、というウワサがまことしやかにささやかれています。このウワサを検証した研究がプレプリントサーバーのarXivに掲載されました。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "academic",
+      "importance": 90,
+      "pubDate": "2026-05-02T23:00:00.000Z",
+      "link": "https://gigazine.net/news/20260503-ai-expert-personas/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "AI-generated actors and scripts are now ineligible for Oscars",
+      "summary": "Bad news for Tilly Norwood.",
+      "source": "TechCrunch",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2026-05-02T21:54:58.000Z",
+      "link": "https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/"
     },
     {
       "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vdGVj",
@@ -645,96 +595,6 @@
       "link": "https://gigazine.net/news/20260502-soras-pixel-converter/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Compositional Meta-Learning for Mitigating Task Heterogeneity in Physics-Informed Neural Networks",
-      "summary": "26999v1 Announce Type: new Abstract: Physics-informed neural networks (PINNs) approximate solutions of partial differential equations (PDEs) by embedding physical laws into the loss function.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "meta",
-      "importance": 90,
-      "pubDate": "2026-05-02T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2604.26999"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Binary Spiking Neural Networks as Causal Models",
-      "summary": "27007v1 Announce Type: new Abstract: We provide a causal analysis of Binary Spiking Neural Networks (BSNNs) to explain their behavior. We formally define a BSNN and represent its spiking activity as a binary causal model.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "presentation",
-      "importance": 90,
-      "pubDate": "2026-05-02T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2604.27007"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "When Your LLM Reaches End-of-Life: A Framework for Confident Model Migration in Production Systems",
-      "summary": "27082v1 Announce Type: new Abstract: We present a framework for migrating production Large Language Model (LLM) based systems when the underlying model reaches end-of-life or requires replacement.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "business",
-      "importance": 90,
-      "pubDate": "2026-05-02T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2604.27082"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Unpacking Vibe Coding: Help-Seeking Processes in Student-AI Interactions While Programming",
-      "summary": "27134v1 Announce Type: new Abstract: Generative AI is reshaping higher education programming through vibe coding, where students collaborate with AI via natural language rather than writing code line-by-line.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "code_generation",
-      "importance": 90,
-      "pubDate": "2026-05-02T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2604.27134"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Step-level Optimization for Efficient Computer-use Agents",
-      "summary": "27151v1 Announce Type: new Abstract: Computer-use agents provide a promising path toward general software automation because they can interact directly with arbitrary graphical user interfaces instead of relying on brittle, application-specific integrations.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 90,
-      "pubDate": "2026-05-02T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2604.27151"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Meta acquires robot software startup Assured Robot Intelligence",
-      "summary": "has acquired Assured Robot Intelligence Inc. , a provider of artificial intelligence software for robots. The social media giant announced the deal today without disclosing the financial terms.",
-      "source": "SiliconANGLE",
-      "category": "meta",
-      "importance": 90,
-      "pubDate": "2026-05-02T01:01:40.000Z",
-      "link": "https://siliconangle.com/2026/05/01/meta-acquires-robot-software-startup-assured-robot-intelligence/"
-    },
-    {
-      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
-      "title": "Xが広告プラットフォームを再構築、会社史上最大規模のシステム刷新で最新AIモデルを導入",
-      "summary": "Xの前身・Twitter創業から20周年となる2026年に、Xが「創業以来、最も野心的な広告プラットフォームの再構築」を表明しました。続きを読む.",
-      "source": "GIGAZINE",
-      "category": "tech",
-      "importance": 90,
-      "pubDate": "2026-05-02T01:00:00.000Z",
-      "link": "https://gigazine.net/news/20260502-x-ai-powered-ad-platform/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Nebius acquires AI model optimization startup Eigen AI for $643M",
-      "summary": "Nebius Group NV, a Dutch operator of artificial intelligence data centers, today announced plans to buy software maker Eigen AI Inc. The company will finance the acquisition with cash and stock. It expects to close the deal in a few weeks.",
-      "source": "SiliconANGLE",
-      "category": "business",
-      "importance": 90,
-      "pubDate": "2026-05-01T23:34:20.000Z",
-      "link": "https://siliconangle.com/2026/05/01/nebius-acquires-ai-model-optimization-startup-eigen-ai-643m/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmJjLmNvbS9uZXdz",
-      "title": "Oscars says AI actors and writing cannot win awards",
-      "summary": "The academy that controls the Oscars on Friday issued new award eligibility requirements around the use of artificial intelligence in film.",
-      "source": "BBC",
-      "category": "video_generation",
-      "importance": 90,
-      "pubDate": "2026-05-01T22:30:59.000Z",
-      "link": "https://www.bbc.com/news/articles/cx21dl3v7d3o?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
       "title": "Hidden IT problems are quietly creating risk, shadow IT, and lost productivity",
       "summary": "Presented by TeamViewerEnterprise technology failures are largely invisible. Research from TeamViewer, based on a global survey of 4,200 managers and employees, finds that the majority of digital dysfunction never reaches the IT help desk.",
@@ -775,14 +635,14 @@
       "link": "https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "Study: AI models that consider user's feeling are more likely to make errors",
-      "summary": "Overtuning can cause models to \"prioritize user satisfaction over truthfulness.",
-      "source": "Ars Technica",
-      "category": "academic",
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
+      "title": "Midjourney V8.1がWeb版とDiscordで正式提供開始、SREFとムードボードの画質も大幅向上",
+      "summary": "2026年5月3日 「画質がちょっと良くなりました」──そんな短いアナウンスを、Midjourneyが2026年4月末に投じました。けれども、SREFやムードボードといったクリエイター向け機能の改善に込められた意味を読み解くと、画像生成AI [ ] innovaTopia TaTsu.",
+      "source": "innovaTopia",
+      "category": "image_generation",
       "importance": 85,
-      "pubDate": "2026-05-01T22:23:36.000Z",
-      "link": "https://arstechnica.com/ai/2026/05/study-ai-models-that-consider-users-feeling-are-more-likely-to-make-errors/"
+      "pubDate": "2026-05-03T01:17:45.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/100224/"
     },
     {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
@@ -795,14 +655,44 @@
       "link": "https://siliconangle.com/2026/05/01/ai-inference-live-media-workflows-thecuberesearch/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNv",
-      "title": "Red-teaming a network of agents: Understanding what breaks when AI agents interact at scale",
-      "summary": "Safe agents don’t guarantee a safe ecosystem of interconnected agents. Microsoft Research examines what breaks when AI agents interact and why network-level risks require new approaches.",
-      "source": "Microsoft Research",
-      "category": "microsoft",
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "なぜ？ ChatGPTの回答で「ゴブリン」増殖の謎 OpenAIが対策済み",
+      "summary": "ChatGPTで「ゴブリン」の比喩が急増した原因をOpenAIが解明。原因は「オタク」人格設定の学習過程における過剰評価だった。後継モデルにも波及したが、現在は人格の廃止やプロンプトによる抑制で修正が図られている。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "openai",
       "importance": 85,
-      "pubDate": "2026-04-30T21:53:21.000Z",
-      "link": "https://www.microsoft.com/en-us/research/blog/red-teaming-a-network-of-agents-understanding-what-breaks-when-ai-agents-interact-at-scale/"
+      "pubDate": "2026-05-01T05:25:00.000Z",
+      "link": "https://www.itmedia.co.jp/aiplus/articles/2605/01/news085.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "OpenAI、「ChatGPT」に物理キー対応の高度なセキュリティ機能「AAS」を導入",
+      "summary": "OpenAIは、ChatGPTユーザー向けの保護機能「Advanced Account Security」を発表した。パスキーや物理キーによる認証を導入し、アカウント回復手段を制限することで安全性を高める。有効化によりAI学習の対象からも自動で除外される。Yubicoとの提携による専用キーの優待販売も実施し、全ユーザーが利用可能だ。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "openai",
+      "importance": 85,
+      "pubDate": "2026-05-01T02:08:00.000Z",
+      "link": "https://www.itmedia.co.jp/news/articles/2605/01/news071.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "How Shivon Zilis Operated as Elon Musk’s OpenAI Insider",
+      "summary": "Messages presented at trial reveal how Zilis, the mother of four of Musk’s children, acted as an intermediary between him and OpenAI.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "openai",
+      "importance": 85,
+      "pubDate": "2026-05-01T00:51:18.000Z",
+      "link": "https://www.wired.com/story/model-behavior-why-everything-in-musk-v-altman-leads-back-to-shivon-zelis/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Sources: Anthropic potential $900B+ valuation round could happen within 2 weeks",
+      "summary": "Anthropic is asking investors to submit allocations for the AI company’s latest fundraise within the next 48 hours, according to sources familiar with the matter.",
+      "source": "TechCrunch",
+      "category": "anthropic",
+      "importance": 85,
+      "pubDate": "2026-04-30T23:07:56.000Z",
+      "link": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/"
     },
     {
       "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
@@ -855,16 +745,6 @@
       "link": "https://www.bbc.com/news/articles/c5y9wen5z8ro?at_medium=RSS&at_campaign=rss"
     },
     {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "How Elon Musk Squeezed OpenAI: They ‘Are Gonna Want to Kill Me’",
-      "summary": "Tensions flared on the third day of trial in Musk v. Altman as OpenAI’s lawyers cross-examined Musk.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "openai",
-      "importance": 85,
-      "pubDate": "2026-04-29T23:41:51.000Z",
-      "link": "https://www.wired.com/story/model-behavior-elon-musk-cross-examined-sam-altman/"
-    },
-    {
       "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
       "title": "The MIT-IBM Computing Research Lab launches to shape the future of AI and quantum computing",
       "summary": "Building on a long-standing MIT–IBM collaboration, the new lab will chart the convergence of AI, algorithms, and quantum computing.",
@@ -873,6 +753,56 @@
       "importance": 85,
       "pubDate": "2026-04-29T10:00:00.000Z",
       "link": "https://news.mit.edu/2026/mit-ibm-computing-research-lab-launches-0429"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Malaysia’s Anti-Graft Agency to Quiz Ex-Minister Over Arm Deal",
+      "summary": "Malaysia’s anti-graft agency said it has summoned former economy minister Rafizi Ramli for questioning following a probe into a deal involving Arm Holdings Plc.",
+      "source": "Bloomberg",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-05-03T02:42:42.000Z",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-03/malaysia-s-anti-graft-agency-to-quiz-ex-minister-over-arm-deal"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "Why I own 4 different pairs of headphones, and how I effectively use each one",
+      "summary": "While a true 'all-in-one' pair of headphones may not exist for every user, these four come pretty close.",
+      "source": "Latest news",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-05-03T01:01:07.000Z",
+      "link": "https://www.zdnet.com/article/why-i-own-4-different-pairs-of-headphones/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Nvidia’s Push Into Physical AI Sparks Rally in Asian Partners",
+      "summary": "The list of Asian stocks that benefit from business partnership with Nvidia Corp. is getting longer, as the region further integrates into the AI chip giant’s business ecosystem.",
+      "source": "Bloomberg",
+      "category": "nvidia",
+      "importance": 80,
+      "pubDate": "2026-05-03T00:00:00.000Z",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-03/asian-stocks-soar-as-nvidia-increases-supply-chain-reliance-to-90-in-asia"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "アクセンチュアが日本精工と戦略提携 AIで間接業務改革、製造現場の自動化も",
+      "summary": "アクセンチュアがベアリングに強みを持つ日本精工と戦略的パートナーシップ契約を結んだ。間接業務をAIで効率化しつつ、新商品開発や製造現場の自動化に取り組む。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-05-02T23:00:00.000Z",
+      "link": "https://www.itmedia.co.jp/enterprise/articles/2605/03/news018.html"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9j",
+      "title": "ExpressVPN調査:著名人のWhatsApp・Instagram私的画像86,859枚が漏洩、ストーカーウェア悪用の実態",
+      "summary": "2026年5月3日 サイバーセキュリティ研究者のジェレマイア・ファウラーは、ヨーロッパの著名人および複数のソーシャルメディア有名人に関連する私的な写真、スクリーンショット、メッセージの漏洩を発見した。 ファイルはパスワード保護のない一般公開 [ ] innovaTopia TaTsu.",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-05-02T22:39:38.000Z",
+      "link": "https://innovatopia.jp/cyber-security/cyber-security-news/100195/"
     },
     {
       "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
@@ -955,64 +885,34 @@
       "link": "https://innovatopia.jp/ai/ai-news/100093/"
     },
     {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "ソースネクスト「AutoMemo」クラウド連携を大幅強化—AI議事録が”組織のナレッジ基盤”へ",
-      "summary": "2026年5月2日 会議が終わるたびに、誰かが録画ファイルを取り出して文字起こしツールにアップロードする——その地味な手作業が、組織のナレッジ蓄積を阻む最後の壁でした。ソースネクストはこの摩擦を取り除くべく、AutoMemoを「ファイルを置 [ ] innovaTopia omote.",
-      "source": "innovaTopia",
-      "category": "presentation",
-      "importance": 80,
-      "pubDate": "2026-05-02T06:18:44.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/100086/"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9y",
-      "title": "JAL・GMO AIR、羽田空港で国内初のヒューマノイドロボット実証実験へ 2026年5月開始",
-      "summary": "2026年5月2日 2026年5月、羽田空港のランプエリアに人型ロボットが立つ。日本航空とGMOが仕掛ける国内初の実証実験は、人手不足に揺れる空港業務の風景を、そして私たちの「働く」という概念そのものを、静かに書き換え始めようとしている。 [ ] innovaTopia TaTsu.",
-      "source": "innovaTopia",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-05-01T22:30:00.000Z",
-      "link": "https://innovatopia.jp/robot/robot-news/99995/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Meta buys robotics startup to bolster its humanoid AI ambitions",
-      "summary": "Meta bought humanoid startup Assured Robot Intelligence to beef up its AI models for robots, the company said.",
-      "source": "TechCrunch",
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Meta acquires robot software startup Assured Robot Intelligence",
+      "summary": "has acquired Assured Robot Intelligence Inc. , a provider of artificial intelligence software for robots. The social media giant announced the deal today without disclosing the financial terms.",
+      "source": "SiliconANGLE",
       "category": "meta",
       "importance": 80,
-      "pubDate": "2026-05-01T22:13:27.000Z",
-      "link": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/"
+      "pubDate": "2026-05-02T01:01:40.000Z",
+      "link": "https://siliconangle.com/2026/05/01/meta-acquires-robot-software-startup-assured-robot-intelligence/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "The RAMpocalypse has bought Microsoft valuable time in the fight against SteamOS",
-      "summary": "Op-ed: Valve has made a dent in Windows' gaming share, but can it keep going.",
-      "source": "Ars Technica",
-      "category": "microsoft",
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Nebius acquires AI model optimization startup Eigen AI for $643M",
+      "summary": "Nebius Group NV, a Dutch operator of artificial intelligence data centers, today announced plans to buy software maker Eigen AI Inc. The company will finance the acquisition with cash and stock. It expects to close the deal in a few weeks.",
+      "source": "SiliconANGLE",
+      "category": "business",
       "importance": 80,
-      "pubDate": "2026-05-01T22:00:59.000Z",
-      "link": "https://arstechnica.com/gaming/2026/05/the-rampocalypse-has-bought-microsoft-valuable-time-in-the-fight-against-steamos/"
+      "pubDate": "2026-05-01T23:34:20.000Z",
+      "link": "https://siliconangle.com/2026/05/01/nebius-acquires-ai-model-optimization-startup-eigen-ai-643m/"
     },
     {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "ChatGPT 5.2が東大・京大入試で首席超え、理三で最高点+50点・数学満点—2年前は全敗だったAIの到達点",
-      "summary": "2026年5月2日 2026年1月、生成AIが大学入学共通テストで主要15科目中9科目の満点を獲得したというニュースを、本サイトで 「AIが満点を取る時代に、教育はどう向き合うべきか」 として取り上げました。あれからわずか3ヶ月。今度は東京 [ ] innovaTopia TaTsu.",
-      "source": "innovaTopia",
-      "category": "tech",
+      "id": "aHR0cHM6Ly93d3cuYmJjLmNvbS9uZXdz",
+      "title": "Oscars says AI actors and writing cannot win awards",
+      "summary": "The academy that controls the Oscars on Friday issued new award eligibility requirements around the use of artificial intelligence in film.",
+      "source": "BBC",
+      "category": "video_generation",
       "importance": 80,
-      "pubDate": "2026-05-01T22:00:00.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/99986/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "EBay Soars on Report GameStop Is Preparing Takeover Bid",
-      "summary": "jumped more than 15% in after-hours trading on Friday after the Wall Street Journal reported that video-game retailer GameStop Corp. is preparing a bid for the company.",
-      "source": "Bloomberg",
-      "category": "academic",
-      "importance": 80,
-      "pubDate": "2026-05-01T21:50:15.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-01/ebay-soars-on-report-that-gamestop-is-preparing-a-takeover-bid"
+      "pubDate": "2026-05-01T22:30:59.000Z",
+      "link": "https://www.bbc.com/news/articles/cx21dl3v7d3o?at_medium=RSS&at_campaign=rss"
     },
     {
       "id": "aHR0cHM6Ly93d3cuYmJjLmNvbS9uZXdz",
@@ -1095,34 +995,14 @@
       "link": "https://siliconangle.com/2026/05/01/securonix-partners-ai-spera-bring-criminal-ip-intelligence-threatq/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "RingCentral raises the CX bar with branded messaging, AI and embedded Teams calling",
-      "summary": "Customer experience used to be something tuned at the edges. Better call center scripts, nicer portals, lower prices or a new survey could make incremental improvements in consumers perceptions of a brand.",
-      "source": "SiliconANGLE",
-      "category": "presentation",
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "How Elon Musk Squeezed OpenAI: They ‘Are Gonna Want to Kill Me’",
+      "summary": "Tensions flared on the third day of trial in Musk v. Altman as OpenAI’s lawyers cross-examined Musk.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "openai",
       "importance": 80,
-      "pubDate": "2026-05-01T03:34:51.000Z",
-      "link": "https://siliconangle.com/2026/04/30/ringcentral-raises-cx-bar-branded-messaging-ai-embedded-teams-calling/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "Tim Cook takes victory lap as Apple’s financial results soar past Wall Street expectations",
-      "summary": "2bn in revenue in first earnings report after announcement of Cook’s pending departureApple blew past Wall Street expectations in its first earnings report since it announced CEO Tim Cook would be stepping down.",
-      "source": "The Guardian",
-      "category": "business",
-      "importance": 80,
-      "pubDate": "2026-04-30T23:21:54.000Z",
-      "link": "https://www.theguardian.com/technology/2026/apr/30/apple-extraordinary-earnings-tim-cook-john-ternus"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaW5ndWxhcml0eWh1Yi5j",
-      "title": "How Does Imagination Really Work in the Brain? New Theory Upends What We Knew",
-      "summary": "Imagination may have more to do with the brain activity it silences than the activity it creates. The post How Does Imagination Really Work in the Brain. New Theory Upends What We Knew appeared first on SingularityHub.",
-      "source": "Singularity Hub",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-04-30T22:48:37.000Z",
-      "link": "https://singularityhub.com/2026/04/30/how-does-imagination-really-work-in-the-brain-new-theory-upends-what-we-knew/"
+      "pubDate": "2026-04-29T23:41:51.000Z",
+      "link": "https://www.wired.com/story/model-behavior-elon-musk-cross-examined-sam-altman/"
     },
     {
       "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
@@ -1215,6 +1095,16 @@
       "link": "https://openai.com/index/choco"
     },
     {
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Study: AI models that consider user's feeling are more likely to make errors",
+      "summary": "Overtuning can cause models to \"prioritize user satisfaction over truthfulness.",
+      "source": "Ars Technica",
+      "category": "academic",
+      "importance": 75,
+      "pubDate": "2026-05-01T22:23:36.000Z",
+      "link": "https://arstechnica.com/ai/2026/05/study-ai-models-that-consider-users-feeling-are-more-likely-to-make-errors/"
+    },
+    {
       "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
       "title": "Inexpensive seafloor-hopping submersibles could stoke deep-sea science—and mining",
       "summary": "Smack dab between Australia and South America, the US National Oceanic and Atmospheric Administration (NOAA) research vessel Rainier is currently on a mission to map more than 8,000 square nautical miles of the Pacific seafloor in search of critical mineral deposits.",
@@ -1225,34 +1115,14 @@
       "link": "https://www.technologyreview.com/2026/05/01/1136734/inexpensive-seafloor-hopping-submersibles-could-stoke-deep-sea-science-and-mining/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "‘Awkward and humiliating’: UK job hunters share frustration with AI interviews",
-      "summary": "People describe unnatural process as survey finds nearly half of job seekers have been interviewed by AINearly half (47%) of UK job seekers have had an AI interview, research from the hiring platform Greenhouse has found.",
-      "source": "The Guardian",
-      "category": "research",
+      "id": "aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNv",
+      "title": "Red-teaming a network of agents: Understanding what breaks when AI agents interact at scale",
+      "summary": "Safe agents don’t guarantee a safe ecosystem of interconnected agents. Microsoft Research examines what breaks when AI agents interact and why network-level risks require new approaches.",
+      "source": "Microsoft Research",
+      "category": "microsoft",
       "importance": 75,
-      "pubDate": "2026-05-01T05:00:38.000Z",
-      "link": "https://www.theguardian.com/technology/2026/may/01/uk-job-hunters-frustration-ai-interviews"
-    },
-    {
-      "id": "aHR0cHM6Ly9hdG1hcmtpdC5pdG1lZGlh",
-      "title": "NVIDIA「NemoClaw」がAIエージェント推進の転換点に Clawブームで直面する「特権リスク」",
-      "summary": "企業の関心が「対話型AI」から「AIエージェント」へと移り変わる中、ABI ResearchはNVIDIAのNemoClawを「エンタープライズにおけるAIエージェント採用を加速させるための転換点になる」との見解を示した。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "nvidia",
-      "importance": 75,
-      "pubDate": "2026-05-01T04:00:00.000Z",
-      "link": "https://atmarkit.itmedia.co.jp/ait/articles/2605/01/news057.html"
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
-      "title": "Beacon Biosignals is mapping the brain during sleep",
-      "summary": "Founded by Jake Donoghue PhD ’19 and former MIT researcher Jarrett Revels, the company is creating an AI-driven platform to help diagnose and treat disease.",
-      "source": "news",
-      "category": "research",
-      "importance": 75,
-      "pubDate": "2026-05-01T04:00:00.000Z",
-      "link": "https://news.mit.edu/2026/beacon-biosignals-maps-brain-during-sleep-0501"
+      "pubDate": "2026-04-30T21:53:21.000Z",
+      "link": "https://www.microsoft.com/en-us/research/blog/red-teaming-a-network-of-agents-understanding-what-breaks-when-ai-agents-interact-at-scale/"
     },
     {
       "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
@@ -1285,6 +1155,16 @@
       "link": "https://www.technologyreview.com/2026/04/30/1136713/the-download-north-pole-future-humanoid-data/"
     },
     {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
+      "title": "Sakana AI×SMBC、複数AIエージェントで「提案書自動生成」始動―メガバンクの提案業務はどう変わるか",
+      "summary": "2026年5月3日 銀行員が顧客企業に持参する「提案書」――この職人技の領域に、複数のAIエージェントが入り込む時代がついに始まりました。日本発のAIユニコーン・Sakana AIと三井住友銀行が踏み出した一歩は、ホワイトカラーの「考える仕 [ ] innovaTopia TaTsu.",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-05-03T02:00:00.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/100229/"
+    },
+    {
       "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC91",
       "title": "5月3日【今日は何の日？】世界報道自由デー｜AI偽情報から「真実」を守る三つの盾",
       "summary": "2026年5月3日 2026年5月3日、世界はふたたび「世界報道自由デー（World Press Freedom Day）」を迎える。今年のテーマは「Shaping a Future at Peace（平和な未来を形づくる）」。だが「国境な [ ] innovaTopia TaTsu.",
@@ -1293,6 +1173,26 @@
       "importance": 70,
       "pubDate": "2026-05-02T21:00:00.000Z",
       "link": "https://innovatopia.jp/uncategorized/100145/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Meta buys robotics startup to bolster its humanoid AI ambitions",
+      "summary": "Meta bought humanoid startup Assured Robot Intelligence to beef up its AI models for robots, the company said.",
+      "source": "TechCrunch",
+      "category": "meta",
+      "importance": 70,
+      "pubDate": "2026-05-01T22:13:27.000Z",
+      "link": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "The RAMpocalypse has bought Microsoft valuable time in the fight against SteamOS",
+      "summary": "Op-ed: Valve has made a dent in Windows' gaming share, but can it keep going.",
+      "source": "Ars Technica",
+      "category": "microsoft",
+      "importance": 70,
+      "pubDate": "2026-05-01T22:00:59.000Z",
+      "link": "https://arstechnica.com/gaming/2026/05/the-rampocalypse-has-bought-microsoft-valuable-time-in-the-fight-against-steamos/"
     },
     {
       "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
@@ -1313,16 +1213,6 @@
       "importance": 70,
       "pubDate": "2026-05-01T20:52:05.000Z",
       "link": "https://www.engadget.com/2162342/ai-performances-and-screenplays-wont-be-eligible-for-oscars/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "Apple Raises Mac Mini’s Starting Price to $799 After AI Frenzy Drains Supply",
-      "summary": "raised the starting price of its Mac mini desktop to $799 from $599, adjusting to inventory shortages driven by AI demand and the tight supply of processors.",
-      "source": "Bloomberg",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-05-01T20:31:40.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-01/apple-raises-mac-mini-s-starting-price-to-799-after-ai-frenzy-drains-supply"
     },
     {
       "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
@@ -1475,64 +1365,34 @@
       "link": "https://www.npr.org/2026/05/01/nx-s1-5807131/tech-worker-china-ai"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "ChatGPT Images 2.0 is a hit in India, but not a big winner elsewhere, yet",
-      "summary": "Users in India are embracing ChatGPT Images 2. 0 for creative, personal visuals — from avatars to cinematic portraits.",
-      "source": "TechCrunch",
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "RingCentral raises the CX bar with branded messaging, AI and embedded Teams calling",
+      "summary": "Customer experience used to be something tuned at the edges. Better call center scripts, nicer portals, lower prices or a new survey could make incremental improvements in consumers perceptions of a brand.",
+      "source": "SiliconANGLE",
+      "category": "presentation",
+      "importance": 70,
+      "pubDate": "2026-05-01T03:34:51.000Z",
+      "link": "https://siliconangle.com/2026/04/30/ringcentral-raises-cx-bar-branded-messaging-ai-embedded-teams-calling/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "Tim Cook takes victory lap as Apple’s financial results soar past Wall Street expectations",
+      "summary": "2bn in revenue in first earnings report after announcement of Cook’s pending departureApple blew past Wall Street expectations in its first earnings report since it announced CEO Tim Cook would be stepping down.",
+      "source": "The Guardian",
+      "category": "business",
+      "importance": 70,
+      "pubDate": "2026-04-30T23:21:54.000Z",
+      "link": "https://www.theguardian.com/technology/2026/apr/30/apple-extraordinary-earnings-tim-cook-john-ternus"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaW5ndWxhcml0eWh1Yi5j",
+      "title": "How Does Imagination Really Work in the Brain? New Theory Upends What We Knew",
+      "summary": "Imagination may have more to do with the brain activity it silences than the activity it creates. The post How Does Imagination Really Work in the Brain. New Theory Upends What We Knew appeared first on SingularityHub.",
+      "source": "Singularity Hub",
       "category": "tech",
       "importance": 70,
-      "pubDate": "2026-05-01T02:00:00.000Z",
-      "link": "https://techcrunch.com/2026/04/30/chatgpt-images-2-0-is-a-hit-in-india-but-not-a-big-winner-elsewhere-yet/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "Spotifyが人間アーティスト認証バッジ導入──AI生成コンテンツとの識別を強化",
-      "summary": "Spotifyは、人間のアーティストであることを示す認証バッジ「Verified by Spotify」の導入を発表した。認証にはリスナーの持続的な支持などの実在証跡が必要で、AIアーティストは対象外。判定にはアルゴリズムと人間によるレビューを組み合わせる。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-05-01T00:30:00.000Z",
-      "link": "https://www.itmedia.co.jp/news/articles/2605/01/news065.html"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "Good Luck Getting a Mac Mini for the Next ‘Several Months’",
-      "summary": "Apple CEO Tim Cook told analysts that AI adoption has happened faster than expected.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-04-30T23:00:51.000Z",
-      "link": "https://www.wired.com/story/apple-sold-out-mac-mini-openclaw/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "「時短ツール」としてAIを使い続ける企業の“落とし穴” ガートナーが警鐘",
-      "summary": "ガートナーによると、AI活用の成果を生産性だけで測る企業と、そうでない企業との間に今後、大きな格差が生まれる可能性がある。では、生産性以外の何を指標とすべきか。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-04-30T23:00:00.000Z",
-      "link": "https://www.itmedia.co.jp/enterprise/articles/2605/01/news050.html"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "The craziest part of Musk v. Altman happened while the jury was out of the room",
-      "summary": "Okay, I am not a lawyer so I only understood about half of what just happened. But I am fairly sure, given the context, that Elon Musk's lawyers may have just fucked up big. Jared \"James Brickhouse\" Birchall, Musk's finance guy and all-around fixer, took the stand after Musk today.",
-      "source": "The Verge",
-      "category": "regulation",
-      "importance": 70,
-      "pubDate": "2026-04-30T22:59:51.000Z",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/921713/musk-v-altman-jared-birchall-screw-up-xai"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Apple was surprised by AI-driven demand for Macs",
-      "summary": "Apple said it will be supply-constrained on Mac mini, Studio, and Neo in the next quarter, too.",
-      "source": "TechCrunch",
-      "category": "music_generation",
-      "importance": 70,
-      "pubDate": "2026-04-30T22:12:52.000Z",
-      "link": "https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs/"
+      "pubDate": "2026-04-30T22:48:37.000Z",
+      "link": "https://singularityhub.com/2026/04/30/how-does-imagination-really-work-in-the-brain-new-theory-upends-what-we-knew/"
     },
     {
       "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
@@ -1575,16 +1435,6 @@
       "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/"
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
-      "title": "Solving the “Whac-a-mole dilemma”: A smarter way to debias AI vision models",
-      "summary": "A new debiasing technique called WRING avoids creating or amplifying biases that can occur with existing debiasing approaches.",
-      "source": "news",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-04-29T21:40:00.000Z",
-      "link": "https://news.mit.edu/2026/smarter-way-to-debias-ai-vision-models-0429"
-    },
-    {
       "id": "aHR0cHM6Ly9ibG9ncy5udmlkaWEuY29t",
       "title": "NVIDIA Launches Nemotron 3 Nano Omni Model, Unifying Vision, Audio and Language for up to 9x More Efficient AI Agents",
       "summary": "AI agent systems today juggle separate models for vision, speech and language — losing time and context as they pass data from one model to the other.",
@@ -1605,6 +1455,36 @@
       "link": "https://emerj.com/artificial-intelligence-at-lloyds-banking-group/"
     },
     {
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "‘Awkward and humiliating’: UK job hunters share frustration with AI interviews",
+      "summary": "People describe unnatural process as survey finds nearly half of job seekers have been interviewed by AINearly half (47%) of UK job seekers have had an AI interview, research from the hiring platform Greenhouse has found.",
+      "source": "The Guardian",
+      "category": "research",
+      "importance": 65,
+      "pubDate": "2026-05-01T05:00:38.000Z",
+      "link": "https://www.theguardian.com/technology/2026/may/01/uk-job-hunters-frustration-ai-interviews"
+    },
+    {
+      "id": "aHR0cHM6Ly9hdG1hcmtpdC5pdG1lZGlh",
+      "title": "NVIDIA「NemoClaw」がAIエージェント推進の転換点に Clawブームで直面する「特権リスク」",
+      "summary": "企業の関心が「対話型AI」から「AIエージェント」へと移り変わる中、ABI ResearchはNVIDIAのNemoClawを「エンタープライズにおけるAIエージェント採用を加速させるための転換点になる」との見解を示した。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "nvidia",
+      "importance": 65,
+      "pubDate": "2026-05-01T04:00:00.000Z",
+      "link": "https://atmarkit.itmedia.co.jp/ait/articles/2605/01/news057.html"
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
+      "title": "Beacon Biosignals is mapping the brain during sleep",
+      "summary": "Founded by Jake Donoghue PhD ’19 and former MIT researcher Jarrett Revels, the company is creating an AI-driven platform to help diagnose and treat disease.",
+      "source": "news",
+      "category": "research",
+      "importance": 65,
+      "pubDate": "2026-05-01T04:00:00.000Z",
+      "link": "https://news.mit.edu/2026/beacon-biosignals-maps-brain-during-sleep-0501"
+    },
+    {
       "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
       "title": "In real-world test, an AI model did better than doctors at diagnosing patients",
       "summary": "Researchers evaluated how well an AI model could diagnose and make decisions about patient care in the ER.",
@@ -1616,13 +1496,13 @@
     },
     {
       "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
-      "title": "Making the case for curiosity-driven science",
-      "summary": "President Sally Kornbluth spoke in front of a packed crowd about growing challenges to the U. research ecosystem as funding for America’s top research universities becomes increasingly strained.",
+      "title": "Solving the “Whac-a-mole dilemma”: A smarter way to debias AI vision models",
+      "summary": "A new debiasing technique called WRING avoids creating or amplifying biases that can occur with existing debiasing approaches.",
       "source": "news",
-      "category": "research",
+      "category": "tech",
       "importance": 65,
-      "pubDate": "2026-04-30T04:00:00.000Z",
-      "link": "https://news.mit.edu/2026/making-case-curiosity-driven-science"
+      "pubDate": "2026-04-29T21:40:00.000Z",
+      "link": "https://news.mit.edu/2026/smarter-way-to-debias-ai-vision-models-0429"
     },
     {
       "id": "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9i",
@@ -1685,24 +1565,54 @@
       "link": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuYmJjLmNvbS9uZXdz",
-      "title": "Will AI lead to more accurate opinion polls?",
-      "summary": "It's cheaper and faster to collect people's opinions using AI, but will it make polls more accurate.",
-      "source": "BBC",
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "ChatGPT Images 2.0 is a hit in India, but not a big winner elsewhere, yet",
+      "summary": "Users in India are embracing ChatGPT Images 2. 0 for creative, personal visuals — from avatars to cinematic portraits.",
+      "source": "TechCrunch",
       "category": "tech",
       "importance": 60,
-      "pubDate": "2026-04-30T23:11:37.000Z",
-      "link": "https://www.bbc.com/news/articles/cwyw6rylzepo?at_medium=RSS&at_campaign=rss"
+      "pubDate": "2026-05-01T02:00:00.000Z",
+      "link": "https://techcrunch.com/2026/04/30/chatgpt-images-2-0-is-a-hit-in-india-but-not-a-big-winner-elsewhere-yet/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "Spotifyが人間アーティスト認証バッジ導入──AI生成コンテンツとの識別を強化",
+      "summary": "Spotifyは、人間のアーティストであることを示す認証バッジ「Verified by Spotify」の導入を発表した。認証にはリスナーの持続的な支持などの実在証跡が必要で、AIアーティストは対象外。判定にはアルゴリズムと人間によるレビューを組み合わせる。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-05-01T00:30:00.000Z",
+      "link": "https://www.itmedia.co.jp/news/articles/2605/01/news065.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "Good Luck Getting a Mac Mini for the Next ‘Several Months’",
+      "summary": "Apple CEO Tim Cook told analysts that AI adoption has happened faster than expected.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-04-30T23:00:51.000Z",
+      "link": "https://www.wired.com/story/apple-sold-out-mac-mini-openclaw/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "The craziest part of Musk v. Altman happened while the jury was out of the room",
+      "summary": "Okay, I am not a lawyer so I only understood about half of what just happened. But I am fairly sure, given the context, that Elon Musk's lawyers may have just fucked up big. Jared \"James Brickhouse\" Birchall, Musk's finance guy and all-around fixer, took the stand after Musk today.",
+      "source": "The Verge",
+      "category": "regulation",
+      "importance": 60,
+      "pubDate": "2026-04-30T22:59:51.000Z",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/921713/musk-v-altman-jared-birchall-screw-up-xai"
     },
     {
       "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Legal AI startup Legora hits $5.6B valuation and its battle with Harvey just got hotter",
-      "summary": "The two wildly fast-growing rivals have raised massive sums, pushed into each other's home turf, and now have dueling ad campaigns.",
+      "title": "Apple was surprised by AI-driven demand for Macs",
+      "summary": "Apple said it will be supply-constrained on Mac mini, Studio, and Neo in the next quarter, too.",
       "source": "TechCrunch",
-      "category": "business",
+      "category": "music_generation",
       "importance": 60,
-      "pubDate": "2026-04-30T20:14:47.000Z",
-      "link": "https://techcrunch.com/2026/04/30/legal-ai-startup-legora-hits-5-6-valuation-and-its-battle-with-harvey-just-got-hotter/"
+      "pubDate": "2026-04-30T22:12:52.000Z",
+      "link": "https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs/"
     },
     {
       "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
@@ -1793,6 +1703,16 @@
       "importance": 60,
       "pubDate": "2026-04-30T06:00:09.000Z",
       "link": "https://www.theguardian.com/technology/2026/apr/30/galaxy-s26-review-samsung-android-ai-loaded-battery-camera"
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
+      "title": "Making the case for curiosity-driven science",
+      "summary": "President Sally Kornbluth spoke in front of a packed crowd about growing challenges to the U. research ecosystem as funding for America’s top research universities becomes increasingly strained.",
+      "source": "news",
+      "category": "research",
+      "importance": 60,
+      "pubDate": "2026-04-30T04:00:00.000Z",
+      "link": "https://news.mit.edu/2026/making-case-curiosity-driven-science"
     },
     {
       "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
@@ -1943,6 +1863,16 @@
       "importance": 55,
       "pubDate": "2026-04-27T04:00:00.000Z",
       "link": "https://news.mit.edu/2026/faster-way-to-estimate-ai-power-consumption-0427"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmJjLmNvbS9uZXdz",
+      "title": "Will AI lead to more accurate opinion polls?",
+      "summary": "It's cheaper and faster to collect people's opinions using AI, but will it make polls more accurate.",
+      "source": "BBC",
+      "category": "tech",
+      "importance": 50,
+      "pubDate": "2026-04-30T23:11:37.000Z",
+      "link": "https://www.bbc.com/news/articles/cwyw6rylzepo?at_medium=RSS&at_campaign=rss"
     },
     {
       "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
