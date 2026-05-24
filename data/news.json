@@ -1,9 +1,29 @@
 {
-  "lastUpdated": "2026-05-23T21:53:59.069Z",
-  "totalArticles": 200,
+  "lastUpdated": "2026-05-24T06:25:47.757Z",
+  "totalArticles": 185,
   "generatedBy": "AI News Aggregator v1.0",
   "sources": 71,
   "articles": [
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
+      "title": "Gemini、本番コード約3万行を削除し復旧レポートを偽造｜サプライチェーン攻撃の新たな顔",
+      "summary": "2026年5月24日 2026年5月21日、The Register誌は、ある開発者がGoogleのGeminiコーディングアシスタントが稼働中のアプリケーションから本番コードを約3万行削除したと主張していると報じた。 Redditのr/Ba [ ] innovaTopia omote.",
+      "source": "innovaTopia",
+      "category": "google",
+      "importance": 100,
+      "pubDate": "2026-05-24T02:00:00.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/105146/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hdG1hcmtpdC5pdG1lZGlh",
+      "title": "「Gemini」「Claude Code」「Codex」 全社展開・本番実装に役立つ5つのポイント",
+      "summary": "開発現場における生成AIの利用は常態化しつつあるものの、「コード補完の域を出ない」「特定の個人のスキルに依存している」といった課題があります。本稿では、個人の生産性向上からチームへの定着、全社規模での展開、そしてAIエージェントの本番実装に至るまで、開発プロセス変革に役立つ5つのポイントを整理します。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 100,
+      "pubDate": "2026-05-23T23:00:00.000Z",
+      "link": "https://atmarkit.itmedia.co.jp/ait/articles/2605/24/news007.html"
+    },
     {
       "id": "aHR0cHM6Ly90aGVuZXh0d2ViLmNvbS9u",
       "title": "SpaceX’s IPO filing reveals Musk’s clean energy contradiction. xAI burns gas while Tesla sells solar.",
@@ -83,36 +103,6 @@
       "importance": 100,
       "pubDate": "2026-05-23T08:26:39.000Z",
       "link": "https://thenextweb.com/news/xiaomi-yu7-standard-tesla-model-y-price-range"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9j",
-      "title": "Anthropic主導「Project Glasswing」にIBM参画｜AI時代のセキュリティ防衛連合へ",
-      "summary": "2026年5月23日 AIが脆弱性を見つけ出すスピードが、人間の専門家を超えつつあります。攻撃者がその力を握れば、世界中のソフトウェアが一夜で危険にさらされかねません。この事態に対し、Anthropicが立ち上げた業界連合「Project G [ ] innovaTopia omote.",
-      "source": "innovaTopia",
-      "category": "anthropic",
-      "importance": 100,
-      "pubDate": "2026-05-23T06:24:32.000Z",
-      "link": "https://innovatopia.jp/cyber-security/cyber-security-news/105024/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "HealthCraft: A Reinforcement Learning Safety Environment for Emergency Medicine",
-      "summary": "21496v1 Announce Type: new Abstract: Frontier language models are being deployed into clinical workflows faster than the infrastructure to evaluate them safely.",
-      "source": "cs.LG updates on arXiv.org",
-      "category": "agents",
-      "importance": 100,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21496"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "New Zealand to Invest in Drones, Fleet to Shield Maritime Routes",
-      "summary": "New Zealand intends to spend about NZ$1. 6 billion ($936 million) on drones, ship maintenance and naval upgrades to bolster the island nation’s maritime security at a time of increasing concern about supply routes.",
-      "source": "Bloomberg",
-      "category": "business",
-      "importance": 100,
-      "pubDate": "2026-05-23T00:35:09.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-23/new-zealand-to-invest-in-drones-fleet-to-shield-maritime-routes"
     },
     {
       "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
@@ -285,16 +275,6 @@
       "link": "https://www.engadget.com/2178197/google-io-2026-opinion-are-you-really-going-to-talk-to-gemini-like-that/"
     },
     {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints",
-      "summary": "Today, Amazon SageMaker AI introduces OpenAI-compatible API support for real-time inference endpoints. If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL.",
-      "source": "aws",
-      "category": "openai",
-      "importance": 100,
-      "pubDate": "2026-05-20T23:59:57.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/announcing-openai-compatible-api-support-for-amazon-sagemaker-ai-endpoints/"
-    },
-    {
       "id": "aHR0cHM6Ly9ibG9nLmdvb2dsZS9pbm5v",
       "title": "100 things we announced at I/O 2026",
       "summary": "This year at Google I/O 2026, we announced Gemini Omni, Google Antigravity, Universal Cart and so much more. Here are the highlights.",
@@ -345,114 +325,14 @@
       "link": "https://www.bloomberg.com/news/articles/2026-05-23/hyperscaler-debt-flood-brings-derivatives-bonanza-credit-weekly"
     },
     {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Benchmarking and Improving Monitors for Out-Of-Distribution Alignment Failure in LLMs",
-      "summary": "21602v1 Announce Type: new Abstract: Many safety and alignment failures of large language models (LLMs) occur due to out-of-distribution (OOD) situations: unusual prompt or response patterns that are unforeseen by model developers.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "research",
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "New Zealand to Invest in Drones, Fleet to Shield Maritime Routes",
+      "summary": "New Zealand intends to spend about NZ$1. 6 billion ($936 million) on drones, ship maintenance and naval upgrades to bolster the island nation’s maritime security at a time of increasing concern about supply routes.",
+      "source": "Bloomberg",
+      "category": "business",
       "importance": 95,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21602"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "TO-Agents: A Multi-Agent AI Pipeline for Preference-Guided Topology Optimization",
-      "summary": "21622v1 Announce Type: new Abstract: Topology optimization can generate efficient structures, but designers often must manually translate qualitative intent, such as desired visual style, product experience, or manufacturability into solver settings that are not directly tied to those preferences.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 95,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21622"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Investigating Concept Alignment Using Implausible Category Members",
-      "summary": "21683v1 Announce Type: new Abstract: Developing AI systems with a human-like understanding of everyday concepts is a key step towards developing safe, reliable systems whose behavior makes sense to humans. When probing concept understanding, asking questions about plausible category members (e.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "translation",
-      "importance": 95,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21683"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "The Impact of AI Usage and Informativeness on Skill Development in Logical Reasoning",
-      "summary": "21695v1 Announce Type: new Abstract: Artificial intelligence (AI) is being increasingly integrated into human problem-solving, yet its effects on individual skill development remain unclear.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "reasoning",
-      "importance": 95,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21695"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Temporal Contrastive Transformer for Financial Crime Detection: Self-Supervised Sequence Embeddings via Predictive Contrastive Coding",
-      "summary": "21490v1 Announce Type: new Abstract: We introduce the Temporal Contrastive Transformer (TCT), a representation learning framework designed to capture contextual temporal dynamics in sequences of financial transactions.",
-      "source": "cs.LG updates on arXiv.org",
-      "category": "presentation",
-      "importance": 95,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21490"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Teaching Language Models to Forecast Research Success Through Comparative Idea Evaluation",
-      "summary": "21491v1 Announce Type: new Abstract: As language models accelerate scientific research by automating hypothesis generation and implementation, a new bottleneck emerges: evaluating and filtering hundreds of AI-generated ideas without exhaustive experimentation.",
-      "source": "cs.LG updates on arXiv.org",
-      "category": "agents",
-      "importance": 95,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21491"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Double descent for least-squares interpolation on contaminated data: A simulation study",
-      "summary": "21494v1 Announce Type: new Abstract: Overparametrized models can exhibit an excellent generalization performance, although they should be prone to overfitting according to classical statistical theory.",
-      "source": "cs.LG updates on arXiv.org",
-      "category": "automation",
-      "importance": 95,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21494"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Predicting Performance of Symbolic and Prompt Programs with Examples",
-      "summary": "21515v1 Announce Type: new Abstract: LLM prompting is widely used for naturally stated tasks, yet it is unreliable it may succeed on a few test cases but fail at deployment time. We study performance prediction: given a program, either symbolic (e.",
-      "source": "cs.LG updates on arXiv.org",
-      "category": "academic",
-      "importance": 95,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21515"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Harnesses for Inference-Time Alignment over Execution Trajectories",
-      "summary": "21516v1 Announce Type: new Abstract: Harness engineering has emerged as an important inference-time technique for large language model (LLM) agents, aiming to improve long-term performance through task decomposition and guided execution.",
-      "source": "cs.LG updates on arXiv.org",
-      "category": "agents",
-      "importance": 95,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21516"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "A Reproducible Log-Driven AutoML Framework for Interpretable Pipeline Optimization in Healthcare Risk Prediction",
-      "summary": "21528v1 Announce Type: new Abstract: Accurate and reproducible disease risk prediction remains challenging due to heterogeneous features, limited samples, and severe class imbalance.",
-      "source": "cs.LG updates on arXiv.org",
-      "category": "presentation",
-      "importance": 95,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21528"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals",
-      "summary": "Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs ahead of Memorial Day.",
-      "source": "Latest news",
-      "category": "retail",
-      "importance": 95,
-      "pubDate": "2026-05-23T02:04:00.000Z",
-      "link": "https://www.zdnet.com/article/best-early-memorial-day-2026-ssd-deals/"
+      "pubDate": "2026-05-23T00:35:09.000Z",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-23/new-zealand-to-invest-in-drones-fleet-to-shield-maritime-routes"
     },
     {
       "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
@@ -535,36 +415,6 @@
       "link": "https://www.technologyreview.com/2026/05/22/1137813/google-i-o-showed-how-the-path-for-ai-science-is-shifting/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "「Google AI Pro」ユーザーはYouTube広告ほぼ非表示 「Premium Lite」無料付与",
-      "summary": "Googleグループの特典を付与することで、AIプランの契約者数を拡大する狙いだ。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "google",
-      "importance": 95,
-      "pubDate": "2026-05-22T04:27:00.000Z",
-      "link": "https://www.itmedia.co.jp/news/articles/2605/22/news107.html"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "Can OpenAI’s ‘Master of Disaster’ Fix AI’s Reputation Crisis?",
-      "summary": "Global affairs chief Chris Lehane wants to tone down the debate over AI’s societal impacts—and get states to pass laws that won’t derail OpenAI’s meteoric rise.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "openai",
-      "importance": 95,
-      "pubDate": "2026-05-22T00:04:25.000Z",
-      "link": "https://www.wired.com/story/openai-chris-lehane-global-affairs-pr/"
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
-      "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
-      "source": "Open",
-      "category": "openai",
-      "importance": 95,
-      "pubDate": "2026-05-22T00:00:00.000Z",
-      "link": "https://openai.com/index/gartner-2026-agentic-coding-leader"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
       "title": "In desperate times, graduates find hope in humiliating tech CEOs",
       "summary": "University graduates are booing and heckling corporate executives who praise AI during their commencement ceremonies, and the only people who seem to be genuinely surprised by this are the executives themselves.",
@@ -583,6 +433,16 @@
       "importance": 95,
       "pubDate": "2026-05-21T16:00:17.000Z",
       "link": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Announcing OpenAI-compatible API support for Amazon SageMaker AI endpoints",
+      "summary": "Today, Amazon SageMaker AI introduces OpenAI-compatible API support for real-time inference endpoints. If you use the OpenAI SDK, LangChain, or Strands Agents, you can now invoke models on SageMaker AI by changing only your endpoint URL.",
+      "source": "aws",
+      "category": "openai",
+      "importance": 95,
+      "pubDate": "2026-05-20T23:59:57.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/announcing-openai-compatible-api-support-for-amazon-sagemaker-ai-endpoints/"
     },
     {
       "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
@@ -613,6 +473,26 @@
       "importance": 95,
       "pubDate": "2026-05-19T17:45:00.000Z",
       "link": "https://blog.google/products-and-platforms/products/search/ai-mode-us-insights/"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
+      "title": "農機具メーカーのディア・アンド・カンパニーが「修理する権利」の訴訟で15億円以上の和解金を支払う",
+      "summary": "「ジョン・ディア」のブランドで知られる農機具大手のディア・アンド・カンパニーが、農家に独自の修理を許さなかった件についての集団訴訟で9900万ドル(約15億6000万円)の和解金を支払うことに合意しました。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2026-05-23T23:00:00.000Z",
+      "link": "https://gigazine.net/news/20260524-john-deere-right-to-repair-settlement/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vaGVh",
+      "title": "The Best Places to Buy Replacement Prescription Lenses Online",
+      "summary": "If you want to keep your favorite glasses frames, but have a new prescription, these are the best online retailers for buying replacement lenses.",
+      "source": "CNET",
+      "category": "retail",
+      "importance": 90,
+      "pubDate": "2026-05-23T22:00:00.000Z",
+      "link": "https://www.cnet.com/health/personal-care/best-places-to-buy-replacement-prescription-lenses/"
     },
     {
       "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
@@ -703,116 +583,6 @@
       "importance": 90,
       "pubDate": "2026-05-23T09:09:34.000Z",
       "link": "https://thenextweb.com/news/waymo-pauses-five-cities-flooded-roads-recall"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "MindLoom: Composing Thought Modes for Frontier-Level Reasoning Data Synthesis",
-      "summary": "21630v1 Announce Type: new Abstract: Although LLMs have made substantial progress in reasoning, systematically producing frontier-level reasoning data remains difficult.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "music_generation",
-      "importance": 90,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21630"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "AOP-Wiki EMOD 3.0: Data Model Expansions and Content Evaluation Framework for Using Agentic AI to Improve Integration between AOPs and New Approach Methodologies (NAMs)",
-      "summary": "21645v1 Announce Type: new Abstract: Adverse Outcome Pathways (AOP) are logic models that causally link biological mechanisms that can be measured in a lab to adverse outcomes, relevant to chemical regulatory endpoints.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 90,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21645"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Latent-space Attacks for Refusal Evasion in Language Models",
-      "summary": "21706v1 Announce Type: new Abstract: Safety-aligned language models are trained to refuse harmful requests, yet refusal behavior can be suppressed by steering their internal representations.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "presentation",
-      "importance": 90,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21706"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "AttuneBench: A Conversation-Based Benchmark for LLM Emotional Intelligence",
-      "summary": "21739v1 Announce Type: new Abstract: Emotional intelligence (EI), the ability to perceive, understand, and respond appropriately to others' emotional states, is central to human communication, and increasingly important to assess as LLMs assume conversational roles in everyday life.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "video_generation",
-      "importance": 90,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21739"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "SMDD-Bench: Can LLMs Solve Real-World Small Molecule Drug Design Tasks?",
-      "summary": "21740v1 Announce Type: new Abstract: LLM agents have incredible potential for scientific discovery applications. However, the performance of LLM agents on real-world, small molecule drug design (SMDD) tasks across diverse chemistries and targets is unclear.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 90,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21740"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "The Attribution Impossibility: No Feature Ranking Is Faithful, Stable, and Complete Under Collinearity",
-      "summary": "21492v1 Announce Type: new Abstract: No feature ranking can be simultaneously faithful, stable, and complete when features are collinear. For collinear pairs, ranking reduces to a coin flip.",
-      "source": "cs.LG updates on arXiv.org",
-      "category": "agents",
-      "importance": 90,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21492"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Don't Collapse Your Features: Why CenterLoss Hurts OOD Detection and Multi-Scale Mahalanobis Wins",
-      "summary": "21493v1 Announce Type: new Abstract: The ability to detect out-of-distribution (OOD) inputs is fundamental to safe deployment of machine learning systems.",
-      "source": "cs.LG updates on arXiv.org",
-      "category": "presentation",
-      "importance": 90,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21493"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "DualOptim+: Bridging Shared and Decoupled Optimizer States for Better Machine Unlearning in Large Language Models",
-      "summary": "21539v1 Announce Type: new Abstract: We propose DualOptim+, a novel optimization framework for improving machine unlearning in large language models.",
-      "source": "cs.LG updates on arXiv.org",
-      "category": "presentation",
-      "importance": 90,
-      "pubDate": "2026-05-23T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2605.21539"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "Sunrise Movement takes credit for disrupting Trump’s New York state rally – as it happened",
-      "summary": "This blog has now closed.",
-      "source": "The Guardian",
-      "category": "tech",
-      "importance": 90,
-      "pubDate": "2026-05-23T01:58:52.000Z",
-      "link": "https://www.theguardian.com/us-news/live/2026/may/22/donald-trump-ai-china-iran-war-powers-hormuz-latest-news-updates"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Trump delays AI executive order after tech industry pushback",
-      "summary": "President Donald Trump has delayed the signing of an executive order designed to regulate advanced artificial intelligence models. “I didn’t like certain aspects of it. I postponed it,” Trump told reporters at a Thursday event in the Oval Office.",
-      "source": "SiliconANGLE",
-      "category": "tech",
-      "importance": 90,
-      "pubDate": "2026-05-22T23:09:44.000Z",
-      "link": "https://siliconangle.com/2026/05/22/trump-delays-ai-executive-order-tech-industry-pushback/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "「Cursor」開発の新モデル、コスト1/10で最先端モデル並み性能 第三者機関が評価",
-      "summary": "Cursorが新AIモデル「Composer 2. 5」を発表。Artificial Analysisの評価で、コーディングエージェント性能ランキング3位に。Claude Opus 4. 5などの最先端モデル並みの性能を約10分の1のコストで実現したという。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "code_generation",
-      "importance": 90,
-      "pubDate": "2026-05-21T22:13:00.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2605/22/2000000017/"
     },
     {
       "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
@@ -925,6 +695,46 @@
       "link": "https://deepmind.google/blog/simulate-real-world-places-with-project-genie-and-street-view/"
     },
     {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "Best Buy and Amazon has dropped major SSDs prices - I found the best storage deals",
+      "summary": "Retailers like Amazon and Best Buy are offering steep discounts on high-capacity SSDs ahead of Memorial Day.",
+      "source": "Latest news",
+      "category": "retail",
+      "importance": 85,
+      "pubDate": "2026-05-23T02:04:00.000Z",
+      "link": "https://www.zdnet.com/article/best-early-memorial-day-2026-ssd-deals/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "「Google AI Pro」ユーザーはYouTube広告ほぼ非表示 「Premium Lite」無料付与",
+      "summary": "Googleグループの特典を付与することで、AIプランの契約者数を拡大する狙いだ。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "google",
+      "importance": 85,
+      "pubDate": "2026-05-22T04:27:00.000Z",
+      "link": "https://www.itmedia.co.jp/news/articles/2605/22/news107.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "Can OpenAI’s ‘Master of Disaster’ Fix AI’s Reputation Crisis?",
+      "summary": "Global affairs chief Chris Lehane wants to tone down the debate over AI’s societal impacts—and get states to pass laws that won’t derail OpenAI’s meteoric rise.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "openai",
+      "importance": 85,
+      "pubDate": "2026-05-22T00:04:25.000Z",
+      "link": "https://www.wired.com/story/openai-chris-lehane-global-affairs-pr/"
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
+      "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+      "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
+      "source": "Open",
+      "category": "openai",
+      "importance": 85,
+      "pubDate": "2026-05-22T00:00:00.000Z",
+      "link": "https://openai.com/index/gartner-2026-agentic-coding-leader"
+    },
+    {
       "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
       "title": "Meta Is in Crisis, Google Search’s Makeover, and AI Gets Booed by Graduates",
       "summary": "In this episode of Uncanny Valley, we unpack the mass layoffs at Meta, big announcements at Google I/O, and the latest backlash against AI.",
@@ -963,6 +773,76 @@
       "importance": 85,
       "pubDate": "2026-05-17T13:50:34.000Z",
       "link": "https://deepmind.google/blog/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "‘AI washing’: firms are scrambling to rebrand themselves as tech-focused",
+      "summary": "PR executives say UK companies are forcing them to present ordinary automation as artificial intelligence UK companies are performing “yoga-level” stretches to describe themselves as AI specialists in an attempt to capitalise on the buzz around the technology, public relations firms have said.",
+      "source": "The Guardian",
+      "category": "automation",
+      "importance": 80,
+      "pubDate": "2026-05-24T06:00:50.000Z",
+      "link": "https://www.theguardian.com/technology/2026/may/24/ai-washing-pr-firms-scrambling-rebrand"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9j",
+      "title": "フロンティアAIが脆弱性を大量発見する時代へ—金融庁・日銀、Project YATA-Shieldに沿う1ヶ月対応を全金融機関に要請",
+      "summary": "2026年5月24日 金融庁は2026年5月22日、関係事業者代表者宛に「フロンティアAIによる脅威変化を踏まえた金融機関等の短期的な対応」に係る要請を発出した。 発出者は金融庁総合政策局長の堀本善雄、企画市場局長の井上俊剛、監督局長の石田晋 [ ] innovaTopia TaTsu.",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-05-24T05:00:00.000Z",
+      "link": "https://innovatopia.jp/cyber-security/cyber-security-news/105164/"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
+      "title": "スターバックス、AI在庫管理ツールを9か月で撤回｜現場運用ギャップが示すリテールAIの教訓",
+      "summary": "2026年5月24日 スターバックスは2026年5月、北米店舗で導入していたAIによる在庫管理システムを撤回した。Reutersが2026年5月21日付で報じたところによると、Reutersが入手した社内コミュニケーションでは、オーツミルクと [ ] innovaTopia omote.",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-05-24T03:00:00.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/105150/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "Samsung is giving away free 32-inch Odyssey monitors - seriously",
+      "summary": "Samsung's BOGO monitor deal is back, back, back again. Here's what you need to know to snag yours.",
+      "source": "Latest news",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-05-24T02:06:00.000Z",
+      "link": "https://www.zdnet.com/article/samsung-m9-odyssey-g7-bogo-deal/"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC90",
+      "title": "Meta「Forum」始動でReddit株が約6%下落―AI検索カジュアルユーザー争奪戦へ",
+      "summary": "2026年5月24日 2026年5月22日、Redditの株価が約6%下落した。同日、MetaがFacebook Groupsのスタンドアロン版アプリ「Forum」をリリースし、インターネットユーザーが議論グループを形成する代替の場となりうる [ ] innovaTopia omote.",
+      "source": "innovaTopia",
+      "category": "meta",
+      "importance": 80,
+      "pubDate": "2026-05-24T01:00:00.000Z",
+      "link": "https://innovatopia.jp/tech-economy/tech-economynews/105142/"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9j",
+      "title": "Perplexity「Bumblebee」をオープンソース化、開発者PCを守るサプライチェーン対策スキャナーをGitHubで公開",
+      "summary": "2026年5月24日 AI 企業が、セキュリティツールを無償で配り始めた——。Perplexity が2026年5月22日、開発者マシンを守るための社内スキャナー「Bumblebee」をオープンソース化しました。AI の競争はモデル性能だけで [ ] innovaTopia TaTsu.",
+      "source": "innovaTopia",
+      "category": "security",
+      "importance": 80,
+      "pubDate": "2026-05-24T00:00:00.000Z",
+      "link": "https://innovatopia.jp/cyber-security/cyber-security-news/105133/"
+    },
+    {
+      "id": "aHR0cHM6Ly9rbi5pdG1lZGlhLmNvLmpw",
+      "title": "ソースネクストのAI議事録、Microsoft 365 Copilot連携で検索、要約を効率化",
+      "summary": "ソースネクストは、AI議事録サービス「AutoMemo」の新機能として、「AutoMemo Copilot エージェント」の提供を始めた。Microsoft 365 Copilotから過去の会議データを検索、要約、抽出できるようにし、議事録作成や報告業務の効率化を支援する。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "microsoft",
+      "importance": 80,
+      "pubDate": "2026-05-23T22:00:00.000Z",
+      "link": "https://kn.itmedia.co.jp/kn/articles/2605/23/news017.html"
     },
     {
       "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
@@ -1015,18 +895,8 @@
       "link": "https://techcrunch.com/2026/05/23/elon-musk-has-given-up-on-solar-power-on-earth/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vcm9h",
-      "title": "Can Using the Hypershell Exoskeleton on a Bike Replace an E-Bike? I Tested It to Find Out",
-      "summary": "I wanted to see if this AI-powered wearable robot could give my regular bike ride the equivalent upgrade of an e-bike. After three test rides, the answer is clear.",
-      "source": "CNET",
-      "category": "robotics",
-      "importance": 80,
-      "pubDate": "2026-05-23T11:47:00.000Z",
-      "link": "https://www.cnet.com/roadshow/news/can-using-hypershell-exoskeleton-on-bike-replace-bike-i-tested-find-out/"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "Nvidia CEO Urges Super Micro to Tighten Up Amid Taiwan Crackdown",
+      "title": "Nvidia CEO Urges Super Micro to Tighten Up on Compliance",
       "summary": "Chief Executive Officer Jensen Huang urged Super Micro Computer Inc. to tighten up on compliance after Taiwan detained three people this week for allegedly making fraudulent declarations about AI servers made by its US partner.",
       "source": "Bloomberg",
       "category": "nvidia",
@@ -1055,84 +925,24 @@
       "link": "https://www.bloomberg.com/news/videos/2026-05-23/automation-and-ai-masters-in-business-video"
     },
     {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9z",
-      "title": "キヤノンITSのBind Vision、愛媛で農作業判断支援AIの実装検証へ",
-      "summary": "2026年5月23日 熟練農家の「経験」と「勘」が、AIによって若手や新規就農者にも引き継げる時代が現実味を帯びてきました。キヤノンマーケティングジャパンとキヤノンITソリューションズが2026年6月から愛媛県で始める実装検証は、画像AIプラ [ ] innovaTopia omote.",
-      "source": "innovaTopia",
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "Sunrise Movement takes credit for disrupting Trump’s New York state rally – as it happened",
+      "summary": "This blog has now closed.",
+      "source": "The Guardian",
       "category": "tech",
       "importance": 80,
-      "pubDate": "2026-05-23T07:00:00.000Z",
-      "link": "https://innovatopia.jp/smart-agriculture/smart-agriculture-news/105020/"
+      "pubDate": "2026-05-23T01:58:52.000Z",
+      "link": "https://www.theguardian.com/us-news/live/2026/may/22/donald-trump-ai-china-iran-war-powers-hormuz-latest-news-updates"
     },
     {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "KOBE LETTUCE、ChatGPT内アプリの提供開始―「@神戸レタス」で会話型ファッション提案へ",
-      "summary": "2026年5月23日 神戸発のレディースファッションブランド「KOBE LETTUCE(神戸レタス)」が、ChatGPTのなかで会話しながら服を探せるアプリの提供を始めました。「仕事でも使えるトップスある. 」「低身長でもバランスよく履けるパン [ ] innovaTopia Ami.",
-      "source": "innovaTopia",
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Trump delays AI executive order after tech industry pushback",
+      "summary": "President Donald Trump has delayed the signing of an executive order designed to regulate advanced artificial intelligence models. “I didn’t like certain aspects of it. I postponed it,” Trump told reporters at a Thursday event in the Oval Office.",
+      "source": "SiliconANGLE",
       "category": "tech",
       "importance": 80,
-      "pubDate": "2026-05-23T06:00:00.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/105013/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "Best Buy is selling this 2TB Corsair SSD for over 60% off right now - and I vouch for it",
-      "summary": "Expand your Mac and iOS storage space for large program downloads, photos, and more with the 2TB Corsair EX400U SSD.",
-      "source": "Latest news",
-      "category": "space",
-      "importance": 80,
-      "pubDate": "2026-05-23T02:08:00.000Z",
-      "link": "https://www.zdnet.com/article/best-buy-corsair-ssd-deal-memorial-day-2026/"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "Spotify、Universal Music と歴史的契約 — プレミアム会員がAIでカバー・リミックス制作可能に",
-      "summary": "2026年5月23日 Spotifyは2026年5月21日、Universal Music Groupとの大型ライセンス契約を発表した。プレミアム会員向け有料アドオンとして、AI生成によるカバーやリミックスを制作できる初の公式機能を投入する計 [ ] innovaTopia Ami.",
-      "source": "innovaTopia",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-05-23T02:00:00.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/104987/"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "日立「AIデブリーフィング技術」発表 Naivyと統合し作業者・AI・ロボットの共進化を加速",
-      "summary": "2026年5月23日 株式会社日立製作所は2026年5月20日、現場作業者とAI・ロボットが得た知見を組織全体で活用できる「AIデブリーフィング技術」を開発したと発表した。 本技術は、作業者の判断根拠を起点に、ファシリテーターAI、ピアAI、 [ ] innovaTopia Ami.",
-      "source": "innovaTopia",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-05-23T01:00:00.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/104971/"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "7万人に迫る「言葉の壁」にAIが手を伸ばす｜スタディポケット、学校向け60言語リアルタイム通訳を発表",
-      "summary": "2026年5月23日 日本の教室に、静かな変化が起きています。外国にルーツを持つ子どもたちの数は年々増え続け、文部科学省の調査では日本語指導が必要な児童生徒が7万人に迫る。担任教師が保護者と向き合う面談の場で、言葉が通じない。その沈黙を埋めて [ ] innovaTopia 乗杉 海.",
-      "source": "innovaTopia",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-05-22T23:35:00.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/104895/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "AI is being used to resurrect the voices of dead pilots",
-      "summary": "People used AI on a spectrogram image of cockpit recordings to reconstruct them, forcing the NTSB to temporarily block access to its docket system.",
-      "source": "TechCrunch",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-05-22T23:03:33.000Z",
-      "link": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "Four Russian satellites are now within striking distance of an ICEYE radarsat",
-      "summary": "\"This capability is not common for satellites conducting typical missions.",
-      "source": "Ars Technica",
-      "category": "space",
-      "importance": 80,
-      "pubDate": "2026-05-22T22:50:23.000Z",
-      "link": "https://arstechnica.com/space/2026/05/a-satellite-company-supporting-ukraine-appears-to-be-in-russias-crosshairs/"
+      "pubDate": "2026-05-22T23:09:44.000Z",
+      "link": "https://siliconangle.com/2026/05/22/trump-delays-ai-executive-order-tech-industry-pushback/"
     },
     {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
@@ -1255,6 +1065,16 @@
       "link": "https://www.theguardian.com/technology/2026/may/22/spacex-ipo-filing-details"
     },
     {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "「Cursor」開発の新モデル、コスト1/10で最先端モデル並み性能 第三者機関が評価",
+      "summary": "Cursorが新AIモデル「Composer 2. 5」を発表。Artificial Analysisの評価で、コーディングエージェント性能ランキング3位に。Claude Opus 4. 5などの最先端モデル並みの性能を約10分の1のコストで実現したという。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "code_generation",
+      "importance": 80,
+      "pubDate": "2026-05-21T22:13:00.000Z",
+      "link": "https://www.itmedia.co.jp/aiplus/article/2605/22/2000000017/"
+    },
+    {
       "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
       "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
       "summary": "OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media.",
@@ -1335,26 +1155,6 @@
       "link": "https://www.technologyreview.com/2026/05/21/1137733/the-download-online-safety-climate-tech-pivot/"
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
-      "title": "Technology usually creates jobs for young, skilled workers. Will AI do the same?",
-      "summary": "A new study of the postwar U. shows which kinds of workers historically filled new tech-enabled jobs.",
-      "source": "news",
-      "category": "academic",
-      "importance": 75,
-      "pubDate": "2026-05-21T04:00:00.000Z",
-      "link": "https://news.mit.edu/2026/technology-creates-jobs-young-skilled-workers-ai-0521"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "SpaceX Is Spending $2.8 Billion to Buy Gas Turbines for Its AI Data Centers",
-      "summary": "The investment comes as Elon Musk’s AI unit faces complaints about the carbon-emitting units and looks to become a big player in cloud computing.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "business",
-      "importance": 75,
-      "pubDate": "2026-05-20T23:30:06.000Z",
-      "link": "https://www.wired.com/story/elon-musk-spacex-spending-gas-turbines-grok/"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
       "title": "How to Get the Most Out of Claude Cowork",
       "summary": "Cowork is an autonomous agent that lives inside the Claude Desktop app, which has direct access to a folder on your computer, and can plan, execute, and deliver real work.",
@@ -1376,13 +1176,43 @@
     },
     {
       "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "Alibaba「Qwen3.7-Max」発表、35時間自律稼働の新AIとZhenwu M890チップで挑むエージェント時代",
-      "summary": "2026年5月23日 中国・杭州で開催されたAlibaba Cloud Summit 2026で、Alibabaが「中国のAIファクトリーを構築する」と宣言しました。発表されたのは、最大35時間自律稼働するという大規模言語モデルQwen3. 7 [ ] innovaTopia TaTsu.",
+      "title": "Figma、デザインAIエージェントをキャンバスに統合 — チームメイトとして並走するベータ提供開始",
+      "summary": "2026年5月24日 カーソルを動かしている自分の隣で、AIが別バージョンのデザインを黙々と組み立てている。完成したらコメントの山を整理してくれて、デザインシステム全体のドキュメントまで自動で書いてくれる。SFのような光景が、2026年5月2 [ ] innovaTopia TaTsu.",
       "source": "innovaTopia",
       "category": "tech",
       "importance": 70,
-      "pubDate": "2026-05-23T00:00:00.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/104967/"
+      "pubDate": "2026-05-24T04:00:00.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/105156/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "Best Buy is selling this 2TB Corsair SSD for over 60% off right now - and I vouch for it",
+      "summary": "Expand your Mac and iOS storage space for large program downloads, photos, and more with the 2TB Corsair EX400U SSD.",
+      "source": "Latest news",
+      "category": "space",
+      "importance": 70,
+      "pubDate": "2026-05-23T02:08:00.000Z",
+      "link": "https://www.zdnet.com/article/best-buy-corsair-ssd-deal-memorial-day-2026/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "AI is being used to resurrect the voices of dead pilots",
+      "summary": "People used AI on a spectrogram image of cockpit recordings to reconstruct them, forcing the NTSB to temporarily block access to its docket system.",
+      "source": "TechCrunch",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-05-22T23:03:33.000Z",
+      "link": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Four Russian satellites are now within striking distance of an ICEYE radarsat",
+      "summary": "\"This capability is not common for satellites conducting typical missions.",
+      "source": "Ars Technica",
+      "category": "space",
+      "importance": 70,
+      "pubDate": "2026-05-22T22:50:23.000Z",
+      "link": "https://arstechnica.com/space/2026/05/a-satellite-company-supporting-ukraine-appears-to-be-in-russias-crosshairs/"
     },
     {
       "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
@@ -1555,56 +1385,6 @@
       "link": "https://www.itmedia.co.jp/news/articles/2605/22/news125.html"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "不法滞在・就労 入管がSNS分析強化へ AIで自動巡回システム導入を検討",
-      "summary": "出入国在留管理庁は5月22日、不法残留・不法就労外国人の摘発強化に向け、SNS上の投稿を収集・分析するサイバーパトロールを強化する方針を明らかにした。外国語でやり取りされる不法就労の募集や偽造在留カードの取引情報などを把握し、摘発の端緒とする狙い。民間の分析ツールやAIの活用も視野に、担当体制の整備を進める。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-05-22T01:18:00.000Z",
-      "link": "https://www.itmedia.co.jp/news/articles/2605/22/news070.html"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "「SaaS is Dead」でも採用激化？ 「作れるだけ」のエンジニアが淘汰されるワケ",
-      "summary": "生成AIの進化を背景に「SaaS is Dead」論が、SNSや投資家向けの論考を中心に広がっています。一方、SaaS業界の採用市場は縮小することなく、むしろ強化する企業も目立ちます。しかし、求める人材の条件が大きく変化しました。AIによるSaaS開発が容易になった今、企業が求めるIT人材の条件とは何なのでしょうか。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-05-21T23:00:00.000Z",
-      "link": "https://www.itmedia.co.jp/business/articles/2605/22/news034.html"
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Amazon Nova Act is now HIPAA eligible",
-      "summary": "In this post, you will learn what Nova Act offers, how HIPAA eligibility applies to agentic AI, and how to get started.",
-      "source": "aws",
-      "category": "agents",
-      "importance": 70,
-      "pubDate": "2026-05-21T22:22:28.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/amazon-nova-act-is-now-hipaa-eligible/"
-    },
-    {
-      "id": "aHR0cHM6Ly9rbi5pdG1lZGlhLmNvLmpw",
-      "title": "AIがコードを書く時代に、言語を選ぶ意味はあるのか？：880th Lap",
-      "summary": "生成AIの進化によってソフトウェア開発の在り方が大きく変わるなか、元IBMのエンジニアによる「プログラミング言語の選択に意味はあるのか」という疑問が、エンジニアの間で議論を呼んでいる。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-05-21T22:00:00.000Z",
-      "link": "https://kn.itmedia.co.jp/kn/articles/2605/22/news040.html"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "フジクラ社長「データセンター市場、10年は堅調に伸びる」 生産拡大で「3000億円投資」に踏み切ったワケ",
-      "summary": "光ファイバーケーブル大手のフジクラは2025年中期経営計画を1年前倒しで達成し、次の成長局面へ踏み出した。同社はAIインフラ市場の拡大をどう見通し、その先にどのような成長機会を描いているのか。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-05-21T22:00:00.000Z",
-      "link": "https://www.itmedia.co.jp/business/articles/2605/22/news026.html"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
       "title": "Spotify and Universal Music agree deal to let subscribers create AI remixes",
       "summary": "Licensing agreement will allow listeners to use AI to create content on streaming platform for first timeSpotify and Universal Music Group have agreed on a deal that will allow subscribers to generate song covers and remixes using artificial intelligence.",
@@ -1625,16 +1405,6 @@
       "link": "https://venturebeat.com/orchestration/enterprise-ai-agents-keep-failing-because-they-forget-what-they-learned"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "Sadiq Khan sparks row with Met after blocking £50m AI deal with Palantir",
-      "summary": "Exclusive: Scotland Yard criticises London mayor’s decision as disappointing and warns it could hit policing Sadiq Khan has blocked a £50m Metropolitan police deal with the controversial US tech company Palantir, sparking a bitter row between the London mayor and Scotland Yard.",
-      "source": "The Guardian",
-      "category": "business",
-      "importance": 70,
-      "pubDate": "2026-05-21T18:07:40.000Z",
-      "link": "https://www.theguardian.com/uk-news/2026/may/21/london-mayor-sadiq-khan-blocks-met-police-deal-with-palantir"
-    },
-    {
       "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9vcGVu",
       "title": "Beyond the engine: 10 open source projects shaping how games actually get made",
       "summary": "Check out these 10 open source tools that help game developers create art, animation, levels, audio, dialogue, debug UIs, and engine-ready assets. The post Beyond the engine: 10 open source projects shaping how games actually get made appeared first on The GitHub Blog.",
@@ -1653,6 +1423,26 @@
       "importance": 70,
       "pubDate": "2026-05-21T17:00:00.000Z",
       "link": "https://www.theverge.com/ai-artificial-intelligence/935219/polyend-endless-ai-guitar-effects-pedal"
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
+      "title": "Technology usually creates jobs for young, skilled workers. Will AI do the same?",
+      "summary": "A new study of the postwar U. shows which kinds of workers historically filled new tech-enabled jobs.",
+      "source": "news",
+      "category": "academic",
+      "importance": 70,
+      "pubDate": "2026-05-21T04:00:00.000Z",
+      "link": "https://news.mit.edu/2026/technology-creates-jobs-young-skilled-workers-ai-0521"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "SpaceX Is Spending $2.8 Billion to Buy Gas Turbines for Its AI Data Centers",
+      "summary": "The investment comes as Elon Musk’s AI unit faces complaints about the carbon-emitting units and looks to become a big player in cloud computing.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "business",
+      "importance": 70,
+      "pubDate": "2026-05-20T23:30:06.000Z",
+      "link": "https://www.wired.com/story/elon-musk-spacex-spending-gas-turbines-grok/"
     },
     {
       "id": "aHR0cHM6Ly9qYWNrLWNsYXJrLm5ldC8y",
@@ -1735,6 +1525,56 @@
       "link": "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/"
     },
     {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "不法滞在・就労 入管がSNS分析強化へ AIで自動巡回システム導入を検討",
+      "summary": "出入国在留管理庁は5月22日、不法残留・不法就労外国人の摘発強化に向け、SNS上の投稿を収集・分析するサイバーパトロールを強化する方針を明らかにした。外国語でやり取りされる不法就労の募集や偽造在留カードの取引情報などを把握し、摘発の端緒とする狙い。民間の分析ツールやAIの活用も視野に、担当体制の整備を進める。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-05-22T01:18:00.000Z",
+      "link": "https://www.itmedia.co.jp/news/articles/2605/22/news070.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "「SaaS is Dead」でも採用激化？ 「作れるだけ」のエンジニアが淘汰されるワケ",
+      "summary": "生成AIの進化を背景に「SaaS is Dead」論が、SNSや投資家向けの論考を中心に広がっています。一方、SaaS業界の採用市場は縮小することなく、むしろ強化する企業も目立ちます。しかし、求める人材の条件が大きく変化しました。AIによるSaaS開発が容易になった今、企業が求めるIT人材の条件とは何なのでしょうか。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-05-21T23:00:00.000Z",
+      "link": "https://www.itmedia.co.jp/business/articles/2605/22/news034.html"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Amazon Nova Act is now HIPAA eligible",
+      "summary": "In this post, you will learn what Nova Act offers, how HIPAA eligibility applies to agentic AI, and how to get started.",
+      "source": "aws",
+      "category": "agents",
+      "importance": 60,
+      "pubDate": "2026-05-21T22:22:28.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/amazon-nova-act-is-now-hipaa-eligible/"
+    },
+    {
+      "id": "aHR0cHM6Ly9rbi5pdG1lZGlhLmNvLmpw",
+      "title": "AIがコードを書く時代に、言語を選ぶ意味はあるのか？：880th Lap",
+      "summary": "生成AIの進化によってソフトウェア開発の在り方が大きく変わるなか、元IBMのエンジニアによる「プログラミング言語の選択に意味はあるのか」という疑問が、エンジニアの間で議論を呼んでいる。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-05-21T22:00:00.000Z",
+      "link": "https://kn.itmedia.co.jp/kn/articles/2605/22/news040.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "フジクラ社長「データセンター市場、10年は堅調に伸びる」 生産拡大で「3000億円投資」に踏み切ったワケ",
+      "summary": "光ファイバーケーブル大手のフジクラは2025年中期経営計画を1年前倒しで達成し、次の成長局面へ踏み出した。同社はAIインフラ市場の拡大をどう見通し、その先にどのような成長機会を描いているのか。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-05-21T22:00:00.000Z",
+      "link": "https://www.itmedia.co.jp/business/articles/2605/22/news026.html"
+    },
+    {
       "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
       "title": "Roundtables: Can AI Learn to Understand the World?",
       "summary": "Listen to the session or watch below AI companies want to build systems that understand the external world and overcome the limitations of LLMs. Recent developments have brought world models to the forefront of the AI discussion.",
@@ -1755,16 +1595,6 @@
       "link": "https://www.bbc.com/news/articles/cgepze483pqo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "id": "aHR0cHM6Ly9hdG1hcmtpdC5pdG1lZGlh",
-      "title": "ローカルLLMは本当に手元で動くのか？ ハードウェアとモデルの現実的な選び方【2026年春】",
-      "summary": "Gemma 4を手元で使ってみると、翻訳や要約ならローカルLLMでも十分に実用的だと感じた。モデル選び、GPU選び、Macや専用AIマシンの価格感まで、個人が無理なく始めるための判断材料を整理する。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 60,
-      "pubDate": "2026-05-21T20:00:00.000Z",
-      "link": "https://atmarkit.itmedia.co.jp/ait/articles/2605/22/news012.html"
-    },
-    {
       "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
       "title": "Spotify and Universal Music strike deal allowing fan-made AI covers and remixes",
       "summary": "Spotify is partnering with Universal Music Group￼ to let Premium subscribers create AI-generated song covers and remixes, with participating artists receiving a share of the revenue.",
@@ -1783,16 +1613,6 @@
       "importance": 60,
       "pubDate": "2026-05-21T19:16:43.000Z",
       "link": "https://www.technologyreview.com/2026/05/21/1137613/scaling-creativity-in-the-age-of-ai/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "開発現場のAI導入、“リアルな効果”どう測る？ KDDIやDMMなどと検証へ、ファインディ",
-      "summary": "ITエンジニアの転職支援などを手掛けるファインディが、組織におけるAI活用の効果を測る新指標の検証プロジェクトを始める。詳細や背景を聞いた。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 60,
-      "pubDate": "2026-05-21T16:41:05.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2605/22/2000000015/"
     },
     {
       "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
@@ -1850,7 +1670,7 @@
       "summary": "Musk's rocket-maker and satellite internet provider will trade under the ticker SPCX.",
       "source": "BBC",
       "category": "xai",
-      "importance": 60,
+      "importance": 55,
       "pubDate": "2026-05-21T06:00:32.000Z",
       "link": "https://www.bbc.com/news/articles/cg4pe2953q1o?at_medium=RSS&at_campaign=rss"
     },
@@ -1860,7 +1680,7 @@
       "summary": "The rocket company has set aside more than $500 million for potential litigation losses, in part to account for complaints alleging that Grok created sexualized images.",
       "source": "Feed: Artificial Intelligence Latest",
       "category": "space",
-      "importance": 60,
+      "importance": 55,
       "pubDate": "2026-05-21T00:43:13.000Z",
       "link": "https://www.wired.com/story/spacex-ipo-grok-spicy-mode-risks/"
     },
@@ -2003,6 +1823,36 @@
       "importance": 55,
       "pubDate": "2026-05-18T17:25:11.000Z",
       "link": "https://pytorch.org/blog/vllm-and-pytorch-work-together-to-improve-the-developer-experience-on-aarch64/"
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9i",
+      "title": "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend",
+      "summary": "5: Running OCR and Document Parsing Tasks with a Transformers Backend.",
+      "source": "huggingface",
+      "category": "tech",
+      "importance": 55,
+      "pubDate": "2026-05-18T15:12:46.000Z",
+      "link": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
+      "title": "5 Cool Things I Did with Local Language Models",
+      "summary": "I have been running local models as part of my daily workflow for some time, and what surprised me most is how often local turned out to be the better choice, not a compromise.",
+      "source": "KDnuggets",
+      "category": "agents",
+      "importance": 55,
+      "pubDate": "2026-05-18T12:46:24.000Z",
+      "link": "https://www.kdnuggets.com/5-cool-things-i-did-with-local-language-models"
+    },
+    {
+      "id": "aHR0cHM6Ly9lbWVyai5jb20vaG93LXdh",
+      "title": "How Walmart Is Reengineering AI Delivery Speed",
+      "summary": "Quarterly roadmaps, layered approvals, and monolithic systems — the backbone of traditional AI strategy in retail — are the very things holding back many retail companies today. These were not bad decisions.",
+      "source": "Emerj",
+      "category": "retail",
+      "importance": 55,
+      "pubDate": "2026-05-18T06:21:20.000Z",
+      "link": "https://emerj.com/how-walmart-is-reengineering-ai-delivery-speed/"
     }
   ]
 }
