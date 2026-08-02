@@ -1,9 +1,39 @@
 {
-  "lastUpdated": "2026-08-01T21:54:45.101Z",
+  "lastUpdated": "2026-08-02T05:46:01.549Z",
   "totalArticles": 159,
   "generatedBy": "AI News Aggregator v1.0",
   "sources": 71,
   "articles": [
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
+      "title": "OpenAI、次期主力モデル「Astra」による数学・理論計算機科学の新結果10件を公表—Lean 4形式化も公開",
+      "summary": "OpenAIは2026年8月1日、数学および理論計算機科学の10件の問題について新たな結果を公表した。同社によれば、いずれも主要な結果について少なくとも10年、多くはそれ以上進展がなかった問題である。 内容は予想の反証、 [ ].",
+      "source": "innovaTopia",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-08-02T03:35:00.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/114907/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "Google、パーソナルAI「Gemini Spark」を日本でも利用可能に Chrome統合は米国から",
+      "summary": "Googleは、パーソナルAIエージェント「Gemini Spark」の提供対象を日本を含む160カ国以上に拡大した。PC停止時やスマホのロック時もGoogleのクラウド基盤上で動作し、トリガーに応じてタスクを処理する。さらに、ログイン情報や保存されたパスワードを活用してWeb上の各種手続きを代行するChrome統合機能も発表された。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "google",
+      "importance": 100,
+      "pubDate": "2026-08-02T01:12:35.000Z",
+      "link": "https://www.itmedia.co.jp/news/article/2608/02/2000000347/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "OpenAI、アクティブユーザー10億人超に 導入企業は200万社超",
+      "summary": "OpenAIは、アクティブユーザーが10億人、導入企業が200万社を突破したと公表した。推論の保持やコンテキスト管理の改善、本番ソフトウェアの最適化によりコスト削減やトークン生成効率の向上を実現。「GPT-5. 6」の一部モデルの値下げはこれらの成果を顧客に還元したものであり、再投資の循環を強調した。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-08-01T22:21:26.000Z",
+      "link": "https://www.itmedia.co.jp/news/article/2608/02/2000000346/"
+    },
     {
       "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
       "title": "Sam Altman is still making the case for parenting via ChatGPT",
@@ -63,36 +93,6 @@
       "importance": 100,
       "pubDate": "2026-08-01T00:00:00.000Z",
       "link": "https://openai.com/index/ten-advances-in-mathematics"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9j",
-      "title": "Google Chrome、AIで2バージョン1072件の脆弱性を修正—2年分を1か月で上回る",
-      "summary": "Googleは2026年7月30日、Chrome Security Teamによる記事を公開し、脆弱性の発見、トリアージ、修正へのAI活用状況を示した。2026年初頭にGeminiを用いたエージェントハーネスを構築し、1 [ ].",
-      "source": "innovaTopia",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-07-31T23:05:00.000Z",
-      "link": "https://innovatopia.jp/cyber-security/cyber-security-news/114873/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "OpenAI reportedly finds evidence that more of its agents ran amok",
-      "summary": "OpenAI has reportedly found evidence of additional agent misbehavior as it looks into the incident that occurred with Hugging Face.",
-      "source": "TechCrunch",
-      "category": "openai",
-      "importance": 100,
-      "pubDate": "2026-07-31T22:47:26.000Z",
-      "link": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "Google Rolls Back Earth AI Tool Over Concern About Fake Images",
-      "summary": "’s Google announced Friday that it will roll back its new AI image generation feature in Google Earth because some people were using it to create altered satellite imagery that appeared to violate the company’s policies.",
-      "source": "Bloomberg",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-07-31T22:23:27.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-31/google-rolls-back-earth-ai-tool-over-concern-about-fake-images"
     },
     {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
@@ -205,26 +205,6 @@
       "link": "https://venturebeat.com/security/not-just-openai-now-anthropic-says-its-internal-models-got-online-and-cyberattacked-3-other-organizations"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "スクエニ、ゲームの品質テストをGeminiで自動化 AIが画面を見ながらコントローラーを操作、検証作業を自走",
-      "summary": "スクウェア・エニックスが、ゲームのQAテストを「Gemini」で自動化する取り組みを「Google Cloud Next Tokyo '26」基調講演で披露。AIが画面を見ながらコントローラーを操作し、検証作業を自ら進める。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-07-31T01:43:41.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2607/31/2000000322/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "Google、ロボット向けAI「Gemini Robotics 2」発表 ヒューマノイドの全身制御や指先作業を実現",
-      "summary": "GoogleとGoogle DeepMindは、ロボット向けAIモデル群「Gemini Robotics 2」を発表した。全身制御や指先での微細な作業、複数ロボットの連携に対応する。高次の脳として機能する推論モデル「ER 2」や軽量VLAモデルを含み、安全性評価の新ベンチマーク「ASIMOV-Agentic」も公開した。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-07-31T01:27:51.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2607/31/2000000320/"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
       "title": "Anthropic Says Claude Hacked Into 3 Organizations During Cybersecurity Tests",
       "summary": "In a review triggered by OpenAI’s Hugging Face incident, Anthropic discovered three of its AI models had breached real-world organizations during third-party evaluations.",
@@ -325,6 +305,16 @@
       "link": "https://www.bloomberg.com/news/articles/2026-08-01/zepto-turns-to-private-funding-with-ipo-plans-on-hold-for-now"
     },
     {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "OpenAI reportedly finds evidence that more of its agents ran amok",
+      "summary": "OpenAI has reportedly found evidence of additional agent misbehavior as it looks into the incident that occurred with Hugging Face.",
+      "source": "TechCrunch",
+      "category": "openai",
+      "importance": 95,
+      "pubDate": "2026-07-31T22:47:26.000Z",
+      "link": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/"
+    },
+    {
       "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
       "title": "Reddit keeps its strange DMCA fight over Google search results alive",
       "summary": "Reddit advances lawsuit accusing Perplexity AI of conspiring with web scraper.",
@@ -333,16 +323,6 @@
       "importance": 95,
       "pubDate": "2026-07-31T21:19:39.000Z",
       "link": "https://arstechnica.com/tech-policy/2026/07/reddit-keeps-weird-dmca-lawsuit-against-web-scraper-alive-despite-googles-loss/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vdGVj",
-      "title": "Google Quickly Rolls Back a Feature That Could Make Deepfake Satellite Images",
-      "summary": "Google Earth’s AI image generator let me put my dream home in Central Park, but other potential uses aren’t so innocent.",
-      "source": "CNET",
-      "category": "google",
-      "importance": 95,
-      "pubDate": "2026-07-31T19:23:00.000Z",
-      "link": "https://www.cnet.com/tech/services-and-software/google-quickly-rolls-back-a-feature-that-could-make-deepfake-satellite-images/"
     },
     {
       "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
@@ -405,46 +385,6 @@
       "link": "https://www.itmedia.co.jp/aiplus/article/2607/31/2000000333/"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Programmable networking chip startup Xsight Labs raises $300M",
-      "summary": "Israeli network chip startup Xsight Labs Ltd. said today it has closed on a $300 million funding round that brings its valuation to $2.",
-      "source": "SiliconANGLE",
-      "category": "business",
-      "importance": 95,
-      "pubDate": "2026-07-31T03:16:55.000Z",
-      "link": "https://siliconangle.com/2026/07/30/programmable-networking-chip-startup-xsight-labs-raises-300m/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
-      "title": "Amazon and Apple just told us more about their AI plans - here are three things we learned",
-      "summary": "Billions of dollars are being poured into a new wave of AI technology.",
-      "source": "BBC",
-      "category": "tech",
-      "importance": 95,
-      "pubDate": "2026-07-31T01:31:50.000Z",
-      "link": "https://www.bbc.co.uk/news/articles/cp87m46g392o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Nscale buys AI infrastructure optimization startup Anyscale for reported $1.65B",
-      "summary": "Data center builder Nscale Global Holdings Ltd. today announced plans to acquire Anyscale Inc. , a venture-backed provider of artificial intelligence software.",
-      "source": "SiliconANGLE",
-      "category": "business",
-      "importance": 95,
-      "pubDate": "2026-07-31T01:30:54.000Z",
-      "link": "https://siliconangle.com/2026/07/30/nscale-buys-ai-infrastructure-optimization-startup-anyscale-reported-1-65b/"
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "Disrupting a Criminal Scam Operation",
-      "summary": "OpenAI disrupted a Cambodia-based scam operation using ChatGPT to support investment, romance, gambling, and impersonation schemes.",
-      "source": "Open",
-      "category": "business",
-      "importance": 95,
-      "pubDate": "2026-07-31T00:00:00.000Z",
-      "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation"
-    },
-    {
       "id": "aHR0cHM6Ly9qYWNrLWNsYXJrLm5ldC8y",
       "title": "Import AI 466: The bitter lesson for robotics, AIs complete week-long programming tasks; and OpenAI’s accidental AI hacker",
       "summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe.",
@@ -455,6 +395,16 @@
       "link": "https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker/"
     },
     {
+      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
+      "title": "薬局チェーンが業務効率化のためにAIを導入したところ遅延・誤った情報提供・プライバシー問題などが発生",
+      "summary": "アメリカのバーモント州とニューヨーク州で薬局チェーンを展開する「Kinney Drugs」は、処方箋の問い合わせや薬の再処方受付を効率化するためAIアシスタントを導入しました。しかし、導入後に薬の受け渡しの遅延や誤った再処方、患者情報の取り扱いに対する不安などが相次ぎ、顧客の不満が高まっています。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "healthcare",
+      "importance": 90,
+      "pubDate": "2026-08-01T22:00:00.000Z",
+      "link": "https://gigazine.net/news/20260802-pharmacy-chain-ai/"
+    },
+    {
       "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
       "title": "The great British switch-off: how floating retreats, mobile-free pubs and sauna book groups are freeing people from their smartphones",
       "summary": "Sick of doomscrolling. From venues with smartphone swear jars to cabins with absolutely no signal, here are the fun and freeing ways to ditch your deviceThere’s a ritual at the start of every event hosted by the Offline Project.",
@@ -463,26 +413,6 @@
       "importance": 90,
       "pubDate": "2026-08-01T11:00:51.000Z",
       "link": "https://www.theguardian.com/technology/2026/aug/01/great-british-switch-off-fun-freeing-ways-ditch-smartphone-doomscrolling"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "NXP reportedly in talks to acquire vehicle chip supplier Ambarella",
-      "summary": "NXP Semiconductors NV is reportedly in talks to buy Ambarella Inc. , a fellow provider of vehicle chips. The Financial Times today cited sources as saying that other industry players could also make bids.",
-      "source": "SiliconANGLE",
-      "category": "business",
-      "importance": 90,
-      "pubDate": "2026-08-01T00:32:57.000Z",
-      "link": "https://siliconangle.com/2026/07/31/nxp-reportedly-talks-acquire-vehicle-chip-supplier-ambarella/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "PerplexityがAIエージェントの“暴走”対策ツールをオープンソースに Claude CodeやCodexを監視",
-      "summary": "PerplexityがAIエージェントの危険な挙動を検知・防止するツール群「Numbat」をオープンソース化。Claude CodeやCodexに組み込み、タスクに執着したエージェントの“暴走”を実行前に阻止する。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 90,
-      "pubDate": "2026-07-31T02:18:22.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2607/31/2000000325/"
     },
     {
       "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
@@ -513,6 +443,46 @@
       "importance": 85,
       "pubDate": "2026-07-31T16:48:26.000Z",
       "link": "https://www.zdnet.com/article/ai-conversations-private/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Programmable networking chip startup Xsight Labs raises $300M",
+      "summary": "Israeli network chip startup Xsight Labs Ltd. said today it has closed on a $300 million funding round that brings its valuation to $2.",
+      "source": "SiliconANGLE",
+      "category": "business",
+      "importance": 85,
+      "pubDate": "2026-07-31T03:16:55.000Z",
+      "link": "https://siliconangle.com/2026/07/30/programmable-networking-chip-startup-xsight-labs-raises-300m/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
+      "title": "Amazon and Apple just told us more about their AI plans - here are three things we learned",
+      "summary": "Billions of dollars are being poured into a new wave of AI technology.",
+      "source": "BBC",
+      "category": "tech",
+      "importance": 85,
+      "pubDate": "2026-07-31T01:31:50.000Z",
+      "link": "https://www.bbc.co.uk/news/articles/cp87m46g392o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Nscale buys AI infrastructure optimization startup Anyscale for reported $1.65B",
+      "summary": "Data center builder Nscale Global Holdings Ltd. today announced plans to acquire Anyscale Inc. , a venture-backed provider of artificial intelligence software.",
+      "source": "SiliconANGLE",
+      "category": "business",
+      "importance": 85,
+      "pubDate": "2026-07-31T01:30:54.000Z",
+      "link": "https://siliconangle.com/2026/07/30/nscale-buys-ai-infrastructure-optimization-startup-anyscale-reported-1-65b/"
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
+      "title": "Disrupting a Criminal Scam Operation",
+      "summary": "OpenAI disrupted a Cambodia-based scam operation using ChatGPT to support investment, romance, gambling, and impersonation schemes.",
+      "source": "Open",
+      "category": "business",
+      "importance": 85,
+      "pubDate": "2026-07-31T00:00:00.000Z",
+      "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation"
     },
     {
       "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
@@ -566,16 +536,6 @@
     },
     {
       "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
-      "summary": "avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive.",
-      "source": "Open",
-      "category": "agents",
-      "importance": 85,
-      "pubDate": "2026-07-30T00:00:00.000Z",
-      "link": "https://openai.com/index/avatarin"
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
       "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
       "summary": "OpenAI is giving 100,000 academic researchers free access to ChatGPT's most advanced AI models to accelerate scientific research, collaboration, and discovery.",
       "source": "Open",
@@ -583,6 +543,16 @@
       "importance": 85,
       "pubDate": "2026-07-29T10:00:00.000Z",
       "link": "https://openai.com/index/chatgpt-for-academic-researchers"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
+      "title": "DeepSeek・Kimi K3・曙光8000が示す中国AIの現在地─人工知能法の立法加速へ",
+      "summary": "10万カードを束ねたクラスタは、xAIが2024年に到達した規模です。それを2年後に「初の全面国産」として発表することに、中国は意味を見出しています。速さではなく、全部が自国製であること。7月31日の記者会見で示された数 [ ].",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-08-01T22:05:00.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/114897/"
     },
     {
       "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
@@ -705,44 +675,14 @@
       "link": "https://innovatopia.jp/cyber-security/cyber-security-news/114890/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "Can Africa Power the AI Boom?",
-      "summary": "Teraco Chief Executive Officer Jan Hnizdo discusses why Africa is becoming a key destination for data centers, how cloud infrastructure is evolving and why energy and sustainability will determine the continent's digital future. He speaks with Bloomberg's Jennifer Zabasajja.",
-      "source": "Bloomberg",
-      "category": "data_science",
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "NXP reportedly in talks to acquire vehicle chip supplier Ambarella",
+      "summary": "NXP Semiconductors NV is reportedly in talks to buy Ambarella Inc. , a fellow provider of vehicle chips. The Financial Times today cited sources as saying that other industry players could also make bids.",
+      "source": "SiliconANGLE",
+      "category": "business",
       "importance": 80,
-      "pubDate": "2026-08-01T05:02:41.000Z",
-      "link": "https://www.bloomberg.com/news/videos/2026-08-01/can-africa-power-the-ai-boom-video"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "マイナビ転職の生成AI調査、転職者の活用率46.7% 年収1000万円以上では90.7%に",
-      "summary": "7%が生成AIを使っています。ところが履歴書やエントリーシートへの活用を肯定する人は、37. 0%まで落ち込みます。仕事では使い、自分を語る書類では手を止める。この線を引いているのは、 [ ].",
-      "source": "innovaTopia",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-01T02:05:00.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/114882/"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "楽天インサイト「AIチャットインタビュー for Global」開始、世界40以上の国と地域を最短5営業日で調査",
-      "summary": "冷蔵庫の中を撮って送ってください——海外の生活者にそう頼み、届いた画像からメーカーと商品名を推定する。楽天インサイトの新機能は、これを世界40以上の国と地域で動かします。しかも企業側が用意するのは、日本語の調査内容だけ。 [ ].",
-      "source": "innovaTopia",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-01T01:20:23.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/114879/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
-      "title": "Snapchat joins other popular platforms in fight against 'AI slop'",
-      "summary": "Snapchat, YouTube, LinkedIn, and Substack are trying to combat the proliferation of fake AI content.",
-      "source": "BBC",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-07-31T21:57:59.000Z",
-      "link": "https://www.bbc.co.uk/news/articles/c77g6dm5pr8o?at_medium=RSS&at_campaign=rss"
+      "pubDate": "2026-08-01T00:32:57.000Z",
+      "link": "https://siliconangle.com/2026/07/31/nxp-reportedly-talks-acquire-vehicle-chip-supplier-ambarella/"
     },
     {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
@@ -795,34 +735,14 @@
       "link": "https://www.npr.org/2026/07/31/nx-s1-5913688/trumps-ai-review-order-raises-questions-about-federal-oversight"
     },
     {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "LinkedIn cracks down on users posting ‘AI slop’ after previously encouraging it",
-      "summary": "’s LinkedIn is making a concerted effort to combat “AI slop,” or the low-quality, artificial intelligence-generated content that has been increasingly dominating user’s feeds.",
-      "source": "SiliconANGLE",
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "PerplexityがAIエージェントの“暴走”対策ツールをオープンソースに Claude CodeやCodexを監視",
+      "summary": "PerplexityがAIエージェントの危険な挙動を検知・防止するツール群「Numbat」をオープンソース化。Claude CodeやCodexに組み込み、タスクに執着したエージェントの“暴走”を実行前に阻止する。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
       "category": "tech",
       "importance": 80,
-      "pubDate": "2026-07-31T04:11:56.000Z",
-      "link": "https://siliconangle.com/2026/07/31/linkedin-cracks-users-posting-ai-slop-previously-encouraging/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Apple’s stock slides as it blames supply chain constraints for its weak guidance",
-      "summary": "iPhone maker Apple Inc. reported better-than-expected earnings and revenue as it delivered its third quarter results, thanks to a 22% surge in handset sales.",
-      "source": "SiliconANGLE",
-      "category": "presentation",
-      "importance": 80,
-      "pubDate": "2026-07-31T02:04:41.000Z",
-      "link": "https://siliconangle.com/2026/07/30/apples-stock-slides-blames-supply-chain-constraints-weak-guidance/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Icite targets knowledge graphs to give AI agents the context needed for autonomous security workflows",
-      "summary": "Enterprise knowledge graphs are emerging as a key foundation for organizations, giving AI systems the context needed to make better decisions.",
-      "source": "SiliconANGLE",
-      "category": "agents",
-      "importance": 80,
-      "pubDate": "2026-07-31T01:51:07.000Z",
-      "link": "https://siliconangle.com/2026/07/30/enterprise-knowledge-graphs-neo4jgraphtalk/"
+      "pubDate": "2026-07-31T02:18:22.000Z",
+      "link": "https://www.itmedia.co.jp/aiplus/article/2607/31/2000000325/"
     },
     {
       "id": "aHR0cHM6Ly9kZWVwbWluZC5nb29nbGUv",
@@ -833,6 +753,16 @@
       "importance": 80,
       "pubDate": "2026-07-30T15:00:59.000Z",
       "link": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/"
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
+      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
+      "summary": "avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive.",
+      "source": "Open",
+      "category": "agents",
+      "importance": 80,
+      "pubDate": "2026-07-30T00:00:00.000Z",
+      "link": "https://openai.com/index/avatarin"
     },
     {
       "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
@@ -875,16 +805,6 @@
       "link": "https://blog.google/products-and-platforms/products/search/dinner-party-hosting-tips/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Tim Cook hints at iCloud Plus tier for AI power users",
-      "summary": "Apple may allow users to pay to increase their AI usage limits.",
-      "source": "The Verge",
-      "category": "regulation",
-      "importance": 75,
-      "pubDate": "2026-07-30T22:29:45.000Z",
-      "link": "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNv",
       "title": "Echoverse: Deep, evolving environments for computer-use agents",
       "summary": "Computer-use AI agents struggle with multi-step workflows like email and customer support. Echoverse trains agents in realistic environments rather than simply providing more training tasks, helping them improve as the tasks, tests, and environments evolve.",
@@ -913,6 +833,36 @@
       "importance": 75,
       "pubDate": "2026-07-28T13:21:37.000Z",
       "link": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
+      "title": "マイナビ転職の生成AI調査、転職者の活用率46.7% 年収1000万円以上では90.7%に",
+      "summary": "7%が生成AIを使っています。ところが履歴書やエントリーシートへの活用を肯定する人は、37. 0%まで落ち込みます。仕事では使い、自分を語る書類では手を止める。この線を引いているのは、 [ ].",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-08-01T02:05:00.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/114882/"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
+      "title": "楽天インサイト「AIチャットインタビュー for Global」開始、世界40以上の国と地域を最短5営業日で調査",
+      "summary": "冷蔵庫の中を撮って送ってください——海外の生活者にそう頼み、届いた画像からメーカーと商品名を推定する。楽天インサイトの新機能は、これを世界40以上の国と地域で動かします。しかも企業側が用意するのは、日本語の調査内容だけ。 [ ].",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-08-01T01:20:23.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/114879/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
+      "title": "Snapchat joins other popular platforms in fight against 'AI slop'",
+      "summary": "Snapchat, YouTube, LinkedIn, and Substack are trying to combat the proliferation of fake AI content.",
+      "source": "BBC",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-07-31T21:57:59.000Z",
+      "link": "https://www.bbc.co.uk/news/articles/c77g6dm5pr8o?at_medium=RSS&at_campaign=rss"
     },
     {
       "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
@@ -1055,16 +1005,6 @@
       "link": "https://www.kdnuggets.com/5-books-that-will-deepen-your-understanding-of-large-language-models"
     },
     {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC90",
-      "title": "ゴールドマン・サックス、AI投資基盤「AlphaAI」設立｜公開・非公開市場を横断し企業を選別",
-      "summary": "AI関連企業に投資するだけでは、どの企業が長期的な成長を実現するかは見分けられません。Goldman Sachsが設けたAlphaAIは、企業ごとのAI実装力を捉えるため、公開市場と非公開市場の知見をどう結び付けようとし [ ].",
-      "source": "innovaTopia",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-07-31T08:30:04.000Z",
-      "link": "https://innovatopia.jp/tech-economy/tech-economynews/114835/"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
       "title": "「9カ月かかる作業を3日に短縮」 IBM、レガシー刷新ワークフローをIBM Bobに追加",
       "summary": "生成AIによるコード生成が広がる一方で、レガシー環境の刷新はAIの適用が難しい領域だ。IBMは、IBM Bobにレガシー環境向けの専用パッケージを追加することで、同領域における自動化に踏み込む。.",
@@ -1105,14 +1045,34 @@
       "link": "https://openai.com/index/unive"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "Thinking Machines、軽量モデル「Inkling-Small」正式公開 サイズ4分の1で「Inkling」に匹敵する性能",
-      "summary": "Thinking Machines Labは、オープンウェイトのAIモデル「Inkling-Small」の正式版を公開した。従来モデルの4分の1のサイズながら、データの改良や強化学習によりコード生成などのベンチマークで従来版を上回る性能を実現。動作に必要なGPUメモリも大幅に削減されており、Hugging Face等で入手できる。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "LinkedIn cracks down on users posting ‘AI slop’ after previously encouraging it",
+      "summary": "’s LinkedIn is making a concerted effort to combat “AI slop,” or the low-quality, artificial intelligence-generated content that has been increasingly dominating user’s feeds.",
+      "source": "SiliconANGLE",
       "category": "tech",
       "importance": 70,
-      "pubDate": "2026-07-31T02:16:53.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2607/31/2000000326/"
+      "pubDate": "2026-07-31T04:11:56.000Z",
+      "link": "https://siliconangle.com/2026/07/31/linkedin-cracks-users-posting-ai-slop-previously-encouraging/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Apple’s stock slides as it blames supply chain constraints for its weak guidance",
+      "summary": "iPhone maker Apple Inc. reported better-than-expected earnings and revenue as it delivered its third quarter results, thanks to a 22% surge in handset sales.",
+      "source": "SiliconANGLE",
+      "category": "presentation",
+      "importance": 70,
+      "pubDate": "2026-07-31T02:04:41.000Z",
+      "link": "https://siliconangle.com/2026/07/30/apples-stock-slides-blames-supply-chain-constraints-weak-guidance/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Icite targets knowledge graphs to give AI agents the context needed for autonomous security workflows",
+      "summary": "Enterprise knowledge graphs are emerging as a key foundation for organizations, giving AI systems the context needed to make better decisions.",
+      "source": "SiliconANGLE",
+      "category": "agents",
+      "importance": 70,
+      "pubDate": "2026-07-31T01:51:07.000Z",
+      "link": "https://siliconangle.com/2026/07/30/enterprise-knowledge-graphs-neo4jgraphtalk/"
     },
     {
       "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
@@ -1185,14 +1145,14 @@
       "link": "https://www.theguardian.com/world/2026/jul/30/german-chancellor-friedrich-merz-chooses-pope-leo-encyclical-for-beach-read"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
-      "title": "Meta shares fall as frustration grows over AI spending plans",
-      "summary": "CEO Mark Zuckerberg said the firm intends to sell its AI tools to other companies for the first time.",
-      "source": "BBC",
-      "category": "meta",
+      "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
+      "title": "Middle School Students Explore Advanced Manufacturing and Robotics Through CMU Partnership",
+      "summary": "Middle school students from Pittsburgh's Hazelwood neighborhood got a chance to imagine themselves as future engineers, researchers and innovators at CMU's Robotics Innovation Center.",
+      "source": "cmu",
+      "category": "audio_generation",
       "importance": 70,
-      "pubDate": "2026-07-29T22:44:18.000Z",
-      "link": "https://www.bbc.co.uk/news/articles/ckgd31l5yrdo?at_medium=RSS&at_campaign=rss"
+      "pubDate": "2026-07-28T14:44:58.000Z",
+      "link": "https://www.cmu.edu/news/stories/archives/2026/july/middle-school-students-explore-advanced-manufacturing-and-robotics-through-cmu-partnership"
     },
     {
       "id": "aHR0cHM6Ly9lbWVyai5jb20vYXJ0aWZp",
@@ -1215,6 +1175,16 @@
       "link": "http://bair.berkeley.edu/blog/2026/07/26/abbel/"
     },
     {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "Tim Cook hints at iCloud Plus tier for AI power users",
+      "summary": "Apple may allow users to pay to increase their AI usage limits.",
+      "source": "The Verge",
+      "category": "regulation",
+      "importance": 65,
+      "pubDate": "2026-07-30T22:29:45.000Z",
+      "link": "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai"
+    },
+    {
       "id": "aHR0cHM6Ly9ibG9ncy5udmlkaWEuY29t",
       "title": "Best in Class: Stream PC Games and Study on the Same Laptop With GeForce NOW",
       "summary": "Back to school means balancing assignments, deadlines and downtime. GeForce NOW makes it easy to have it all. With cloud gaming, everyday laptops used for class can also become GeForce RTX-powered gaming setups.",
@@ -1233,6 +1203,16 @@
       "importance": 65,
       "pubDate": "2026-07-30T10:15:19.000Z",
       "link": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
+      "title": "Meta shares fall as frustration grows over AI spending plans",
+      "summary": "CEO Mark Zuckerberg said the firm intends to sell its AI tools to other companies for the first time.",
+      "source": "BBC",
+      "category": "meta",
+      "importance": 65,
+      "pubDate": "2026-07-29T22:44:18.000Z",
+      "link": "https://www.bbc.co.uk/news/articles/ckgd31l5yrdo?at_medium=RSS&at_campaign=rss"
     },
     {
       "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
@@ -1315,6 +1295,16 @@
       "link": "https://emerj.com/data-first-security-strategies-for-enterprise-ai/"
     },
     {
+      "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
+      "title": "Safeguarding a CMU Tradition After Acts of Vandalism and Non-Student Paintings at the Fence",
+      "summary": "As Carnegie Mellon prepares to welcome thousands of students back to campus in the coming weeks, the university is reminding the community about the longstanding traditions and expectations governing the Fence following several recent troubling incidents.",
+      "source": "cmu",
+      "category": "academic",
+      "importance": 65,
+      "pubDate": "2026-07-27T19:55:00.000Z",
+      "link": "https://www.cmu.edu/news/stories/archives/2026/july/safeguarding-a-cmu-tradition-after-acts-of-vandalism-and-non-student-paintings-at-the-fence"
+    },
+    {
       "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9haS1h",
       "title": "The harness is all you need (mostly)",
       "summary": "A practical GitHub Copilot workflow for prototyping, planning, implementing, and reviewing software without chasing every new AI tool. The post The harness is all you need (mostly) appeared first on The GitHub Blog.",
@@ -1333,6 +1323,16 @@
       "importance": 65,
       "pubDate": "2026-07-27T16:00:00.000Z",
       "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "Thinking Machines、軽量モデル「Inkling-Small」正式公開 サイズ4分の1で「Inkling」に匹敵する性能",
+      "summary": "Thinking Machines Labは、オープンウェイトのAIモデル「Inkling-Small」の正式版を公開した。従来モデルの4分の1のサイズながら、データの改良や強化学習によりコード生成などのベンチマークで従来版を上回る性能を実現。動作に必要なGPUメモリも大幅に削減されており、Hugging Face等で入手できる。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-07-31T02:16:53.000Z",
+      "link": "https://www.itmedia.co.jp/aiplus/article/2607/31/2000000326/"
     },
     {
       "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
