@@ -1,9 +1,89 @@
 {
-  "lastUpdated": "2026-08-16T03:37:38.020Z",
-  "totalArticles": 180,
+  "lastUpdated": "2026-08-16T21:18:39.472Z",
+  "totalArticles": 172,
   "generatedBy": "AI News Aggregator v1.0",
   "sources": 71,
   "articles": [
+    {
+      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
+      "title": "Cutting RAG inference costs 6x starts with deciding what never reaches the LLM",
+      "summary": "Most teams building retrieval augmented generation (RAG) systems for high stakes classification make the same architectural bet: Route every ambiguous case straight to the language model and trust the retrieved context to sort it out. This works fine in a demo.",
+      "source": "VentureBeat",
+      "category": "reasoning",
+      "importance": 100,
+      "pubDate": "2026-08-16T20:45:00.000Z",
+      "link": "https://venturebeat.com/orchestration/cutting-rag-inference-costs-6x-starts-with-deciding-what-never-reaches-the-llm"
+    },
+    {
+      "id": "aHR0cHM6Ly9hdG1hcmtpdC5pdG1lZGlh",
+      "title": "Claude、Codex、Qwen……そのAI用語、どう読む？ 読み方クイズ30問",
+      "summary": "何となくこう読むものだと思っていたら、実は違っていた。そんな経験はないでしょうか。AI用語にも、意外な読み方をするものや、人によって読み方が分かれるものが少なくありません。その読み方が合っているか、全30問のクイズで確かめてみてください。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 100,
+      "pubDate": "2026-08-16T20:00:00.000Z",
+      "link": "https://atmarkit.itmedia.co.jp/ait/articles/2608/17/news020.html"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
+      "summary": "Dario Amodei is pushing back against the idea that he's been painting an overly pessimistic picture of AI.",
+      "source": "TechCrunch",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-08-16T16:53:51.000Z",
+      "link": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "ChatGPT’s Computer History tracks your clicks and keystrokes",
+      "summary": "ChatGPT's desktop app on macOS has a new feature called Computer History that turns your actions into training data, learning how you work, suggesting automations, and even picking up tasks you left half done.",
+      "source": "The Verge",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-08-16T14:56:40.000Z",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes"
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
+      "title": "DeepSeek's top-ranked V4 Flash stumbles on real agent tasks as its prices surge",
+      "summary": "DeepSeek s V4 Flash has topped model leaderboards and been hailed by developers as a total monster since its rollout. But in real-world testing, it completed just 53. 8% of a batch of complex agent tasks.",
+      "source": "VentureBeat",
+      "category": "presentation",
+      "importance": 100,
+      "pubDate": "2026-08-16T13:00:00.000Z",
+      "link": "https://venturebeat.com/orchestration/deepseeks-top-ranked-v4-flash-stumbles-on-real-agent-tasks-as-its-prices-surge"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "Rogue AI aren’t science fiction anymore",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on AI safety, follow Robert Hart. The Stepback arrives in our subscribers' inboxes at 8AM ET.",
+      "source": "The Verge",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-08-16T12:00:00.000Z",
+      "link": "https://www.theverge.com/column/980337/rogue-ai-science-fiction-openai"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
+      "title": "AI生成テキストの「透かし」が埋め込まれる仕組み",
+      "summary": "AIが生成したコンテンツに目印を埋め込んで区別できるようにする「ウォーターマーク」が注目されており、OpenAIが試験的に導入したりAnthropicが導入を発表したりしています。画像と違ってデータを隠すためのピクセルがないテキストにはどのようにウォーターマークを入れるのかという仕組みについて、人間とAIの関係性について調査・研究するNOPEが解説しています。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "tech",
+      "importance": 100,
+      "pubDate": "2026-08-16T10:20:00.000Z",
+      "link": "https://gigazine.net/news/20260816-ai-text-watermarking/"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
+      "title": "アリババのAI「Qwen」が6カ月間に30億回ダウンロードされる世界1位のAIモデルに",
+      "summary": "中国・アリババ(阿里巴巴)が展開しているオープンウェイトAIモデル「Qwen」シリーズが、過去6カ月間で30億回ダウンロードされたことがわかりました。この数字は国外各社や国内のライバルを上回るものです。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "tech",
+      "importance": 100,
+      "pubDate": "2026-08-16T08:45:00.000Z",
+      "link": "https://gigazine.net/news/20260816-alibaba-qwen-3-billion-downloads/"
+    },
     {
       "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
       "title": "Cerebras、GPT-5.6 Solを最大14倍速へ｜750トークン/秒の新ティア",
@@ -53,56 +133,6 @@
       "importance": 100,
       "pubDate": "2026-08-15T18:58:39.000Z",
       "link": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "Anthropic is watermarking text generated by Claude to comply with EU law",
-      "summary": "Anthropic has explained its text watermarking approach.",
-      "source": "Technology News & Expert Reviews",
-      "category": "anthropic",
-      "importance": 100,
-      "pubDate": "2026-08-15T18:08:36.000Z",
-      "link": "https://www.engadget.com/2237691/anthropic-watermarking-text-generated-by-claude/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "Alibaba AI Models Hit 3 Billion Downloads, Passing Meta, Google",
-      "summary": "Alibaba Group Holding’s open-weight models have accumulated more than 3 billion global downloads in the past six months, eclipsing Meta Platforms Inc. and domestic peers to become the world’s No. 1 artificial-intelligence model.",
-      "source": "Bloomberg",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-08-15T09:16:06.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-08-15/alibaba-ai-models-hit-3-billion-downloads-passing-meta-google"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Agreement Is Not Alignment: Divergent Moral Grounds in Human and LLM Ethical Judgments",
-      "summary": "12368v1 Announce Type: new Abstract: Agreement with human judgments is a common proxy for evaluating the alignment of large language models (LLMs). Yet agreement in final labels does not show that human annotators and models rely on the same moral grounds.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 100,
-      "pubDate": "2026-08-15T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2608.12368"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Don't Want Your LLM to Recommend Nuclear Strike? Try Asking It in Japanese",
-      "summary": "12373v1 Announce Type: new Abstract: Large language models are increasingly used in strategic and advisory contexts, yet their safety alignment is typically evaluated in English only.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "reasoning",
-      "importance": 100,
-      "pubDate": "2026-08-15T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2608.12373"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Dual-Flow Transformers: Decoupling the Primary Prefill Path from Additional Decode Computation",
-      "summary": "12385v1 Announce Type: new Abstract: As large language models serve more requests, cumulative inference cost is becoming increasingly important relative to one-time training cost.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "reasoning",
-      "importance": 100,
-      "pubDate": "2026-08-15T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2608.12385"
     },
     {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
@@ -165,26 +195,6 @@
       "link": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "This free Android assistant fixes my biggest Gemini frustration - and keeps my data private",
-      "summary": "With Google set to retire Assistant, and Gemini not exactly the replacement many of us want, Dicio is a solid option.",
-      "source": "Latest news",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-08-14T00:00:45.000Z",
-      "link": "https://www.zdnet.com/article/dicio-free-android-assistant-gemini-keeps-data-private/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "Google、「Gemini 3.7 Flash」公開 年内は半額の導入価格",
-      "summary": "Googleは、コーディングやエージェント用途に特化したAIモデル「Gemini 3. 7 Flash」を発表した。前モデルからわずか3週間での投入だ。従来比半額の導入価格で提供し、個人向けエージェント機能「Gemini Spark」など各種プロダクトへ適用される。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-08-13T21:25:13.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2608/14/2000000534/"
-    },
-    {
       "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
       "title": "Three Claude agents given conflicting orders sabotaged each other on a shared server — then didn't tell users what they'd done",
       "summary": "Every Claude model Anthropic tested turned on its own, and no attacker made them do it.",
@@ -215,16 +225,6 @@
       "link": "https://venturebeat.com/technology/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "Gemini voice calling on Android Auto keeps failing me - and Google has until September to fix it",
-      "summary": "With Google Assistant shutting down this fall, Android users will be left with inferior voice calling, thanks to Gemini.",
-      "source": "Latest news",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-08-13T17:07:04.000Z",
-      "link": "https://www.zdnet.com/article/gemini-voice-calling-on-android-auto-keeps-failing-google-must-fix-by-september/"
-    },
-    {
       "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
       "title": "DeepSeek Harness launches as open source rival to Claude Code, alongside V4-Pro on API with higher prices",
       "summary": "DeepSeek is expanding beyond the model layer and deeper into the software developers use to put AI agents to work. The Chinese AI lab on Thursday launched the official version of DeepSeek-V4-Pro, an updated flagship model focused heavily on agentic workloads, alongside DeepSeek Harness v0.",
@@ -235,164 +235,14 @@
       "link": "https://venturebeat.com/technology/deepseek-harness-launches-as-open-source-rival-to-claude-code-alongside-v4-pro-on-api-with-higher-prices"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Does Google even want to win at AI?",
-      "summary": "Today on Decoder, I’m talking with Hayden Field, The Verge’s senior AI reporter, about a question that’s been rocketing around the tech industry for the past week: Is Google losing the AI race. That’s because last week Google announced a bombshell reorganization of its AI division, Google DeepMind.",
-      "source": "The Verge",
-      "category": "openai",
-      "importance": 100,
-      "pubDate": "2026-08-13T14:10:31.000Z",
-      "link": "https://www.theverge.com/podcast/979370/google-deepmind-ai-race-lose-jeff-dean-demis-hassabis"
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
-      "title": "Writer says its new Palmyra X6 model cuts AI agent costs by 52% as token spending surges",
-      "summary": "Writer, the enterprise AI agent platform used by Fortune 500 companies including Accenture, Uber, and Vanguard, released its new flagship model Palmyra X6 today, alongside a rebuilt agent orchestration harness and new governance tools designed to give IT leaders control over runaway token spending.",
-      "source": "VentureBeat",
-      "category": "openai",
-      "importance": 100,
-      "pubDate": "2026-08-13T13:00:00.000Z",
-      "link": "https://venturebeat.com/orchestration/writer-says-its-new-palmyra-x6-model-cuts-ai-agent-costs-by-52-as-token-spending-surges"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Container security is moving from vulnerability detection to attack surface reduction",
-      "summary": "Container security has spent years operating around a familiar cycle: scan, identify vulnerabilities, patch and repeat.",
-      "source": "SiliconANGLE",
-      "category": "agents",
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Stripe Clinches Over $7 Billion Deal to Buy AI Firm OpenRouter",
+      "summary": "has finalized an agreement to acquire OpenRouter Inc. , a startup that helps companies switch between artificial intelligence models, for more than $7 billion, according to people familiar with the matter.",
+      "source": "Bloomberg",
+      "category": "business",
       "importance": 95,
-      "pubDate": "2026-08-15T17:49:21.000Z",
-      "link": "https://siliconangle.com/2026/08/15/container-security-attack-surface-reduction-appdevangle/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "Ukraine strikes major Russian rocket factory with cruise missiles",
-      "summary": "\"Flamingo missiles were used.",
-      "source": "Ars Technica",
-      "category": "manufacturing",
-      "importance": 95,
-      "pubDate": "2026-08-15T15:46:05.000Z",
-      "link": "https://arstechnica.com/space/2026/08/ukraine-strikes-major-russian-rocket-factory-with-cruise-missiles/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Position: Reasoning is a Learnable Rule-Based Process",
-      "summary": "12325v1 Announce Type: new Abstract: Autonomous reasoning is among the most scientifically and economically motivating topics in AI today. Historically the purview of symbolic AI, recent advances have mainly emerged from deep probabilistic generative models.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 95,
-      "pubDate": "2026-08-15T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2608.12325"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Diagnostic Foundation for Evaluating LLMs' Research Integrity as Co-Scientists",
-      "summary": "12345v1 Announce Type: new Abstract: Language models are increasingly deployed as co-scientists, yet their ability to uphold research integrity under institutional pressure remains unmeasured.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "reasoning",
-      "importance": 95,
-      "pubDate": "2026-08-15T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2608.12345"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Position: We Need Practical AI Alignment Methods to Mirror Human Reasoning",
-      "summary": "12372v1 Announce Type: new Abstract: AI systems are increasingly employed as decision aids, decision delegates, or autonomous decision-makers.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 95,
-      "pubDate": "2026-08-15T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2608.12372"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Research Assistant: AstraZeneca's Agentic System for R&D",
-      "summary": "12395v1 Announce Type: new Abstract: We describe Research Assistant, an internal LLM-based system developed at AstraZeneca to help scientists and clinicians explore biomedical questions across a broad range of data sources.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 95,
-      "pubDate": "2026-08-15T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2608.12395"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Z.ai debuts GLM-5.3 with long-horizon coding, cybersecurity upgrades",
-      "summary": "Chinese artificial intelligence developer Z. 3, an open-source large language model that set records across several popular benchmarks. The LLM is based on an algorithm called GLM-5.",
-      "source": "SiliconANGLE",
-      "category": "research",
-      "importance": 95,
-      "pubDate": "2026-08-14T20:35:28.000Z",
-      "link": "https://siliconangle.com/2026/08/14/z-ai-debuts-glm-5-3-long-horizon-coding-cybersecurity-upgrades/"
-    },
-    {
-      "id": "aHR0cHM6Ly9ibG9ncy5udmlkaWEuY29t",
-      "title": "Universitas Gadjah Mada, Indosat and NVIDIA Open Indonesia’s First University AI Center to Develop Local AI Talent",
-      "summary": "Indonesia is taking charge of its AI future.",
-      "source": "NVIDIA",
-      "category": "nvidia",
-      "importance": 95,
-      "pubDate": "2026-08-14T17:13:05.000Z",
-      "link": "https://blogs.nvidia.com/blog/ugm-indosat-nvidia-ai-technology-center/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Google will now allow users to remove visible watermark from its AI generations",
-      "summary": "Turning off this setting won't affect invisible benchmarks used to identify an AI generated file.",
-      "source": "TechCrunch",
-      "category": "google",
-      "importance": 95,
-      "pubDate": "2026-08-14T16:13:40.000Z",
-      "link": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Building agentic workflows with SageMaker AI and Bedrock AgentCore",
-      "summary": "Learn how to combine OpenAI-compatible endpoints on Amazon SageMaker AI with Amazon Bedrock AgentCore runtime to build a multi-agent workflow where each specialized agent uses the model best suited to its job.",
-      "source": "aws",
-      "category": "agents",
-      "importance": 95,
-      "pubDate": "2026-08-14T15:58:44.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/building-agentic-workflows-with-sagemaker-ai-and-bedrock-agentcore/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "As online dating goes into ‘salvage mode’, can AI solve all its problems?",
-      "summary": "Dating apps such as Bumble forced to adapt as ‘swipe fatigue’ growsBumble was supposed to be different. When it launched in 2014, it offered women a simple proposition: if you matched with a man, you had to make the first move.",
-      "source": "The Guardian",
-      "category": "tech",
-      "importance": 95,
-      "pubDate": "2026-08-14T13:00:28.000Z",
-      "link": "https://www.theguardian.com/lifeandstyle/2026/aug/14/online-dating-salvage-mode--ai-bumble-app"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "ChatGPTがPC操作を自動で記録、コンテキストとして利用可能に Mac版デスクトップアプリで提供",
-      "summary": "OpenAIが「ChatGPT」「Codex」の新機能「Computer History」を発表。アプリやWebサイトの操作履歴を記録し、記憶とタイムラインとしてチャットで利用できる。Mac版デスクトップアプリで提供する。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "openai",
-      "importance": 95,
-      "pubDate": "2026-08-14T11:33:51.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2608/14/2000000548/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "GPT-5.6 Solの「超高速モード」ついに実装 「品質損なわず14倍高速」うたう",
-      "summary": "CerebrasとOpenAIは「GPT-5. 6 Sol」の高速版「Ultrafastモード」を発表。毎秒最大750トークンを出力し、「品質を損なわず最大14倍高速」とうたう。OpenAIのAPIで限定プレビューを開始した。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 95,
-      "pubDate": "2026-08-14T07:32:48.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2608/14/2000000545/"
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-      "summary": "Preview Ultrafast, a new OpenAI API service tier that runs GPT-5. 6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second.",
-      "source": "Open",
-      "category": "tech",
-      "importance": 95,
-      "pubDate": "2026-08-13T10:00:00.000Z",
-      "link": "https://openai.com/index/previewing-ultrafast"
+      "pubDate": "2026-08-16T19:32:41.000Z",
+      "link": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion"
     },
     {
       "id": "aHR0cHM6Ly9kZWVwbWluZC5nb29nbGUv",
@@ -415,6 +265,56 @@
       "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/"
     },
     {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Alex Cooper Leaves Long-Time Agent, Seeking New Help to Build Media Empire",
+      "summary": "Alex Cooper is leaving her long-time talent agent for CAA after raising money to expand her business.",
+      "source": "Bloomberg",
+      "category": "agents",
+      "importance": 90,
+      "pubDate": "2026-08-16T19:50:03.000Z",
+      "link": "https://www.bloomberg.com/news/newsletters/2026-08-16/alex-cooper-leaves-long-time-agent-seeking-new-help-to-build-media-empire"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Meta Faces Landmark Trial Over Youth Harm Claims",
+      "summary": "Meta faces a landmark federal trial brought by 29 states over allegations that Facebook and Instagram were deliberately designed to addict young users and that the company improperly collected children’s data.",
+      "source": "Bloomberg",
+      "category": "meta",
+      "importance": 90,
+      "pubDate": "2026-08-16T12:21:20.000Z",
+      "link": "https://www.bloomberg.com/news/videos/2026-08-16/meta-faces-landmark-trial-over-youth-harm-claims-video"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
+      "title": "アメリカの航空局が「ゲーマーを航空管制官として採用する」というキャンペーンで2000人以上の採用に成功し目標人数の94％を達成",
+      "summary": "アメリカの連邦航空局(FAA)は航空管制官の不足を解消するべく「ゲーマーを対象に求人活動を展開する」というキャンペーンを2026年4月に開始しました。この採用キャンペーンが功を奏して、すでに2000人のゲーマーを採用することに成功しています。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2026-08-16T10:19:00.000Z",
+      "link": "https://gigazine.net/news/20260816-gamer-air-traffic-controller/"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
+      "title": "無料でオープンソースの写真撮影ワークフローアプリ「darktable」、RAW現像も可能",
+      "summary": "写真の選別やRAW現像、部分的な色補正からJPEGへの書き出しまでをまとめて行え、被写体を自動選択するAIマスクやAIノイズ除去もPC内で処理できる無料でオープンソースの写真ワークフローアプリ「darktable」が公開されています。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2026-08-16T09:00:00.000Z",
+      "link": "https://gigazine.net/news/20260816-darktable/"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
+      "title": "SpaceXがCursorの買収を正式に完了",
+      "summary": "イーロン・マスク氏率いるSpaceXが、AIコーディングツール・Cursorの開発元であるAnysphereの買収を完了させました。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "code_generation",
+      "importance": 90,
+      "pubDate": "2026-08-16T07:00:00.000Z",
+      "link": "https://gigazine.net/news/20260816-spacex-officially-closes-cursor-acquisition/"
+    },
+    {
       "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
       "title": "I survived two years as prime minister in a hit new game - then my cabinet deserted me",
       "summary": "Mobile game No 10: Full Confidence recently ranked above Minecraft on the UK App Store paid games chart.",
@@ -435,134 +335,14 @@
       "link": "https://arstechnica.com/culture/2026/08/visionquest-trailer-kicks-off-disneys-d23-fan-event/"
     },
     {
-      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
-      "title": "An eval harness found what qualitative review couldn't: AI models are most confident when wrong",
-      "summary": "There is a step in the development process for large language model (LLM)-assisted tooling that most teams skip because it s tedious, time-consuming, and doesn t produce results visible to end users: Verifying that what the model is saying is actually correct.",
-      "source": "VentureBeat",
-      "category": "reasoning",
-      "importance": 90,
-      "pubDate": "2026-08-15T19:00:00.000Z",
-      "link": "https://venturebeat.com/orchestration/an-eval-harness-found-what-qualitative-review-couldnt-ai-models-are-most-confident-when-wrong"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vdGVj",
-      "title": "X-Men Cast, VisionQuest Trailer: All the Big Marvel News Out of D23",
-      "summary": "Hugh Jackman and Ryan Reynolds also begged to be cast in Avengers: Doomsday.",
-      "source": "CNET",
+      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
+      "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+      "summary": "Preview Ultrafast, a new OpenAI API service tier that runs GPT-5. 6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second.",
+      "source": "Open",
       "category": "tech",
       "importance": 90,
-      "pubDate": "2026-08-15T18:58:01.000Z",
-      "link": "https://www.cnet.com/tech/services-and-software/x-men-cast-visionquest-trailer-all-the-big-marvel-news-out-of-d23/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Impetus builds an operational framework to bridge AI’s ‘context gap’",
-      "summary": "AI agents are being widely deployed inside businesses today, but do they actually know how to get results. This is the fundamental question being asked in many boardrooms as enterprises implement AI strategies tied to agents performing key tasks. Impetus Technologies Inc.",
-      "source": "SiliconANGLE",
-      "category": "agents",
-      "importance": 90,
-      "pubDate": "2026-08-15T18:09:54.000Z",
-      "link": "https://siliconangle.com/2026/08/15/impetus-provides-context-ai-agents-impetus/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vdGVj",
-      "title": "Starfighter Trailer, Ahsoka and Anakin: Biggest Star Wars News Out of D23",
-      "summary": "Hayden Christensen is back, and Ryan Gosling is ready for his Starfighter role.",
-      "source": "CNET",
-      "category": "tech",
-      "importance": 90,
-      "pubDate": "2026-08-15T16:23:12.000Z",
-      "link": "https://www.cnet.com/tech/services-and-software/starfighter-trailer-ahsoka-and-anakin-biggest-star-wars-news-out-of-d23/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "Amazon Can Use Your Twitch Content to Train Its AI—Unless You Opt Out",
-      "summary": "When Twitch announced that streamers could opt out, thousands of users questioned why their content was being used to train AI models in the first place.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "tech",
-      "importance": 90,
-      "pubDate": "2026-08-15T09:00:00.000Z",
-      "link": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out/"
-    },
-    {
-      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
-      "title": "コンピューターの敵だった「熱雑音」を逆に利用して省電力を狙う「熱力学コンピューティング」とは？",
-      "summary": "熱によって原子や電子が不規則に動くことで、回路の電圧や電流には小さな揺らぎが生じます。こうしたランダムな揺らぎは「熱雑音」と呼ばれ、通常のコンピューターでは計算を乱す原因となるため抑え込まれていますが、その熱雑音を逆に計算へ利用する「熱力学コンピューティング」の研究が進んでいます。AIや科学計算に必要な処理を、従来のコンピューターより少ない消費電力と発熱で実行できる可能性がありますが、記事作成時点では小規模な試作機やシミュレーションを使って原理を検証している段階です。続きを読む.",
-      "source": "GIGAZINE",
-      "category": "tech",
-      "importance": 90,
-      "pubDate": "2026-08-15T08:00:00.000Z",
-      "link": "https://gigazine.net/news/20260815-thermodynamic-computing/"
-    },
-    {
-      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
-      "title": "アメリカにおけるがん手術の待ち時間はますます長くなっている",
-      "summary": "アメリカにおけるがん患者の手術までの待機時間が、2012年から2023年にかけて段階的に長くなってきていることが明らかになりました。続きを読む.",
-      "source": "GIGAZINE",
-      "category": "tech",
-      "importance": 90,
-      "pubDate": "2026-08-15T06:00:00.000Z",
-      "link": "https://gigazine.net/news/20260815-us-wait-times-cancer-surgeries-longer/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vY3Vs",
-      "title": "Frozen 3 Trailer Reveals Anna’s Royal Wedding and A New Icy Magic",
-      "summary": "Love is in the air — including for Olaf.",
-      "source": "CNET",
-      "category": "tech",
-      "importance": 90,
-      "pubDate": "2026-08-15T05:42:32.000Z",
-      "link": "https://www.cnet.com/culture/entertainment/frozen-3-trailer-reveals-annas-royal-wedding-and-a-new-icy-magic/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Did Nvidia’s Jensen Huang just make the AI buildout too big to fail?",
-      "summary": "is no longer just selling technology. It is helping create a financial asset class around artificial intelligence compute. In our last Breaking Analysis, we argued that AI can be technologically transformative and still produce a capital bubble.",
-      "source": "SiliconANGLE",
-      "category": "nvidia",
-      "importance": 90,
-      "pubDate": "2026-08-15T04:46:35.000Z",
-      "link": "https://siliconangle.com/2026/08/15/nvidias-jensen-huang-just-make-ai-buildout-big-fail/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Position: The Alignment Community is Unintentionally Building a Censor's Toolkit",
-      "summary": "12346v1 Announce Type: new Abstract: This position paper argues that modern AI alignment methods - originally designed to prevent harmful output - are dual-use technologies that may easily be misused by malicious actors for censorship and manipulation.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "robotics",
-      "importance": 90,
-      "pubDate": "2026-08-15T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2608.12346"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Multi-Agent Scheduling with LLM-Assisted Contract Net Negotiation for Stream Processing in Mobile Edge Computing",
-      "summary": "12371v1 Announce Type: new Abstract: Stream-processing systems increasingly operate across heterogeneous mobile edge--cloud infrastructures, where workload volatility, resource contention, and stringent quality-of-service (QoS) requirements complicate decentralized scheduling.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "agents",
-      "importance": 90,
-      "pubDate": "2026-08-15T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2608.12371"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI2",
-      "title": "Learning to Adapt Cross-Domain Preferences via Meta-LoRA for LLM Personalization",
-      "summary": "12389v1 Announce Type: new Abstract: Cross-domain zero- or few-shot personalization aims to generate user-preferred responses in unseen conversational domains from only a handful of target-domain interactions.",
-      "source": "cs.AI updates on arXiv.org",
-      "category": "meta",
-      "importance": 90,
-      "pubDate": "2026-08-15T04:00:00.000Z",
-      "link": "https://arxiv.org/abs/2608.12389"
-    },
-    {
-      "id": "aHR0cHM6Ly9ibG9nLmdvb2dsZS9wcm9k",
-      "title": "Bring your spreadsheet data to life with Sheets canvas",
-      "summary": "Sheets canvas turns data into interactive dashboards, custom study trackers, seating charts, and more, all with a simple prompt.",
-      "source": "AI",
-      "category": "academic",
-      "importance": 90,
-      "pubDate": "2026-08-13T16:45:00.000Z",
-      "link": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/"
+      "pubDate": "2026-08-13T10:00:00.000Z",
+      "link": "https://openai.com/index/previewing-ultrafast"
     },
     {
       "id": "aHR0cHM6Ly9ibG9nLmdvb2dsZS9wcm9k",
@@ -575,24 +355,94 @@
       "link": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "Secondhand booksellers in UK and Ireland suspect AI firms behind ‘strange’ bulk orders",
-      "summary": "Development comes after Anthropic was found to have spent millions on books to scan for ‘data acquisition’Secondhand booksellers in the UK and Ireland are reporting a flurry of bulk orders from mystery buyers, amid speculation AI companies are acquiring the tomes for their data.",
-      "source": "The Guardian",
-      "category": "presentation",
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Container security is moving from vulnerability detection to attack surface reduction",
+      "summary": "Container security has spent years operating around a familiar cycle: scan, identify vulnerabilities, patch and repeat.",
+      "source": "SiliconANGLE",
+      "category": "agents",
       "importance": 85,
-      "pubDate": "2026-08-15T08:00:51.000Z",
-      "link": "https://www.theguardian.com/technology/2026/aug/15/uk-ireland-booksellers-suspect-ai-companies-bulk-orders-data-acquisition"
+      "pubDate": "2026-08-15T17:49:21.000Z",
+      "link": "https://siliconangle.com/2026/08/15/container-security-attack-surface-reduction-appdevangle/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
-      "title": "CMU to Lead National Study of AI in Arts Education",
-      "summary": "As artificial intelligence reshapes how art is made and taught, colleges and universities are largely determining on their own how to prepare the next generation of artists and designers.",
-      "source": "cmu",
-      "category": "academic",
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Ukraine strikes major Russian rocket factory with cruise missiles",
+      "summary": "\"Flamingo missiles were used.",
+      "source": "Ars Technica",
+      "category": "manufacturing",
       "importance": 85,
-      "pubDate": "2026-08-14T13:00:11.000Z",
-      "link": "https://www.cmu.edu/news/stories/archives/2026/august/cmu-to-lead-national-study-of-ai-in-arts-education"
+      "pubDate": "2026-08-15T15:46:05.000Z",
+      "link": "https://arstechnica.com/space/2026/08/ukraine-strikes-major-russian-rocket-factory-with-cruise-missiles/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Z.ai debuts GLM-5.3 with long-horizon coding, cybersecurity upgrades",
+      "summary": "Chinese artificial intelligence developer Z. 3, an open-source large language model that set records across several popular benchmarks. The LLM is based on an algorithm called GLM-5.",
+      "source": "SiliconANGLE",
+      "category": "research",
+      "importance": 85,
+      "pubDate": "2026-08-14T20:35:28.000Z",
+      "link": "https://siliconangle.com/2026/08/14/z-ai-debuts-glm-5-3-long-horizon-coding-cybersecurity-upgrades/"
+    },
+    {
+      "id": "aHR0cHM6Ly9ibG9ncy5udmlkaWEuY29t",
+      "title": "Universitas Gadjah Mada, Indosat and NVIDIA Open Indonesia’s First University AI Center to Develop Local AI Talent",
+      "summary": "Indonesia is taking charge of its AI future.",
+      "source": "NVIDIA",
+      "category": "nvidia",
+      "importance": 85,
+      "pubDate": "2026-08-14T17:13:05.000Z",
+      "link": "https://blogs.nvidia.com/blog/ugm-indosat-nvidia-ai-technology-center/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Google will now allow users to remove visible watermark from its AI generations",
+      "summary": "Turning off this setting won't affect invisible benchmarks used to identify an AI generated file.",
+      "source": "TechCrunch",
+      "category": "google",
+      "importance": 85,
+      "pubDate": "2026-08-14T16:13:40.000Z",
+      "link": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Building agentic workflows with SageMaker AI and Bedrock AgentCore",
+      "summary": "Learn how to combine OpenAI-compatible endpoints on Amazon SageMaker AI with Amazon Bedrock AgentCore runtime to build a multi-agent workflow where each specialized agent uses the model best suited to its job.",
+      "source": "aws",
+      "category": "agents",
+      "importance": 85,
+      "pubDate": "2026-08-14T15:58:44.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/building-agentic-workflows-with-sagemaker-ai-and-bedrock-agentcore/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "As online dating goes into ‘salvage mode’, can AI solve all its problems?",
+      "summary": "Dating apps such as Bumble forced to adapt as ‘swipe fatigue’ growsBumble was supposed to be different. When it launched in 2014, it offered women a simple proposition: if you matched with a man, you had to make the first move.",
+      "source": "The Guardian",
+      "category": "tech",
+      "importance": 85,
+      "pubDate": "2026-08-14T13:00:28.000Z",
+      "link": "https://www.theguardian.com/lifeandstyle/2026/aug/14/online-dating-salvage-mode--ai-bumble-app"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "ChatGPTがPC操作を自動で記録、コンテキストとして利用可能に Mac版デスクトップアプリで提供",
+      "summary": "OpenAIが「ChatGPT」「Codex」の新機能「Computer History」を発表。アプリやWebサイトの操作履歴を記録し、記憶とタイムラインとしてチャットで利用できる。Mac版デスクトップアプリで提供する。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "openai",
+      "importance": 85,
+      "pubDate": "2026-08-14T11:33:51.000Z",
+      "link": "https://www.itmedia.co.jp/aiplus/article/2608/14/2000000548/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "GPT-5.6 Solの「超高速モード」ついに実装 「品質損なわず14倍高速」うたう",
+      "summary": "CerebrasとOpenAIは「GPT-5. 6 Sol」の高速版「Ultrafastモード」を発表。毎秒最大750トークンを出力し、「品質を損なわず最大14倍高速」とうたう。OpenAIのAPIで限定プレビューを開始した。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 85,
+      "pubDate": "2026-08-14T07:32:48.000Z",
+      "link": "https://www.itmedia.co.jp/aiplus/article/2608/14/2000000545/"
     },
     {
       "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
@@ -635,14 +485,14 @@
       "link": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired"
     },
     {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
-      "summary": "OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI.",
-      "source": "Open",
-      "category": "openai",
+      "id": "aHR0cHM6Ly9ibG9nLmdvb2dsZS9wcm9k",
+      "title": "Bring your spreadsheet data to life with Sheets canvas",
+      "summary": "Sheets canvas turns data into interactive dashboards, custom study trackers, seating charts, and more, all with a simple prompt.",
+      "source": "AI",
+      "category": "academic",
       "importance": 85,
-      "pubDate": "2026-08-13T09:00:00.000Z",
-      "link": "https://openai.com/index/dali-rajic-chief-revenue-officer"
+      "pubDate": "2026-08-13T16:45:00.000Z",
+      "link": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/"
     },
     {
       "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
@@ -653,6 +503,116 @@
       "importance": 85,
       "pubDate": "2026-08-12T06:00:00.000Z",
       "link": "https://openai.com/index/how-enterprises-put-ai-to-work"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+      "summary": "OpenRouter's CEO recently described the startup as Stripe for AI.",
+      "source": "TechCrunch",
+      "category": "business",
+      "importance": 80,
+      "pubDate": "2026-08-16T20:57:04.000Z",
+      "link": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Why people aren’t buying Mark Zuckerberg’s AI future",
+      "summary": "On the latest episode of Equity podcast, we discuss why not everyone is buying Zuckerberg’s vision.",
+      "source": "TechCrunch",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-08-16T20:32:01.000Z",
+      "link": "https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Skyrocketing Beef Prices Finally Have Americans Reaching Their Spending Limit",
+      "summary": "Aaron Kaufman used to meet his lofty daily protein goals — a gram for each pound he weighs — with ground beef.",
+      "source": "Bloomberg",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-08-16T20:00:00.000Z",
+      "link": "https://www.bloomberg.com/news/articles/2026-08-16/skyrocketing-beef-prices-finally-have-americans-reaching-their-spending-limit"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
+      "title": "Bonta Says Meta Put Profit Over Children’s Safety",
+      "summary": "California Attorney General Rob Bonta joins Bloomberg This Weekend and calls the landmark youth safety case against Meta a “tobacco moment,” alleging the company knowingly designed Facebook and Instagram features that harmed children and put profit ahead of their safety.",
+      "source": "Bloomberg",
+      "category": "meta",
+      "importance": 80,
+      "pubDate": "2026-08-16T14:37:37.000Z",
+      "link": "https://www.bloomberg.com/news/videos/2026-08-16/bonta-says-meta-put-profit-over-children-s-safety-video"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "Is the MacBook Pro M5 still worth buying after the price hike?",
+      "summary": "It could be wise to wait, or settle for a cheaper model.",
+      "source": "Technology News & Expert Reviews",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-08-16T14:30:00.000Z",
+      "link": "https://www.engadget.com/2234244/is-macbook-pro-m5-still-worth-after-price-hike/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "Nintendo GameCube discs were small for a reason",
+      "summary": "The format remains unique in console history.",
+      "source": "Technology News & Expert Reviews",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-08-16T13:30:00.000Z",
+      "link": "https://www.engadget.com/2234243/nintendo-gamecube-small-discs-reason/"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9n",
+      "title": "Fairphone 6+、8月18日発表へ｜スペック競争とは別の物差しで測られる「Fair」の意味と方向性",
+      "summary": "性能競争に終始しがちなスマホ発表の中、Fairphoneは労働環境や素材調達、修理性という別の物差しで自らを測ってきました。8月18日発表の新モデルを機に、「Fair」ではなく「Fairer」を掲げる同社の思想とその限界を整理。EUで修理する権利の制度が動き出したいま改めて確認したいことを整理します。.",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-08-16T13:15:12.000Z",
+      "link": "https://innovatopia.jp/gadget/gadget-news/116077/"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9n",
+      "title": "Nokia「9000 Communicator」30周年｜発明した会社が、発明したものをやめていた",
+      "summary": "1996年、Nokiaはスマホの原型「9000 Communicator」を発売した。iPhoneの11年前のことだ。その発売から30年を迎えた2026年、Nokiaはスマホ事業から正式に撤退している。同じ年、同社が賭けているのはAIネイティブな通信網という新しい接続のかたちだ。発明した会社は、次に何を発明するのか。.",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-08-16T11:11:21.000Z",
+      "link": "https://innovatopia.jp/gadget/gadget-news/116072/"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9n",
+      "title": "Samsung、AirPods Max対抗ヘッドホン開発か？｜コードネーム「Galaxy H1」",
+      "summary": "耳デバイスが医療機器化とプレミアム化へ二極化する中、Samsungの新型オーバーイヤー「Galaxy H1」の開発が判明。AirPods MaxやSony WH-1000XM6との競合に加え、過去のLevel OverとLevel Onを巡る製品の経緯を一次資料から読み解きます。.",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-08-16T10:05:02.000Z",
+      "link": "https://innovatopia.jp/gadget/gadget-news/116066/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Wildfire smoke now bigger prenatal threat than human sources of air pollution",
+      "summary": "Regulations reduced prenatal exposure to harmful emissions, but wildfire smoke is erasing gains.",
+      "source": "Ars Technica",
+      "category": "regulation",
+      "importance": 80,
+      "pubDate": "2026-08-16T10:00:59.000Z",
+      "link": "https://arstechnica.com/science/2026/08/wildfire-smoke-now-bigger-prenatal-threat-than-human-sources-of-air-pollution/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "‘We detected unusual activity’: the scam that uses AI to exploit your holiday photos",
+      "summary": "Fraudsters use pictures posted on Instagram or Facebook to create emails seeking bank account detailsYou are on a short break in Porto and post some pictures of your family on Instagram or Facebook.",
+      "source": "The Guardian",
+      "category": "entertainment",
+      "importance": 80,
+      "pubDate": "2026-08-16T06:00:17.000Z",
+      "link": "https://www.theguardian.com/money/2026/aug/16/scam-ai-holiday-photos-instagram-facebook"
     },
     {
       "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
@@ -672,7 +632,7 @@
       "category": "tech",
       "importance": 80,
       "pubDate": "2026-08-16T02:06:52.000Z",
-      "link": "https://www.cnet.com/tech/gaming/kingdom-hearts-4-fans-are-well-fed-after-2-days-of-great-trailers/"
+      "link": "https://www.cnet.com/tech/gaming/kingdom-hearts-4-fans-are-well-fed-after-2-days-of-great-trailers-2/"
     },
     {
       "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
@@ -695,274 +655,74 @@
       "link": "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Have a laugh at AI’s expense by roleplaying as a chatbot",
-      "summary": "If you squint you can just about make out the hat. | Screenshot: Terrence O’Brien / The Verge Your AI Slop Bores Me is brilliant in its simplicity. There are two tabs: human and LARP as an AI.",
-      "source": "The Verge",
-      "category": "regulation",
+      "id": "aHR0cHM6Ly92ZW50dXJlYmVhdC5jb20v",
+      "title": "An eval harness found what qualitative review couldn't: AI models are most confident when wrong",
+      "summary": "There is a step in the development process for large language model (LLM)-assisted tooling that most teams skip because it s tedious, time-consuming, and doesn t produce results visible to end users: Verifying that what the model is saying is actually correct.",
+      "source": "VentureBeat",
+      "category": "reasoning",
       "importance": 80,
-      "pubDate": "2026-08-15T20:45:00.000Z",
-      "link": "https://www.theverge.com/entertainment/980502/roleplay-as-an-ai-chatbot"
+      "pubDate": "2026-08-15T19:00:00.000Z",
+      "link": "https://venturebeat.com/orchestration/an-eval-harness-found-what-qualitative-review-couldnt-ai-models-are-most-confident-when-wrong"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "Why are RAM prices so high right now?",
-      "summary": "When will the price of RAM come back down again.",
-      "source": "Technology News & Expert Reviews",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-15T18:30:00.000Z",
-      "link": "https://www.engadget.com/2236799/why-ram-prices-so-high/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "What the world's oldest telecommunications company looks like today",
-      "summary": "While there have been many twists and turns in the company s evolution, it remains one of the biggest names in the telecommunications industry.",
-      "source": "Technology News & Expert Reviews",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-15T18:00:00.000Z",
-      "link": "https://www.engadget.com/2236190/worlds-oldest-telecommunications-company-what-looks-like-today/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vbmV3",
-      "title": "Patent Filing Suggests Meta’s Facial Recognition Glasses Are Coming",
-      "summary": "A patent filing details ways that Meta could use facial recognition with its smart glasses to create media files, such as videos.",
+      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vdGVj",
+      "title": "X-Men Cast, VisionQuest Trailer: All the Big Marvel News Out of D23",
+      "summary": "Hugh Jackman and Ryan Reynolds also begged to be cast in Avengers: Doomsday.",
       "source": "CNET",
-      "category": "meta",
-      "importance": 80,
-      "pubDate": "2026-08-15T17:26:17.000Z",
-      "link": "https://www.cnet.com/news/privacy/patent-filing-suggests-metas-facial-recognition-glasses-are-coming/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
-      "title": "Trump administration wants to allow companies to hack foreign cybercriminals",
-      "summary": "The White House memorandum is thin on details, but it aims to give private businesses the ability to sabotage or spy on certain foreign actors.",
-      "source": "NPR",
-      "category": "business",
-      "importance": 80,
-      "pubDate": "2026-08-15T17:25:34.000Z",
-      "link": "https://www.npr.org/2026/08/15/nx-s1-5930311/trump-companies-hack-foreign-cybercriminals"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "SpaceX officially closes its Cursor acquisition",
-      "summary": "AI coding startup Cursor is now officially a part of SpaceX.",
-      "source": "TechCrunch",
-      "category": "code_generation",
-      "importance": 80,
-      "pubDate": "2026-08-15T16:30:00.000Z",
-      "link": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "What is analog TV and how is it different from digital TV?",
-      "summary": "Going analog is all the rage, but does it apply to the small screen.",
-      "source": "Technology News & Expert Reviews",
       "category": "tech",
       "importance": 80,
-      "pubDate": "2026-08-15T15:30:00.000Z",
-      "link": "https://www.engadget.com/2234240/what-is-analog-tv-how-different-from-digital-tv/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "What happens when a hybrid battery dies and what to do about it",
-      "summary": "Don t wait to have your car checked out if its traction battery is having problems.",
-      "source": "Technology News & Expert Reviews",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-15T13:30:00.000Z",
-      "link": "https://www.engadget.com/2234238/what-happens-when-hybrid-battery-dies/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
-      "title": "Secondhand book sales are booming. Is it because of AI?",
-      "summary": "Booksellers are reporting mysterious bulk orders. It's thought the books are being used to train AI - and ending up pulped.",
-      "source": "BBC",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-15T11:25:32.000Z",
-      "link": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "NTTドコモ論文がIJCAI採択｜顧客の継続期間を患者の生存時間と同じ数式で測る",
-      "summary": "がん患者の余命を推定する数式と、クーポンの効果を測る数式が、同じ形をしている。NTTドコモと半熟仮想の共著論文が、AI分野の国際会議IJCAI 2026に採択されました。リリースは触れていませんが、この研究が持ち込んだの [ ].",
-      "source": "innovaTopia",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-15T10:10:10.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/115992/"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "デジタル庁、行政手続7万5000件を分析するMCPサーバを公開｜MITライセンスの検証用サンプル",
-      "summary": "約7万5000件の行政手続データを、AIには全部読ませない。デジタル庁のプロダクトマネージャーが公開した実装は、LLMに検索と集計の条件だけを指定させ、計算そのものはサーバ側に置きました。配られたのは、データではなく、デ [ ].",
-      "source": "innovaTopia",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-15T08:15:51.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/116042/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "Mastercard Says Brief Australia Payment Disruption Is Resolved",
-      "summary": "Mastercard card payments were temporarily declined for some Australian customers on Saturday afternoon because of a global issue that has since been resolved, according to the company.",
-      "source": "Bloomberg",
-      "category": "presentation",
-      "importance": 80,
-      "pubDate": "2026-08-15T06:55:29.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-08-15/mastercard-payments-being-declined-in-australia-bank-says"
-    },
-    {
-      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
-      "title": "E-Inkディスプレイ・3マイクアレイ・32bitフロート録音に対応した「Insta360 Mic Pro」外観レビュー",
-      "summary": "アクションカメラなどで知られるInsta360から、送信機の前面にカスタマイズ可能なE-Inkディスプレイを搭載したワイヤレスマイク「Insta360 Mic Pro」が2026年5月19日に登場しました。Mic Proは3基のマイクを内蔵して指向性を切り替えられるほか、AIノイズキャンセリングやオートゲインなども搭載しています。そんなMic Proを実際に使う機会を得たので、まずは特徴的なE-Inkディスプレイを含む本体の外観や付属品を詳しくチェックしてみました。続きを読む.",
-      "source": "GIGAZINE",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-15T03:30:00.000Z",
-      "link": "https://gigazine.net/news/20260815-insta360-mic-pro-appearance/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "First test flight of largest all-electric aircraft used just $5 of electricity",
-      "summary": "Airline-backed venture aims to develop a hybrid-electric commercial aircraft.",
-      "source": "Ars Technica",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-14T18:00:23.000Z",
-      "link": "https://arstechnica.com/gadgets/2026/08/first-test-flight-of-largest-all-electric-aircraft-used-just-5-of-electricity/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Mark Zuckerberg has an Instagzam",
-      "summary": "Instagram's wordmark is iconic. Apparently Instagram thought it looked old, so the company rolled out a new one this week. It doesn't look like the old Instagram wordmark.",
-      "source": "The Verge",
-      "category": "regulation",
-      "importance": 80,
-      "pubDate": "2026-08-14T16:54:16.000Z",
-      "link": "https://www.theverge.com/podcast/980367/instagram-logo-new-zuckerberg-ai-vergecast"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "Apple is warning users of new spyware attacks - what to do if you're a target",
-      "summary": "New spyware attacks are aimed at journalists, activists, politicians, diplomats, and others. Here's how Apple is notifying them and what they should do - after turning on Lockdown Mode.",
-      "source": "Latest news",
-      "category": "academic",
-      "importance": 80,
-      "pubDate": "2026-08-14T16:08:11.000Z",
-      "link": "https://www.zdnet.com/article/apple-warns-targetted-spyware-attacks-what-to-do/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "Police Scotland warns ‘robust security’ needed to stop attacks on AI datacentres",
-      "summary": "‘A great deal of public opposition is likely’ to a proposed datacentre near Edinburgh, the force saysPolice in Scotland have issued a stark warning about the need for “robust security measures” to stop proposed AI datacentres from being attacked by protesters.",
-      "source": "The Guardian",
-      "category": "security",
-      "importance": 80,
-      "pubDate": "2026-08-14T16:05:31.000Z",
-      "link": "https://www.theguardian.com/uk-news/2026/aug/14/scottish-police-expect-public-opposition-larbert-datacentre"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "ChatGPT's new Computer History tracks your Mac activity to create a timeline - but should you let it?",
-      "summary": "Rolling out to ChatGPT's Mac app, Computer History creates a timeline from your activities across the apps and websites you use on your Mac. Is that a privacy risk.",
-      "source": "Latest news",
-      "category": "regulation",
-      "importance": 80,
-      "pubDate": "2026-08-14T16:00:16.000Z",
-      "link": "https://www.zdnet.com/article/chatgpt-computer-history/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "Dell XPS 13 review: The first budget laptop to rival Neo raises the bar for all PCs",
-      "summary": "The Dell XPS 13 flaunts build quality rarely seen at this price point, but not without trade-offs.",
-      "source": "Latest news",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-14T16:00:00.000Z",
-      "link": "https://www.zdnet.com/article/dell-xps-13-spotlight/"
-    },
-    {
-      "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9haS1h",
-      "title": "How to bring your software delivery workflow into GitHub with agent apps",
-      "summary": "See how four GitHub agent apps can help you scope, secure, roll out, and ship a feature across the SDLC–all without leaving GitHub. The post How to bring your software delivery workflow into GitHub with agent apps appeared first on The GitHub Blog.",
-      "source": "The GitHub",
-      "category": "agents",
-      "importance": 80,
-      "pubDate": "2026-08-14T16:00:00.000Z",
-      "link": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS92",
-      "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
-      "summary": "Meta released Glimmer this week, an open-weight AI model anyone can download and run on their own hardware — a contrast to Muse Spark, the company’s more powerful model that stays locked behind its own APIs.",
-      "source": "TechCrunch",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-14T15:43:28.000Z",
-      "link": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
-      "summary": "Natural gas prices could triple in some parts of the U. , which could saddle hyperscalers with massive bills to power their AI data centers.",
-      "source": "TechCrunch",
-      "category": "data_science",
-      "importance": 80,
-      "pubDate": "2026-08-14T14:05:00.000Z",
-      "link": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/"
+      "pubDate": "2026-08-15T18:58:01.000Z",
+      "link": "https://www.cnet.com/tech/services-and-software/x-men-cast-visionquest-trailer-all-the-big-marvel-news-out-of-d23/"
     },
     {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Weak API controls are one of the biggest threats in the agentic AI era",
-      "summary": "Artificial intelligence agents are already running inside your enterprise workflows, whether you know it or not. International Data Corp. projects full agentic AI deployment across the enterprise by 2027.",
+      "title": "Impetus builds an operational framework to bridge AI’s ‘context gap’",
+      "summary": "AI agents are being widely deployed inside businesses today, but do they actually know how to get results. This is the fundamental question being asked in many boardrooms as enterprises implement AI strategies tied to agents performing key tasks. Impetus Technologies Inc.",
       "source": "SiliconANGLE",
       "category": "agents",
       "importance": 80,
-      "pubDate": "2026-08-14T14:00:26.000Z",
-      "link": "https://siliconangle.com/2026/08/14/weak-api-controls-one-biggest-threats-agentic-ai-era/"
+      "pubDate": "2026-08-15T18:09:54.000Z",
+      "link": "https://siliconangle.com/2026/08/15/impetus-provides-context-ai-agents-impetus/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS9w",
-      "title": "Meta’s ‘open’ AI, and a $250M deal gone very wrong",
-      "summary": "Meta released Glimmer this week, an open-weight AI model anyone can download and run on their own hardware — a contrast to Muse Spark, the company’s more powerful model that stays locked behind its own APIs.",
-      "source": "TechCrunch",
-      "category": "meta",
-      "importance": 80,
-      "pubDate": "2026-08-14T14:00:00.000Z",
-      "link": "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaW5ndWxhcml0eWh1Yi5j",
-      "title": "Biology Needs an AI Declaration",
-      "summary": "In the Leiden Declaration, mathematicians issued a treatise on how AI challenges their field. Others must do the same. The post Biology Needs an AI Declaration appeared first on SingularityHub.",
-      "source": "Singularity Hub",
+      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vdGVj",
+      "title": "Starfighter Trailer, Ahsoka and Anakin: Biggest Star Wars News Out of D23",
+      "summary": "Hayden Christensen is back, and Ryan Gosling is ready for his Starfighter role.",
+      "source": "CNET",
       "category": "tech",
       "importance": 80,
-      "pubDate": "2026-08-14T14:00:00.000Z",
-      "link": "https://singularityhub.com/2026/08/14/biology-needs-its-own-ai-declaration/"
+      "pubDate": "2026-08-15T16:23:12.000Z",
+      "link": "https://www.cnet.com/tech/services-and-software/starfighter-trailer-ahsoka-and-anakin-biggest-star-wars-news-out-of-d23/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "Amazon Can Use Your Twitch Content to Train Its AI—Unless You Opt Out",
+      "summary": "When Twitch announced that streamers could opt out, thousands of users questioned why their content was being used to train AI models in the first place.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-08-15T09:00:00.000Z",
+      "link": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vY3Vs",
+      "title": "Frozen 3 Trailer Reveals Anna’s Royal Wedding and A New Icy Magic",
+      "summary": "Love is in the air — including for Olaf.",
+      "source": "CNET",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-08-15T05:42:32.000Z",
+      "link": "https://www.cnet.com/culture/entertainment/frozen-3-trailer-reveals-annas-royal-wedding-and-a-new-icy-magic/"
     },
     {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "The AI party keeps roaring: Why it won’t end anytime soon",
-      "summary": "Yes, there s an artificial intelligence bubble, no denying that anymore so the question becomes, Will it burst, and when.",
+      "title": "Did Nvidia’s Jensen Huang just make the AI buildout too big to fail?",
+      "summary": "is no longer just selling technology. It is helping create a financial asset class around artificial intelligence compute. In our last Breaking Analysis, we argued that AI can be technologically transformative and still produce a capital bubble.",
       "source": "SiliconANGLE",
-      "category": "business",
+      "category": "nvidia",
       "importance": 80,
-      "pubDate": "2026-08-14T13:45:48.000Z",
-      "link": "https://siliconangle.com/2026/08/14/ai-party-keeps-roaring-wont-end-anytime-soon/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "The Download: Flock’s new rules, cloning’s future, and children’s cells",
-      "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology.",
-      "source": "MIT Technology Review",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-14T12:17:21.000Z",
-      "link": "https://www.technologyreview.com/2026/08/14/1142033/the-download-flock-new-rules-cloning-future/"
+      "pubDate": "2026-08-15T04:46:35.000Z",
+      "link": "https://siliconangle.com/2026/08/15/nvidias-jensen-huang-just-make-ai-buildout-big-fail/"
     },
     {
       "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
@@ -975,14 +735,14 @@
       "link": "https://www.itmedia.co.jp/business/articles/2608/14/news053.html"
     },
     {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "There’s a Fatty Liver Epidemic. AI Could Help Get Ahead of It",
-      "summary": "Over a billion people worldwide have livers with excess fat, which can lead to a host of medical problems. Researchers think AI tools can spot the condition—and help stop it—early enough to save lives.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "healthcare",
+      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
+      "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+      "summary": "OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI.",
+      "source": "Open",
+      "category": "openai",
       "importance": 80,
       "pubDate": "2026-08-13T09:00:00.000Z",
-      "link": "https://www.wired.com/story/fatty-liver-disease-ai-detection-cancer/"
+      "link": "https://openai.com/index/dali-rajic-chief-revenue-officer"
     },
     {
       "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
@@ -993,16 +753,6 @@
       "importance": 80,
       "pubDate": "2026-08-12T15:05:38.000Z",
       "link": "https://www.cmu.edu/news/stories/archives/2026/august/rare-ventures-a-first-of-its-kind-platform-for-accelerating-rare-disease-therapies-launches-in"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "AI was supposed to destroy jobs. Where’s the carnage?",
-      "summary": "The AI jobs apocalypse never showed up. Still, jobs are changing and economists expect more to comeThe prediction was stark: artificial intelligence advancements would wipe out jobs en masse. “Half” of all entry-level white collar jobs would vanish, Anthropic’s CEO, Dario Amodei, said in May 2025.",
-      "source": "The Guardian",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-08-12T10:00:27.000Z",
-      "link": "https://www.theguardian.com/technology/2026/aug/12/ai-job-destruction"
     },
     {
       "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
@@ -1045,34 +795,94 @@
       "link": "https://openai.com/index/responsible-ai-infrastructure-texas"
     },
     {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "These ‘Masturbation Consultants’ Were Hired to Pleasure Themselves With AI",
-      "summary": "Joi AI hired 10 people to masturbate using AI companions as part of a monthlong “wellness” study. The company claims the practice could help “solve male loneliness.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "academic",
-      "importance": 75,
-      "pubDate": "2026-08-14T10:45:00.000Z",
-      "link": "https://www.wired.com/story/these-masturbation-consultants-were-hired-to-pleasure-themselves-using-ai/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "This scientist is helping build a missing map of childhood",
-      "summary": "In 2017, Deanne Taylor attended a presentation at the University of Pennsylvania, just a short walk from her office. A researcher was there to unveil the Human Cell Atlas, an ambitious project that aimed to map every cell in the human body. Taylor was floored, and then concerned.",
-      "source": "MIT Technology Review",
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "Secondhand booksellers in UK and Ireland suspect AI firms behind ‘strange’ bulk orders",
+      "summary": "Development comes after Anthropic was found to have spent millions on books to scan for ‘data acquisition’Secondhand booksellers in the UK and Ireland are reporting a flurry of bulk orders from mystery buyers, amid speculation AI companies are acquiring the tomes for their data.",
+      "source": "The Guardian",
       "category": "presentation",
       "importance": 75,
-      "pubDate": "2026-08-14T09:00:00.000Z",
-      "link": "https://www.technologyreview.com/2026/08/14/1141354/deanne-taylor-gene-expression-children/"
+      "pubDate": "2026-08-15T08:00:51.000Z",
+      "link": "https://www.theguardian.com/technology/2026/aug/15/uk-ireland-booksellers-suspect-ai-companies-bulk-orders-data-acquisition"
     },
     {
       "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
-      "title": "Researchers Explore What It Means To Say AI 'Thinks'",
-      "summary": "When organizations describe artificial intelligence as “thinking,” “writing” or “learning,” those words can sound familiar.",
+      "title": "CMU to Lead National Study of AI in Arts Education",
+      "summary": "As artificial intelligence reshapes how art is made and taught, colleges and universities are largely determining on their own how to prepare the next generation of artists and designers.",
       "source": "cmu",
-      "category": "research",
+      "category": "academic",
       "importance": 75,
-      "pubDate": "2026-08-13T16:20:26.000Z",
-      "link": "https://www.cmu.edu/news/stories/archives/2026/august/researchers-explore-what-it-means-to-say-ai-thinks"
+      "pubDate": "2026-08-14T13:00:11.000Z",
+      "link": "https://www.cmu.edu/news/stories/archives/2026/august/cmu-to-lead-national-study-of-ai-in-arts-education"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "There’s a Fatty Liver Epidemic. AI Could Help Get Ahead of It",
+      "summary": "Over a billion people worldwide have livers with excess fat, which can lead to a host of medical problems. Researchers think AI tools can spot the condition—and help stop it—early enough to save lives.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "healthcare",
+      "importance": 75,
+      "pubDate": "2026-08-13T09:00:00.000Z",
+      "link": "https://www.wired.com/story/fatty-liver-disease-ai-detection-cancer/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "Have a laugh at AI’s expense by roleplaying as a chatbot",
+      "summary": "If you squint you can just about make out the hat. | Screenshot: Terrence O’Brien / The Verge Your AI Slop Bores Me is brilliant in its simplicity. There are two tabs: human and LARP as an AI.",
+      "source": "The Verge",
+      "category": "regulation",
+      "importance": 70,
+      "pubDate": "2026-08-15T20:45:00.000Z",
+      "link": "https://www.theverge.com/entertainment/980502/roleplay-as-an-ai-chatbot"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vbmV3",
+      "title": "Patent Filing Suggests Meta’s Facial Recognition Glasses Are Coming",
+      "summary": "A patent filing details ways that Meta could use facial recognition with its smart glasses to create media files, such as videos.",
+      "source": "CNET",
+      "category": "meta",
+      "importance": 70,
+      "pubDate": "2026-08-15T17:26:17.000Z",
+      "link": "https://www.cnet.com/news/privacy/patent-filing-suggests-metas-facial-recognition-glasses-are-coming/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
+      "title": "Trump administration wants to allow companies to hack foreign cybercriminals",
+      "summary": "The White House memorandum is thin on details, but it aims to give private businesses the ability to sabotage or spy on certain foreign actors.",
+      "source": "NPR",
+      "category": "business",
+      "importance": 70,
+      "pubDate": "2026-08-15T17:25:34.000Z",
+      "link": "https://www.npr.org/2026/08/15/nx-s1-5930311/trump-companies-hack-foreign-cybercriminals"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "SpaceX officially closes its Cursor acquisition",
+      "summary": "AI coding startup Cursor is now officially a part of SpaceX.",
+      "source": "TechCrunch",
+      "category": "code_generation",
+      "importance": 70,
+      "pubDate": "2026-08-15T16:30:00.000Z",
+      "link": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "‘Once I started zooming in, I never stopped’: the mesmerising art of macro photography",
+      "summary": "Converts describe a demanding form of capturing nature very close up that has grown in popularity in last few yearsVote here for your favourite invertebrate of the year“I always just pray ‘please don’t fly away’,” says Dara Ojo.",
+      "source": "The Guardian",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-08-15T14:00:01.000Z",
+      "link": "https://www.theguardian.com/environment/2026/aug/15/once-i-started-zooming-in-i-never-stopped-the-mesmerising-art-of-macro-photography"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
+      "title": "Secondhand book sales are booming. Is it because of AI?",
+      "summary": "Booksellers are reporting mysterious bulk orders. It's thought the books are being used to train AI - and ending up pulped.",
+      "source": "BBC",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-08-15T11:25:32.000Z",
+      "link": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss"
     },
     {
       "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
@@ -1085,124 +895,124 @@
       "link": "https://www.bbc.co.uk/news/articles/cz97ljy91zxo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
-      "title": "Recent AI 'escapes' are a warning of how unpredictable the technology can be",
-      "summary": "Recent episodes of AI agents escaping test zones and hacking other systems may be a harbinger of what's to come, as some experts believe the systems are fundamentally unpredictable.",
-      "source": "NPR",
-      "category": "agents",
-      "importance": 70,
-      "pubDate": "2026-08-14T20:37:51.000Z",
-      "link": "https://www.npr.org/2026/08/14/nx-s1-5929579/recent-ai-escapes-are-a-warning-of-how-unpredictable-the-technology-can-be"
-    },
-    {
       "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-      "summary": "Judge warns pro se litigants are using chatbots wrong and getting desperate.",
+      "title": "First test flight of largest all-electric aircraft used just $5 of electricity",
+      "summary": "Airline-backed venture aims to develop a hybrid-electric commercial aircraft.",
       "source": "Ars Technica",
       "category": "tech",
       "importance": 70,
-      "pubDate": "2026-08-14T17:26:53.000Z",
-      "link": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "PBS station fears losing 50TB of data after being ghosted by cloud storage provider",
-      "summary": "\"We don't have access to the data on the hardware/servers,\" Iron Mountain told Ars.",
-      "source": "Ars Technica",
-      "category": "data_science",
-      "importance": 70,
-      "pubDate": "2026-08-14T17:03:54.000Z",
-      "link": "https://arstechnica.com/information-technology/2026/08/pbs-station-fears-losing-50tb-of-data-after-being-ghosted-by-cloud-storage-provider/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Custom reward functions for multi-turn reinforcement learning with Amazon Nova Forge",
-      "summary": "In multi-turn reinforcement learning, your custom reward function decides what the model actually learns.",
-      "source": "aws",
-      "category": "education",
-      "importance": 70,
-      "pubDate": "2026-08-14T16:02:10.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/custom-reward-functions-for-multi-turn-reinforcement-learning-with-amazon-nova-forge/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "Tech Visionary Says the Big AI Labs Don’t Get What People Want",
-      "summary": "Tim O’Reilly built a publishing empire that AI is helping to destroy. Yet he loves AI—as long as it’s open source.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-08-14T15:00:00.000Z",
-      "link": "https://www.wired.com/story/tech-visionary-says-the-big-ai-labs-dont-get-what-people-want/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Kog is going deeper to squeeze more inference out of GPUs",
-      "summary": "The idea that GPUs are poorly suited for agentic workflows may be a misconception, according to French startup Kog.",
-      "source": "TechCrunch",
-      "category": "agents",
-      "importance": 70,
-      "pubDate": "2026-08-14T14:50:11.000Z",
-      "link": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
-      "title": "How to Build a Simple AI Web Scraper with Python",
-      "summary": "Turn any webpage into a lightweight LLM-powered QA engine by cleaning HTML, converting content to Markdown, and returning focused answers while reducing token usage.",
-      "source": "KDnuggets",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-08-14T14:00:29.000Z",
-      "link": "https://www.kdnuggets.com/how-to-build-a-simple-ai-web-scraper-with-python"
-    },
-    {
-      "id": "aHR0cHM6Ly9tYWNoaW5lbGVhcm5pbmdt",
-      "title": "Understanding the Role of Latent Space in Machine Learning Models",
-      "summary": "In this article, you will learn what latent spaces are and how they serve three distinct roles descriptive, generative, and predictive across a.",
-      "source": "MachineLearningMastery.com",
-      "category": "education",
-      "importance": 70,
-      "pubDate": "2026-08-14T12:00:23.000Z",
-      "link": "https://machinelearningmastery.com/understanding-the-role-of-latent-space-in-machine-learning-models/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
-      "title": "5 Fun Agentic AI Papers to Read",
-      "summary": "If you read only five papers on AI agents, make them these.",
-      "source": "KDnuggets",
-      "category": "agents",
-      "importance": 70,
-      "pubDate": "2026-08-14T12:00:13.000Z",
-      "link": "https://www.kdnuggets.com/5-fun-agentic-ai-papers-to-read"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "I used OpenFactory to build my own Linux distro overnight - this AI tool is going to be big",
-      "summary": "Need a custom Linux distribution, but don't have time to learn how to build one. OpenFactory can help you.",
-      "source": "Latest news",
-      "category": "manufacturing",
-      "importance": 70,
-      "pubDate": "2026-08-14T11:53:00.000Z",
-      "link": "https://www.zdnet.com/article/openfactory-is-an-impressive-new-service-that-allows-you-to-build-your-own-linux-distribution/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "People Are ‘Marrying’ Chatbots. These Lawmakers Want to Stop Them",
-      "summary": "Human-AI marriages are not currently recognized by US law. Some Republican state policymakers are drafting legislation to keep it that way.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "regulation",
-      "importance": 70,
-      "pubDate": "2026-08-14T10:15:00.000Z",
-      "link": "https://www.wired.com/story/people-are-marrying-chatbots-these-lawmakers-want-to-stop-them/"
+      "pubDate": "2026-08-14T18:00:23.000Z",
+      "link": "https://arstechnica.com/gadgets/2026/08/first-test-flight-of-largest-all-electric-aircraft-used-just-5-of-electricity/"
     },
     {
       "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Apple trained its own AI model for China with help from Alibaba",
-      "summary": "Apple has reportedly trained a custom AI model for the China market alongside domestic tech giant Alibaba, a rare cross-border partnership that cuts across growing tensions between Beijing and Washington.",
+      "title": "Mark Zuckerberg has an Instagzam",
+      "summary": "Instagram's wordmark is iconic. Apparently Instagram thought it looked old, so the company rolled out a new one this week. It doesn't look like the old Instagram wordmark.",
       "source": "The Verge",
+      "category": "regulation",
+      "importance": 70,
+      "pubDate": "2026-08-14T16:54:16.000Z",
+      "link": "https://www.theverge.com/podcast/980367/instagram-logo-new-zuckerberg-ai-vergecast"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "Apple is warning users of new spyware attacks - what to do if you're a target",
+      "summary": "New spyware attacks are aimed at journalists, activists, politicians, diplomats, and others. Here's how Apple is notifying them and what they should do - after turning on Lockdown Mode.",
+      "source": "Latest news",
+      "category": "academic",
+      "importance": 70,
+      "pubDate": "2026-08-14T16:08:11.000Z",
+      "link": "https://www.zdnet.com/article/apple-warns-targetted-spyware-attacks-what-to-do/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "ChatGPT's new Computer History tracks your Mac activity to create a timeline - but should you let it?",
+      "summary": "Rolling out to ChatGPT's Mac app, Computer History creates a timeline from your activities across the apps and websites you use on your Mac. Is that a privacy risk.",
+      "source": "Latest news",
+      "category": "regulation",
+      "importance": 70,
+      "pubDate": "2026-08-14T16:00:16.000Z",
+      "link": "https://www.zdnet.com/article/chatgpt-computer-history/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "Dell XPS 13 review: The first budget laptop to rival Neo raises the bar for all PCs",
+      "summary": "The Dell XPS 13 flaunts build quality rarely seen at this price point, but not without trade-offs.",
+      "source": "Latest news",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-08-14T16:00:00.000Z",
+      "link": "https://www.zdnet.com/article/dell-xps-13-spotlight/"
+    },
+    {
+      "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9haS1h",
+      "title": "How to bring your software delivery workflow into GitHub with agent apps",
+      "summary": "See how four GitHub agent apps can help you scope, secure, roll out, and ship a feature across the SDLC–all without leaving GitHub. The post How to bring your software delivery workflow into GitHub with agent apps appeared first on The GitHub Blog.",
+      "source": "The GitHub",
+      "category": "agents",
+      "importance": 70,
+      "pubDate": "2026-08-14T16:00:00.000Z",
+      "link": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS92",
+      "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
+      "summary": "Meta released Glimmer this week, an open-weight AI model anyone can download and run on their own hardware — a contrast to Muse Spark, the company’s more powerful model that stays locked behind its own APIs.",
+      "source": "TechCrunch",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-08-14T15:43:28.000Z",
+      "link": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
+      "summary": "Natural gas prices could triple in some parts of the U. , which could saddle hyperscalers with massive bills to power their AI data centers.",
+      "source": "TechCrunch",
+      "category": "data_science",
+      "importance": 70,
+      "pubDate": "2026-08-14T14:05:00.000Z",
+      "link": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Weak API controls are one of the biggest threats in the agentic AI era",
+      "summary": "Artificial intelligence agents are already running inside your enterprise workflows, whether you know it or not. International Data Corp. projects full agentic AI deployment across the enterprise by 2027.",
+      "source": "SiliconANGLE",
+      "category": "agents",
+      "importance": 70,
+      "pubDate": "2026-08-14T14:00:26.000Z",
+      "link": "https://siliconangle.com/2026/08/14/weak-api-controls-one-biggest-threats-agentic-ai-era/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaW5ndWxhcml0eWh1Yi5j",
+      "title": "Biology Needs an AI Declaration",
+      "summary": "In the Leiden Declaration, mathematicians issued a treatise on how AI challenges their field. Others must do the same. The post Biology Needs an AI Declaration appeared first on SingularityHub.",
+      "source": "Singularity Hub",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-08-14T14:00:00.000Z",
+      "link": "https://singularityhub.com/2026/08/14/biology-needs-its-own-ai-declaration/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "The AI party keeps roaring: Why it won’t end anytime soon",
+      "summary": "Yes, there s an artificial intelligence bubble, no denying that anymore so the question becomes, Will it burst, and when.",
+      "source": "SiliconANGLE",
       "category": "business",
       "importance": 70,
-      "pubDate": "2026-08-14T09:21:17.000Z",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba"
+      "pubDate": "2026-08-14T13:45:48.000Z",
+      "link": "https://siliconangle.com/2026/08/14/ai-party-keeps-roaring-wont-end-anytime-soon/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
+      "title": "The Download: Flock’s new rules, cloning’s future, and children’s cells",
+      "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology.",
+      "source": "MIT Technology Review",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-08-14T12:17:21.000Z",
+      "link": "https://www.technologyreview.com/2026/08/14/1142033/the-download-flock-new-rules-cloning-future/"
     },
     {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
@@ -1215,94 +1025,14 @@
       "link": "https://siliconangle.com/2026/08/13/applied-materials-delivers-earnings-revenue-estimates-wall-street-isnt-impressed/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Writer introduces new AI model and upgraded harness to contain token costs",
-      "summary": "Built as a post-training variation on Z. ai's open source model GLM-5. 2, Writer says the new system should provide deployment-ready capabilities at a much lower price.",
-      "source": "TechCrunch",
+      "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
+      "title": "Researchers Explore What It Means To Say AI 'Thinks'",
+      "summary": "When organizations describe artificial intelligence as “thinking,” “writing” or “learning,” those words can sound familiar.",
+      "source": "cmu",
       "category": "research",
       "importance": 70,
-      "pubDate": "2026-08-13T21:13:24.000Z",
-      "link": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
-      "title": "I tried the new ChatGPT Desktop App for Linux - but I'll stick to my browser for now",
-      "summary": "This preview release of ChatGPT Desktop for Linux supports Ubuntu, Debian, and Fedora is here.",
-      "source": "Latest news",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-08-13T20:46:00.000Z",
-      "link": "https://www.zdnet.com/article/openai-brings-the-chatgpt-desktop-app-to-linux/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
-      "title": "Carnegie Mellon Names Damion Shelton Associate VP and Executive Director of the Swartz Center for Entrepreneurship",
-      "summary": "Building on nearly a decade of growth at the Swartz Center and Carnegie Mellon's longstanding leadership in artificial intelligence, robotics, engineering, computer science and the sciences, Shelton will lead the center's next chapter.",
-      "source": "cmu",
-      "category": "robotics",
-      "importance": 70,
-      "pubDate": "2026-08-13T19:15:00.000Z",
-      "link": "https://www.cmu.edu/news/stories/archives/2026/august/carnegie-mellon-names-damion-shelton-associate-vp-and-executive-director-of-the-swartz-center-for"
-    },
-    {
-      "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9vcGVu",
-      "title": "What 50 open source projects taught us about security in the AI era",
-      "summary": "See how the open source projects in Session 4 of the GitHub Secure Open Source Fund combined AI-assisted workflows, maintainer expertise, GitHub security tools, expert guidance, and funding to improve project security.",
-      "source": "The GitHub",
-      "category": "agents",
-      "importance": 70,
-      "pubDate": "2026-08-13T16:00:00.000Z",
-      "link": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Microsoft is combining its Copilot apps ahead of a ‘super app’",
-      "summary": "You soon won’t have to look at two Copilot apps in your Windows taskbar. | Image: Microsoft Microsoft is finally beginning to combine its consumer and commercial Copilot AI assistants into a single \"super app\" interface, starting with the Copilot and Microsoft 365 Copilot apps.",
-      "source": "The Verge",
-      "category": "microsoft",
-      "importance": 70,
-      "pubDate": "2026-08-13T13:30:00.000Z",
-      "link": "https://www.theverge.com/tech/979466/microsoft-copilot-365-app-unified-experience"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "The Download: kids’ thoughts on AI, and female clones of male mice",
-      "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology.",
-      "source": "MIT Technology Review",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-08-13T12:10:00.000Z",
-      "link": "https://www.technologyreview.com/2026/08/13/1141896/the-download-kids-thoughts-on-ai-female-clones-male-mice/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
-      "title": "Constraining Output Space for SLM Narrow Automation Optimization",
-      "summary": "This article will kick off a series on narrow automation optimization for SLMs, and as the first entry will cover one of the more most useful techniques for doing so: constraining the output space instead of parsing generated text.",
-      "source": "KDnuggets",
-      "category": "automation",
-      "importance": 70,
-      "pubDate": "2026-08-13T12:00:17.000Z",
-      "link": "https://www.kdnuggets.com/constraining-output-space-small-language-model-narrow-automation-optimization"
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "The builder’s guide to GPT‑5.6",
-      "summary": "Learn how startups use GPT-5. 6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities.",
-      "source": "Open",
-      "category": "agents",
-      "importance": 70,
-      "pubDate": "2026-08-13T11:00:00.000Z",
-      "link": "https://openai.com/index/builders-guide-to-gpt-5-6"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "How kids feel about AI, in their own words",
-      "summary": "When we set out to talk to kids about artificial intelligence, we thought we knew what we’d hear.",
-      "source": "MIT Technology Review",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-08-13T09:00:00.000Z",
-      "link": "https://www.technologyreview.com/2026/08/13/1141410/how-kids-feel-about-ai-own-words/"
+      "pubDate": "2026-08-13T16:20:26.000Z",
+      "link": "https://www.cmu.edu/news/stories/archives/2026/august/researchers-explore-what-it-means-to-say-ai-thinks"
     },
     {
       "id": "aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNv",
@@ -1373,6 +1103,86 @@
       "importance": 70,
       "pubDate": "2026-08-10T12:31:59.000Z",
       "link": "https://emerj.com/artificial-intelligence-at-lowes/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "These ‘Masturbation Consultants’ Were Hired to Pleasure Themselves With AI",
+      "summary": "Joi AI hired 10 people to masturbate using AI companions as part of a monthlong “wellness” study. The company claims the practice could help “solve male loneliness.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "academic",
+      "importance": 65,
+      "pubDate": "2026-08-14T10:45:00.000Z",
+      "link": "https://www.wired.com/story/these-masturbation-consultants-were-hired-to-pleasure-themselves-using-ai/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
+      "title": "This scientist is helping build a missing map of childhood",
+      "summary": "In 2017, Deanne Taylor attended a presentation at the University of Pennsylvania, just a short walk from her office. A researcher was there to unveil the Human Cell Atlas, an ambitious project that aimed to map every cell in the human body. Taylor was floored, and then concerned.",
+      "source": "MIT Technology Review",
+      "category": "presentation",
+      "importance": 65,
+      "pubDate": "2026-08-14T09:00:00.000Z",
+      "link": "https://www.technologyreview.com/2026/08/14/1141354/deanne-taylor-gene-expression-children/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
+      "title": "Carnegie Mellon Names Damion Shelton Associate VP and Executive Director of the Swartz Center for Entrepreneurship",
+      "summary": "Building on nearly a decade of growth at the Swartz Center and Carnegie Mellon's longstanding leadership in artificial intelligence, robotics, engineering, computer science and the sciences, Shelton will lead the center's next chapter.",
+      "source": "cmu",
+      "category": "robotics",
+      "importance": 65,
+      "pubDate": "2026-08-13T19:15:00.000Z",
+      "link": "https://www.cmu.edu/news/stories/archives/2026/august/carnegie-mellon-names-damion-shelton-associate-vp-and-executive-director-of-the-swartz-center-for"
+    },
+    {
+      "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9vcGVu",
+      "title": "What 50 open source projects taught us about security in the AI era",
+      "summary": "See how the open source projects in Session 4 of the GitHub Secure Open Source Fund combined AI-assisted workflows, maintainer expertise, GitHub security tools, expert guidance, and funding to improve project security.",
+      "source": "The GitHub",
+      "category": "agents",
+      "importance": 65,
+      "pubDate": "2026-08-13T16:00:00.000Z",
+      "link": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
+      "title": "The Download: kids’ thoughts on AI, and female clones of male mice",
+      "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology.",
+      "source": "MIT Technology Review",
+      "category": "tech",
+      "importance": 65,
+      "pubDate": "2026-08-13T12:10:00.000Z",
+      "link": "https://www.technologyreview.com/2026/08/13/1141896/the-download-kids-thoughts-on-ai-female-clones-male-mice/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
+      "title": "Constraining Output Space for SLM Narrow Automation Optimization",
+      "summary": "This article will kick off a series on narrow automation optimization for SLMs, and as the first entry will cover one of the more most useful techniques for doing so: constraining the output space instead of parsing generated text.",
+      "source": "KDnuggets",
+      "category": "automation",
+      "importance": 65,
+      "pubDate": "2026-08-13T12:00:17.000Z",
+      "link": "https://www.kdnuggets.com/constraining-output-space-small-language-model-narrow-automation-optimization"
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
+      "title": "The builder’s guide to GPT‑5.6",
+      "summary": "Learn how startups use GPT-5. 6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities.",
+      "source": "Open",
+      "category": "agents",
+      "importance": 65,
+      "pubDate": "2026-08-13T11:00:00.000Z",
+      "link": "https://openai.com/index/builders-guide-to-gpt-5-6"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
+      "title": "How kids feel about AI, in their own words",
+      "summary": "When we set out to talk to kids about artificial intelligence, we thought we knew what we’d hear.",
+      "source": "MIT Technology Review",
+      "category": "tech",
+      "importance": 65,
+      "pubDate": "2026-08-13T09:00:00.000Z",
+      "link": "https://www.technologyreview.com/2026/08/13/1141410/how-kids-feel-about-ai-own-words/"
     },
     {
       "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9uZXdz",
@@ -1475,6 +1285,126 @@
       "link": "https://www.kdnuggets.com/specification-engineering-the-new-skill-after-prompt-engineering"
     },
     {
+      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
+      "title": "Recent AI 'escapes' are a warning of how unpredictable the technology can be",
+      "summary": "Recent episodes of AI agents escaping test zones and hacking other systems may be a harbinger of what's to come, as some experts believe the systems are fundamentally unpredictable.",
+      "source": "NPR",
+      "category": "agents",
+      "importance": 60,
+      "pubDate": "2026-08-14T20:37:51.000Z",
+      "link": "https://www.npr.org/2026/08/14/nx-s1-5929579/recent-ai-escapes-are-a-warning-of-how-unpredictable-the-technology-can-be"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Suspecting court of using AI, man injected prompts in filings to try to win case",
+      "summary": "Judge warns pro se litigants are using chatbots wrong and getting desperate.",
+      "source": "Ars Technica",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-08-14T17:26:53.000Z",
+      "link": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "PBS station fears losing 50TB of data after being ghosted by cloud storage provider",
+      "summary": "\"We don't have access to the data on the hardware/servers,\" Iron Mountain told Ars.",
+      "source": "Ars Technica",
+      "category": "data_science",
+      "importance": 60,
+      "pubDate": "2026-08-14T17:03:54.000Z",
+      "link": "https://arstechnica.com/information-technology/2026/08/pbs-station-fears-losing-50tb-of-data-after-being-ghosted-by-cloud-storage-provider/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Custom reward functions for multi-turn reinforcement learning with Amazon Nova Forge",
+      "summary": "In multi-turn reinforcement learning, your custom reward function decides what the model actually learns.",
+      "source": "aws",
+      "category": "education",
+      "importance": 60,
+      "pubDate": "2026-08-14T16:02:10.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/custom-reward-functions-for-multi-turn-reinforcement-learning-with-amazon-nova-forge/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "Tech Visionary Says the Big AI Labs Don’t Get What People Want",
+      "summary": "Tim O’Reilly built a publishing empire that AI is helping to destroy. Yet he loves AI—as long as it’s open source.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-08-14T15:00:00.000Z",
+      "link": "https://www.wired.com/story/tech-visionary-says-the-big-ai-labs-dont-get-what-people-want/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Kog is going deeper to squeeze more inference out of GPUs",
+      "summary": "The idea that GPUs are poorly suited for agentic workflows may be a misconception, according to French startup Kog.",
+      "source": "TechCrunch",
+      "category": "agents",
+      "importance": 60,
+      "pubDate": "2026-08-14T14:50:11.000Z",
+      "link": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
+      "title": "How to Build a Simple AI Web Scraper with Python",
+      "summary": "Turn any webpage into a lightweight LLM-powered QA engine by cleaning HTML, converting content to Markdown, and returning focused answers while reducing token usage.",
+      "source": "KDnuggets",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-08-14T14:00:29.000Z",
+      "link": "https://www.kdnuggets.com/how-to-build-a-simple-ai-web-scraper-with-python"
+    },
+    {
+      "id": "aHR0cHM6Ly9tYWNoaW5lbGVhcm5pbmdt",
+      "title": "Understanding the Role of Latent Space in Machine Learning Models",
+      "summary": "In this article, you will learn what latent spaces are and how they serve three distinct roles descriptive, generative, and predictive across a.",
+      "source": "MachineLearningMastery.com",
+      "category": "education",
+      "importance": 60,
+      "pubDate": "2026-08-14T12:00:23.000Z",
+      "link": "https://machinelearningmastery.com/understanding-the-role-of-latent-space-in-machine-learning-models/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
+      "title": "5 Fun Agentic AI Papers to Read",
+      "summary": "If you read only five papers on AI agents, make them these.",
+      "source": "KDnuggets",
+      "category": "agents",
+      "importance": 60,
+      "pubDate": "2026-08-14T12:00:13.000Z",
+      "link": "https://www.kdnuggets.com/5-fun-agentic-ai-papers-to-read"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2Fy",
+      "title": "I used OpenFactory to build my own Linux distro overnight - this AI tool is going to be big",
+      "summary": "Need a custom Linux distribution, but don't have time to learn how to build one. OpenFactory can help you.",
+      "source": "Latest news",
+      "category": "manufacturing",
+      "importance": 60,
+      "pubDate": "2026-08-14T11:53:00.000Z",
+      "link": "https://www.zdnet.com/article/openfactory-is-an-impressive-new-service-that-allows-you-to-build-your-own-linux-distribution/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "People Are ‘Marrying’ Chatbots. These Lawmakers Want to Stop Them",
+      "summary": "Human-AI marriages are not currently recognized by US law. Some Republican state policymakers are drafting legislation to keep it that way.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "regulation",
+      "importance": 60,
+      "pubDate": "2026-08-14T10:15:00.000Z",
+      "link": "https://www.wired.com/story/people-are-marrying-chatbots-these-lawmakers-want-to-stop-them/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "Apple trained its own AI model for China with help from Alibaba",
+      "summary": "Apple has reportedly trained a custom AI model for the China market alongside domestic tech giant Alibaba, a rare cross-border partnership that cuts across growing tensions between Beijing and Washington.",
+      "source": "The Verge",
+      "category": "business",
+      "importance": 60,
+      "pubDate": "2026-08-14T09:21:17.000Z",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba"
+    },
+    {
       "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
       "title": "Unemployed young people to join AI boot camps to get job-ready",
       "summary": "Pilot scheme will provide three weeks of training as part of UK government’s latest attempt to address Neets crisisYoung people out of work or at risk of unemployment in the UK are to join “AI boot camps” where they harness the technology to get a foothold in the workplace.",
@@ -1495,136 +1425,6 @@
       "link": "https://www.itmedia.co.jp/business/articles/2608/14/news040.html"
     },
     {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "Mark Zuckerberg’s AI Manifesto Is 6,500 Words—and Barely Says Anything",
-      "summary": "AI is shifting the culture, from tech CEO manifestos to 1 am job interviews. We unpack some of the latest, along with the top findings from Black Hat and Defcon, this week on Uncanny Valley.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "tech",
-      "importance": 60,
-      "pubDate": "2026-08-13T21:14:43.000Z",
-      "link": "https://www.wired.com/story/mark-zuckerbergs-ai-manifesto-is-6500-words-and-barely-says-anything/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
-      "summary": "AI is expensive, Ali Ghodsi tells TechCrunch. With so many investors wanting into his latest round, he said yes to more than planned.",
-      "source": "TechCrunch",
-      "category": "business",
-      "importance": 60,
-      "pubDate": "2026-08-13T20:14:39.000Z",
-      "link": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/"
-    },
-    {
-      "id": "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9i",
-      "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
-      "summary": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets.",
-      "source": "huggingface",
-      "category": "agents",
-      "importance": 60,
-      "pubDate": "2026-08-13T17:16:04.000Z",
-      "link": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop"
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Monitor on-premises and multi-cloud AI agents with AgentCore Observability",
-      "summary": "Set up Amazon Bedrock AgentCore Observability for AI agents running outside AWS: on-premises, on GCP, on Azure, or on developer machines.",
-      "source": "aws",
-      "category": "agents",
-      "importance": 60,
-      "pubDate": "2026-08-13T16:02:10.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/monitor-on-premises-and-multi-cloud-ai-agents-with-agentcore-observability/"
-    },
-    {
-      "id": "aHR0cHM6Ly9weXRvcmNoLm9yZy9ibG9n",
-      "title": "FP8 Training on AMD GPUs with TorchTitan and TorchAO: Upstreaming Performance Improvements",
-      "summary": "At the PyTorch Conference 2025, we demonstrated linear scaling beyond 1,000 GPUs on AMD Instinct clusters using Primus-Turbo, an AMD optimization library for training frameworks such as TorchTitan.",
-      "source": "Blog – PyTorch",
-      "category": "research",
-      "importance": 60,
-      "pubDate": "2026-08-13T16:00:31.000Z",
-      "link": "https://pytorch.org/blog/fp8-training-on-amd-gpus-with-torchtitan-and-torchao-upstreaming-performance-improvements/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Suno is trying to look more like a real music production tool",
-      "summary": "Suno is releasing Studio 2. 0 with significant upgrades that push it closer to an actual digital audio workstation (DAW), rather than a bare-bones audio editor with generative AI features. The biggest addition is undoubtedly MIDI support.",
-      "source": "The Verge",
-      "category": "music_generation",
-      "importance": 60,
-      "pubDate": "2026-08-13T16:00:00.000Z",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects"
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Automate legacy web applications with Amazon Bedrock AgentCore Browser Tool",
-      "summary": "Learn how to automate legacy web applications that need human-like interaction using Amazon Bedrock AgentCore Browser Tool and Strands Agents.",
-      "source": "aws",
-      "category": "agents",
-      "importance": 60,
-      "pubDate": "2026-08-13T15:56:07.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/automate-legacy-web-applications-with-amazon-bedrock-agentcore-browser-tool/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Amazon Quick for Microsoft 365: Agentic AI where you work",
-      "summary": "Amazon Quick is now available directly inside Microsoft Word, Excel, PowerPoint, and Outlook.",
-      "source": "aws",
-      "category": "microsoft",
-      "importance": 60,
-      "pubDate": "2026-08-13T15:48:15.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-microsoft-365-agentic-ai-where-you-work/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "I looked inside an AI generated movie, and the best parts were all human",
-      "summary": "Imagine a trio of bumbling, English lads who fantasize about becoming megastars while knocking back a few pints in a grimy pub somewhere in London.",
-      "source": "The Verge",
-      "category": "video_generation",
-      "importance": 60,
-      "pubDate": "2026-08-13T15:30:00.000Z",
-      "link": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
-      "title": "Building a Streaming Local AI Agent",
-      "summary": "Streaming gets used in two different ways when people talk about AI agents. Straighten out your understanding here.",
-      "source": "KDnuggets",
-      "category": "agents",
-      "importance": 60,
-      "pubDate": "2026-08-13T14:00:15.000Z",
-      "link": "https://www.kdnuggets.com/building-a-streaming-local-ai-agent"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "Flock is tightening its rules in response to a growing surveillance backlash",
-      "summary": "The police-tech giant Flock is announcing today that it will change officers’ access to its nationwide network of license plate readers, in an apparent effort to quell a growing backlash and win back contracts lost amid concerns about mass surveillance and police abuse.",
-      "source": "MIT Technology Review",
-      "category": "legal",
-      "importance": 60,
-      "pubDate": "2026-08-13T13:41:10.000Z",
-      "link": "https://www.technologyreview.com/2026/08/13/1141904/flock-is-tightening-its-rules-in-response-to-a-growing-surveillance-backlash/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
-      "title": "Twitch users outraged as Amazon uses their content to train AI in opt-out feature",
-      "summary": "Users of the popular streaming platform criticised allowing Amazon to use their data by dafault.",
-      "source": "BBC",
-      "category": "data_science",
-      "importance": 60,
-      "pubDate": "2026-08-13T10:39:02.000Z",
-      "link": "https://www.bbc.co.uk/news/articles/cp30pz8d09jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
-      "title": "Amazon is using Twitch to train generative AI",
-      "summary": "The streaming platform's users criticised the move to allow the use of channel content for AI training.",
-      "source": "BBC",
-      "category": "research",
-      "importance": 60,
-      "pubDate": "2026-08-13T07:04:31.000Z",
-      "link": "https://www.bbc.co.uk/news/videos/cwyq22g0ylxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
       "title": "Model ML completes finance work more efficiently with GPT-5.6 Sol",
       "summary": "6 Sol to carry finance work from research and analysis through editable, traceable PowerPoint decks and Excel workbooks.",
@@ -1643,6 +1443,126 @@
       "importance": 60,
       "pubDate": "2026-08-09T21:27:13.000Z",
       "link": "https://www.npr.org/2026/08/06/nx-s1-5922729/ai-art-provenance-assistant"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "Mark Zuckerberg’s AI Manifesto Is 6,500 Words—and Barely Says Anything",
+      "summary": "AI is shifting the culture, from tech CEO manifestos to 1 am job interviews. We unpack some of the latest, along with the top findings from Black Hat and Defcon, this week on Uncanny Valley.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "tech",
+      "importance": 55,
+      "pubDate": "2026-08-13T21:14:43.000Z",
+      "link": "https://www.wired.com/story/mark-zuckerbergs-ai-manifesto-is-6500-words-and-barely-says-anything/"
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9i",
+      "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
+      "summary": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets.",
+      "source": "huggingface",
+      "category": "agents",
+      "importance": 55,
+      "pubDate": "2026-08-13T17:16:04.000Z",
+      "link": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Monitor on-premises and multi-cloud AI agents with AgentCore Observability",
+      "summary": "Set up Amazon Bedrock AgentCore Observability for AI agents running outside AWS: on-premises, on GCP, on Azure, or on developer machines.",
+      "source": "aws",
+      "category": "agents",
+      "importance": 55,
+      "pubDate": "2026-08-13T16:02:10.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/monitor-on-premises-and-multi-cloud-ai-agents-with-agentcore-observability/"
+    },
+    {
+      "id": "aHR0cHM6Ly9weXRvcmNoLm9yZy9ibG9n",
+      "title": "FP8 Training on AMD GPUs with TorchTitan and TorchAO: Upstreaming Performance Improvements",
+      "summary": "At the PyTorch Conference 2025, we demonstrated linear scaling beyond 1,000 GPUs on AMD Instinct clusters using Primus-Turbo, an AMD optimization library for training frameworks such as TorchTitan.",
+      "source": "Blog – PyTorch",
+      "category": "research",
+      "importance": 55,
+      "pubDate": "2026-08-13T16:00:31.000Z",
+      "link": "https://pytorch.org/blog/fp8-training-on-amd-gpus-with-torchtitan-and-torchao-upstreaming-performance-improvements/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "Suno is trying to look more like a real music production tool",
+      "summary": "Suno is releasing Studio 2. 0 with significant upgrades that push it closer to an actual digital audio workstation (DAW), rather than a bare-bones audio editor with generative AI features. The biggest addition is undoubtedly MIDI support.",
+      "source": "The Verge",
+      "category": "music_generation",
+      "importance": 55,
+      "pubDate": "2026-08-13T16:00:00.000Z",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Automate legacy web applications with Amazon Bedrock AgentCore Browser Tool",
+      "summary": "Learn how to automate legacy web applications that need human-like interaction using Amazon Bedrock AgentCore Browser Tool and Strands Agents.",
+      "source": "aws",
+      "category": "agents",
+      "importance": 55,
+      "pubDate": "2026-08-13T15:56:07.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/automate-legacy-web-applications-with-amazon-bedrock-agentcore-browser-tool/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Amazon Quick for Microsoft 365: Agentic AI where you work",
+      "summary": "Amazon Quick is now available directly inside Microsoft Word, Excel, PowerPoint, and Outlook.",
+      "source": "aws",
+      "category": "microsoft",
+      "importance": 55,
+      "pubDate": "2026-08-13T15:48:15.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-microsoft-365-agentic-ai-where-you-work/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "I looked inside an AI generated movie, and the best parts were all human",
+      "summary": "Imagine a trio of bumbling, English lads who fantasize about becoming megastars while knocking back a few pints in a grimy pub somewhere in London.",
+      "source": "The Verge",
+      "category": "video_generation",
+      "importance": 55,
+      "pubDate": "2026-08-13T15:30:00.000Z",
+      "link": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
+      "title": "Building a Streaming Local AI Agent",
+      "summary": "Streaming gets used in two different ways when people talk about AI agents. Straighten out your understanding here.",
+      "source": "KDnuggets",
+      "category": "agents",
+      "importance": 55,
+      "pubDate": "2026-08-13T14:00:15.000Z",
+      "link": "https://www.kdnuggets.com/building-a-streaming-local-ai-agent"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
+      "title": "Flock is tightening its rules in response to a growing surveillance backlash",
+      "summary": "The police-tech giant Flock is announcing today that it will change officers’ access to its nationwide network of license plate readers, in an apparent effort to quell a growing backlash and win back contracts lost amid concerns about mass surveillance and police abuse.",
+      "source": "MIT Technology Review",
+      "category": "legal",
+      "importance": 55,
+      "pubDate": "2026-08-13T13:41:10.000Z",
+      "link": "https://www.technologyreview.com/2026/08/13/1141904/flock-is-tightening-its-rules-in-response-to-a-growing-surveillance-backlash/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
+      "title": "Twitch users outraged as Amazon uses their content to train AI in opt-out feature",
+      "summary": "Users of the popular streaming platform criticised allowing Amazon to use their data by dafault.",
+      "source": "BBC",
+      "category": "data_science",
+      "importance": 55,
+      "pubDate": "2026-08-13T10:39:02.000Z",
+      "link": "https://www.bbc.co.uk/news/articles/cp30pz8d09jo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
+      "title": "Amazon is using Twitch to train generative AI",
+      "summary": "The streaming platform's users criticised the move to allow the use of channel content for AI training.",
+      "source": "BBC",
+      "category": "research",
+      "importance": 55,
+      "pubDate": "2026-08-13T07:04:31.000Z",
+      "link": "https://www.bbc.co.uk/news/videos/cwyq22g0ylxo?at_medium=RSS&at_campaign=rss"
     },
     {
       "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
