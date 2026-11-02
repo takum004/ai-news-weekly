@@ -1,9 +1,69 @@
 {
-  "lastUpdated": "2026-11-01T09:51:15.421Z",
-  "totalArticles": 189,
+  "lastUpdated": "2026-11-02T00:14:45.732Z",
+  "totalArticles": 195,
   "generatedBy": "AI News Aggregator v1.0",
   "sources": 71,
   "articles": [
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
+      "title": "Anthropic、S-1で事前学習の1か月超の延期を開示 評価中に4モデルが実在のシステムへ無断アクセス",
+      "summary": "1か月以上。Anthropicが上場に向けた書類で明かしたのは、新しい基盤モデルの事前学習を遅らせた期間でした。挙げた目的は、モデルの重みを守る対策と知的財産の保護です。同じ書類には、評価中のモデル4つが実在の第三者のシ [ ].",
+      "source": "innovaTopia",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-11-01T23:07:03.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/119637/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "Anthropic、「Claude」の「Max 20x」を「Ultra」に名称変更 月200ドルで5時間ごとの利用制限を撤廃",
+      "summary": "Anthropicは、「Claude」の個人向け有料プランの名称を変更し、月額100ドルの「Max 5x」を「Max」に、月額200ドルの「Max 20x」を「Ultra」にした。料金は据え置き。Ultraでは確認済みアカウントを対象に、5時間ごとの利用制限を撤廃した。週ごとの制限は変わらない。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-11-01T22:00:23.000Z",
+      "link": "https://www.itmedia.co.jp/news/article/2611/02/2000002777/"
+    },
+    {
+      "id": "aHR0cHM6Ly9rbi5pdG1lZGlhLmNvLmpw",
+      "title": "オラクルの機能がChatGPTで利用可能に 複数システムをまたぐ業務をAIで自動化",
+      "summary": "オラクルがOpenAIとの協業を拡大し、ChatGPTやCodex、AI技術を活用し、業務の効率化・実行からソフトウェアの脆弱性の検出、アプリケーション開発まで幅広く支援する。小規模企業には年間1万2000ドル分のクラウド利用枠を含むプランを提供する。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-11-01T22:00:00.000Z",
+      "link": "https://kn.itmedia.co.jp/kn/article/2611/02/2000002740/"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
+      "title": "Claude Codeは各バックグラウンドエージェントのトランスクリプトを定期的にモデルに送信していることが発覚",
+      "summary": "Claude Codeの「エージェントサマリー」機能はバックグラウンドエージェントのステータスを約30秒ごとに更新するため、トランスクリプト(記録したデータ)全体をモデルに再送信しています。トランスクリプト送信によりトークンの約15～20％が消費されている計算になります。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-11-01T22:00:00.000Z",
+      "link": "https://gigazine.net/news/20261102-claude-code-resends-background-agents-transcript/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
+      "summary": "Data centers are deeply unpopular. But what if we called them something else.",
+      "source": "TechCrunch",
+      "category": "openai",
+      "importance": 100,
+      "pubDate": "2026-11-01T21:55:23.000Z",
+      "link": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "Anthropic updates Claude to stop it from recreating existing video games",
+      "summary": "Users can still lean on Claude to help with designing original or genre games.",
+      "source": "Technology News & Expert Reviews",
+      "category": "anthropic",
+      "importance": 100,
+      "pubDate": "2026-11-01T21:08:32.000Z",
+      "link": "https://www.engadget.com/2303469/anthropic-updates-claude-to-stop-it-from-recreating-existing-video-games/"
+    },
     {
       "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
       "title": "DeepSeek Drops Enhanced Coding Agent With Aim to Rival Anthropic",
@@ -15,26 +75,6 @@
       "link": "https://www.bloomberg.com/news/articles/2026-11-01/deepseek-drops-enhanced-coding-agent-with-aim-to-rival-anthropic"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "AI学習への利用拒否をrobots.txtで一括指定へ OpenAIやGoogleなどが対応表明",
-      "summary": "OpenAI、Google、Microsoftは、Webサイト運営者がAI学習へのコンテンツ利用に関する意向を一括で指定できる共通の仕組みへの対応を発表した。Anthropicも担当者が個人名義で実装を表明している。robots. txtに共通トークンを記述するだけで、AI各社のAIクローラーを一元管理できるようになる。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "openai",
-      "importance": 100,
-      "pubDate": "2026-10-31T23:31:07.000Z",
-      "link": "https://www.itmedia.co.jp/news/article/2611/01/2000002776/"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9z",
-      "title": "Google、軌道上のTPUで初のAI応答 Project Suncatcher試作衛星がGemma 4で俳句",
-      "summary": "宇宙からAIの応答が届くのは、今回が初めてではありません。それでもGoogleが10月30日に「Hello World」と呼んだのは、自社のデータセンター級チップTPUが、軌道上で初めて答えを返したからです。3行の俳句の [ ].",
-      "source": "innovaTopia",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-10-31T22:50:23.000Z",
-      "link": "https://innovatopia.jp/spacetechnology/spacetechnology-news/119593/"
-    },
-    {
       "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
       "title": "OpenAI reportedly lowers funding target for new round",
       "summary": "OpenAI’s latest funding round doesn't seem to be living up to expectations.",
@@ -43,16 +83,6 @@
       "importance": 100,
       "pubDate": "2026-10-31T16:12:55.000Z",
       "link": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "I built an AI Tamagotchi before Meta could",
-      "summary": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I won't be buying one, because we have Muse Charm at home.",
-      "source": "The Verge",
-      "category": "meta",
-      "importance": 100,
-      "pubDate": "2026-10-31T16:05:00.000Z",
-      "link": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code"
     },
     {
       "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
@@ -73,16 +103,6 @@
       "importance": 100,
       "pubDate": "2026-10-31T10:38:14.000Z",
       "link": "https://www.marktechpost.com/2026/10/31/factory-droid-1-0-frontier-harness/"
-    },
-    {
-      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
-      "title": "Material 3 Expressiveの画面をブラウザで組み立てて画面同士をつなぎタップして確かめてそのままAIコーディング用のプロンプトにするツール「M3E Canvas」",
-      "summary": "AIコーディングツールでアプリを開発する際には、画面の配置やボタンを押したときの動作などを文章で説明する必要があります。そこでGoogleの「Material 3 Expressive」に対応した部品をブラウザ上で組み立て、複数の画面をつないで実際にタップしながら動作を確認できるほか、設計内容をそのままAIコーディング用のプロンプトに変換できる無料のオープンソースツールが「M3E Canvas」です。続きを読む.",
-      "source": "GIGAZINE",
-      "category": "tech",
-      "importance": 100,
-      "pubDate": "2026-10-31T09:00:00.000Z",
-      "link": "https://gigazine.net/news/20261031-m3e-canvas/"
     },
     {
       "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
@@ -125,26 +145,6 @@
       "link": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
-      "summary": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers.",
-      "source": "The Verge",
-      "category": "reasoning",
-      "importance": 100,
-      "pubDate": "2026-10-30T20:48:43.000Z",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "The biggest names in AI are backing a new way to opt out of scraping",
-      "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable.",
-      "source": "The Verge",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-10-30T20:26:10.000Z",
-      "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
       "title": "I read Anthropic's 92-page risk factor document, so you don't have to – video explainer",
       "summary": "Anthropic, the creator of Claude, filed to go public on the US stock market on 26 October.",
@@ -173,36 +173,6 @@
       "importance": 100,
       "pubDate": "2026-10-30T17:34:15.000Z",
       "link": "https://www.marktechpost.com/2026/10/30/ai-security-agents-claude-codex-mantis-cloudflare/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "As Anthropic finally files for IPO, rising risks aren’t slowing the AI buildout – yet",
-      "summary": "The other artificial intelligence shoe dropped this week, as Anthropic filed for what surely will be the second blockbuster AI initial public offering of stock this year.",
-      "source": "SiliconANGLE",
-      "category": "anthropic",
-      "importance": 100,
-      "pubDate": "2026-10-30T15:30:08.000Z",
-      "link": "https://siliconangle.com/2026/10/30/as-anthropic-finally-files-for-ipo-rising-risks-arent-slowing-the-ai-buildout-yet/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "The hidden threat in Anthropic’s prospectus: diseconomies of scale",
-      "summary": "As potentially the largest IPO in history, Anthropic PBC is breaking new ground. Its prospectus lists 88 risk factors covering 93 pages alone.",
-      "source": "SiliconANGLE",
-      "category": "anthropic",
-      "importance": 100,
-      "pubDate": "2026-10-30T15:26:21.000Z",
-      "link": "https://siliconangle.com/2026/10/30/the-hidden-threat-in-anthropics-prospectus-diseconomies-of-scale/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "Ghost in the machine: how AI is haunting the search for the supernatural",
-      "summary": "Ghost hunting has changed in recent years due to AI chatbots, and paranormal enthusiasts are concernedGhost hunting is a tech-heavy pursuit.",
-      "source": "The Guardian",
-      "category": "business",
-      "importance": 100,
-      "pubDate": "2026-10-30T15:00:16.000Z",
-      "link": "https://www.theguardian.com/technology/ng-interactive/2026/oct/30/ai-ghost-hunting"
     },
     {
       "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
@@ -235,46 +205,6 @@
       "link": "https://www.technologyreview.com/2026/10/30/1147843/the-download-glp-1s-eating-disorders-forever-chemicals/"
     },
     {
-      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
-      "title": "Claude Code Mods: Custom Hooks to Fix My Biggest AI Coding Frustrations",
-      "summary": "How I built four Claude Code mods to protect API keys, track plan progress, catch untested code, and monitor context usage — with 135 passing tests and up to 100× less overhead than traditional hooks — and why they can outperform traditional hooks.",
-      "source": "Towards Data Science",
-      "category": "anthropic",
-      "importance": 100,
-      "pubDate": "2026-10-30T11:00:00.000Z",
-      "link": "https://towardsdatascience.com/claude-code-mods-custom-hooks-to-fix-my-biggest-ai-coding-frustrations/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "Gemini Notebook、無料で数百冊の教科書にアクセス可能に 米国・インドの出版社提供 日本でも利用可",
-      "summary": "Googleは、米国とインドのプロバイダーが提供する数百冊の教科書に「Gemini Notebook」内で無料でアクセスできるようになったと発表した。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-10-30T08:17:55.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2610/30/2000002760/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "Geminiで生成したPDFやスライドを「チャット上で直接編集」可能に 個人プランとGoogle Workspaceで試してみた",
-      "summary": "Geminiとのチャット内で直接、PDFやスライドなどを生成、プレビュー、編集できるようになった。ITmedia AI＋編集部の環境で同機能を試した結果をお届けする。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-10-30T06:31:36.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2610/30/2000002757/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "Google owner Alphabet loses $500bn in market value after profit disappoints Wall Street",
-      "summary": "Net profit slid 25% from a year earlier to $26. 2bn, well short of expectations, though revenue rose to $127. 6bnShares in the Google parent Alphabet fell double digits Wednesday evening into Thursday trading, erasing hundreds of billions of dollars in stock market value from the $4tn tech giant.",
-      "source": "The Guardian",
-      "category": "google",
-      "importance": 100,
-      "pubDate": "2026-10-29T17:29:46.000Z",
-      "link": "https://www.theguardian.com/technology/2026/oct/28/google-alphabet-q3-earnings-report"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
       "title": "Google Gemini Omni: What It Actually Does, What It Costs, and How It Compares",
       "summary": "Gemini Omni is a member of Google's Gemini generative model family, built specifically to create output from any combination of input types, starting with video.",
@@ -293,6 +223,16 @@
       "importance": 100,
       "pubDate": "2026-10-26T14:16:23.000Z",
       "link": "https://www.npr.org/2026/10/26/nx-s1-6014772/anthropic-ai-ipo-could-break-records"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
+      "title": "28 Zero-Day Findings in Less Than Two Days: What AI-Speed Discovery Means for Robotics",
+      "summary": "VicOne identified an initial set of 28 zero-day findings in less than two days using AI-assisted research across software and tools supporting the Physical AI ecosystem.",
+      "source": "The Robot Report",
+      "category": "robotics",
+      "importance": 95,
+      "pubDate": "2026-11-01T14:00:58.000Z",
+      "link": "https://www.therobotreport.com/28-zero-day-findings-in-less-than-two-days-what-ai-speed-discovery-means-for-robotics/"
     },
     {
       "id": "aHR0cHM6Ly93d3cubWFya3RlY2hwb3N0",
@@ -315,124 +255,54 @@
       "link": "https://www.bbc.co.uk/news/articles/cje36degrgv5o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "FBI Blames North Korea for $6 Billion Binance Crypto Hack",
-      "summary": "The FBI said that North Korea was responsible for stealing more than $6 billion in cryptocurrencies in a brazen hacking attack on Binance.",
-      "source": "Bloomberg",
-      "category": "security",
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "AI学習への利用拒否をrobots.txtで一括指定へ OpenAIやGoogleなどが対応表明",
+      "summary": "OpenAI、Google、Microsoftは、Webサイト運営者がAI学習へのコンテンツ利用に関する意向を一括で指定できる共通の仕組みへの対応を発表した。Anthropicも担当者が個人名義で実装を表明している。robots. txtに共通トークンを記述するだけで、AI各社のAIクローラーを一元管理できるようになる。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "openai",
       "importance": 95,
-      "pubDate": "2026-10-31T21:59:09.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-31/fbi-blames-north-korea-for-6-billion-binance-crypto-hack"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Can enterprise AI pay for the boom?",
-      "summary": "The artificial intelligence buildout is making an enormous bet on what businesses will eventually be willing to pay for intelligence. In our research this summer on forecasting the AI bubble, we argued that a key indicator to watch is productive utilization by enterprise customers.",
-      "source": "SiliconANGLE",
-      "category": "presentation",
-      "importance": 95,
-      "pubDate": "2026-10-31T17:12:02.000Z",
-      "link": "https://siliconangle.com/2026/10/31/can-enterprise-ai-pay-for-the-boom/"
-    },
-    {
-      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
-      "title": "I Told an AI Agent That Its Wrong Answers Were Right. One Model Believed Me.",
-      "summary": "A research paper claims reward labels barely change how agents learn. I tested that on three models, and one of them did exactly what the wrong labels told it to. The post I Told an AI Agent That Its Wrong Answers Were Right.",
-      "source": "Towards Data Science",
-      "category": "agents",
-      "importance": 95,
-      "pubDate": "2026-10-31T12:00:00.000Z",
-      "link": "https://towardsdatascience.com/i-told-an-ai-agent-that-its-wrong-answers-were-right-one-model-believed-me/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "AI Spending Fears Hammer Big Tech Stocks",
-      "summary": "Bloomberg Senior Editor for Technology and Strategic Industries Mike Shepard tells Bloomberg This Weekend that disappointing Big Tech earnings are intensifying investor concerns about whether massive AI spending will generate sufficient returns, as Alphabet and Intel come under particular pressure.",
-      "source": "Bloomberg",
-      "category": "business",
-      "importance": 95,
-      "pubDate": "2026-10-31T11:43:55.000Z",
-      "link": "https://www.bloomberg.com/news/videos/2026-10-31/ai-spending-fears-hammer-big-tech-stocks-video"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says",
-      "summary": "Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending that has undergirded its business.",
-      "source": "TechCrunch",
-      "category": "anthropic",
-      "importance": 95,
-      "pubDate": "2026-10-30T21:52:03.000Z",
-      "link": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Hackers steal $6.3B from Binance in biggest-ever crypto heist",
-      "summary": "Hackers have stolen about $6. 3 billion worth of digital assets from Binance, a major cryptocurrency exchange operator. The heist is more than four times bigger than the previous largest crypto theft.",
-      "source": "SiliconANGLE",
-      "category": "business",
-      "importance": 95,
-      "pubDate": "2026-10-30T21:19:05.000Z",
-      "link": "https://siliconangle.com/2026/10/30/hackers-steal-6-3b-from-binance-in-biggest-ever-crypto-heist/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
-      "summary": "It's still unknown how attackers got access to Anthropic's verified Cursor account.",
-      "source": "Ars Technica",
-      "category": "anthropic",
-      "importance": 95,
-      "pubDate": "2026-10-30T21:09:54.000Z",
-      "link": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
-      "title": "Percepto launches Axion AI platform to unify inspection data analysis",
-      "summary": "Percepto has launched Axion, a hardware-agnostic physical AI platform delivering visibility across mission-critical infrastructure. The post Percepto launches Axion AI platform to unify inspection data analysis appeared first on The Robot Report.",
-      "source": "The Robot Report",
-      "category": "robotics",
-      "importance": 95,
-      "pubDate": "2026-10-30T19:05:34.000Z",
-      "link": "https://www.therobotreport.com/percepto-launches-axion-ai-platform-unify-inspection-data-analysis/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Krafton-backed Ludo Robotics releases robot intelligence model designed around human intent",
-      "summary": ", a subsidiary of major South Korean video game publisher Krafton Inc. , today debuted Ludi 0. 2, a robotics artificial intelligence system built to understand people and interact with them in the physical world.",
-      "source": "SiliconANGLE",
-      "category": "robotics",
-      "importance": 95,
-      "pubDate": "2026-10-30T18:00:21.000Z",
-      "link": "https://siliconangle.com/2026/10/30/krafton-backed-ludo-robotics-releases-robot-intelligence-model-designed-around-human-intent/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2hv",
-      "title": "Google’s latest Home updates just fixed my biggest annoyances with its speakers and cameras",
-      "summary": "Google details 42 fixes to its Home app and the devices compatible with it.",
-      "source": "ZDNet",
-      "category": "google",
-      "importance": 95,
-      "pubDate": "2026-10-30T16:14:11.000Z",
-      "link": "https://www.zdnet.com/home-and-office/google-home-gemini-updates-42-fixes/"
+      "pubDate": "2026-10-31T23:31:07.000Z",
+      "link": "https://www.itmedia.co.jp/news/article/2611/01/2000002776/"
     },
     {
       "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Silicon Valley wants you to invest in miracles",
-      "summary": "Investing in any stock is kind of like gambling in the sense that you're betting your money on a company's future performance.",
+      "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
+      "summary": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers.",
       "source": "The Verge",
-      "category": "anthropic",
+      "category": "reasoning",
       "importance": 95,
-      "pubDate": "2026-10-30T13:11:05.000Z",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles"
+      "pubDate": "2026-10-30T20:48:43.000Z",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
-      "title": "Google value plunges by $500bn as its own AI search hits ad sales",
-      "summary": "Google spooked investors so badly that its stock hit a six-month low, after it revealed its AI own search summaries were affecting ad revenue.",
-      "source": "BBC",
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "The biggest names in AI are backing a new way to opt out of scraping",
+      "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable.",
+      "source": "The Verge",
       "category": "google",
       "importance": 95,
-      "pubDate": "2026-10-30T12:04:02.000Z",
-      "link": "https://www.bbc.co.uk/news/articles/cm9qzdqpxy48o?at_medium=RSS&at_campaign=rss"
+      "pubDate": "2026-10-30T20:26:10.000Z",
+      "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "As Anthropic finally files for IPO, rising risks aren’t slowing the AI buildout – yet",
+      "summary": "The other artificial intelligence shoe dropped this week, as Anthropic filed for what surely will be the second blockbuster AI initial public offering of stock this year.",
+      "source": "SiliconANGLE",
+      "category": "anthropic",
+      "importance": 95,
+      "pubDate": "2026-10-30T15:30:08.000Z",
+      "link": "https://siliconangle.com/2026/10/30/as-anthropic-finally-files-for-ipo-rising-risks-arent-slowing-the-ai-buildout-yet/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "Ghost in the machine: how AI is haunting the search for the supernatural",
+      "summary": "Ghost hunting has changed in recent years due to AI chatbots, and paranormal enthusiasts are concernedGhost hunting is a tech-heavy pursuit.",
+      "source": "The Guardian",
+      "category": "business",
+      "importance": 95,
+      "pubDate": "2026-10-30T15:00:16.000Z",
+      "link": "https://www.theguardian.com/technology/ng-interactive/2026/oct/30/ai-ghost-hunting"
     },
     {
       "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
@@ -465,14 +335,24 @@
       "link": "https://www.marktechpost.com/2026/10/30/samaya-sterling-post-trained-finance-research-model-frontierfinance/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
-      "title": "Warp Sciences emerges from stealth, to apply robotics to drug research",
-      "summary": "Warp Sciences has co-founders from OpenAI, Meta, and more, plus funding to build infrastructure for automated drug discovery in the U. The post Warp Sciences emerges from stealth, to apply robotics to drug research appeared first on The Robot Report.",
-      "source": "The Robot Report",
-      "category": "robotics",
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "Google owner Alphabet loses $500bn in market value after profit disappoints Wall Street",
+      "summary": "Net profit slid 25% from a year earlier to $26. 2bn, well short of expectations, though revenue rose to $127. 6bnShares in the Google parent Alphabet fell double digits Wednesday evening into Thursday trading, erasing hundreds of billions of dollars in stock market value from the $4tn tech giant.",
+      "source": "The Guardian",
+      "category": "google",
       "importance": 95,
-      "pubDate": "2026-10-28T16:28:48.000Z",
-      "link": "https://www.therobotreport.com/warp-sciences-emerges-stealth-apply-robotics-drug-research/"
+      "pubDate": "2026-10-29T17:29:46.000Z",
+      "link": "https://www.theguardian.com/technology/2026/oct/28/google-alphabet-q3-earnings-report"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaW5ndWxhcml0eWh1Yi5j",
+      "title": "Is AI Really a Black Box? Neural Networks May Be Easier to Understand Than We Thought",
+      "summary": "It's widely believed AI's inner workings are largely inscrutable. A former OpenAI researcher now says this narrative could be wrong. The post Is AI Really a Black Box.",
+      "source": "Singularity Hub",
+      "category": "research",
+      "importance": 95,
+      "pubDate": "2026-10-26T22:41:53.000Z",
+      "link": "https://singularityhub.com/2026/10/26/is-ai-really-a-black-box-neural-networks-may-be-easier-to-understand-than-we-thought/"
     },
     {
       "id": "aHR0cHM6Ly93d3cuc2NpZW5jZWRhaWx5",
@@ -483,6 +363,96 @@
       "importance": 95,
       "pubDate": "2026-10-26T10:06:16.000Z",
       "link": "https://www.sciencedaily.com/releases/2026/10/261025073038.htm"
+    },
+    {
+      "id": "aHR0cHM6Ly9naXRodWIuYmxvZy9vcGVu",
+      "title": "Game Off 2026: The theme is SHIFT",
+      "summary": "GitHub’s annual month-long game jam is back for its 14th year. This November, make a game inspired by the theme SHIFT. Change gears, swap perspectives, bend reality, or just press a certain key.",
+      "source": "The GitHub",
+      "category": "gaming",
+      "importance": 90,
+      "pubDate": "2026-11-01T21:36:00.000Z",
+      "link": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/"
+    },
+    {
+      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
+      "title": "The Enterprise Context Layer: A Practitioner's Guide to 6 Advanced Architectural Patterns",
+      "summary": "Beyond RAG: How modern architectures engineer precise, cost-efficient context for enterprise AI agents. The post The Enterprise Context Layer: A Practitioner's Guide to 6 Advanced Architectural Patterns appeared first on Towards Data Science.",
+      "source": "Towards Data Science",
+      "category": "agents",
+      "importance": 90,
+      "pubDate": "2026-11-01T16:00:00.000Z",
+      "link": "https://towardsdatascience.com/the-enterprise-context-layer-a-practitioners-guide-to-6-advanced-architectural-patterns/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Project-by-project security reviews can’t keep pace with enterprise AI agents",
+      "summary": "Enterprises racing to put AI agents into production are finding that tokenization and other data protection methods now decide how fast those projects move. But sensitive data fed into models is hard to pull back — and security reviews built for a slower era are stalling deployments.",
+      "source": "SiliconANGLE",
+      "category": "agents",
+      "importance": 90,
+      "pubDate": "2026-11-01T14:25:54.000Z",
+      "link": "https://siliconangle.com/2026/11/01/tokenization-helps-enterprises-move-ai-agents-production-evolve26/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Agent demand can’t be forecast, meaning the database has to be ready for anything",
+      "summary": "Enterprises building an agentic AI architecture are learning that the database matters as much as the model. AI agents fire off thousands of unplanned queries at once — and expect answers in milliseconds. PhoenixAI, the trade name of CelerData Inc.",
+      "source": "SiliconANGLE",
+      "category": "agents",
+      "importance": 90,
+      "pubDate": "2026-11-01T14:25:39.000Z",
+      "link": "https://siliconangle.com/2026/11/01/agentic-ai-architecture-demands-real-time-databases-evolve26/"
+    },
+    {
+      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
+      "title": "Fix the Image, Not the Prompt",
+      "summary": "Vision models often fail before they even start reasoning. A few well-placed labels on the image fix more than any prompt tweak. The post Fix the Image, Not the Prompt appeared first on Towards Data Science.",
+      "source": "Towards Data Science",
+      "category": "reasoning",
+      "importance": 90,
+      "pubDate": "2026-11-01T14:00:00.000Z",
+      "link": "https://towardsdatascience.com/fix-the-image-not-the-prompt/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
+      "title": "Why physical AI is the next lucrative frontier",
+      "summary": "To prove its commercial value, physical AI must get past funding enthusiasm and move into production environments. The post Why physical AI is the next lucrative frontier appeared first on The Robot Report.",
+      "source": "The Robot Report",
+      "category": "robotics",
+      "importance": 90,
+      "pubDate": "2026-11-01T13:30:41.000Z",
+      "link": "https://www.therobotreport.com/why-physical-ai-next-lucrative-frontier/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
+      "title": "Solving the Interconnect Challenge in Modern Robotics: How 3M Is Engineering for Motion, Density, and Uptime",
+      "summary": "As robotics systems grow more capable — faster, more precise, and increasingly reliant on AI-driven vision and control — the humble interconnect is being asked to do more than ever.",
+      "source": "The Robot Report",
+      "category": "video_generation",
+      "importance": 90,
+      "pubDate": "2026-11-01T13:00:31.000Z",
+      "link": "https://www.therobotreport.com/solving-the-interconnect-challenge-in-modern-robotics-how-3m-is-engineering-for-motion-density-and-uptime/"
+    },
+    {
+      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
+      "title": "A Neural Network Learned to Read Digits From Pure Noise",
+      "summary": "A small NumPy reproduction of subliminal learning, and a short argument for why it works The post A Neural Network Learned to Read Digits From Pure Noise appeared first on Towards Data Science.",
+      "source": "Towards Data Science",
+      "category": "research",
+      "importance": 90,
+      "pubDate": "2026-11-01T12:00:00.000Z",
+      "link": "https://towardsdatascience.com/a-neural-network-learned-to-read-digits-from-pure-noise/"
+    },
+    {
+      "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
+      "title": "Wikipediaの編集者はどのようにしてAI生成テキストを見つけて除外しているのか？",
+      "summary": "あらゆるプラットフォームにAI生成テキストがあふれている中で、WikipediaではAIに記事本文を生成させたり書き換えさせたりすることを原則禁じるガイドラインが設定されています。そのガイドラインに違反するコンテンツを見つけて削除することを目的としたボランティア活動「WikiProject AI Cleanup」の創設メンバーが、活動について語っています。続きを読む.",
+      "source": "GIGAZINE",
+      "category": "tech",
+      "importance": 90,
+      "pubDate": "2026-11-01T10:00:00.000Z",
+      "link": "https://gigazine.net/news/20261101-wikipedia-ai-content/"
     },
     {
       "id": "aHR0cHM6Ly9naWdhemluZS5uZXQvbmV3",
@@ -505,74 +475,24 @@
       "link": "https://www.marktechpost.com/2026/11/01/nace-ai-open-sources-drex-max-v1-local-inference/"
     },
     {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
-      "summary": "Apple's new CEO defended the company's current position in the AI landscape.",
-      "source": "TechCrunch",
-      "category": "tech",
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "I built an AI Tamagotchi before Meta could",
+      "summary": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I won't be buying one, because we have Muse Charm at home.",
+      "source": "The Verge",
+      "category": "meta",
       "importance": 90,
-      "pubDate": "2026-10-31T21:41:00.000Z",
-      "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "Why your Apple AirPods won't connect to your iPhone and how can you fix it",
-      "summary": "When your AirPods refuse to show up on your iPhone, the cause is usually simpler than you'd think. Here's where to look first and what to try next.",
-      "source": "Technology News & Expert Reviews",
-      "category": "tech",
-      "importance": 90,
-      "pubDate": "2026-10-31T21:00:00.000Z",
-      "link": "https://www.engadget.com/2302450/why-apple-airpods-wont-connect-to-iphone-fixes/"
+      "pubDate": "2026-10-31T16:05:00.000Z",
+      "link": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code"
     },
     {
       "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
-      "title": "We Taught AI to Answer Questions. Who Taught It to Change Its Mind?",
-      "summary": "When new evidence kills one conclusion, do the decisions built on it change too. I tested six update strategies, then a local model. The post We Taught AI to Answer Questions.",
+      "title": "Claude Code Mods: Custom Hooks to Fix My Biggest AI Coding Frustrations",
+      "summary": "How I built four Claude Code mods to protect API keys, track plan progress, catch untested code, and monitor context usage — with 135 passing tests and up to 100× less overhead than traditional hooks — and why they can outperform traditional hooks.",
       "source": "Towards Data Science",
-      "category": "data_science",
+      "category": "anthropic",
       "importance": 90,
-      "pubDate": "2026-10-31T14:00:00.000Z",
-      "link": "https://towardsdatascience.com/we-taught-ai-to-answer-questions-who-taught-it-to-change-its-mind/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
-      "title": "Unusual robotic animals can prove their utility",
-      "summary": "Robotic animals are designed to be helpful rather than scary, showing promise in disaster recovery, utility inspection, and companionship. The post Unusual robotic animals can prove their utility appeared first on The Robot Report.",
-      "source": "The Robot Report",
-      "category": "robotics",
-      "importance": 90,
-      "pubDate": "2026-10-31T12:30:46.000Z",
-      "link": "https://www.therobotreport.com/unusual-robotic-animals-can-prove-their-utility/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
-      "summary": "Named “Volta-Autodoxer,” the recently uncovered malware uses AI tools to collect troves of data about victims, from login credentials and credit card numbers to Discord sessions and UberEats receipts.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "data_science",
-      "importance": 90,
-      "pubDate": "2026-10-31T12:00:00.000Z",
-      "link": "https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cubWFya3RlY2hwb3N0",
-      "title": "Vercel Labs Open-Sources agent-desktop for Agent Computer Use",
-      "summary": "Vercel Labs released agent-desktop, an Apache-2. 0 Rust CLI that gives any AI agent computer use on macOS, Windows and Linux by reading OS accessibility trees and acting on stable refs instead of pixels.",
-      "source": "MarkTechPost",
-      "category": "agents",
-      "importance": 90,
-      "pubDate": "2026-10-31T10:10:28.000Z",
-      "link": "https://www.marktechpost.com/2026/10/31/vercel-labs-agent-desktop-computer-use/"
-    },
-    {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
-      "title": "ACE StudioをClaude Codeから操作、歌の分離から拍の解析まで任せてMVを作った",
-      "summary": "1か月前、Sunoの曲で歌詞が飛ぶMVを作ったとき、歌詞の時刻は曲を聴きながらキーを押して取り、記録は1行ずれました。今回は、その作業を音楽制作ソフトのACE Studioに任せ、AIエージェントのClaude Code [ ].",
-      "source": "innovaTopia",
-      "category": "music_generation",
-      "importance": 90,
-      "pubDate": "2026-10-31T04:45:38.000Z",
-      "link": "https://innovatopia.jp/ai/ai-news/119581/"
+      "pubDate": "2026-10-30T11:00:00.000Z",
+      "link": "https://towardsdatascience.com/claude-code-mods-custom-hooks-to-fix-my-biggest-ai-coding-frustrations/"
     },
     {
       "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
@@ -605,44 +525,104 @@
       "link": "https://www.kdnuggets.com/building-your-first-ai-agent-in-python-with-the-openai-agents-sdk"
     },
     {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
-      "summary": "A biotech startup let an agent choose a gene therapy and successfully inject the treatment, offering a startling glimpse of the future of research labs.",
-      "source": "Feed: Artificial Intelligence Latest",
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Can enterprise AI pay for the boom?",
+      "summary": "The artificial intelligence buildout is making an enormous bet on what businesses will eventually be willing to pay for intelligence. In our research this summer on forecasting the AI bubble, we argued that a key indicator to watch is productive utilization by enterprise customers.",
+      "source": "SiliconANGLE",
+      "category": "presentation",
+      "importance": 85,
+      "pubDate": "2026-10-31T17:12:02.000Z",
+      "link": "https://siliconangle.com/2026/10/31/can-enterprise-ai-pay-for-the-boom/"
+    },
+    {
+      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
+      "title": "I Told an AI Agent That Its Wrong Answers Were Right. One Model Believed Me.",
+      "summary": "A research paper claims reward labels barely change how agents learn. I tested that on three models, and one of them did exactly what the wrong labels told it to. The post I Told an AI Agent That Its Wrong Answers Were Right.",
+      "source": "Towards Data Science",
       "category": "agents",
       "importance": 85,
-      "pubDate": "2026-10-31T10:00:00.000Z",
-      "link": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/"
+      "pubDate": "2026-10-31T12:00:00.000Z",
+      "link": "https://towardsdatascience.com/i-told-an-ai-agent-that-its-wrong-answers-were-right-one-model-believed-me/"
     },
     {
       "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Cracks are emerging in the AI spending boom",
-      "summary": "Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending boom.",
+      "title": "Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says",
+      "summary": "Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending that has undergirded its business.",
       "source": "TechCrunch",
+      "category": "anthropic",
+      "importance": 85,
+      "pubDate": "2026-10-30T21:52:03.000Z",
+      "link": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Hackers steal $6.3B from Binance in biggest-ever crypto heist",
+      "summary": "Hackers have stolen about $6. 3 billion worth of digital assets from Binance, a major cryptocurrency exchange operator. The heist is more than four times bigger than the previous largest crypto theft.",
+      "source": "SiliconANGLE",
       "category": "business",
       "importance": 85,
-      "pubDate": "2026-10-30T21:17:40.000Z",
-      "link": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+      "pubDate": "2026-10-30T21:19:05.000Z",
+      "link": "https://siliconangle.com/2026/10/30/hackers-steal-6-3b-from-binance-in-biggest-ever-crypto-heist/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cubWFya3RlY2hwb3N0",
-      "title": "Meet TokenEconomizer: Microsoft’s Plugin That Cuts Coding Agent Costs by Up to 30.9%",
-      "summary": "Microsoft Research and UC Berkeley released TokenEconomizer, an open-source plugin that learns from past sessions to cut coding agent token costs by 18. 9% on SWE-Bench, with no change to the agent. The post Meet TokenEconomizer: Microsoft’s Plugin That Cuts Coding Agent Costs by Up to 30.",
-      "source": "MarkTechPost",
-      "category": "microsoft",
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
+      "summary": "It's still unknown how attackers got access to Anthropic's verified Cursor account.",
+      "source": "Ars Technica",
+      "category": "anthropic",
       "importance": 85,
-      "pubDate": "2026-10-30T17:53:37.000Z",
-      "link": "https://www.marktechpost.com/2026/10/30/microsoft-tokeneconomizer-coding-agent-cost-control/"
+      "pubDate": "2026-10-30T21:09:54.000Z",
+      "link": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNv",
-      "title": "From synthetic enterprise data evaluations to real Microsoft Copilot AI confidence",
-      "summary": "Evaluating Microsoft Copilot at enterprise scale requires test data that captures the full complexity of real organizations, yet real enterprise data contains sensitive information that cannot be used for evaluation under any circumstances.",
-      "source": "Microsoft Research",
-      "category": "microsoft",
+      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
+      "title": "Percepto launches Axion AI platform to unify inspection data analysis",
+      "summary": "Percepto has launched Axion, a hardware-agnostic physical AI platform delivering visibility across mission-critical infrastructure. The post Percepto launches Axion AI platform to unify inspection data analysis appeared first on The Robot Report.",
+      "source": "The Robot Report",
+      "category": "robotics",
       "importance": 85,
-      "pubDate": "2026-10-30T13:05:28.000Z",
-      "link": "https://www.microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence/"
+      "pubDate": "2026-10-30T19:05:34.000Z",
+      "link": "https://www.therobotreport.com/percepto-launches-axion-ai-platform-unify-inspection-data-analysis/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Krafton-backed Ludo Robotics releases robot intelligence model designed around human intent",
+      "summary": ", a subsidiary of major South Korean video game publisher Krafton Inc. , today debuted Ludi 0. 2, a robotics artificial intelligence system built to understand people and interact with them in the physical world.",
+      "source": "SiliconANGLE",
+      "category": "robotics",
+      "importance": 85,
+      "pubDate": "2026-10-30T18:00:21.000Z",
+      "link": "https://siliconangle.com/2026/10/30/krafton-backed-ludo-robotics-releases-robot-intelligence-model-designed-around-human-intent/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2hv",
+      "title": "Google’s latest Home updates just fixed my biggest annoyances with its speakers and cameras",
+      "summary": "Google details 42 fixes to its Home app and the devices compatible with it.",
+      "source": "ZDNet",
+      "category": "google",
+      "importance": 85,
+      "pubDate": "2026-10-30T16:14:11.000Z",
+      "link": "https://www.zdnet.com/home-and-office/google-home-gemini-updates-42-fixes/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "Silicon Valley wants you to invest in miracles",
+      "summary": "Investing in any stock is kind of like gambling in the sense that you're betting your money on a company's future performance.",
+      "source": "The Verge",
+      "category": "anthropic",
+      "importance": 85,
+      "pubDate": "2026-10-30T13:11:05.000Z",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
+      "title": "Google value plunges by $500bn as its own AI search hits ad sales",
+      "summary": "Google spooked investors so badly that its stock hit a six-month low, after it revealed its AI own search summaries were affecting ad revenue.",
+      "source": "BBC",
+      "category": "google",
+      "importance": 85,
+      "pubDate": "2026-10-30T12:04:02.000Z",
+      "link": "https://www.bbc.co.uk/news/articles/cm9qzdqpxy48o?at_medium=RSS&at_campaign=rss"
     },
     {
       "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
@@ -665,44 +645,104 @@
       "link": "https://www.theguardian.com/global-development/2026/oct/30/electrocutions-disease-and-no-pay-how-workers-risk-exploitation-in-europes-datacentres"
     },
     {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "Fair use benefits everyone",
-      "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
-      "source": "Open",
-      "category": "research",
-      "importance": 85,
-      "pubDate": "2026-10-30T00:00:00.000Z",
-      "link": "https://openai.com/index/fair-use-benefits-everyone"
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "AI glasses can replace your prescription glasses, but should they?",
+      "summary": "You can easily get AI glasses with prescription if you need them, but before making the investment, it s recommended to learn the pros and cons of them.",
+      "source": "Technology News & Expert Reviews",
+      "category": "business",
+      "importance": 80,
+      "pubDate": "2026-11-02T00:00:00.000Z",
+      "link": "https://www.engadget.com/2300320/ai-glasses-replace-prescription-should-they/"
     },
     {
-      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
-      "title": "An updated Model Spec for more capable and beneficial AI",
-      "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
-      "source": "Open",
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC90",
+      "title": "【解説】富士フイルム、磁気テープの製造能力を5倍に 約100億円投資、SSD・HDDとの違いとデータの寿命",
+      "summary": "富士フイルムが約100億円を投じて増やすのは、AIの半導体でもSSDでもなく、磁気テープです。メーカーは50年以上に相当する試験で磁気特性が変わらないと示す一方、自ら新しいシステムへの移し替えを勧めています。最新のLTO [ ].",
+      "source": "innovaTopia",
       "category": "tech",
-      "importance": 85,
-      "pubDate": "2026-10-29T17:00:00.000Z",
-      "link": "https://openai.com/index/updated-model-spec"
+      "importance": 80,
+      "pubDate": "2026-11-01T23:51:01.000Z",
+      "link": "https://innovatopia.jp/tech-economy/tech-economynews/119647/"
     },
     {
-      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
-      "title": "Anthropic Makes $2.08 in Revenue for Every $1 Spent on Compute — Here’s the Full IPO Story",
-      "summary": "Anthropic has filed to go public in the US. Its IPO filing offers a closer look at its exponential revenue growth, mounting infrastructure costs, potential loss.",
-      "source": "AIM",
-      "category": "anthropic",
-      "importance": 85,
-      "pubDate": "2026-10-29T11:36:54.000Z",
-      "link": "https://analyticsindiamag.com/global-tech/anthropic-makes-208-in-revenue-for-every-1-spent-on-compute-heres-the-full-ipo-story"
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9h",
+      "title": "Amazon「Alexa+」日本で早期アクセス開始、プライム会員は追加料金なし",
+      "summary": "10月23日から29日までの1週間で、Meta、Apple、Amazonの「頼むと動くAI」が日本で相次いで使えるようになりました。最後に来たAlexa+は、すでに多くの家に置かれたEchoやFire TVから届きます。 [ ].",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-11-01T23:26:23.000Z",
+      "link": "https://innovatopia.jp/ai/ai-news/119640/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "We urgently need to monitor AI agents’ actions in real time",
-      "summary": "This summer, hundreds of OpenAI agents tried to cheat on a cybersecurity test. They broke out of their test environment and successfully hacked Hugging Face, a site that they believed held clues about how they’d be graded.",
-      "source": "MIT Technology Review",
-      "category": "agents",
-      "importance": 85,
-      "pubDate": "2026-10-29T10:11:12.000Z",
-      "link": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/"
+      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
+      "title": "How to clean your PlayStation 5 without damaging it",
+      "summary": "Your PS5 requires occasional maintenance to run at its best, but it only needs a light touch.",
+      "source": "Technology News & Expert Reviews",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-11-01T23:00:00.000Z",
+      "link": "https://www.engadget.com/2300309/how-to-clean-playstation-5-without-damaging/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "「保安検査の長い列」と「人手不足」をどう解消する？ フランクフルト空港におけるAI時代の空港DX",
+      "summary": "4月に開業したフランクフルト空港の第3ターミナル。IT技術やAIを導入し、顧客体験の向上や業務効率化を行っている。どのような技術を導入し、「止まらない空港」を実現しようとしているのか？.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-11-01T22:00:00.000Z",
+      "link": "https://www.itmedia.co.jp/business/articles/2611/02/news003.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "キオクシア「設備投資を急がねば……」 2027年分は完売、メモリ供給追い付くか",
+      "summary": "半導体メモリ大手のキオクシアは、2027年の生産能力が全て“完売”だと明かした。AIブームによる旺盛なメモリ需要に答えるため、年5000億円弱を投じて新工場を建設する。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-11-01T22:00:00.000Z",
+      "link": "https://www.itmedia.co.jp/business/articles/2611/02/news031.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "その日、メルカリは「業務を止めた」――上司と部下が対立も、AI利用率100％をかなえたCAIOの奮闘記",
+      "summary": "AIツールの利用率100％を達成したメルカリ。しかし「AIエージェント構築に時間を割きたい部下と、それを止めたい上司」など一筋縄ではいかなかった。試行錯誤の裏側をCAIOが語る。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-11-01T22:00:00.000Z",
+      "link": "https://www.itmedia.co.jp/business/articles/2611/02/news032.html"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9j",
+      "title": "FBI、Binanceの60億ドル超流出を北朝鮮と断定 TraderTraitorの628アドレスとの取引遮断を要請",
+      "summary": "盗まれた60億ドル超のうち、発行体が凍結できたのはステーブルコインの一部でした。残るETHやBTCには、止めるボタンを持つ発行体がいません。FBIが10月31日に公開した628件のアドレスは、その止められない資産を、交換 [ ].",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-11-01T21:34:04.000Z",
+      "link": "https://innovatopia.jp/cyber-security/cyber-security-news/119631/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "AI can make tech CEOs’ lives easier. What about everyone else?",
+      "summary": "On Equity, we discuss why tech CEO statements can seem so tone deaf.",
+      "source": "TechCrunch",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-11-01T20:57:58.000Z",
+      "link": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "Chatbots Are Leading Hikers Astray, With Dangerous Consequences",
+      "summary": "Outsourcing planning to AI can lead people to surrender their own critical thinking, which can have potentially deadly results in places like the backcountry.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-11-01T10:30:00.000Z",
+      "link": "https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/"
     },
     {
       "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
@@ -715,16 +755,6 @@
       "link": "https://analyticsindiamag.com/ai-startups/the-bengaluru-founder-building-a-bridge-to-san-francisco"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "5 expensive hobbies where owning a 3D printer actually saves you money",
-      "summary": "While a personal 3D printer is certainly an investment, if you regularly engage with an expensive hobby, it might actually save you some cash.",
-      "source": "Technology News & Expert Reviews",
-      "category": "business",
-      "importance": 80,
-      "pubDate": "2026-11-01T00:30:00.000Z",
-      "link": "https://www.engadget.com/2300213/3d-printer-expensive-hobbies-where-it-saves-money/"
-    },
-    {
       "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9p",
       "title": "【解説】脱WordPressは「出口」で選ぶ｜EmDash・Wix・Studio・静的HTML・AI自作CMSのメリットとリスク",
       "summary": "WordPressのシェアは2025年12月から毎月下がり、10月末に39. 5%になりました。それでも、世界のWebサイトのおよそ4割を支える最大のCMSであることに変わりはありません。PHP2Shellのあと、乗り換え [ ].",
@@ -735,194 +765,94 @@
       "link": "https://innovatopia.jp/infrastructure/infrastructure-news/119612/"
     },
     {
-      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9j",
-      "title": "【解説】AI開発基盤9社が10月に侵害を公表、狙われたのはAIの鍵 NorthflankとChainalysisも",
-      "summary": "利用者のAIの鍵を預かる開発基盤で、10月だけで9社が侵害を公表しました。最後の1社となったNorthflankは、警告を受けてから約2時間で「すべての秘密情報を替えてほしい」と利用者に求めています。同じ日には、Bina [ ].",
-      "source": "innovaTopia",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-10-31T23:44:31.000Z",
-      "link": "https://innovatopia.jp/cyber-security/cyber-security-news/119606/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "Why your Apple AirPods' battery drains so fast and how to make it last longer",
-      "summary": "It s annoying when your Apple AirPods run out of juice, but the culprit might not be what you think. Here s what s going on and what you can do about it.",
-      "source": "Technology News & Expert Reviews",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-10-31T23:30:00.000Z",
-      "link": "https://www.engadget.com/2300231/why-airpods-battery-drains-fast-how-to-fix/"
-    },
-    {
       "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale",
-      "summary": "On November 4 at Boston’s SoWa Power Station, get ready for a full day packed with meaningful networking opportunities, actionable insights, and connections that could change the trajectory of your idea and startup. Register before all prices go up at the door.",
+      "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
+      "summary": "Apple's new CEO defended the company's current position in the AI landscape.",
       "source": "TechCrunch",
-      "category": "business",
-      "importance": 80,
-      "pubDate": "2026-10-31T21:36:07.000Z",
-      "link": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
-      "summary": "An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.",
-      "source": "TechCrunch",
-      "category": "xai",
-      "importance": 80,
-      "pubDate": "2026-10-31T21:17:03.000Z",
-      "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZW5nYWRnZXQuY29t",
-      "title": "Xbox manager says AI is already being used in game development",
-      "summary": "Brandon Stirrup deleted his comments from X a day after saying that AI usage is widespread in the gaming industry.",
-      "source": "Technology News & Expert Reviews",
-      "category": "gaming",
-      "importance": 80,
-      "pubDate": "2026-10-31T20:00:00.000Z",
-      "link": "https://www.engadget.com/2302431/brandon-stirrup-xbox-manager-says-ai-used-game-development/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vdGVj",
-      "title": "Will the iPhone Duo Fit in Your Pocket? Here’s How It Compares to Other iPhone Sizes",
-      "summary": "The iPhone Duo has a palm-size build, but how does that measure up against Apple’s other current phones.",
-      "source": "CNET",
       "category": "tech",
       "importance": 80,
-      "pubDate": "2026-10-31T12:00:00.000Z",
-      "link": "https://www.cnet.com/tech/mobile/iphone-duo-size-comparison/"
+      "pubDate": "2026-10-31T21:41:00.000Z",
+      "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNv",
-      "title": "Binance in Talks for Malaysia License after Five-Year Absence",
-      "summary": "Binance said it’s in discussions with Malaysian regulators for a licensed business in the country, as the cryptocurrency exchange seeks a route back into a market where authorities have blocked its website and applications.",
-      "source": "Bloomberg",
-      "category": "business",
+      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
+      "title": "We Taught AI to Answer Questions. Who Taught It to Change Its Mind?",
+      "summary": "When new evidence kills one conclusion, do the decisions built on it change too. I tested six update strategies, then a local model. The post We Taught AI to Answer Questions.",
+      "source": "Towards Data Science",
+      "category": "data_science",
       "importance": 80,
-      "pubDate": "2026-10-31T10:30:38.000Z",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-31/binance-in-talks-for-malaysia-license-after-five-year-absence"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "Meta’s Muse Could Upend All Kinds of Businesses. It Hasn’t Yet",
-      "summary": "Companies have spent the past several weeks trying to reassure investors that Muse and other AI agents pose more of an opportunity than a threat.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "meta",
-      "importance": 80,
-      "pubDate": "2026-10-31T10:30:00.000Z",
-      "link": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vaG9t",
-      "title": "The Wild World of Third-Party AI Apps for Ring Security, and Whether You Need Them",
-      "summary": "Ring cameras offer broad capabilities, but third-party AI tools give HOAs, landlords and others even more ways to use them.",
-      "source": "CNET",
-      "category": "security",
-      "importance": 80,
-      "pubDate": "2026-10-31T10:00:00.000Z",
-      "link": "https://www.cnet.com/home/security/ring-ai-app-store-third-parties-analysis-do-you-need-them/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "6 insights from the GSA Women’s Leadership Initiative: AI semiconductor industry trends turn the chip race into a systems race",
-      "summary": "For decades, the semiconductor industry competed on one thing: the individual chip. One of the biggest AI semiconductor industry trends now under way is the shift toward treating chips as components of much larger systems.",
-      "source": "SiliconANGLE",
-      "category": "manufacturing",
-      "importance": 80,
-      "pubDate": "2026-10-30T20:28:11.000Z",
-      "link": "https://siliconangle.com/2026/10/30/ai-semiconductor-industry-trends-from-chips-systems-gsawomensleadershipinitiative/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Extreme Networks wants the network to run AI, not just be run by it",
-      "summary": "At its recent AI Summit in Amsterdam, Extreme Networks Inc. shared early Agent ONE Coworker results and previewed Exchange zones, which put spare access points and switch compute to work as on-premises artificial intelligence infrastructure.",
-      "source": "SiliconANGLE",
-      "category": "agents",
-      "importance": 80,
-      "pubDate": "2026-10-30T19:53:09.000Z",
-      "link": "https://siliconangle.com/2026/10/30/extreme-networks-wants-the-network-to-run-ai-not-just-be-run-by-it/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "Basically no one is using AI agents for their DoorDash orders",
-      "summary": "But it's still early days for the relatively new e-commerce use case.",
-      "source": "Ars Technica",
-      "category": "agents",
-      "importance": 80,
-      "pubDate": "2026-10-30T19:30:52.000Z",
-      "link": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/"
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
-      "title": "Q&A: Hey AI, who should I vote for this year?",
-      "summary": "MIT professors Adam Berinsky and Chara Podimata discuss a new project to track how AI chatbots are responding to questions about the 2026 U.",
-      "source": "news",
-      "category": "tech",
-      "importance": 80,
-      "pubDate": "2026-10-30T19:00:00.000Z",
-      "link": "https://news.mit.edu/2026/qa-hey-ai-who-should-i-vote-for-this-year-1030"
+      "pubDate": "2026-10-31T14:00:00.000Z",
+      "link": "https://towardsdatascience.com/we-taught-ai-to-answer-questions-who-taught-it-to-change-its-mind/"
     },
     {
       "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
-      "title": "Humanoid developer Agility now expects to raise $465M in SPAC deal",
-      "summary": "Agility said it expects to raise $465 million in its combination with Churchill Capital Corp XI, $155 million less than it had estimated. The post Humanoid developer Agility now expects to raise $465M in SPAC deal appeared first on The Robot Report.",
+      "title": "Unusual robotic animals can prove their utility",
+      "summary": "Robotic animals are designed to be helpful rather than scary, showing promise in disaster recovery, utility inspection, and companionship. The post Unusual robotic animals can prove their utility appeared first on The Robot Report.",
       "source": "The Robot Report",
       "category": "robotics",
       "importance": 80,
-      "pubDate": "2026-10-30T16:19:16.000Z",
-      "link": "https://www.therobotreport.com/humanoid-developer-agility-now-expects-raise-465m-spac-deal/"
-    },
-    {
-      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
-      "title": "Pick a Number Between 1 and 10",
-      "summary": "A viral tweet says LLMs pick 7 because of gradient descent. The math says it’s more interesting than that. The post Pick a Number Between 1 and 10 appeared first on Towards Data Science.",
-      "source": "Towards Data Science",
-      "category": "data_science",
-      "importance": 80,
-      "pubDate": "2026-10-30T15:30:00.000Z",
-      "link": "https://towardsdatascience.com/pick-a-number-between-1-and-10/"
-    },
-    {
-      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
-      "title": "Intuit targets the mid-market ERP gap with AI",
-      "summary": "Growing companies that outgrow entry-level accounting software face a hard choice: Stay put or gamble on a mid-market ERP that promises automation but often brings cost and disruption.",
-      "source": "SiliconANGLE",
-      "category": "automation",
-      "importance": 80,
-      "pubDate": "2026-10-30T14:39:29.000Z",
-      "link": "https://siliconangle.com/2026/10/30/mid-market-erp-how-intuit-uses-ai-avoid-failed-intuitconnect/"
-    },
-    {
-      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
-      "title": "Binning or Feature Selection: Which One Won Us an Insurance Hackathon?",
-      "summary": "For a year, we believed that supervised binning carried our winning entry to an insurance competition. After four seeds per arm and one shared feature set, the credit belongs elsewhere. The post Binning or Feature Selection: Which One Won Us an Insurance Hackathon.",
-      "source": "Towards Data Science",
-      "category": "data_science",
-      "importance": 80,
-      "pubDate": "2026-10-30T14:00:00.000Z",
-      "link": "https://towardsdatascience.com/binning-or-feature-selection-which-one-won-us-an-insurance-hackathon/"
-    },
-    {
-      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
-      "title": "Your Agent’s Tools Can Make Decisions, Too",
-      "summary": "Decision models as tools: a hands-on guide The post Your Agent’s Tools Can Make Decisions, Too appeared first on Towards Data Science.",
-      "source": "Towards Data Science",
-      "category": "agents",
-      "importance": 80,
-      "pubDate": "2026-10-30T12:30:00.000Z",
-      "link": "https://towardsdatascience.com/your-agents-tools-can-make-decisions-too/"
+      "pubDate": "2026-10-31T12:30:46.000Z",
+      "link": "https://www.therobotreport.com/unusual-robotic-animals-can-prove-their-utility/"
     },
     {
       "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",
-      "summary": "Sources tell WIRED that an Accenture employee’s personal Claude agent ran on a DOD network for two months before it was identified and the vulnerability could be patched.",
+      "title": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
+      "summary": "Named “Volta-Autodoxer,” the recently uncovered malware uses AI tools to collect troves of data about victims, from login credentials and credit card numbers to Discord sessions and UberEats receipts.",
       "source": "Feed: Artificial Intelligence Latest",
+      "category": "data_science",
+      "importance": 80,
+      "pubDate": "2026-10-31T12:00:00.000Z",
+      "link": "https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cubWFya3RlY2hwb3N0",
+      "title": "Vercel Labs Open-Sources agent-desktop for Agent Computer Use",
+      "summary": "Vercel Labs released agent-desktop, an Apache-2. 0 Rust CLI that gives any AI agent computer use on macOS, Windows and Linux by reading OS accessibility trees and acting on stable refs instead of pixels.",
+      "source": "MarkTechPost",
       "category": "agents",
       "importance": 80,
-      "pubDate": "2026-10-29T18:39:43.000Z",
-      "link": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/"
+      "pubDate": "2026-10-31T10:10:28.000Z",
+      "link": "https://www.marktechpost.com/2026/10/31/vercel-labs-agent-desktop-computer-use/"
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
+      "title": "Fair use benefits everyone",
+      "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
+      "source": "Open",
+      "category": "research",
+      "importance": 80,
+      "pubDate": "2026-10-30T00:00:00.000Z",
+      "link": "https://openai.com/index/fair-use-benefits-everyone"
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
+      "title": "An updated Model Spec for more capable and beneficial AI",
+      "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
+      "source": "Open",
+      "category": "tech",
+      "importance": 80,
+      "pubDate": "2026-10-29T17:00:00.000Z",
+      "link": "https://openai.com/index/updated-model-spec"
+    },
+    {
+      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
+      "title": "Anthropic Makes $2.08 in Revenue for Every $1 Spent on Compute — Here’s the Full IPO Story",
+      "summary": "Anthropic has filed to go public in the US. Its IPO filing offers a closer look at its exponential revenue growth, mounting infrastructure costs, potential loss.",
+      "source": "AIM",
+      "category": "anthropic",
+      "importance": 80,
+      "pubDate": "2026-10-29T11:36:54.000Z",
+      "link": "https://analyticsindiamag.com/global-tech/anthropic-makes-208-in-revenue-for-every-1-spent-on-compute-heres-the-full-ipo-story"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
+      "title": "We urgently need to monitor AI agents’ actions in real time",
+      "summary": "This summer, hundreds of OpenAI agents tried to cheat on a cybersecurity test. They broke out of their test environment and successfully hacked Hugging Face, a site that they believed held clues about how they’d be graded.",
+      "source": "MIT Technology Review",
+      "category": "agents",
+      "importance": 80,
+      "pubDate": "2026-10-29T10:11:12.000Z",
+      "link": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/"
     },
     {
       "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
@@ -985,24 +915,34 @@
       "link": "https://www.sciencedaily.com/releases/2026/10/261024222024.htm"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Apple Intelligence is finally coming to China with iOS 27.3",
-      "summary": "Apple will launch Apple Intelligence in China with iOS 27. 3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in an iOS 27.",
-      "source": "The Verge",
-      "category": "translation",
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
+      "summary": "A biotech startup let an agent choose a gene therapy and successfully inject the treatment, offering a startling glimpse of the future of research labs.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "agents",
       "importance": 75,
-      "pubDate": "2026-10-30T22:32:53.000Z",
-      "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
+      "pubDate": "2026-10-31T10:00:00.000Z",
+      "link": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/"
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
-      "title": "MIT affiliates named 2026 Schmidt Sciences AI2050 Fellows",
-      "summary": "Five MIT faculty members and two additional alumni are honored with fellowships to advance research on beneficial AI.",
-      "source": "news",
-      "category": "research",
+      "id": "aHR0cHM6Ly93d3cubWFya3RlY2hwb3N0",
+      "title": "Meet TokenEconomizer: Microsoft’s Plugin That Cuts Coding Agent Costs by Up to 30.9%",
+      "summary": "Microsoft Research and UC Berkeley released TokenEconomizer, an open-source plugin that learns from past sessions to cut coding agent token costs by 18. 9% on SWE-Bench, with no change to the agent. The post Meet TokenEconomizer: Microsoft’s Plugin That Cuts Coding Agent Costs by Up to 30.",
+      "source": "MarkTechPost",
+      "category": "microsoft",
       "importance": 75,
-      "pubDate": "2026-10-30T20:15:00.000Z",
-      "link": "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030"
+      "pubDate": "2026-10-30T17:53:37.000Z",
+      "link": "https://www.marktechpost.com/2026/10/30/microsoft-tokeneconomizer-coding-agent-cost-control/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNv",
+      "title": "From synthetic enterprise data evaluations to real Microsoft Copilot AI confidence",
+      "summary": "Evaluating Microsoft Copilot at enterprise scale requires test data that captures the full complexity of real organizations, yet real enterprise data contains sensitive information that cannot be used for evaluation under any circumstances.",
+      "source": "Microsoft Research",
+      "category": "microsoft",
+      "importance": 75,
+      "pubDate": "2026-10-30T13:05:28.000Z",
+      "link": "https://www.microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence/"
     },
     {
       "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
@@ -1015,44 +955,14 @@
       "link": "https://www.npr.org/2026/10/30/nx-s1-6022278/ai-artificial-intelligence-teens-jed-common-sense-media"
     },
     {
-      "id": "aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNv",
-      "title": "Microsoft Research Focus – Edition #97",
-      "summary": "Host Sowbhagya Suresh shares some of the latest news and cutting-edge research from across Microsoft—from understanding the challenges facing coding agents to uncovering how people use AI at work and improving extended-range weather forecasting.",
-      "source": "Microsoft Research",
-      "category": "microsoft",
-      "importance": 75,
-      "pubDate": "2026-10-29T19:19:16.000Z",
-      "link": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
-      "title": "Gnani AI Launches Prisma v3.0 Speech Recognition Model for 10 Languages",
-      "summary": "The company’s Prisma v3. 0 supports nine Indian languages and English, with the company reporting lower transcription error rates than competing models on a mult.",
-      "source": "AIM",
-      "category": "tech",
-      "importance": 75,
-      "pubDate": "2026-10-29T12:20:54.000Z",
-      "link": "https://analyticsindiamag.com/ai-news/gnani-ai-launches-prisma-v30-speech-recognition-model-for-10-languages"
-    },
-    {
-      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
-      "title": "Articul8 Launches Bivia To Help Enterprise AI Agents Make Decisions",
-      "summary": "The company has launched Bivia, a multimodal decision model designed to help enterprise AI agents make domain-specific decisions and verify evidence across diff.",
-      "source": "AIM",
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",
+      "summary": "Sources tell WIRED that an Accenture employee’s personal Claude agent ran on a DOD network for two months before it was identified and the vulnerability could be patched.",
+      "source": "Feed: Artificial Intelligence Latest",
       "category": "agents",
       "importance": 75,
-      "pubDate": "2026-10-29T11:10:21.000Z",
-      "link": "https://analyticsindiamag.com/ai-news/articul8-launches-bivia-to-help-enterprise-ai-agents-make-decisions"
-    },
-    {
-      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
-      "title": "NVIDIA Launches Open-Weight Transcription Model for 40 Languages",
-      "summary": "5 Transcribe supports transcription in 40 languages with advanced features like speaker attribution and speech translation.",
-      "source": "AIM",
-      "category": "translation",
-      "importance": 75,
-      "pubDate": "2026-10-29T10:37:56.000Z",
-      "link": "https://analyticsindiamag.com/ai-news/nvidia-launches-open-weight-transcription-model-for-40-languages"
+      "pubDate": "2026-10-29T18:39:43.000Z",
+      "link": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/"
     },
     {
       "id": "aHR0cHM6Ly9kZWVwbWluZC5nb29nbGUv",
@@ -1063,6 +973,66 @@
       "importance": 75,
       "pubDate": "2026-10-28T17:00:58.000Z",
       "link": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+    },
+    {
+      "id": "aHR0cHM6Ly9pbm5vdmF0b3BpYS5qcC9j",
+      "title": "【解説】AI開発基盤9社が10月に侵害を公表、狙われたのはAIの鍵 NorthflankとChainalysisも",
+      "summary": "利用者のAIの鍵を預かる開発基盤で、10月だけで9社が侵害を公表しました。最後の1社となったNorthflankは、警告を受けてから約2時間で「すべての秘密情報を替えてほしい」と利用者に求めています。同じ日には、Bina [ ].",
+      "source": "innovaTopia",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-10-31T23:44:31.000Z",
+      "link": "https://innovatopia.jp/cyber-security/cyber-security-news/119606/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale",
+      "summary": "On November 4 at Boston’s SoWa Power Station, get ready for a full day packed with meaningful networking opportunities, actionable insights, and connections that could change the trajectory of your idea and startup. Register before all prices go up at the door.",
+      "source": "TechCrunch",
+      "category": "business",
+      "importance": 70,
+      "pubDate": "2026-10-31T21:36:07.000Z",
+      "link": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+      "summary": "An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.",
+      "source": "TechCrunch",
+      "category": "xai",
+      "importance": 70,
+      "pubDate": "2026-10-31T21:17:03.000Z",
+      "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vdGVj",
+      "title": "Will the iPhone Duo Fit in Your Pocket? Here’s How It Compares to Other iPhone Sizes",
+      "summary": "The iPhone Duo has a palm-size build, but how does that measure up against Apple’s other current phones.",
+      "source": "CNET",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-10-31T12:00:00.000Z",
+      "link": "https://www.cnet.com/tech/mobile/iphone-duo-size-comparison/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "Meta’s Muse Could Upend All Kinds of Businesses. It Hasn’t Yet",
+      "summary": "Companies have spent the past several weeks trying to reassure investors that Muse and other AI agents pose more of an opportunity than a threat.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "meta",
+      "importance": 70,
+      "pubDate": "2026-10-31T10:30:00.000Z",
+      "link": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vaG9t",
+      "title": "The Wild World of Third-Party AI Apps for Ring Security, and Whether You Need Them",
+      "summary": "Ring cameras offer broad capabilities, but third-party AI tools give HOAs, landlords and others even more ways to use them.",
+      "source": "CNET",
+      "category": "security",
+      "importance": 70,
+      "pubDate": "2026-10-31T10:00:00.000Z",
+      "link": "https://www.cnet.com/home/security/ring-ai-app-store-third-parties-analysis-do-you-need-them/"
     },
     {
       "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
@@ -1095,194 +1065,94 @@
       "link": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "Once again, NASA is asking for ideas to rescue Hubble from certain death",
-      "summary": "The space agency solicited ideas for reboosting Hubble four years ago, but they didn't go anywhere.",
-      "source": "Ars Technica",
-      "category": "space",
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "6 insights from the GSA Women’s Leadership Initiative: AI semiconductor industry trends turn the chip race into a systems race",
+      "summary": "For decades, the semiconductor industry competed on one thing: the individual chip. One of the biggest AI semiconductor industry trends now under way is the shift toward treating chips as components of much larger systems.",
+      "source": "SiliconANGLE",
+      "category": "manufacturing",
       "importance": 70,
-      "pubDate": "2026-10-31T00:07:22.000Z",
-      "link": "https://arstechnica.com/space/2026/10/think-you-can-save-the-hubble-space-telescope-nasa-wants-to-know/"
+      "pubDate": "2026-10-30T20:28:11.000Z",
+      "link": "https://siliconangle.com/2026/10/30/ai-semiconductor-industry-trends-from-chips-systems-gsawomensleadershipinitiative/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vcm9h",
-      "title": "GM’s $220M Payout Shows How Cars Can Secretly Sell Your Driving Data",
-      "summary": "The automaker must now obtain express consent before collecting or sharing driver data.",
-      "source": "CNET",
-      "category": "data_science",
-      "importance": 70,
-      "pubDate": "2026-10-30T23:14:32.000Z",
-      "link": "https://www.cnet.com/roadshow/auto-tech/gm-privacy-settlement-smart-driver-program/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Ollie, a privacy-focused AI assistant, is shutting down",
-      "summary": "As an increasing number of AI assistants flood the market, the founder of Ollie, an assistant that respected its users' privacy, says it will be shutting down in a week.",
-      "source": "TechCrunch",
+      "id": "aHR0cHM6Ly9zaWxpY29uYW5nbGUuY29t",
+      "title": "Extreme Networks wants the network to run AI, not just be run by it",
+      "summary": "At its recent AI Summit in Amsterdam, Extreme Networks Inc. shared early Agent ONE Coworker results and previewed Exchange zones, which put spare access points and switch compute to work as on-premises artificial intelligence infrastructure.",
+      "source": "SiliconANGLE",
       "category": "agents",
       "importance": 70,
-      "pubDate": "2026-10-30T22:56:13.000Z",
-      "link": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+      "pubDate": "2026-10-30T19:53:09.000Z",
+      "link": "https://siliconangle.com/2026/10/30/extreme-networks-wants-the-network-to-run-ai-not-just-be-run-by-it/"
     },
     {
       "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "Oh captain, our captain: Ars staff remembers Patrick Stewart",
-      "summary": "\"For huge numbers of people, I will always be Jean-Luc Picard. We created an admirable individual.",
+      "title": "Basically no one is using AI agents for their DoorDash orders",
+      "summary": "But it's still early days for the relatively new e-commerce use case.",
       "source": "Ars Technica",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-10-30T22:21:05.000Z",
-      "link": "https://arstechnica.com/culture/2026/10/oh-captain-our-captain-ars-staff-remembers-patrick-stewart/"
-    },
-    {
-      "id": "aHR0cHM6Ly9tb25vaXN0Lml0bWVkaWEu",
-      "title": "GMOがサイバー攻撃情報に異例の1.5億円懸賞金、AI時代の新防衛策となるのか",
-      "summary": "2026年10月26～30日に公開された記事の中から、MONOist編集部が厳選した今週の注目ニュースをお届けします。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-10-30T22:00:00.000Z",
-      "link": "https://monoist.itmedia.co.jp/mn/articles/2610/31/news013.html"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "AIエージェントは「実運用」が主流に 「明確な成果」を得る企業の共通点は？",
-      "summary": "生成AIの活用は「試す」段階から「使い広げる」段階へ移り、AIエージェントも実運用が主流になった。一方で、企業規模による差は広がっている。INDUSTRIAL-Xの調査が示す、成果を分ける“技術以外の要因”とは。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-10-30T22:00:00.000Z",
-      "link": "https://www.itmedia.co.jp/enterprise/articles/2610/31/news008.html"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
-      "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
-      "source": "TechCrunch",
-      "category": "regulation",
-      "importance": 70,
-      "pubDate": "2026-10-30T21:54:34.000Z",
-      "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "Supersonic airliner in doubt as company shifts to powering AI data centers",
-      "summary": "Boom’s airliner may be delayed, and its data center power business lost a customer.",
-      "source": "Ars Technica",
-      "category": "presentation",
-      "importance": 70,
-      "pubDate": "2026-10-30T21:41:54.000Z",
-      "link": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
-      "title": "Last-minute Halloween costumes for tech nerds",
-      "summary": "Just be a deceptively cute AI agent icon, a PHP vulnerability, or sleepy time Bryan Johnson.",
-      "source": "TechCrunch",
       "category": "agents",
       "importance": 70,
-      "pubDate": "2026-10-30T21:26:59.000Z",
-      "link": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/"
+      "pubDate": "2026-10-30T19:30:52.000Z",
+      "link": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/"
     },
     {
-      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
-      "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
-      "summary": "People who love AI don't always love telling others they used it.",
-      "source": "Ars Technica",
+      "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
+      "title": "Q&A: Hey AI, who should I vote for this year?",
+      "summary": "MIT professors Adam Berinsky and Chara Podimata discuss a new project to track how AI chatbots are responding to questions about the 2026 U.",
+      "source": "news",
       "category": "tech",
       "importance": 70,
-      "pubDate": "2026-10-30T20:40:13.000Z",
-      "link": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
-      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
-      "summary": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
-      "source": "BBC",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-10-30T20:34:46.000Z",
-      "link": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
-      "summary": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru.",
-      "source": "The Verge",
-      "category": "presentation",
-      "importance": 70,
-      "pubDate": "2026-10-30T17:38:04.000Z",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru"
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
-      "summary": "The ChatGPT desktop app is now available on Amazon Bedrock in AWS GovCloud (US).",
-      "source": "aws",
-      "category": "reasoning",
-      "importance": 70,
-      "pubDate": "2026-10-30T17:27:45.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "North Korea is likely culprit behind $6.3bn crypto hack, ‘largest heist in history’",
-      "summary": "Binance exchange says it will cover customer losses as it scrambles to freeze affected assets, with about $3bn located so farQ A: How big a deal is the $6. Tell us: have you been affected by the Binance hack. The world’s largest cryptocurrency exchange has been hit by a record $6.",
-      "source": "The Guardian",
-      "category": "presentation",
-      "importance": 70,
-      "pubDate": "2026-10-30T16:35:44.000Z",
-      "link": "https://www.theguardian.com/business/2026/oct/29/binance-crypto-exchange-hack"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
-      "title": "Vibe Coding a Classic Game: Building Breakout Step by Step with an AI Assistant",
-      "summary": "Vibe coding is a workflow where you describe what you want in natural language and let an AI agent handle code generation, execution, and iteration rather than typing every line yourself.",
-      "source": "KDnuggets",
-      "category": "agents",
-      "importance": 70,
-      "pubDate": "2026-10-30T14:00:00.000Z",
-      "link": "https://www.kdnuggets.com/vibe-coding-a-classic-game-building-breakout-step-by-step-with-an-ai-assistant"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "キオクシア中間決算「過去最高」連呼 純利益2.2兆円、初の配当実施 AI需要で「成長さらに加速」",
-      "summary": "キオクシアHDは、2027年3月期の中間決算を発表した。純利益は2. 2兆円。第2四半期の3カ月だけで前年通期の売り上げを上回った。好決算を受けて上場後初となる配当を実施する。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-10-30T12:45:00.000Z",
-      "link": "https://www.itmedia.co.jp/business/articles/2610/30/news090.html"
+      "pubDate": "2026-10-30T19:00:00.000Z",
+      "link": "https://news.mit.edu/2026/qa-hey-ai-who-should-i-vote-for-this-year-1030"
     },
     {
       "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
-      "title": "RoboBusiness 2026 recap",
-      "summary": "The Robot Report editorial team sits down for a recap of noteworthy sessions and networking around the 2026 RoboBusiness event. The post RoboBusiness 2026 recap appeared first on The Robot Report.",
+      "title": "Humanoid developer Agility now expects to raise $465M in SPAC deal",
+      "summary": "Agility said it expects to raise $465 million in its combination with Churchill Capital Corp XI, $155 million less than it had estimated. The post Humanoid developer Agility now expects to raise $465M in SPAC deal appeared first on The Robot Report.",
       "source": "The Robot Report",
       "category": "robotics",
       "importance": 70,
-      "pubDate": "2026-10-30T12:30:02.000Z",
-      "link": "https://www.therobotreport.com/robobusiness-2026-recap/"
+      "pubDate": "2026-10-30T16:19:16.000Z",
+      "link": "https://www.therobotreport.com/humanoid-developer-agility-now-expects-raise-465m-spac-deal/"
     },
     {
-      "id": "aHR0cHM6Ly9tYWNoaW5lbGVhcm5pbmdt",
-      "title": "7 Ways Your AI Agent Is Wasting Tokens (And What to Do Instead)",
-      "summary": "In this article, you will learn seven common token-waste patterns in production AI agent systems, and the architectural fixes that address each one.",
-      "source": "MachineLearningMastery.com",
+      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
+      "title": "Pick a Number Between 1 and 10",
+      "summary": "A viral tweet says LLMs pick 7 because of gradient descent. The math says it’s more interesting than that. The post Pick a Number Between 1 and 10 appeared first on Towards Data Science.",
+      "source": "Towards Data Science",
+      "category": "data_science",
+      "importance": 70,
+      "pubDate": "2026-10-30T15:30:00.000Z",
+      "link": "https://towardsdatascience.com/pick-a-number-between-1-and-10/"
+    },
+    {
+      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
+      "title": "Binning or Feature Selection: Which One Won Us an Insurance Hackathon?",
+      "summary": "For a year, we believed that supervised binning carried our winning entry to an insurance competition. After four seeds per arm and one shared feature set, the credit belongs elsewhere. The post Binning or Feature Selection: Which One Won Us an Insurance Hackathon.",
+      "source": "Towards Data Science",
+      "category": "data_science",
+      "importance": 70,
+      "pubDate": "2026-10-30T14:00:00.000Z",
+      "link": "https://towardsdatascience.com/binning-or-feature-selection-which-one-won-us-an-insurance-hackathon/"
+    },
+    {
+      "id": "aHR0cHM6Ly9zaW5ndWxhcml0eWh1Yi5j",
+      "title": "AI May Quickly Generate Ideas—but Teams of People Are Still More Creative",
+      "summary": "How is AI affecting collaboration and creativity. Cognitive scientists ran an experiment to find out. The post AI May Quickly Generate Ideas—but Teams of People Are Still More Creative appeared first on SingularityHub.",
+      "source": "Singularity Hub",
+      "category": "tech",
+      "importance": 70,
+      "pubDate": "2026-10-30T14:00:00.000Z",
+      "link": "https://singularityhub.com/2026/10/30/ai-may-quickly-generate-ideas-but-teams-of-people-are-still-more-creative/"
+    },
+    {
+      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
+      "title": "Your Agent’s Tools Can Make Decisions, Too",
+      "summary": "Decision models as tools: a hands-on guide The post Your Agent’s Tools Can Make Decisions, Too appeared first on Towards Data Science.",
+      "source": "Towards Data Science",
       "category": "agents",
       "importance": 70,
-      "pubDate": "2026-10-30T11:00:00.000Z",
-      "link": "https://machinelearningmastery.com/7-ways-your-ai-agent-is-wasting-tokens-and-what-to-do-instead/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
-      "title": "Maine’s data center revolt will decide who controls the Senate",
-      "summary": "Susan Collins, a Republican, was midway through defending her record during the final debate of the midterms when an audience member cut her short. \"I'm terrified,\" a man shouted. \"AI data centers are destroying our climate.",
-      "source": "The Verge",
-      "category": "regulation",
-      "importance": 70,
-      "pubDate": "2026-10-30T11:00:00.000Z",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers"
+      "pubDate": "2026-10-30T12:30:00.000Z",
+      "link": "https://towardsdatascience.com/your-agents-tools-can-make-decisions-too/"
     },
     {
       "id": "aHR0cHM6Ly93d3cubWFya3RlY2hwb3N0",
@@ -1295,144 +1165,54 @@
       "link": "https://www.marktechpost.com/2026/10/29/edge0-audio8-tts-realistic-0-6b-voice-cloning/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cubWFya3RlY2hwb3N0",
-      "title": "Baseten Releases joey-1, a 2B Decision Model at $0.01 per 1M Tokens",
-      "summary": "Baseten has released joey-1, a 2B open-weight decision model that returns calibrated probabilities instead of text. It runs at 20 ms P50 latency and costs $0. 01 per million input tokens.",
-      "source": "MarkTechPost",
+      "id": "aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNv",
+      "title": "Microsoft Research Focus – Edition #97",
+      "summary": "Host Sowbhagya Suresh shares some of the latest news and cutting-edge research from across Microsoft—from understanding the challenges facing coding agents to uncovering how people use AI at work and improving extended-range weather forecasting.",
+      "source": "Microsoft Research",
+      "category": "microsoft",
+      "importance": 70,
+      "pubDate": "2026-10-29T19:19:16.000Z",
+      "link": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
+      "title": "Gnani AI Launches Prisma v3.0 Speech Recognition Model for 10 Languages",
+      "summary": "The company’s Prisma v3. 0 supports nine Indian languages and English, with the company reporting lower transcription error rates than competing models on a mult.",
+      "source": "AIM",
       "category": "tech",
       "importance": 70,
-      "pubDate": "2026-10-29T21:20:29.000Z",
-      "link": "https://www.marktechpost.com/2026/10/29/baseten-joey-1-2b-decision-model/"
+      "pubDate": "2026-10-29T12:20:54.000Z",
+      "link": "https://analyticsindiamag.com/ai-news/gnani-ai-launches-prisma-v30-speech-recognition-model-for-10-languages"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
-      "title": "White House makes Section 232 determination regarding foreign-made robots",
-      "summary": "secretary of commerce's Section 232 investigation concluded that dependence on robotics imports poses a national security risk. The post White House makes Section 232 determination regarding foreign-made robots appeared first on The Robot Report.",
-      "source": "The Robot Report",
-      "category": "robotics",
-      "importance": 70,
-      "pubDate": "2026-10-29T20:46:53.000Z",
-      "link": "https://www.therobotreport.com/white-house-makes-section-232-determination-regarding-foreign-made-robots/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
-      "title": "2026 Robotics Handbook looks at humanoids, AI, and design choices",
-      "summary": "The 2026 Robotics Handbook examines design choices behind dexterous manipulation, humanoid robots, and construction automation. The post 2026 Robotics Handbook looks at humanoids, AI, and design choices appeared first on The Robot Report.",
-      "source": "The Robot Report",
-      "category": "automation",
-      "importance": 70,
-      "pubDate": "2026-10-29T19:36:12.000Z",
-      "link": "https://www.therobotreport.com/2026-robotics-handbook-looks-at-humanoids/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cubWFya3RlY2hwb3N0",
-      "title": "Prime Intellect Releases Prime Mega MoE: Trainable Fused MoE Kernel, 3.11x Faster Forward Pass",
-      "summary": "Prime Intellect released Prime Mega MoE, a backward pass for DeepSeek’s fused Mega MoE kernel. It makes the kernel trainable and speeds Qwen3 MoE training steps by up to 34% in prime-rl. The post Prime Intellect Releases Prime Mega MoE: Trainable Fused MoE Kernel, 3.",
-      "source": "MarkTechPost",
-      "category": "research",
-      "importance": 70,
-      "pubDate": "2026-10-29T18:28:57.000Z",
-      "link": "https://www.marktechpost.com/2026/10/29/prime-intellect-prime-mega-moe-fused-moe-kernel-training/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Build a repeatable PHP-to-Java migration engine with Kiro",
-      "summary": "Turn a PHP-to-Java migration from a one-time leap of faith into a measurable, repeatable process with Kiro.",
-      "source": "aws",
+      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
+      "title": "Articul8 Launches Bivia To Help Enterprise AI Agents Make Decisions",
+      "summary": "The company has launched Bivia, a multimodal decision model designed to help enterprise AI agents make domain-specific decisions and verify evidence across diff.",
+      "source": "AIM",
       "category": "agents",
       "importance": 70,
-      "pubDate": "2026-10-29T18:14:17.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/build-a-repeatable-php-to-java-migration-engine-with-kiro/"
+      "pubDate": "2026-10-29T11:10:21.000Z",
+      "link": "https://analyticsindiamag.com/ai-news/articul8-launches-bivia-to-help-enterprise-ai-agents-make-decisions"
     },
     {
-      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
-      "title": "Meta discussed ‘whisper strategy’ against social media critic Jonathan Haidt, files show",
-      "summary": "Court documents reveal staff considered ways to ‘get academic community to disavow’ influential US author Meta staff discussed deploying a “whisper strategy” to undermine the influential US academic whose work has inspired a global social media crackdown, according to court documents.",
-      "source": "The Guardian",
-      "category": "meta",
+      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
+      "title": "NVIDIA Launches Open-Weight Transcription Model for 40 Languages",
+      "summary": "5 Transcribe supports transcription in 40 languages with advanced features like speaker attribution and speech translation.",
+      "source": "AIM",
+      "category": "translation",
       "importance": 70,
-      "pubDate": "2026-10-29T17:20:57.000Z",
-      "link": "https://www.theguardian.com/technology/2026/oct/29/meta-staff-us-social-media-critic-jonathan-haidt-court-documents"
+      "pubDate": "2026-10-29T10:37:56.000Z",
+      "link": "https://analyticsindiamag.com/ai-news/nvidia-launches-open-weight-transcription-model-for-40-languages"
     },
     {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Lend and borrow resources across teams with AWS Batch’s quota management for SageMaker Training jobs",
-      "summary": "AWS Batch quota management is a new scheduling capability you can use to divide GPU capacity into quota shares per team or project, automatically lend idle capacity across shares, and use preemption to run your highest-priority SageMaker Training jobs first, all without manual coordination.",
-      "source": "aws",
-      "category": "research",
+      "id": "aHR0cHM6Ly9zaW5ndWxhcml0eWh1Yi5j",
+      "title": "Study Could Help Explain Why Colder Body Temperature Extends Lifespan in Many Species",
+      "summary": "By chilling roundworms, scientists traced a molecular pathway hinting at one way cold might extend lifespan. The post Study Could Help Explain Why Colder Body Temperature Extends Lifespan in Many Species appeared first on SingularityHub.",
+      "source": "Singularity Hub",
+      "category": "academic",
       "importance": 70,
-      "pubDate": "2026-10-29T16:58:57.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/"
-    },
-    {
-      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
-      "title": "When Labels Say No, But Embeddings Say Yes",
-      "summary": "Why traditional retrieval metrics miss meaningful similarities The post When Labels Say No, But Embeddings Say Yes appeared first on Towards Data Science.",
-      "source": "Towards Data Science",
-      "category": "data_science",
-      "importance": 70,
-      "pubDate": "2026-10-29T15:30:00.000Z",
-      "link": "https://towardsdatascience.com/when-labels-say-no-but-embeddings-say-yes/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
-      "title": "CMU to Host Challenge to Put Scientific Data to Work With AI",
-      "summary": "CMU will host the inaugural ProtoStar Challenge, a new initiative announced Oct. 29 that brings together Hugging Face, a platform for developing and sharing AI models and datasets, and universities participating through the Open Forum for AI (OFAI), an initiative founded at CMU.",
-      "source": "cmu",
-      "category": "data_science",
-      "importance": 70,
-      "pubDate": "2026-10-29T15:20:25.000Z",
-      "link": "https://www.cmu.edu/news/stories/archives/2026/october/cmu-to-host-challenge-to-put-scientific-data-to-work-with-ai"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "The ‘Pain in the Ass’ Math That Could Save Vibe Coding From Itself",
-      "summary": "A new startup called &Truth is joining the race to automate formal verification, a painstaking process that uses math to prove software works as intended.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "business",
-      "importance": 70,
-      "pubDate": "2026-10-29T15:00:00.000Z",
-      "link": "https://www.wired.com/story/software-verification-is-the-hot-new-answer-to-the-ai-safety-crisis/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2lu",
-      "title": "Mistral’s Le Chonk is now a top open model for coding, ranking alongside Codex GPT-6.1 Terra",
-      "summary": "Mistral has released the weights for Large 4, along with some impressive Artificial Analysis scores.",
-      "source": "ZDNet",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-10-29T14:00:31.000Z",
-      "link": "https://www.zdnet.com/innovation/mistral-large-4-weights-release/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race",
-      "summary": "The French AI lab claims its latest release matches or outperforms even the best models from DeepSeek and Z. ai in coding and cybersecurity.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "security",
-      "importance": 70,
-      "pubDate": "2026-10-29T14:00:00.000Z",
-      "link": "https://www.wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity/"
-    },
-    {
-      "id": "aHR0cHM6Ly90b3dhcmRzZGF0YXNjaWVu",
-      "title": "Is the #1 AI Model Really #1?",
-      "summary": "On a 2,000-question test, my top two models couldn't be told apart at the usual 5% level. On a 200-question version, a different model would have taken first place about three times in ten. The post Is the #1 AI Model Really #1.",
-      "source": "Towards Data Science",
-      "category": "data_science",
-      "importance": 70,
-      "pubDate": "2026-10-29T12:30:00.000Z",
-      "link": "https://towardsdatascience.com/is-the-1-ai-model-really-1/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
-      "title": "5 Docker Containers You Need for a Home AI Lab",
-      "summary": "Learn which five Docker containers make a reliable home AI lab, from Ollama and Open WebUI to Qdrant, n8n and Portainer CE, what job each one does, and the first mistake to avoid with each.",
-      "source": "KDnuggets",
-      "category": "tech",
-      "importance": 70,
-      "pubDate": "2026-10-29T12:00:00.000Z",
-      "link": "https://www.kdnuggets.com/5-docker-containers-you-need-for-a-home-ai-lab"
+      "pubDate": "2026-10-27T20:50:16.000Z",
+      "link": "https://singularityhub.com/2026/10/27/study-could-help-explain-why-colder-body-temperature-extends-lifespan-in-many-species/"
     },
     {
       "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
@@ -1485,6 +1265,146 @@
       "link": "https://emerj.com/artificial-intelligence-at-massmutual-two-use-cases/"
     },
     {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "Apple Intelligence is finally coming to China with iOS 27.3",
+      "summary": "Apple will launch Apple Intelligence in China with iOS 27. 3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in an iOS 27.",
+      "source": "The Verge",
+      "category": "translation",
+      "importance": 65,
+      "pubDate": "2026-10-30T22:32:53.000Z",
+      "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLm1pdC5lZHUvMjAy",
+      "title": "MIT affiliates named 2026 Schmidt Sciences AI2050 Fellows",
+      "summary": "Five MIT faculty members and two additional alumni are honored with fellowships to advance research on beneficial AI.",
+      "source": "news",
+      "category": "research",
+      "importance": 65,
+      "pubDate": "2026-10-30T20:15:00.000Z",
+      "link": "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cubWFya3RlY2hwb3N0",
+      "title": "Baseten Releases joey-1, a 2B Decision Model at $0.01 per 1M Tokens",
+      "summary": "Baseten has released joey-1, a 2B open-weight decision model that returns calibrated probabilities instead of text. It runs at 20 ms P50 latency and costs $0. 01 per million input tokens.",
+      "source": "MarkTechPost",
+      "category": "tech",
+      "importance": 65,
+      "pubDate": "2026-10-29T21:20:29.000Z",
+      "link": "https://www.marktechpost.com/2026/10/29/baseten-joey-1-2b-decision-model/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
+      "title": "White House makes Section 232 determination regarding foreign-made robots",
+      "summary": "secretary of commerce's Section 232 investigation concluded that dependence on robotics imports poses a national security risk. The post White House makes Section 232 determination regarding foreign-made robots appeared first on The Robot Report.",
+      "source": "The Robot Report",
+      "category": "robotics",
+      "importance": 65,
+      "pubDate": "2026-10-29T20:46:53.000Z",
+      "link": "https://www.therobotreport.com/white-house-makes-section-232-determination-regarding-foreign-made-robots/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
+      "title": "2026 Robotics Handbook looks at humanoids, AI, and design choices",
+      "summary": "The 2026 Robotics Handbook examines design choices behind dexterous manipulation, humanoid robots, and construction automation. The post 2026 Robotics Handbook looks at humanoids, AI, and design choices appeared first on The Robot Report.",
+      "source": "The Robot Report",
+      "category": "automation",
+      "importance": 65,
+      "pubDate": "2026-10-29T19:36:12.000Z",
+      "link": "https://www.therobotreport.com/2026-robotics-handbook-looks-at-humanoids/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cubWFya3RlY2hwb3N0",
+      "title": "Prime Intellect Releases Prime Mega MoE: Trainable Fused MoE Kernel, 3.11x Faster Forward Pass",
+      "summary": "Prime Intellect released Prime Mega MoE, a backward pass for DeepSeek’s fused Mega MoE kernel. It makes the kernel trainable and speeds Qwen3 MoE training steps by up to 34% in prime-rl. The post Prime Intellect Releases Prime Mega MoE: Trainable Fused MoE Kernel, 3.",
+      "source": "MarkTechPost",
+      "category": "research",
+      "importance": 65,
+      "pubDate": "2026-10-29T18:28:57.000Z",
+      "link": "https://www.marktechpost.com/2026/10/29/prime-intellect-prime-mega-moe-fused-moe-kernel-training/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Build a repeatable PHP-to-Java migration engine with Kiro",
+      "summary": "Turn a PHP-to-Java migration from a one-time leap of faith into a measurable, repeatable process with Kiro.",
+      "source": "aws",
+      "category": "agents",
+      "importance": 65,
+      "pubDate": "2026-10-29T18:14:17.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/build-a-repeatable-php-to-java-migration-engine-with-kiro/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "Meta discussed ‘whisper strategy’ against social media critic Jonathan Haidt, files show",
+      "summary": "Court documents reveal staff considered ways to ‘get academic community to disavow’ influential US author Meta staff discussed deploying a “whisper strategy” to undermine the influential US academic whose work has inspired a global social media crackdown, according to court documents.",
+      "source": "The Guardian",
+      "category": "meta",
+      "importance": 65,
+      "pubDate": "2026-10-29T17:20:57.000Z",
+      "link": "https://www.theguardian.com/technology/2026/oct/29/meta-staff-us-social-media-critic-jonathan-haidt-court-documents"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Lend and borrow resources across teams with AWS Batch’s quota management for SageMaker Training jobs",
+      "summary": "AWS Batch quota management is a new scheduling capability you can use to divide GPU capacity into quota shares per team or project, automatically lend idle capacity across shares, and use preemption to run your highest-priority SageMaker Training jobs first, all without manual coordination.",
+      "source": "aws",
+      "category": "research",
+      "importance": 65,
+      "pubDate": "2026-10-29T16:58:57.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY211LmVkdS9uZXdz",
+      "title": "CMU to Host Challenge to Put Scientific Data to Work With AI",
+      "summary": "CMU will host the inaugural ProtoStar Challenge, a new initiative announced Oct. 29 that brings together Hugging Face, a platform for developing and sharing AI models and datasets, and universities participating through the Open Forum for AI (OFAI), an initiative founded at CMU.",
+      "source": "cmu",
+      "category": "data_science",
+      "importance": 65,
+      "pubDate": "2026-10-29T15:20:25.000Z",
+      "link": "https://www.cmu.edu/news/stories/archives/2026/october/cmu-to-host-challenge-to-put-scientific-data-to-work-with-ai"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "The ‘Pain in the Ass’ Math That Could Save Vibe Coding From Itself",
+      "summary": "A new startup called &Truth is joining the race to automate formal verification, a painstaking process that uses math to prove software works as intended.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "business",
+      "importance": 65,
+      "pubDate": "2026-10-29T15:00:00.000Z",
+      "link": "https://www.wired.com/story/software-verification-is-the-hot-new-answer-to-the-ai-safety-crisis/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2lu",
+      "title": "Mistral’s Le Chonk is now a top open model for coding, ranking alongside Codex GPT-6.1 Terra",
+      "summary": "Mistral has released the weights for Large 4, along with some impressive Artificial Analysis scores.",
+      "source": "ZDNet",
+      "category": "tech",
+      "importance": 65,
+      "pubDate": "2026-10-29T14:00:31.000Z",
+      "link": "https://www.zdnet.com/innovation/mistral-large-4-weights-release/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race",
+      "summary": "The French AI lab claims its latest release matches or outperforms even the best models from DeepSeek and Z. ai in coding and cybersecurity.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "security",
+      "importance": 65,
+      "pubDate": "2026-10-29T14:00:00.000Z",
+      "link": "https://www.wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
+      "title": "5 Docker Containers You Need for a Home AI Lab",
+      "summary": "Learn which five Docker containers make a reliable home AI lab, from Ollama and Open WebUI to Qdrant, n8n and Portainer CE, what job each one does, and the first mistake to avoid with each.",
+      "source": "KDnuggets",
+      "category": "tech",
+      "importance": 65,
+      "pubDate": "2026-10-29T12:00:00.000Z",
+      "link": "https://www.kdnuggets.com/5-docker-containers-you-need-for-a-home-ai-lab"
+    },
+    {
       "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
       "title": "AGIBOT introduces Worken to measure robot productivity at AGIBOT Innovation Day 2026",
       "summary": "AGIBOT unveiled its AHA3 integrated platform, GO-3 Preview, and WITA-Omni 1. 0 model, as well as the G2 Max robot and Link-U OS 1. The post AGIBOT introduces Worken to measure robot productivity at AGIBOT Innovation Day 2026 appeared first on The Robot Report.",
@@ -1493,26 +1413,6 @@
       "importance": 65,
       "pubDate": "2026-10-29T04:01:46.000Z",
       "link": "https://www.therobotreport.com/agibot-introduces-worken-measure-robot-productivity-innovation-day-2026/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
-      "title": "North American robot orders climb 24.8% in Q3 of 2026, says A3",
-      "summary": "Robot demand from automotive component manufacturers nearly doubled in Q3, as other sectors posted strong gains, reported A3. The post North American robot orders climb 24. 8% in Q3 of 2026, says A3 appeared first on The Robot Report.",
-      "source": "The Robot Report",
-      "category": "robotics",
-      "importance": 65,
-      "pubDate": "2026-10-28T18:59:30.000Z",
-      "link": "https://www.therobotreport.com/north-american-robot-orders-climb-24-8-q3-2026-says-a3/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
-      "title": "What Symbotic’s Walmart growth teaches robotics startups about anchor customers",
-      "summary": "Symbotic’s growth with Walmart shows how an anchor customer can fund a robotics startup’s scale while creating risks around customer concentration, contractual restrictions and the challenge of building a diversified, repeatable business.",
-      "source": "The Robot Report",
-      "category": "presentation",
-      "importance": 65,
-      "pubDate": "2026-10-28T18:40:57.000Z",
-      "link": "https://www.therobotreport.com/what-symbotic-growth-with-walmart-teaches-robotics-startups-about-anchor-customers/"
     },
     {
       "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
@@ -1565,6 +1465,186 @@
       "link": "https://pytorch.org/blog/optimizing-streaming-speech-recognition-on-arm-edge-devices-with-executorch/"
     },
     {
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Once again, NASA is asking for ideas to rescue Hubble from certain death",
+      "summary": "The space agency solicited ideas for reboosting Hubble four years ago, but they didn't go anywhere.",
+      "source": "Ars Technica",
+      "category": "space",
+      "importance": 60,
+      "pubDate": "2026-10-31T00:07:22.000Z",
+      "link": "https://arstechnica.com/space/2026/10/think-you-can-save-the-hubble-space-telescope-nasa-wants-to-know/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY25ldC5jb20vcm9h",
+      "title": "GM’s $220M Payout Shows How Cars Can Secretly Sell Your Driving Data",
+      "summary": "The automaker must now obtain express consent before collecting or sharing driver data.",
+      "source": "CNET",
+      "category": "data_science",
+      "importance": 60,
+      "pubDate": "2026-10-30T23:14:32.000Z",
+      "link": "https://www.cnet.com/roadshow/auto-tech/gm-privacy-settlement-smart-driver-program/"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Ollie, a privacy-focused AI assistant, is shutting down",
+      "summary": "As an increasing number of AI assistants flood the market, the founder of Ollie, an assistant that respected its users' privacy, says it will be shutting down in a week.",
+      "source": "TechCrunch",
+      "category": "agents",
+      "importance": 60,
+      "pubDate": "2026-10-30T22:56:13.000Z",
+      "link": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Oh captain, our captain: Ars staff remembers Patrick Stewart",
+      "summary": "\"For huge numbers of people, I will always be Jean-Luc Picard. We created an admirable individual.",
+      "source": "Ars Technica",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-10-30T22:21:05.000Z",
+      "link": "https://arstechnica.com/culture/2026/10/oh-captain-our-captain-ars-staff-remembers-patrick-stewart/"
+    },
+    {
+      "id": "aHR0cHM6Ly9tb25vaXN0Lml0bWVkaWEu",
+      "title": "GMOがサイバー攻撃情報に異例の1.5億円懸賞金、AI時代の新防衛策となるのか",
+      "summary": "2026年10月26～30日に公開された記事の中から、MONOist編集部が厳選した今週の注目ニュースをお届けします。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-10-30T22:00:00.000Z",
+      "link": "https://monoist.itmedia.co.jp/mn/articles/2610/31/news013.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "AIエージェントは「実運用」が主流に 「明確な成果」を得る企業の共通点は？",
+      "summary": "生成AIの活用は「試す」段階から「使い広げる」段階へ移り、AIエージェントも実運用が主流になった。一方で、企業規模による差は広がっている。INDUSTRIAL-Xの調査が示す、成果を分ける“技術以外の要因”とは。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-10-30T22:00:00.000Z",
+      "link": "https://www.itmedia.co.jp/enterprise/articles/2610/31/news008.html"
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS8y",
+      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+      "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
+      "source": "TechCrunch",
+      "category": "regulation",
+      "importance": 60,
+      "pubDate": "2026-10-30T21:54:34.000Z",
+      "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Supersonic airliner in doubt as company shifts to powering AI data centers",
+      "summary": "Boom’s airliner may be delayed, and its data center power business lost a customer.",
+      "source": "Ars Technica",
+      "category": "presentation",
+      "importance": 60,
+      "pubDate": "2026-10-30T21:41:54.000Z",
+      "link": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hcnN0ZWNobmljYS5jb20v",
+      "title": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
+      "summary": "People who love AI don't always love telling others they used it.",
+      "source": "Ars Technica",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-10-30T20:40:13.000Z",
+      "link": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
+      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
+      "summary": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
+      "source": "BBC",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-10-30T20:34:46.000Z",
+      "link": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
+      "summary": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru.",
+      "source": "The Verge",
+      "category": "presentation",
+      "importance": 60,
+      "pubDate": "2026-10-30T17:38:04.000Z",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
+      "summary": "The ChatGPT desktop app is now available on Amazon Bedrock in AWS GovCloud (US).",
+      "source": "aws",
+      "category": "reasoning",
+      "importance": 60,
+      "pubDate": "2026-10-30T17:27:45.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4u",
+      "title": "North Korea is likely culprit behind $6.3bn crypto hack, ‘largest heist in history’",
+      "summary": "Binance exchange says it will cover customer losses as it scrambles to freeze affected assets, with about $3bn located so farQ A: How big a deal is the $6. Tell us: have you been affected by the Binance hack. The world’s largest cryptocurrency exchange has been hit by a record $6.",
+      "source": "The Guardian",
+      "category": "presentation",
+      "importance": 60,
+      "pubDate": "2026-10-30T16:35:44.000Z",
+      "link": "https://www.theguardian.com/business/2026/oct/29/binance-crypto-exchange-hack"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
+      "title": "Vibe Coding a Classic Game: Building Breakout Step by Step with an AI Assistant",
+      "summary": "Vibe coding is a workflow where you describe what you want in natural language and let an AI agent handle code generation, execution, and iteration rather than typing every line yourself.",
+      "source": "KDnuggets",
+      "category": "agents",
+      "importance": 60,
+      "pubDate": "2026-10-30T14:00:00.000Z",
+      "link": "https://www.kdnuggets.com/vibe-coding-a-classic-game-building-breakout-step-by-step-with-an-ai-assistant"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
+      "title": "キオクシア中間決算「過去最高」連呼 純利益2.2兆円、初の配当実施 AI需要で「成長さらに加速」",
+      "summary": "キオクシアHDは、2027年3月期の中間決算を発表した。純利益は2. 2兆円。第2四半期の3カ月だけで前年通期の売り上げを上回った。好決算を受けて上場後初となる配当を実施する。.",
+      "source": "ITmedia AI＋ 最新記事一覧",
+      "category": "tech",
+      "importance": 60,
+      "pubDate": "2026-10-30T12:45:00.000Z",
+      "link": "https://www.itmedia.co.jp/business/articles/2610/30/news090.html"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhlcm9ib3RyZXBv",
+      "title": "RoboBusiness 2026 recap",
+      "summary": "The Robot Report editorial team sits down for a recap of noteworthy sessions and networking around the 2026 RoboBusiness event. The post RoboBusiness 2026 recap appeared first on The Robot Report.",
+      "source": "The Robot Report",
+      "category": "robotics",
+      "importance": 60,
+      "pubDate": "2026-10-30T12:30:02.000Z",
+      "link": "https://www.therobotreport.com/robobusiness-2026-recap/"
+    },
+    {
+      "id": "aHR0cHM6Ly9tYWNoaW5lbGVhcm5pbmdt",
+      "title": "7 Ways Your AI Agent Is Wasting Tokens (And What to Do Instead)",
+      "summary": "In this article, you will learn seven common token-waste patterns in production AI agent systems, and the architectural fixes that address each one.",
+      "source": "MachineLearningMastery.com",
+      "category": "agents",
+      "importance": 60,
+      "pubDate": "2026-10-30T11:00:00.000Z",
+      "link": "https://machinelearningmastery.com/7-ways-your-ai-agent-is-wasting-tokens-and-what-to-do-instead/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGhldmVyZ2UuY29t",
+      "title": "Maine’s data center revolt will decide who controls the Senate",
+      "summary": "Susan Collins, a Republican, was midway through defending her record during the final debate of the midterms when an audience member cut her short. \"I'm terrified,\" a man shouted. \"AI data centers are destroying our climate.",
+      "source": "The Verge",
+      "category": "regulation",
+      "importance": 60,
+      "pubDate": "2026-10-30T11:00:00.000Z",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers"
+    },
+    {
       "id": "aHR0cHM6Ly93d3cuYmJjLmNvLnVrL25l",
       "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
       "summary": "Two analytics firms have attributed the incident to a North Korean hacking unit called TraderTraitor.",
@@ -1585,136 +1665,6 @@
       "link": "https://emerj.com/closing-the-industrial-knowledge-gap-with-enterprise-ai/"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuaXRtZWRpYS5jby5q",
-      "title": "“でぶねこ”の重み公開 1兆パラメータのAIモデル「Mistral Large 4」（Le Chonk）がダウンロード可能に",
-      "summary": "AI開発企業の仏Mistral AIは、AIモデル「Mistral Large 4」（通称Le Chonk）の重みをHugging Faceで公開した。コーディングやサイバーセキュリティ分野で高い性能を示すという。.",
-      "source": "ITmedia AI＋ 最新記事一覧",
-      "category": "tech",
-      "importance": 60,
-      "pubDate": "2026-10-30T08:46:58.000Z",
-      "link": "https://www.itmedia.co.jp/aiplus/article/2610/30/2000002762/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "How the UK Amazon Quick User Group grew in 2026",
-      "summary": "The UK Amazon Quick User Group's 2026 roundup: three quarterly meetups, 150+ attendees, and customer stories from Arriva, Carsa, and Propulse Lab on using agentic AI and Amazon Quick to turn data into faster decisions, higher satisfaction, and scalable growth.",
-      "source": "aws",
-      "category": "presentation",
-      "importance": 60,
-      "pubDate": "2026-10-29T20:16:40.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Building intent-driven UI testing with Amazon Nova Act",
-      "summary": "Epsilon's Agentic Platform team delivers UI testing as a managed, multi-tenant service built on Amazon Nova Act and Amazon Bedrock AgentCore Browser Tool.",
-      "source": "aws",
-      "category": "agents",
-      "importance": 60,
-      "pubDate": "2026-10-29T18:20:27.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/building-intent-driven-ui-testing-with-amazon-nova-act/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
-      "title": "Accelerate agentic AI with NVIDIA Nemotron models on Amazon EKS and SageMaker HyperPod EKS",
-      "summary": "5 Super VL is a 120B-parameter mixture-of-experts model that pairs reasoning and tool use with multimodal understanding. This post explores its architecture and use cases, then shows how to deploy it on Amazon EKS, EKS Auto Mode, and Amazon SageMaker HyperPod EKS with NVIDIA Dynamo and vLLM.",
-      "source": "aws",
-      "category": "nvidia",
-      "importance": 60,
-      "pubDate": "2026-10-29T16:11:08.000Z",
-      "link": "https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/"
-    },
-    {
-      "id": "aHR0cHM6Ly9ibG9ncy5udmlkaWEuY29t",
-      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
-      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended.",
-      "source": "NVIDIA",
-      "category": "agents",
-      "importance": 60,
-      "pubDate": "2026-10-29T16:00:35.000Z",
-      "link": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
-      "title": "Who benefits when massive AI data centers come to town?",
-      "summary": "The battle over data centers is hitting the ballot box. Brookings scholar Darrell West talks about how the backlash against the AI boom, flock cameras and tech companies is crossing party lines.",
-      "source": "NPR",
-      "category": "data_science",
-      "importance": 60,
-      "pubDate": "2026-10-29T15:41:59.000Z",
-      "link": "https://www.npr.org/2026/10/29/nx-s1-6022096/who-benefits-when-massive-ai-data-centers-come-to-town"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2lu",
-      "title": "Stop sharing your passwords with AI agents, Bank of America warns customers",
-      "summary": "The bank’s message follows a trend among financial institutions that are restricting third-party AI agent access.",
-      "source": "ZDNet",
-      "category": "presentation",
-      "importance": 60,
-      "pubDate": "2026-10-29T15:36:26.000Z",
-      "link": "https://www.zdnet.com/innovation/bank-of-america-customers-no-sharing-passwords-ai-agents/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
-      "title": "Amazon Warns Engineers Against AI Productivity Traps in Latest Memo",
-      "summary": "The company said that metrics that often grab attention, such as token usage, the number of AI tools used, code changes, the number of reviews, and more, are “d.",
-      "source": "AIM",
-      "category": "tech",
-      "importance": 60,
-      "pubDate": "2026-10-29T14:16:19.000Z",
-      "link": "https://analyticsindiamag.com/ai-news/amazon-warns-engineers-against-ai-productivity-traps-in-latest-memo"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
-      "title": "The AI Skills That Actually Show Up in Job Postings Right Now",
-      "summary": "Which AI skills appear most often in job postings right now, and what do they mean for your career.",
-      "source": "KDnuggets",
-      "category": "tech",
-      "importance": 60,
-      "pubDate": "2026-10-29T14:00:00.000Z",
-      "link": "https://www.kdnuggets.com/the-ai-skills-that-actually-show-up-in-job-postings-right-now"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
-      "title": "The Download: AI agent tracking and climate feedback loops",
-      "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology.",
-      "source": "MIT Technology Review",
-      "category": "agents",
-      "importance": 60,
-      "pubDate": "2026-10-29T12:10:00.000Z",
-      "link": "https://www.technologyreview.com/2026/10/29/1147830/the-download-monitoring-ai-agents-climate-feedback-loops/"
-    },
-    {
-      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
-      "title": "Venttup Raises $3 Million To Expand Precision Manufacturing",
-      "summary": "The company will use AI to improve supplier intelligence and B2B sourcing as it expands its precision manufacturing capabilities.",
-      "source": "AIM",
-      "category": "manufacturing",
-      "importance": 60,
-      "pubDate": "2026-10-29T11:39:58.000Z",
-      "link": "https://analyticsindiamag.com/ai-news/venttup-raises-3-million-to-expand-precision-manufacturing"
-    },
-    {
-      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
-      "title": "The AI Slowdown Narrative Doesn’t Reflect Enterprise Reality",
-      "summary": "Industry leaders say the focus is moving from building increasingly capable models to enterprise readiness, governance, reliable execution and measurable return.",
-      "source": "AIM",
-      "category": "business",
-      "importance": 60,
-      "pubDate": "2026-10-29T11:01:36.000Z",
-      "link": "https://analyticsindiamag.com/ai-features/the-ai-slowdown-narrative-doesnt-reflect-enterprise-reality"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "I Gave My Blood to the AI Death Clock",
-      "summary": "Death Clock promises to predict when you’re going to die and help you extend your time on Earth. After a month, I felt like it was sucking the life out of me.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "tech",
-      "importance": 60,
-      "pubDate": "2026-10-29T10:00:00.000Z",
-      "link": "https://www.wired.com/story/i-gave-an-ai-death-clock-my-blood/"
-    },
-    {
       "id": "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9i",
       "title": "Can we trust LLMs to judge whether a research idea is novel?",
       "summary": "Can we trust LLMs to judge whether a research idea is novel.",
@@ -1733,6 +1683,126 @@
       "importance": 60,
       "pubDate": "2026-10-27T15:00:20.000Z",
       "link": "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "How the UK Amazon Quick User Group grew in 2026",
+      "summary": "The UK Amazon Quick User Group's 2026 roundup: three quarterly meetups, 150+ attendees, and customer stories from Arriva, Carsa, and Propulse Lab on using agentic AI and Amazon Quick to turn data into faster decisions, higher satisfaction, and scalable growth.",
+      "source": "aws",
+      "category": "presentation",
+      "importance": 55,
+      "pubDate": "2026-10-29T20:16:40.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Building intent-driven UI testing with Amazon Nova Act",
+      "summary": "Epsilon's Agentic Platform team delivers UI testing as a managed, multi-tenant service built on Amazon Nova Act and Amazon Bedrock AgentCore Browser Tool.",
+      "source": "aws",
+      "category": "agents",
+      "importance": 55,
+      "pubDate": "2026-10-29T18:20:27.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/building-intent-driven-ui-testing-with-amazon-nova-act/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9i",
+      "title": "Accelerate agentic AI with NVIDIA Nemotron models on Amazon EKS and SageMaker HyperPod EKS",
+      "summary": "5 Super VL is a 120B-parameter mixture-of-experts model that pairs reasoning and tool use with multimodal understanding. This post explores its architecture and use cases, then shows how to deploy it on Amazon EKS, EKS Auto Mode, and Amazon SageMaker HyperPod EKS with NVIDIA Dynamo and vLLM.",
+      "source": "aws",
+      "category": "nvidia",
+      "importance": 55,
+      "pubDate": "2026-10-29T16:11:08.000Z",
+      "link": "https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/"
+    },
+    {
+      "id": "aHR0cHM6Ly9ibG9ncy5udmlkaWEuY29t",
+      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended.",
+      "source": "NVIDIA",
+      "category": "agents",
+      "importance": 55,
+      "pubDate": "2026-10-29T16:00:35.000Z",
+      "link": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cubnByLm9yZy8yMDI2",
+      "title": "Who benefits when massive AI data centers come to town?",
+      "summary": "The battle over data centers is hitting the ballot box. Brookings scholar Darrell West talks about how the backlash against the AI boom, flock cameras and tech companies is crossing party lines.",
+      "source": "NPR",
+      "category": "data_science",
+      "importance": 55,
+      "pubDate": "2026-10-29T15:41:59.000Z",
+      "link": "https://www.npr.org/2026/10/29/nx-s1-6022096/who-benefits-when-massive-ai-data-centers-come-to-town"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuemRuZXQuY29tL2lu",
+      "title": "Stop sharing your passwords with AI agents, Bank of America warns customers",
+      "summary": "The bank’s message follows a trend among financial institutions that are restricting third-party AI agent access.",
+      "source": "ZDNet",
+      "category": "presentation",
+      "importance": 55,
+      "pubDate": "2026-10-29T15:36:26.000Z",
+      "link": "https://www.zdnet.com/innovation/bank-of-america-customers-no-sharing-passwords-ai-agents/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
+      "title": "Amazon Warns Engineers Against AI Productivity Traps in Latest Memo",
+      "summary": "The company said that metrics that often grab attention, such as token usage, the number of AI tools used, code changes, the number of reviews, and more, are “d.",
+      "source": "AIM",
+      "category": "tech",
+      "importance": 55,
+      "pubDate": "2026-10-29T14:16:19.000Z",
+      "link": "https://analyticsindiamag.com/ai-news/amazon-warns-engineers-against-ai-productivity-traps-in-latest-memo"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2RudWdnZXRzLmNv",
+      "title": "The AI Skills That Actually Show Up in Job Postings Right Now",
+      "summary": "Which AI skills appear most often in job postings right now, and what do they mean for your career.",
+      "source": "KDnuggets",
+      "category": "tech",
+      "importance": 55,
+      "pubDate": "2026-10-29T14:00:00.000Z",
+      "link": "https://www.kdnuggets.com/the-ai-skills-that-actually-show-up-in-job-postings-right-now"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudGVjaG5vbG9neXJl",
+      "title": "The Download: AI agent tracking and climate feedback loops",
+      "summary": "This is today s edition of The Download, our weekday newsletter that provides a daily dose of what s going on in the world of technology.",
+      "source": "MIT Technology Review",
+      "category": "agents",
+      "importance": 55,
+      "pubDate": "2026-10-29T12:10:00.000Z",
+      "link": "https://www.technologyreview.com/2026/10/29/1147830/the-download-monitoring-ai-agents-climate-feedback-loops/"
+    },
+    {
+      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
+      "title": "Venttup Raises $3 Million To Expand Precision Manufacturing",
+      "summary": "The company will use AI to improve supplier intelligence and B2B sourcing as it expands its precision manufacturing capabilities.",
+      "source": "AIM",
+      "category": "manufacturing",
+      "importance": 55,
+      "pubDate": "2026-10-29T11:39:58.000Z",
+      "link": "https://analyticsindiamag.com/ai-news/venttup-raises-3-million-to-expand-precision-manufacturing"
+    },
+    {
+      "id": "aHR0cHM6Ly9hbmFseXRpY3NpbmRpYW1h",
+      "title": "The AI Slowdown Narrative Doesn’t Reflect Enterprise Reality",
+      "summary": "Industry leaders say the focus is moving from building increasingly capable models to enterprise readiness, governance, reliable execution and measurable return.",
+      "source": "AIM",
+      "category": "business",
+      "importance": 55,
+      "pubDate": "2026-10-29T11:01:36.000Z",
+      "link": "https://analyticsindiamag.com/ai-features/the-ai-slowdown-narrative-doesnt-reflect-enterprise-reality"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
+      "title": "I Gave My Blood to the AI Death Clock",
+      "summary": "Death Clock promises to predict when you’re going to die and help you extend your time on Earth. After a month, I felt like it was sucking the life out of me.",
+      "source": "Feed: Artificial Intelligence Latest",
+      "category": "tech",
+      "importance": 55,
+      "pubDate": "2026-10-29T10:00:00.000Z",
+      "link": "https://www.wired.com/story/i-gave-an-ai-death-clock-my-blood/"
     },
     {
       "id": "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9i",
@@ -1823,16 +1893,6 @@
       "importance": 55,
       "pubDate": "2026-10-28T11:00:00.000Z",
       "link": "https://machinelearningmastery.com/fine-tuning-vs-frozen-embeddings-when-to-adapt-the-llm-vs-the-sklearn-head/"
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cud2lyZWQuY29tL3N0",
-      "title": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
-      "summary": "Workers tell WIRED that NOA—or “No Ordinary Assistant”—was unhelpful. Bestselling authors also say AI is ruining their relationships with Big Five publishers.",
-      "source": "Feed: Artificial Intelligence Latest",
-      "category": "agents",
-      "importance": 55,
-      "pubDate": "2026-10-28T10:15:00.000Z",
-      "link": "https://www.wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed/"
     },
     {
       "id": "aHR0cHM6Ly9vcGVuYWkuY29tL2luZGV4",
